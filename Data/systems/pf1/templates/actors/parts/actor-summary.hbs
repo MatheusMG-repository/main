@@ -1,0 +1,515 @@
+<div class="summary-header">
+  <img class="profile" src="{{actor.img}}" data-edit="img"/>
+
+  <div class="flexcol">
+    <div class="flexrow name-xp">
+      <div>
+        <h1 class="char-name">
+          <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize "PF1.CharacterName"}}" data-tooltip="PF1.CharacterName"/>
+        </h1>
+      </div>
+
+      {{#if isCharacter}}
+      <div class="hd-level character tooltip">
+        <span class="tooltipcontent">
+          <span class="span2 align-left">@attributes.hd.total :</span><span class="span1 align-right"> {{system.attributes.hd.total}}</span>
+          {{#if system.details.mythicTier}}
+          <br />
+          <span class="span2 align-left">@details.mythicTier :</span><span class="span1 align-right">{{system.details.mythicTier}}</span>
+          {{/if}}
+        </span>
+
+        <table>
+          <thead>
+            <tr>
+              <th class="level">{{localize "PF1.Level"}}</th>
+              {{#if system.details.mythicTier}}
+              <th class="tier">{{localize "PF1.Tier"}}</th>
+              {{/if}}
+              {{#unless disableExperience}}
+              <th class="experience">{{localize "PF1.Experience"}}</th>
+              {{/unless}}
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="level">
+                {{system.details.level.value}}
+              </td>
+              {{#if system.details.mythicTier}}
+              <td class="tier">
+                {{system.details.mythicTier}}
+              </td>
+              {{/if}}
+              {{#unless disableExperience}}
+              <td class="experience">
+                <div class="flexrow">
+                  <span class="text-box direct allow-relative no-value-cap" name="system.details.xp.value"
+                    {{#if minimumExperience}}data-clear-value="{{minimumExperience}}"{{/if}} data-dtype="Number">{{system.details.xp.value}}</span>
+                  <span class="separator"> / </span>
+                  <span class="text-box max readonly">{{system.details.xp.max}}</span>
+                </div>
+              </td>
+              {{/unless}}
+            </tr>
+          </tbody>
+        </table>
+
+        {{#unless disableExperience}}
+        <div class="xpbar">
+          {{#if system.details.xp.pct}}
+          <span class="bar" style="width: {{system.details.xp.pct}}%"></span>
+          {{/if}}
+        </div>
+        {{/unless}}
+      </div>
+      {{else}}
+      <div class="hd-level npc tooltip flexrow">
+        <table>
+          <thead>
+            <tr>
+              <th class="level">{{localize "PF1.HitDieShort"}}</th>
+              {{#if system.details.mythicTier}}
+              <th class="tier">{{localize "PF1.Tier"}}</th>
+              {{/if}}
+              <th class="challenge-rating">{{localize "PF1.ChallengeRatingShort"}}</th>
+              <th class="experience">{{localize "PF1.Experience"}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="level">
+                {{system.attributes.hd.total}}
+              </td>
+              {{#if system.details.mythicTier}}
+              <td class="tier">
+                {{system.details.mythicTier}}
+              </td>
+              {{/if}}
+              <td class="challenge-rating">
+                <span class="text-box cr-input" name="system.details.cr.base">{{labels.cr}}</span>
+              </td>
+              <td class="experience">
+                {{system.details.xp.value}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <span class="tooltipcontent">
+          <span class="span2 align-left">@attributes.hd.total :</span><span class="span1 align-right"> {{system.attributes.hd.total}}</span>
+          <span class="span2 align-left">@details.cr.base :</span><span class="span1 align-right"> {{system.details.cr.base}}</span>
+          <span class="span2 align-left">@details.cr.total :</span><span class="span1 align-right"> {{system.details.cr.total}}</span>
+          {{#if system.details.mythicTier}}
+          <span class="span2 align-left">@details.mythicTier :</span><span class="span1 align-right"> {{system.details.mythicTier}}</span>
+          {{/if}}
+        </span>
+      </div>
+      {{/if}}
+    </div>
+
+    {{!-- Character Summary --}}
+    <div class="character-summary flexrow">
+      <div>
+        <input type="text" name="system.details.gender" value="{{system.details.gender}}" placeholder="{{localize "PF1.Gender"}}" data-tooltip="PF1.Gender"/>
+      </div>
+      <div>
+        <input type="text" name="system.details.deity" value="{{system.details.deity}}" placeholder="{{localize "PF1.Deity"}}" data-tooltip="PF1.Deity"/>
+      </div>
+      <div>
+        <input type="text" name="system.details.age" value="{{system.details.age}}" placeholder="{{localize "PF1.Age"}}" data-tooltip="PF1.Age"/>
+      </div>
+      <div>
+        <input type="text" name="system.details.height" value="{{system.details.height}}" placeholder="{{localize "PF1.Height"}}" data-tooltip="PF1.Height"/>
+      </div>
+      <div>
+        <input type="text" name="system.details.weight" value="{{system.details.weight}}" placeholder="{{localize "PF1.Weight"}}" data-tooltip="PF1.Weight"/>
+      </div>
+
+      {{!-- Alignment --}}
+      <div class="controls alignment flexrow" data-tooltip="PF1.Alignment">
+        {{#if labels.alignment}}<span>{{labels.alignment}}</span>{{else}}<span class="placeholder">{{localize "PF1.Alignment"}}</span>{{/if}}
+        <a class="control alignment"><i class="fas fa-cog"></i></a>
+      </div>
+    </div>
+
+    <div class="flexrow">
+      <div class="race-container item flexrow" {{#if race}}data-item-id="{{race._id}}"{{/if}} data-tooltip="PF1.Race">
+        <div class="race item-image rollable" style='background-image: url("{{race.img}}")' data-tooltip="{{labels.race}}<br>{{localize "PF1.DisplayInChat"}}">
+          {{#unless race}}{{localize "PF1.Race"}}{{/unless}}
+        </div>
+
+        <div class="item-controls flexcol">
+          {{#if owner}}
+          {{#if race}}
+          <a class="item-control edit" data-tooltip="PF1.EditItem"><i class="fas fa-edit"></i></a>
+          <a class="item-control delete" data-tooltip="PF1.DeleteItem"><i class="fas fa-trash"></i></a>
+          {{else}}
+          <a class="item-control add" data-tooltip="PF1.CreateItem"><i class="fas fa-plus"></i></a>
+          <a data-action="compendium" data-action-target="races" data-tooltip="PF1.OpenCompendium"><i class="fas fa-folder-plus"></i></a>
+          {{/if}}
+          {{/if}}
+        </div>
+
+        <div class="race-info tag-list">
+          {{#if race}}
+          <span class="tag type3">{{lookup config.creatureTypes race.system.creatureType}}</span>
+          {{#each race.system.subTypes as |v|}}
+          <span class="tag">{{v}}</span>
+          {{/each}}
+          {{/if}}
+        </div>
+      </div>
+      <div class="flexrow item-list misc-header-items">
+        {{!-- Rest --}}
+        <div class="actor-quick-actions">
+          <button type="button" class="rest"><i class="fas fa-bed"></i> {{localize "PF1.Rest"}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- Header Attributes --}}
+<div class="attributes flexrow">
+    {{#unless useWoundsAndVigor}}
+    <div class='health-details pseudo-table tooltip'>
+      <h3 class='header'>{{localize "PF1.HitPoints"}}</h3>
+      <ul class='flexrow'>
+        <li class='flexcol current'>
+          <h4 class='sub-header'>{{localize "PF1.Current"}}</h4>
+          <span class="value text-box direct wheel-change allow-relative hp-current-input" name="system.attributes.hp.value" data-dtype="Number">{{system.attributes.hp.value}}</span>
+        </li>
+        <li class='flexcol maximum'>
+          <h4 class='sub-header'>{{localize "PF1.Maximum"}}</h4>
+          <span class="value text-box readonly hp-max">{{system.attributes.hp.max}}</span>
+        </li>
+        <li class='flexcol temp'>
+          <h4 class='sub-header'>{{localize "PF1.TempShort"}}</h4>
+          <span class="value text-box direct allow-relative hp-temp-input" name="system.attributes.hp.temp" data-dtype="Number">{{#if system.attributes.hp.temp}}{{system.attributes.hp.temp}}{{/if}}</span>
+        </li>
+        <li class='flexcol nonlethal'>
+          <h4 class='sub-header'>{{localize "PF1.Nonlethal"}}</h4>
+          <span class="value text-box direct allow-relative hp-nonlethal-input" name="system.attributes.hp.nonlethal" data-dtype="Number">{{#if system.attributes.hp.nonlethal}}{{system.attributes.hp.nonlethal}}{{/if}}</span>
+        </li>
+      </ul>
+      <div class="tooltipcontent">
+        <span class="span2 align-left">@attributes.hp.value :</span><span class="span1 align-right"> {{system.attributes.hp.value}}</span>
+        <span class="span2 align-left">@attributes.hp.max :</span><span class="span1 align-right"> {{system.attributes.hp.max}}</span>
+        <span class="span2 align-left">@attributes.hp.temp :</span><span class="span1 align-right"> {{system.attributes.hp.temp}}</span>
+        <span class="span2 align-left">@attributes.hp.nonlethal :</span><span class="span1 align-right"> {{system.attributes.hp.nonlethal}}</span>
+
+        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.hp.max }}
+      </div>
+    </div>
+    {{else}}
+    {{!-- Wounds & Vigor --}}
+    <div class='health-details flexrow wounds-vigor pseudo-table'>
+      {{!-- Vigor --}}
+      <div class='flexcol vigor tooltip'>
+        <div class="tooltipcontent">
+          <span class="span2 align-left">@attributes.vigor.min :</span><span class="span1 align-right"> {{system.attributes.vigor.min}}</span>
+          <span class="span2 align-left">@attributes.vigor.value :</span><span class="span1 align-right"> {{system.attributes.vigor.value}}</span>
+          <span class="span2 align-left">@attributes.vigor.max :</span><span class="span1 align-right"> {{system.attributes.vigor.max}}</span>
+          <span class="span2 align-left">@attributes.vigor.temp :</span><span class="span1 align-right"> {{system.attributes.vigor.temp}}</span>
+
+          {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.vigor.max }}
+        </div>
+
+        <h3 class='header'>{{localize "PF1.Vigor"}}</h3>
+        <ul class='flexrow'>
+          <li class='flexcol current'>
+            <h4 class='sub-header'>{{localize "PF1.Current"}}</h4>
+            <span class="value text-box direct allow-relative vigor-current-input" name="system.attributes.vigor.value" data-dtype="Number">
+              {{system.attributes.vigor.value}}
+            </span>
+          </li>
+          <li class='flexcol maximum'>
+            <h4 class='sub-header'>{{localize "PF1.Maximum"}}</h4>
+            <span class="value text-box readonly">{{system.attributes.vigor.max}}</span>
+          </li>
+          <li class='flexcol temp'>
+            <h4 class='sub-header'>{{localize "PF1.TempShort"}}</h4>
+            <span class="value text-box direct allow-relative vigor-temp-input" name="system.attributes.vigor.temp" data-dtype="Number">
+              {{#if system.attributes.vigor.temp}}{{system.attributes.vigor.temp}}{{/if}}
+            </span>
+          </li>
+        </ul>
+      </div>
+      {{!-- Wounds --}}
+      <div class='flexcol wounds tooltip'>
+        <div class="tooltipcontent">
+          <span class="span2 align-left">@attributes.wounds.min :</span><span class="span1 align-right"> {{system.attributes.wounds.min}}</span>
+          <span class="span2 align-left">@attributes.wounds.value :</span><span class="span1 align-right"> {{system.attributes.wounds.value}}</span>
+          <span class="span2 align-left">@attributes.wounds.max :</span><span class="span1 align-right"> {{system.attributes.wounds.max}}</span>
+
+          {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.wounds.max }}
+        </div>
+
+        <h3 class='header'>{{localize "PF1.Wounds"}}</h3>
+        <ul class='flexrow'>
+          <li class='flexcol current'>
+            <h4 class='sub-header'>{{localize "PF1.Current"}}</h4>
+            <span class="value text-box direct allow-relative wounds-current-input" name="system.attributes.wounds.value" data-dtype="Number">
+              {{system.attributes.wounds.value}}
+            </span>
+          </li>
+          <li class='flexcol maximum'>
+            <h4 class='sub-header'>{{localize "PF1.Maximum"}}</h4>
+            <span class="value text-box readonly">{{system.attributes.wounds.max}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    {{/unless}}
+    <div class='speed-details flexcol pseudo-table'>
+      <h3 class='header'>{{localize "PF1.Speed"}}</h3>
+      <ul class='flexrow'>
+        <li class='flexcol land tooltip'>
+          <div class="tooltipcontent">
+            <span class="span2 align-left">@attributes.speed.land.total :</span><span class="span1 align-right"> {{convertDistance system.attributes.speed.land.total}}</span>
+            {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.land.base forceLabel=1 isDistance=true skipLabel=0}}
+            
+            {{#if sourceDetails.system.attributes.speed.land.base.length}}
+              {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.land.add skipLabel=1 skipLine=true isDistance=true}}
+            {{else}}
+              {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.land.add skipLabel=0 isDistance=true}}
+            {{/if}}
+          </div>
+          <h4 class='sub-header'>{{localize "PF1.SpeedLand_Short"}}</h4>
+          <span class="value text-box direct speed" name="system.attributes.speed.land.base" data-dtype="Number">
+            {{#if system.attributes.speed.land.total}}{{convertDistance system.attributes.speed.land.total}}{{/if}}
+          </span>
+        </li>
+        <li class='flexcol climb tooltip'>
+          <div class="tooltipcontent">
+            <span class="span2 align-left">@attributes.speed.climb.total :</span><span class="span1 align-right"> {{convertDistance system.attributes.speed.climb.total}}</span>
+            {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.climb.base forceLabel=1 isDistance=true skipLabel=0}}
+            
+            {{#if sourceDetails.system.attributes.speed.climb.base.length}}
+              {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.climb.add skipLabel=1 skipLine=true isDistance=true}}
+            {{else}}
+              {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.climb.add skipLabel=0 isDistance=true}}
+            {{/if}}
+          </div>
+          <h4 class='sub-header'>{{localize "PF1.SpeedClimb_Short"}}</h4>
+          <span class="value text-box direct speed" name="system.attributes.speed.climb.base" data-dtype="Number">
+            {{#if system.attributes.speed.climb.total}}{{convertDistance system.attributes.speed.climb.total}}{{/if}}
+          </span>
+        </li>
+        <li class='flexcol swim tooltip'>
+          <div class="tooltipcontent">
+            <span class="span2 align-left">@attributes.speed.swim.total :</span><span class="span1 align-right"> {{convertDistance system.attributes.speed.swim.total}}</span>
+            {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.swim.base forceLabel=1 isDistance=true skipLabel=0}}
+            
+            {{#if sourceDetails.system.attributes.speed.swim.base.length}}
+              {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.swim.add skipLabel=1 skipLine=true isDistance=true}}
+            {{else}}
+              {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.swim.add skipLabel=0 isDistance=true}}
+            {{/if}}
+          </div>
+
+          <h4 class='sub-header'>{{localize "PF1.SpeedSwim_Short"}}</h4>
+          <span class="value text-box direct speed" name="system.attributes.speed.swim.base" data-dtype="Number">
+            {{#if system.attributes.speed.swim.total}}{{convertDistance system.attributes.speed.swim.total}}{{/if}}
+          </span>
+        </li>
+        <li class='flexcol burrow tooltip'>
+          <div class="tooltipcontent">
+            <span class="span2 align-left">@attributes.speed.burrow.total :</span><span class="span1 align-right"> {{convertDistance system.attributes.speed.burrow.total}}</span>
+            {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.burrow.base forceLabel=1 isDistance=true skipLabel=0}}
+            
+            {{#if sourceDetails.system.attributes.speed.burrow.base.length}}
+              {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.burrow.add skipLabel=1 skipLine=true isDistance=true}}
+            {{else}}
+              {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.burrow.add skipLabel=0 isDistance=true}}
+            {{/if}}
+          </div>
+          <h4 class='sub-header'>{{localize "PF1.SpeedBurrow_Short"}}</h4>
+          <span class="value text-box direct speed" name="system.attributes.speed.burrow.base" data-dtype="Number">
+            {{#if system.attributes.speed.burrow.total}}{{convertDistance system.attributes.speed.burrow.total}}{{/if}}
+          </span>
+        </li>
+        <li class='flexcol fly tooltip'>
+          <div class="tooltipcontent">
+            <span class="span2 align-left">@attributes.speed.fly.total :</span><span class="span1 align-right"> {{system.attributes.speed.fly.total}}</span>
+            <span class="span2 align-left">@attributes.speed.fly.maneuverability :</span><span class="span1 align-right"> "{{system.attributes.speed.fly.maneuverability}}"</span>
+            {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.fly.base forceLabel=1 isDistance=true skipLabel=0}}
+            
+            {{#if sourceDetails.system.attributes.speed.fly.base.length}}
+              {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.fly.add skipLabel=1 skipLine=true isDistance=true}}
+            {{else}}
+              {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.speed.fly.add skipLabel=0 isDistance=true}}
+            {{/if}}
+          </div>
+          <h4 class='sub-header'>{{localize "PF1.SpeedFly_Short"}}</h4>
+          <span class="value text-box direct speed" name="system.attributes.speed.fly.base" data-dtype="Number">
+            {{#if system.attributes.speed.fly.total}}{{convertDistance system.attributes.speed.fly.total}}{{/if}}
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class='flexcol maneuverability-details pseudo-table tooltip'>
+      <h3 class='header'>{{localize "PF1.FlyManeuverabilityShort"}}</h3>
+      <select class='value' name="system.attributes.speed.fly.maneuverability">
+        {{#select system.attributes.speed.fly.maneuverability}}
+        {{#each config.flyManeuverabilities as |name type|}}
+        <option value="{{type}}">{{name}}</option>
+        {{/each}}
+        {{/select}}
+      </select>
+    </div>
+</div>
+
+{{!-- Footer --}}
+
+<section class="subdetails-body">
+  <div class="quick-info">
+    <div class="flexcol">
+      {{!-- Display Defenses --}}
+      <li class="generic-defenses flexrow" data-drag="defenses">
+        <h3>
+          <i class="fa-solid fa-dice-d20 rollable"></i>
+          {{localize "PF1.Defenses"}}
+        </h3>
+      </li>
+
+      {{> "systems/pf1/templates/actors/parts/actor-defenses_tables.hbs"}}
+
+      <table>
+        <thead>
+          <tr>
+            <th class="attribute bab tooltip" data-attribute="bab">
+              <span class="tooltipcontent">
+                <span class="span2 align-left">@attributes.bab.total :</span><span class="span1 align-right"> {{system.attributes.bab.total}}</span>
+                {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.bab.total }}
+              </span>
+
+              <a class="rollable"><i class="fas fa-dice"></i><span>{{localize "PF1.BABAbbr"}}</span></a>
+            </th>
+            <th class="attribute cmb tooltip" data-attribute="cmb">
+              {{> "systems/pf1/templates/actors/parts/actor-cmb.hbs"}}
+
+              <a class="rollable"><i class="fas fa-dice"></i><span>{{localize "PF1.CMBAbbr"}}</span></a>
+            </th>
+            <th class="attribute initiative tooltip" data-attribute="initiative">
+              <span class="tooltipcontent">
+                <span class="span2 align-left">@attributes.init.total :</span><span class="span1 align-right"> {{system.attributes.init.total}}</span>
+                {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.init.total }}
+
+                {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target="misc.init"}}
+              </span>
+
+              <a class="rollable"><i class="fas fa-dice"></i><span>{{localize "PF1.Initiative"}}</span></a>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="bab">
+              {{system.attributes.bab.total}}
+            </td>
+
+            <td class="cmb">
+              {{numberFormat system.attributes.cmb.total decimals=0 sign=true}}
+            </td>
+
+            <td class="initiative">
+              {{system.attributes.init.total}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    {{!-- Quick Actions --}}
+    <h2>{{localize "PF1.QuickActions"}}</h2>
+
+    <ol class="quick-actions">
+      {{#each quickActions as |i|}}
+      <li class="item" data-item-id="{{i.item.id}}" data-type="{{i.item.type}}" data-tooltip="{{i.item.name}}">
+        <img src="{{i.item.img}}">
+        <span class="icon-label">{{i.item.name}}</span>
+        {{#if i.haveAnyCharges}}
+        <charges>
+          <span class="remaining">{{i.charges}}</span>
+          {{#unless i.isSingleUse}}
+          <span class="delimiter">/</span>
+          <span class="max">{{i.maxCharge}}</span>
+          {{/unless}}
+        </charges>
+        {{/if}}
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+
+  {{!-- Classes --}}
+  <div class="classes-body">
+    <h2>{{localize "PF1.ClassPlural"}}</h2>
+
+    <ol class="item-groups-list">
+      <ol class="item-list" data-type="class">
+        <li class="item-list-header flexrow">
+          <div class="item-name">
+            <h3>{{localize "PF1.ItemTypeClass"}}</h3>
+          </div>
+
+          <div class="item-detail item-feat-level"><span>{{localize "PF1.Level"}}</span></div>
+
+          {{#if levelUp}}
+            <div class="item-detail item-button"><span>{{localize "PF1.Action"}}</span></div>
+          {{/if}}
+
+          {{#if owner}}
+          <div class="item-controls">
+            <a class="item-control item-create" data-tooltip="PF1.CreateItem" data-type="class">
+              <i class="fas fa-plus"></i>
+            </a>
+            <a data-action="compendium" data-action-target="classes" data-tooltip="PF1.OpenCompendium"><i class="fas fa-folder-plus"></i></a>
+          </div>
+          {{/if}}
+        </li>
+
+        {{#if classes.length}}
+        {{#each classes as |item iid|}}
+        <li class="item flexrow {{#unless isCharged}}uncharged{{/unless}}" data-item-id="{{item.id}}">
+          <div class="item-name rollable">
+            <div class="item-image" style='background-image: url("{{item.img}}")' data-tooltip="PF1.DisplayInChat"></div>
+            <h4>{{item.name}}</h4>
+          </div>
+
+          <div class="item-detail item-feat-level tooltip">
+            <span>{{localize "PF1.Level"}} {{item.level}}</span>
+            <span class="tooltipcontent"><span class="span2">@classes.{{item.tag}}.level :</span><span class="span1"> {{item.level}}</span></span>
+          </div>
+
+          {{#if ../levelUp}}
+            <div class="item-detail item-button">
+            {{#if item.canLevelUp}}
+              <button type="button" class="level-up" data-item-id="{{item.id}}">{{localize "PF1.LevelUp.Label"}}</button>
+            {{/if}}
+            </div>
+          {{/if}}
+
+          {{#if ../owner}}
+          <div class="item-controls">
+            <a class="item-control item-edit" data-tooltip="PF1.EditItem"><i class="fas fa-edit"></i></a>
+            <a class="item-control item-duplicate" data-tooltip="PF1.DuplicateItem"><i class="fas fa-copy"></i></a>
+            <a class="item-control item-delete" data-tooltip="PF1.DeleteItem"><i class="fas fa-trash"></i></a>
+          </div>
+          {{/if}}
+        </li>
+        {{/each}}
+        {{else}}
+        <div class="flexcol info">
+          <span>
+            {{{labels.firstClass}}}
+          </span>
+        </div>
+        {{/if}}
+      </ol>
+    </ol>
+  </div>
+</section>

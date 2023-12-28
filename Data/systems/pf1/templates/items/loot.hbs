@@ -1,0 +1,130 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Item Sheet Header --}}
+  <header class="sheet-header loot-header flexrow">
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img" />
+
+    <div class="header-details flexrow">
+      {{> "systems/pf1/templates/items/parts/item-name.hbs"}}
+
+      <ul class="summary">
+        <li>
+          {{itemType}}
+        </li>
+        <li>
+          {{#unless showUnidentifiedData}}{{lookup config.lootTypes system.subType}}{{/unless}}
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  {{!-- Item Sheet Navigation --}}
+  <nav class="sheet-navigation tabs" data-group="primary">
+    <a class="item" data-tab="description">{{ localize "PF1.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "PF1.Details" }}</a>
+    {{#unless showUnidentifiedData}}
+    <a class="item" data-tab="changes">{{ localize "PF1.Changes" }}</a>
+    {{/unless}}
+    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
+    {{#unless showUnidentifiedData}}
+    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+    {{/unless}}
+  </nav>
+
+  {{!-- Item Sheet Body --}}
+  <section class="primary-body">
+    {{> "systems/pf1/templates/items/parts/item-description.hbs"}}
+
+    <div class="tab details" data-group="primary" data-tab="details">
+      {{> "systems/pf1/templates/items/parts/item-aura.hbs"}}
+
+      <h3 class="form-header">{{localize "PF1.Details"}}</h3>
+
+      {{!-- Loot Type --}}
+      <div class="form-group">
+        <label>{{localize "PF1.Type"}}</label>
+        <div class="form-fields">
+          <select name="system.subType">
+            {{#select system.subType}}
+            {{#each config.lootTypes as |name type|}}
+            <option value="{{type}}">{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+
+      {{#if (eq system.subType "ammo")}}
+        <div class="form-group">
+          <label>{{localize "PF1.AmmunitionSubtype"}}</label>
+          <div class="form-fields">
+            <select name="system.extraType">
+              {{#select system.extraType}}
+              <option value=""></option>
+              {{#each config.ammoTypes as |name type|}}
+                <option value="{{type}}">{{name}}</option>
+              {{/each}}
+              {{/select}}
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" data-tooltip="PF1.AbundantDesc">
+          <label class="checkbox">
+            <input type="checkbox" name="flags.pf1.abundant" {{checked item.flags.pf1.abundant}} /> {{localize "PF1.Abundant"}}
+          </label>
+        </div>
+
+        {{! Recovery Chance}}
+        {{#unless item.flags.pf1.abundant}}
+        <div class="form-group">
+          <label>{{localize "PF1.RecoverChancePercentage"}}</label>
+          <div class="form-fields">
+            <input type="number" name="system.recoverChance" data-dtype="Number" placeholder="50" min="0" max="100" value="{{system.recoverChance}}">
+          </div>
+        </div>
+        {{/unless}}
+      {{/if}}
+
+      <hr>
+
+      {{!-- Item Size --}}
+      {{> "systems/pf1/templates/items/parts/item-size.hbs" allowAutoResizing=true}}
+
+      {{#if isGM}}
+      <hr>
+      <label class="checkbox">
+        <input type="checkbox" name="system.identified" {{checked system.identified}}/> {{localize "PF1.Identified"}}
+      </label>
+      {{/if}}
+
+      {{!-- Advanced --}}
+      {{#unless showUnidentifiedData}}
+      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+
+      {{! Tags }}
+      {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
+
+      {{! Identifier Tag }}
+      {{~> "systems/pf1/templates/items/parts/item-tag.hbs"}}
+      {{/unless}}
+    </div>
+
+    {{!-- Changes Tab --}}
+    {{#unless showUnidentifiedData}}
+    <div class="tab flexcol" data-group="primary" data-tab="changes">
+      {{~> "systems/pf1/templates/items/parts/item-changes.hbs"}}
+    </div>
+    {{/unless}}
+
+    <div class="tab flexcol" data-group="primary" data-tab="links">
+      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+    </div>
+
+    {{#unless showUnidentifiedData}}
+    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+    </div>
+    {{/unless}}
+  </section>
+</form>

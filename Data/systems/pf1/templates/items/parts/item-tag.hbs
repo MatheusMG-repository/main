@@ -1,0 +1,7 @@
+<div class="form-group">
+  <label>{{localize "PF1.Identifier"}}</label>
+  <input {{#unless system.useCustomTag}}disabled{{/unless}} type="text" name="system.tag" value="{{system.tag}}"
+  placeholder="{{system.tag}}" />
+  <label>{{localize "PF1.Custom"}}</label>
+  <input type="checkbox" name="system.useCustomTag" {{checked system.useCustomTag}} />
+</div>

@@ -1,0 +1,50 @@
+<form autocomplete="off" class="{{#if isGM}}gm{{/if}} {{#if (or migrating.world migrating.modules)}}migrating{{/if}}">
+	<p>{{localize "PF1.Troubleshooter.Prelude"}}</p>
+	<h2>{{localize "PF1.Troubleshooter.Steps.Label"}}</h2>
+	<ol>
+		<li>{{{localize "PF1.Troubleshooter.Steps.Help" link=links.help}}}</li>
+		<li><a href="{{links.faq}}">{{localize "PF1.Troubleshooter.Steps.FAQ"}}</a></li>
+		<li>{{localize "PF1.Troubleshooter.Steps.Log"}}
+		<li>
+			{{localize "PF1.Troubleshooter.Steps.Modules"}}
+			<ul>
+				<li>{{localize "PF1.Troubleshooter.Steps.DisableModules"}}</li>
+
+				<li>{{{localize "PF1.Troubleshooter.Steps.ModuleSuggest" link=links.helpmodule}}}</li>
+			</ul>
+		</li>
+		<li>{{{localize "PF1.Troubleshooter.Steps.Discord" link=links.foundry.discord}}}
+			<ul>
+				<li>{{{localize "PF1.Troubleshooter.Steps.DiscordChannel" channel=links.foundry.channel}}}</li>
+        <li>{{localize "PF1.Troubleshooter.Steps.DiscordHint"}}</li>
+			</ul>
+		</li>
+		<li>{{{localize "PF1.Troubleshooter.Steps.Report" reportlink=links.report}}}</li>
+	</ol>
+
+	<hr>
+
+	<h2>{{localize "PF1.Troubleshooter.Actions.Label"}}</h2>
+
+  <div class="options">
+    <label class="checkbox">
+      <input type="checkbox" name="unlock" {{checked unlockPacks}}>
+      {{localize "PF1.Troubleshooter.Actions.UnlockPacks"}}
+    </label>
+  </div>
+
+	<button type="button" data-action="migrate" data-target="world" {{disabled (or (not isGM) migrating.world)}}>
+		<i class="progress spinner fa-solid fa-spinner"></i>
+		<h3>{{localize "PF1.Troubleshooter.Actions.MigrateWorld"}}</h3>
+		<i class="progress check fa-solid fa-check"></i>
+	</button>
+	<p class="hint">{{{localize "PF1.Troubleshooter.Actions.MigrateWorldHint"}}}</p>
+
+	<button type="button" data-action="migrate" data-target="modules" {{disabled (or (not isGM) migrating.modules)}}>
+		<i class="progress spinner fa-solid fa-spinner"></i>
+		<h3>{{localize "PF1.Troubleshooter.Actions.MigrateModules"}}</h3>
+		<i class="progress check fa-solid fa-check"></i>
+	</button>
+	<p class="hint">{{{localize "PF1.Troubleshooter.Actions.MigrateModulesHint"}}}</p>
+
+</form>

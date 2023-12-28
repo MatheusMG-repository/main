@@ -1,0 +1,65 @@
+<form autocomplete="off" class="flexcol">
+  <header class="sheet-header flexrow">
+    <img class="profile" src="{{data.img}}" data-tooltip="{{data.name}}" data-edit="img">
+    <div class="header-details flexrow">
+      <h1 class="action-name">
+        <input name="name" type="text" value="{{data.name}}" placeholder="{{localize "PF1.ActionName"}}" />
+      </h1>
+    </div>
+  </header>
+
+  <nav class="sheet-navigation tabs" data-group="primary">
+    <a class="item" data-tab="description" data-group="primary">{{localize "PF1.Description"}}</a>
+    <a class="item" data-tab="activation" data-group="primary">{{localize "PF1.Usage"}}</a>
+    <a class="item" data-tab="action" data-group="primary">{{localize "PF1.Action"}}</a>
+    <a class="item" data-tab="misc" data-group="primary">{{localize "PF1.Misc"}}</a>
+    <a class="item" data-tab="conditionals">{{localize "PF1.Conditionals"}}</a>
+  </nav>
+
+  <section class="primary-body">
+
+    {{!-- Action Description --}}
+    <div class="tab details" data-group="primary" data-tab="description">
+      <div class="form-group">
+        <label>{{localize "PF1.Tag"}}</label>
+        <input type="text" placeholder="{{tag}}" value="{{data.tag}}" name="tag" />
+      </div>
+      {{editor descriptionHTML target="description" button=true editable=owner engine="prosemirror" collaborate=false}}
+    </div>
+
+    {{!-- Action Activation --}}
+    <div class="tab details" data-group="primary" data-tab="activation">
+      {{> "systems/pf1/templates/apps/item-action/activation.hbs"}}
+    </div>
+
+    {{!-- Action Effect --}}
+    <div class="tab details" data-group="primary" data-tab="action">
+      {{> "systems/pf1/templates/apps/item-action/action.hbs"}}
+    </div>
+
+    {{!-- Miscellaneous --}}
+    <div class="tab flexcol" data-group="primary" data-tab="misc">
+      <h3 class="form-header">{{localize "PF1.MeasureTemplate"}}</h3>
+
+      {{> "systems/pf1/templates/apps/item-action/template.hbs"}}
+
+      <h3 class="form-header">{{localize "PF1.Misc"}}</h3>
+
+      {{!-- Sound Effect --}}
+      <div class="form-group">
+        <label>{{localize "PF1.SoundEffect"}}</label>
+        <div class="form-fields">
+          <input type="text" name="soundEffect" placeholder="path/audio.wav" value="{{data.soundEffect}}"/>
+          <button type="button" class="file-picker-alt" data-for="soundEffect" data-type="audio">
+            <i class="fas fa-file-import fa-fw"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Conditionals Tab --}}
+    <div class="tab" data-group="primary" data-tab="conditionals">
+      {{> "systems/pf1/templates/apps/item-action/conditionals.hbs"}}
+    </div>
+  </section>
+</form>

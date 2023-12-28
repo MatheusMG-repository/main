@@ -1,0 +1,21 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+    {{#if canEdit.name}}
+    <header>
+        <h1>
+            <input name="name" type="text" value="{{name}}" placeholder="{{localize "PF1.Name"}}" data-tooltip="Name"/>
+        </h1>
+    </header>
+    {{/if}}
+
+    <div class="form-group stacked command">
+        <label>
+          {{localize "PF1.Command"}}
+          <a class="help-browser" data-url="Help/Items/{{#if isScriptCall}}Script-Calls{{else}}Changes#script-operator{{/if}}"><i class="far fa-question-circle"></i></a>
+        </label>
+        <textarea name="command">{{command}}</textarea>
+    </div>
+
+    <footer class="sheet-footer flexrow">
+        <button type="submit"><i class="fas fa-save"></i> {{localize "PF1.Save"}}</button>
+    </footer>
+</form>

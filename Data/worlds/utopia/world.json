@@ -1,0 +1,15 @@
+{
+  "title": "Utopia",
+  "id": "utopia",
+  "system": "pf1",
+  "joinTheme": "default",
+  "nextSession": "2023-11-09T19:30:00.000Z",
+  "coreVersion": "11.315",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.315"
+  },
+  "systemVersion": "9.6",
+  "lastPlayed": "Tue Dec 19 2023 18:05:36 GMT+0000 (Greenwich Mean Time)",
+  "playtime": 8597
+}

@@ -1,0 +1,478 @@
+{
+  "title": "Pathfinder 1e Content",
+  "description": "Contains magic items, non-magical items, feats, traits, class abilities, racial traits, diseases, drugs, special weapon/armor qualities, buffs/debuffs, familiars, eidolons, companions, technology items, magic item, and encounter tables. Additoinally, Includes a huge amount of Rule journals for PF, bios and info for deities, as well as rule for Kingdom Building. Along with a host of other resources. These compendiums are not perfect. Except for buffs, most of them do not contain the appropriate changes to attacks, bonuses, etc. However, the item description and most of the relevant info needed to make work them are included, and Change formulas are slowly being added.",
+  "version": "0.3.7",
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf1",
+        "type": "system",
+        "compatibility": {
+          "minimum": "9.5"
+        }
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "packFolders": [
+    {
+      "name": "Actors",
+      "packs": [
+        "pf-companions",
+        "pf-eidolon-forms",
+        "pf-familiars",
+        "pf-merchants",
+        "pf-traps-and-haunts"
+      ],
+      "color": "#777777"
+    },
+    {
+      "name": "Character Building",
+      "packs": [
+        "pf-buffs",
+        "pf-class-abilities",
+        "pf-companion-features",
+        "pf-eidolon-evolutions",
+        "pf-feats",
+        "pf-racial-traits",
+        "pf-traits",
+        "pf-universal-monster-rules"
+      ],
+      "color": "#996300"
+    },
+    {
+      "name": "Equipment",
+      "packs": [
+        "pf-artifacts",
+        "pf-goods-services",
+        "pf-items",
+        "pf-magicitems",
+        "pf-special-qualities",
+        "pf-tech",
+        "pf-wondrous"
+      ],
+      "color": "#777777"
+    },
+    {
+      "name": "Kingdom Building",
+      "packs": [
+        "kingdom-building-buildings",
+        "kingdom-building-gm",
+        "kingdom-building-player",
+        "kingdom-building-scenes",
+        "kingdom-building-tables"
+      ],
+      "color": "#777777"
+    },
+    {
+      "name": "Roll Tables",
+      "packs": [
+        "pf-encounter-tables",
+        "pf-magic-tables",
+        "pf-tables"
+      ],
+      "color": "#777777"
+    },
+    {
+      "name": "References",
+      "packs": [
+        "pf-deities",
+        "gm-quick-reference",
+        "harrow-deck",
+        "pf-rules"
+      ],
+      "color": "#777777"
+    },
+    {
+      "name": "Miscellaneous",
+      "packs": [
+        "pf-35-content",
+        "pf-elephant",
+        "pf-maladies",
+        "pf-occult-rituals"
+      ],
+      "color": "#777777"
+    }
+  ],
+  "packs": [
+    {
+      "name": "pf-35-content",
+      "label": "3.5e Content",
+      "system": "pf1",
+      "path": "packs/pf-35-content.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-artifacts",
+      "label": "Artifacts",
+      "system": "pf1",
+      "path": "packs/pf-artifacts.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-buffs",
+      "label": "Buffs",
+      "system": "pf1",
+      "path": "packs/pf-buffs.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-class-abilities",
+      "label": "Class Abilities",
+      "system": "pf1",
+      "path": "packs/pf-class-abilities.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-companions",
+      "label": "Animal Companions",
+      "system": "pf1",
+      "path": "packs/pf-companions.db",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-companion-features",
+      "label": "Animal Companion Features",
+      "system": "pf1",
+      "path": "packs/pf-companion-features.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-deities",
+      "label": "Deities",
+      "system": "pf1",
+      "path": "packs/pf-deities.db",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-eidolon-forms",
+      "label": "Eidolon Forms",
+      "system": "pf1",
+      "path": "packs/pf-eidolon-forms.db",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-eidolon-evolutions",
+      "label": "Eidolon Evolutions",
+      "system": "pf1",
+      "path": "packs/pf-eidolon-evolutions.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-encounter-tables",
+      "label": "Encounter Tables",
+      "system": "pf1",
+      "path": "packs/pf-encounter-tables.db",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-elephant",
+      "label": "Elephant in the Room",
+      "system": "pf1",
+      "path": "packs/elephant-in-the-room.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-familiars",
+      "label": "Familiars",
+      "system": "pf1",
+      "path": "packs/pf-familiars.db",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-feats",
+      "label": "Feats",
+      "system": "pf1",
+      "path": "packs/pf-feats.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "gm-quick-reference",
+      "label": "GM Quick Reference",
+      "system": "pf1",
+      "path": "packs/gm-quick-reference.db",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-goods-services",
+      "label": "Goods and Services",
+      "system": "pf1",
+      "path": "packs/pf-goods-services.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "harrow-deck",
+      "label": "Harrow Deck",
+      "system": "pf1",
+      "path": "packs/harrow-deck.db",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-items",
+      "label": "Items",
+      "system": "pf1",
+      "path": "packs/pf-items.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-magicitems",
+      "label": "Magic Items",
+      "system": "pf1",
+      "path": "packs/pf-magic.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-maladies",
+      "label": "Maladies",
+      "system": "pf1",
+      "path": "packs/pf-maladies.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-merchants",
+      "label": "Merchants",
+      "system": "pf1",
+      "path": "packs/pf-merchants.db",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-magic-tables",
+      "label": "Magic Item Tables",
+      "system": "pf1",
+      "path": "packs/pf-magic-tables.db",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-occult-rituals",
+      "label": "Occult Rituals",
+      "system": "pf1",
+      "path": "packs/pf-occult-rituals.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-racial-traits",
+      "label": "Racial Traits",
+      "system": "pf1",
+      "path": "packs/pf-racial-traits.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-rules",
+      "label": "Rules",
+      "system": "pf1",
+      "path": "packs/pf-rules.db",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-special-qualities",
+      "label": "Special Qualities",
+      "system": "pf1",
+      "path": "packs/pf-special-qualities.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-tables",
+      "label": "Tables",
+      "system": "pf1",
+      "path": "packs/pf-tables.db",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-tech",
+      "label": "Technology",
+      "system": "pf1",
+      "path": "packs/pf-technology.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-traits",
+      "label": "Traits",
+      "system": "pf1",
+      "path": "packs/pf-traits.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-traps-and-haunts",
+      "label": "Traps and Haunts",
+      "system": "pf1",
+      "path": "packs/pf-traps-and-haunts.db",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-universal-monster-rules",
+      "label": "Universal Monster Rules",
+      "system": "pf1",
+      "path": "packs/pf-universal-monster-rules.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-wondrous",
+      "label": "Wondrous",
+      "system": "pf1",
+      "path": "packs/pf-wondrous.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "kingdom-building-gm",
+      "label": "Kingdom Building Rules - GM",
+      "system": "pf1",
+      "path": "packs/kingdom-building-gm.db",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "kingdom-building-player",
+      "label": "Kingdom Building Rules - Player",
+      "system": "pf1",
+      "path": "packs/kingdom-building-player.db",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "kingdom-building-scenes",
+      "label": "Kingdom Building - Scenes",
+      "system": "pf1",
+      "path": "packs/kingdom-building-scenes.db",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "kingdom-building-buildings",
+      "label": "Kingdom Building - Buildings",
+      "system": "pf1",
+      "path": "packs/kingdom-building-buildings.db",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "kingdom-building-tables",
+      "label": "Kingdom Building - Tables",
+      "system": "pf1",
+      "path": "packs/kingdom-building-tables.db",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    }
+  ],
+  "authors": [
+    {
+      "name": "Tristan Goucher, with major contributions (see Credits)",
+      "discord": "fairstrides"
+    },
+    {
+      "name": "Michael Bailey",
+      "discord": "fadedshadow589"
+    }
+  ],
+  "id": "pf-content",
+  "url": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content",
+  "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content/-/releases/0.3.7/downloads/module.json",
+  "download": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content/-/releases/0.3.7/downloads/pf1-content.zip",
+  "readme": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content/-/blob/main/README.md",
+  "changelog": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content/-/blob/main/changelog.md"
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Pathfinder 1e Statblock Library",
+  "description": "Contains organized Statblocks for Pathfinder 1e from over 200 Books and 192 PFS Scenarios; including 23 Full Adventure Pathss, NPC Codexes, Tome of Horrors, Occult Bestiary, and various modules (Emerald Spire, Rappan Athuk, Sword of Air, The Lost City of Barakus (FGG)) that can be easily imported using SBC",
+  "version": "0.3.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.306"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf1",
+        "type": "system",
+        "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/foundryvtt-pathfinder1/-/releases/permalink/latest/downloads/system.json",
+        "compatibility": {
+          "minimum": "9",
+          "verified": "9.3"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/welcome-screen.mjs"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "documentTypes": {
+    "JournalEntryPage": {
+      "statblock": {}
+    }
+  },
+  "packFolders": [
+    {
+      "name": "Statblocks",
+      "packs": [
+        "sb-statblocks"
+      ],
+      "color": "#777777"
+    }
+  ],
+  "packs": [
+    {
+      "name": "sb-statblocks",
+      "label": "Statblock Entries",
+      "system": "pf1",
+      "path": "packs/sb-statblocks",
+      "type": "JournalEntry",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "authors": [
+    {
+      "name": "Tristan Goucher, with major contributions (see Credits)",
+      "discord": "fairstrides"
+    },
+    {
+      "name": "Michael Bailey",
+      "discord": "fadedshadow589"
+    }
+  ],
+  "id": "statblock-library",
+  "url": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-library",
+  "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-library/-/releases/permalink/latest/downloads/module.json",
+  "download": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-library/-/releases/0.3.0/downloads/statblock-library.zip",
+  "readme": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-library/-/blob/main/README.md",
+  "changelog": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-library/-/blob/main/changelog.md"
+}

@@ -1,0 +1,22 @@
+# Help
+
+- [Aktoren](Help/Actors)
+  - Aktortypen
+    - [Spielercharaktere (SCs)](Help/Actors/Character)
+    - [Nichtspielercharaktere (NCSs)](Help/Actors/NPC)
+    - [Basic](Help/Actors/Basic)
+- [Gegenstände](Help/Items)
+  - Gegenstandstypen
+    - [Verbrauchsgegenstände](Help/Items/Consumables)
+    - [Behälter](Help/Items/Containers)
+    - [Ausrüstung](Help/Items/Equipment)
+    - [Beute](/Help/Items/Loot)
+    - [Waffen](Help/Items/Weapons)
+    - [Angriffe](Help/Items/Attacks)
+  - Konzepte
+    - [Beschreibungen](Help/Items/Description)
+    - [Änderungen](Help/Items/Changes)
+    - [Flags](Help/Items/Flags)
+    - [Skriptaufrufe](Help/Items/Script-Calls)
+- Speziell
+  - [Formeln](Help/Formulas)

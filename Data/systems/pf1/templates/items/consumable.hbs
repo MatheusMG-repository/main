@@ -1,0 +1,97 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Item Sheet Header --}}
+  <header class="sheet-header flexrow">
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img" />
+
+    <div class="header-details flexrow">
+      {{> "systems/pf1/templates/items/parts/item-name.hbs"}}
+
+      <ul class="summary">
+        <li>
+          {{itemType}}
+        </li>
+        <li>
+          {{#unless showUnidentifiedData}}{{lookup config.consumableTypes system.subType }}{{/unless}}
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  {{!-- Item Sheet Navigation --}}
+  <nav class="sheet-navigation tabs" data-group="primary">
+    <a class="item" data-tab="description">{{ localize "PF1.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "PF1.Details" }}</a>
+    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
+    {{#unless showUnidentifiedData}}
+    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+    {{/unless}}
+  </nav>
+
+  {{!-- Item Sheet Body --}}
+  <section class="primary-body">
+
+    {{!-- Description Tab --}}
+    {{> "systems/pf1/templates/items/parts/item-description.hbs"}}
+
+    {{!-- Details Tab --}}
+    <div class="tab details" data-group="primary" data-tab="details">
+      {{> "systems/pf1/templates/items/parts/item-actions.hbs"}}
+
+      <h3 class="form-header">{{localize "PF1.Properties"}}</h3>
+
+      <div class="form-group stacked">
+        {{#if owner}}
+        <label class="checkbox">
+          <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}/> {{localize "PF1.ShowInQuickbar"}}
+        </label>
+        {{/if}}
+      </div>
+
+      {{> "systems/pf1/templates/items/parts/item-aura.hbs"}}
+
+      <h3 class="form-header">{{localize "PF1.Details"}}</h3>
+
+      {{!-- Consumable Type --}}
+      {{#unless showUnidentifiedData}}
+      <div class="form-group">
+        <label>{{localize "PF1.Type"}}</label>
+        <select name="system.subType">
+          {{#select system.subType}}
+          {{#each config.consumableTypes as |name type|}}
+          <option value="{{type}}">{{name}}</option>
+          {{/each}}
+          {{/select}}
+        </select>
+      </div>
+      {{/unless}}
+
+      {{#if isGM}}
+      <label class="checkbox">
+        <input type="checkbox" name="system.identified" {{checked system.identified}}/> {{localize "PF1.Identified"}}
+      </label>
+      {{/if}}
+
+      {{!-- Advanced --}}
+      {{#unless showUnidentifiedData}}
+      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+
+      {{! Tags }}
+      {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
+
+      {{! Identifier Tag }}
+      {{~> "systems/pf1/templates/items/parts/item-tag.hbs"}}
+      {{/unless}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="links">
+      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+    </div>
+
+    {{#unless showUnidentifiedData}}
+    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+    </div>
+    {{/unless}}
+  </section>
+</form>

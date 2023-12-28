@@ -1,0 +1,102 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Item Sheet Header --}}
+  <header class="sheet-header flexrow">
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img"/>
+
+    <div class="header-details flexrow">
+      <h1 class="item-name">
+        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PF1.ItemName"}}"/>
+      </h1>
+      <div class="item-subtitle">
+        <h4 class="item-type">{{localize "PF1.Race"}}</h4>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Item Sheet Navigation --}}
+  <nav class="sheet-navigation tabs" data-group="primary">
+    <a class="item" data-tab="description">{{ localize "PF1.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "PF1.Details" }}</a>
+    <a class="item" data-tab="changes">{{localize "PF1.Changes"}}</a>
+    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
+    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+  </nav>
+
+  {{!-- Item Sheet Body --}}
+  <section class="primary-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab flexcol" data-group="primary" data-tab="description">
+      {{editor descriptionHTML.identified target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+    </div>
+
+    {{!-- Details Tab --}}
+    <div class="tab details" data-group="primary" data-tab="details">
+
+      {{!-- Race Size --}}
+      {{> "systems/pf1/templates/items/parts/item-size.hbs" allowAutoResizing=false}}
+
+      {{!-- Racial Type --}}
+      <div class="form-group">
+        <label>{{localize "PF1.CreatureType"}}</label>
+        <div class="form-fields">
+          <select name="system.creatureType">
+            {{#select system.creatureType}}
+            {{#each config.creatureTypes as |name type|}}
+            <option value="{{type}}">{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+
+      {{!-- Subtypes --}}
+      <div class="form-group subtypes">
+        <label for="system.subTypes">{{localize "PF1.RaceSubtypePlural"}}</label>
+        <ul class="subtype-list traits-list tag-list">
+          {{#each system.subTypes as |v k|}}
+            <li class="tag {{k}}">{{v}}</li>
+          {{/each}}
+        </ul>
+        <a class="entry-selector" for="system.subTypes" data-fields="{{localize "PF1.RaceSubtypePlural"}}" data-dtypes="String" data-flat="true"><i class="fas fa-edit"></i></a>
+      </div>
+
+      {{!-- Proficiencies --}}
+      {{~> "systems/pf1/templates/items/parts/item-proficiencies.hbs"}}
+
+      <!-- Class Skills -->
+      <h4 class="form-header">{{localize "PF1.ClassSkills"}}</h4>
+
+      <div class="form-group">
+        <ol class="item-list">
+        {{#each skills as |skill key|}}
+        <li class="item flexrow" data-skill="{{key}}">
+          <label class="checkbox skill-cs">
+            <input type="checkbox" name="system.classSkills.{{key}}" {{checked skill.classSkill}} /> {{skill.name}}
+          </label>
+        </li>
+        {{/each}}
+        </ol>
+      </div>
+
+      {{!-- Advanced --}}
+      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+
+      {{! Tags }}
+      {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="changes">
+      {{~> "systems/pf1/templates/items/parts/item-changes.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="links">
+      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+    </div>
+  </section>
+</form>

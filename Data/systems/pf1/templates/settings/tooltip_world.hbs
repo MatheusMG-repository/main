@@ -1,0 +1,87 @@
+<form autocomplete="off">
+    {{!-- Disable Tooltips globally --}}
+    <div class="form-group">
+        <label>{{localize "PF1.TooltipWorldConfigDisable"}}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="disable" data-dtype="Boolean" {{checked data.disable}}/>
+        </div>
+    </div>
+
+    {{!-- Hide Portraits globally --}}
+    <div class="form-group">
+        <label>{{localize "PF1.TooltipWorldConfigHidePortraits"}}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="portrait.hide" data-dtype="Boolean" {{checked data.portrait.hide}}/>
+        </div>
+    </div>
+
+    {{!-- Hide Held items globally --}}
+    <div class="form-group" data-tooltip="PF1.TooltipWorldConfigHideHeld_Hint" data-tooltip-direction="UP">
+        <label>{{localize "PF1.TooltipWorldConfigHideHeld"}}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="hideHeld" data-dtype="Boolean" {{checked data.hideHeld}}/>
+        </div>
+    </div>
+
+    {{!-- Hide Armor globally --}}
+    <div class="form-group" data-tooltip="PF1.TooltipWorldConfigHideArmor_Hint" data-tooltip-direction="UP">
+        <label>{{localize "PF1.TooltipWorldConfigHideArmor"}}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="hideArmor" data-dtype="Boolean" {{checked data.hideArmor}}/>
+        </div>
+    </div>
+
+    {{!-- Hide Buffs globally --}}
+    <div class="form-group" data-tooltip="PF1.TooltipWorldConfigHideBuffs_Hint" data-tooltip-direction="UP">
+        <label>{{localize "PF1.TooltipWorldConfigHideBuffs"}}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="hideBuffs" data-dtype="Boolean" {{checked data.hideBuffs}}/>
+        </div>
+    </div>
+
+    {{!-- Hide Conditions globally --}}
+    <div class="form-group" data-tooltip="PF1.TooltipWorldConfigHideConditions_Hint" data-tooltip-direction="UP">
+        <label>{{localize "PF1.TooltipWorldConfigHideConditions"}}</label>
+        <div class="form-fields">
+            <input type="checkbox" name="hideConditions" data-dtype="Boolean" {{checked data.hideConditions}}/>
+        </div>
+    </div>
+
+    {{!-- Hide Name globally --}}
+    <div class="form-group" data-tooltip="PF1.TooltipWorldConfigNameMinimumPermission_Hint" data-tooltip-direction="UP">
+        <label>{{localize "PF1.TooltipWorldConfigNameMinimumPermission"}}</label>
+        <select data-dtype="Number" name="minimumPermission">
+            {{selectOptions permissions selected=data.minimumPermission localize=true}}
+        </select>
+    </div>
+
+    <div class="form-group" data-tooltip="PF1.TooltipWorldConfigHideActorNameByDisposition_Hint" data-tooltip-direction="UP">
+        <label for="hideActorNameByDisposition">{{localize "PF1.TooltipWorldConfigHideActorNameByDisposition"}}</label>
+        <div class="form-fields">
+            <select data-dtype="Number" name="hideActorNameByDisposition" id="hideActorNameByDisposition">
+                {{#select data.hideActorNameByDisposition}}
+                <option value="-2">{{localize "PF1.Disposition.None"}}</option>
+                <option value="-1">{{localize "PF1.Disposition.Hostile"}}</option>
+                <option value="0">{{localize "PF1.Disposition.Non-Friendly"}}</option>
+                <option value="1">{{localize "PF1.Disposition.All"}}</option>
+                {{/select}}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>{{localize "PF1.TooltipWorldConfigHideActorNameReplacement"}}</label>
+        <div class="form-fields">
+            <input type="text" name="hideActorNameReplacement" value="{{data.hideActorNameReplacement}}"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" name="submit" >
+            <i class="far fa-save"></i> {{localize 'SETTINGS.Save'}}
+        </button>
+        <button type="button" name="reset">
+            <i class="fas fa-undo"></i> {{localize 'SETTINGS.Reset'}}
+        </button>
+    </div>
+</form>

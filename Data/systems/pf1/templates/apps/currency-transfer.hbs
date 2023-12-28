@@ -1,0 +1,74 @@
+<form class="currency-transfer" autocomplete="off" onsubmit="event.preventDefault();">
+    <div class="form-group">
+      <label>{{localize "PF1.CurrencyPlatinumP"}}</label>
+      <div class="form-fields">
+        <button class="cur-range down" type="button" data-tooltip="PF1.None" tabindex="-1">
+          <i class="fas fa-arrow-alt-circle-down"></i>
+        </button>
+        <input type="number" name="pp" placeholder="0" value="{{dest.amount.pp}}" data-dtype="Number">
+        <label>/</label>
+        <span class="text-box readonly">{{source.amount.pp}}</span>
+        <button class="cur-range up" type="button" data-tooltip="PF1.All" tabindex="-1">
+          <i class="fas fa-arrow-alt-circle-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>{{localize "PF1.CurrencyGoldP"}}</label>
+      <div class="form-fields">
+        <button class="cur-range down" type="button" data-tooltip="PF1.None" tabindex="-1">
+          <i class="fas fa-arrow-alt-circle-down"></i>
+        </button>
+        <input type="number" name="gp" placeholder="0" value="{{dest.amount.gp}}" data-dtype="Number">
+        <label>/</label>
+        <span class="text-box readonly">{{source.amount.gp}}</span>
+        <button class="cur-range up" type="button" data-tooltip="PF1.All" tabindex="-1">
+          <i class="fas fa-arrow-alt-circle-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>{{localize "PF1.CurrencySilverP"}}</label>
+      <div class="form-fields">
+        <button class="cur-range down" type="button" data-tooltip="PF1.None" tabindex="-1">
+          <i class="fas fa-arrow-alt-circle-down"></i>
+        </button>
+        <input type="number" name="sp" placeholder="0" value="{{dest.amount.sp}}" data-dtype="Number">
+        <label>/</label>
+        <span class="text-box readonly">{{source.amount.sp}}</span>
+        <button class="cur-range up" type="button" data-tooltip="PF1.All" tabindex="-1">
+          <i class="fas fa-arrow-alt-circle-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>{{localize "PF1.CurrencyCopperP"}}</label>
+      <div class="form-fields">
+        <button class="cur-range down" type="button" data-tooltip="PF1.None" tabindex="-1">
+          <i class="fas fa-arrow-alt-circle-down"></i>
+        </button>
+        <input type="number" name="cp" placeholder="0" value="{{dest.amount.cp}}" data-dtype="Number">
+        <label>/</label>
+        <span class="text-box readonly">{{source.amount.cp}}</span>
+        <button class="cur-range up" type="button" data-tooltip="PF1.All" tabindex="-1">
+          <i class="fas fa-arrow-alt-circle-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="form-group currency-total">
+      <label>{{localize "PF1.Total"}}</label>
+      <div class="form-fields">
+        <label></label>
+        <label>/</label>
+        <label>{{total}} {{localize "PF1.CurrencyGP"}}</label>
+      </div>
+    </div>
+
+    <button type="submit" name="submit">
+        <i class="fas fa-save"></i> {{localize "PF1.CurrencySend"}}
+    </button>
+</form>

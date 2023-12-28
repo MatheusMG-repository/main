@@ -1,0 +1,47 @@
+{{#unless showUnidentifiedData}}
+<h3 class="form-header">{{localize "PF1.Aura"}}</h3>
+
+{{!-- Caster Level --}}
+<div class="form-group" data-tooltip="@item.cl : {{system.cl}}">
+  <label class="header">{{localize "PF1.CasterLevel"}}</label>
+  <div class="form-fields">
+    <input type="text" class="select-on-click" name="system.cl" value="{{system.cl}}" placeholder="{{localize "PF1.CasterLevel"}}" data-dtype="Number"/>
+  </div>
+</div>
+
+{{!-- Aura --}}
+<div class="form-group" data-tooltip="@item.auraStrength : {{auraStrength}}">
+  <label class="header">{{localize "PF1.School"}}</label>
+  {{#if system.aura.custom}}
+  <div class="form-fields">
+    <label class="aura-strength">{{auraStrength_name}}</label>
+    <input type="text" name="system.aura.school" value="{{system.aura.school}}" placeholder="{{localize "PF1.Aura"}}"/>
+    <label class="checkbox">
+      <input type="checkbox" name="system.aura.custom" {{checked system.aura.custom}}/> {{localize "PF1.Custom"}}
+    </label>
+  </div>
+  {{else}}
+  <div class="form-fields">
+    <label class="aura-strength">{{auraStrength_name}}</label>
+    <select name="system.aura.school">
+      {{#select system.aura.school}}
+      <option value=""></option>
+      {{#each config.spellSchools as |name k|}}
+      <option value="{{k}}">{{name}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+    <label class="checkbox">
+      <input type="checkbox" name="system.aura.custom" {{checked system.aura.custom}}/> {{localize "PF1.Custom"}}
+    </label>
+  </div>
+  {{/if}}
+</div>
+
+{{!-- Identify DC --}}
+{{#if isGM}}
+<div class="form-group">
+  <label>{{labels.identify}}</label>
+</div>
+{{/if}}
+{{/unless}}

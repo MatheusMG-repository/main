@@ -1,0 +1,59 @@
+<div class="sbcContainer">
+    <section class="progressBarContainer">
+        <div id="sbcProgressBar" class="progressBar">
+            <div id="sbcProgressValue" class="progressValue"></div>
+        </div>
+    </section>
+    <section class="sbcInputContainer">
+        <div class="sbcHeader">
+            <div>
+                Enter the Statblock you want to convert to an actor
+            </div>
+            <div style="font-size: 8pt;">
+                For Bugs and Issues please visit my <a href="https://github.com/Lavaeolous/PF1-StatBlock-Converter-Module/issues" target="_blank">Github</a>.
+            </div>
+        </div>
+        <div class="sbcTitle">Input</div>
+        <div class="sbcInputArea">
+            <div id="sbcBackdrop">
+                <div id="sbcHighlights" class="sbcHighlights">
+                </div>
+            </div>
+            <textarea class="sbcInput" id="sbcInput" form="statBlockInputForm" placeholder="
+How-to use:
+- Copy &amp; Paste Statblocks into this field, you can edit the statblock after copying.
+- Errors, warnings and information will be shown below to help you identify potential errors in the statblock.
+- If you use multiple custom compendia, loading times may get very long.
+
+Please note:
+- The conversion from statblock text to actor is not perfect.
+- To reproduce the statblock as written, some adjustments (e.g. through buffs or changes to attacks) are added automatically.
+- Statblocks often include typographical errors (e.g. extra linebreaks) or ligatures (e.g. ﬁ instead of fi). You may need to fix these manually.
+- For important NPCs (e.g. named one's, bosses or the BBEG), check them manually after the conversion!
+- Skills are almost never given in full in statblocks, sbc only fills in the ones given." wrap="hard" cols="1" spellcheck="false"></textarea>
+        </div>
+    </section>
+    <section class="sbcPreviewContainer">
+        <div class="sbcHeader sbcButtons">
+            <div class="actorTypeToggle"><span class="sbcActive"></span>
+                <div class="actorTypeToggle-case npc">NPC</div>
+                <div class="actorTypeToggle-case pc">PC</div>
+            </div>
+            <div id="sbcImportButton">
+                <div class="sbcImportButton-case">IMPORT</div>
+            </div>
+            <div id="sbcResetButton">
+                <div class="sbcResetButton-case">RESET</div>
+            </div>
+        </div>
+        <div class="sbcTitle">Preview</div>
+        <div class="sbcPreview" id="sbcPreview">
+        </div>
+    </section>
+</div>
+<section class="sbcErrorContainer">
+    <div class="sbcErrorTitle"></div>
+    <div id="sbcErrors">
+        
+    </div>
+</section>

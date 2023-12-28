@@ -1,0 +1,55 @@
+{
+  "timestamp": 1703798081253,
+  "os": {
+    "platform": "win32",
+    "version": "10.0.19045",
+    "node": "18.14.0",
+    "electron": "24.8.5"
+  },
+  "foundry": {
+    "generation": 11,
+    "build": 315,
+    "channel": "stable",
+    "hosting": null
+  },
+  "modules": {
+    "dd-import": {
+      "version": "3.0.0"
+    },
+    "fa-battlemaps": {
+      "version": "1.0.44"
+    },
+    "lmrtfy": {
+      "version": "3.1.9"
+    },
+    "monks-active-tiles": {
+      "version": "11.17"
+    },
+    "multilevel-tokens": {
+      "version": "1.6.0"
+    },
+    "pf-content": {
+      "version": "0.3.7"
+    },
+    "pf1-statblock-converter": {
+      "version": "4.4.0"
+    },
+    "statblock-library": {
+      "version": "0.3.0"
+    },
+    "tagger": {
+      "version": "1.4.5"
+    }
+  },
+  "systems": {
+    "pf1": {
+      "version": "9.6",
+      "playtime": 8597
+    }
+  },
+  "worlds": {},
+  "playtime": {
+    "total": 8597,
+    "max": 8597
+  }
+}

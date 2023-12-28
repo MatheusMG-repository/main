@@ -1,0 +1,94 @@
+<table class='defenses'>
+    <thead>
+        <tr>
+            {{#each system.attributes.ac as |ac id|}}
+            <th class="tooltip">
+                <div class="tooltipcontent">
+                <span class="span2 align-left">@attributes.ac.{{id}}.total :</span> <span class="span1 align-right">{{ac.total}}</span>
+                <span class="span2 align-left">@armor.type :</span> <span class="span1 align-right">{{../rollData.armor.type}}</span>
+                <span class="span2 align-left">@shield.type :</span> <span class="span1 align-right">{{../rollData.shield.type}}</span>
+
+                {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=ac.sourceDetails plain=true}}
+                {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target="misc.ac"}}
+                </div>
+
+                {{ac.label}}
+            </th>
+            {{/each}}
+            <th class="tooltip">
+                <div class="tooltipcontent">
+                <span class="span2 align-left">@attributes.cmd.total :</span> <span class="span1 align-right">{{system.attributes.cmd.total}}</span>
+
+                {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.cmd.total }}
+                {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target="misc.cmd"}}
+                </div>
+
+                {{localize "PF1.CMDAbbr"}}
+            </th>
+            <th class="tooltip">
+                <div class="tooltipcontent">
+                <span class="span2 align-left">@attributes.cmd.flatFootedTotal :</span> <span class="span1 align-right">{{system.attributes.cmd.flatFootedTotal}}</span>
+
+                {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.cmd.flatFootedTotal }}
+                </div>
+
+                {{localize "PF1.CMDFFAbbr"}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {{#each system.attributes.ac as |ac id|}}
+            <td class='ac-{{id}}'>
+                {{ac.total}}
+            </td>
+            {{/each}}
+            <td class='cmd'>
+                {{system.attributes.cmd.total}}
+            </td>
+            <td class='cmd-ff'>
+                {{system.attributes.cmd.flatFootedTotal}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            {{#each system.attributes.savingThrows as |savingThrow id|}}
+            <th class="saving-throw tooltip" data-savingthrow="{{id}}" data-draggable="true">
+                <div class="tooltipcontent">
+                <span class="span2 align-left">@attributes.savingThrows.{{id}}.total :</span> <span class="span1 align-right">{{savingThrow.total}}</span>
+
+                {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=savingThrow.sourceDetails plain=true}}
+
+                {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target=(concat "savingThrow." id)}}
+                </div>
+
+                <a class="rollable"><i class="fas fa-dice"></i><span>{{savingThrow.label}}</span></a>
+            </th>
+            {{/each}}
+            <th class="tooltip">
+                <div class="tooltipcontent">
+                <span class="span2 align-left">@attributes.sr.total :</span> <span class="span1 align-right">{{system.attributes.sr.total}}</span>
+
+                {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.sr.total }}
+
+                {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target="misc.sr"}}
+                </div>
+
+                {{localize "PF1.SpellResistance"}}
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            {{#each system.attributes.savingThrows as |savingThrow id|}}
+            <td class='{{id}}'>{{numberFormat savingThrow.total decimals=0 sign=true}}</td>
+            {{/each}}
+            <td class='sr'>{{system.attributes.sr.total}}</td>
+        </tr>
+    </tbody>
+</table>

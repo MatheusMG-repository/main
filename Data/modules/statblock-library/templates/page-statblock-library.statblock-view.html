@@ -1,0 +1,9 @@
+{{#if data.title.show}}
+<header class="journal-page-header">
+    <h{{data.title.level}}>{{data.name}}</h{{data.title.level}}>
+</header>
+{{/if}}
+<section class="journal-page-content">
+    <button id="importStatblock">Import {{data.name}}</button>
+    <div id="statblockContent">{{{editor.content}}}</div>
+</section>

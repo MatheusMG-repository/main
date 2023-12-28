@@ -1,0 +1,58 @@
+import { sbcUtils } from "../../sbcUtils.js";
+import { sbcData, sbcError } from "../../sbcData.js";
+import { sbcConfig } from "../../sbcConfig.js";
+import { ParserBase } from "../base-parser.js";
+
+// Parse Languages
+export class LanguageParser extends ParserBase {
+
+  async parse(value, line) {
+    sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as languages")
+
+    try {
+      let systemSupportedLanguages = Object.values(CONFIG["PF1"].languages).map(x => x.toLowerCase())
+      let patternLanguages = new RegExp("(" + systemSupportedLanguages.join("\\b|\\b") + ")", "gi")
+
+      let languages = value.split(/[,;]/g)
+      let specialLanguages = []
+      let languageContext = ""
+
+      for (let i=0; i<languages.length; i++) {
+        let language = languages[i].trim()
+        let checkForLanguageContext = sbcUtils.parseSubtext(language)
+
+        // Check for language context information and add this to the custom language field if available
+        if (checkForLanguageContext.length > 1)
+        {
+          language = checkForLanguageContext[0]
+          languageContext = checkForLanguageContext[1]
+
+          sbcData.characterData.actorData.update({ "system.traits.languages.custom": sbcData.characterData.actorData.system.traits.languages.custom + languageContext + ";" })
+        }
+
+        if (language.search(patternLanguages) !== -1) {
+          let languageKey = sbcUtils.getKeyByValue(CONFIG["PF1"].languages, language)
+          const languages = [...sbcData.characterData.actorData.system.traits.languages.value, languageKey];
+          sbcData.characterData.actorData.update({"system.traits.languages.value": languages})
+        } else {
+          specialLanguages.push(language)
+        }
+      }
+
+      if (specialLanguages.length > 0) {
+        sbcData.characterData.actorData.update({ "system.traits.languages.custom": sbcData.characterData.actorData.system.traits.languages.custom + specialLanguages.join(";") })
+      }
+
+      // Remove trailing semicolons
+      sbcData.characterData.actorData.update({ "system.traits.languages.custom": sbcData.characterData.actorData.system.traits.languages.custom.replace(/(;)$/, "") })
+
+      return true
+    } catch (err) {
+      let errorMessage = "Failed to parse " + value + " as languages."
+      let error = new sbcError(1, "Parse/Statistics", errorMessage, line)
+      sbcData.errors.push(error)
+      return false
+    }
+  }
+
+}

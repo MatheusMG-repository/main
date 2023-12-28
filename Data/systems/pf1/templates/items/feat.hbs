@@ -1,0 +1,158 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Item Sheet Header --}}
+  <header class="sheet-header flexrow">
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img"/>
+
+    <div class="flexrow header-details">
+      <h1 class="item-name">
+        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PF1.ItemName"}}"/>
+      </h1>
+
+      <ul class="summary">
+        <li>
+          {{labels.featType}}
+
+          {{#if (and (eq system.subType "trait") labels.traitType)}}
+          [{{labels.traitType}}]
+          {{/if}}
+
+          {{#if labels.abilityType}}
+          ({{labels.abilityType}})
+          {{/if}}
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="system.disabled" {{checked system.disabled}}> {{localize "PF1.Disabled"}}
+          </label>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  {{!-- Item Sheet Navigation --}}
+  <nav class="sheet-navigation tabs" data-group="primary">
+    <a class="item" data-tab="description">{{ localize "PF1.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "PF1.Details" }}</a>
+    <a class="item" data-tab="changes">{{ localize "PF1.Changes" }}</a>
+    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
+    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+  </nav>
+
+  {{!-- Item Sheet Body --}}
+  <section class="primary-body">
+
+    {{!-- Description Tab --}}
+    {{> "systems/pf1/templates/items/parts/item-description.hbs"}}
+
+    {{!-- Details Tab --}}
+    <div class="tab details" data-group="primary" data-tab="details">
+      {{> "systems/pf1/templates/items/parts/item-actions.hbs"}}
+
+      <h3 class="form-header">{{localize "PF1.Details"}}</h3>
+
+      {{!-- Feat Type --}}
+      <div class="form-group select">
+        <label>{{localize "PF1.Type"}}</label>
+        <div class="form-fields">
+          <select name="system.subType" value="{{system.subType}}">
+            {{#select system.subType}}
+            {{#each config.featTypes as |type a|}}
+            <option value="{{a}}">{{type}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+
+          <select name="system.abilityType" value="{{system.abilityType}}">
+            {{#select system.abilityType}}
+            <option value="none"></option>
+            {{#each config.abilityTypes as |type a|}}
+            <option value="{{a}}">{{localize type.short}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+
+      {{! Trait Type }}
+      {{#if (eq system.subType "trait")}}
+      <div class="form-group select">
+        <label>{{localize "PF1.TraitType"}}</label>
+        <select name="system.traitType">
+          <option value=""></option>
+          {{selectOptions config.traitTypes selected=system.traitType}}
+        </select>
+      </div>
+      {{/if}}
+
+      {{!-- Feat Tags --}}
+      <div class="form-group stacked">
+        {{#if isClassFeature}}
+        <div class="data-selector">
+          <a class="entry-selector" for="system.associations.classes" data-fields="{{localize "PF1.ClassPlural"}}" data-flat="true" data-dtypes="String"><i class="fas fa-edit"></i></a>
+          <label for="system.associations.classes">{{localize "PF1.ClassPlural"}}</label>
+        </div>
+        {{/if}}
+      </div>
+
+      {{#if isTemplate}}
+      <div class="form-group">
+        <label>{{localize "PF1.CROffset"}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.crOffset" class="formula" value="{{system.crOffset}}" placeholder="{{localize "PF1.Formula"}}" />
+        </div>
+      </div>
+      {{/if}}
+
+      <div class="form-group stacked">
+        {{#if owner}}
+        {{#unless isTemplate}}
+        <label class="checkbox">
+          <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}/> {{localize "PF1.ShowInQuickbar"}}
+        </label>
+        {{/unless}}
+        {{/if}}
+      </div>
+
+      {{!-- Proficiencies --}}
+      {{~> "systems/pf1/templates/items/parts/item-proficiencies.hbs"}}
+
+      <!-- Class Skills -->
+      <h4 class="form-header">{{localize "PF1.ClassSkills"}}</h4>
+
+      <div class="form-group">
+        <ol class="item-list">
+        {{#each skills as |skill key|}}
+        <li class="item flexrow" data-skill="{{key}}">
+          <label class="checkbox skill-cs">
+            <input type="checkbox" name="system.classSkills.{{key}}" {{checked skill.classSkill}} /> {{skill.name}}
+          </label>
+        </li>
+        {{/each}}
+        </ol>
+      </div>
+
+      {{!-- Advanced --}}
+      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+
+      {{! Tags }}
+      {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
+
+      {{! Identifier Tag }}
+      {{~> "systems/pf1/templates/items/parts/item-tag.hbs"}}
+    </div>
+
+    {{!-- Changes Tab --}}
+    <div class="tab flexcol" data-group="primary" data-tab="changes">
+      {{~> "systems/pf1/templates/items/parts/item-changes.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="links">
+      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+    </div>
+  </section>
+</form>

@@ -1,0 +1,134 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Item Sheet Header --}}
+  <header class="sheet-header flexrow">
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img"/>
+
+    <div class="header-details flexrow">
+      <h1 class="item-name">
+        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PF1.ItemName"}}"/>
+      </h1>
+
+      <div class="item-subtitle">
+        <h4 class="item-type">{{itemType}}</h4>
+        <span class="item-status">{{itemStatus}}</span>
+      </div>
+
+      <ul class="summary">
+        <li>
+          {{lookup config.attackTypes system.subType }}
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  {{!-- Item Sheet Navigation --}}
+  <nav class="sheet-navigation tabs" data-group="primary">
+    <a class="item" data-tab="description">{{ localize "PF1.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "PF1.Details" }}</a>
+    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
+    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+  </nav>
+
+  {{!-- Item Sheet Body --}}
+  <section class="primary-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab flexcol" data-group="primary" data-tab="description">
+      {{editor descriptionHTML.identified target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+    </div>
+
+    {{!-- Details Tab --}}
+    <div class="tab details" data-group="primary" data-tab="details">
+      {{> "systems/pf1/templates/items/parts/item-actions.hbs"}}
+
+      <h3 class="form-header">{{localize "PF1.Properties"}}</h3>
+
+      <div class="form-group stacked">
+        <label class="checkbox">
+          <input type="checkbox" name="system.proficient" {{checked system.proficient}}/> {{localize "PF1.Proficient"}}
+        </label>
+
+        {{#unless isNaturalAttack}}
+        <label class="checkbox">
+          <input type="checkbox" name="system.masterwork" {{checked system.masterwork}}/> {{localize "PF1.Masterwork"}}
+        </label>
+        {{/unless}}
+
+        {{#if owner}}
+        <label class="checkbox">
+          <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}/> {{localize "PF1.ShowInQuickbar"}}
+        </label>
+        {{/if}}
+
+        {{#unless isNaturalAttack}}
+        <label class="checkbox">
+          <input type="checkbox" name="system.broken" {{checked system.broken}}/> {{localize "PF1.Broken"}}
+        </label>
+        {{/unless}}
+      </div>
+
+      <div class="form-group">
+        <label>{{localize "PF1.EnhancementBonus"}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.enh" value="{{system.enh}}" data-dtype="Number" placeholder="0"/>
+        </div>
+      </div>
+
+      <h3 class="form-header">{{localize "PF1.AttackDetails"}}</h3>
+
+      {{!-- Attack Type --}}
+      <div class="form-group">
+        <label>{{localize "PF1.AttackType"}}</label>
+        <div class="form-fields">
+          <select name="system.subType">
+            {{#select system.subType}}
+            {{#each config.attackTypes as |name type|}}
+            <option value="{{type}}">{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+
+      {{!-- Weapon Hold Type --}}
+      {{#unless isNaturalAttack}}
+      <div class="form-group">
+        <label>{{localize "PF1.Held"}}</label>
+        <div class="form-fields">
+          <select name="system.held">
+            {{#select system.held}}
+            {{#each config.weaponHoldTypes as |name type|}}
+            <option value="{{type}}">{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+      {{/unless}}
+
+      {{!-- Base Types --}}
+      {{> "systems/pf1/templates/items/parts/item-base-types.hbs"}}
+
+      {{!-- Weapon Groups --}}
+      {{> "systems/pf1/templates/items/parts/item-weapon-groups.hbs"}}
+
+      {{!-- Advanced --}}
+      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+
+      {{! Tags }}
+      {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
+
+      {{! Identifier Tag }}
+      {{~> "systems/pf1/templates/items/parts/item-tag.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="links">
+      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+    </div>
+  </section>
+</form>

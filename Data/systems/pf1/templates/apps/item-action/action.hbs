@@ -1,0 +1,331 @@
+<h3 class="form-header">{{localize "PF1.Properties"}}</h3>
+{{!-- Flags --}}
+<div class="form-group stacked">
+  {{!-- Nonlethal --}}
+  <label class="checkbox">
+    <input type="checkbox" name="nonlethal" {{checked data.nonlethal}}/> {{localize "PF1.Nonlethal"}}
+  </label>
+
+  {{!-- Primary Attack --}}
+  {{#if isNaturalAttack}}
+  <label class="checkbox">
+    <input type="checkbox" name="naturalAttack.primaryAttack" {{checked data.naturalAttack.primaryAttack}}/> {{localize "PF1.PrimaryAttack"}}
+  </label>
+  {{/if}}
+
+  {{!-- Touch --}}
+  <label class="checkbox">
+    <input type="checkbox" name="touch" {{checked data.touch}}/> {{localize "PF1.TouchAttackShort"}}
+  </label>
+</div>
+
+{{#if (or (eq item.type "attack") (eq item.type "weapon"))}}
+<div class="form-group">
+  <label>{{localize "PF1.EnhancementBonusOverride"}}</label>
+  <div class="form-fields">
+    <input type="number" min="0" step="1" name="enh.value" value="{{data.enh.value}}" data-dtype="Number" placeholder="{{itemEnh}}" />
+  </div>
+</div>
+{{/if}}
+
+{{!-- Action Type --}}
+<div class="form-group select">
+  <label>{{localize "PF1.ActionType"}}</label>
+  <div class="form-fields">
+    <select name="actionType">
+      {{#select data.actionType}}
+      <option value=""></option>
+      {{#each config.itemActionTypes as |name type|}}
+      <option value="{{type}}">{{name}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+  </div>
+</div>
+
+{{#if data.actionType}}
+{{#if hasAttackRoll}}
+{{!-- Attack Name --}}
+<h3 class="form-header">{{localize "PF1.Attack"}}</h3>
+<div class="form-group">
+  <label>{{localize "PF1.AttackName"}}</label>
+  <div class="form-fields">
+    <input type="text" name="attackName" value="{{data.attackName}}" placeholder="{{localize "PF1.Attack"}}" />
+  </div>
+</div>
+
+{{!-- Attack Roll Bonus --}}
+<div class="form-group">
+  <label>{{localize "PF1.AttackRollBonus"}}</label>
+  <div class="form-fields">
+    <input class="formula" type="text" name="attackBonus" value="{{data.attackBonus}}" placeholder="{{localize "PF1.Formula"}}"/>
+  </div>
+</div>
+
+{{#if isNaturalAttack}}
+<div class="form-group">
+  <label>{{localize "PF1.SecondaryAttackModifier"}}</label>
+  <div class="form-fields">
+    <input type="text" class="formula" name="naturalAttack.secondary.attackBonus" value="{{data.naturalAttack.secondary.attackBonus}}" data-dtype="String" placeholder="{{localize "PF1.Formula"}}" />
+  </div>
+</div>
+{{/if}}
+
+{{#unless isCombatManeuver}}
+<div class="form-group">
+  <label>{{localize "PF1.CriticalThreatRange"}}</label>
+  <div class="form-fields">
+    <input type="text" name="ability.critRange" value="{{data.ability.critRange}}" data-dtype="Number"/>
+  </div>
+</div>
+
+<div class="form-group">
+  <label>{{localize "PF1.CriticalMultiplier"}}</label>
+  <div class="form-fields">
+    <input type="text" name="ability.critMult" value="{{data.ability.critMult}}" data-dtype="Number"/>
+  </div>
+</div>
+<div class="form-group">
+  <label>{{localize "PF1.CriticalConfirmBonus"}}</label>
+  <div class="form-fields">
+    <input class="formula" type="text" name="critConfirmBonus" value="{{data.critConfirmBonus}}" placeholder="{{localize "PF1.Formula"}}"/>
+  </div>
+</div>
+{{/unless}}
+
+{{!-- Attack Ability --}}
+<div class="form-group select">
+  <label>{{localize "PF1.AttackAbility"}}</label>
+  <div class="form-fields">
+    <select name="ability.attack">
+      {{#select data.ability.attack}}
+      <option value=""></option>
+      {{#each config.abilities as |ability a|}}
+      <option value="{{a}}">{{ability}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+  </div>
+</div>
+{{/if}}
+
+{{#if hasAttackRoll}}
+<h3 class="form-header">{{localize "PF1.ExtraAttacks"}}</h3>
+<ol class="attack-parts form-group">
+  {{#each data.attackParts as |part a|}}
+  <li class="attack-part flexrow" data-attack-part="{{a}}">
+    <input class="formula" type="text" name="attackParts.{{a}}.0" placeholder="{{localize "PF1.AttackBonusFormula"}}" value="{{lookup this "0"}}"/>
+    <input type="text" name="attackParts.{{a}}.1" placeholder="{{localize "PF1.Name"}}" value="{{lookup this "1"}}"/>
+    <a class="attack-control delete-attack"><i class="fas fa-trash"></i></a>
+  </li>
+  {{/each}}
+  <li class="attack-part flexrow"><a class="attack-control add-attack"><i class="fas fa-plus"></i> {{localize "PF1.AddAttack"}}</a></li>
+</ol>
+<hr>
+
+{{!-- Formulaic Extra Attacks --}}
+<h4 class="attack-header">{{localize 'PF1.FormulaicExtraAttacks'}}</h4>
+<div class="formulaic-attacks-box">
+  <div class="form-group">
+    <label>{{localize 'PF1.FormulaicAttacksCount'}}</label>
+    <div class="form-fields">
+      <input type="text" class="formulaic-attacks formula" name="formulaicAttacks.count.formula" value="{{data.formulaicAttacks.count.formula}}" data-dtype="String" placeholder="e.g. ceil(@attributes.bab.total / 5) - 1" />
+      {{!-- to avoid disappearance of .value --}}
+      <input type="text" disabled class="formula-result small" name="formulaicAttacks.count.value" value="{{data.formulaicAttacks.count.value}}" data-tooltip="PF1.FormulaResult" placeholder="0" data-dtype="Number" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label>{{localize 'PF1.AttackBonusFormula'}}</label>
+    <div class="form-fields">
+      <input type="text" class="formula" name="formulaicAttacks.bonus.formula" value="{{data.formulaicAttacks.bonus.formula}}" data-dtype="String" placeholder="e.g. @formulaicAttack * -5" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label>{{localize 'PF1.AttackName'}}</label>
+    <div class="form-fields">
+      <input type="text" name="formulaicAttacks.label" value="{{data.formulaicAttacks.label}}" data-tooltip="PF1.FormulaAttackHint" data-dtype="String" placeholder="{{localize 'PF1.FormulaAttack'}}" />
+    </div>
+  </div>
+</div>
+{{/if}}
+
+{{!-- Damage Ability --}}
+<h3 class="form-header">{{localize "PF1.Damage"}}</h3>
+<div class="form-group select">
+  <label>{{localize "PF1.DamageAbility"}}</label>
+  <div class="form-fields">
+    <select name="ability.damage">
+      {{#select data.ability.damage}}
+      <option value=""></option>
+      {{#each config.abilities as |ability a|}}
+      <option value="{{a}}">{{ability}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+    <select name="ability.damageMult" data-dtype="Number">
+      {{selectOptions config.abilityDamageMultipliers selected=data.ability.damageMult nameAttr="value" labelAttr="label"}}
+    </select>
+  </div>
+</div>
+
+{{#if isNaturalAttack}}
+<div class="form-group">
+  <label>{{localize "PF1.SecondaryAttackAbilityMultiplier"}}</label>
+  <div class="form-fields">
+    <label style="flex:1;"><!-- Ensure Alignment --></label>
+    <select name="naturalAttack.secondary.damageMult" data-dtype="Number">
+      {{selectOptions config.abilityDamageMultipliers selected=data.naturalAttack.secondary.damageMult nameAttr="value" labelAttr="label"}}
+    </select>
+  </div>
+</div>
+{{/if}}
+
+{{!-- Damage Formula --}}
+<div class="damage" data-key="damage.parts">
+  <h4 class="damage-header">
+    {{#unless isHealing }}{{localize "PF1.DamageFormula"}}{{ else }}{{localize "PF1.HealingFormula"}}{{/unless}}
+  </h4>
+  <ol class="damage-parts form-group tooltip">
+    {{#each data.damage.parts as |part i| }}
+    <li class="damage-part flexrow" data-damage-part="{{i}}">
+      <input class="damage-formula formula" type="text" name="damage.parts.{{i}}.formula" placeholder="{{#unless isHealing }}{{localize "PF1.DamageFormula"}}{{ else }}{{localize "PF1.HealingFormula"}}{{/unless}}" value="{{formula}}"/>
+      {{> "systems/pf1/templates/internal/damage-type-visual.hbs" data=type name=(concat "damage.parts." i ".type") damageTypes=@root.damageTypes}}
+      <a class="damage-control delete-damage"><i class="fas fa-trash"></i></a>
+    </li>
+    {{/each}}
+    <li class="damage-part flexrow"><a class="damage-control add-damage"><i class="fas fa-plus"></i>
+        {{#unless isHealing}}{{localize "PF1.AddDamage"}}{{else}}{{localize "PF1.AddHealing"}}{{/unless}}
+      </a></li>
+  </ol>
+</div>
+
+{{#unless isCombatManeuver}}
+{{!-- Critical Damage Bonus Formula --}}
+{{#if hasCritDamage}}
+<hr>
+<div class="damage" data-key="damage.critParts">
+  <h4 class="damage-header">
+    {{#unless isHealing }}{{localize "PF1.CritDamageBonusFormula"}}{{ else }}{{localize "PF1.CritHealingBonusFormula"}}{{/unless}}
+  </h4>
+  <ol class="damage-parts form-group tooltip">
+    {{#each data.damage.critParts as |part i| }}
+    <li class="damage-part flexrow" data-damage-part="{{i}}">
+      <input class="damage-formula formula" type="text" name="damage.critParts.{{i}}.formula" placeholder="{{#unless isHealing }}{{localize "PF1.DamageFormula"}}{{ else }}{{localize "PF1.HealingFormula"}}{{/unless}}" value="{{formula}}"/>
+      {{> "systems/pf1/templates/internal/damage-type-visual.hbs" data=type name=(concat "damage.critParts." i ".type") damageTypes=@root.damageTypes}}
+      <a class="damage-control delete-damage"><i class="fas fa-trash"></i></a>
+    </li>
+    {{/each}}
+    <li class="damage-part flexrow"><a class="damage-control add-damage"><i class="fas fa-plus"></i> {{localize "PF1.AddCriticalDamage"}}</a></li>
+  </ol>
+</div>
+{{/if}}
+
+{{!-- Non-critical Damage Bonus Formula --}}
+{{#if hasNonCritDamage}}
+<hr>
+<div class="damage" data-key="damage.nonCritParts">
+  <h4 class="damage-header">
+    {{#unless isHealing }}{{localize "PF1.NonCritDamageBonusFormula"}}{{ else }}{{localize "PF1.NonCritHealingBonusFormula"}}{{/unless}}
+  </h4>
+  <ol class="damage-parts form-group">
+    {{#each data.damage.nonCritParts as |part i| }}
+    <li class="damage-part flexrow" data-damage-part="{{i}}">
+      <input class="damage-formula formula" type="text" name="damage.nonCritParts.{{i}}.formula" placeholder="{{#unless isHealing }}{{localize "PF1.DamageFormula"}}{{ else }}{{localize "PF1.HealingFormula"}}{{/unless}}" value="{{formula}}"/>
+      {{> "systems/pf1/templates/internal/damage-type-visual.hbs" data=type name=(concat "damage.nonCritParts." i ".type") damageTypes=@root.damageTypes}}
+      <a class="damage-control delete-damage"><i class="fas fa-trash"></i></a>
+    </li>
+    {{/each}}
+    <li class="damage-part flexrow"><a class="damage-control add-damage"><i class="fas fa-plus"></i> {{localize "PF1.AddNonCriticalDamage"}}</a></li>
+  </ol>
+</div>
+{{/if}}
+
+{{!-- Power Attack/Deadly Aim properties --}}
+{{#if hasAttackRoll}}
+<h3 class="form-header">{{localize "PF1.PowerAttack"}}/{{localize "PF1.DeadlyAim"}}</h3>
+<div class="form-group">
+  <label>{{localize "PF1.Multiplier"}}</label>
+  <div class="form-fields">
+    <input type="number" name="powerAttack.multiplier" value="{{data.powerAttack.multiplier}}" data-dtype="Number" placeholder="{{localize "PF1.Held"}}" />
+  </div>
+</div>
+
+<div class="form-group">
+  <label>{{localize "PF1.DamageBonus"}}</label>
+  <div class="form-fields">
+    <input type="number" name="powerAttack.damageBonus" value="{{data.powerAttack.damageBonus}}" data-dtype="Number" />
+  </div>
+</div>
+
+<div class="form-group">
+  <label>{{localize "PF1.CriticalMultiplier"}}</label>
+  <div class="form-fields">
+    <input type="number" name="powerAttack.critMultiplier" value="{{data.powerAttack.critMultiplier}}" data-dtype="Number" />
+  </div>
+</div>
+{{/if}}
+{{/unless}}
+
+{{!-- Saving Throw --}}
+<h3 class="form-header">{{localize "PF1.SavingThrow"}}</h3>
+<div class="form-group input-select">
+  <label>{{#unless isSpell}}{{localize "PF1.DCFormula"}}{{else}}{{localize "PF1.DCOffsetFormula"}}{{/unless}}</label>
+  <div class="form-fields">
+    <input class="formula" type="text" name="save.dc" value="{{data.save.dc}}" placeholder="0"/>
+    <select name="save.type">
+      {{#select data.save.type}}
+      <option value=""></option>
+      {{#each config.savingThrows as |save type|}}
+      <option value="{{type}}">{{save}}</type>
+      {{/each}}
+      {{/select}}
+    </select>
+  </div>
+</div>
+
+<div class="form-group input-select">
+  <label>{{localize "PF1.SavingThrowEffect"}}</label>
+  <div class="form-fields">
+    <input type="text" name="save.description" value="{{data.save.description}}" placeholder="{{localize "PF1.DCDescriptionExample"}}"/>
+  </div>
+</div>
+
+{{!-- Attack Notes --}}
+<h3 class="form-header">{{localize "PF1.Notes"}}</h3>
+{{#if hasAttackRoll}}
+<div class="form-group stacked notes attack" data-name="attackNotes">
+  <table>
+    <thead>
+      <th>{{localize "PF1.AttackNotes"}}</th>
+      <th class="entry-control"><a class="add-entry"><i class="fas fa-plus"></i></a></th>
+    </thead>
+    <tbody>
+      {{#each data.attackNotes as |entry index|}}
+      <tr class="entry" data-index="{{index}}">
+        <td class="nocenter"><input type="text" data-index="{{k}}" value="{{entry}}" name="attackNotes.{{index}}" /></td>
+        <td class="entry-control"><a class="delete-entry"><i class="fas fa-minus"></i></a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+{{/if}}
+
+{{!-- Effect Notes --}}
+<div class="form-group stacked notes effect" data-name="effectNotes">
+  <table>
+    <thead>
+      <th>{{localize "PF1.EffectNotes"}}</th>
+      <th class="entry-control"><a class="add-entry"><i class="fas fa-plus"></i></a></th>
+    </thead>
+    <tbody>
+      {{#each data.effectNotes as |entry index|}}
+      <tr class="entry" data-index="{{index}}">
+        <td class="nocenter"><input type="text" data-index="{{k}}" value="{{entry}}" name="effectNotes.{{index}}" /></td>
+        <td class="entry-control"><a class="delete-entry"><i class="fas fa-minus"></i></a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+{{/if}}

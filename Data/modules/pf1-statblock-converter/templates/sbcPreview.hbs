@@ -1,0 +1,117 @@
+<div style="width: 100%; background-color: #ffe9c7; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); columns: 2 150px">
+    <hr style="margin-left: 0; margin-top:-2px; width: 100%; height: 4px; background-color: #e0a100; border: 1px solid #000; column-span: all;" />
+    <div style="padding: 5px;">
+        <h1 style="border: none; font-family: 'Nodesto', 'Signika', 'Palatino Linotype', serif; color: #7a0800;">{{actor.name}} {{#if notes.base.cr}} CR {{notes.base.cr}}{{/if}} {{#if notes.base.mr}}/MR {{notes.base.mr}}{{/if}}</h1>
+        {{#if notes.base.shortDescription}}<div><em>{{notes.base.shortDescription}}</em></div>{{/if}}
+        <!-- BASE -->
+        <hr style="margin-left: 0; width: 275px; height: 0; border-style: solid; border-width: 2px 0 2px 275px; border-color: transparent transparent transparent #7a0800;" />
+        <div style="break-inside: avoid;">
+            {{#if notes.base.source}}<strong>Source: </strong>{{notes.base.source}}<br/>{{/if}}
+            {{#if notes.base.xp}}<strong>XP {{notes.base.xp}}</strong><br/>{{/if}}
+            
+            {{#if actor.system.details.gender}}{{actor.system.details.gender}} {{/if}} 
+            {{#if notes.base.template}}{{notes.base.template}} {{/if}}
+            {{#if notes.base.race}}{{notes.base.race}} {{/if}}
+            {{#if notes.base.classes}}{{notes.base.classes}}{{/if}}{{#if notes.base.race}}<br/>{{/if}}
+            {{#if notes.base.alignment}}{{notes.base.alignment}} {{/if}}
+            {{#if notes.base.size}}{{notes.base.size}} {{/if}}
+            {{#if notes.creatureType}}{{notes.creatureType}} {{/if}}<br/>
+            <strong>Init</strong> {{actor.system.attributes.init.total}};
+            {{#if notes.base.senses}}<strong>Senses</strong> {{notes.base.senses}}; {{/if}}
+            {{#if notes.aura}}<strong>Aura</strong> {{notes.aura}}{{/if}}
+        </div>
+        <div style="break-inside: avoid;">
+            <h4 style="border: none; text-transform: uppercase; color: #7a0800; padding-top:6px;">Defense</h4>
+            <hr style="margin-left: 0; width: 275px; height: 0; border-style: solid; border-width: 2px 0 2px 275px; border-color: transparent transparent transparent #7a0800;" />
+            <strong>AC</strong> {{notes.defense.acNormal}}, <strong>Touch</strong> {{notes.defense.acTouch}}, <strong>Flat-Footed</strong> {{notes.defense.acFlatFooted}} {{notes.defense.acTypes}}<br/>
+            <strong>Hit Points</strong> {{notes.defense.hpTotal}} ({{notes.defense.hdTotal}} HD; {{notes.defense.hdPool}}){{#if notes.defense.hdAbilities}}; {{notes.defense.hdAbilities}}{{/if}}<br/>
+            <strong>Fort</strong> {{notes.defense.fortSave}}, <strong>Ref</strong> {{notes.defense.refSave}}, <strong>Will</strong> {{notes.defense.willSave}}{{#if actor.system.attributes.saveNotes}}; {{actor.system.attributes.saveNotes}}{{/if}}
+            {{#if notes.defense.defensiveAbilities}}<br/><strong>Defensive Abilities</strong> {{notes.defense.defensiveAbilities}}; {{/if}}
+            {{#if notes.defense.dr}}<strong>DR</strong> {{notes.defense.dr}}{{/if}}
+            {{#if notes.defense.immune}}<strong>Immune</strong> {{notes.defense.immune}}; {{/if}}
+            {{#if notes.defense.resist}}<strong>Resist</strong> {{notes.defense.resist}}; {{/if}}
+            {{#if actor.system.attributes.sr.formula}}<strong>SR</strong> {{actor.system.attributes.sr.formula}}{{/if}}
+            {{#if actor.system.attributes.srNotes}} ({{actor.system.attributes.srNotes}}){{/if}}
+            {{#if notes.defense.weakness}}<br/><strong>Weakness</strong> {{notes.defense.weakness}}{{/if}}
+        </div>
+        <div>
+            <div style="break-inside: avoid;">
+                <h4 style="border: none; text-transform: uppercase; color: #7a0800; padding-top:6px;">Offense</h4>
+                <hr style="margin-left: 0; width: 275px; height: 0; border-style: solid; border-width: 2px 0 2px 275px; border-color: transparent transparent transparent #7a0800;" />
+                <strong>Speed</strong> {{notes.offense.speed}}<br/>
+                {{#if notes.offense.melee}}<strong>Melee</strong> {{notes.offense.melee}}<br/>{{/if}}
+                {{#if notes.offense.ranged}}<strong>Ranged</strong> {{notes.offense.ranged}}<br/>{{/if}}
+                {{#if notes.offense.space}}<strong>Space</strong> {{notes.offense.space}} ft.; {{/if}}
+                {{#if notes.offense.reach}}<strong>Reach</strong> {{notes.offense.reach}} ft.{{/if}}{{#if notes.offense.reachContext}} ({{notes.offense.reachContext}}){{/if}}{{#if notes.offense.reach}}<br/>{{/if}}
+                {{#if notes.offense.specialAttacks}}<strong>Special Attacks</strong> {{notes.offense.specialAttacks}}<br/>{{/if}}
+            </div>
+        </div>
+        <!-- SPELLCASTING -->
+        {{#if notes.offense.spellBooks}}
+            <div style='break-inside: avoid;'>
+                {{#each notes.offense.spellBooks}}
+                    <div class="spellBook">
+                        {{#each this}}
+                            <span>{{this}}</span><br/>
+                        {{/each}}
+                    </div>
+                {{/each}}    
+            </div>
+        {{/if}}
+                
+        <!-- TACTICS -->
+        {{#if notes.tactics.hasTactics}}
+            <div style='break-inside: avoid;'>
+                <h4 style='border: none; text-transform: uppercase; color: #7a0800; padding-top:6px;'>Tactics</h4>
+                <hr style='margin-left: 0; width: 275px; height: 0; border-style: solid; border-width: 2px 0 2px 275px; border-color: transparent transparent transparent #7a0800;' />
+        {{/if}}
+                {{#if notes.tactics.beforeCombat}}<strong>Before Combat:</strong> {{notes.tactics.beforeCombat}}<br/>{{/if}}
+                {{#if notes.tactics.duringCombat}}<strong>During Combat:</strong> {{notes.tactics.duringCombat}}<br/>{{/if}}
+                {{#if notes.tactics.morale}}<strong>Morale:</strong> {{notes.tactics.morale}}<br/>{{/if}}
+                {{#if notes.tactics.baseStatistics}}<strong>Base Statistics:</strong> {{notes.tactics.baseStatistics}}<br/>{{/if}}
+        {{#if notes.tactics.hasTactics}}
+            </div>
+        {{/if}}
+        <!-- STATISTICS -->
+        <div style="break-inside: avoid;">
+            <h4 style="border: none; text-transform: uppercase; color: #7a0800; padding-top:6px;">Statistics</h4>
+            <hr style="margin-left: 0; width: 275px; height: 0; border-style: solid; border-width: 2px 0 2px 275px; border-color: transparent transparent transparent #7a0800;" />
+            <strong>Str</strong> {{notes.statistics.str}}, <strong>Dex</strong> {{notes.statistics.dex}}, <strong>Con</strong> {{notes.statistics.con}}, <strong>Int</strong> {{notes.statistics.int}}, <strong>Wis</strong> {{notes.statistics.wis}}, <strong>Cha</strong> {{notes.statistics.cha}}<br/>
+            <strong>Base Atk</strong> +{{actor.system.attributes.bab.total}}; <strong>CMB</strong> {{#if (gt actor.system.attributes.cmb.total -1)}}+{{/if}}{{actor.system.attributes.cmb.total}}{{#if notes.statistics.cmbContext}}{{notes.statistics.cmbContext}}{{/if}}; <strong>CMD</strong> {{actor.system.attributes.cmd.total}}{{#if notes.statistics.cmdContext}}{{notes.statistics.cmdContext}}{{/if}}<br/>
+            <strong>Feats</strong> {{notes.statistics.feats}}<br/>
+            <strong>Skills</strong> {{notes.statistics.skills}}<br/>
+            <strong>Languages</strong> {{notes.statistics.languages}}<br/>
+            {{#if notes.statistics.sq}}<strong>SQ</strong> {{notes.statistics.sq}}<br/>{{/if}}
+            {{#if notes.statistics.combatGear}}<strong>Combat Gear</strong>  {{notes.statistics.combatGear}}<br/>{{/if}}
+            {{#if notes.statistics.otherGear}}<strong>Other Gear</strong>  {{notes.statistics.otherGear}}<br/>{{/if}}
+            {{#if notes.statistics.gear}}<strong>Gear</strong>  {{notes.statistics.gear}}<br/>{{/if}}
+        </div>
+        <!-- ECOLOGY -->
+        {{#if notes.ecology.hasEcology}}
+            <div style='break-inside: avoid;'>
+                <h4 style='border: none; text-transform: uppercase; color: #7a0800; padding-top:6px;'>Ecology</h4><hr style='margin-left: 0; width: 275px; height: 0; border-style: solid; border-width: 2px 0 2px 275px; border-color: transparent transparent transparent #7a0800;' />
+        {{/if}}
+                {{#if notes.ecology.environment}}<strong>Environment:</strong> {{notes.ecology.environment}}<br/>{{/if}}
+                {{#if notes.ecology.organization}}<strong>Organization:</strong> {{notes.ecology.organization}}<br/>{{/if}}
+                {{#if notes.ecology.treasure}}<strong>Treasure:</strong> {{notes.ecology.treasure}}<br/>{{/if}}
+        {{#if notes.ecology.hasEcology}}
+            </div>
+        {{/if}}
+        <!-- SPECIAL ABILITIES -->
+        {{#if notes.specialAbilities.hasSpecialAbilities}}
+            <div style='break-inside: avoid;'>
+                <h4 style='border: none; text-transform: uppercase; color: #7a0800; padding-top:6px;'>Special Abilities</h4><hr style='margin-left: 0; width: 275px; height: 0; border-style: solid; border-width: 2px 0 2px 275px; border-color: transparent transparent transparent #7a0800;' />
+                <div style='white-space: pre-wrap;'>{{notes.specialAbilities.parsedSpecialAbilities}}</div>
+            </div>
+        {{/if}}
+        
+        <!-- DESCRIPTION -->
+        {{#if notes.description.long}}
+            <div style='break-inside: avoid;'>
+                <h4 style='border: none; text-transform: uppercase; color: #7a0800; padding-top:6px;'>Description</h4><hr style='margin-left: 0; width: 275px; height: 0; border-style: solid; border-width: 2px 0 2px 275px; border-color: transparent transparent transparent #7a0800;' />
+        {{/if}}
+        {{#if notes.description.long}}<div style="white-space: pre-wrap">{{notes.description.long}}</div>{{/if}}
+                    
+    </div>
+    <hr style="margin-left: 0; margin-bottom: -3px; width: 100%; height: 4px; background-color: #e0a100; border: 1px solid #000; column-span: all;" />
+</div>

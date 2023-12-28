@@ -1,0 +1,335 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Item Sheet Header --}}
+  <header class="sheet-header flexrow">
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img"/>
+
+    <div class="header-details flexrow">
+      <h1 class="item-name">
+        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PF1.ItemName"}}"/>
+      </h1>
+
+      <div class="item-subtitle">
+        <h4 class="item-type">{{itemType}}</h4>
+        <span class="item-status">{{itemStatus}}</span>
+      </div>
+
+      <ul class="summary">
+        <li>
+          {{labels.level}}
+        </li>
+        <li>
+          {{labels.school}}
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  {{!-- Item Sheet Navigation --}}
+  <nav class="sheet-navigation tabs" data-group="primary">
+    <a class="item" data-tab="description">{{ localize "PF1.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "PF1.Details" }}</a>
+    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
+    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+  </nav>
+
+  {{!-- Item Sheet Body --}}
+  <section class="primary-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab description" data-group="primary" data-tab="description">
+      {{{topDescription}}}
+
+      {{!-- Spell Description --}}
+      <h2>{{localize "PF1.Description"}}</h2>
+      {{editor shortDescription target="system.shortDescription" button=true editable=editable engine="prosemirror" collaborate=false}}
+    </div>
+
+    {{!-- Details Tab --}}
+    <div class="tab details" data-group="primary" data-tab="details">
+      {{> "systems/pf1/templates/items/parts/item-actions.hbs"}}
+
+      <h3 class="form-header">{{localize "PF1.SpellBook"}}</h3>
+
+      {{!-- Spellbook --}}
+      {{#if owner}}
+      <div class="form-group">
+        <label>{{localize "PF1.SpellBook"}}</label>
+        <div class="form-fields">
+          <select name="system.spellbook">
+            {{#select system.spellbook}}
+            {{#each spellbooks as |spellbook a|}}
+            <option value="{{a}}">{{spellbook.label}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+      {{else}}
+      <input type="hidden" name="system.spellbook" value="primary"/>
+      {{/if}}
+
+      {{!-- Spell Level --}}
+      <div class="form-group">
+        <label>{{localize "PF1.SpellLevel"}}</label>
+        <div class="form-fields">
+          <select name="system.level" data-dtype="Number" data-tooltip="@sl : {{system.level}}<br>@item.level : {{system.level}}">
+            {{#select system.level}}
+            {{#each config.spellLevels as |name lvl|}}
+            <option value="{{lvl}}">{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+
+      <h3 class="form-header">{{localize "PF1.LearnedAt"}}</h3>
+
+      <div class="form-group stacked">
+        <div class="data-selector">
+          <a class="entry-selector" for="system.learnedAt.class" data-fields="{{localize "PF1.CasterLevel"}};{{localize "PF1.Level"}}" data-dtypes="String;Number" data-flag="true"><i class="fas fa-edit"></i></a>
+          <label for="system.learnedAt.class">{{localize "PF1.CasterLevel"}}</label>
+        </div>
+
+        <div class="data-selector">
+          <a class="entry-selector" for="system.learnedAt.domain" data-fields="{{localize "PF1.Domain"}};{{localize "PF1.Level"}}" data-dtypes="String;Number" data-flag="true"><i class="fas fa-edit"></i></a>
+          <label for="system.learnedAt.domain">{{localize "PF1.Domain"}}</label>
+        </div>
+
+        <div class="data-selector">
+          <a class="entry-selector" for="system.learnedAt.subDomain" data-fields="{{localize "PF1.SubDomain"}};{{localize "PF1.Level"}}" data-dtypes="String;Number" data-flag="true"><i class="fas fa-edit"></i></a>
+          <label for="system.learnedAt.subDomain">{{localize "PF1.SubDomain"}}</label>
+        </div>
+
+        <div class="data-selector">
+          <a class="entry-selector" for="system.learnedAt.bloodline" data-fields="{{localize "PF1.Bloodline"}};{{localize "PF1.Level"}}" data-dtypes="String;Number" data-flag="true"><i class="fas fa-edit"></i></a>
+          <label for="system.learnedAt.bloodline">{{localize "PF1.Bloodline"}}</label>
+        </div>
+      </div>
+
+      <h3 class="form-header">{{localize "PF1.SpellDetails"}}</h3>
+
+      {{!-- Spell School --}}
+      <div class="form-group">
+        <label>{{localize "PF1.SpellSchool"}}</label>
+        <div class="form-fields">
+          <select name="system.school">
+            {{#select system.school}}
+            {{#each config.spellSchools as |name sch|}}
+            <option value="{{sch}}">{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+
+      {{!-- Subschool --}}
+      <div class="form-group flexrow">
+        <label>{{localize "PF1.SubSchool"}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.subschool" value="{{system.subschool}}" Placeholder="{{localize "PF1.SubSchoolExample"}}"/>
+        </div>
+      </div>
+
+      {{!-- Descriptors --}}
+      <div class="form-group flexrow">
+        <label>{{localize "PF1.DescriptorPlural"}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.types" value="{{system.types}}" Placeholder="{{localize "PF1.SpellTypesExample"}}"/>
+        </div>
+      </div>
+
+      {{!-- Misc --}}
+      <h3 class="form-header">{{localize "PF1.Misc"}}</h3>
+
+      <div class="spell-misc form-group stacked">
+        <label class="checkbox">
+          <input type="checkbox" name="system.sr" {{checked system.sr}}/> {{localize "PF1.SpellResistance"}}
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" name="system.clCheck" {{checked system.clCheck}}/> {{localize "PF1.CasterLevelCheck"}}
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" name="system.atWill" {{checked system.atWill}}/> {{localize "PF1.SpellPrepAtWill"}}
+        </label>
+
+        <label class="checkbox" data-tooltip="PF1.HelpDomainSpell">
+          <input type="checkbox" name="system.domain" {{checked system.domain}}/> {{localize "PF1.Domain"}}/{{localize "PF1.School"}}
+        </label>
+
+        {{#if owner}}
+        <label class="checkbox">
+          <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}/> {{localize "PF1.ShowInQuickbar"}}
+        </label>
+        {{/if}}
+      </div>
+
+      <h3 class="form-header">{{localize "PF1.SpellComponents"}}</h3>
+
+      {{!-- Spell Components --}}
+      <div class="spell-components form-group stacked">
+        <label class="checkbox">
+          <input type="checkbox" name="system.components.verbal" {{checked system.components.verbal}}/> {{localize "PF1.SpellComponentVerbal"}}
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="system.components.somatic" {{checked system.components.somatic}}/> {{localize "PF1.SpellComponentSomatic"}}
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="system.components.thought" {{checked system.components.thought}}/> {{localize "PF1.SpellComponentThought"}}
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="system.components.emotion" {{checked system.components.emotion}}/> {{localize "PF1.SpellComponentEmotion"}}
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="system.components.material" {{checked system.components.material}}/> {{localize "PF1.SpellComponentMaterial"}}
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="system.components.focus" {{checked system.components.focus}}/> {{localize "PF1.SpellComponentFocus"}}
+        </label>
+      </div>
+
+      {{!-- Divine Focus --}}
+      <div class="divine-focus form-group">
+        <label>{{localize "PF1.SpellComponentDivineFocus"}}</label>
+        <div class="form-fields">
+          <select name="system.components.divineFocus" data-dtype="Number">
+            {{#select system.components.divineFocus}}
+            {{#each config.divineFocus as |name value|}}
+            <option value="{{value}}">{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+
+      {{!-- Misc Components --}}
+      <div class="misc-components form-group">
+        <label>{{localize "PF1.SpellComponentsMisc"}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.components.value" value="{{system.components.value}}"/>
+        </div>
+      </div>
+
+      {{!-- Material Components --}}
+      {{#if system.components.material}}
+      <div class="form-group">
+        <label>{{localize "PF1.SpellMaterialDescription"}}</label>
+        <div class="form-fields">
+          <input class="materials" type="text" name="system.materials.value" value="{{system.materials.value}}"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>{{localize "PF1.SpellMaterialValue"}}</label>
+        <div class="form-fields">
+          <input class="material-value" type="number" data-dtype="Number" name="system.materials.gpValue" value="{{system.materials.gpValue}}" placeholder="0" />
+        </div>
+      </div>
+      {{/if}}
+
+      {{#if system.components.focus}}
+      <div class="form-group">
+        <label>{{localize "PF1.SpellcastingFocus"}}</label>
+        <div class="form-fields">
+          <input class="focus" type="text" name="system.materials.focus" value="{{system.materials.focus}}"/>
+        </div>
+      </div>
+      {{/if}}
+
+      {{!-- Prepared Spells --}}
+      {{#unless usesSpellpoints}}
+      {{#if isPreparedSpell}}
+      <h3 class="form-header">{{localize "PF1.Preparation"}}</h3>
+
+      <div class="form-group">
+        <div class="form-fields">
+          <label>{{localize "PF1.CastsLeft"}}</label>
+          <div class="form-fields">
+            <input type="text" name="system.preparation.preparedAmount" value="{{system.preparation.preparedAmount}}" data-dtype="Number"/>
+          </div>
+        </div>
+        <div class="form-fields">
+          <label>{{localize "PF1.SpellPrepPrepared"}}</label>
+          <div class="form-fields">
+            <input type="text" name="system.preparation.maxAmount" value="{{system.preparation.maxAmount}}" data-dtype="Number"/>
+          </div>
+        </div>
+      </div>
+      {{else}}
+      <div class="form-group stacked">
+        <label class="checkbox">
+          <input type="checkbox" name="system.preparation.spontaneousPrepared" {{checked system.preparation.spontaneousPrepared}}> {{localize "PF1.SpellPrepPrepared"}}
+        </label>
+      </div>
+      {{/if}}
+      {{/unless}}
+
+      {{#unless isAtWill}}
+      {{#if usesSpellpoints}}
+      <div class="form-group spellpoint-cost">
+        <label>{{localize "PF1.SpellPointsCost"}}</label>
+        <div class="form-fields">
+          <input type="text" class="formula" name="system.spellPoints.cost" value="{{system.spellPoints.cost}}" placeholder="{{defaultChargeFormula}}">
+        </div>
+      </div>
+      {{else}}
+      <div class="form-group charge-cost">
+        <label>
+          {{#if isSpell}}
+          {{localize "PF1.CastsPerDayUsedFormula"}}
+          {{else}}
+          {{localize "PF1.ChargeCostFormula"}}
+          {{/if}}
+        </label>
+        <div class="form-fields">
+          <input type="text" class="formula" name="system.uses.autoDeductChargesCost" value="{{system.uses.autoDeductChargesCost}}" placeholder="{{defaultChargeFormula}}">
+        </div>
+      </div>
+      {{/if}}
+      {{/unless}}
+
+      <h3 class="form-header">{{localize "PF1.Offsets"}}</h3>
+
+      {{!-- Caster Level Offset --}}
+      <div class="form-group">
+        <label>{{localize "PF1.CasterLevelOffset"}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.clOffset" value="{{system.clOffset}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      {{!-- Spell Level Offset --}}
+      <div class="form-group">
+        <label>{{localize "PF1.SpellLevelOffset"}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.slOffset" value="{{system.slOffset}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      {{!-- Spell Slot Cost --}}
+      {{#unless usesSpellpoints}}
+      <div class="form-group">
+        <label>{{localize "PF1.SpellSlotCost"}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.slotCost" value="{{system.slotCost}}" placeholder="1" data-dtype="Number"/>
+        </div>
+      </div>
+      {{/unless}}
+
+      {{!-- Advanced --}}
+      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+
+      {{! Tags }}
+      {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="links">
+      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+    </div>
+  </section>
+</form>

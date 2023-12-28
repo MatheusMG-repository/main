@@ -1,0 +1,254 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Item Sheet Header --}}
+  <header class="sheet-header flexrow">
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img"/>
+
+    <div class="header-details flexrow">
+      <h1 class="item-name">
+        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PF1.ItemName"}}"/>
+      </h1>
+
+      <div class="item-subtitle">
+        <h4 class="item-type">{{itemType}}</h4>
+        <span class="item-status">{{itemStatus}}</span>
+      </div>
+
+      <ul class="summary">
+        <li>
+          {{lookup config.classTypes system.subType}}
+        </li>
+        <li data-tooltip="@classes.{{system.tag}}.level : {{system.level}}<br>@item.level : {{system.level}}{{#unless isMythicPath}}<br>@classes.{{system.tag}}.hitDice : {{system.hitDice}}{{/unless}}">
+          <input type="text" name="system.level" value="{{system.level}}" placeholder="{{#if isMythicPath}}{{localize "PF1.Tier"}}{{else}}{{localize "PF1.Level"}}{{/if}}" data-dtype="Number"/>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  {{!-- Item Sheet Navigation --}}
+  <nav class="sheet-navigation tabs" data-group="primary">
+    <a class="item" data-tab="description">{{ localize "PF1.Description" }}</a>
+    <a class="item" data-tab="details">{{ localize "PF1.Details" }}</a>
+    <a class="item" data-tab="changes">{{localize "PF1.Changes"}}</a>
+    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
+    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+  </nav>
+
+  {{!-- Item Sheet Body --}}
+  <section class="primary-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab flexcol" data-group="primary" data-tab="description">
+      {{editor descriptionHTML.identified target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+    </div>
+
+    {{!-- Details Tab --}}
+    <div class="tab details" data-group="primary" data-tab="details">
+
+      {{!-- Class Type --}}
+      <div class="form-group">
+        <label>{{localize "PF1.ClassType"}}</label>
+        <div class="form-fields">
+          <select name="system.subType">
+            {{#select system.subType}}
+            {{#each config.classTypes as |name type|}}
+            <option value="{{type}}">{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+
+      {{!-- HD --}}
+      <div class="form-group">
+        <label>{{#if isMythicPath}}{{localize "PF1.HealthPerTier"}}{{else}}{{localize "PF1.HitDie"}}{{/if}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.hd" value="{{system.hd}}" data-dtype="Number" data-tooltip="@classes.{{system.tag}}.hd"/>
+        </div>
+      </div>
+
+      {{!-- HD count --}}
+      {{#unless isMythicPath}}
+      <div class="form-group">
+        <label>{{localize "PF1.CustomHitDice"}}</label>
+        <div class="form-fields">
+          <input type="text" class="formula" name="system.customHD" value="{{system.customHD}}" data-dtype="String" placeholder="{{localize "PF1.CustomHitDiceHint"}}"/>
+        </div>
+      </div>
+      {{/unless}}
+
+      {{!-- Hit Points --}}
+      {{#unless healthConfig.auto}}
+      <div class="form-group">
+        <label>{{localize "PF1.HitPoints"}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.hp" value="{{system.hp}}" data-dtype="Number" />
+        </div>
+      </div>
+      {{/unless}}
+
+      {{!-- BAB --}}
+      <div class="form-group">
+        <label>{{localize "PF1.BABAbbr"}}</label>
+        <div class="form-fields">
+          <select name="system.bab">
+            {{#select system.bab}}
+            <option value="">{{localize "PF1.None"}}</option>
+            {{#each config.classBAB as |name value|}}
+            <option value="{{value}}">{{name}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+          {{#if (eq system.bab "custom")}}
+          <label>{{localize "PF1.Formula"}}</label>
+          <input type="text" class="formula" name='system.babFormula' value='{{system.babFormula}}'>
+          {{/if}}
+        </div>
+      </div>
+
+      {{!-- Skills/Level --}}
+      <div class="form-group">
+        <label>{{localize "PF1.SkillsPerLevel"}}</label>
+        <div class="form-fields">
+          <input type="text" name="system.skillsPerLevel" value="{{system.skillsPerLevel}}" data-dtype="Number" />
+        </div>
+      </div>
+
+      <h4 class="form-header">{{localize "PF1.SavingThrowPlural"}}</h4>
+
+      {{!-- Saving Throws --}}
+      {{#each system.savingThrows as |savingThrow id|}}
+      <div class="form-group">
+        <label>{{savingThrow.label}}</label>
+        <select name="system.savingThrows.{{id}}.value" data-tooltip="@classes.{{@root.system.tag}}.savingThrows.{{id}} : {{savingThrow.base}}">
+          {{#select savingThrow.value}}
+          <option value="">{{localize "PF1.None"}}</option>
+          {{#each ../config.classSavingThrows as |name value|}}
+          <option value="{{value}}">{{name}}</option>
+          {{/each}}
+          {{/select}}
+        </select>
+        {{#if (eq savingThrow.value "custom")}}
+        <label>{{localize "PF1.Formula"}}</label>
+        <input name="system.savingThrows.{{id}}.custom" class="formula" type="text" value="{{savingThrow.custom}}" />
+        {{/if}}
+      </div>
+      {{/each}}
+
+      {{! Spellcasting Configuration }}
+      <h4 class="form-header">{{localize "PF1.SpellCasting"}}</h4>
+
+      <div class="form-group spellcasting-type">
+        <label>{{localize "PF1.Type"}}</label>
+        <div class="form-fields">
+          <select name="system.casting.type">
+            <option value="">{{localize "PF1.None"}}</option>
+            {{selectOptions casting.types selected=system.casting.type localize=true}}
+          </select>
+        </div>
+      </div>
+
+      {{#if system.casting.type}}
+      <div class="form-group spellcasting-progression">
+        <label>{{localize "PF1.Spellcasting.Progression.Label"}}</label>
+        <div class="form-fields">
+          <select name="system.casting.progression">
+            <option value="">{{localize "PF1.None"}}</option>
+            {{selectOptions casting.progression selected=system.casting.progression localize=true}}
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group spellcasting-ability">
+        <label>{{localize "PF1.SpellcastingAbility"}}</label>
+        <div class="form-fields">
+          <select name="system.casting.ability">
+            <option value="">{{localize "PF1.None"}}</option>
+            {{selectOptions config.abilities selected=system.casting.ability}}
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group spellcasting-spells">
+        <label>{{localize "PF1.Spellcasting.Type.Label"}}</label>
+        <div class="form-fields">
+          <select name="system.casting.spells">
+            <option value="">{{localize "PF1.None"}}</option>
+            {{selectOptions casting.spells selected=system.casting.spells localize=true}}
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group spellcasting-cantrips">
+        <label class="checkbox">
+          <input type="checkbox" name="system.casting.cantrips" data-dtype="Boolean" {{checked system.casting.cantrips}}>
+          {{localize "PF1.HasCantrips"}}
+        </label>
+      </div>
+
+      {{#unless hasSpellbook}}
+      <div class="form-group create-spellbook">
+        <button name="create-spellbook" type="button">
+          <i class="fa-solid fa-book"></i>
+          {{localize "PF1.CreateSpellbook"}}
+        </button>
+      </div>
+      {{/unless}}
+      {{/if}}
+
+      {{#if isBaseClass}}
+      <h4 class="form-header">{{localize "PF1.FavouredClassBonuses"}}</h4>
+
+      {{!-- Favoured Class Bonuses --}}
+      {{#each system.fc as |fc id|}}
+      <div class="form-group">
+        <label>{{fc.label}}</label>
+        <input type="text" name="system.fc.{{id}}.value" value="{{fc.value}}" data-dtype="Number" data-tooltip="@classes.{{@root.system.tag}}.fc.{{id}}" />
+      </div>
+      {{/each}}
+      <div class="form-group">
+        <label>{{localize 'PF1.Notes'}}</label>
+        <input type="text" name="system.fc.alt.notes" value="{{system.fc.alt.notes}}" data-dtype="String" />
+      </div>
+      {{/if}}
+
+      {{!-- Proficiencies --}}
+      {{~> "systems/pf1/templates/items/parts/item-proficiencies.hbs"}}
+
+      <h4 class="form-header">{{localize "PF1.ClassSkills"}}</h4>
+
+      <div class="form-group">
+        <ol class="item-list">
+        {{#each skills as |skill key|}}
+        <li class="item flexrow" data-skill="{{key}}">
+          <label class="checkbox skill-cs">
+            <input type="checkbox" name="system.classSkills.{{key}}" {{checked skill.classSkill}} /> {{skill.name}}
+          </label>
+        </li>
+        {{/each}}
+        </ol>
+      </div>
+
+      {{!-- Advanced --}}
+      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+
+      {{! Tags }}
+      {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
+
+      {{! Identifier Tag }}
+      {{~> "systems/pf1/templates/items/parts/item-tag.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="changes">
+      {{~> "systems/pf1/templates/items/parts/item-changes.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="links">
+      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+    </div>
+  </section>
+</form>

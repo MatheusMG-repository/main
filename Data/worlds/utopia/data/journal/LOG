@@ -1,0 +1,5 @@
+2023/12/19-18:05:36.002 4db4 Recovering log #40
+2023/12/19-18:05:36.002 4db4 Level-0 table #42: started
+2023/12/19-18:05:36.005 4db4 Level-0 table #42: 5697 bytes OK
+2023/12/19-18:05:36.018 4db4 Delete type=0 #40
+2023/12/19-18:05:36.018 4db4 Delete type=3 #38

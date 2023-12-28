@@ -1,0 +1,116 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  {{!-- Item Sheet Header --}}
+  <header class="sheet-header flexrow">
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img"/>
+
+    <div class="header-details flexrow">
+      <h1 class="item-name">
+        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PF1.BuffName"}}"/>
+      </h1>
+
+      <div class="item-subtitle">
+        <h4 class="item-type">{{itemType}}</h4>
+        <span class="item-status">{{itemStatus}}</span>
+      </div>
+
+      <ul class="summary">
+        <li>
+          {{labels.subType}}
+        </li>
+        <li data-tooltip="@item.level : {{system.level}}">
+          <input type="text" name="system.level" data-dtype="Number" value="{{#if system.level}}{{system.level}}{{/if}}" placeholder="{{localize "PF1.Level"}}"/>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="system.active" {{checked system.active}}> {{localize "PF1.Active"}}
+          </label>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  {{!-- Item Sheet Navigation --}}
+  <nav class="sheet-navigation tabs" data-group="primary">
+    <a class="item" data-tab="description">{{ localize "PF1.Description" }}</a>
+    <a class="item" data-tab="details">{{localize "PF1.Details"}}</a>
+    <a class="item" data-tab="changes">{{ localize "PF1.Changes" }}</a>
+    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
+    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+  </nav>
+
+  {{!-- Item Sheet Body --}}
+  <section class="primary-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab flexcol" data-group="primary" data-tab="description">
+      {{editor descriptionHTML.identified target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
+    </div>
+
+    {{!-- Details Tab --}}
+    <div class="tab details" data-group="primary" data-tab="details">
+      {{> "systems/pf1/templates/items/parts/item-actions.hbs"}}
+
+      {{! Buff Subtype }}
+      <div class="form-group">
+        <label>{{localize "PF1.Type"}}</label>
+        <div class="form-fields">
+          <select name="system.subType">
+          {{selectOptions config.buffTypes selected=system.subType}}
+          </select>
+        </div>
+      </div>
+
+      {{! Hide From Token}}
+      <div class="form-group">
+        <label>{{localize "PF1.HideFromToken"}}</label>
+        <input type="checkbox" name="system.hideFromToken" {{checked system.hideFromToken}} />
+      </div>
+
+      <h3 class="form-header">{{localize "PF1.Details"}}</h3>
+
+      {{!-- Duration --}}
+      <div class="form-group input-select">
+        <label>{{localize "PF1.Duration"}}</label>
+        <div class="form-fields">
+          {{#unless (eq system.duration.units "turn")}}
+          <input class="formula" type="text" name="system.duration.value" value="{{system.duration.value}}" placeholder="{{localize "PF1.Formula"}}"/>
+          {{/unless}}
+          <select name="system.duration.units">
+            {{#select system.duration.units}}
+            <option value=""></option>
+            {{#each config.timePeriodsShort as |name key|}}
+            <option value="{{key}}">{{lookup @root.config.timePeriods key}}</option>
+            {{/each}}
+            {{/select}}
+          </select>
+        </div>
+      </div>
+
+      {{!-- Proficiencies --}}
+      {{~> "systems/pf1/templates/items/parts/item-proficiencies.hbs"}}
+
+      {{!-- Advanced --}}
+      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+
+      {{! Tags }}
+      {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
+
+      {{! Identifier Tag }}
+      {{~> "systems/pf1/templates/items/parts/item-tag.hbs"}}
+    </div>
+
+    {{!-- Changes Tab --}}
+    <div class="tab flexcol" data-group="primary" data-tab="changes">
+      {{~> "systems/pf1/templates/items/parts/item-changes.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="links">
+      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+    </div>
+
+    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+    </div>
+  </section>
+</form>

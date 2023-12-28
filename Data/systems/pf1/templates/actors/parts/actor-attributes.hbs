@@ -1,0 +1,155 @@
+{{!-- Ability Scores --}}
+<div class="ability-scores">
+    <table class="ability-table">
+        <thead>
+            <tr>
+                <th>{{localize "PF1.Ability"}}</th>
+                <th>{{localize "PF1.Total"}}</th>
+                <th>{{localize "PF1.Modifier"}}</th>
+                <th>{{localize "PF1.Damage"}}</th>
+                <th>{{localize "PF1.Drain"}}</th>
+                <th>{{localize "PF1.Penalty"}}</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each system.abilities as |ability id|}}
+            <tr class="ability" data-ability="{{id}}">
+                {{!-- Ability name --}}
+                <th class="tooltip">
+                    <span class="tooltipcontent">
+                        <span class="span2 align-left">@abilities.{{id}}.total :</span><span class="span1 align-right"> {{ability.total}}</span>
+                        <span class="span2 align-left">@abilities.{{id}}.value :</span><span class="span1 align-right"> {{ability.value}}</span>
+                        <span class="span2 align-left">@abilities.{{id}}.mod :</span><span class="span1 align-right"> {{ability.mod}}</span>
+                        <span class="span2 align-left">@abilities.{{id}}.damage :</span><span class="span1 align-right"> {{ability.damage}}</span>
+                        <span class="span2 align-left">@abilities.{{id}}.drain :</span><span class="span1 align-right"> {{ability.drain}}</span>
+                        <span class="span2 align-left">@abilities.{{id}}.penalty :</span><span class="span1 align-right"> {{ability.penalty}}</span>
+                        <span class="span2 align-left">@abilities.{{id}}.base :</span><span class="span1 align-right"> {{ability.base}}</span>
+                        <span class="span2 align-left">@abilities.{{id}}.baseMod :</span><span class="span1 align-right"> {{ability.baseMod}}</span>
+
+                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=ability.sourceDetails sublabel="PF1.AbilityScore" plain=true}}
+
+                        {{#with (lookup ../sourceDetails.system.abilities id)}}
+                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=mod sublabel="PF1.Modifier"}}
+                        {{/with}}
+
+                        {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target=(concat "abilityChecks." id)}}
+                    </span>
+
+                    <a class="ability-name rollable">
+                        <i class="fas fa-dice"></i>
+                        {{ability.label}}
+                    </a>
+                </th>
+
+                {{!-- Total --}}
+                <td>
+                    <span class="text-box direct" name="system.abilities.{{id}}.value" data-dtype="String">{{ability.totalLabel}}</span>
+                </td>
+
+                {{!-- Modifier --}}
+                <td>{{numberFormat ability.mod decimals=0 sign=true}}</td>
+
+                {{!-- Damage --}}
+                <td>
+                    <span class="text-box direct allow-relative" name="system.abilities.{{id}}.damage" data-dtype="Number">{{#if ability.damage}}{{ability.damage}}{{/if}}</span>
+                </td>
+
+                {{!-- Drain --}}
+                <td>
+                    <span class="text-box direct allow-relative" name="system.abilities.{{id}}.drain" data-dtype="Number">{{#if ability.drain}}{{ability.drain}}{{/if}}</span>
+                </td>
+
+                {{!-- Penalty --}}
+                <td>
+                    <span class="text-box direct allow-relative" name="system.abilities.{{id}}.userPenalty" data-dtype="Number">{{#if ability.userPenalty}}{{ability.userPenalty}}{{/if}}</span>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    {{!-- Point Buy Calculator (Temporary) --}}
+    {{#if @root.inCharacterGeneration}}
+    <div class="form-group temporary">
+        <button type="button" class="pointbuy-calculator">
+            <i class="fa-solid fa-calculator"></i>
+            {{localize "PF1.PointBuyCalculator"}}
+        </button>
+        <p class="hint">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            {{localize "PF1.PointBuyCalculatorSetupHint"}}
+        </p>
+    </div>
+    {{/if}}
+
+    <table>
+        <thead>
+            <th class="tooltip">
+                {{localize "PF1.ACP"}}
+                <div class="tooltipcontent">
+                    <span class="span2 align-left">@attributes.acp.total :</span><span class="span1 align-right"> {{system.attributes.acp.total}}</span>
+
+                    {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.acp.total forceLabel=1 forceCheck=system.attributes.acp.total }}
+                    
+                    {{#if sourceDetails.system.attributes.acp.total.length}}
+                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.acp.armorBonus sublabel="PF1.EquipTypeArmor"}}
+                    {{else}}
+                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.acp.armorBonus sublabel="PF1.EquipTypeArmor" bypassLabel=true}}
+                    {{/if}}
+
+                    {{#if (or sourceDetails.system.attributes.acp.total.length sourceDetails.system.attributes.acp.armorBonus.length)}}
+                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.acp.shieldBonus sublabel="PF1.EquipTypeShield"}}
+                    {{else}}
+                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.acp.shieldBonus sublabel="PF1.EquipTypeShield" bypassLabel=true}}
+                    {{/if}}
+                </div>
+            </th>
+            <th class="tooltip">
+                {{localize "PF1.MaxDexShort"}}
+                <div class="tooltipcontent">
+                    <span class="span2 align-left">@attributes.maxDexBonus :</span><span class="span1 align-right"> {{system.attributes.maxDexBonus}}</span>
+
+                    {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.maxDexBonus forceLabel=1 forceCheck=system.attributes.maxDexBonus}}
+
+                    {{#if sourceDetails.system.attributes.maxDexBonus.length}}
+                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.mDex.armorBonus sublabel="PF1.EquipTypeArmor"}}
+                    {{else}}
+                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.mDex.armorBonus sublabel="PF1.EquipTypeArmor" bypassLabel=true}}
+                    {{/if}}
+
+                    {{#if (or sourceDetails.system.attributes.maxDexBonus.length sourceDetails.system.attributes.mDex.armorBonus.length)}}
+                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.mDex.shieldBonus sublabel="PF1.EquipTypeShield"}}
+                    {{else}}
+                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.mDex.shieldBonus sublabel="PF1.EquipTypeShield" bypassLabel=true}}
+                    {{/if}}
+                </div>
+            </th>
+            {{#if asf}}
+            <th class="tooltip">
+                {{localize "PF1.ArcaneSpellFailureAbbr"}}
+
+                {{#if asf.sources.length}}
+                <div class="tooltipcontent">
+                    <span class="span3">{{localize "PF1.FromSources"}}:</span>
+                    {{#each asf.sources}}
+                    <span class="span2 align-left">{{item.name}} :</span><span class="span1 align-right"> {{asf}}%</span>
+                    {{/each}}
+                </div>
+                {{/if}}
+            </th>
+            {{/if}}
+        </thead>
+
+        <tbody>
+            <td class="acp">{{system.attributes.acp.total}}</td>
+            <td class="maxdex">{{system.attributes.maxDexBonus}}</td>
+            {{#if asf}}
+            <td class="asf">{{asf.total}}%</td>
+            {{/if}}
+        </tbody>
+    </table>
+</div>
+
+{{!-- Traits --}}
+{{> "systems/pf1/templates/actors/parts/actor-traits.hbs"}}

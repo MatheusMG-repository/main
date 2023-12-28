@@ -1,0 +1,239 @@
+<div class="traits flexcol">
+  <div class="form-group tooltip">
+    <label>{{localize "PF1.Size"}}</label>
+    <select name="system.traits.size">
+      {{#select system.traits.size}}
+      {{#each config.actorSizes as |label size|}}
+      <option value="{{size}}">{{label}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+    <span class="tooltipcontent">
+      <span class="span2 align-left">@traits.size :</span><span class="span1 align-right"> {{system.traits.size}}</span>
+      <span class="span2 align-left">@size :</span><span class="span1 align-right"> {{@root.rollData.size}}</span>
+    </span>
+  </div>
+
+  <div class="form-group tooltip">
+    <label>{{localize "PF1.Stature"}}</label>
+    <select name="system.traits.stature">
+      {{#select system.traits.stature}}
+      {{#each config.actorStatures as |label key|}}
+      <option value="{{key}}">{{label}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+    <span class="tooltipcontent">
+      <span class="span2 align-left">@traits.stature :</span><span class="span1 align-right"> {{system.traits.stature}}</span>
+    </span>
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "PF1.Senses"}}</label>
+    <ul class="traits-list tag-list">
+      {{#each senses as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+      {{/each}}
+    </ul>
+    <a class="senses-selector"><i class="fas fa-edit"></i></a>
+  </div>
+
+  <div class="form-group {{#unless system.traits.aura.custom}}inactive{{/unless}} tooltip">
+    <label>{{localize "PF1.AuraPlural"}}</label>
+    <input type="text" name="system.traits.aura.custom" value="{{system.traits.aura.custom}}" placeholder="{{localize "PF1.None"}}"/>
+    <span class="tooltipcontent">
+      <span class="span3">@traits.aura.custom</span>
+    </span>
+  </div>
+
+  <div class="form-group {{#unless system.traits.dr}}inactive{{/unless}} data-selector tooltip">
+    <label for="system.traits.dr.value">{{localize "PF1.DamRed"}}</label>
+    <ul class="traits-list tooltip tag-list">
+      {{#each dr as |value key|}}
+        <li class="tag {{key}}">{{value}}</li>
+      {{/each}}
+      {{#if sourceDetails.system.traits.dr.length}}
+        <div class="tooltipcontent">
+          <span class="span3">@traits.dr.total</span>
+          <span class="span3"><br></span>
+          <span class="span3">{{localize "PF1.FromSources"}}:</span>
+          {{#each sourceDetails.system.traits.dr as |src|}}
+            <span class="span2 align-left">{{src.name}}:</span><span class="span1 align-left">{{src.value}}</span>
+          {{/each}}
+        </div>
+      {{/if}}
+    </ul>
+    <a class="resistance-selector" for="system.traits.dr" data-options="dr" data-fields="{{localize "PF1.Application.DamageResistanceSelector.DamageAmount"}};{{localize "PF1.Application.DamageResistanceSelector.Bypassed"}};{{localize "PF1.Application.DamageResistanceSelector.CombinationType"}};{{localize "PF1.Application.DamageResistanceSelector.Bypassed"}}" data-dtypes="Number;String;Boolean;String"><i class="fas fa-edit"></i></a>
+  </div>
+
+  <div class="form-group {{#unless system.traits.regen}}inactive{{/unless}} tooltip">
+    <label>{{localize "PF1.Regeneration"}}</label>
+    <input type="text" name="system.traits.regen" value="{{system.traits.regen}}" placeholder="{{localize "PF1.None"}}"/>
+    <span class="tooltipcontent">
+      <span class="span3">@traits.regen</span>
+    </span>
+  </div>
+
+  <div class="form-group {{#unless system.traits.fastHealing}}inactive{{/unless}} tooltip">
+    <label>{{localize "PF1.FastHealing"}}</label>
+    <input type="text" name="system.traits.fastHealing" value="{{system.traits.fastHealing}}" placeholder="{{localize "PF1.None"}}"/>
+    <span class="tooltipcontent">
+      <span class="span3">@traits.fastHealing</span>
+    </span>
+  </div>
+
+  <div class="form-group {{#unless system.traits.eres}}inactive{{/unless}} tooltip">
+    <label for="system.traits.eres.value">{{localize "PF1.EnRes"}}</label>
+    <ul class="traits-list tooltip tag-list">
+      {{#each eres as |value key|}}
+        <li class="tag {{key}}">{{value}}</li>
+      {{/each}}
+      {{#if sourceDetails.system.traits.eres.length}}
+        <div class="tooltipcontent">
+          <span class="span3">@traits.eres.total</span>
+          <span class="span3"><br></span>
+          <span class="span3">{{localize "PF1.FromSources"}}:</span>
+          {{#each sourceDetails.system.traits.eres as |src|}}
+            <span class="span2 align-left">{{src.name}}:</span><span class="span1 align-left">{{src.value}}</span>
+          {{/each}}
+        </div>
+      {{/if}}
+    </ul>
+    <a class="resistance-selector" for="system.traits.eres"  data-options="eres" data-fields="{{localize "PF1.Application.DamageResistanceSelector.DamageAmount"}};{{localize "PF1.Application.DamageResistanceSelector.Resisted"}};{{localize "PF1.Application.DamageResistanceSelector.CombinationType"}};{{localize "PF1.Application.DamageResistanceSelector.Resisted"}}" data-dtypes="Number;String;Boolean;String"><i class="fas fa-edit"></i></a>
+  </div>
+
+  <div class="form-group {{#unless system.traits.cres}}inactive{{/unless}} tooltip">
+    <label>{{localize "PF1.ConRes"}}</label>
+    <input type="text" name="system.traits.cres" value="{{system.traits.cres}}" placeholder="{{localize "PF1.None"}}"/>
+    <span class="tooltipcontent">
+      <span class="span3">@traits.cres</span>
+    </span>
+  </div>
+
+  <div class="form-group {{system.traits.di.cssClass}} tooltip">
+    <label for="system.traits.di">{{localize "PF1.DamImm"}}</label>
+    <ul class="traits-list tag-list">
+      {{#each system.traits.di.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+      {{/each}}
+    </ul>
+    <a class="trait-selector" data-options="damageTypes"><i class="fas fa-edit"></i></a>
+    <span class="tooltipcontent">
+      <span class="span3">@traits.di.value</span>
+      <span class="span3">@traits.di.custom</span>
+    </span>
+  </div>
+
+  <div class="form-group {{system.traits.dv.cssClass}} tooltip">
+    <label for="system.traits.dv">{{localize "PF1.DamVuln"}}</label>
+    <ul class="traits-list tag-list">
+      {{#each system.traits.dv.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+      {{/each}}
+    </ul>
+    <a class="trait-selector" data-options="damageTypes"><i class="fas fa-edit"></i></a>
+    <span class="tooltipcontent">
+      <span class="span3">@traits.dv.value</span>
+      <span class="span3">@traits.dv.custom</span>
+    </span>
+  </div>
+
+  <div class="form-group {{system.traits.ci.cssClass}} tooltip">
+    <label for="system.traits.ci">{{localize "PF1.ConImm"}}</label>
+    <ul class="traits-list tag-list">
+      {{#each system.traits.ci.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+      {{/each}}
+    </ul>
+    <a class="trait-selector" data-options="conditionTypes"><i class="fas fa-edit"></i></a>
+    <span class="tooltipcontent">
+      <span class="span3">@traits.ci.value</span>
+      <span class="span3">@traits.ci.custom</span>
+    </span>
+  </div>
+
+  <div class="form-group {{system.traits.languages.cssClass}} tooltip">
+    <label for="system.traits.languages">{{localize "PF1.Languages"}}</label>
+    <ul class="traits-list tooltip tag-list">
+      {{#each system.traits.languages.selected as |v k|}}
+        <li class="tag {{k}}">{{v}}</li>
+      {{/each}}
+      {{#if sourceDetails.system.traits.languages.length}}
+        <div class="tooltipcontent">
+          <span class="span3">@traits.languages.total</span>
+          <span class="span3"><br></span>
+          <span class="span3">{{localize "PF1.FromSources"}}:</span>
+          {{#each sourceDetails.system.traits.languages as |src|}}
+          <span class="span1 align-left">{{src.name}}:</span><span class="span2 align-left">{{src.value}}</span>
+          {{/each}}
+        </div>
+      {{/if}}
+    </ul>
+    <a class="trait-selector" data-options="languages"><i class="fas fa-edit"></i></a>
+  </div>
+
+  {{#if hasProficiencies}}
+    <div class="form-group {{system.traits.weaponProf.cssClass}} tooltip">
+      <label for="system.traits.weaponProf">
+        {{localize "PF1.TraitWeaponProf"}}
+      </label>
+      <ul class="traits-list tooltip tag-list">
+        {{#each system.traits.weaponProf.selected as |v k|}}
+          <li class="tag {{k}}">{{v}}</li>
+        {{/each}}
+        {{#if sourceDetails.system.traits.weaponProf.length}}
+          <div class="tooltipcontent">
+            <span class="span3">@traits.weaponProf.total</span>
+            <span class="span3"><br></span>
+            <span class="span3">{{localize "PF1.FromSources"}}:</span>
+            {{#each sourceDetails.system.traits.weaponProf as |src|}}
+              <span class="span1 align-left">{{src.name}}:</span><span class="span2 align-left">{{src.value}}</span>
+            {{/each}}
+          </div>
+        {{/if}}
+      </ul>
+      <a class="trait-selector" data-options="weaponProficiencies"><i class="fas fa-edit"></i></a>
+    </div>
+
+    <div class="form-group {{system.traits.armorProf.cssClass}} tooltip">
+      <label for="system.traits.armorProf">
+        {{localize "PF1.TraitArmorProf"}}
+      </label>
+      <ul class="traits-list tooltip tag-list">
+        {{#each system.traits.armorProf.selected as |v k|}}
+          <li class="tag {{k}}">{{v}}</li>
+        {{/each}}
+        {{#if sourceDetails.system.traits.armorProf.length}}
+          <div class="tooltipcontent">
+            <span class="span3">@traits.armorProf.total</span>
+            <span class="span3"><br></span>
+            <span class="span3">{{localize "PF1.FromSources"}}:</span>
+            {{#each sourceDetails.system.traits.armorProf as |src|}}
+              <span class="span1 align-left">{{src.name}}:</span><span class="span2 align-left">{{src.value}}</span>
+            {{/each}}
+          </div>
+        {{/if}}
+      </ul>
+      <a class="trait-selector" data-options="armorProficiencies"><i class="fas fa-edit"></i></a>
+    </div>
+  {{/if}}
+
+  <div class="form-group tooltip">
+    <label>{{localize "PF1.Quadruped"}}</label>
+    <label class="checkbox">
+      <input type="checkbox" name="system.attributes.quadruped" {{checked system.attributes.quadruped}}/>
+    </label>
+    <span class="tooltipcontent">
+      <span class="span2 align-left">@attributes.quadruped :</span><span class="span1 align-right"> {{system.attributes.quadruped}}</span>
+    </span>
+  </div>
+
+  <div class="form-group tooltip">
+    <label>{{localize "PF1.LevelDrain"}}</label>
+    <input class="select-on-click" type="text" name="system.attributes.energyDrain" value="{{system.attributes.energyDrain}}"
+                                                          placeholder="0" data-dtype="Number" />
+    <span class="tooltipcontent">
+      <span class="span2 align-left">@attributes.energyDrain :</span><span class="span1 align-right"> {{system.attributes.energyDrain}}</span>
+    </span>
+  </div>
+</div>

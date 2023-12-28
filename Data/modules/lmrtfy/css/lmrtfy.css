@@ -1,0 +1,425 @@
+.lmrtfy.lmrtfy-parchment .window-content {
+	background: url(../images/parchment.jpg);
+	padding: 5px;
+}
+
+/* request-rolls.html */
+.lmrtfy .lmrtfy-actor-avatars input[type=checkbox] {
+	display:none;
+}
+.lmrtfy.lmrtfy-parchment input[type=checkbox] {
+	display:none;
+}
+.lmrtfy.lmrtfy-parchment select,
+.lmrtfy.lmrtfy-parchment input[type=text] {
+	background-color: rgba(220, 200, 160, 0.5);
+}
+
+.lmrtfy input[type=checkbox] + label {
+	flex: 1;
+}
+.lmrtfy.lmrtfy-parchment input[type=checkbox] + label {
+	margin: 3px;
+}
+.lmrtfy.lmrtfy-parchment input[type=checkbox]:checked + label {
+	margin: 2px;
+	color: red;
+	font-weight: bold;
+}
+
+.lmrtfy-actor-avatars {
+	justify-content: center;
+}
+.lmrtfy-actor-avatars > div {
+	position: relative;
+	flex: 0 0 45px;
+}
+.lmrtfy-actor-avatars img {
+	width: 45px;
+	height: 45px;
+	transition-duration: 0.2s;
+	transform-origin: 50% 50%;
+}
+.lmrtfy-actor-avatars input:checked + label img {
+	transform: scale(0.9);
+	box-shadow: 0 0 5px #ff0000;
+}
+
+form .form-group .lmrtfy-ability-checks,
+form .form-group .lmrtfy-saving-throws,
+form .form-group .lmrtfy-extras {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.lmrtfy-parchment form .form-group .lmrtfy-ability-checks,
+.lmrtfy-parchment form .form-group .lmrtfy-saving-throws,
+.lmrtfy-parchment form .form-group .lmrtfy-extras {
+	flex-wrap: nowrap;
+}
+
+form .form-group .lmrtfy-skill-checks {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-evenly;
+	max-height: 220px;
+	flex: 8;
+}
+.lmrtfy-parchment form .form-group .lmrtfy-skill-checks {
+	max-height: 200px;
+}
+
+.lmrtfy-ability-checks > div,
+.lmrtfy-saving-throws > div,
+.lmrtfy-skill-checks > div ,
+.lmrtfy-extras > div {
+	flex: 3;
+	padding: 4px;
+	display: flex;
+}
+
+.lmrtfy-submit {
+		text-align: center;
+}
+.lmrtfy-request-roll,
+.lmrtfy-save-roll {
+	text-align: center;
+}
+
+.lmrtfy-parchment .lmrtfy-request-roll,
+.lmrtfy-parchment .lmrtfy-save-roll {
+	background: url(../images/button.png);
+	background-repeat: no-repeat ;
+	background-size: 100% 100%;
+	color: black;
+	height: 40px;
+}
+.select-all,
+.deselect-all {
+	flex: 1;
+}
+.lmrtfy-parchment .select-all,
+.lmrtfy-parchment .deselect-all {
+	background-color: rgba(220, 200, 160, 0.75);
+	border-radius: 10px;
+}
+
+
+/* Roller.html */
+.lmrtfy-avatar {
+	text-align: center;
+	margin: 2px;
+}
+.lmrtfy-avatar img {
+	width: 64px;
+	height: 64px;
+}
+
+.lmrtfy-actor-list {
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.lmrtfy-actor-list > div {
+	flex: 0 0 64px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lmrtfy-ability-check,
+.lmrtfy-ability-check-fail,
+.lmrtfy-ability-save,
+.lmrtfy-ability-save-fail,
+.lmrtfy-skill-check,
+.lmrtfy-skill-check-fail,
+.lmrtfy-custom-formula,
+.lmrtfy-initiative,
+.lmrtfy-death-save,
+.lmrtfy-perception,
+.lmrtfy-roll-table {
+	height: 48px;
+	text-align: center;
+	margin-top: 4px;
+}
+.lmrtfy-parchment .lmrtfy-ability-check,
+.lmrtfy-parchment .lmrtfy-ability-check-fail,
+.lmrtfy-parchment .lmrtfy-ability-save,
+.lmrtfy-parchment .lmrtfy-ability-save-fail,
+.lmrtfy-parchment .lmrtfy-skill-check,
+.lmrtfy-parchment .lmrtfy-skill-check-fail,
+.lmrtfy-parchment .lmrtfy-custom-formula,
+.lmrtfy-parchment .lmrtfy-initiative,
+.lmrtfy-parchment .lmrtfy-death-save,
+.lmrtfy-parchment .lmrtfy-perception,
+.lmrtfy-parchment .lmrtfy-roll-table {
+	background: url(../images/button.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: black;
+	height: 78px;
+}
+
+.enable-lmrtfy-ability-check-fail,
+.enable-lmrtfy-ability-save-fail,
+.enable-lmrtfy-skill-check-fail {
+    width: 10%;
+    position: absolute !important;
+    margin-top: -57px !important;
+    right: 27px;    
+}
+
+.lmrtfy-roller button:disabled {
+	opacity: 0.5;
+}
+
+.lmrtfy-actor .tooltip {
+	display: block;
+	min-width: 148px;
+	height: 26px;
+	padding: 2px 4px;
+	position: absolute;
+	top: -32px;
+	left: -50px;
+	background: rgba(0, 0, 0, 0.9);
+	border: 1px solid #191813;
+	border-radius: 3px;
+	color: #f0f0e0;
+	line-height: 22px;
+	text-align: center;
+	white-space: nowrap;
+	word-break: break-all;
+}
+
+.lmrtfy-dice-tray-buttons {
+    width: 75%;
+    padding-left: 207px;
+    margin-left: 95px;
+}
+
+.lmrtfy-dice-tray-button {
+    background: transparent;
+    border: 1px solid #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-box-shadow: 0 0 6px inset #8d9ea7;
+    box-shadow: 0 0 6px inset #8d9ea7;
+    -webkit-transition: all ease-in-out 0.25s;
+    -o-transition: all ease-in-out 0.25s;
+    transition: all ease-in-out 0.25s;
+    position: relative;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lmrtfy-bonus-button  {
+    color: #000 !important;
+}
+
+.lmrtfy-dice-tray-button:hover {
+    color: red;
+    border-color: red;
+    box-shadow: 0 0 6px inset #ff6400;
+}
+
+.lmrtfy-dice-tray-checks {
+    padding-left: 207px;
+}
+
+.lmrtfy-bonus-button:hover {
+    color: black !important;
+}
+
+.lmrtfy-dice-svg-normal {
+    height: 35px;
+}
+
+.lmrtfy-dice-svg-smaller {
+    padding: 3px;
+}
+
+.lmrtfy-dice-row-flexrow {
+    flex-wrap: nowrap;
+}
+
+.lmrtfy-dice-tray-details {
+    padding-top: 7px;
+    margin-left: -219px;
+}
+
+.lmrtfy-dice-tray-expander {
+    padding-left: 220px;
+}
+
+.lmrtfy-clear-button-area {
+    padding-left: 214px;
+}
+
+.d35ecustom .lmrtfy {
+	border: 8px solid #55493B;
+    border-image: url(/systems/D35E/icons/ui/dialog-frame.png) 30 round;
+    background: url(/systems/D35E/icons/ui/sidebar-bg.png);
+	border-radius: 0;
+}
+
+.d35ecustom .lmrtfy .window-content {
+	color: white;
+	background: none;
+}
+
+.d35ecustom .lmrtfy .select-all, .d35ecustom .lmrtfy .deselect-all {
+	border-radius: 0;
+	cursor: pointer;
+}
+
+.d35ecustom .lmrtfy input[type="text"], .d35ecustom .lmrtfy input[type="number"], .d35ecustom .lmrtfy input[type="password"], .d35ecustom .lmrtfy input[type="date"], .d35ecustom .lmrtfy input[type="time"] {
+	color: white !important;
+    width: calc(100% - 2px);
+    min-width: 20px;
+    height: 26px;
+    background: rgba(0, 0, 0, 0.05) !important;
+    padding: 1px 3px;
+    margin: 0;
+    color: #191813;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: inherit;
+    line-height: inherit;
+    border: 1px solid #7a7971;
+    border-radius: 3px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+	user-select: text;
+}
+
+.d35ecustom .lmrtfy select {
+	color: white !important;
+	height: 27px;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #7a7971;
+    border-radius: 3px;
+    padding: 0 3px;
+    text-overflow: ellipsis;
+}
+
+.d35ecustom .lmrtfy .lmrtfy-request-roll, 
+.d35ecustom .lmrtfy .lmrtfy-ability-check, 
+.d35ecustom .lmrtfy .lmrtfy-skill-check, 
+.d35ecustom .lmrtfy .lmrtfy-ability-save, 
+.d35ecustom .lmrtfy .lmrtfy-initiative, 
+.d35ecustom .lmrtfy .lmrtfy-perception, 
+.d35ecustom .lmrtfy .lmrtfy-save-roll,
+.d35ecustom .lmrtfy .lmrtfy-roll-table  {
+	background: none !important;
+    border-image: url(/systems/D35E/icons/ui/long-button.png);
+    background-size: 100% 100%;
+    color: white;
+	height: 40px;
+	border-image-slice: 80 80 fill;
+	border-image-width: 600px;
+	cursor: pointer;
+}
+
+.d35ecustom .lmrtfy .form-group:not(.lmrtfy-actor-avatars) input[type=checkbox] + label {
+    margin: 2px;
+    color: white;
+    background: none !important;
+    border-image: url(/systems/D35E/icons/ui/toggle-off.png);
+    border-image-slice: 20 20 fill;
+    border-image-width: 170px;
+    cursor: pointer;
+    padding: 1px 16px;
+	border-radius: 2px;
+	text-align: center;
+}
+
+.d35ecustom .lmrtfy .form-group:not(.lmrtfy-actor-avatars) input[type=checkbox]:checked + label {
+    margin: 2px;
+    color: white;
+    background: none !important;
+    border-image: url(/systems/D35E/icons/ui/toggle-on.png);
+    border-image-slice: 20 20 fill;
+    border-image-width: 170px;
+    cursor: pointer;
+	padding: 1px 16px;
+	
+	font-weight: normal;
+	border-radius: 2px;
+}
+
+.d35ecustom form .form-group .lmrtfy-ability-checks {
+	flex-wrap: wrap;
+}
+
+.d35ecustom form .form-group .lmrtfy-extras div {
+    padding: 0px;
+}
+.d35ecustom form .form-group .lmrtfy-saving-throws .lmrtfy-ability {
+    padding: 0px;
+}
+
+.d35ecustom form .form-group .lmrtfy-roll-table-list {
+    min-height: 89px;
+}
+
+.d35ecustom form .form-group .lmrtfy-ability-checks .lmrtfy-ability {
+    padding: 0px;
+}
+.d35ecustom .lmrtfy-skill-checks .lmrtfy-skill {
+	flex: 3;
+    padding: 0px;
+    display: flex;
+    max-width: 147px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 147px;
+}
+
+.d35ecustom .lmrtfy .lmrtfy-skill-checks input[type=checkbox] + label {
+    max-width: 147px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	width: 147px;
+	overflow: hidden;
+}
+
+.system-D35E form .form-group .lmrtfy-skill-checks {
+	max-height: 600px;
+}
+
+.d35ecustom .lmrtfy fieldset {
+	border: none;
+}
+
+.system-pf1 form .form-group .lmrtfy-skill-checks {
+	max-height: 600px;
+}
+
+.disabled-button {
+    cursor: default !important;
+    filter: opacity(0.5) !important;
+}
+
+.disabled-button:hover {
+    color: #000 !important;
+    border-color: #000 !important;
+    box-shadow: 0 0 6px inset #8d9ea7 !important;
+}

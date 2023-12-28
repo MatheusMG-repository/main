@@ -1,0 +1,47 @@
+{
+  "id": "pf1-statblock-converter",
+  "title": "sbc | PF1 Stackblock Converter",
+  "description": "Converts Pathfinder 1. Edition statblocks into working PC or NPC actors.",
+  "authors": [
+    {
+      "name": "Tristan Goucher",
+      "discord": "fairstrides"
+    },
+    {
+      "name": "Lavaeolous",
+      "discord": ".primer_"
+    }
+  ],
+  "url": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter",
+  "bugs": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/issues",
+  "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/releases/permalink/latest/downloads/module.json",
+  "download": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/releases/4.4.0/downloads/pf1-statblock-converter.zip",
+  "version": "4.4.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11"
+  },
+  "esmodules": [
+    "./scripts/sbc.js"
+  ],
+  "styles": [
+    "./styles/sbc.css"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf1",
+        "type": "system",
+        "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/foundryvtt-pathfinder1/-/releases/permalink/latest/downloads/system.json",
+        "compatibility": {
+          "minimum": "9.5",
+          "verified": "9.5"
+        }
+      }
+    ]
+  },
+  "socket": false,
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
+}

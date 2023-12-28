@@ -1,0 +1,57 @@
+<nav class="sheet-navigation tabs" data-group="links" data-tabs-type="list">
+  {{#each links.list as |link|}}
+  <a class="item" data-tab="{{link.id}}" data-group="links">{{link.label}}</a>
+  {{/each}}
+</nav>
+
+<section class="links-body">
+
+  {{#each links.list as |link|}}
+  {{!-- Children Tab --}}
+  <div class="tab flexcol" data-group="links" data-tab="{{link.id}}">
+    {{!-- Info --}}
+    <div class="help-text">
+      <i class="help-icon fas fa-info-circle"></i> {{link.help}}
+    </div>
+
+    <table class="item-links">
+      <tr>
+        <th>{{localize "PF1.Item"}}</th>
+
+        {{#each link.fields as |fv fk|}}
+        <th class="links-item-extra-field">{{fv.label}}</th>
+        {{/each}}
+
+        <th class="links-controls"></th>
+      </tr>
+      {{#each link.items as |item index|}}
+      <tr class="links-item{{#if item.broken}} broken-link{{/if}}" {{#if item.id}}data-item-id="{{item.id}}"{{/if}} {{#if item.uuid}}data-uuid="{{item.uuid}}" data-tooltip="UUID: {{item.uuid}}"{{/if}}>
+
+        {{!-- Link name and image --}}
+        <td class="links-item-name">
+          <div>
+            <img src="{{item.img}}" width="24" height="24">
+            <span>{{item.name}}{{#if item.broken}} [×]{{/if}}</span>
+          </div>
+        </td>
+
+        {{#each link.fields as |fv fk|}}
+        <td class="links-item-extra-field">
+          <input type="text" data-dtype="{{fv.type}}" value="{{lookup item fk}}" name="system.links.{{link.id}}.{{item.index}}.{{fk}}" />
+        </td>
+        {{/each}}
+
+        {{!-- Link Controls --}}
+        <td class="links-controls">
+          <div>
+            {{#if ../../owner}}
+            <a class="link-control delete-link" data-tooltip="PF1.DeleteItem"><i class="fas fa-trash"></i></a>
+            {{/if}}
+          </div>
+        </td>
+      </tr>
+      {{/each}}
+    </table>
+  </div>
+  {{/each}}
+</section>

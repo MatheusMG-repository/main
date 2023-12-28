@@ -1,0 +1,93 @@
+<div class="base-setup">
+  <h2>{{localize "PF1.BaseSetup"}}</h2>
+
+  {{!-- Spellbooks --}}
+  <div class="flexcol spellbook-usage">
+    <h3>{{localize "PF1.SpellbookUsage"}}</h3>
+
+    <div class="flexrow">
+      {{#each spellbookData as |spellbook a|}}
+      <label class="checkbox">
+        <input type="checkbox" {{checked spellbook.orig.inUse}} name="system.attributes.spells.spellbooks.{{a}}.inUse">
+        {{spellbook.orig.label}}
+      </label>
+      {{/each}}
+    </div>
+  </div>
+
+  {{! Misc Setup Utilities }}
+  <div class="flexcol">
+    <h3>{{localize "PF1.UtilityFunctions"}}</h3>
+
+    <button type="button" class="pointbuy-calculator">
+      <i class="fa-solid fa-calculator"></i>
+      {{localize "PF1.PointBuyCalculator"}}
+    </button>
+  </div>
+</div>
+
+{{> "systems/pf1/templates/actors/parts/actor-settings-ability-scores.hbs"}}
+
+{{!-- Optional Rules --}}
+<div class="optional-rules">
+    <h2>{{localize "PF1.OptionalAndVariantRules"}}</h2>
+
+    {{!-- Wound Thresholds --}}
+    <div class="form-group">
+        <label>{{localize "PF1.WoundThresholdOverride"}}</label>
+        <div class="form-fields">
+            <select data-dtype="Number" name="system.attributes.woundThresholds.override" {{#unless woundThresholds.allowWoundThresholdOverride}}disabled{{/unless}}>
+                {{#select system.attributes.woundThresholds.override}}
+                    <option value="-1">{{localize 'PF1.Default'}}</option>
+                    <option value="0">{{localize 'SETTINGS.pf1HealthConfigWoundThresholdDisabled'}}</option>
+                    <option value="1">{{localize 'SETTINGS.pf1HealthConfigWoundThresholdNormal'}}</option>
+                    <option value="2">{{localize 'SETTINGS.pf1HealthConfigWoundThresholdGritty'}}</option>
+                {{/select}}
+            </select>
+        </div>
+    </div>
+</div>
+
+{{!-- Tooltip Settings --}}
+{{#if isGM}}
+<div class="token-tooltips">
+    <h2>{{localize "PF1.TooltipConfigName"}}</h2>
+
+    <div class="form-group">
+        <label>{{localize "PF1.Name"}}</label>
+        <input type="text" name="system.details.tooltip.name" placeholder="{{token.name}}" value="{{system.details.tooltip.name}}" />
+    </div>
+
+    <div class="form-group stacked">
+        <label class="checkbox">
+            <input type="checkbox" name="system.details.tooltip.hideHeld" {{checked system.details.tooltip.hideHeld}}>
+            {{localize "PF1.HideHeld"}}
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="system.details.tooltip.hideArmor" {{checked system.details.tooltip.hideArmor}}>
+            {{localize "PF1.HideArmor"}}
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="system.details.tooltip.hideBuffs" {{checked system.details.tooltip.hideBuffs}}>
+            {{localize "PF1.HideBuffs"}}
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="system.details.tooltip.hideConditions" {{checked system.details.tooltip.hideConditions}}>
+            {{localize "PF1.HideConditions"}}
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="system.details.tooltip.hideClothing" {{checked system.details.tooltip.hideClothing}}>
+            {{localize "PF1.HideClothing"}}
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="system.details.tooltip.hideName" {{checked system.details.tooltip.hideName}}>
+            {{localize "PF1.HideName"}}
+        </label>
+    </div>
+</div>
+{{/if}}
