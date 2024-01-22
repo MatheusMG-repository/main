@@ -13138,3 +13138,900 @@
 {"level":"info","message":"Running Electron application with version 24.8.5 using Chromium 112.0.5615.204","timestamp":"2023-12-28 21:14:39"}
 {"level":"info","message":"Server started and listening on port 30000","timestamp":"2023-12-28 21:14:39"}
 {"level":"info","message":"Created client session 7e0f684862ab065582de4286","timestamp":"2023-12-28 21:14:40"}
+{"level":"info","message":"Running on Node.js - Version 18.14.0","timestamp":"2024-01-07 21:01:36"}
+{"level":"info","message":"Foundry Virtual Tabletop - Version 11 Build 315","timestamp":"2024-01-07 21:01:36"}
+{"level":"info","message":"User Data Directory - \"C:/Users/janjo/Utopia/main\"","timestamp":"2024-01-07 21:01:36"}
+{"level":"info","message":"Application Options:\n{\n  \"compressStatic\": true,\n  \"fullscreen\": false,\n  \"hostname\": null,\n  \"language\": \"en.core\",\n  \"localHostname\": null,\n  \"port\": 30000,\n  \"protocol\": null,\n  \"proxyPort\": null,\n  \"proxySSL\": false,\n  \"routePrefix\": null,\n  \"updateChannel\": \"stable\",\n  \"upnp\": true,\n  \"upnpLeaseDuration\": null,\n  \"awsConfig\": null,\n  \"compressSocket\": true,\n  \"cssTheme\": \"foundry\",\n  \"deleteNEDB\": false,\n  \"hotReload\": false,\n  \"passwordSalt\": null,\n  \"sslCert\": null,\n  \"sslKey\": null,\n  \"world\": null,\n  \"serviceConfig\": null,\n  \"telemetry\": true,\n  \"adminPassword\": null,\n  \"noBackups\": false\n}","timestamp":"2024-01-07 21:01:36"}
+{"level":"info","message":"Software license verification succeeded","timestamp":"2024-01-07 21:01:36"}
+{"level":"info","message":"Requesting UPnP port forwarding to destination port 30000","timestamp":"2024-01-07 21:01:36"}
+{"level":"info","message":"Running Electron application with version 24.8.5 using Chromium 112.0.5615.204","timestamp":"2024-01-07 21:01:36"}
+{"level":"info","message":"Server started and listening on port 30000","timestamp":"2024-01-07 21:01:36"}
+{"level":"info","message":"Created client session 1219c29a078527f88caa49fb","timestamp":"2024-01-07 21:01:37"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"actors\": Database is not open","stack":"Error: Failed to connect to database \"actors\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:47"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors","timestamp":"2024-01-07 21:01:47"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors complete. Attempting re-connection","timestamp":"2024-01-07 21:01:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"actors\"","timestamp":"2024-01-07 21:01:47"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"cards\": Database is not open","stack":"Error: Failed to connect to database \"cards\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:47"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/cards","timestamp":"2024-01-07 21:01:47"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/cards complete. Attempting re-connection","timestamp":"2024-01-07 21:01:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"cards\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"messages\": Database is not open","stack":"Error: Failed to connect to database \"messages\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/messages","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/messages complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"messages\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"combats\": Database is not open","stack":"Error: Failed to connect to database \"combats\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/combats","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/combats complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"combats\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"drawings\": Database is not open","stack":"Error: Failed to connect to database \"drawings\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/drawings","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/drawings complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"drawings\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"fog\": Database is not open","stack":"Error: Failed to connect to database \"fog\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fog\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"folders\": Database is not open","stack":"Error: Failed to connect to database \"folders\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/folders","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/folders complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"folders\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"items\": Database is not open","stack":"Error: Failed to connect to database \"items\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/items","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/items complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"items\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"journal\": Database is not open","stack":"Error: Failed to connect to database \"journal\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/journal","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/journal complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"journal\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"macros\": Database is not open","stack":"Error: Failed to connect to database \"macros\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"macros\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"playlists\": Database is not open","stack":"Error: Failed to connect to database \"playlists\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"playlists\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"tables\": Database is not open","stack":"Error: Failed to connect to database \"tables\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/tables","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/tables complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"tables\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"scenes\": Database is not open","stack":"Error: Failed to connect to database \"scenes\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"scenes\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"settings\": Database is not open","stack":"Error: Failed to connect to database \"settings\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"settings\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"users\": Database is not open","stack":"Error: Failed to connect to database \"users\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/users","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/users complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"users\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.classes\": Database is not open","stack":"Error: Failed to connect to database \"pf1.classes\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\classes","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\classes complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.classes\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.mythicpaths\": Database is not open","stack":"Error: Failed to connect to database \"pf1.mythicpaths\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\mythic-paths","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\mythic-paths complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.mythicpaths\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.commonbuffs\": Database is not open","stack":"Error: Failed to connect to database \"pf1.commonbuffs\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\commonbuffs","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\commonbuffs complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.commonbuffs\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.spells\": Database is not open","stack":"Error: Failed to connect to database \"pf1.spells\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\spells","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\spells complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.spells\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.feats\": Database is not open","stack":"Error: Failed to connect to database \"pf1.feats\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\feats","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\feats complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.feats\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.items\": Database is not open","stack":"Error: Failed to connect to database \"pf1.items\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\items","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\items complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.items\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.armors-and-shields\": Database is not open","stack":"Error: Failed to connect to database \"pf1.armors-and-shields\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\armors-and-shields","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\armors-and-shields complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.armors-and-shields\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.weapons-and-ammo\": Database is not open","stack":"Error: Failed to connect to database \"pf1.weapons-and-ammo\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\weapons-and-ammo","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\weapons-and-ammo complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.weapons-and-ammo\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.monster-abilities\": Database is not open","stack":"Error: Failed to connect to database \"pf1.monster-abilities\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\monster-abilities","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\monster-abilities complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.monster-abilities\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.racialhd\": Database is not open","stack":"Error: Failed to connect to database \"pf1.racialhd\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\racial-hd","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\racial-hd complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.racialhd\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.races\": Database is not open","stack":"Error: Failed to connect to database \"pf1.races\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\races","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\races complete. Attempting re-connection","timestamp":"2024-01-07 21:01:48"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.races\"","timestamp":"2024-01-07 21:01:48"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.class-abilities\": Database is not open","stack":"Error: Failed to connect to database \"pf1.class-abilities\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\class-abilities","timestamp":"2024-01-07 21:01:48"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\class-abilities complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.class-abilities\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.monster-templates\": Database is not open","stack":"Error: Failed to connect to database \"pf1.monster-templates\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\monster-templates","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\monster-templates complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.monster-templates\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.sample-macros\": Database is not open","stack":"Error: Failed to connect to database \"pf1.sample-macros\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\sample-macros","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\sample-macros complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.sample-macros\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.roll-tables\": Database is not open","stack":"Error: Failed to connect to database \"pf1.roll-tables\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\roll-tables","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\roll-tables complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.roll-tables\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.ultimate-equipment\": Database is not open","stack":"Error: Failed to connect to database \"pf1.ultimate-equipment\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\ultimate-equipment","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\ultimate-equipment complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.ultimate-equipment\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf1.pf1e-rules\": Database is not open","stack":"Error: Failed to connect to database \"pf1.pf1e-rules\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\pf1e-rules","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\systems\\pf1\\packs\\pf1e-rules complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.pf1e-rules\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"fa-battlemaps.maps\": Database is not open","stack":"Error: Failed to connect to database \"fa-battlemaps.maps\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\fa-battlemaps\\packs\\maps","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\fa-battlemaps\\packs\\maps complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fa-battlemaps.maps\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"monks-active-tiles.active-tile-macros\": Database is not open","stack":"Error: Failed to connect to database \"monks-active-tiles.active-tile-macros\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\monks-active-tiles\\packs\\active-tile-macros","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\monks-active-tiles\\packs\\active-tile-macros complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"monks-active-tiles.active-tile-macros\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-35-content\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-35-content\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-35-content","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-35-content complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-35-content\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-artifacts\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-artifacts\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-artifacts","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-artifacts complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-artifacts\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-buffs\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-buffs\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-buffs","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-buffs complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-buffs\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-class-abilities\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-class-abilities\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-class-abilities","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-class-abilities complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-class-abilities\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-companions\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-companions\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-companions","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-companions complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-companions\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-companion-features\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-companion-features\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-companion-features","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-companion-features complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-companion-features\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-deities\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-deities\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-deities","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-deities complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-deities\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-eidolon-forms\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-eidolon-forms\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-eidolon-forms","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-eidolon-forms complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-eidolon-forms\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-eidolon-evolutions\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-eidolon-evolutions\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-eidolon-evolutions","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-eidolon-evolutions complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-eidolon-evolutions\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-encounter-tables\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-encounter-tables\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-encounter-tables","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-encounter-tables complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-encounter-tables\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-elephant\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-elephant\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\elephant-in-the-room","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\elephant-in-the-room complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-elephant\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-familiars\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-familiars\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-familiars","timestamp":"2024-01-07 21:01:49"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-familiars complete. Attempting re-connection","timestamp":"2024-01-07 21:01:49"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-familiars\"","timestamp":"2024-01-07 21:01:49"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-feats\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-feats\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-feats","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-feats complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-feats\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.gm-quick-reference\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.gm-quick-reference\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\gm-quick-reference","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\gm-quick-reference complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.gm-quick-reference\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-goods-services\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-goods-services\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-goods-services","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-goods-services complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-goods-services\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.harrow-deck\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.harrow-deck\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\harrow-deck","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\harrow-deck complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.harrow-deck\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-items\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-items\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-items","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-items complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-items\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-magicitems\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-magicitems\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-magic","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-magic complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-magicitems\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-maladies\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-maladies\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-maladies","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-maladies complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-maladies\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-merchants\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-merchants\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-merchants","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-merchants complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-merchants\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-magic-tables\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-magic-tables\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-magic-tables","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-magic-tables complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-magic-tables\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-occult-rituals\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-occult-rituals\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-occult-rituals","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-occult-rituals complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-occult-rituals\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-racial-traits\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-racial-traits\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-racial-traits","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-racial-traits complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-racial-traits\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-rules\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-rules\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-rules","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-rules complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-rules\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-special-qualities\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-special-qualities\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-special-qualities","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-special-qualities complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-special-qualities\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-tables\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-tables\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-tables","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-tables complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-tables\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-tech\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-tech\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-technology","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-technology complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-tech\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-traits\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-traits\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-traits","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-traits complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-traits\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-traps-and-haunts\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-traps-and-haunts\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-traps-and-haunts","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-traps-and-haunts complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-traps-and-haunts\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-universal-monster-rules\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-universal-monster-rules\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-universal-monster-rules","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-universal-monster-rules complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-universal-monster-rules\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.pf-wondrous\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.pf-wondrous\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-wondrous","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\pf-wondrous complete. Attempting re-connection","timestamp":"2024-01-07 21:01:50"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-wondrous\"","timestamp":"2024-01-07 21:01:50"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.kingdom-building-gm\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.kingdom-building-gm\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\kingdom-building-gm","timestamp":"2024-01-07 21:01:50"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\kingdom-building-gm complete. Attempting re-connection","timestamp":"2024-01-07 21:01:51"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-gm\"","timestamp":"2024-01-07 21:01:51"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.kingdom-building-player\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.kingdom-building-player\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:51"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\kingdom-building-player","timestamp":"2024-01-07 21:01:51"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\kingdom-building-player complete. Attempting re-connection","timestamp":"2024-01-07 21:01:51"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-player\"","timestamp":"2024-01-07 21:01:51"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.kingdom-building-scenes\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.kingdom-building-scenes\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:51"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\kingdom-building-scenes","timestamp":"2024-01-07 21:01:51"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\kingdom-building-scenes complete. Attempting re-connection","timestamp":"2024-01-07 21:01:51"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-scenes\"","timestamp":"2024-01-07 21:01:51"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.kingdom-building-buildings\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.kingdom-building-buildings\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:51"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\kingdom-building-buildings","timestamp":"2024-01-07 21:01:51"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\kingdom-building-buildings complete. Attempting re-connection","timestamp":"2024-01-07 21:01:51"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-buildings\"","timestamp":"2024-01-07 21:01:51"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"pf-content.kingdom-building-tables\": Database is not open","stack":"Error: Failed to connect to database \"pf-content.kingdom-building-tables\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:51"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\kingdom-building-tables","timestamp":"2024-01-07 21:01:51"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\pf-content\\packs\\kingdom-building-tables complete. Attempting re-connection","timestamp":"2024-01-07 21:01:51"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-tables\"","timestamp":"2024-01-07 21:01:51"}
+{"cause":{"code":"LEVEL_IO_ERROR"},"code":"LEVEL_DATABASE_NOT_OPEN","level":"error","message":"Failed to connect to database \"statblock-library.sb-statblocks\": Database is not open","stack":"Error: Failed to connect to database \"statblock-library.sb-statblocks\": Database is not open\n    at maybeOpened (C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:133:18)\n    at C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\node_modules\\abstract-level\\abstract-level.js:160:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-01-07 21:01:51"}
+{"level":"warn","message":"FoundryVTT | Attempting database repair for C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\statblock-library\\packs\\sb-statblocks","timestamp":"2024-01-07 21:01:51"}
+{"level":"warn","message":"FoundryVTT | Repair of C:\\Users\\janjo\\Utopia\\main\\Data\\modules\\statblock-library\\packs\\sb-statblocks complete. Attempting re-connection","timestamp":"2024-01-07 21:01:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"statblock-library.sb-statblocks\"","timestamp":"2024-01-07 21:01:52"}
+{"level":"info","message":"FoundryVTT | Created 0 Folder documents with ids: []","timestamp":"2024-01-07 21:01:52"}
+{"ip":"::1","level":"info","message":"User authentication successful for user Gamemaster","session":"1219c29a078527f88caa49fb","timestamp":"2024-01-07 21:01:55"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-01-07 21:01:58"}
+{"level":"info","message":"Vended World data to User [w7M4Wjrf5KX4Xg5D] in 1922ms","timestamp":"2024-01-07 21:01:58"}
+{"level":"info","message":"Activating scene Mines Lv.1 [9P9ZG6wv691h8v4S]","timestamp":"2024-01-07 21:04:52"}
+{"level":"info","message":"Created client session f54cb10672424034e2140e59","timestamp":"2024-01-07 21:56:44"}
+{"level":"info","message":"Created client session f9df5a2a38e0a68ed3ffd451","timestamp":"2024-01-07 22:03:42"}
+{"level":"info","message":"Created client session cf62ab20a9e94ea4ff730f2c","timestamp":"2024-01-07 22:10:11"}
+{"level":"info","message":"Created client session cd014b5aadc4bef29234dcec","timestamp":"2024-01-07 22:16:56"}
+{"level":"info","message":"Running on Node.js - Version 18.14.0","timestamp":"2024-01-08 18:15:03"}
+{"level":"info","message":"Foundry Virtual Tabletop - Version 11 Build 315","timestamp":"2024-01-08 18:15:03"}
+{"level":"info","message":"User Data Directory - \"C:/Users/janjo/Utopia/main\"","timestamp":"2024-01-08 18:15:03"}
+{"level":"info","message":"Application Options:\n{\n  \"compressStatic\": true,\n  \"fullscreen\": false,\n  \"hostname\": null,\n  \"language\": \"en.core\",\n  \"localHostname\": null,\n  \"port\": 30000,\n  \"protocol\": null,\n  \"proxyPort\": null,\n  \"proxySSL\": false,\n  \"routePrefix\": null,\n  \"updateChannel\": \"stable\",\n  \"upnp\": true,\n  \"upnpLeaseDuration\": null,\n  \"awsConfig\": null,\n  \"compressSocket\": true,\n  \"cssTheme\": \"foundry\",\n  \"deleteNEDB\": false,\n  \"hotReload\": false,\n  \"passwordSalt\": null,\n  \"sslCert\": null,\n  \"sslKey\": null,\n  \"world\": null,\n  \"serviceConfig\": null,\n  \"telemetry\": true,\n  \"adminPassword\": null,\n  \"noBackups\": false\n}","timestamp":"2024-01-08 18:15:03"}
+{"level":"info","message":"Software license verification succeeded","timestamp":"2024-01-08 18:15:03"}
+{"level":"info","message":"Requesting UPnP port forwarding to destination port 30000","timestamp":"2024-01-08 18:15:03"}
+{"level":"info","message":"Running Electron application with version 24.8.5 using Chromium 112.0.5615.204","timestamp":"2024-01-08 18:15:03"}
+{"level":"info","message":"Server started and listening on port 30000","timestamp":"2024-01-08 18:15:03"}
+{"level":"info","message":"Created client session d754107a8b2b24c6f9bad4ec","timestamp":"2024-01-08 18:15:04"}
+{"level":"info","message":"FoundryVTT | Connected to database \"actors\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"cards\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"messages\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"combats\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"drawings\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fog\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"folders\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"items\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"journal\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"macros\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"playlists\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"tables\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"scenes\"","timestamp":"2024-01-08 18:15:18"}
+{"level":"info","message":"FoundryVTT | Connected to database \"settings\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"users\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.classes\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.mythicpaths\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.commonbuffs\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.spells\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.feats\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.items\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.armors-and-shields\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.weapons-and-ammo\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.monster-abilities\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.racialhd\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.races\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.class-abilities\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.monster-templates\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.sample-macros\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.roll-tables\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.ultimate-equipment\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.pf1e-rules\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fa-battlemaps.maps\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"monks-active-tiles.active-tile-macros\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-35-content\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-artifacts\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-buffs\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-class-abilities\"","timestamp":"2024-01-08 18:15:19"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-companions\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-companion-features\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-deities\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-eidolon-forms\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-eidolon-evolutions\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-encounter-tables\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-elephant\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-familiars\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-feats\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.gm-quick-reference\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-goods-services\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.harrow-deck\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-items\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-magicitems\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-maladies\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-merchants\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-magic-tables\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-occult-rituals\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-racial-traits\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-rules\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-special-qualities\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-tables\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-tech\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-traits\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-traps-and-haunts\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-universal-monster-rules\"","timestamp":"2024-01-08 18:15:20"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-wondrous\"","timestamp":"2024-01-08 18:15:21"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-gm\"","timestamp":"2024-01-08 18:15:21"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-player\"","timestamp":"2024-01-08 18:15:21"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-scenes\"","timestamp":"2024-01-08 18:15:21"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-buildings\"","timestamp":"2024-01-08 18:15:21"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-tables\"","timestamp":"2024-01-08 18:15:21"}
+{"level":"info","message":"FoundryVTT | Connected to database \"statblock-library.sb-statblocks\"","timestamp":"2024-01-08 18:15:22"}
+{"level":"info","message":"FoundryVTT | Created 0 Folder documents with ids: []","timestamp":"2024-01-08 18:15:22"}
+{"ip":"::1","level":"info","message":"User authentication successful for user Gamemaster","session":"d754107a8b2b24c6f9bad4ec","timestamp":"2024-01-08 18:15:25"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-01-08 18:15:27"}
+{"level":"info","message":"Vended World data to User [w7M4Wjrf5KX4Xg5D] in 1583ms","timestamp":"2024-01-08 18:15:27"}
+{"level":"info","message":"candleblowout.ogg saved to fa_battlemaps/Audio","timestamp":"2024-01-08 18:16:03"}
+{"level":"info","message":"Blank.webp saved to fa_battlemaps/Maps/2023/September/fa_old-owl-well/Text","timestamp":"2024-01-08 18:16:03"}
+{"level":"info","message":"OldOwlWellFG.webp saved to fa_battlemaps/Maps/2023/September/fa_old-owl-well/Maps","timestamp":"2024-01-08 18:16:03"}
+{"level":"info","message":"C-ForestOutskirts.mp3 saved to fa_battlemaps/Audio","timestamp":"2024-01-08 18:16:04"}
+{"level":"info","message":"C-WindAndCrow.mp3 saved to fa_battlemaps/Audio","timestamp":"2024-01-08 18:16:04"}
+{"level":"info","message":"Light.webp saved to fa_battlemaps/Maps/2023/September/fa_old-owl-well/Tiles","timestamp":"2024-01-08 18:16:04"}
+{"level":"info","message":"OldOwlWellBG.webp saved to fa_battlemaps/Maps/2023/September/fa_old-owl-well/Maps","timestamp":"2024-01-08 18:16:04"}
+{"level":"info","message":"NoTent.webp saved to fa_battlemaps/Maps/2023/September/fa_old-owl-well/Tiles","timestamp":"2024-01-08 18:16:04"}
+{"level":"info","message":"Tent.webp saved to fa_battlemaps/Maps/2023/September/fa_old-owl-well/Tiles","timestamp":"2024-01-08 18:16:04"}
+{"level":"info","message":"TentInterior.webp saved to fa_battlemaps/Maps/2023/September/fa_old-owl-well/Tiles","timestamp":"2024-01-08 18:16:05"}
+{"level":"info","message":"FoundryVTT | Deleted Scene with id [hbrY8ou3FOvljDPm]","timestamp":"2024-01-08 18:16:08"}
+{"level":"info","message":"FoundryVTT | Created Scene with id [hbrY8ou3FOvljDPm]","timestamp":"2024-01-08 18:16:08"}
+{"level":"info","message":"FoundryVTT | Extracted base64 asset: \"C:\\Users\\janjo\\Utopia\\main\\Data\\worlds\\utopia\\assets\\scenes\\hbrY8ou3FOvljDPm-thumb.webp\"","timestamp":"2024-01-08 18:16:08"}
+{"level":"info","message":"FoundryVTT | Created Tile with id [gSfJihKK38nxQF4a] in parent Scene [x7R7Z0AZlaCvwCk4]","timestamp":"2024-01-08 18:17:23"}
+{"level":"info","message":"flameblowout.ogg saved to fa_battlemaps/Audio","timestamp":"2024-01-08 18:18:25"}
+{"level":"info","message":"Fire_Brazier_A1_03.webm saved to fa_battlemaps/Animations","timestamp":"2024-01-08 18:18:25"}
+{"level":"info","message":"fire-loop.ogg saved to fa_battlemaps/Audio","timestamp":"2024-01-08 18:18:25"}
+{"level":"info","message":"C-Hatch.mp3 saved to fa_battlemaps/Audio","timestamp":"2024-01-08 18:18:26"}
+{"level":"info","message":"Forest Night.ogg saved to fa_battlemaps/Audio","timestamp":"2024-01-08 18:18:27"}
+{"level":"info","message":"Streams quietstream.ogg saved to fa_battlemaps/Audio","timestamp":"2024-01-08 18:18:27"}
+{"level":"info","message":"Forest.ogg saved to fa_battlemaps/Audio","timestamp":"2024-01-08 18:18:27"}
+{"level":"info","message":"ForestTrail.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Maps","timestamp":"2024-01-08 18:18:27"}
+{"level":"info","message":"ForestTrailRiver.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Maps","timestamp":"2024-01-08 18:18:27"}
+{"level":"info","message":"Ambush.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Text","timestamp":"2024-01-08 18:18:27"}
+{"level":"info","message":"Fort.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Text","timestamp":"2024-01-08 18:18:27"}
+{"level":"info","message":"Path.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Text","timestamp":"2024-01-08 18:18:27"}
+{"level":"info","message":"River.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Text","timestamp":"2024-01-08 18:18:28"}
+{"level":"info","message":"Statue.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Text","timestamp":"2024-01-08 18:18:28"}
+{"level":"info","message":"ShadowOverhead.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Maps","timestamp":"2024-01-08 18:18:28"}
+{"level":"info","message":"TreeCanopy.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Maps","timestamp":"2024-01-08 18:18:28"}
+{"level":"info","message":"FortOpenOverhead.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Tiles","timestamp":"2024-01-08 18:18:28"}
+{"level":"info","message":"FortOpen.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Tiles","timestamp":"2024-01-08 18:18:28"}
+{"level":"info","message":"FortOverhead.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Tiles","timestamp":"2024-01-08 18:18:28"}
+{"level":"info","message":"FortShadow.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Tiles","timestamp":"2024-01-08 18:18:28"}
+{"level":"info","message":"Statue.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Tiles","timestamp":"2024-01-08 18:18:29"}
+{"level":"info","message":"StatueLight.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Tiles","timestamp":"2024-01-08 18:18:29"}
+{"level":"info","message":"ambush.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Tiles","timestamp":"2024-01-08 18:18:29"}
+{"level":"info","message":"Fort.webp saved to fa_battlemaps/Maps/2022/August/fa_forest-trail/Tiles","timestamp":"2024-01-08 18:18:30"}
+{"level":"info","message":"FoundryVTT | Deleted Scene with id [x7R7Z0AZlaCvwCk4]","timestamp":"2024-01-08 18:18:32"}
+{"level":"info","message":"FoundryVTT | Created Scene with id [x7R7Z0AZlaCvwCk4]","timestamp":"2024-01-08 18:18:32"}
+{"level":"info","message":"FoundryVTT | Extracted base64 asset: \"C:\\Users\\janjo\\Utopia\\main\\Data\\worlds\\utopia\\assets\\scenes\\x7R7Z0AZlaCvwCk4-thumb.webp\"","timestamp":"2024-01-08 18:18:33"}
+{"level":"info","message":"FoundryVTT | Deleted Scene with id [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-08 18:22:03"}
+{"level":"info","message":"FoundryVTT | Created Scene with id [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-08 18:22:03"}
+{"level":"info","message":"FoundryVTT | Extracted base64 asset: \"C:\\Users\\janjo\\Utopia\\main\\Data\\worlds\\utopia\\assets\\scenes\\0TyrkbfKvPqd0Bda-thumb.webp\"","timestamp":"2024-01-08 18:22:04"}
+{"level":"info","message":"Blank.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Text","timestamp":"2024-01-08 18:23:32"}
+{"level":"info","message":"Fire_Brazier_A1_01.webm saved to fa_battlemaps/Animations","timestamp":"2024-01-08 18:23:33"}
+{"level":"info","message":"Empty.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Tiles","timestamp":"2024-01-08 18:23:33"}
+{"level":"info","message":"GoblinCampFG.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Maps","timestamp":"2024-01-08 18:23:33"}
+{"level":"info","message":"Fire1.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Tiles","timestamp":"2024-01-08 18:23:33"}
+{"level":"info","message":"GoblinCampBG.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Maps","timestamp":"2024-01-08 18:23:33"}
+{"level":"info","message":"Fire2.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Tiles","timestamp":"2024-01-08 18:23:33"}
+{"level":"info","message":"Smoke1.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Tiles","timestamp":"2024-01-08 18:23:33"}
+{"level":"info","message":"Smoke2.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Tiles","timestamp":"2024-01-08 18:23:34"}
+{"level":"info","message":"Tree1.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Tiles","timestamp":"2024-01-08 18:23:34"}
+{"level":"info","message":"Tree2.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Tiles","timestamp":"2024-01-08 18:23:34"}
+{"level":"info","message":"TreeBorders.webp saved to fa_battlemaps/Maps/2023/September/fa_goblincamp/Tiles","timestamp":"2024-01-08 18:23:34"}
+{"level":"info","message":"FoundryVTT | Deleted Scene with id [cWDvrMesGzTD84Pk]","timestamp":"2024-01-08 18:23:36"}
+{"level":"info","message":"FoundryVTT | Created Scene with id [cWDvrMesGzTD84Pk]","timestamp":"2024-01-08 18:23:36"}
+{"level":"info","message":"FoundryVTT | Extracted base64 asset: \"C:\\Users\\janjo\\Utopia\\main\\Data\\worlds\\utopia\\assets\\scenes\\cWDvrMesGzTD84Pk-thumb.webp\"","timestamp":"2024-01-08 18:23:37"}
+{"level":"info","message":"Fireflies_A2_01.webm saved to fa_battlemaps/Animations","timestamp":"2024-01-08 18:25:18"}
+{"level":"info","message":"Fireflies_A1_01.webm saved to fa_battlemaps/Animations","timestamp":"2024-01-08 18:25:18"}
+{"level":"info","message":"bp.webp saved to fa_battlemaps/Maps/2022/September/fa_forest-road/Text","timestamp":"2024-01-08 18:25:19"}
+{"level":"info","message":"bp.png saved to fa_battlemaps/Maps/2022/September/fa_forest-road/Text","timestamp":"2024-01-08 18:25:19"}
+{"level":"info","message":"C-ForestDeep.mp3 saved to fa_battlemaps/Audio","timestamp":"2024-01-08 18:25:19"}
+{"level":"info","message":"ForestRoadBG.webp saved to fa_battlemaps/Maps/2022/September/fa_forest-road/Maps","timestamp":"2024-01-08 18:25:19"}
+{"level":"info","message":"BlockedPass.webp saved to fa_battlemaps/Maps/2022/September/fa_forest-road/Tiles","timestamp":"2024-01-08 18:25:19"}
+{"level":"info","message":"ForestRoadFG.webp saved to fa_battlemaps/Maps/2022/September/fa_forest-road/Maps","timestamp":"2024-01-08 18:25:24"}
+{"level":"info","message":"FoundryVTT | Deleted Scene with id [pdnWYtzG0n81Nybk]","timestamp":"2024-01-08 18:25:26"}
+{"level":"info","message":"FoundryVTT | Created Scene with id [pdnWYtzG0n81Nybk]","timestamp":"2024-01-08 18:25:26"}
+{"level":"info","message":"FoundryVTT | Extracted base64 asset: \"C:\\Users\\janjo\\Utopia\\main\\Data\\worlds\\utopia\\assets\\scenes\\pdnWYtzG0n81Nybk-thumb.webp\"","timestamp":"2024-01-08 18:25:27"}
+{"level":"info","message":"Activating scene Rocky River [40x30] [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-08 18:43:11"}
+{"level":"info","message":"Shutting down Foundry Virtual Tabletop server","timestamp":"2024-01-08 18:46:54"}
+{"level":"info","message":"Shut-down success. Goodbye!","timestamp":"2024-01-08 18:46:54"}
+{"level":"info","message":"Running on Node.js - Version 18.14.0","timestamp":"2024-01-09 18:06:32"}
+{"level":"info","message":"Foundry Virtual Tabletop - Version 11 Build 315","timestamp":"2024-01-09 18:06:32"}
+{"level":"info","message":"User Data Directory - \"C:/Users/janjo/Utopia/main\"","timestamp":"2024-01-09 18:06:32"}
+{"level":"info","message":"Application Options:\n{\n  \"compressStatic\": true,\n  \"fullscreen\": false,\n  \"hostname\": null,\n  \"language\": \"en.core\",\n  \"localHostname\": null,\n  \"port\": 30000,\n  \"protocol\": null,\n  \"proxyPort\": null,\n  \"proxySSL\": false,\n  \"routePrefix\": null,\n  \"updateChannel\": \"stable\",\n  \"upnp\": true,\n  \"upnpLeaseDuration\": null,\n  \"awsConfig\": null,\n  \"compressSocket\": true,\n  \"cssTheme\": \"foundry\",\n  \"deleteNEDB\": false,\n  \"hotReload\": false,\n  \"passwordSalt\": null,\n  \"sslCert\": null,\n  \"sslKey\": null,\n  \"world\": null,\n  \"serviceConfig\": null,\n  \"telemetry\": true,\n  \"adminPassword\": null,\n  \"noBackups\": false\n}","timestamp":"2024-01-09 18:06:32"}
+{"level":"info","message":"Software license verification succeeded","timestamp":"2024-01-09 18:06:32"}
+{"level":"info","message":"Requesting UPnP port forwarding to destination port 30000","timestamp":"2024-01-09 18:06:32"}
+{"level":"info","message":"Running Electron application with version 24.8.5 using Chromium 112.0.5615.204","timestamp":"2024-01-09 18:06:32"}
+{"level":"info","message":"Server started and listening on port 30000","timestamp":"2024-01-09 18:06:32"}
+{"level":"info","message":"Created client session 10418f85e9fed8ec8be546e2","timestamp":"2024-01-09 18:06:33"}
+{"level":"info","message":"FoundryVTT | Connected to database \"actors\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"cards\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"messages\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"combats\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"drawings\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fog\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"folders\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"items\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"journal\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"macros\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"playlists\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"tables\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"scenes\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"settings\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"users\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.classes\"","timestamp":"2024-01-09 18:07:26"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.mythicpaths\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.commonbuffs\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.spells\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.feats\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.items\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.armors-and-shields\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.weapons-and-ammo\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.monster-abilities\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.racialhd\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.races\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.class-abilities\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.monster-templates\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.sample-macros\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.roll-tables\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.ultimate-equipment\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.pf1e-rules\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fa-battlemaps.maps\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"monks-active-tiles.active-tile-macros\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-35-content\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-artifacts\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-buffs\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-class-abilities\"","timestamp":"2024-01-09 18:07:27"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-companions\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-companion-features\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-deities\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-eidolon-forms\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-eidolon-evolutions\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-encounter-tables\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-elephant\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-familiars\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-feats\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.gm-quick-reference\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-goods-services\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.harrow-deck\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-items\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-magicitems\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-maladies\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-merchants\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-magic-tables\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-occult-rituals\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-racial-traits\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-rules\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-special-qualities\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-tables\"","timestamp":"2024-01-09 18:07:28"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-tech\"","timestamp":"2024-01-09 18:07:29"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-traits\"","timestamp":"2024-01-09 18:07:29"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-traps-and-haunts\"","timestamp":"2024-01-09 18:07:29"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-universal-monster-rules\"","timestamp":"2024-01-09 18:07:29"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-wondrous\"","timestamp":"2024-01-09 18:07:29"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-gm\"","timestamp":"2024-01-09 18:07:29"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-player\"","timestamp":"2024-01-09 18:07:29"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-scenes\"","timestamp":"2024-01-09 18:07:29"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-buildings\"","timestamp":"2024-01-09 18:07:29"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-tables\"","timestamp":"2024-01-09 18:07:29"}
+{"level":"info","message":"FoundryVTT | Connected to database \"statblock-library.sb-statblocks\"","timestamp":"2024-01-09 18:07:30"}
+{"level":"info","message":"FoundryVTT | Created 0 Folder documents with ids: []","timestamp":"2024-01-09 18:07:30"}
+{"ip":"::1","level":"info","message":"User authentication successful for user Gamemaster","session":"10418f85e9fed8ec8be546e2","timestamp":"2024-01-09 18:07:43"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-01-09 18:07:45"}
+{"level":"info","message":"Vended World data to User [w7M4Wjrf5KX4Xg5D] in 1648ms","timestamp":"2024-01-09 18:07:45"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-01-09 18:11:11"}
+{"level":"info","message":"Vended World data to User [w7M4Wjrf5KX4Xg5D] in 2228ms","timestamp":"2024-01-09 18:11:11"}
+{"level":"info","message":"FoundryVTT | Created Actor with id [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:02"}
+{"level":"info","message":"FoundryVTT | Created Item with id [7xe6Ht99pRlP0DGc] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:02"}
+{"level":"info","message":"FoundryVTT | Created Item with id [5E057Lubj5wJmPfb] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:02"}
+{"level":"info","message":"FoundryVTT | Created 5 Item documents with ids: [n0CbLjY5McdLem6Z,nAokEzP69mzOTdoc,iXBhvTbeH6K4nXxL,1yAWTN0kB3YVBPN6,O7t00Y1gXHJjZ82k] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [11xfaC9OVKFhEXPI] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [VCZdelp8BR4YD81M] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [JicaSyltJzXCxe0R] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [5OqRF9dj8epLvenb] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [wwMeP9nphsns7osM] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [gYbzKbIi92Urn1Zn] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [zhwRhQwHGhL9YZlF] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [TC2ViO2ENp9gcuWY] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [YsVEGYaa9EOte9sh] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [cLDRg4OIHAMjDMaS] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [ZNKezVfuCAhsleSo] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [XgiMSx34QcN6enqs] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [iJJOkWXy91ib2qHh] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [jqVlfoBBySqp9B5k] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [mecqCs1IkFqMM1yK] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [kj7D8ZcnMvvL98YK] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [lSBdqscjo6DWqOFw] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [amvEJnsvW3s0lqTt] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [dNBsdmVmYvxHr3U1] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Dwc3zMsak2vq7QF4] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [V7DlKURbNVNXdtWH] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [TUuYwX08VMNLMfNU] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [2lWWRWD8VevsjNvY] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [njVfqpvYR5rbbaa3] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [vIfVOMSElmqht9hs] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [DzxWzG4gzz3iO2R0] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [SKN5GJi71gVDP6Wg] in parent Actor [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 18:50:04"}
+{"level":"info","message":"FoundryVTT | Created Actor with id [1zSPqv4uOs387zC2]","timestamp":"2024-01-09 19:10:48"}
+{"level":"info","message":"FoundryVTT | Deleted Actor with id [1zSPqv4uOs387zC2]","timestamp":"2024-01-09 19:10:50"}
+{"level":"info","message":"FoundryVTT | Created Actor with id [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:50"}
+{"level":"info","message":"FoundryVTT | Created Item with id [rDrfIROtdSGtDUyR] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:50"}
+{"level":"info","message":"FoundryVTT | Created Item with id [1l275qAebyEoiJQ9] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:50"}
+{"level":"info","message":"FoundryVTT | Created Item with id [JjsHi4AFHHQryNh8] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:50"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Sch1eRu1v8ZXE578] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:50"}
+{"level":"info","message":"FoundryVTT | Created Item with id [tBgXmyHO1XDUJmXg] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:50"}
+{"level":"info","message":"FoundryVTT | Created Item with id [nRyxlyKymWYuIlfx] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:51"}
+{"level":"info","message":"FoundryVTT | Created Item with id [gWEJIRLKufVlDZRC] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:51"}
+{"level":"info","message":"FoundryVTT | Created Item with id [72hnHdcSwNGOFt1p] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:51"}
+{"level":"info","message":"FoundryVTT | Created Item with id [HUtIfy5wATEstcBi] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:51"}
+{"level":"info","message":"FoundryVTT | Created Item with id [xqRbeTy6yg5c2UBc] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:51"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [WHYB3xA9tyEKAa9g] in parent Actor [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:10:51"}
+{"level":"info","message":"FoundryVTT | Deleted Actor with id [qxy2L3ileRj1kfrK]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Actor with id [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [8s80O9jCbsY9Qdof] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [QDN67Tz29msLZA1G] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [nfMGQNKPy6JDejeb] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Rr2yNs2qro35KFc9] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [HWYOH8MXmjhlpOZq] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [VJLYybbBxmInzvO8] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [P1sSjsimXTj2GQCc] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [GQoJIGqg6TFBqoVN] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [9O7kU1itZDQDMWr1] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [jxbSTpyCeFhxDafQ] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:02"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [2Z7b79XlYPV5t5nB] in parent Actor [WHiPEUPVMqYDsljr]","timestamp":"2024-01-09 19:11:02"}
+{"level":"info","message":"FoundryVTT | Created Actor with id [U7R8MEvzo4DHqApz]","timestamp":"2024-01-09 19:15:34"}
+{"level":"info","message":"FoundryVTT | Created Item with id [cXdd8EGYZnIr17Ve] in parent Actor [U7R8MEvzo4DHqApz]","timestamp":"2024-01-09 19:15:35"}
+{"level":"info","message":"FoundryVTT | Created Item with id [6Auf3okjQQYa72Hh] in parent Actor [U7R8MEvzo4DHqApz]","timestamp":"2024-01-09 19:15:35"}
+{"level":"info","message":"FoundryVTT | Created Item with id [aC0TsEpBS3BFaamm] in parent Actor [U7R8MEvzo4DHqApz]","timestamp":"2024-01-09 19:15:35"}
+{"level":"info","message":"FoundryVTT | Created Item with id [CTNbEgTn8GVpZUMr] in parent Actor [U7R8MEvzo4DHqApz]","timestamp":"2024-01-09 19:15:35"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [UJJYhBdQaTaqd7Wi] in parent Actor [U7R8MEvzo4DHqApz]","timestamp":"2024-01-09 19:15:35"}
+{"level":"info","message":"FoundryVTT | Deleted Actor with id [9CITyQbbencn4Xy6]","timestamp":"2024-01-09 19:17:56"}
+{"level":"info","message":"Activating scene Forest Trail [26x34] [x7R7Z0AZlaCvwCk4]","timestamp":"2024-01-09 19:24:45"}
+{"level":"info","message":"Activating scene Forest Road [30x20] [pdnWYtzG0n81Nybk]","timestamp":"2024-01-09 19:25:11"}
+{"level":"info","message":"Activating scene The Hidden Camp [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 19:26:58"}
+{"level":"info","message":"Activating scene Well Cavern [17x25] [iD6Jar3my3EUHuHq]","timestamp":"2024-01-09 19:27:13"}
+{"level":"info","message":"Activating scene stronghold2 [kCqE6vIxU2k6pYpH]","timestamp":"2024-01-09 19:30:23"}
+{"level":"info","message":"Created client session 0b1dc4bc6787ae9be56ac6e2","timestamp":"2024-01-09 19:32:49"}
+{"level":"info","message":"Created client session af8f9a71379029845a7043b8","timestamp":"2024-01-09 19:32:52"}
+{"level":"info","message":"Created client session 813d031bc659b3efab45a6f8","timestamp":"2024-01-09 19:32:53"}
+{"level":"info","message":"Created client session 33c143212014f01f38a47b59","timestamp":"2024-01-09 19:32:57"}
+{"ip":"::ffff:89.152.167.223","level":"info","message":"User authentication successful for user Matheus","session":"813d031bc659b3efab45a6f8","timestamp":"2024-01-09 19:32:59"}
+{"ip":"::ffff:84.27.243.72","level":"info","message":"User authentication successful for user Stef","session":"af8f9a71379029845a7043b8","timestamp":"2024-01-09 19:33:02"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-01-09 19:33:05"}
+{"level":"info","message":"Vended World data to User [QEv3Zek3SVufXCOG] in 4475ms","timestamp":"2024-01-09 19:33:05"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-01-09 19:33:07"}
+{"level":"info","message":"Vended World data to User [cLPUamNWOPbdg8po] in 1797ms","timestamp":"2024-01-09 19:33:07"}
+{"ip":"::ffff:145.224.125.205","level":"info","message":"User authentication successful for user Dennis","session":"33c143212014f01f38a47b59","timestamp":"2024-01-09 19:33:16"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-01-09 19:33:20"}
+{"level":"info","message":"Vended World data to User [S7ICQIvUjAPpweNO] in 1721ms","timestamp":"2024-01-09 19:33:20"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [5TOQtubCdDo8MyTZ] in parent Scene [kCqE6vIxU2k6pYpH]","timestamp":"2024-01-09 19:33:22"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [XtlUj41aoLc1nPAY] in parent Scene [kCqE6vIxU2k6pYpH]","timestamp":"2024-01-09 19:33:56"}
+{"level":"info","message":"FoundryVTT | Created Token with id [XgFoRCOa2wYm7JLA] in parent Scene [kCqE6vIxU2k6pYpH]","timestamp":"2024-01-09 19:34:06"}
+{"level":"info","message":"Toggling game pause status to false","timestamp":"2024-01-09 19:34:23"}
+{"level":"info","message":"Toggling game pause status to true","timestamp":"2024-01-09 19:34:32"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [3w2q6jBo3R2VrocE]","timestamp":"2024-01-09 19:34:33"}
+{"level":"info","message":"Created client session 7f43c716b5cfc9434b01d08f","timestamp":"2024-01-09 19:34:40"}
+{"ip":"::ffff:152.32.99.39","level":"info","message":"User authentication successful for user Miguel","session":"7f43c716b5cfc9434b01d08f","timestamp":"2024-01-09 19:34:51"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-01-09 19:34:57"}
+{"level":"info","message":"Vended World data to User [RAn6D2MULMce0we4] in 1632ms","timestamp":"2024-01-09 19:34:57"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [1YvjkYx23GemFV0d] in parent Scene [kCqE6vIxU2k6pYpH]","timestamp":"2024-01-09 19:36:21"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [q1MBJX2tIZiB2oJS] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 19:37:23"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [q1MBJX2tIZiB2oJS] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 19:37:28"}
+{"level":"info","message":"Toggling game pause status to false","timestamp":"2024-01-09 19:37:46"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:40:20"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [HiI90NT14C9NIb4E]","timestamp":"2024-01-09 19:40:46"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:41:20"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [c6FI9V0E3sct6rvL]","timestamp":"2024-01-09 19:42:30"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:42:33"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 19:42:33"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [z0ynDXLOGGhgF1K5]","timestamp":"2024-01-09 19:44:16"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [FVE2tJWcC7sU9Yy9]","timestamp":"2024-01-09 19:44:24"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Pv9uZcSi1mNPDNXj]","timestamp":"2024-01-09 19:44:53"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:45:23"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:46:23"}
+{"level":"info","message":"FoundryVTT | Deleted JournalEntryPage with id [d5L2Ju5yLfmrAh6e] in parent JournalEntry [IRxeanIePWhcKKAr]","timestamp":"2024-01-09 19:46:23"}
+{"level":"debug","message":"Starting edit session for user 'w7M4Wjrf5KX4Xg5D' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-01-09 19:47:01"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:47:23"}
+{"level":"debug","message":"Retiring user 'w7M4Wjrf5KX4Xg5D' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-01-09 19:47:33"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 19:47:33"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:48:23"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:48:56"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 19:48:56"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [NOT0tvs9FUvDlI0n]","timestamp":"2024-01-09 19:50:59"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:52:47"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:53:47"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 19:53:52"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 19:53:52"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7cHF4hsjk1GvOXSy]","timestamp":"2024-01-09 19:54:15"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [9oT39CYhOJJJYCOu]","timestamp":"2024-01-09 19:54:32"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [bjtiZ5mRuENe6QBf]","timestamp":"2024-01-09 19:55:52"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Kcq6ATaO00XgmwWg] in parent Actor [ES8rnnlldjJKCO2e]","timestamp":"2024-01-09 19:57:02"}
+{"level":"info","message":"FoundryVTT | Created Item with id [uNEpot7eScmgoCXg] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 19:57:06"}
+{"level":"info","message":"FoundryVTT | Created Item with id [kLmBmq82XaGMJztX] in parent Actor [FjkAKw6SPgeLMEn3]","timestamp":"2024-01-09 19:57:16"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [kLmBmq82XaGMJztX] in parent Actor [FjkAKw6SPgeLMEn3]","timestamp":"2024-01-09 19:57:28"}
+{"level":"info","message":"FoundryVTT | Created Item with id [7B4hJgAMY0PkVI4M] in parent Actor [FjkAKw6SPgeLMEn3]","timestamp":"2024-01-09 19:57:35"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [vuT877sfgJcEq0wD] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 19:57:49"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [SSu1sNQn9379pjBn] in parent Actor [ES8rnnlldjJKCO2e]","timestamp":"2024-01-09 19:58:11"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [SSu1sNQn9379pjBn] in parent Actor [ES8rnnlldjJKCO2e]","timestamp":"2024-01-09 19:58:11"}
+{"level":"info","message":"FoundryVTT | Created Item with id [lAWlbWq30K8IQBrB] in parent ActorDelta [LylCXXrtEnF7mNv8]","timestamp":"2024-01-09 19:58:27"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [WzxJuZQYeGwDGYDI] in parent ActorDelta [LylCXXrtEnF7mNv8]","timestamp":"2024-01-09 19:58:34"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [v8qbkgFxjl7p1LM0] in parent Actor [ES8rnnlldjJKCO2e]","timestamp":"2024-01-09 19:59:50"}
+{"level":"info","message":"FoundryVTT | Created Item with id [y4GGRQERp1iszQyI] in parent Actor [ES8rnnlldjJKCO2e]","timestamp":"2024-01-09 20:00:30"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [HXYBM0u7wSGzagJs] in parent Actor [ES8rnnlldjJKCO2e]","timestamp":"2024-01-09 20:00:30"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [HXYBM0u7wSGzagJs] in parent Actor [ES8rnnlldjJKCO2e]","timestamp":"2024-01-09 20:00:35"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [y4GGRQERp1iszQyI] in parent Actor [ES8rnnlldjJKCO2e]","timestamp":"2024-01-09 20:00:36"}
+{"level":"info","message":"FoundryVTT | Created Item with id [DYOwEUMfMl47MGD0] in parent Actor [FjkAKw6SPgeLMEn3]","timestamp":"2024-01-09 20:00:47"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [B14hglgHQyUPmfOP] in parent Actor [FjkAKw6SPgeLMEn3]","timestamp":"2024-01-09 20:00:47"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [7B4hJgAMY0PkVI4M] in parent Actor [FjkAKw6SPgeLMEn3]","timestamp":"2024-01-09 20:01:05"}
+{"level":"info","message":"Activating scene Rocky River [40x30] [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-09 20:03:07"}
+{"level":"info","message":"FoundryVTT | Created Token with id [BplV334yt0Rn1N5l] in parent Scene [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-09 20:03:17"}
+{"level":"info","message":"FoundryVTT | Created Token with id [js0o2gSwyrnzyf6P] in parent Scene [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-09 20:03:21"}
+{"level":"info","message":"FoundryVTT | Created Token with id [HJe9uGuB0KuDMaaw] in parent Scene [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-09 20:03:25"}
+{"level":"info","message":"FoundryVTT | Created Token with id [mM78XeHly8cfC6PY] in parent Scene [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-09 20:03:28"}
+{"level":"info","message":"FoundryVTT | Created Token with id [WPp1ZzZt1dO9IPAO] in parent Scene [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-09 20:03:55"}
+{"level":"info","message":"FoundryVTT | Created Token with id [LSn4O9UNY32AN74g] in parent Scene [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-09 20:03:58"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [mRZXV9LBsBimc08M]","timestamp":"2024-01-09 20:04:32"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [qO7vSt8zo6Q5MSkx]","timestamp":"2024-01-09 20:04:48"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [tltaWwSbf5rinrJZ]","timestamp":"2024-01-09 20:05:11"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [9A3kZomaXx5aeN1E]","timestamp":"2024-01-09 20:06:03"}
+{"level":"info","message":"FoundryVTT | Created Item with id [D1xP9buZo9dwIuBz] in parent Actor [J892z0g7JgecKKHU]","timestamp":"2024-01-09 20:06:26"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [D1xP9buZo9dwIuBz] in parent Actor [J892z0g7JgecKKHU]","timestamp":"2024-01-09 20:06:36"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [tBjKRSdNVb2oQzda]","timestamp":"2024-01-09 20:06:58"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [eqghGMpNGTaBd833]","timestamp":"2024-01-09 20:07:31"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [oB81ehnWbjLKmCG0]","timestamp":"2024-01-09 20:07:49"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [p1QmZpuIMnSLTPkE]","timestamp":"2024-01-09 20:07:59"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [tkjT2A2DCYFiWum7]","timestamp":"2024-01-09 20:08:55"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [x22Ogq75UjqwxEP8]","timestamp":"2024-01-09 20:09:20"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [b4nbGroWX7F1z6Pc]","timestamp":"2024-01-09 20:09:39"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Rpy0tyX7xhUfHijn] in parent Actor [J892z0g7JgecKKHU]","timestamp":"2024-01-09 20:10:15"}
+{"level":"info","message":"FoundryVTT | Created Item with id [LLdeAkaGZyCi5nQa] in parent Actor [J892z0g7JgecKKHU]","timestamp":"2024-01-09 20:11:23"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [PDUJi4xwZzL3GzIm] in parent Actor [J892z0g7JgecKKHU]","timestamp":"2024-01-09 20:11:23"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [aDexCXB2Ny7o0oCA]","timestamp":"2024-01-09 20:13:21"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [CmFsOtauN2m51dE7]","timestamp":"2024-01-09 20:14:28"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [WPp1ZzZt1dO9IPAO] in parent Scene [0TyrkbfKvPqd0Bda]","timestamp":"2024-01-09 20:15:02"}
+{"level":"info","message":"FoundryVTT | Created Combat with id [PK6AnwEEbbRDW87v]","timestamp":"2024-01-09 20:15:11"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [Ldru9DloYUvLrrOy] in parent Combat [PK6AnwEEbbRDW87v]","timestamp":"2024-01-09 20:15:18"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [8vXd8T3Etzsxq7Mq] in parent Combat [PK6AnwEEbbRDW87v]","timestamp":"2024-01-09 20:15:20"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [1PTVZ4HqJnKfFV9T] in parent Combat [PK6AnwEEbbRDW87v]","timestamp":"2024-01-09 20:15:20"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [UrAlsbIcglH8KE7e]","timestamp":"2024-01-09 20:15:21"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [IXIyOHPt43ILqpct]","timestamp":"2024-01-09 20:15:22"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [dIrUzDyHP2lwSZFR]","timestamp":"2024-01-09 20:15:22"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [DX5zeAnBQXGULg9U] in parent Combat [PK6AnwEEbbRDW87v]","timestamp":"2024-01-09 20:15:25"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [HrM94LElTF60gEmO]","timestamp":"2024-01-09 20:15:27"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [4ju0pCn7C19AGhgT] in parent Combat [PK6AnwEEbbRDW87v]","timestamp":"2024-01-09 20:15:29"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [yZDqRiWumtX8htI7]","timestamp":"2024-01-09 20:15:32"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [2M205qHlK4stBvK1]","timestamp":"2024-01-09 20:16:58"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [klnofM8w9r8ubzo0]","timestamp":"2024-01-09 20:21:11"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [EmsPIETrox5OKJO0]","timestamp":"2024-01-09 20:22:32"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [PUMPfztn3eQ899SE]","timestamp":"2024-01-09 20:23:07"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [WVukPKDEfFfi4q4B]","timestamp":"2024-01-09 20:28:40"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [WoZ45LSZwINp053f]","timestamp":"2024-01-09 20:29:40"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [jOY7X6w7Cg5E9pxP] in parent ActorDelta [KzKzjdJ4vMo1If4G]","timestamp":"2024-01-09 20:30:29"}
+{"level":"info","message":"FoundryVTT | Deleted Combat with id [PK6AnwEEbbRDW87v]","timestamp":"2024-01-09 20:30:43"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [W28Ie6BkcvjvA24R]","timestamp":"2024-01-09 20:32:07"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [yDvGfH9NeBcSSXFz]","timestamp":"2024-01-09 20:32:52"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 20:34:58"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 20:35:15"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 20:35:15"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [1RTyPqjYJ6hrROG2]","timestamp":"2024-01-09 20:35:17"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [iZdmUvUJszy350vh]","timestamp":"2024-01-09 20:38:04"}
+{"level":"info","message":"Activating scene The Hidden Camp [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 20:39:13"}
+{"level":"info","message":"FoundryVTT | Created Token with id [4hF8K7cG5I8yN7xC] in parent Scene [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 20:39:21"}
+{"level":"info","message":"Toggling game pause status to true","timestamp":"2024-01-09 20:39:22"}
+{"level":"info","message":"FoundryVTT | Created Token with id [uo6arHUh0Xvsahzj] in parent Scene [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 20:39:26"}
+{"level":"info","message":"FoundryVTT | Created Token with id [g3pvyZPXsk1PwMAC] in parent Scene [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 20:39:32"}
+{"level":"info","message":"FoundryVTT | Created Token with id [lKfbR8H88ua78dJf] in parent Scene [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 20:39:40"}
+{"level":"info","message":"FoundryVTT | Created Item with id [9bY4unkNejd7wSU2] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:39:45"}
+{"level":"info","message":"FoundryVTT | Created Token with id [fN58PN80GoC6rNAr] in parent Scene [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 20:39:47"}
+{"level":"info","message":"FoundryVTT | Created Token with id [11AjK2k3EOeWhUBZ] in parent Scene [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 20:39:52"}
+{"level":"info","message":"FoundryVTT | Created Token with id [6QSnLeMvRmmUEX0g] in parent Scene [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 20:39:57"}
+{"level":"info","message":"FoundryVTT | Created Token with id [prkZWUyNtLJclSmc] in parent Scene [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 20:40:03"}
+{"level":"info","message":"FoundryVTT | Created Token with id [DqDcQeskKInyElVN] in parent Scene [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 20:40:11"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [9bY4unkNejd7wSU2] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:40:50"}
+{"level":"info","message":"FoundryVTT | Created Item with id [PFt0L4k9VQ0G4Yx1] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:40:55"}
+{"level":"info","message":"FoundryVTT | Created Item with id [b5kpMc4RhoBnzGT1] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:41:22"}
+{"level":"info","message":"FoundryVTT | Created Item with id [aevYCGsta4CqHJ6m] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:41:26"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [b5kpMc4RhoBnzGT1] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:41:33"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Mpz3RNNRhtinSM5e]","timestamp":"2024-01-09 20:44:56"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [znDovfE7pORg9paU]","timestamp":"2024-01-09 20:45:01"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [FrR6sTPdKba5JwVj]","timestamp":"2024-01-09 20:45:05"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [pkCeKhptztLEK1b5]","timestamp":"2024-01-09 20:45:09"}
+{"level":"info","message":"FoundryVTT | Created Item with id [bDLp1F9Ywec7Y0IT] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:46:41"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [bDLp1F9Ywec7Y0IT] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:46:44"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [NXKa3knbtR5EuUxa]","timestamp":"2024-01-09 20:47:01"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [4CN7zWHP343ghpUw]","timestamp":"2024-01-09 20:47:05"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Q0i0psbOvX4oLoHO]","timestamp":"2024-01-09 20:47:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [S5LVYzGYTfeAIzVL]","timestamp":"2024-01-09 20:47:12"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [OUyjHix16Lqg5OaM]","timestamp":"2024-01-09 20:47:28"}
+{"level":"info","message":"FoundryVTT | Created Combat with id [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 20:48:06"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [Y27zdrk3aO01EOhQ] in parent Combat [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 20:48:08"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [TFGnzj001pbCLNpX]","timestamp":"2024-01-09 20:48:09"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [EdV0yBIh2zLhR9CI] in parent Combat [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 20:48:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [BXuEbZyjSMcDu3xn]","timestamp":"2024-01-09 20:48:11"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [jP4GybulXSp8UgWc] in parent Combat [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 20:48:11"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [eaavYI5H6xCm4gSI]","timestamp":"2024-01-09 20:48:12"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [ZnKUCkZO7WOPXckP] in parent Combat [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 20:48:23"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [TgZnVn9yFSbH5ERE]","timestamp":"2024-01-09 20:48:24"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [LpLQtjBUSZz4pINP] in parent Combat [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 20:48:25"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [WdBTfOXmSuj7ajff]","timestamp":"2024-01-09 20:48:27"}
+{"level":"info","message":"FoundryVTT | Created 4 Combatant documents with ids: [k0HoeTZJamWRcDxH,JPOwljk92FY8Jcnx,2Ausia70YpeD25G4,FyBDMD7TYT53iIye] in parent Combat [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 20:48:34"}
+{"level":"info","message":"FoundryVTT | Created 4 ChatMessage documents with ids: [ZkIgXcMwjt7I5XOm,6XwpXEv7TS2SUdm1,plGA3WydzMUx87mW,PiZq4oREHojXoEoK]","timestamp":"2024-01-09 20:48:36"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [sJ1jpet4cfQvvKbu]","timestamp":"2024-01-09 20:50:31"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [tRUjdlv6LFbBjsPc]","timestamp":"2024-01-09 20:50:43"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [FyBDMD7TYT53iIye] in parent Combat [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 20:51:02"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [cKkE285Z649VyFCQ] in parent Combat [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 20:51:03"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [qoyyHKtc7ifJH1Xv] in parent ActorDelta [7gF6LwyE6ZlSaqz0]","timestamp":"2024-01-09 20:51:07"}
+{"level":"info","message":"Toggling game pause status to false","timestamp":"2024-01-09 20:52:06"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [kdAhzuJUtE14wroC]","timestamp":"2024-01-09 20:52:25"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [tqB1QirGRleBLQtz] in parent ActorDelta [ergrivkcYmlFPsng]","timestamp":"2024-01-09 20:52:42"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [q9HTOat36B6qhlWy]","timestamp":"2024-01-09 20:53:10"}
+{"level":"info","message":"FoundryVTT | Created Item with id [rkRwluM9lRsrjNGT] in parent Actor [QmmEE2rY8fxLEiqn]","timestamp":"2024-01-09 20:53:37"}
+{"level":"info","message":"FoundryVTT | Created Item with id [5qWUTcGHh3N2f33w] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:54:11"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [uTk74mVOiCCYekI9]","timestamp":"2024-01-09 20:55:44"}
+{"level":"info","message":"FoundryVTT | Created Item with id [iaafv9qfhXYV086W] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:56:11"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [5qWUTcGHh3N2f33w] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:56:16"}
+{"level":"info","message":"FoundryVTT | Created Item with id [EgQuqRcZA6XtkHFR] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:56:39"}
+{"level":"info","message":"FoundryVTT | Created Item with id [BSDOIXeDFLTjY8ZN] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:57:04"}
+{"level":"warn","message":"Did not retrieve effects collection from ActiveEffect fLy6goTftrHfjCrq as it was not an Array.","timestamp":"2024-01-09 20:57:58"}
+{"level":"info","message":"FoundryVTT | Created Item with id [mErSIrvhijp1Vfq4] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:57:58"}
+{"level":"info","message":"FoundryVTT | Created Item with id [flzWbTSCLdAD5qdI] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:58:12"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [E3OeBtPOCxlM0hol]","timestamp":"2024-01-09 20:58:18"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Zo9NrAjCHnuxBaKj] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:58:42"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [9Lx9kjknkRFS8Nll]","timestamp":"2024-01-09 20:58:52"}
+{"level":"info","message":"FoundryVTT | Deleted ChatMessage with id [9Lx9kjknkRFS8Nll]","timestamp":"2024-01-09 20:58:59"}
+{"level":"info","message":"FoundryVTT | Created Item with id [K0EBW8mckjxUHuQ4] in parent Actor [5gcHgG0kyJrTZJp8]","timestamp":"2024-01-09 20:59:51"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [iH3pp5LShdGpRM6R]","timestamp":"2024-01-09 21:01:13"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [OUJwlA6R7Id5PZei]","timestamp":"2024-01-09 21:01:52"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [ojr0BdNWmonFZ8SM]","timestamp":"2024-01-09 21:02:38"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Aw1XyZAc5RGQC0Dc]","timestamp":"2024-01-09 21:02:47"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [mQvCgqMSf5vLI957]","timestamp":"2024-01-09 21:03:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ALL9nlXXaUhOYlAL]","timestamp":"2024-01-09 21:04:39"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [PCL2PhxT19j4rfMK]","timestamp":"2024-01-09 21:04:44"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [P1v01gUEcdxEGif6]","timestamp":"2024-01-09 21:06:00"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ksF2xaLzrNBk0NIg]","timestamp":"2024-01-09 21:06:12"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7XHOyHxU6ubUWuiK]","timestamp":"2024-01-09 21:06:57"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [VCmXHaWpyrhASdG0]","timestamp":"2024-01-09 21:10:00"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [CsQE1XBRcqrTh01e]","timestamp":"2024-01-09 21:10:15"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [FaKRu0u9IJaIDZ4L]","timestamp":"2024-01-09 21:11:10"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [8ExRUsjCb0PQeFsi]","timestamp":"2024-01-09 21:11:34"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [P2HheJhlIMhh9NQk]","timestamp":"2024-01-09 21:12:17"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [lIkqR27x2A5BE4Rp]","timestamp":"2024-01-09 21:12:45"}
+{"level":"debug","message":"Starting edit session for user 'S7ICQIvUjAPpweNO' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.4XQpVenvo5vghGTz#text.content'.","timestamp":"2024-01-09 21:12:49"}
+{"level":"warn","message":"Did not retrieve effects collection from ActiveEffect M9a9YjUvDkl8KHmQ as it was not an Array.","timestamp":"2024-01-09 21:12:54"}
+{"level":"warn","message":"Did not retrieve effects collection from ActiveEffect s8ViF8uZdu09fKJw as it was not an Array.","timestamp":"2024-01-09 21:12:54"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [rzvUf2fvjrDQNzCR]","timestamp":"2024-01-09 21:13:32"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [MihMZCCRukiujOoB]","timestamp":"2024-01-09 21:13:36"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.4XQpVenvo5vghGTz#text.content'.","timestamp":"2024-01-09 21:13:49"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [zMEj51tgemuiIIGO] in parent ActorDelta [4UtO4w9hqSV4i6nJ]","timestamp":"2024-01-09 21:14:03"}
+{"level":"debug","message":"Starting edit session for user 'S7ICQIvUjAPpweNO' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.4XQpVenvo5vghGTz#text.content'.","timestamp":"2024-01-09 21:14:10"}
+{"level":"debug","message":"Retiring user 'S7ICQIvUjAPpweNO' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.4XQpVenvo5vghGTz#text.content'.","timestamp":"2024-01-09 21:14:15"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.4XQpVenvo5vghGTz#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 21:14:15"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [HeJ4A8zLLWJzAkh3]","timestamp":"2024-01-09 21:14:22"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [u9u7ByzIjroMJmX9]","timestamp":"2024-01-09 21:14:35"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [wxvGRHEPCnaUPGjS]","timestamp":"2024-01-09 21:15:13"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7h92PLwPFN0BrAR4]","timestamp":"2024-01-09 21:17:43"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [kjFINN2DPB6Ycuvc]","timestamp":"2024-01-09 21:17:51"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [NzJCIqFe6uhqfbgH]","timestamp":"2024-01-09 21:18:31"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [imaUKU9OYmzaR72X]","timestamp":"2024-01-09 21:19:10"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [hfy2OyM59VCkbHei]","timestamp":"2024-01-09 21:19:14"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [zb4U9500OSzPzwOn] in parent ActorDelta [dzgEja8QZ2ET8X2F]","timestamp":"2024-01-09 21:20:04"}
+{"level":"debug","message":"Starting edit session for user 'S7ICQIvUjAPpweNO' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.4XQpVenvo5vghGTz#text.content'.","timestamp":"2024-01-09 21:20:18"}
+{"level":"debug","message":"Starting edit session for user 'S7ICQIvUjAPpweNO' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.4XQpVenvo5vghGTz#text.content'.","timestamp":"2024-01-09 21:20:28"}
+{"level":"debug","message":"Retiring user 'S7ICQIvUjAPpweNO' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.4XQpVenvo5vghGTz#text.content'.","timestamp":"2024-01-09 21:20:33"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.4XQpVenvo5vghGTz#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 21:20:33"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [4dZqc2pGkae1gpHI]","timestamp":"2024-01-09 21:21:21"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [11AjK2k3EOeWhUBZ] in parent Scene [cWDvrMesGzTD84Pk]","timestamp":"2024-01-09 21:21:28"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [k0HoeTZJamWRcDxH] in parent Combat [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 21:21:28"}
+{"level":"info","message":"FoundryVTT | Deleted Combat with id [w7QKjLNGwt2ymM0A]","timestamp":"2024-01-09 21:22:18"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [43Y1V7abStz01lVY]","timestamp":"2024-01-09 21:22:30"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [xO0FfOlUrGJjIf17]","timestamp":"2024-01-09 21:23:54"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [3DmGUjGjRWPwxJjD]","timestamp":"2024-01-09 21:25:54"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [EOxjkiuYxdQ2vQN5]","timestamp":"2024-01-09 21:25:55"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [oJGEqhO7E0qJ7fg5]","timestamp":"2024-01-09 21:26:10"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [XbnNUhfebjDsYSVO]","timestamp":"2024-01-09 21:26:13"}
+{"level":"info","message":"FoundryVTT | Created Item with id [MUQoDDWpAF2BbzGg] in parent Actor [J892z0g7JgecKKHU]","timestamp":"2024-01-09 21:27:29"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [MUQoDDWpAF2BbzGg] in parent Actor [J892z0g7JgecKKHU]","timestamp":"2024-01-09 21:27:51"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 21:28:06"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 21:28:42"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 21:28:42"}
+{"level":"info","message":"FoundryVTT | Created JournalEntryPage with id [lb0Ve4BrXoBB0974] in parent JournalEntry [IRxeanIePWhcKKAr]","timestamp":"2024-01-09 21:29:11"}
+{"level":"debug","message":"Starting edit session for user 'QEv3Zek3SVufXCOG' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:29:11"}
+{"level":"debug","message":"Retiring user 'QEv3Zek3SVufXCOG' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:29:24"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 21:29:24"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Qpuh8Iu9roetFqiu]","timestamp":"2024-01-09 21:29:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [NIfJxa14j9LKKt4U]","timestamp":"2024-01-09 21:29:41"}
+{"level":"debug","message":"Starting edit session for user 'QEv3Zek3SVufXCOG' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:30:16"}
+{"level":"debug","message":"Retiring user 'QEv3Zek3SVufXCOG' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:30:37"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 21:30:37"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [2Zn1upF1W9Afgf85]","timestamp":"2024-01-09 21:38:11"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [PniuTnouKkYdNzbG]","timestamp":"2024-01-09 21:38:43"}
+{"level":"info","message":"Activating scene stronghold2 [kCqE6vIxU2k6pYpH]","timestamp":"2024-01-09 21:39:11"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [PDUJi4xwZzL3GzIm] in parent ActorDelta [LylCXXrtEnF7mNv8]","timestamp":"2024-01-09 21:39:29"}
+{"level":"info","message":"Activating scene The Flaming Hammer [Us7SJssKSmQ2IWX1]","timestamp":"2024-01-09 21:39:56"}
+{"level":"info","message":"FoundryVTT | Deleted 4 Token documents with ids: [EVYsaojlZq9Efbs3,ZAkXEpyneaTE5LAq,qIN2RLZ8WQYCOaCD,QsdJRf4cp1LL3Rwk] in parent Scene [Us7SJssKSmQ2IWX1]","timestamp":"2024-01-09 21:40:03"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [p5MZpvip7PHxuDzs] in parent Scene [Us7SJssKSmQ2IWX1]","timestamp":"2024-01-09 21:40:05"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [LqPfyuWAM0CI3Oc2]","timestamp":"2024-01-09 21:40:07"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 21:42:16"}
+{"level":"debug","message":"Starting edit session for user 'w7M4Wjrf5KX4Xg5D' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-01-09 21:43:12"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 21:43:16"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-01-09 21:43:45"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 21:43:45"}
+{"level":"debug","message":"Retiring user 'w7M4Wjrf5KX4Xg5D' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-01-09 21:43:56"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 21:43:56"}
+{"level":"debug","message":"Starting edit session for user 'QEv3Zek3SVufXCOG' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:44:07"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:45:07"}
+{"level":"debug","message":"Retiring user 'QEv3Zek3SVufXCOG' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:45:29"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 21:45:29"}
+{"level":"debug","message":"Starting edit session for user 'QEv3Zek3SVufXCOG' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:45:53"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:47:53"}
+{"level":"debug","message":"Starting edit session for user 'w7M4Wjrf5KX4Xg5D' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-01-09 21:48:23"}
+{"level":"debug","message":"Retiring user 'w7M4Wjrf5KX4Xg5D' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-01-09 21:48:34"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 21:48:34"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:48:53"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [4JIem5TEsD49ygF9]","timestamp":"2024-01-09 21:49:27"}
+{"level":"debug","message":"Retiring user 'QEv3Zek3SVufXCOG' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content'.","timestamp":"2024-01-09 21:49:50"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.lb0Ve4BrXoBB0974#text.content' has no more active editors, cleaning up.","timestamp":"2024-01-09 21:49:50"}
+{"level":"info","message":"Shutting down Foundry Virtual Tabletop server","timestamp":"2024-01-09 21:51:46"}
+{"level":"info","message":"Shut-down success. Goodbye!","timestamp":"2024-01-09 21:51:46"}
