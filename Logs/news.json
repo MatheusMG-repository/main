@@ -7,10 +7,10 @@
       "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/asset/year-in-review-banner-2023-2023-05-24.webp"
     },
     {
-      "title": "V12 Patreon Vote, Prioritization, and Planning!",
-      "caption": "The next major version of Foundry VTT will prioritize some major enhancements across a range of areas including Event Triggers, canvas rendering improvements, continued work on UI redesign, improvements to our dice rolling architecture, and some valuable server-side performance improvements.",
-      "url": "https://foundryvtt.com/article/v12-preview/",
-      "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/v12-plan-and-themes-2023-07-25.webp"
+      "title": "Dungeons & Dragons Arrives on Foundry Virtual Tabletop",
+      "caption": "We are thrilled to share that Foundry Virtual Tabletop is now partnered with Wizards of the Coast to bring official content for Dungeons & Dragons to Foundry VTT!",
+      "url": "https://foundryvtt.com/article/dungeons-dragons-arrives/",
+      "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/dnd-partnership-news-2024-01-30.webp"
     },
     {
       "title": "Overview Video",
@@ -19,10 +19,10 @@
       "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/2023-overview-banner-2023-06-23.webp"
     },
     {
-      "title": "Version 11 Stable Release",
-      "caption": "Version 11 Stable 1 has now been released! Check out our release notes for everything you need to know.",
-      "url": "https://foundryvtt.com/releases/11.299",
-      "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/v11-stable-patch-1-2023-06-02.webp"
+      "title": "V12 Development Update Q&A",
+      "caption": "Catch up with Atropos, Kim, Ludovic, and Eber as they walk through the changes in V12 Prototype 1 and answer audience questions!",
+      "url": "https://www.youtube.com/watch?v=Y-i-SqSJTC0",
+      "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/scene-regions-2023-12-28.webp"
     },
     {
       "title": "Built-in Backup Support",
@@ -32,9 +32,9 @@
     }
   ],
   "featuredContent": {
-    "title": "Use Quick Inserts for Quick Access to Everything!",
-    "caption": "Quickly find characters, monsters, items, spells etc. and insert them wherever you need them right now - the map, character sheets, roll tables, journals, you name it.",
-    "url": "https://foundryvtt.com/packages/quick-insert",
-    "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/quick-inserts-demo-multiple-2023-11-13.webp"
+    "title": "Dungeons & Dragons Arrives on Foundry Virtual Tabletop",
+    "caption": "We are thrilled to share that Foundry Virtual Tabletop is now partnered with Wizards of the Coast to bring official content for Dungeons & Dragons to Foundry VTT!",
+    "url": "https://foundryvtt.com/article/dungeons-dragons-arrives/",
+    "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/dnd-partnership-featured-content-2024-01-30.webp"
   }
 }
