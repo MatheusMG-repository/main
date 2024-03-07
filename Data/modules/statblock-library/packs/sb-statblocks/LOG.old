@@ -1,3 +1,17 @@
-2024/02/05-21:48:07.556 590c Recovering log #45
-2024/02/05-21:48:07.560 590c Delete type=0 #45
-2024/02/05-21:48:07.560 590c Delete type=3 #44
+2024/02/06-18:22:07.533 b20 Delete type=3 #1
+2024/02/06-18:22:07.534 3cdc Moved #9 to level-1 2121303 bytes OK: files[ 12 1 0 0 0 0 0 ]
+2024/02/06-18:22:07.536 3cdc Moved #10 to level-1 2118824 bytes OK: files[ 11 2 0 0 0 0 0 ]
+2024/02/06-18:22:07.538 3cdc Moved #11 to level-1 2119771 bytes OK: files[ 10 3 0 0 0 0 0 ]
+2024/02/06-18:22:07.539 3cdc Moved #12 to level-1 2117852 bytes OK: files[ 9 4 0 0 0 0 0 ]
+2024/02/06-18:22:07.541 3cdc Moved #13 to level-1 2118044 bytes OK: files[ 8 5 0 0 0 0 0 ]
+2024/02/06-18:22:07.542 3cdc Moved #14 to level-1 2122748 bytes OK: files[ 7 6 0 0 0 0 0 ]
+2024/02/06-18:22:07.544 3cdc Moved #15 to level-1 2119285 bytes OK: files[ 6 7 0 0 0 0 0 ]
+2024/02/06-18:22:07.546 3cdc Moved #16 to level-1 2121085 bytes OK: files[ 5 8 0 0 0 0 0 ]
+2024/02/06-18:22:07.547 3cdc Moved #9 to level-2 2121303 bytes OK: files[ 5 7 1 0 0 0 0 ]
+2024/02/06-18:22:07.549 3cdc Moved #10 to level-2 2118824 bytes OK: files[ 5 6 2 0 0 0 0 ]
+2024/02/06-18:22:07.551 3cdc Moved #17 to level-1 2119097 bytes OK: files[ 4 7 2 0 0 0 0 ]
+2024/02/06-18:22:07.553 3cdc Moved #11 to level-2 2119771 bytes OK: files[ 4 6 3 0 0 0 0 ]
+2024/02/06-18:22:07.554 3cdc Moved #12 to level-2 2117852 bytes OK: files[ 4 5 4 0 0 0 0 ]
+2024/02/06-18:22:07.556 3cdc Moved #13 to level-2 2118044 bytes OK: files[ 4 4 5 0 0 0 0 ]
+2024/02/06-18:22:07.557 3cdc Moved #18 to level-1 2118127 bytes OK: files[ 3 5 5 0 0 0 0 ]
+2024/02/06-18:22:07.559 3cdc Moved #14 to level-2 2122748 bytes OK: files[ 3 4 6 0 0 0 0 ]

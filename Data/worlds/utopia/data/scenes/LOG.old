@@ -1,5 +1,10 @@
-2024/02/05-21:48:05.291 6144 Recovering log #91
-2024/02/05-21:48:05.294 6144 Level-0 table #93: started
-2024/02/05-21:48:05.305 6144 Level-0 table #93: 733854 bytes OK
-2024/02/05-21:48:05.310 6144 Delete type=0 #91
-2024/02/05-21:48:05.310 6144 Delete type=3 #90
+2024/02/06-18:22:01.990 4824 Delete type=3 #1
+2024/02/06-18:22:31.865 3cdc Compacting 2@0 + 0@1 files
+2024/02/06-18:22:31.884 3cdc Generated table #101@0: 2014 keys, 273761 bytes
+2024/02/06-18:22:31.884 3cdc Compacted 2@0 + 0@1 files => 273761 bytes
+2024/02/06-18:22:31.889 3cdc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/02/06-18:22:31.889 3cdc Delete type=2 #97
+2024/02/06-18:22:31.889 3cdc Delete type=2 #98
+2024/02/06-22:50:45.086 3cdc Level-0 table #103: started
+2024/02/06-22:50:45.125 3cdc Level-0 table #103: 2313545 bytes OK
+2024/02/06-22:50:45.131 3cdc Delete type=0 #100

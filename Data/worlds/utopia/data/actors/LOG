@@ -1,9 +1,29 @@
-2024/02/06-17:02:56.006 6664 Recovering log #103
-2024/02/06-17:02:56.010 6664 Delete type=0 #103
-2024/02/06-17:02:56.010 6664 Delete type=3 #101
-2024/02/06-17:03:16.824 4178 Compacting 1@0 + 1@1 files
-2024/02/06-17:03:16.844 4178 Generated table #106@0: 671 keys, 880406 bytes
-2024/02/06-17:03:16.844 4178 Compacted 1@0 + 1@1 files => 880406 bytes
-2024/02/06-17:03:16.845 4178 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/02/06-17:03:16.845 4178 Delete type=2 #100
-2024/02/06-17:03:16.845 4178 Delete type=2 #102
+2024/03/05-19:53:04.550 12f4 Recovering log #117
+2024/03/05-19:53:04.552 12f4 Level-0 table #121: started
+2024/03/05-19:53:04.564 12f4 Level-0 table #121: 508112 bytes OK
+2024/03/05-19:53:04.578 12f4 Delete type=0 #117
+2024/03/05-19:53:04.578 12f4 Delete type=3 #108
+2024/03/05-19:53:53.437 4df0 Compacting 1@0 + 1@1 files
+2024/03/05-19:53:53.467 4df0 Generated table #123@0: 778 keys, 1030768 bytes
+2024/03/05-19:53:53.467 4df0 Compacted 1@0 + 1@1 files => 1030768 bytes
+2024/03/05-19:53:53.472 4df0 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/03/05-19:53:53.472 4df0 Delete type=2 #119
+2024/03/05-19:53:53.473 4df0 Delete type=2 #121
+2024/03/05-20:02:43.626 4df0 Level-0 table #125: started
+2024/03/05-20:02:43.658 4df0 Level-0 table #125: 1406555 bytes OK
+2024/03/05-20:02:43.664 4df0 Delete type=0 #122
+2024/03/05-20:04:02.996 4df0 Compacting 1@0 + 1@1 files
+2024/03/05-20:04:03.184 4df0 Generated table #126@0: 766 keys, 1025770 bytes
+2024/03/05-20:04:03.184 4df0 Compacted 1@0 + 1@1 files => 1025770 bytes
+2024/03/05-20:04:03.346 4df0 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/03/05-20:04:03.346 4df0 Delete type=2 #123
+2024/03/05-20:04:03.347 4df0 Delete type=2 #125
+2024/03/05-22:28:07.134 4df0 Level-0 table #128: started
+2024/03/05-22:28:07.537 4df0 Level-0 table #128: 1275666 bytes OK
+2024/03/05-22:28:07.609 4df0 Delete type=0 #124
+2024/03/05-22:28:49.359 4df0 Compacting 1@0 + 1@1 files
+2024/03/05-22:28:49.614 4df0 Generated table #129@0: 784 keys, 1045102 bytes
+2024/03/05-22:28:49.614 4df0 Compacted 1@0 + 1@1 files => 1045102 bytes
+2024/03/05-22:28:49.715 4df0 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/03/05-22:28:49.715 4df0 Delete type=2 #126
+2024/03/05-22:28:49.716 4df0 Delete type=2 #128

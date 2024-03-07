@@ -1,5 +1,34 @@
-2024/02/05-21:48:04.920 590c Recovering log #98
-2024/02/05-21:48:04.932 590c Level-0 table #102: started
-2024/02/05-21:48:04.946 590c Level-0 table #102: 718403 bytes OK
-2024/02/05-21:48:04.952 590c Delete type=0 #98
-2024/02/05-21:48:04.953 590c Delete type=3 #94
+2024/02/06-18:22:01.359 b20 Delete type=3 #1
+2024/02/06-18:22:31.897 3cdc Compacting 2@0 + 0@1 files
+2024/02/06-18:22:31.927 3cdc Generated table #110@0: 765 keys, 1008042 bytes
+2024/02/06-18:22:31.928 3cdc Compacted 2@0 + 0@1 files => 1008042 bytes
+2024/02/06-18:22:31.932 3cdc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/02/06-18:22:31.933 3cdc Delete type=2 #106
+2024/02/06-18:22:31.933 3cdc Delete type=2 #107
+2024/02/06-19:41:33.798 3cdc Level-0 table #112: started
+2024/02/06-19:41:33.825 3cdc Level-0 table #112: 1317013 bytes OK
+2024/02/06-19:41:33.831 3cdc Delete type=0 #109
+2024/02/06-19:42:02.781 3cdc Compacting 1@0 + 1@1 files
+2024/02/06-19:42:02.811 3cdc Generated table #113@0: 777 keys, 1024776 bytes
+2024/02/06-19:42:02.811 3cdc Compacted 1@0 + 1@1 files => 1024776 bytes
+2024/02/06-19:42:02.813 3cdc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/02/06-19:42:02.813 3cdc Delete type=2 #110
+2024/02/06-19:42:02.813 3cdc Delete type=2 #112
+2024/02/06-19:42:26.237 3cdc Level-0 table #115: started
+2024/02/06-19:42:26.257 3cdc Level-0 table #115: 1021189 bytes OK
+2024/02/06-19:42:26.261 3cdc Delete type=0 #111
+2024/02/06-19:43:00.694 3cdc Compacting 1@0 + 1@1 files
+2024/02/06-19:43:01.017 3cdc Generated table #116@0: 776 keys, 1023723 bytes
+2024/02/06-19:43:01.017 3cdc Compacted 1@0 + 1@1 files => 1023723 bytes
+2024/02/06-19:43:01.100 3cdc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/02/06-19:43:01.100 3cdc Delete type=2 #113
+2024/02/06-19:43:01.101 3cdc Delete type=2 #115
+2024/02/06-21:03:35.937 3cdc Level-0 table #118: started
+2024/02/06-21:03:35.966 3cdc Level-0 table #118: 1460815 bytes OK
+2024/02/06-21:03:35.971 3cdc Delete type=0 #114
+2024/02/06-21:03:40.157 3cdc Compacting 1@0 + 1@1 files
+2024/02/06-21:03:40.189 3cdc Generated table #119@0: 779 keys, 1029904 bytes
+2024/02/06-21:03:40.189 3cdc Compacted 1@0 + 1@1 files => 1029904 bytes
+2024/02/06-21:03:40.191 3cdc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/02/06-21:03:40.191 3cdc Delete type=2 #116
+2024/02/06-21:03:40.192 3cdc Delete type=2 #118
