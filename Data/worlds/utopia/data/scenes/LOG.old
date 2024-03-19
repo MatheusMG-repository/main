@@ -1,10 +1,7 @@
-2024/02/06-18:22:01.990 4824 Delete type=3 #1
-2024/02/06-18:22:31.865 3cdc Compacting 2@0 + 0@1 files
-2024/02/06-18:22:31.884 3cdc Generated table #101@0: 2014 keys, 273761 bytes
-2024/02/06-18:22:31.884 3cdc Compacted 2@0 + 0@1 files => 273761 bytes
-2024/02/06-18:22:31.889 3cdc compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/02/06-18:22:31.889 3cdc Delete type=2 #97
-2024/02/06-18:22:31.889 3cdc Delete type=2 #98
-2024/02/06-22:50:45.086 3cdc Level-0 table #103: started
-2024/02/06-22:50:45.125 3cdc Level-0 table #103: 2313545 bytes OK
-2024/02/06-22:50:45.131 3cdc Delete type=0 #100
+2024/03/12-19:31:50.815 38d0 Delete type=3 #1
+2024/03/12-19:31:59.552 14e8 Compacting 2@0 + 0@1 files
+2024/03/12-19:31:59.569 14e8 Generated table #114@0: 2209 keys, 338238 bytes
+2024/03/12-19:31:59.569 14e8 Compacted 2@0 + 0@1 files => 338238 bytes
+2024/03/12-19:31:59.570 14e8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/03/12-19:31:59.571 14e8 Delete type=2 #110
+2024/03/12-19:31:59.571 14e8 Delete type=2 #111

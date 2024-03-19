@@ -1,29 +1,9 @@
-2024/03/05-19:53:04.550 12f4 Recovering log #117
-2024/03/05-19:53:04.552 12f4 Level-0 table #121: started
-2024/03/05-19:53:04.564 12f4 Level-0 table #121: 508112 bytes OK
-2024/03/05-19:53:04.578 12f4 Delete type=0 #117
-2024/03/05-19:53:04.578 12f4 Delete type=3 #108
-2024/03/05-19:53:53.437 4df0 Compacting 1@0 + 1@1 files
-2024/03/05-19:53:53.467 4df0 Generated table #123@0: 778 keys, 1030768 bytes
-2024/03/05-19:53:53.467 4df0 Compacted 1@0 + 1@1 files => 1030768 bytes
-2024/03/05-19:53:53.472 4df0 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/03/05-19:53:53.472 4df0 Delete type=2 #119
-2024/03/05-19:53:53.473 4df0 Delete type=2 #121
-2024/03/05-20:02:43.626 4df0 Level-0 table #125: started
-2024/03/05-20:02:43.658 4df0 Level-0 table #125: 1406555 bytes OK
-2024/03/05-20:02:43.664 4df0 Delete type=0 #122
-2024/03/05-20:04:02.996 4df0 Compacting 1@0 + 1@1 files
-2024/03/05-20:04:03.184 4df0 Generated table #126@0: 766 keys, 1025770 bytes
-2024/03/05-20:04:03.184 4df0 Compacted 1@0 + 1@1 files => 1025770 bytes
-2024/03/05-20:04:03.346 4df0 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/03/05-20:04:03.346 4df0 Delete type=2 #123
-2024/03/05-20:04:03.347 4df0 Delete type=2 #125
-2024/03/05-22:28:07.134 4df0 Level-0 table #128: started
-2024/03/05-22:28:07.537 4df0 Level-0 table #128: 1275666 bytes OK
-2024/03/05-22:28:07.609 4df0 Delete type=0 #124
-2024/03/05-22:28:49.359 4df0 Compacting 1@0 + 1@1 files
-2024/03/05-22:28:49.614 4df0 Generated table #129@0: 784 keys, 1045102 bytes
-2024/03/05-22:28:49.614 4df0 Compacted 1@0 + 1@1 files => 1045102 bytes
-2024/03/05-22:28:49.715 4df0 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/03/05-22:28:49.715 4df0 Delete type=2 #126
-2024/03/05-22:28:49.716 4df0 Delete type=2 #128
+2024/03/19-12:16:51.264 d78 Recovering log #161
+2024/03/19-12:16:51.276 d78 Level-0 table #165: started
+2024/03/19-12:16:51.288 d78 Level-0 table #165: 607873 bytes OK
+2024/03/19-12:16:51.294 d78 Delete type=0 #161
+2024/03/19-12:16:51.294 d78 Delete type=3 #131
+2024/03/19-12:17:01.768 6540 Compacting 1@0 + 1@1 files
+2024/03/19-12:17:01.795 6540 Generated table #167@0: 1008 keys, 1326854 bytes
+2024/03/19-12:17:01.795 6540 Compacted 1@0 + 1@1 files => 1326854 bytes
+2024/03/19-12:17:01.796 6540 compacted to: files[ 0 1 0 0 0 0 0 ]

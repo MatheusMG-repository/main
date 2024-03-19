@@ -32,9 +32,9 @@
     }
   ],
   "featuredContent": {
-    "title": "Phandelver and Below: The Shattered Obelisk Available Now!",
-    "caption": "Experience this epic and iconic introduction to Dungeons & Dragons which expands the beloved starter adventure Lost Mine of Phandelver into a sprawling campaign for characters level 1 through 12.",
-    "url": "https://foundryvtt.com/packages/dnd-phandelver-below",
-    "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/the-shattered-obelisk-featured-block-2024-02-13.webp"
+    "title": "Roll More Easily with Dice Tray!",
+    "caption": "Add an easy to use dice tray below the chat log and a new dice calculator with buttons for dice, numbers, attributes for the selected token, and simple math.",
+    "url": "https://foundryvtt.com/packages/dice-calculator",
+    "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/dice-tray-featured-block-2024-03-13.webp"
   }
 }
