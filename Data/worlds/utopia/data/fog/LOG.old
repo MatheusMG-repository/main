@@ -1,8 +1,6 @@
-2024/03/12-19:31:50.576 3ff4 Delete type=3 #1
-2024/03/12-21:07:50.130 14e8 Compacting 3@0 + 0@1 files
-2024/03/12-21:07:50.186 14e8 Generated table #112@0: 67 keys, 1807079 bytes
-2024/03/12-21:07:50.186 14e8 Compacted 3@0 + 0@1 files => 1807079 bytes
-2024/03/12-21:07:50.187 14e8 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/03/12-21:07:50.187 14e8 Delete type=2 #107
-2024/03/12-21:07:50.188 14e8 Delete type=2 #108
-2024/03/12-21:07:50.188 14e8 Delete type=2 #109
+2024/03/28-20:42:53.095 5030 Log #115: 0 ops saved to Table #116 OK
+2024/03/28-20:42:53.096 5030 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog/000115.log: OK
+2024/03/28-20:42:53.099 5030 Table #112: 67 entries OK
+2024/03/28-20:42:53.101 5030 Table #114: 67 entries OK
+2024/03/28-20:42:53.104 5030 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog/MANIFEST-000113: OK
+2024/03/28-20:42:53.107 5030 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog; recovered 2 files; 3566234 bytes. Some data may have been lost. ****

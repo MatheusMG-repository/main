@@ -1,17 +1,17 @@
-2024/03/12-19:31:54.808 3ff4 Delete type=3 #1
-2024/03/12-19:31:54.810 14e8 Moved #9 to level-1 2121303 bytes OK: files[ 12 1 0 0 0 0 0 ]
-2024/03/12-19:31:54.810 14e8 Moved #10 to level-1 2118824 bytes OK: files[ 11 2 0 0 0 0 0 ]
-2024/03/12-19:31:54.811 14e8 Moved #11 to level-1 2119771 bytes OK: files[ 10 3 0 0 0 0 0 ]
-2024/03/12-19:31:54.812 14e8 Moved #12 to level-1 2117852 bytes OK: files[ 9 4 0 0 0 0 0 ]
-2024/03/12-19:31:54.812 14e8 Moved #13 to level-1 2118044 bytes OK: files[ 8 5 0 0 0 0 0 ]
-2024/03/12-19:31:54.813 14e8 Moved #14 to level-1 2122748 bytes OK: files[ 7 6 0 0 0 0 0 ]
-2024/03/12-19:31:54.813 14e8 Moved #15 to level-1 2119285 bytes OK: files[ 6 7 0 0 0 0 0 ]
-2024/03/12-19:31:54.814 14e8 Moved #16 to level-1 2121085 bytes OK: files[ 5 8 0 0 0 0 0 ]
-2024/03/12-19:31:54.815 14e8 Moved #9 to level-2 2121303 bytes OK: files[ 5 7 1 0 0 0 0 ]
-2024/03/12-19:31:54.815 14e8 Moved #10 to level-2 2118824 bytes OK: files[ 5 6 2 0 0 0 0 ]
-2024/03/12-19:31:54.815 14e8 Moved #17 to level-1 2119097 bytes OK: files[ 4 7 2 0 0 0 0 ]
-2024/03/12-19:31:54.817 14e8 Moved #11 to level-2 2119771 bytes OK: files[ 4 6 3 0 0 0 0 ]
-2024/03/12-19:31:54.818 14e8 Moved #12 to level-2 2117852 bytes OK: files[ 4 5 4 0 0 0 0 ]
-2024/03/12-19:31:54.818 14e8 Moved #13 to level-2 2118044 bytes OK: files[ 4 4 5 0 0 0 0 ]
-2024/03/12-19:31:54.819 14e8 Moved #18 to level-1 2118127 bytes OK: files[ 3 5 5 0 0 0 0 ]
-2024/03/12-19:31:54.820 14e8 Moved #14 to level-2 2122748 bytes OK: files[ 3 4 6 0 0 0 0 ]
+2024/03/28-20:42:55.373 1208 Log #59: 0 ops saved to Table #60 OK
+2024/03/28-20:42:55.374 1208 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-statblocks/000059.log: OK
+2024/03/28-20:42:55.379 1208 Table #9: 962 entries OK
+2024/03/28-20:42:55.497 1208 Table #10: 769 entries OK
+2024/03/28-20:42:55.589 1208 Table #11: 724 entries OK
+2024/03/28-20:42:55.679 1208 Table #12: 683 entries OK
+2024/03/28-20:42:55.756 1208 Table #13: 796 entries OK
+2024/03/28-20:42:55.811 1208 Table #14: 1177 entries OK
+2024/03/28-20:42:55.868 1208 Table #15: 815 entries OK
+2024/03/28-20:42:55.941 1208 Table #16: 760 entries OK
+2024/03/28-20:42:56.016 1208 Table #17: 610 entries OK
+2024/03/28-20:42:56.090 1208 Table #18: 708 entries OK
+2024/03/28-20:42:56.175 1208 Table #19: 831 entries OK
+2024/03/28-20:42:56.247 1208 Table #20: 1116 entries OK
+2024/03/28-20:42:56.264 1208 Table #21: 408 entries OK
+2024/03/28-20:42:56.266 1208 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-statblocks/MANIFEST-000058: OK
+2024/03/28-20:42:56.269 1208 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-statblocks; recovered 13 files; 26328118 bytes. Some data may have been lost. ****

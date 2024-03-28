@@ -1,1 +1,4 @@
-2024/03/12-19:31:50.756 5c38 Delete type=3 #1
+2024/03/28-20:42:53.245 7560 Log #71: 0 ops saved to Table #72 OK
+2024/03/28-20:42:53.246 7560 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/tables/000071.log: OK
+2024/03/28-20:42:53.248 7560 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/tables/MANIFEST-000070: OK
+2024/03/28-20:42:53.251 7560 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/tables; recovered 0 files; 0 bytes. Some data may have been lost. ****

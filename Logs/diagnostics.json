@@ -1,5 +1,5 @@
 {
-  "timestamp": 1711658272580,
+  "timestamp": 1711658491522,
   "os": {
     "platform": "win32",
     "version": "10.0.22631",
@@ -18,6 +18,9 @@
     },
     "fa-battlemaps": {
       "version": "1.0.44"
+    },
+    "gm-screen": {
+      "version": "4.0.4"
     },
     "lmrtfy": {
       "version": "3.1.9"

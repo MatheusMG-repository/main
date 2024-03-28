@@ -1,2 +1,8 @@
-2024/03/12-19:31:50.617 669c Delete type=3 #1
-2024/03/12-19:31:50.619 14e8 Moved #65 to level-1 452 bytes OK: files[ 3 1 0 0 0 0 0 ]
+2024/03/28-20:42:53.124 8628 Log #80: 0 ops saved to Table #81 OK
+2024/03/28-20:42:53.125 8628 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/folders/000080.log: OK
+2024/03/28-20:42:53.129 8628 Table #40: 15 entries OK
+2024/03/28-20:42:53.132 8628 Table #47: 1 entries OK
+2024/03/28-20:42:53.134 8628 Table #59: 1 entries OK
+2024/03/28-20:42:53.137 8628 Table #65: 1 entries OK
+2024/03/28-20:42:53.140 8628 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/folders/MANIFEST-000079: OK
+2024/03/28-20:42:53.142 8628 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/folders; recovered 4 files; 3078 bytes. Some data may have been lost. ****

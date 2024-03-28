@@ -1,1 +1,6 @@
-2024/03/12-19:31:50.873 3ff4 Delete type=3 #1
+2024/03/28-20:42:53.308 5030 Log #96: 2 ops saved to Table #98 OK
+2024/03/28-20:42:53.309 5030 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/settings/000096.log: OK
+2024/03/28-20:42:53.312 5030 Table #97: 16 entries OK
+2024/03/28-20:42:53.312 5030 Table #98: 2 entries OK
+2024/03/28-20:42:53.316 5030 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/settings/MANIFEST-000094: OK
+2024/03/28-20:42:53.318 5030 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/settings; recovered 2 files; 4611 bytes. Some data may have been lost. ****
