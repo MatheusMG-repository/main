@@ -32,9 +32,9 @@
     }
   ],
   "featuredContent": {
-    "title": "Roll More Easily with Dice Tray!",
-    "caption": "Add an easy to use dice tray below the chat log and a new dice calculator with buttons for dice, numbers, attributes for the selected token, and simple math.",
-    "url": "https://foundryvtt.com/packages/dice-calculator",
-    "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/dice-tray-featured-block-2024-03-13.webp"
+    "title": "Plan Your Next Session with Forgotten Adventures Battlemaps!",
+    "caption": "Forgotten Adventures have released a terrific pack of free battle maps that will continue to be updated and expanded. Forgotten Adventures Battlemaps Patrons can even download their premium releases directly inside of Foundry!",
+    "url": "https://foundryvtt.com/packages/fa-battlemaps",
+    "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/fa-battlemaps-block-2024-03-26.webp"
   }
 }

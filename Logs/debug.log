@@ -20055,3 +20055,94 @@
 {"level":"info","message":"FoundryVTT | Created ChatMessage with id [v42IxKj6X5wmHL2b]","timestamp":"2024-03-19 12:24:27"}
 {"level":"info","message":"Shutting down Foundry Virtual Tabletop server","timestamp":"2024-03-19 12:24:53"}
 {"level":"info","message":"Shut-down success. Goodbye!","timestamp":"2024-03-19 12:24:53"}
+{"level":"info","message":"Running on Node.js - Version 18.14.0","timestamp":"2024-03-28 20:37:21"}
+{"level":"info","message":"Foundry Virtual Tabletop - Version 11 Build 315","timestamp":"2024-03-28 20:37:21"}
+{"level":"info","message":"User Data Directory - \"C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main\"","timestamp":"2024-03-28 20:37:21"}
+{"level":"error","message":"A fatal error occurred while trying to start the Foundry Virtual Tabletop server: Foundry VTT cannot start in this directory which is already locked by another process.","stack":"Error: A fatal error occurred while trying to start the Foundry Virtual Tabletop server: Foundry VTT cannot start in this directory which is already locked by another process.\n    at _acquireLockFile (file:///C:/Program%20Files/Foundry%20Virtual%20Tabletop/resources/app/dist/init.mjs:1:4977)\n    at async _initializeCriticalFunctions (file:///C:/Program%20Files/Foundry%20Virtual%20Tabletop/resources/app/dist/init.mjs:1:2593)\n    at async Module.initialize (file:///C:/Program%20Files/Foundry%20Virtual%20Tabletop/resources/app/dist/init.mjs:1:1564)","timestamp":"2024-03-28 20:37:21"}
+{"level":"info","message":"Running on Node.js - Version 18.14.0","timestamp":"2024-03-28 20:37:49"}
+{"level":"info","message":"Foundry Virtual Tabletop - Version 11 Build 315","timestamp":"2024-03-28 20:37:49"}
+{"level":"info","message":"User Data Directory - \"C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main\"","timestamp":"2024-03-28 20:37:49"}
+{"level":"info","message":"Application Options:\n{\n  \"compressStatic\": true,\n  \"fullscreen\": false,\n  \"hostname\": null,\n  \"language\": \"en.core\",\n  \"localHostname\": null,\n  \"port\": 30000,\n  \"protocol\": null,\n  \"proxyPort\": null,\n  \"proxySSL\": false,\n  \"routePrefix\": null,\n  \"updateChannel\": \"stable\",\n  \"upnp\": true,\n  \"upnpLeaseDuration\": null,\n  \"awsConfig\": null,\n  \"compressSocket\": true,\n  \"cssTheme\": \"foundry\",\n  \"deleteNEDB\": false,\n  \"hotReload\": false,\n  \"passwordSalt\": null,\n  \"sslCert\": null,\n  \"sslKey\": null,\n  \"world\": null,\n  \"serviceConfig\": null,\n  \"telemetry\": true,\n  \"adminPassword\": null,\n  \"noBackups\": false\n}","timestamp":"2024-03-28 20:37:49"}
+{"level":"info","message":"Software license verification succeeded","timestamp":"2024-03-28 20:37:49"}
+{"level":"info","message":"Requesting UPnP port forwarding to destination port 30000","timestamp":"2024-03-28 20:37:49"}
+{"level":"info","message":"Running Electron application with version 24.8.5 using Chromium 112.0.5615.204","timestamp":"2024-03-28 20:37:49"}
+{"level":"info","message":"Server started and listening on port 30000","timestamp":"2024-03-28 20:37:49"}
+{"level":"info","message":"Created client session c157535da5bd59e6f36fa54b","timestamp":"2024-03-28 20:37:52"}
+{"level":"warn","message":"The module \"gm-screen\" contains \"dependencies\" which is deprecated in favor of \"relationships.requires\"\nDeprecated since Version 10\nBackwards-compatible support will be removed in Version 13","timestamp":"2024-03-28 20:38:26"}
+{"level":"info","message":"Downloading Package - 1%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 3%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 4%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 6%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 7%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 9%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 10%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 12%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 13%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 15%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 16%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 18%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 19%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 21%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 22%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 24%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 25%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 27%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 28%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 30%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 31%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 32%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 34%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 35%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 37%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 38%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 40%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 41%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 43%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 44%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 46%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 47%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 49%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 50%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 52%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 53%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 55%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 56%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 58%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 59%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 61%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 62%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 64%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 65%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 66%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 67%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 85%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 96%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 99%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Downloading Package - 100%","timestamp":"2024-03-28 20:38:27"}
+{"level":"warn","message":"The module \"gm-screen\" contains \"dependencies\" which is deprecated in favor of \"relationships.requires\"\nDeprecated since Version 10\nBackwards-compatible support will be removed in Version 13","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 5%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 10%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 14%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 19%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 24%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 29%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 33%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 38%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 43%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 48%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 52%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 57%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 62%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 67%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 71%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 76%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 81%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 86%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 90%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 95%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installing package - 100%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Cleaning Up Artifacts - 100%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Installation Complete - 100%","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"FoundryVTT | Installed module gm-screen","timestamp":"2024-03-28 20:38:27"}
+{"level":"warn","message":"The module \"gm-screen\" contains \"dependencies\" which is deprecated in favor of \"relationships.requires\"\nDeprecated since Version 10\nBackwards-compatible support will be removed in Version 13","timestamp":"2024-03-28 20:38:27"}
+{"level":"info","message":"Vending Package - 100%","timestamp":"2024-03-28 20:38:27"}
