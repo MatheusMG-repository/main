@@ -1,5 +1,3 @@
-2024/03/28-20:42:54.159 7560 Log #47: 0 ops saved to Table #48 OK
-2024/03/28-20:42:54.160 7560 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-buffs/000047.log: OK
-2024/03/28-20:42:54.168 7560 Table #9: 186 entries OK
-2024/03/28-20:42:54.171 7560 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-buffs/MANIFEST-000046: OK
-2024/03/28-20:42:54.173 7560 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-buffs; recovered 1 files; 123943 bytes. Some data may have been lost. ****
+2024/04/01-16:12:50.049 6f04 Recovering log #52
+2024/04/01-16:12:50.052 6f04 Delete type=0 #52
+2024/04/01-16:12:50.052 6f04 Delete type=3 #51

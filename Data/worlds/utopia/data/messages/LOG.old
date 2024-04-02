@@ -1,6 +1,5 @@
-2024/03/28-20:42:52.982 1208 Log #86: 40 ops saved to Table #88 OK
-2024/03/28-20:42:52.983 1208 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/messages/000086.log: OK
-2024/03/28-20:42:53.019 1208 Table #87: 944 entries OK
-2024/03/28-20:42:53.019 1208 Table #88: 40 entries OK
-2024/03/28-20:42:53.022 1208 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/messages/MANIFEST-000084: OK
-2024/03/28-20:42:53.025 1208 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/messages; recovered 2 files; 1888543 bytes. Some data may have been lost. ****
+2024/04/01-16:12:49.091 6fec Recovering log #92
+2024/04/01-16:12:49.092 6fec Level-0 table #94: started
+2024/04/01-16:12:49.094 6fec Level-0 table #94: 31252 bytes OK
+2024/04/01-16:12:49.097 6fec Delete type=0 #92
+2024/04/01-16:12:49.097 6fec Delete type=3 #91

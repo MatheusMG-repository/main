@@ -1,0 +1,28 @@
+{
+  "id": "ivan-duch-music-packs",
+  "name": "ivan-duch-music-packs",
+  "title": "Ivan Duch's Music Packs",
+  "description": "A collection of my free fantasy music library. You can learn more about it at https://ivanduch.com.",
+  "version": "2.2",
+
+  "authors": [{
+    "name": "Ivan Duch",
+    "url": "https://ivanduch.com",
+    "discord": "Ivan Duch#8102",
+    "email": "hello@ivanduch.com"
+  }],
+  "compatibility": {
+    "minimum": 8,
+    "verified": "11.300",
+    "maximum": 11
+  },
+  "packs": [{
+    "name": "module-playlists",
+    "label": "Ivan Duch's Playlists",
+    "path": "./packs/playlists.db",
+    "entity": "Playlist",
+    "type": "Playlist"
+  }],
+  "manifest": "https://foundryvtt.s3-us-west-2.amazonaws.com/modules/ivan-duch-music-packs/module.json",
+  "download": "https://foundryvtt.s3.us-west-2.amazonaws.com/modules/ivan-duch-music-packs/ivan-duch-music-packs-2.2.zip"
+}

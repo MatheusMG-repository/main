@@ -1,1 +1,9 @@
-2024/03/28-20:42:53.282 8628 Delete type=3 #1
+2024/04/02-17:20:09.274 5bbc Recovering log #128
+2024/04/02-17:20:09.275 5bbc Level-0 table #131: started
+2024/04/02-17:20:09.278 5bbc Level-0 table #131: 33268 bytes OK
+2024/04/02-17:20:09.281 5bbc Delete type=0 #128
+2024/04/02-17:20:09.281 5bbc Delete type=3 #126
+2024/04/02-17:20:16.791 6070 Compacting 1@0 + 1@1 files
+2024/04/02-17:20:16.800 6070 Generated table #133@0: 2322 keys, 331709 bytes
+2024/04/02-17:20:16.801 6070 Compacted 1@0 + 1@1 files => 331709 bytes
+2024/04/02-17:20:16.801 6070 compacted to: files[ 0 1 0 0 0 0 0 ]

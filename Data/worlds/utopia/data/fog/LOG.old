@@ -1,6 +1,5 @@
-2024/03/28-20:42:53.095 5030 Log #115: 0 ops saved to Table #116 OK
-2024/03/28-20:42:53.096 5030 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog/000115.log: OK
-2024/03/28-20:42:53.099 5030 Table #112: 67 entries OK
-2024/03/28-20:42:53.101 5030 Table #114: 67 entries OK
-2024/03/28-20:42:53.104 5030 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog/MANIFEST-000113: OK
-2024/03/28-20:42:53.107 5030 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog; recovered 2 files; 3566234 bytes. Some data may have been lost. ****
+2024/04/01-16:12:49.189 79b4 Recovering log #120
+2024/04/01-16:12:49.190 79b4 Level-0 table #123: started
+2024/04/01-16:12:49.193 79b4 Level-0 table #123: 89442 bytes OK
+2024/04/01-16:12:49.196 79b4 Delete type=0 #120
+2024/04/01-16:12:49.196 79b4 Delete type=3 #119

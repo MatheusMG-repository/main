@@ -1,8 +1,13 @@
-2024/03/28-20:42:53.124 8628 Log #80: 0 ops saved to Table #81 OK
-2024/03/28-20:42:53.125 8628 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/folders/000080.log: OK
-2024/03/28-20:42:53.129 8628 Table #40: 15 entries OK
-2024/03/28-20:42:53.132 8628 Table #47: 1 entries OK
-2024/03/28-20:42:53.134 8628 Table #59: 1 entries OK
-2024/03/28-20:42:53.137 8628 Table #65: 1 entries OK
-2024/03/28-20:42:53.140 8628 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/folders/MANIFEST-000079: OK
-2024/03/28-20:42:53.142 8628 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/folders; recovered 4 files; 3078 bytes. Some data may have been lost. ****
+2024/04/01-16:12:49.216 6fec Recovering log #85
+2024/04/01-16:12:49.216 6fec Level-0 table #87: started
+2024/04/01-16:12:49.221 6fec Level-0 table #87: 480 bytes OK
+2024/04/01-16:12:49.225 6fec Delete type=0 #85
+2024/04/01-16:12:49.225 6fec Delete type=3 #84
+2024/04/01-16:12:49.225 4244 Compacting 4@0 + 0@1 files
+2024/04/01-16:12:49.237 4244 Generated table #89@0: 17 keys, 1989 bytes
+2024/04/01-16:12:49.238 4244 Compacted 4@0 + 0@1 files => 1989 bytes
+2024/04/01-16:12:49.238 4244 compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/04/01-16:12:49.238 4244 Delete type=2 #40
+2024/04/01-16:12:49.239 4244 Delete type=2 #47
+2024/04/01-16:12:49.239 4244 Delete type=2 #59
+2024/04/01-16:12:49.239 4244 Delete type=2 #87

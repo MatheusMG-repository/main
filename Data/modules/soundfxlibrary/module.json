@@ -1,0 +1,31 @@
+{
+    "name": "soundfxlibrary",
+    "title": "SoundFx Library",
+    "description": "Library of sound effects that can be used in soundboards.",
+    "version": "1.0.2",
+    "author": "CDeenen",
+    "authors": [
+        {
+            "name": "CDeenen"
+        }
+    ],
+    "minimumCoreVersion": "0.6.0",
+    "compatibleCoreVersion": "10",
+    "compatibility": {
+        "minimum": "0.6",
+        "verified": "10"
+    },
+    "url": "https://github.com/CDeenen/SoundFxLibrary",
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "scripts": [
+        "packRegistry.js"
+    ],
+    "manifest": "https://github.com/CDeenen/SoundFxLibrary/releases/latest/download/module.json",
+    "download": "https://github.com/CDeenen/SoundFxLibrary/releases/download/v1.0.2/module.zip"
+}
