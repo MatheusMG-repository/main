@@ -1,11 +1,9 @@
-2024/04/01-16:12:49.326 6fec Recovering log #124
-2024/04/01-16:12:49.328 6fec Level-0 table #127: started
-2024/04/01-16:12:49.335 6fec Level-0 table #127: 608874 bytes OK
-2024/04/01-16:12:49.339 6fec Delete type=0 #124
-2024/04/01-16:12:49.339 6fec Delete type=3 #122
-2024/04/01-16:12:59.688 4244 Compacting 1@0 + 1@1 files
-2024/04/01-16:12:59.700 4244 Generated table #129@0: 2322 keys, 331712 bytes
-2024/04/01-16:12:59.700 4244 Compacted 1@0 + 1@1 files => 331712 bytes
-2024/04/01-16:12:59.701 4244 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/04/01-16:12:59.701 4244 Delete type=2 #125
-2024/04/01-16:12:59.701 4244 Delete type=2 #127
+2024/04/02-17:20:09.274 5bbc Recovering log #128
+2024/04/02-17:20:09.275 5bbc Level-0 table #131: started
+2024/04/02-17:20:09.278 5bbc Level-0 table #131: 33268 bytes OK
+2024/04/02-17:20:09.281 5bbc Delete type=0 #128
+2024/04/02-17:20:09.281 5bbc Delete type=3 #126
+2024/04/02-17:20:16.791 6070 Compacting 1@0 + 1@1 files
+2024/04/02-17:20:16.800 6070 Generated table #133@0: 2322 keys, 331709 bytes
+2024/04/02-17:20:16.801 6070 Compacted 1@0 + 1@1 files => 331709 bytes
+2024/04/02-17:20:16.801 6070 compacted to: files[ 0 1 0 0 0 0 0 ]

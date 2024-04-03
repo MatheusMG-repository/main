@@ -22694,3 +22694,504 @@
 {"level":"info","message":"Vended World data to User [w7M4Wjrf5KX4Xg5D] in 1910ms","timestamp":"2024-04-02 18:42:30"}
 {"level":"info","message":"Shutting down Foundry Virtual Tabletop server","timestamp":"2024-04-02 18:42:36"}
 {"level":"info","message":"Shut-down success. Goodbye!","timestamp":"2024-04-02 18:42:36"}
+{"level":"info","message":"Running on Node.js - Version 18.14.0","timestamp":"2024-04-02 18:56:45"}
+{"level":"info","message":"Foundry Virtual Tabletop - Version 11 Build 315","timestamp":"2024-04-02 18:56:45"}
+{"level":"info","message":"User Data Directory - \"C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main\"","timestamp":"2024-04-02 18:56:45"}
+{"level":"info","message":"Application Options:\n{\n  \"compressStatic\": true,\n  \"fullscreen\": false,\n  \"hostname\": null,\n  \"language\": \"en.core\",\n  \"localHostname\": null,\n  \"port\": 30000,\n  \"protocol\": null,\n  \"proxyPort\": null,\n  \"proxySSL\": false,\n  \"routePrefix\": null,\n  \"updateChannel\": \"stable\",\n  \"upnp\": true,\n  \"upnpLeaseDuration\": null,\n  \"awsConfig\": null,\n  \"compressSocket\": true,\n  \"cssTheme\": \"foundry\",\n  \"deleteNEDB\": false,\n  \"hotReload\": false,\n  \"passwordSalt\": null,\n  \"sslCert\": null,\n  \"sslKey\": null,\n  \"world\": null,\n  \"serviceConfig\": null,\n  \"telemetry\": true,\n  \"adminPassword\": null,\n  \"noBackups\": false\n}","timestamp":"2024-04-02 18:56:45"}
+{"level":"info","message":"Software license verification succeeded","timestamp":"2024-04-02 18:56:45"}
+{"level":"info","message":"Requesting UPnP port forwarding to destination port 30000","timestamp":"2024-04-02 18:56:45"}
+{"level":"info","message":"Running Electron application with version 24.8.5 using Chromium 112.0.5615.204","timestamp":"2024-04-02 18:56:45"}
+{"level":"info","message":"Server started and listening on port 30000","timestamp":"2024-04-02 18:56:45"}
+{"level":"info","message":"Created client session 8f0d6bc85b1722caad96e4a0","timestamp":"2024-04-02 18:56:46"}
+{"level":"warn","message":"The module \"gm-screen\" contains \"dependencies\" which is deprecated in favor of \"relationships.requires\"\nDeprecated since Version 10\nBackwards-compatible support will be removed in Version 13","timestamp":"2024-04-02 18:56:46"}
+{"level":"warn","message":"The module \"gm-screen\" contains \"dependencies\" which is deprecated in favor of \"relationships.requires\"\nDeprecated since Version 10\nBackwards-compatible support will be removed in Version 13","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"actors\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"cards\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"messages\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"combats\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"drawings\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fog\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"folders\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"items\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"journal\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"macros\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"playlists\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"tables\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"scenes\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"settings\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"users\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.classes\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.mythicpaths\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.commonbuffs\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.spells\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.feats\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.items\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.armors-and-shields\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.weapons-and-ammo\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.monster-abilities\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.racialhd\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.races\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.class-abilities\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.monster-templates\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.sample-macros\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.roll-tables\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.ultimate-equipment\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1.pf1e-rules\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fa-battlemaps.maps\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"ivan-duch-music-packs.module-playlists\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"monks-active-tiles.active-tile-macros\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-35-content\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-artifacts\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-buffs\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-class-abilities\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-companions\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-companion-features\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-deities\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-eidolon-forms\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-eidolon-evolutions\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-encounter-tables\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-elephant\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-familiars\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-feats\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.gm-quick-reference\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-goods-services\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.harrow-deck\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-items\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-magicitems\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-maladies\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-merchants\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-magic-tables\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-occult-rituals\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-racial-traits\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-rules\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-special-qualities\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-tables\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-tech\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-traits\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-traps-and-haunts\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-universal-monster-rules\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.pf-wondrous\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-gm\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-player\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-scenes\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-buildings\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf-content.kingdom-building-tables\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1-bestiary.bestiary-00\"","timestamp":"2024-04-02 18:56:52"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1-bestiary.bestiary-02\"","timestamp":"2024-04-02 18:56:53"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1-bestiary.bestiary-04\"","timestamp":"2024-04-02 18:56:53"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1-bestiary.bestiary-06\"","timestamp":"2024-04-02 18:56:53"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1-bestiary.bestiary-08\"","timestamp":"2024-04-02 18:56:53"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1-bestiary.bestiary-11\"","timestamp":"2024-04-02 18:56:53"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1-bestiary.bestiary-15\"","timestamp":"2024-04-02 18:56:53"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf1-bestiary.bestiary-20\"","timestamp":"2024-04-02 18:56:53"}
+{"level":"info","message":"FoundryVTT | Connected to database \"statblock-library.sb-statblocks\"","timestamp":"2024-04-02 18:56:53"}
+{"level":"info","message":"FoundryVTT | Created 0 Folder documents with ids: []","timestamp":"2024-04-02 18:56:53"}
+{"ip":"::1","level":"info","message":"User authentication successful for user Gamemaster","session":"8f0d6bc85b1722caad96e4a0","timestamp":"2024-04-02 18:57:47"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-04-02 18:57:50"}
+{"level":"info","message":"Vended World data to User [w7M4Wjrf5KX4Xg5D] in 2098ms","timestamp":"2024-04-02 18:57:50"}
+{"level":"info","message":"FoundryVTT | Created Playlist with id [6ZXnOxzIXpOBMSnD]","timestamp":"2024-04-02 18:58:58"}
+{"level":"info","message":"FoundryVTT | Created 109 PlaylistSound documents in parent Playlist [6ZXnOxzIXpOBMSnD]","timestamp":"2024-04-02 18:59:18"}
+{"level":"info","message":"FoundryVTT | Created Token with id [k6RJRRHqBJ61Tobj] in parent Scene [gET34NXtE8KTKVRY]","timestamp":"2024-04-02 19:00:58"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [k6RJRRHqBJ61Tobj] in parent Scene [gET34NXtE8KTKVRY]","timestamp":"2024-04-02 19:01:03"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [KkWSUdCFd8MKLJes] in parent Scene [kCqE6vIxU2k6pYpH]","timestamp":"2024-04-02 19:02:05"}
+{"level":"info","message":"FoundryVTT | Created Token with id [bGVt8IfNVrdMvYUZ] in parent Scene [kCqE6vIxU2k6pYpH]","timestamp":"2024-04-02 19:02:21"}
+{"level":"info","message":"Activating scene stronghold2 [kCqE6vIxU2k6pYpH]","timestamp":"2024-04-02 19:02:39"}
+{"level":"info","message":"FoundryVTT | Created Token with id [Uct4pKSSRpZl8rm9] in parent Scene [kCqE6vIxU2k6pYpH]","timestamp":"2024-04-02 19:03:27"}
+{"level":"info","message":"Created client session 816975c4813c88b4f9806e28","timestamp":"2024-04-02 19:04:16"}
+{"level":"info","message":"Created client session 5457da477167e4a9e161f7c4","timestamp":"2024-04-02 19:04:21"}
+{"level":"info","message":"Created client session 9faef82d82c48606e7a91da5","timestamp":"2024-04-02 19:04:25"}
+{"level":"info","message":"Created client session 2a483084634ec130bf01fde6","timestamp":"2024-04-02 19:04:27"}
+{"level":"info","message":"Created client session 1005958fe904bcf7f5e17861","timestamp":"2024-04-02 19:04:29"}
+{"ip":"::ffff:46.189.173.28","level":"info","message":"User authentication successful for user Jan","session":"5457da477167e4a9e161f7c4","timestamp":"2024-04-02 19:06:04"}
+{"ip":"::ffff:84.27.243.72","level":"info","message":"User authentication successful for user Stef","session":"9faef82d82c48606e7a91da5","timestamp":"2024-04-02 19:06:12"}
+{"ip":"::ffff:145.224.125.163","level":"info","message":"User authentication successful for user Tamara","session":"2a483084634ec130bf01fde6","timestamp":"2024-04-02 19:06:19"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-04-02 19:06:44"}
+{"level":"info","message":"Vended World data to User [Jh9pXvr9vaZi4Hl8] in 4768ms","timestamp":"2024-04-02 19:06:44"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-04-02 19:06:52"}
+{"level":"info","message":"Vended World data to User [8jTZAWVzEfSXbYiK] in 3828ms","timestamp":"2024-04-02 19:06:52"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-04-02 19:06:55"}
+{"level":"info","message":"Vended World data to User [cLPUamNWOPbdg8po] in 4069ms","timestamp":"2024-04-02 19:06:55"}
+{"ip":"::ffff:14.1.64.2","level":"info","message":"User authentication successful for user Miguel","session":"1005958fe904bcf7f5e17861","timestamp":"2024-04-02 19:07:55"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-04-02 19:09:04"}
+{"level":"info","message":"Vended World data to User [cLPUamNWOPbdg8po] in 4362ms","timestamp":"2024-04-02 19:09:04"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-04-02 19:10:40"}
+{"level":"info","message":"Vended World data to User [RAn6D2MULMce0we4] in 4212ms","timestamp":"2024-04-02 19:10:40"}
+{"level":"info","message":"Toggling game pause status to false","timestamp":"2024-04-02 19:13:25"}
+{"level":"debug","message":"Starting edit session for user 'Jh9pXvr9vaZi4Hl8' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 19:14:19"}
+{"level":"debug","message":"Retiring user 'Jh9pXvr9vaZi4Hl8' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 19:14:31"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 19:14:31"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:14:44"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 19:14:50"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 19:15:04"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 19:15:04"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:15:44"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:16:44"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:17:44"}
+{"level":"debug","message":"Starting edit session for user 'RAn6D2MULMce0we4' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.RnY5bxvYZ1z9xnIo#text.content'.","timestamp":"2024-04-02 19:18:08"}
+{"level":"info","message":"FoundryVTT | Created Item with id [AHAo3mr8mJpJS6hX] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:18:49"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [XLBxfMequ8E5yMYD] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:18:53"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [RhDS2UDqdIRfHGiR] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:18:56"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [7Gd3yN5NdX3SDmAh] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:19:00"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [2k6nQARKdcdQd7ld] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:19:03"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.RnY5bxvYZ1z9xnIo#text.content'.","timestamp":"2024-04-02 19:19:08"}
+{"level":"debug","message":"Retiring user 'RAn6D2MULMce0we4' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.RnY5bxvYZ1z9xnIo#text.content'.","timestamp":"2024-04-02 19:19:27"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.RnY5bxvYZ1z9xnIo#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 19:19:27"}
+{"level":"info","message":"FoundryVTT | Created Item with id [aeUaDOBz2BHb0mnE] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:19:38"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [aeUaDOBz2BHb0mnE] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:19:41"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:19:44"}
+{"level":"info","message":"FoundryVTT | Created Item with id [CwKn6GFxM1aE94BB] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:19:59"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [Xahcl0GcFDV95RK4] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:20:09"}
+{"level":"info","message":"FoundryVTT | Created Item with id [YcJhQjEGoCu6qDUD] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:20:24"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [YcJhQjEGoCu6qDUD] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:20:27"}
+{"level":"info","message":"FoundryVTT | Created Item with id [WsZD1XrPZgL7CkA4] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:20:29"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:20:44"}
+{"level":"info","message":"FoundryVTT | Created Item with id [5vgpTH3u71rBePTL] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:21:18"}
+{"level":"info","message":"FoundryVTT | Created Item with id [viioUQ363JndzjiW] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:21:19"}
+{"level":"info","message":"FoundryVTT | Created Item with id [AJRAMQtgPfqfVh53] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:21:46"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7wIkpUiTM54zgGKF]","timestamp":"2024-04-02 19:22:23"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [bck6yVCekwuBSf4T] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:23:06"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [BGB1m2cNjJoxC0Js] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:23:10"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [G0vT7vjFifyVM980] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:23:13"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [g17e1dLrTMkyUmwR] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:23:17"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [WqmEKbUsxPnYtG3o] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:23:34"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [9DfaFtEkyCeMLdbM] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:23:45"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [wxOeTHrnUFEiBAKL] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:24:04"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [PeTI1QKAofPdfovQ] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:24:06"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [SUS5BtTXXb7ROO4G] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:24:09"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [OwNUNHswugRQXWIz] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:24:13"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [WKi8iP55uw9LsNG5] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:24:20"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [IXbCDXZBaBKPRsb7] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:24:25"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [Jq62wXprUADQN1o0] in parent Actor [uza43JRTuKfDasyb]","timestamp":"2024-04-02 19:24:27"}
+{"level":"info","message":"FoundryVTT | Created Item with id [0PHyyYrmyRZSHxbS] in parent ActorDelta [MnjWqeXcNGKoUTbc]","timestamp":"2024-04-02 19:24:33"}
+{"level":"debug","message":"Starting edit session for user 'Jh9pXvr9vaZi4Hl8' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:24:49"}
+{"level":"debug","message":"Retiring user 'Jh9pXvr9vaZi4Hl8' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:24:57"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:25:17"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 19:25:17"}
+{"level":"warn","message":"Did not write effects collection for ActiveEffect CLjEW5oJWB8qhTNK as it was not an Array.","timestamp":"2024-04-02 19:25:51"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [CLjEW5oJWB8qhTNK] in parent ActorDelta [MnjWqeXcNGKoUTbc]","timestamp":"2024-04-02 19:25:51"}
+{"level":"info","message":"FoundryVTT | Created Item with id [rlUg2ViUqqTTtu0P] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:26:36"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [CLjEW5oJWB8qhTNK] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:26:43"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [rlUg2ViUqqTTtu0P] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:27:09"}
+{"level":"info","message":"FoundryVTT | Created Item with id [7HYnxfAQPUzNJjlu] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:28:18"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [7HYnxfAQPUzNJjlu] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:28:52"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Nk7DsgTHBoPBM9SO] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:29:42"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [Nk7DsgTHBoPBM9SO] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:29:56"}
+{"level":"info","message":"FoundryVTT | Created Item with id [P5G4GaP75P86P7NH] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:30:04"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Yp5KAWVRvXaMOTEd] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:31:25"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [Yp5KAWVRvXaMOTEd] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:31:28"}
+{"level":"info","message":"FoundryVTT | Created Item with id [7U9s9ERHa6LmtANg] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:31:30"}
+{"level":"info","message":"FoundryVTT | Created Item with id [aIYnoYmYuywUPkrJ] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:31:47"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [aIYnoYmYuywUPkrJ] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:31:54"}
+{"level":"info","message":"FoundryVTT | Created Item with id [mtxSs5eEAHl2G1Vw] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:32:34"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [mtxSs5eEAHl2G1Vw] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:32:36"}
+{"level":"info","message":"FoundryVTT | Created Item with id [ecHArK9vId9zdxDM] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:32:50"}
+{"level":"debug","message":"Starting edit session for user 'Jh9pXvr9vaZi4Hl8' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 19:34:17"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 19:35:17"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 19:36:17"}
+{"level":"info","message":"No system update for Pathfinder 1e is currently available.","timestamp":"2024-04-02 19:36:21"}
+{"level":"info","message":"Vended World data to User [RAn6D2MULMce0we4] in 1999ms","timestamp":"2024-04-02 19:36:21"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:37:40"}
+{"level":"warn","message":"Did not retrieve effects collection from ActiveEffect noc9ztLhKoYPahwK as it was not an Array.","timestamp":"2024-04-02 19:37:45"}
+{"level":"warn","message":"Did not retrieve effects collection from ActiveEffect aJS23K4kE9olXEqm as it was not an Array.","timestamp":"2024-04-02 19:37:45"}
+{"level":"warn","message":"Did not retrieve effects collection from ActiveEffect 9IBqvK00JJB7auuo as it was not an Array.","timestamp":"2024-04-02 19:37:45"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 19:38:17"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:38:40"}
+{"level":"info","message":"FoundryVTT | Created Item with id [AdiYywc2ME7ACIk5] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:38:44"}
+{"level":"info","message":"FoundryVTT | Created Item with id [nCcgetbpa8yCHeyO] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:38:55"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Kik3Fl8QxdFrlyjy] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:38:56"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:39:00"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 19:39:00"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:39:21"}
+{"level":"info","message":"FoundryVTT | Created Item with id [OhFb2m3H3LAjDI69] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 19:39:34"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 19:39:37"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 19:39:37"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [HB3Z0tihY5ziDzDa] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:39:41"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [oUzpHSejXthsAdPh] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 19:39:43"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 19:42:17"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 19:43:17"}
+{"level":"debug","message":"Retiring user 'Jh9pXvr9vaZi4Hl8' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 19:43:33"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 19:43:33"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [Aek1yndcncIi0fDV]","timestamp":"2024-04-02 19:47:42"}
+{"level":"info","message":"FoundryVTT | Deleted Macro with id [Aek1yndcncIi0fDV]","timestamp":"2024-04-02 19:47:48"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [AHEjTJ8Z5TilFukH]","timestamp":"2024-04-02 19:48:03"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [HgQHQRUE68roLg4P]","timestamp":"2024-04-02 19:48:07"}
+{"level":"info","message":"FoundryVTT | Deleted Macro with id [t8ZjD2hSRVw7hFOG]","timestamp":"2024-04-02 19:48:32"}
+{"level":"info","message":"Activating scene Town [3Fa4TOvqI16wE76V]","timestamp":"2024-04-02 19:48:56"}
+{"level":"info","message":"FoundryVTT | Created Token with id [5V7Bd5ck81OUPqFU] in parent Scene [3Fa4TOvqI16wE76V]","timestamp":"2024-04-02 19:49:02"}
+{"level":"info","message":"FoundryVTT | Created Token with id [82pE5mH4RtLRhApM] in parent Scene [3Fa4TOvqI16wE76V]","timestamp":"2024-04-02 19:49:03"}
+{"level":"info","message":"FoundryVTT | Created Token with id [V7PoYDhZcQC74Y4Q] in parent Scene [3Fa4TOvqI16wE76V]","timestamp":"2024-04-02 19:49:05"}
+{"level":"info","message":"FoundryVTT | Created Token with id [yqUqHZhybFiuzJgZ] in parent Scene [3Fa4TOvqI16wE76V]","timestamp":"2024-04-02 19:49:07"}
+{"level":"info","message":"FoundryVTT | Created Token with id [fmz2fI4no0ALLl1B] in parent Scene [3Fa4TOvqI16wE76V]","timestamp":"2024-04-02 19:49:09"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 19:49:45"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 19:50:45"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 19:50:56"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 19:51:34"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 19:51:39"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 19:51:39"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [VItGUpziS8EITMNe]","timestamp":"2024-04-02 19:56:08"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [q3lUcRS6JoiGTgsg]","timestamp":"2024-04-02 20:01:47"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [mVNDIkWJBvebASle]","timestamp":"2024-04-02 20:05:38"}
+{"level":"info","message":"Activating scene Forest trek [t4PoqxDbcY57Dkrl]","timestamp":"2024-04-02 20:06:19"}
+{"level":"info","message":"FoundryVTT | Deleted Macro with id [YqnvlGIH4zJ05bkp]","timestamp":"2024-04-02 20:13:46"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Wz2JtiFzEngUCVHz]","timestamp":"2024-04-02 20:14:02"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [G8rDCkcFXTVvlbmd]","timestamp":"2024-04-02 20:14:11"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [jAoljSilmI37HhPW]","timestamp":"2024-04-02 20:14:36"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [jQbuWrIIQZOeJ4pf]","timestamp":"2024-04-02 20:14:42"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [JD04VUGkjam3BGbN]","timestamp":"2024-04-02 20:14:48"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [O4KQoUV2wF8W0JtH]","timestamp":"2024-04-02 20:14:51"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [8kIjOkJVMfyJI0GT]","timestamp":"2024-04-02 20:15:06"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [OQXtzhF5KGQBKgc2]","timestamp":"2024-04-02 20:15:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ICNC8cACZzusaRp0]","timestamp":"2024-04-02 20:15:10"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [wAua4pzbxzpoPBGY]","timestamp":"2024-04-02 20:15:14"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ZnLN75pCWpvvnhi2]","timestamp":"2024-04-02 20:15:20"}
+{"level":"info","message":"FoundryVTT | Deleted Macro with id [EuymKUM42o4d4Bqc]","timestamp":"2024-04-02 20:15:46"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [yUHoHYbBVKJuisjv]","timestamp":"2024-04-02 20:15:57"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [NPO8wgE09EVF92PN]","timestamp":"2024-04-02 20:16:01"}
+{"level":"info","message":"FoundryVTT | Deleted Macro with id [9qkmdw8XeMVakcg0]","timestamp":"2024-04-02 20:16:07"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [TLG3XqrATapUdTOH]","timestamp":"2024-04-02 20:16:20"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [LXIq1AzEZ8YF1q18]","timestamp":"2024-04-02 20:16:23"}
+{"level":"info","message":"FoundryVTT | Deleted Macro with id [LAmJV2YAGrKesfvv]","timestamp":"2024-04-02 20:16:34"}
+{"level":"info","message":"FoundryVTT | Deleted Macro with id [s8S8YvebjUKjsrA8]","timestamp":"2024-04-02 20:16:38"}
+{"level":"info","message":"FoundryVTT | Deleted Macro with id [3TKFIKG8Aavwla0a]","timestamp":"2024-04-02 20:16:44"}
+{"level":"info","message":"FoundryVTT | Deleted Macro with id [smLfQGXOJ2kCkvQp]","timestamp":"2024-04-02 20:16:47"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [yUC2RjvB6b7isjee]","timestamp":"2024-04-02 20:16:55"}
+{"level":"info","message":"Activating scene Forest Glade [32x31] [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:16:57"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [7Eqq3t91zBTRPoHq]","timestamp":"2024-04-02 20:16:57"}
+{"level":"info","message":"FoundryVTT | Created Token with id [jGpcS76mfXWG1aAa] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:17:11"}
+{"level":"info","message":"FoundryVTT | Created Token with id [bWKenhEgP5r7aJ4H] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:17:14"}
+{"level":"info","message":"FoundryVTT | Created Token with id [5Djp1av0UrjbujrC] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:17:15"}
+{"level":"info","message":"FoundryVTT | Deleted Macro with id [ft9liZsGzb4jQNyC]","timestamp":"2024-04-02 20:17:16"}
+{"level":"info","message":"FoundryVTT | Created Token with id [3KlcvKCGCJ11INd4] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:17:19"}
+{"level":"info","message":"FoundryVTT | Created Token with id [grDr4YdSVlRopErH] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:17:22"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [qYhGyiaKEwVzAGRb]","timestamp":"2024-04-02 20:17:23"}
+{"level":"info","message":"FoundryVTT | Created Token with id [OGThwXR5YIcvWpYf] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:17:37"}
+{"level":"info","message":"FoundryVTT | Created Token with id [ZsL0P0ogvrTNtQ50] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:17:39"}
+{"level":"info","message":"FoundryVTT | Created Token with id [EFQw7UtijTnBDTuN] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:17:40"}
+{"level":"info","message":"FoundryVTT | Created Token with id [NvmayDgEzxbFv3xl] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:18:15"}
+{"level":"info","message":"FoundryVTT | Created Token with id [CAs6bhzOo1pGxyQ1] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:18:17"}
+{"level":"info","message":"FoundryVTT | Created MeasuredTemplate with id [Y1uvkFrFB87wDlZG] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:23:40"}
+{"level":"info","message":"FoundryVTT | Created MeasuredTemplate with id [AGOYuDkmSMEGEeWk] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:23:42"}
+{"level":"info","message":"FoundryVTT | Deleted MeasuredTemplate with id [AGOYuDkmSMEGEeWk] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:23:47"}
+{"level":"info","message":"FoundryVTT | Deleted MeasuredTemplate with id [Y1uvkFrFB87wDlZG] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:23:55"}
+{"level":"info","message":"FoundryVTT | Created 10 Combatant documents in parent Combat [wsfaZ9phGK2sUl0K]","timestamp":"2024-04-02 20:26:37"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [KASEPvKCKiXgTN2O]","timestamp":"2024-04-02 20:26:52"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [GzOyCROJSk4qHjc8]","timestamp":"2024-04-02 20:26:55"}
+{"level":"info","message":"FoundryVTT | Created 5 ChatMessage documents with ids: [BxyVWmiMzCeTmVLN,XVI3tvzcC7VIuT9t,MrWwILChJsqf1qo8,wwWS5rMMgiOzs6fB,IUylgjMJa9Yy9kEn]","timestamp":"2024-04-02 20:26:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [2TIH86Z3E1pskur6]","timestamp":"2024-04-02 20:27:00"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [xyLC7NVriIjSvwUT]","timestamp":"2024-04-02 20:27:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [d40A8o0qMweKTwTi]","timestamp":"2024-04-02 20:27:10"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [aHc0g4dQ0AZHMfoC]","timestamp":"2024-04-02 20:28:58"}
+{"level":"info","message":"FoundryVTT | Created MeasuredTemplate with id [BV7u4fQ21kyat32y] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:30:34"}
+{"level":"info","message":"Toggling game pause status to true","timestamp":"2024-04-02 20:31:01"}
+{"level":"info","message":"Toggling game pause status to false","timestamp":"2024-04-02 20:31:01"}
+{"level":"info","message":"FoundryVTT | Deleted MeasuredTemplate with id [BV7u4fQ21kyat32y] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:32:39"}
+{"level":"info","message":"FoundryVTT | Created MeasuredTemplate with id [d78CfY7akcVc5QMH] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 20:32:43"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [zCneojXCSbQ6Epqq] in parent Actor [mG2WnMYK2buXfjZQ]","timestamp":"2024-04-02 20:33:49"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [zCneojXCSbQ6Epqq] in parent Actor [mG2WnMYK2buXfjZQ]","timestamp":"2024-04-02 20:33:50"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [w8gzrvIUzOpCyBsr]","timestamp":"2024-04-02 20:36:18"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [aPbbiMymjHLNxfU5]","timestamp":"2024-04-02 20:36:25"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Dix71hCuBPkcbxNu]","timestamp":"2024-04-02 20:36:32"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [e1cY2jhZFsYJH0ra]","timestamp":"2024-04-02 20:36:38"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [msyk92ubj0EDtvIV]","timestamp":"2024-04-02 20:36:44"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [gxaRYBTgr5QRdfNj] in parent ActorDelta [WIwJQYtc9gYJT8xi]","timestamp":"2024-04-02 20:37:07"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [5cJUBupCeM2ynbHK] in parent ActorDelta [ATRSqx0pEhqvSs77]","timestamp":"2024-04-02 20:37:14"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [XVdBiJnRuFPb3MCC] in parent ActorDelta [jZ2RwKDEQhIbCioM]","timestamp":"2024-04-02 20:37:22"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [UAZAzteLIhLGBQaZ] in parent ActorDelta [SYD7js8eVmxDuiVd]","timestamp":"2024-04-02 20:37:34"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [juV3gheukoESnZFj]","timestamp":"2024-04-02 20:38:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [f9i3RKWspJa3WiUj]","timestamp":"2024-04-02 20:40:45"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [rRsH0ZgJ9WNcQQif]","timestamp":"2024-04-02 20:42:30"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [b8l4v2LEV7qg5LXs]","timestamp":"2024-04-02 20:43:20"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ioBvFVKBR44dVtm5]","timestamp":"2024-04-02 20:43:50"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [0nQCfxULPcIKkSaR] in parent ActorDelta [Ck3aIvWwgma4PiIZ]","timestamp":"2024-04-02 20:44:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [e1pLN4Q6Jx4g0weg]","timestamp":"2024-04-02 20:44:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [KydUlIMHapY5HGgN]","timestamp":"2024-04-02 20:45:26"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [PlTimkrC2NcsNmyo]","timestamp":"2024-04-02 20:46:46"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [2Yt6D8KrMcD613td]","timestamp":"2024-04-02 20:47:33"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [rPN6xDkcuhBOdWax]","timestamp":"2024-04-02 20:49:54"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [yqba5zHVEGWteX0U]","timestamp":"2024-04-02 20:50:19"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [2Uf2VQhKjKQ5Ke5b]","timestamp":"2024-04-02 20:50:45"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [Max32mCZ0eHVFEJY]","timestamp":"2024-04-02 20:51:47"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [vqgAMuvqWWZZdDJc]","timestamp":"2024-04-02 20:51:55"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [WNVdKNpK8MN2ZF0H]","timestamp":"2024-04-02 20:52:48"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [spclyidqJT60rpL3]","timestamp":"2024-04-02 20:53:16"}
+{"level":"info","message":"FoundryVTT | Deleted ChatMessage with id [spclyidqJT60rpL3]","timestamp":"2024-04-02 20:53:22"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Token documents with ids: [VlIGeix0sXeXAY0P,0lwA1IKeIWjGKY3f] in parent Scene [gET34NXtE8KTKVRY]","timestamp":"2024-04-02 20:55:31"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Token documents with ids: [XFWRiYvlbufsSagY,1nsy7eMm6S7c7UVi] in parent Scene [gET34NXtE8KTKVRY]","timestamp":"2024-04-02 20:55:37"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [B3GHcs5IGsUlOrT1] in parent Scene [gET34NXtE8KTKVRY]","timestamp":"2024-04-02 20:55:40"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [TvrhXQyQvrMCvaSM]","timestamp":"2024-04-02 20:56:34"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [vGDLbBKRB8Vmhkbm]","timestamp":"2024-04-02 20:56:46"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [k749euw9Pbtjq0N1]","timestamp":"2024-04-02 20:57:40"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [UAZAzteLIhLGBQaZ] in parent ActorDelta [SYD7js8eVmxDuiVd]","timestamp":"2024-04-02 20:57:51"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [4eh0oWEiXwnwZ1wX]","timestamp":"2024-04-02 20:59:45"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [6zEDhyz9VgalI1bC]","timestamp":"2024-04-02 21:00:50"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [0nQCfxULPcIKkSaR] in parent ActorDelta [Ck3aIvWwgma4PiIZ]","timestamp":"2024-04-02 21:01:24"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Gfiz0xWeD82H6DBj]","timestamp":"2024-04-02 21:01:33"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [S0CjjqpF4dh3FVLP]","timestamp":"2024-04-02 21:01:40"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ayN3tguBGam4bMMu]","timestamp":"2024-04-02 21:02:10"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7wPH9SOIjTVMqfFi]","timestamp":"2024-04-02 21:02:32"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Rb3oZsjGPNLNiqJJ]","timestamp":"2024-04-02 21:03:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [pBCI7u1FqAsUoqhv]","timestamp":"2024-04-02 21:03:55"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7aR5MWFrZkAHJQ5V]","timestamp":"2024-04-02 21:08:29"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [3xMSTRuHRR4l90iT]","timestamp":"2024-04-02 21:08:39"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [rJfqF9CGe3FfgAjx]","timestamp":"2024-04-02 21:09:23"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [c1qQs6uEtikV2qnP]","timestamp":"2024-04-02 21:10:11"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7NpxezhtlkQG33wE]","timestamp":"2024-04-02 21:11:27"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [MJ4KkUeVjOjGSm46]","timestamp":"2024-04-02 21:13:42"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [viioUQ363JndzjiW] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 21:14:27"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [AJRAMQtgPfqfVh53] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 21:14:29"}
+{"level":"info","message":"FoundryVTT | Created Macro with id [S7sRSmliffc4SCfL]","timestamp":"2024-04-02 21:15:48"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [PPuvahe6pUxt288L]","timestamp":"2024-04-02 21:15:51"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [QEZPbQeNgQL3aKid] in parent ActorDelta [Ck3aIvWwgma4PiIZ]","timestamp":"2024-04-02 21:16:32"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [lNY3FuBvwiLeFiFt]","timestamp":"2024-04-02 21:17:14"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [SSw7QRXpKorqo64K]","timestamp":"2024-04-02 21:18:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [QRi8bzUcqqfBFZ1L]","timestamp":"2024-04-02 21:19:04"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [YpcJCOQHAhKRX30T]","timestamp":"2024-04-02 21:20:13"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [f5NxMJAA08k3KgUO]","timestamp":"2024-04-02 21:21:13"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [4DspPWEIMuVUUa5A]","timestamp":"2024-04-02 21:21:27"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [qlg9OUNoI5mFVjWJ] in parent ActorDelta [SYD7js8eVmxDuiVd]","timestamp":"2024-04-02 21:21:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [rH9U98AoMJoIDfO8]","timestamp":"2024-04-02 21:22:43"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [gxaRYBTgr5QRdfNj] in parent ActorDelta [WIwJQYtc9gYJT8xi]","timestamp":"2024-04-02 21:22:55"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [V3Bwv1tLxbaiOJkS]","timestamp":"2024-04-02 21:24:00"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [v4YtqW4xBUY1UuCc]","timestamp":"2024-04-02 21:24:27"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [hfad89yzdBkCfwJW]","timestamp":"2024-04-02 21:25:44"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [M5N1O9y5JIIVnnyF]","timestamp":"2024-04-02 21:28:52"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [NOMU0bDG9WKvtpTq]","timestamp":"2024-04-02 21:30:02"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [QRgBcjyf4ZkIUBB8] in parent ActorDelta [SYD7js8eVmxDuiVd]","timestamp":"2024-04-02 21:30:37"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [6uccrtTPpcfakr2R]","timestamp":"2024-04-02 21:32:10"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [P5jeayHjLbguW4Wr]","timestamp":"2024-04-02 21:32:34"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [OZ0hJuNHp9dPKmL0]","timestamp":"2024-04-02 21:33:17"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7tia6rnAZBxRepSH]","timestamp":"2024-04-02 21:33:54"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [80q6IH54NB1wYkV3]","timestamp":"2024-04-02 21:34:23"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [FAWIrZnWZYiwicFM]","timestamp":"2024-04-02 21:34:32"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [q5oIT2h9KKbixZti]","timestamp":"2024-04-02 21:35:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [H8yEj1uv5QmtflqD]","timestamp":"2024-04-02 21:36:13"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [zDeZbuk5OhK1caOF] in parent Actor [yU160YpD7N3YEEPQ]","timestamp":"2024-04-02 21:36:29"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ki81zGFbfw6Wa05M]","timestamp":"2024-04-02 21:36:45"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [JfZ9hYwlr1WvTLXY]","timestamp":"2024-04-02 21:37:36"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7oJuGlbyYZ6NU9RT]","timestamp":"2024-04-02 21:38:12"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [NbIKVQI1rzlZLaEz] in parent ActorDelta [WIwJQYtc9gYJT8xi]","timestamp":"2024-04-02 21:38:26"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Jqws21aiAkMVjyfV]","timestamp":"2024-04-02 21:41:56"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [KrjDUIFqsayyXmqz]","timestamp":"2024-04-02 21:43:08"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [g01PdGDlt2ffFoWd]","timestamp":"2024-04-02 21:44:14"}
+{"level":"info","message":"FoundryVTT | Deleted MeasuredTemplate with id [d78CfY7akcVc5QMH] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 21:44:43"}
+{"level":"info","message":"FoundryVTT | Created MeasuredTemplate with id [IB0RsssPhRgeFfOq] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 21:44:49"}
+{"level":"info","message":"FoundryVTT | Deleted MeasuredTemplate with id [IB0RsssPhRgeFfOq] in parent Scene [VyRsQaHDrHFEi0xM]","timestamp":"2024-04-02 21:44:50"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [zDeZbuk5OhK1caOF] in parent Actor [yU160YpD7N3YEEPQ]","timestamp":"2024-04-02 21:45:20"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [XVdBiJnRuFPb3MCC] in parent ActorDelta [jZ2RwKDEQhIbCioM]","timestamp":"2024-04-02 21:46:14"}
+{"level":"info","message":"FoundryVTT | Deleted ActiveEffect with id [5cJUBupCeM2ynbHK] in parent ActorDelta [ATRSqx0pEhqvSs77]","timestamp":"2024-04-02 21:46:18"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [eza6TO2IIhfu7JO4]","timestamp":"2024-04-02 21:46:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [08oQyPo1phSxPZzf]","timestamp":"2024-04-02 21:47:56"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [sEYbYQm9ix5D8vkm]","timestamp":"2024-04-02 21:50:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [FlWIQSVPgPd0oUUA]","timestamp":"2024-04-02 21:51:37"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [2ubh9mTk42l3lQfb]","timestamp":"2024-04-02 21:52:20"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [RjWpih66PYnKIe0y]","timestamp":"2024-04-02 21:53:08"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [lCWDuJzSZUsszCO7] in parent ActorDelta [ATRSqx0pEhqvSs77]","timestamp":"2024-04-02 21:53:32"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [vkyiiXUvHRRcHUXs]","timestamp":"2024-04-02 21:53:50"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [XBZG7TYiWNXIFjF4]","timestamp":"2024-04-02 21:54:13"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [n7pLsNXp4fqibDiR]","timestamp":"2024-04-02 21:54:45"}
+{"level":"info","message":"FoundryVTT | Created ActiveEffect with id [Oo8CDh8O2vpyvVQ7] in parent ActorDelta [jZ2RwKDEQhIbCioM]","timestamp":"2024-04-02 21:55:09"}
+{"level":"info","message":"FoundryVTT | Deleted Combat with id [wsfaZ9phGK2sUl0K]","timestamp":"2024-04-02 21:55:15"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [6UDi3CFbZHT0xwXi]","timestamp":"2024-04-02 21:56:04"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [EoEIePjjjurQhbuA]","timestamp":"2024-04-02 21:56:10"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [poFg5yOZyAOv093m]","timestamp":"2024-04-02 21:56:45"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 21:57:54"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 21:58:15"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 21:58:16"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 21:58:16"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [2xIMp4puaEwXwcdK]","timestamp":"2024-04-02 21:58:25"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 21:58:33"}
+{"level":"debug","message":"Starting edit session for user 'RAn6D2MULMce0we4' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.RnY5bxvYZ1z9xnIo#text.content'.","timestamp":"2024-04-02 21:58:54"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 21:59:33"}
+{"level":"debug","message":"Starting edit session for user 'RAn6D2MULMce0we4' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.RnY5bxvYZ1z9xnIo#text.content'.","timestamp":"2024-04-02 21:59:53"}
+{"level":"debug","message":"Retiring user 'RAn6D2MULMce0we4' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.RnY5bxvYZ1z9xnIo#text.content'.","timestamp":"2024-04-02 22:00:00"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.RnY5bxvYZ1z9xnIo#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:00:00"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:00:17"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:00:33"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:00:37"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:00:42"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:01:11"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [iS4kFcrAzw0RmXjG]","timestamp":"2024-04-02 22:01:18"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:01:33"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:01:40"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:01:40"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:01:53"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:02:53"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:03:18"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:03:21"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:03:24"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:03:24"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [fD4NSvffFhGuZ9lf]","timestamp":"2024-04-02 22:03:28"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:03:50"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:04:29"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:04:39"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:04:41"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:04:41"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:05:07"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:05:14"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:05:15"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:05:15"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:05:18"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:05:23"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:05:25"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:05:25"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:07:04"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:07:22"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:07:24"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:07:24"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 22:09:00"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 22:09:04"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:09:04"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 22:09:07"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 22:09:11"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:09:11"}
+{"level":"info","message":"FoundryVTT | Created Item with id [wqJOEVUG5jaMgXcH]","timestamp":"2024-04-02 22:09:59"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 22:11:35"}
+{"level":"debug","message":"Starting edit session for user 'Jh9pXvr9vaZi4Hl8' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 22:11:36"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 22:11:43"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:11:43"}
+{"level":"info","message":"FoundryVTT | Created JournalEntryPage with id [QjK1NAW0kIDyQdB1] in parent JournalEntry [IRxeanIePWhcKKAr]","timestamp":"2024-04-02 22:11:59"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QjK1NAW0kIDyQdB1#text.content'.","timestamp":"2024-04-02 22:11:59"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QjK1NAW0kIDyQdB1#text.content'.","timestamp":"2024-04-02 22:12:00"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QjK1NAW0kIDyQdB1#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:12:00"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QjK1NAW0kIDyQdB1#text.content'.","timestamp":"2024-04-02 22:12:06"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QjK1NAW0kIDyQdB1#text.content'.","timestamp":"2024-04-02 22:12:28"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QjK1NAW0kIDyQdB1#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:12:28"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 22:12:36"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 22:14:36"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 22:15:36"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [CDukRAoEVw1nx2zH]","timestamp":"2024-04-02 22:15:38"}
+{"level":"info","message":"FoundryVTT | Created Folder with id [ISbixwteUZdlJSaG]","timestamp":"2024-04-02 22:16:17"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:16:18"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:16:24"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 22:16:36"}
+{"level":"info","message":"FoundryVTT | Created Item with id [e1gKtzujuFG8RuHM] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 22:16:43"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:16:43"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:16:43"}
+{"level":"info","message":"FoundryVTT | Created Item with id [kacglLLKg3e9dtG6] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 22:16:56"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [DvrzWDl1dwb99YBN] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 22:17:19"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [2TLet3g0JLGD4NpE] in parent Actor [IJshiJ6JpkaBMLL1]","timestamp":"2024-04-02 22:17:21"}
+{"level":"info","message":"FoundryVTT | Created Item with id [RKMMGjFHiA9UvZsD] in parent Actor [mG2WnMYK2buXfjZQ]","timestamp":"2024-04-02 22:17:36"}
+{"level":"debug","message":"Retiring user 'Jh9pXvr9vaZi4Hl8' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content'.","timestamp":"2024-04-02 22:18:18"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.QRcKYChjmNhHAxJ2#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:18:18"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:18:32"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:18:38"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:18:41"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:18:43"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:18:43"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:18:46"}
+{"level":"debug","message":"Starting edit session for user 'cLPUamNWOPbdg8po' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 22:18:57"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:19:34"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:19:42"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:19:46"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:19:50"}
+{"level":"debug","message":"Broadcasting autosave update for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 22:19:57"}
+{"level":"debug","message":"Starting edit session for user '8jTZAWVzEfSXbYiK' and instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:20:05"}
+{"level":"debug","message":"Retiring user '8jTZAWVzEfSXbYiK' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content'.","timestamp":"2024-04-02 22:20:06"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.kQkP2kdYLarfRGi5#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:20:06"}
+{"level":"debug","message":"Retiring user 'cLPUamNWOPbdg8po' from editing session for instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content'.","timestamp":"2024-04-02 22:20:46"}
+{"level":"debug","message":"Instance 'JournalEntry.IRxeanIePWhcKKAr.JournalEntryPage.aJptzhDwCODvyycb#text.content' has no more active editors, cleaning up.","timestamp":"2024-04-02 22:20:46"}
+{"level":"info","message":"FoundryVTT | Created Item with id [MkUpW3W4zn6jhrab] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 22:21:26"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [VEeduArnbmirWk0L] in parent Actor [lt43HyaEWDWY11wB]","timestamp":"2024-04-02 22:21:31"}
+{"level":"info","message":"Logged user w7M4Wjrf5KX4Xg5D out of active World","timestamp":"2024-04-02 22:23:44"}
+{"level":"info","message":"Shutting down Foundry Virtual Tabletop server","timestamp":"2024-04-02 22:23:47"}
+{"level":"info","message":"Shut-down success. Goodbye!","timestamp":"2024-04-02 22:23:47"}

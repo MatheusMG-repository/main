@@ -1,3 +1,5 @@
-2024/04/02-17:20:10.851 5bbc Recovering log #8
-2024/04/02-17:20:10.854 5bbc Delete type=0 #8
-2024/04/02-17:20:10.854 5bbc Delete type=3 #7
+2024/04/02-18:56:52.970 5d80 Recovering log #10
+2024/04/02-18:56:52.970 5d80 Level-0 table #12: started
+2024/04/02-18:56:52.975 5d80 Level-0 table #12: 3672 bytes OK
+2024/04/02-18:56:52.981 5d80 Delete type=0 #10
+2024/04/02-18:56:52.981 5d80 Delete type=3 #9
