@@ -1,13 +1,11 @@
-2024/04/02-17:20:09.220 5bbc Recovering log #86
-2024/04/02-17:20:09.220 5bbc Level-0 table #88: started
-2024/04/02-17:20:09.222 5bbc Level-0 table #88: 6985 bytes OK
-2024/04/02-17:20:09.226 5bbc Delete type=0 #86
-2024/04/02-17:20:09.226 5bbc Delete type=3 #85
-2024/04/02-17:20:09.226 6070 Compacting 4@0 + 0@1 files
-2024/04/02-17:20:09.230 6070 Generated table #90@0: 17 keys, 9050 bytes
-2024/04/02-17:20:09.230 6070 Compacted 4@0 + 0@1 files => 9050 bytes
-2024/04/02-17:20:09.231 6070 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/04/02-17:20:09.231 6070 Delete type=2 #73
-2024/04/02-17:20:09.231 6070 Delete type=2 #74
-2024/04/02-17:20:09.231 6070 Delete type=2 #78
-2024/04/02-17:20:09.232 6070 Delete type=2 #88
+2024/04/09-19:43:12.617 1250 Log #84: 8 ops saved to Table #94 OK
+2024/04/09-19:43:12.618 1250 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal/000084.log: OK
+2024/04/09-19:43:12.635 1250 Log #93: 299 ops saved to Table #95 OK
+2024/04/09-19:43:12.637 1250 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal/000093.log: OK
+2024/04/09-19:43:12.638 1250 Table #90: 17 entries OK
+2024/04/09-19:43:12.644 1250 Table #92: 6 entries OK
+2024/04/09-19:43:12.644 1250 Table #94: 8 entries OK
+2024/04/09-19:43:12.644 1250 Table #95: 299 entries OK
+2024/04/09-19:43:12.653 1250 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal/MANIFEST-000083: OK
+2024/04/09-19:43:12.654 1250 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal/MANIFEST-000091: OK
+2024/04/09-19:43:12.668 1250 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal; recovered 4 files; 89682 bytes. Some data may have been lost. ****

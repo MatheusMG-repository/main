@@ -1,5 +1,14 @@
-2024/04/02-17:20:09.302 9b0 Recovering log #106
-2024/04/02-17:20:09.302 9b0 Level-0 table #109: started
-2024/04/02-17:20:09.307 9b0 Level-0 table #109: 1600 bytes OK
-2024/04/02-17:20:09.310 9b0 Delete type=0 #106
-2024/04/02-17:20:09.310 9b0 Delete type=3 #104
+2024/04/09-19:43:13.020 46a4 Log #103: 2 ops saved to Table #114 OK
+2024/04/09-19:43:13.022 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/000103.log: OK
+2024/04/09-19:43:13.039 46a4 Log #113: 3 ops saved to Table #115 OK
+2024/04/09-19:43:13.041 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/000113.log: OK
+2024/04/09-19:43:13.045 46a4 Table #98: 2 entries OK
+2024/04/09-19:43:13.050 46a4 Table #102: 2 entries OK
+2024/04/09-19:43:13.054 46a4 Table #107: 18 entries OK
+2024/04/09-19:43:13.060 46a4 Table #109: 3 entries OK
+2024/04/09-19:43:13.061 46a4 Table #112: 14 entries OK
+2024/04/09-19:43:13.061 46a4 Table #114: 2 entries OK
+2024/04/09-19:43:13.061 46a4 Table #115: 3 entries OK
+2024/04/09-19:43:13.070 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/MANIFEST-000101: OK
+2024/04/09-19:43:13.072 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/MANIFEST-000111: OK
+2024/04/09-19:43:13.081 46a4 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings; recovered 7 files; 17528 bytes. Some data may have been lost. ****

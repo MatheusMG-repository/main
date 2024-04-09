@@ -1,3 +1,8 @@
-2024/04/02-17:20:09.488 9b0 Recovering log #50
-2024/04/02-17:20:09.491 9b0 Delete type=0 #50
-2024/04/02-17:20:09.491 9b0 Delete type=3 #49
+2024/04/09-19:43:13.628 4360 Log #48: 0 ops saved to Table #55 OK
+2024/04/09-19:43:13.629 4360 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\items/000048.log: OK
+2024/04/09-19:43:13.630 4360 Log #54: 0 ops saved to Table #56 OK
+2024/04/09-19:43:13.631 4360 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\items/000054.log: OK
+2024/04/09-19:43:13.652 4360 Table #5: 750 entries OK
+2024/04/09-19:43:13.662 4360 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\items/MANIFEST-000047: OK
+2024/04/09-19:43:13.663 4360 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\items/MANIFEST-000053: OK
+2024/04/09-19:43:13.673 4360 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\items; recovered 1 files; 625566 bytes. Some data may have been lost. ****

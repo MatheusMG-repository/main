@@ -1,3 +1,8 @@
-2024/04/02-17:20:10.543 5cdc Recovering log #54
-2024/04/02-17:20:10.546 5cdc Delete type=0 #54
-2024/04/02-17:20:10.546 5cdc Delete type=3 #53
+2024/04/09-19:43:17.001 4360 Log #52: 0 ops saved to Table #59 OK
+2024/04/09-19:43:17.002 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-special-qualities/000052.log: OK
+2024/04/09-19:43:17.002 4360 Log #58: 0 ops saved to Table #60 OK
+2024/04/09-19:43:17.003 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-special-qualities/000058.log: OK
+2024/04/09-19:43:17.014 4360 Table #9: 334 entries OK
+2024/04/09-19:43:17.022 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-special-qualities/MANIFEST-000051: OK
+2024/04/09-19:43:17.024 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-special-qualities/MANIFEST-000057: OK
+2024/04/09-19:43:17.033 4360 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-special-qualities; recovered 1 files; 269853 bytes. Some data may have been lost. ****

@@ -1,3 +1,20 @@
-2024/04/02-17:20:11.515 5cdc Recovering log #66
-2024/04/02-17:20:11.519 5cdc Delete type=0 #66
-2024/04/02-17:20:11.519 5cdc Delete type=3 #65
+2024/04/09-19:43:19.696 50c8 Log #64: 0 ops saved to Table #71 OK
+2024/04/09-19:43:19.697 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-statblocks/000064.log: OK
+2024/04/09-19:43:19.697 50c8 Log #70: 0 ops saved to Table #72 OK
+2024/04/09-19:43:19.698 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-statblocks/000070.log: OK
+2024/04/09-19:43:19.705 50c8 Table #9: 962 entries OK
+2024/04/09-19:43:19.868 50c8 Table #10: 769 entries OK
+2024/04/09-19:43:19.999 50c8 Table #11: 724 entries OK
+2024/04/09-19:43:20.125 50c8 Table #12: 683 entries OK
+2024/04/09-19:43:20.219 50c8 Table #13: 796 entries OK
+2024/04/09-19:43:20.298 50c8 Table #14: 1177 entries OK
+2024/04/09-19:43:20.379 50c8 Table #15: 815 entries OK
+2024/04/09-19:43:20.485 50c8 Table #16: 760 entries OK
+2024/04/09-19:43:20.593 50c8 Table #17: 610 entries OK
+2024/04/09-19:43:20.700 50c8 Table #18: 708 entries OK
+2024/04/09-19:43:20.821 50c8 Table #19: 831 entries OK
+2024/04/09-19:43:20.921 50c8 Table #20: 1116 entries OK
+2024/04/09-19:43:20.947 50c8 Table #21: 408 entries OK
+2024/04/09-19:43:20.955 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-statblocks/MANIFEST-000063: OK
+2024/04/09-19:43:20.956 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-statblocks/MANIFEST-000069: OK
+2024/04/09-19:43:20.965 50c8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-statblocks; recovered 13 files; 26328118 bytes. Some data may have been lost. ****

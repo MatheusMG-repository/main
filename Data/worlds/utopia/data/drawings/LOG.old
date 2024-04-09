@@ -1,3 +1,7 @@
-2024/04/02-17:20:09.149 5bbc Recovering log #78
-2024/04/02-17:20:09.153 5bbc Delete type=0 #78
-2024/04/02-17:20:09.153 5bbc Delete type=3 #77
+2024/04/09-19:43:12.280 1250 Log #76: 0 ops saved to Table #83 OK
+2024/04/09-19:43:12.282 1250 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings/000076.log: OK
+2024/04/09-19:43:12.282 1250 Log #82: 0 ops saved to Table #84 OK
+2024/04/09-19:43:12.283 1250 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings/000082.log: OK
+2024/04/09-19:43:12.292 1250 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings/MANIFEST-000075: OK
+2024/04/09-19:43:12.294 1250 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings/MANIFEST-000081: OK
+2024/04/09-19:43:12.303 1250 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings; recovered 0 files; 0 bytes. Some data may have been lost. ****

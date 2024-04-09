@@ -1,3 +1,8 @@
-2024/04/02-17:20:10.013 6a84 Recovering log #54
-2024/04/02-17:20:10.016 6a84 Delete type=0 #54
-2024/04/02-17:20:10.016 6a84 Delete type=3 #53
+2024/04/09-19:43:15.320 46a4 Log #52: 0 ops saved to Table #59 OK
+2024/04/09-19:43:15.321 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-companion-features/000052.log: OK
+2024/04/09-19:43:15.321 46a4 Log #58: 0 ops saved to Table #60 OK
+2024/04/09-19:43:15.323 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-companion-features/000058.log: OK
+2024/04/09-19:43:15.324 46a4 Table #9: 12 entries OK
+2024/04/09-19:43:15.333 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-companion-features/MANIFEST-000051: OK
+2024/04/09-19:43:15.334 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-companion-features/MANIFEST-000057: OK
+2024/04/09-19:43:15.344 46a4 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-companion-features; recovered 1 files; 12904 bytes. Some data may have been lost. ****

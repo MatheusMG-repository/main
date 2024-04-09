@@ -1,3 +1,8 @@
-2024/04/02-17:20:09.772 5cdc Recovering log #50
-2024/04/02-17:20:09.775 5cdc Delete type=0 #50
-2024/04/02-17:20:09.776 5cdc Delete type=3 #49
+2024/04/09-19:43:14.528 46a4 Log #48: 0 ops saved to Table #55 OK
+2024/04/09-19:43:14.529 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\pf1e-rules/000048.log: OK
+2024/04/09-19:43:14.529 46a4 Log #54: 0 ops saved to Table #56 OK
+2024/04/09-19:43:14.530 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\pf1e-rules/000054.log: OK
+2024/04/09-19:43:14.532 46a4 Table #5: 78 entries OK
+2024/04/09-19:43:14.542 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\pf1e-rules/MANIFEST-000047: OK
+2024/04/09-19:43:14.543 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\pf1e-rules/MANIFEST-000053: OK
+2024/04/09-19:43:14.553 46a4 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\pf1e-rules; recovered 1 files; 185843 bytes. Some data may have been lost. ****

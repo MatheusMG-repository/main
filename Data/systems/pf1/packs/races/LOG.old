@@ -1,3 +1,8 @@
-2024/04/02-17:20:09.572 9b0 Recovering log #50
-2024/04/02-17:20:09.575 9b0 Delete type=0 #50
-2024/04/02-17:20:09.575 9b0 Delete type=3 #49
+2024/04/09-19:43:13.957 46a4 Log #48: 0 ops saved to Table #55 OK
+2024/04/09-19:43:13.958 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\races/000048.log: OK
+2024/04/09-19:43:13.959 46a4 Log #54: 0 ops saved to Table #56 OK
+2024/04/09-19:43:13.960 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\races/000054.log: OK
+2024/04/09-19:43:13.967 46a4 Table #5: 79 entries OK
+2024/04/09-19:43:13.976 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\races/MANIFEST-000047: OK
+2024/04/09-19:43:13.977 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\races/MANIFEST-000053: OK
+2024/04/09-19:43:13.988 46a4 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\races; recovered 1 files; 144969 bytes. Some data may have been lost. ****

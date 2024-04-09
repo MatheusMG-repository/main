@@ -1,3 +1,5 @@
-2024/04/02-17:20:10.984 5bbc Recovering log #8
-2024/04/02-17:20:10.987 5bbc Delete type=0 #8
-2024/04/02-17:20:10.987 5bbc Delete type=3 #7
+2024/04/09-19:43:18.500 1250 Log #12: 0 ops saved to Table #13 OK
+2024/04/09-19:43:18.501 1250 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-06/000012.log: OK
+2024/04/09-19:43:18.545 1250 Table #5: 9209 entries OK
+2024/04/09-19:43:18.556 1250 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-06/MANIFEST-000011: OK
+2024/04/09-19:43:18.564 1250 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-06; recovered 1 files; 11920675 bytes. Some data may have been lost. ****

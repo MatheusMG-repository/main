@@ -1,3 +1,8 @@
-2024/04/02-17:20:09.735 5cdc Recovering log #50
-2024/04/02-17:20:09.739 5cdc Delete type=0 #50
-2024/04/02-17:20:09.739 5cdc Delete type=3 #49
+2024/04/09-19:43:14.342 46a4 Log #48: 0 ops saved to Table #55 OK
+2024/04/09-19:43:14.343 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros/000048.log: OK
+2024/04/09-19:43:14.343 46a4 Log #54: 0 ops saved to Table #56 OK
+2024/04/09-19:43:14.344 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros/000054.log: OK
+2024/04/09-19:43:14.345 46a4 Table #5: 9 entries OK
+2024/04/09-19:43:14.354 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros/MANIFEST-000047: OK
+2024/04/09-19:43:14.355 46a4 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros/MANIFEST-000053: OK
+2024/04/09-19:43:14.366 46a4 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros; recovered 1 files; 10692 bytes. Some data may have been lost. ****

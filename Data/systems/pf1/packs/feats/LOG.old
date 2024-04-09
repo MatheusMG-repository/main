@@ -1,3 +1,8 @@
-2024/04/02-17:20:09.473 5cdc Recovering log #50
-2024/04/02-17:20:09.476 5cdc Delete type=0 #50
-2024/04/02-17:20:09.476 5cdc Delete type=3 #49
+2024/04/09-19:43:13.569 1250 Log #48: 0 ops saved to Table #55 OK
+2024/04/09-19:43:13.571 1250 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\feats/000048.log: OK
+2024/04/09-19:43:13.571 1250 Log #54: 0 ops saved to Table #56 OK
+2024/04/09-19:43:13.572 1250 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\feats/000054.log: OK
+2024/04/09-19:43:13.579 1250 Table #5: 235 entries OK
+2024/04/09-19:43:13.589 1250 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\feats/MANIFEST-000047: OK
+2024/04/09-19:43:13.590 1250 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\feats/MANIFEST-000053: OK
+2024/04/09-19:43:13.600 1250 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\feats; recovered 1 files; 138810 bytes. Some data may have been lost. ****

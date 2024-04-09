@@ -1,3 +1,8 @@
-2024/04/02-17:20:09.370 5cdc Recovering log #50
-2024/04/02-17:20:09.374 5cdc Delete type=0 #50
-2024/04/02-17:20:09.374 5cdc Delete type=3 #49
+2024/04/09-19:43:13.334 50c8 Log #48: 0 ops saved to Table #55 OK
+2024/04/09-19:43:13.335 50c8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\commonbuffs/000048.log: OK
+2024/04/09-19:43:13.335 50c8 Log #54: 0 ops saved to Table #56 OK
+2024/04/09-19:43:13.336 50c8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\commonbuffs/000054.log: OK
+2024/04/09-19:43:13.338 50c8 Table #5: 32 entries OK
+2024/04/09-19:43:13.348 50c8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\commonbuffs/MANIFEST-000047: OK
+2024/04/09-19:43:13.349 50c8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\commonbuffs/MANIFEST-000053: OK
+2024/04/09-19:43:13.358 50c8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\commonbuffs; recovered 1 files; 12222 bytes. Some data may have been lost. ****

@@ -1,3 +1,9 @@
-2024/04/02-17:20:10.684 6a84 Recovering log #55
-2024/04/02-17:20:10.687 6a84 Delete type=0 #55
-2024/04/02-17:20:10.687 6a84 Delete type=3 #54
+2024/04/09-19:43:17.472 50c8 Log #53: 0 ops saved to Table #60 OK
+2024/04/09-19:43:17.473 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous/000053.log: OK
+2024/04/09-19:43:17.473 50c8 Log #59: 0 ops saved to Table #61 OK
+2024/04/09-19:43:17.475 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous/000059.log: OK
+2024/04/09-19:43:17.483 50c8 Table #9: 1724 entries OK
+2024/04/09-19:43:17.540 50c8 Table #10: 1248 entries OK
+2024/04/09-19:43:17.555 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous/MANIFEST-000052: OK
+2024/04/09-19:43:17.556 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous/MANIFEST-000058: OK
+2024/04/09-19:43:17.573 50c8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous; recovered 2 files; 3640262 bytes. Some data may have been lost. ****

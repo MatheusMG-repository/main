@@ -1,3 +1,8 @@
-2024/04/02-17:20:10.393 5bbc Recovering log #54
-2024/04/02-17:20:10.396 5bbc Delete type=0 #54
-2024/04/02-17:20:10.397 5bbc Delete type=3 #53
+2024/04/09-19:43:16.620 50c8 Log #52: 0 ops saved to Table #59 OK
+2024/04/09-19:43:16.621 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic-tables/000052.log: OK
+2024/04/09-19:43:16.621 50c8 Log #58: 0 ops saved to Table #60 OK
+2024/04/09-19:43:16.622 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic-tables/000058.log: OK
+2024/04/09-19:43:16.625 50c8 Table #9: 2967 entries OK
+2024/04/09-19:43:16.634 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic-tables/MANIFEST-000051: OK
+2024/04/09-19:43:16.635 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic-tables/MANIFEST-000057: OK
+2024/04/09-19:43:16.644 50c8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic-tables; recovered 1 files; 403315 bytes. Some data may have been lost. ****

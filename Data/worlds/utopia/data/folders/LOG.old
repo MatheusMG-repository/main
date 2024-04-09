@@ -1,3 +1,11 @@
-2024/04/02-17:20:09.182 5bbc Recovering log #88
-2024/04/02-17:20:09.185 5bbc Delete type=0 #88
-2024/04/02-17:20:09.185 5bbc Delete type=3 #86
+2024/04/09-19:43:12.431 46a4 Log #85: 0 ops saved to Table #95 OK
+2024/04/09-19:43:12.432 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders/000085.log: OK
+2024/04/09-19:43:12.457 46a4 Log #94: 1 ops saved to Table #96 OK
+2024/04/09-19:43:12.458 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders/000094.log: OK
+2024/04/09-19:43:12.462 46a4 Table #65: 1 entries OK
+2024/04/09-19:43:12.466 46a4 Table #89: 17 entries OK
+2024/04/09-19:43:12.470 46a4 Table #93: 1 entries OK
+2024/04/09-19:43:12.470 46a4 Table #96: 1 entries OK
+2024/04/09-19:43:12.479 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders/MANIFEST-000084: OK
+2024/04/09-19:43:12.480 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders/MANIFEST-000092: OK
+2024/04/09-19:43:12.489 46a4 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders; recovered 4 files; 3256 bytes. Some data may have been lost. ****

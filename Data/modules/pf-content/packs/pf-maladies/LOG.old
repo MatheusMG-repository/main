@@ -1,3 +1,8 @@
-2024/04/02-17:20:10.366 5bbc Recovering log #54
-2024/04/02-17:20:10.369 5bbc Delete type=0 #54
-2024/04/02-17:20:10.369 5bbc Delete type=3 #53
+2024/04/09-19:43:16.508 46a4 Log #52: 0 ops saved to Table #59 OK
+2024/04/09-19:43:16.509 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies/000052.log: OK
+2024/04/09-19:43:16.509 46a4 Log #58: 0 ops saved to Table #60 OK
+2024/04/09-19:43:16.510 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies/000058.log: OK
+2024/04/09-19:43:16.512 46a4 Table #9: 101 entries OK
+2024/04/09-19:43:16.521 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies/MANIFEST-000051: OK
+2024/04/09-19:43:16.523 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies/MANIFEST-000057: OK
+2024/04/09-19:43:16.532 46a4 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies; recovered 1 files; 85133 bytes. Some data may have been lost. ****

@@ -1,3 +1,8 @@
-2024/04/02-17:20:09.525 5cdc Recovering log #50
-2024/04/02-17:20:09.528 5cdc Delete type=0 #50
-2024/04/02-17:20:09.528 5cdc Delete type=3 #49
+2024/04/09-19:43:13.762 50c8 Log #48: 0 ops saved to Table #55 OK
+2024/04/09-19:43:13.763 50c8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\weapons-and-ammo/000048.log: OK
+2024/04/09-19:43:13.763 50c8 Log #54: 0 ops saved to Table #56 OK
+2024/04/09-19:43:13.764 50c8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\weapons-and-ammo/000054.log: OK
+2024/04/09-19:43:13.788 50c8 Table #5: 484 entries OK
+2024/04/09-19:43:13.797 50c8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\weapons-and-ammo/MANIFEST-000047: OK
+2024/04/09-19:43:13.798 50c8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\weapons-and-ammo/MANIFEST-000053: OK
+2024/04/09-19:43:13.808 50c8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\weapons-and-ammo; recovered 1 files; 440416 bytes. Some data may have been lost. ****

@@ -1,3 +1,8 @@
-2024/04/02-17:20:10.089 6a84 Recovering log #54
-2024/04/02-17:20:10.093 6a84 Delete type=0 #54
-2024/04/02-17:20:10.093 6a84 Delete type=3 #53
+2024/04/09-19:43:15.522 50c8 Log #52: 0 ops saved to Table #59 OK
+2024/04/09-19:43:15.523 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms/000052.log: OK
+2024/04/09-19:43:15.523 50c8 Log #58: 0 ops saved to Table #60 OK
+2024/04/09-19:43:15.524 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms/000058.log: OK
+2024/04/09-19:43:15.526 50c8 Table #9: 131 entries OK
+2024/04/09-19:43:15.535 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms/MANIFEST-000051: OK
+2024/04/09-19:43:15.536 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms/MANIFEST-000057: OK
+2024/04/09-19:43:15.547 50c8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms; recovered 1 files; 253173 bytes. Some data may have been lost. ****

@@ -1,3 +1,7 @@
-2024/04/02-17:20:10.243 5cdc Recovering log #50
-2024/04/02-17:20:10.247 5cdc Delete type=0 #50
-2024/04/02-17:20:10.247 5cdc Delete type=3 #49
+2024/04/09-19:43:16.009 4360 Log #48: 0 ops saved to Table #55 OK
+2024/04/09-19:43:16.011 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference/000048.log: OK
+2024/04/09-19:43:16.011 4360 Log #54: 0 ops saved to Table #56 OK
+2024/04/09-19:43:16.012 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference/000054.log: OK
+2024/04/09-19:43:16.021 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference/MANIFEST-000047: OK
+2024/04/09-19:43:16.022 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference/MANIFEST-000053: OK
+2024/04/09-19:43:16.031 4360 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference; recovered 0 files; 0 bytes. Some data may have been lost. ****

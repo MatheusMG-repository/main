@@ -1,3 +1,8 @@
-2024/04/02-17:20:10.101 5bbc Recovering log #54
-2024/04/02-17:20:10.104 5bbc Delete type=0 #54
-2024/04/02-17:20:10.104 5bbc Delete type=3 #53
+2024/04/09-19:43:15.579 4360 Log #52: 0 ops saved to Table #59 OK
+2024/04/09-19:43:15.580 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-evolutions/000052.log: OK
+2024/04/09-19:43:15.580 4360 Log #58: 0 ops saved to Table #60 OK
+2024/04/09-19:43:15.581 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-evolutions/000058.log: OK
+2024/04/09-19:43:15.589 4360 Table #9: 109 entries OK
+2024/04/09-19:43:15.598 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-evolutions/MANIFEST-000051: OK
+2024/04/09-19:43:15.599 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-evolutions/MANIFEST-000057: OK
+2024/04/09-19:43:15.609 4360 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-evolutions; recovered 1 files; 98941 bytes. Some data may have been lost. ****
