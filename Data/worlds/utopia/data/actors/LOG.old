@@ -1,12 +1,15 @@
-2024/04/09-19:43:11.846 46a4 Log #173: 130 ops saved to Table #196 OK
-2024/04/09-19:43:11.847 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/000173.log: OK
-2024/04/09-19:43:11.859 46a4 Log #192: 29 ops saved to Table #197 OK
-2024/04/09-19:43:11.861 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/000192.log: OK
-2024/04/09-19:43:11.867 46a4 Table #171: 1008 entries OK
-2024/04/09-19:43:11.876 46a4 Table #194: 1668 entries OK
-2024/04/09-19:43:11.890 46a4 Table #195: 189 entries OK
-2024/04/09-19:43:11.891 46a4 Table #196: 130 entries OK
-2024/04/09-19:43:11.892 46a4 Table #197: 29 entries OK
-2024/04/09-19:43:11.901 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/MANIFEST-000172: OK
-2024/04/09-19:43:11.902 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/MANIFEST-000187: OK
-2024/04/09-19:43:11.915 46a4 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors; recovered 5 files; 4243412 bytes. Some data may have been lost. ****
+2024/04/16-18:56:46.402 20bc Recovering log #231
+2024/04/16-18:56:46.404 20bc Level-0 table #234: started
+2024/04/16-18:56:46.408 20bc Level-0 table #234: 81792 bytes OK
+2024/04/16-18:56:46.412 20bc Delete type=0 #231
+2024/04/16-18:56:46.412 20bc Delete type=3 #228
+2024/04/16-18:56:56.166 4828 Compacting 3@0 + 2@1 files
+2024/04/16-18:56:56.206 4828 Generated table #236@0: 1604 keys, 2125417 bytes
+2024/04/16-18:56:56.242 4828 Generated table #237@0: 371 keys, 421261 bytes
+2024/04/16-18:56:56.242 4828 Compacted 3@0 + 2@1 files => 2546678 bytes
+2024/04/16-18:56:56.243 4828 compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/04/16-18:56:56.243 4828 Delete type=2 #224
+2024/04/16-18:56:56.244 4828 Delete type=2 #225
+2024/04/16-18:56:56.244 4828 Delete type=2 #229
+2024/04/16-18:56:56.244 4828 Delete type=2 #232
+2024/04/16-18:56:56.244 4828 Delete type=2 #234

@@ -1,11 +1,3 @@
-2024/04/09-19:43:12.703 50c8 Log #85: 0 ops saved to Table #92 OK
-2024/04/09-19:43:12.704 50c8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros/000085.log: OK
-2024/04/09-19:43:12.718 50c8 Log #91: 23 ops saved to Table #93 OK
-2024/04/09-19:43:12.719 50c8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros/000091.log: OK
-2024/04/09-19:43:12.720 50c8 Table #74: 71 entries OK
-2024/04/09-19:43:12.726 50c8 Table #75: 8 entries OK
-2024/04/09-19:43:12.730 50c8 Table #79: 5 entries OK
-2024/04/09-19:43:12.730 50c8 Table #93: 23 entries OK
-2024/04/09-19:43:12.739 50c8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros/MANIFEST-000084: OK
-2024/04/09-19:43:12.740 50c8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros/MANIFEST-000090: OK
-2024/04/09-19:43:12.755 50c8 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros; recovered 4 files; 18800 bytes. Some data may have been lost. ****
+2024/04/16-18:56:46.663 20bc Recovering log #106
+2024/04/16-18:56:46.668 20bc Delete type=0 #106
+2024/04/16-18:56:46.668 20bc Delete type=3 #105

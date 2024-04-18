@@ -1,8 +1,3 @@
-2024/04/09-19:43:16.560 4360 Log #52: 0 ops saved to Table #59 OK
-2024/04/09-19:43:16.561 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-merchants/000052.log: OK
-2024/04/09-19:43:16.561 4360 Log #58: 0 ops saved to Table #60 OK
-2024/04/09-19:43:16.562 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-merchants/000058.log: OK
-2024/04/09-19:43:16.566 4360 Table #9: 878 entries OK
-2024/04/09-19:43:16.575 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-merchants/MANIFEST-000051: OK
-2024/04/09-19:43:16.576 4360 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-merchants/MANIFEST-000057: OK
-2024/04/09-19:43:16.586 4360 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-merchants; recovered 1 files; 965848 bytes. Some data may have been lost. ****
+2024/04/16-18:56:48.584 20bc Recovering log #72
+2024/04/16-18:56:48.589 20bc Delete type=0 #72
+2024/04/16-18:56:48.589 20bc Delete type=3 #71

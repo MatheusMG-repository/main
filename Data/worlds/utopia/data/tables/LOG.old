@@ -1,7 +1,3 @@
-2024/04/09-19:43:12.852 46a4 Log #76: 0 ops saved to Table #83 OK
-2024/04/09-19:43:12.853 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/tables/000076.log: OK
-2024/04/09-19:43:12.853 46a4 Log #82: 0 ops saved to Table #84 OK
-2024/04/09-19:43:12.854 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/tables/000082.log: OK
-2024/04/09-19:43:12.863 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/tables/MANIFEST-000075: OK
-2024/04/09-19:43:12.864 46a4 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/tables/MANIFEST-000081: OK
-2024/04/09-19:43:12.875 46a4 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/tables; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2024/04/16-18:56:46.711 20bc Recovering log #95
+2024/04/16-18:56:46.716 20bc Delete type=0 #95
+2024/04/16-18:56:46.716 20bc Delete type=3 #94

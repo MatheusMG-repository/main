@@ -1,8 +1,3 @@
-2024/04/09-19:43:17.932 50c8 Log #52: 0 ops saved to Table #59 OK
-2024/04/09-19:43:17.933 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-tables/000052.log: OK
-2024/04/09-19:43:17.933 50c8 Log #58: 0 ops saved to Table #60 OK
-2024/04/09-19:43:17.934 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-tables/000058.log: OK
-2024/04/09-19:43:17.935 50c8 Table #9: 62 entries OK
-2024/04/09-19:43:17.945 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-tables/MANIFEST-000051: OK
-2024/04/09-19:43:17.947 50c8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-tables/MANIFEST-000057: OK
-2024/04/09-19:43:17.956 50c8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-tables; recovered 1 files; 8155 bytes. Some data may have been lost. ****
+2024/04/16-18:56:49.203 17dc Recovering log #72
+2024/04/16-18:56:49.207 17dc Delete type=0 #72
+2024/04/16-18:56:49.207 17dc Delete type=3 #71

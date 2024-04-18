@@ -1,8 +1,3 @@
-2024/04/09-19:43:15.054 46a4 Log #52: 0 ops saved to Table #59 OK
-2024/04/09-19:43:15.055 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-buffs/000052.log: OK
-2024/04/09-19:43:15.055 46a4 Log #58: 0 ops saved to Table #60 OK
-2024/04/09-19:43:15.057 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-buffs/000058.log: OK
-2024/04/09-19:43:15.070 46a4 Table #9: 186 entries OK
-2024/04/09-19:43:15.079 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-buffs/MANIFEST-000051: OK
-2024/04/09-19:43:15.080 46a4 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-buffs/MANIFEST-000057: OK
-2024/04/09-19:43:15.090 46a4 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-buffs; recovered 1 files; 123943 bytes. Some data may have been lost. ****
+2024/04/16-18:56:47.852 2234 Recovering log #72
+2024/04/16-18:56:47.856 2234 Delete type=0 #72
+2024/04/16-18:56:47.857 2234 Delete type=3 #71
