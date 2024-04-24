@@ -39,7 +39,7 @@ export class SRParser extends ParserBase {
             return true;
 
         } catch (err) {
-
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as Spell Resistance."
             let error = new sbcError(1, "Parse/Defense", errorMessage, line)
             sbcData.errors.push(error)

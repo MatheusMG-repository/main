@@ -175,13 +175,22 @@ export class sbcSettings {
     static updateConversionBuffCreation () {
         sbcConfig.options.createBuff = game.settings.get(sbcConfig.modData.mod, "createBuff")
     }
+
+    // Updates the creation of known weapon attacks
+    static updateKnownAttackCreation () {
+        sbcConfig.options.createAttacks = game.settings.get(sbcConfig.modData.mod, "createAttacks")
+    }
+
+    // Updates the integration of David's "Roll Bonuses PF1" module
+    static updateRollBonusesIntegration () {
+        sbcConfig.options.rollBonusesIntegration = game.settings.get(sbcConfig.modData.mod, "rollBonusesIntegration")
+    }
 }
 
 export const registerSettings = function () {
 
     // setup array for tokenBar attributes
     let attributeKeys = sbcConfig.const.tokenBarAttributes
-    attributeKeys.unshift("NONE")
     
     game.settings.register(sbcConfig.modData.mod, "debug", {
         name: "Enable Debug Mode",
@@ -246,6 +255,26 @@ export const registerSettings = function () {
         type: Boolean,
         config: true,
         onChange: _ => sbcSettings.updateConversionBuffCreation()
+    });
+
+    game.settings.register(sbcConfig.modData.mod, "createAttacks", {
+        name: "Create attacks for known weapons",
+        hint: "Decide whether to create attacks in the combat tab if they'd be identical to the inventory weapon. Default: False",
+        default: false,
+        scope: "world",
+        type: Boolean,
+        config: true,
+        onChange: _ => sbcSettings.updateKnownAttackCreation()
+    });
+
+    game.settings.register(sbcConfig.modData.mod, "rollBonusesIntegration", {
+        name: "Roll Bonuses Integration",
+        hint: "Decide whether to integrate the Roll Bonuses PF1 module. (Currently, this determines whether SBC handles Weapon Focus, Weapon Specialization, and Weapon Training, or leaves them absent for Roll Bonuses setup.) Default: False",
+        default: false,
+        scope: "world",
+        type: Boolean,
+        config: true,
+        onChange: _ => sbcSettings.updateRollBonusesIntegration()
     });
 
     game.settings.register(sbcConfig.modData.mod, "pcsight", {
@@ -331,7 +360,6 @@ export const initializeSettings = async function () {
     //let attributeKeys = Object.keys(game.system.model.Actor.npc.attributes)
 
     let attributeKeys = sbcConfig.const.tokenBarAttributes
-    attributeKeys.unshift("NONE")
 
     sbcConfig.options.actorReady = false
     sbcConfig.options.debug = game.settings.get(sbcConfig.modData.mod, "debug")

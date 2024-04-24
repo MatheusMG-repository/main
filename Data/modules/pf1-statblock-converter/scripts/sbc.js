@@ -62,22 +62,34 @@ export class sbcApp {
         sbcConfig.options.debug && sbcUtils.log("Initializing sbc v" + sbcConfig.modData.version)
 
         let customFolderId = ""
+        let customWIPFolderId = ""
         let customFolderName = game.settings.get(sbcConfig.modData.mod, "importFolder")
+        let customWIPFolderName = "SBC_WIP"
         let searchForExistingFolder = await game.folders.find(entry => entry.name === customFolderName && entry.type === "Actor")
+        let searchForExistingWIPFolder = await game.folders.find(entry => entry.name === customWIPFolderName && entry.type === "Actor")
 
         // Check, if a custom input folder still exists, as it could have been deleted after changing the module settings
-        if(searchForExistingFolder === null || searchForExistingFolder === undefined) {
-            let newFolder = await Folder.create({name: customFolderName, type:"Actor", color: "#e76f51", parent:null});
+        if(!searchForExistingFolder) {
+            let newFolder = await Folder.create({name: customFolderName, type:"Actor", color: "#e76f51", parent: null});
             let info = "sbc-pf1 | Created a custom folder for imported statblocks."
             ui.notifications.info(info)
-            sbcConfig.options.debug && sbcUtils.log(info)
+            sbcUtils.log(info)
             customFolderId = newFolder.id
+            searchForExistingFolder = newFolder
         } else {
             customFolderId = searchForExistingFolder.id
         }
 
+        if(!searchForExistingWIPFolder) {
+            let newWIPFolder = await Folder.create({name: customWIPFolderName, type:"Actor", color: "#e76f51", parent: searchForExistingFolder});
+            customWIPFolderId = newWIPFolder.id
+        } else {
+            customWIPFolderId = searchForExistingWIPFolder.id
+        }
+
         // Save the customFolderId
         sbcData.customFolderId = customFolderId
+        sbcData.customWIPFolderId = customWIPFolderId
 
         // If the default actor is PC, change the value down the line
         let defaultActorType = +game.settings.get(sbcConfig.modData.mod, "defaultActorType")
@@ -119,7 +131,8 @@ Hooks.once("ready", async function() {
 
 // Render the sbcButton when the actorDirectory is visible
 Hooks.on("renderActorDirectory", (app, html, data) => {
-    sbcConfig.options.debug && sbcUtils.log("Rendering sbc button")  
+    // Handle rendering the SBC window button
+    sbcUtils.log("Rendering sbc button")  
     const startSBCButton = $("<button id='startSBCButton' class='create-entity sbcButton'><i class='fas fa-file-import'></i></i>sbc | Convert Statblock</button>");
     html.find(".directory-footer").append(startSBCButton)
     startSBCButton.click(async (ev) => {
@@ -127,6 +140,16 @@ Hooks.on("renderActorDirectory", (app, html, data) => {
         sbcApp.startSBC()
     });
     
+    // Hide the WIP sub-folder
+    const folder = game.actors.directory.folders.find((f) => f.name === 'SBC_WIP');
+    if (folder)
+    {
+        const element = html.find(`.folder[data-folder-id="${folder.id}"]`);
+        if (element)
+        {
+            element.remove();
+        }
+    }
 });
 
 // When the inputDialog gets closed, reset sbc
@@ -149,5 +172,5 @@ Hooks.on("sbc.reset", async function() {
 });
 
 async function fuzzyIndexPacks(packs) {
-    return Promise.all(packs.map(p => game.packs.get(p))?.filter(p => !("fuzzyIndex" in p)).map(p => p.getIndex()))
+    return Promise.all(packs.map(p => game.packs.get(p))?.filter(p => !!p)?.filter(p => !("fuzzyIndex" in p)).map(p => p.getIndex()))
 }

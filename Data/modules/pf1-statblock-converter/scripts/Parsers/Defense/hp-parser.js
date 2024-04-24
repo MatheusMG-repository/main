@@ -265,7 +265,7 @@ export class HPParser extends ParserBase {
                 hdAbilities.push(hdAbility.name)
 
                 let placeholder = await sbcUtils.generatePlaceholderEntity(hdAbility, line)
-                // sbcData.characterData.items.push(placeholder)
+                
                 await createItem(placeholder);
             }
           }
@@ -276,7 +276,7 @@ export class HPParser extends ParserBase {
 
       return true
     } catch (err) {
-      console.error(err);
+      sbcConfig.options.debug && console.error(err);
       let errorMessage = "Failed to parse " + value + " as HP/HD."
       let error = new sbcError(1, "Parse/Defense", errorMessage, line)
       sbcData.errors.push(error)

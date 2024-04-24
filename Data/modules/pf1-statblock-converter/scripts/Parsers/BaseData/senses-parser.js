@@ -11,7 +11,6 @@ export class SensesParser extends ParserBase {
         sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as senses")
 
         try {
-
             let systemSupportedSenses = Object.values(CONFIG["PF1"].senses).map(x => x.toLowerCase())
 
             let availableSenses = systemSupportedSenses.concat(sbcContent.additionalSenses)
@@ -20,7 +19,6 @@ export class SensesParser extends ParserBase {
 
             // Search for matches
             for (let i=0; i<availableSenses.length; i++) {
-
                 let searchSense = availableSenses[i]
 
                 if (value.search(searchSense) !== -1) {
@@ -35,7 +33,6 @@ export class SensesParser extends ParserBase {
                     let rangeRegEx = new RegExp ("(?:" + searchSense + ")\\s(\\d+)", "")
 
                     switch (searchSense) {
-
                         // Custom Senses
                         case "all-around vision":
                         case "carrion sense":
@@ -67,7 +64,7 @@ export class SensesParser extends ParserBase {
                             range ? sbcData.characterData.actorData.update({"system.traits.senses.dv": +range}) : null
                             break
                         case "tremorsense":
-                            range = value.match(rangeRegEx)
+                            range = value.match(rangeRegEx)[1]
                             range ? sbcData.characterData.actorData.update({"system.traits.senses.ts": +range}) : null
                             break
 
@@ -109,7 +106,7 @@ export class SensesParser extends ParserBase {
             return true
 
         } catch (err) {
-
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as senses."
             let error = new sbcError(1, "Parse/Base", errorMessage, line)
             sbcData.errors.push(error)

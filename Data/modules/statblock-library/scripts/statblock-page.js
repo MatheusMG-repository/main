@@ -68,7 +68,7 @@ export class JournalStatblockPageSheet extends JournalPageSheet {
       // let formInput = window.$(`#${sectionId}`)[0].innerText;
       let formInput = `${name}\n${content}`;
       
-      await wait(250);
+      await wait(500);
       
       window.$('#sbcInput')[0].value = formInput;
       window.$('#sbcInput').keyup();

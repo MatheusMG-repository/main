@@ -41,7 +41,7 @@ export class EcologyParser extends ParserBase {
                 }
 
                 let placeholder = await sbcUtils.generatePlaceholderEntity(ecologyEntry, line)
-                // sbcData.characterData.items.push(placeholder)
+                
                 await createItem(placeholder);
 
             }
@@ -49,6 +49,7 @@ export class EcologyParser extends ParserBase {
             return true
 
         } catch (err) {
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as ecology."
             let error = new sbcError(2, "Parse/Ecology", errorMessage, line)
             sbcData.errors.push(error)

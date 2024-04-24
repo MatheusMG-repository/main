@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1
+### Changelog
+* Undid the compendium pack/journal entry shuffling from 0.3.0
+* Re-processed statblocks to attempt to correct formatting of Gear and Special Attacks
+* Removed the name and descriptive text at the top of Bestiary statblocks
+
 ## 0.3.0
 ### Changelog
 * Updating with new Journal for easier button use with SBC

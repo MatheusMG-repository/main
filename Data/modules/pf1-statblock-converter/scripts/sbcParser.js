@@ -8,7 +8,7 @@ import { parseBase } from "./Process/base-data.js";
 import { parseDefense } from "./Process/defense-data.js";
 import { parseDescription } from "./Process/description-data.js";
 import { parseEcology } from "./Process/ecology-data.js";
-import { parseOffense } from "./Process/offense-data.js";
+import { parseOffense, pruneSpellbooks } from "./Process/offense-data.js";
 import { parseSpecialAbilities } from "./Process/special-ability-data.js";
 import { parseStatistics } from "./Process/statistics-data.js";
 import { parseTactics } from "./Process/tactics-data.js";
@@ -28,7 +28,12 @@ export class sbcParser {
         sbcConfig.options.debug && console.group("sbc-pf1 | PREPARING INPUT")
 
         try {
-
+            // Check if David's "Roll Bonuses PF1" module is installed and active
+            if (game.modules.get("roll-bonuses-pf1")?.active) {
+                sbcConfig.options.debug && sbcUtils.log("Roll Bonuses PF1 module is active")
+                sbcConfig.options.flags["rollBonusesPF1"] = true
+            }
+            
             // Initial Clean-up of input
             $( "#sbcProgressBar" ).css("width", "5%")
 
@@ -65,6 +70,39 @@ export class sbcParser {
             // example an error occurs
 
             .split(/\n/g)
+
+            // Process each line for a line starter.
+            // If a line starter isn't found, then it's a continuation of the previous line.
+            // If a line starter is found, then it's a new line.
+            sbcConfig.options.debug && console.log("Before: ", sbcData.preparedInput.data)
+            let result = [];
+            const lineCategoryPattern = new RegExp("^\(" + sbcConfig.lineCategories.join("|") + "\)","i");
+            const lineStarterPattern = new RegExp("^\(" + sbcConfig.lineStarts.join("|") + "\)(?!\\)\)","i");
+
+
+            sbcData.preparedInput.data.forEach((line, index) => {
+                if(lineCategoryPattern.test(line.toLowerCase().capitalize()))
+                    line = line.toLowerCase().capitalize();
+
+                let caseNum = 0;
+                if (line && sbcConfig.lineStarts.some((starter) => line.startsWith(starter))) {
+                    // The line starts with a string from the other array, push it as a new line
+                    caseNum = 1;
+                    result.push(line);
+                } else if (index > 0 && lineStarterPattern.test(result[result.length - 1]) &&
+                    !lineStarterPattern.test(line) && !/^Description/i.test(result[result.length - 1])) {
+                    // The line doesn't start with a string from the other array, append it to the last line
+                    caseNum = 2;
+                    result[result.length - 1] += " " + line;
+                } else {
+                    // The first line doesn't start with a string from the other array, push it as a new line
+                    caseNum = 3;
+                    result.push(line);
+                }
+            });
+
+            sbcData.preparedInput.data = result;
+            sbcConfig.options.debug && console.log("After: ", sbcData.preparedInput.data)
 
             //sbcUtils.parseCategories()
             sbcRenderer.resetErrorLog()
@@ -213,6 +251,11 @@ export class sbcParser {
                         let orderedFoundCategories = foundCategories
                         orderedFoundCategories.splice(foundCategories.indexOf("statistics"),1)[0]
                         orderedFoundCategories.splice(1,0,"statistics")
+                        // Rearrange the foundCategories so that Special Abilities get parsed before statistics
+                        if(foundCategories.includes("special abilities")) {
+                            orderedFoundCategories.splice(foundCategories.indexOf("special abilities"),1)[0]
+                            orderedFoundCategories.splice(1,0,"special abilities")
+                        }
 
                         for (let i=0; i<orderedFoundCategories.length; i++) {
                             let category = orderedFoundCategories[i]
@@ -220,6 +263,9 @@ export class sbcParser {
                             parsedCategories[category] = await sbcParser.parseCategories(category, dataChunks[category], startLines[category])
 
                         }
+
+                        // Attempt to prune unused spellbooks
+                        await pruneSpellbooks();
 
                         // After parsing all available subCategories, create embedded entities
                         sbcRenderer.updateProgressBar("Entities", "Creating Embedded Entities", 1, 1)
@@ -424,10 +470,10 @@ export async function createItem(itemData) {
         await itemData.updateSource(updateData);
     }
 
-    await sbcData.characterData.actorData.createEmbeddedDocuments("Item", [itemData.toObject()]);
-    return true;
+    let item = await sbcData.characterData.actorData.createEmbeddedDocuments("Item", [itemData.toObject()]);
+    return [true, item];
   } catch (err) {
-
+    sbcConfig.options.debug && console.error(err);
     let errorMessage = `Failed to create embedded item ${itemData.name}.`
     let error = new sbcError(1, "Parse", errorMessage)
     sbcData.errors.push(error)
@@ -438,10 +484,12 @@ export async function createItem(itemData) {
 
 export async function createBuffs() {
     try {
+        sbcConfig.options.debug && console.groupCollapsed("sbc-pf1 | Finding Buffs")
         let items = sbcData.characterData.actorData.itemTypes.feat.concat(sbcData.characterData.actorData.itemTypes.spell);
 
-        for(let i = 0; i < items.length; i++) {
-            let name = items[i].name;
+        for(let buffableItem of items) {
+            let name = buffableItem.name;
+            console.log(`Checking ${name}`, buffableItem)
 
             let searchEntity = {
                 name: name,
@@ -450,14 +498,36 @@ export async function createBuffs() {
             }
 
             let entity = await sbcUtils.findEntityInCompendium(["pf1.commonbuffs"], searchEntity, "buff")
+            if(!entity) entity = game.items.getName(searchEntity.name)
+            if(!entity) entity = game.items.getName(searchEntity.altName)
 
-            if (/(Constant)/i.test(name)) { entity.updateSource({'sytem.active': true, 'system.duration.value': ''}); }
+            if (entity) {
+                console.log(`Found ${name}.`, entity)
+                if (buffableItem.type === "spell") {
+                    let spellBookKey = buffableItem.system.spellbook;
+                    console.log(`Spellbook key for ${name}: ${spellBookKey}`);
+                    let spellBook = deepClone(buffableItem.spellbook);
+                    console.log(`Spellbook data for ${name}: `, spellBook, spellBook?.cl);
+                    let casterLevel = sbcData.characterData.actorData.system.attributes.spells.spellbooks[spellBookKey]?.cl.total ?? -1;
+                    // let casterLevel = buffableItem.casterLevel ?? -1;
+                    // let casterLevel = buffableItem.getRollData().cl ?? -1;
+                    console.log(`Caster level for ${buffableItem.name}: ${casterLevel}`);
+                    
+                    if (casterLevel > 0) entity.updateSource({'system.level': casterLevel});
+                }
+                
+                console.log(`Creating buff for ${name}.`);
+                await createItem(entity)
+                let buff = sbcData.characterData.actorData.itemTypes.buff.find((i) => i.name === entity.name);
+                console.log(buff)
+                if (/^Constant\:/i.test(name)) { await buff.update({'system.duration.value': ''}); await buff.setActive(true); }
 
-            if (entity !== null) { console.log(`Creating buff for ${name}.`); createItem(entity) }
+            }
         }
-    } catch 
+        sbcConfig.options.debug && console.groupEnd()
+    } catch(err)
     {
-
+        sbcConfig.options.debug && console.error(err);
     }
 }
 

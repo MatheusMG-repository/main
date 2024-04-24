@@ -7,7 +7,7 @@ export const sbcConfig = {};
 /* ------------------------------------ */
 
 sbcConfig.modData = {
-    "version": "4.2.0",
+    "version": "4.5.3",
     "mod": "pf1-statblock-converter",
     "modName": "sbc | PF1 Statblock Converter"
 }
@@ -43,6 +43,7 @@ sbcConfig.const = {
         "vermin": "Vermin"
     },
     "tokenBarAttributes": [
+        "NONE",
         "attributes.hp",
         "spells.spellbooks.primary.spellPoints",
         "spells.spellbooks.secondary.spellPoints",
@@ -74,6 +75,7 @@ sbcConfig.options = {
     "inputDelay": 1500,
     "defaultActorType": 0,
     "createBuff": true,
+    "createAttacks": false,
     "tokenSettings": {
         "displayName": 20,
         "pcsight": {
@@ -108,7 +110,8 @@ sbcConfig.sources = ["APG","ACG","U[CEM]","HA","OA","ISWG","TG","CRB","GMG","Bot
                     "M:?CotED","M:?CotRS","M:?FoR","M:?FStS","M:?GH","M:?GoD","M:?H","M:?MotLG","M:?MotFF","M:?MM","M:?RotFQ","M:?RPT",
                     "M:?TotIM","M:?WBG","M:?WL"];
 
-sbcConfig.lineStarts = ["CR", "XP", "LG", "LN", "LE", "NG", "N", "NE", "CG", "CN", "CE", "Init", "Aura", "Senses", "Defense", "AC", "HP", "Fort", "Immune", "Immunities", "Weaknesses", "DR", "Offense", "Speed", "Melee", "Ranged", "Space", "Special", "Spell-Like", "Spells", "At-will", "At will", "9th", "8th", "7th", "6th", "5th", "4th", "3rd", "2nd", "1st", "Cantrips", "Orisons", "0", "Statistics", "Str", "Base", "Feats", "Skills", "Languages", "Ecology", "Environment", "Organization", "Treasure"];
+sbcConfig.lineCategories = ["Defense", "Offense", "Statistics", "Special Abilities", "Description", "Tactics", "Ecology", "^Spells", "^(.*) Spells", "^Spell-Like", "^(.*) Spell-Like"];
+sbcConfig.lineStarts = ["CR", "XP", "LG", "LN", "LE", "NG", "N", "NE", "CG", "CN", "CE", "Init", "Aura", "Senses", "Defense", "AC", "HP", "Fort", "Immune", "Immunities", "Weaknesses", "DR", "Offense", "Speed", "Spd", "Melee", "Ranged", "Space", "Special", "^Spell-Like", "^(.*) Spell-Like", "^Spells", "^(.*) Spells", "At-will", "At will", "9th", "8th", "7th", "6th", "5th", "4th", "3rd", "2nd", "1st", "Cantrips", "Orisons", "0", "Statistics", "Str", "Base", "Feats", "Skills", "Languages", "Ecology", "Environment", "Organization", "Treasure", "SQ", "Gear", "Combat Gear", "Male", "Female", "Tactics", "Before Combat", "During Combat", "Morale", "Opposition School", "Prohibited School", "Defensive Abilities", "Immune", "SR", "Weaknesses", "Description", "\\d+\\/day", ".*\\((SU|EX|SP|\\-\\-)\\)"];
 
 sbcConfig.techColors = ["Black", "Blue", "Brown", "Gray", "Green", "Orange", "Prismatic", "Red", "White"];
 sbcConfig.techTiers = ["Mark I", "Mark II", "Mark III", "Mark IV", "Mark V", "Grade I", "Grade II", "Grade III", "Grade IV", "Grade V"];
@@ -146,6 +149,8 @@ sbcConfig.magicalAbilities = ["Shrinking","Agile","Allying","Answering","Bane","
                               "Greater Lucky","Redeemed","Reliable (greater)","Greater Reliable","Sonic Boom","Speed","Tailwind","Brilliant Energy",
                               "Designating (greater)","Greater Designating","Nimble Shot","Second Chance","Heart-Piercing","Interfering"];
 
+sbcConfig.weaponGroups = {};
+
 sbcConfig.initializeConfig = async function () {
 
     // Create an index for each pf1 system compendium
@@ -173,7 +178,16 @@ sbcConfig.initializeConfig = async function () {
     for (let entry of featsIndex) { if (entry.name !== "") { sbcConfig.feats.push(entry.name) } }
 
     let weaponIndex = await game.packs.get("pf1.weapons-and-ammo").index
-    for (let entry of weaponIndex) { if (entry.name !== "") { sbcConfig.weapons.push(entry.name) } }
+
+    for (let entry of weaponIndex) { if (entry.name !== "") {
+        let item = await fromUuid(entry.uuid);
+        for (let group of item.system.weaponGroups?.value ?? []) {
+            let groupName = pf1.config.weaponGroups[group].toLowerCase();
+            let groupNameFixed = groupName.replace(/(.*), (.*)/, "$2 $1");
+            if (!Object.values(sbcConfig.weaponGroups).includes(groupNameFixed)) sbcConfig.weaponGroups[group] = groupNameFixed;
+        }
+        sbcConfig.weapons.push(entry.name)
+    } }
 
     let armorsIndex = await game.packs.get("pf1.armors-and-shields").index
     for (let entry of armorsIndex) { if (entry.name !== "") { sbcConfig.armors.push(entry.name) } }
@@ -193,14 +207,25 @@ sbcConfig.initializeConfig = async function () {
     let searchableCompendiums = ["pf1.classes"];
     let customCompendiumSettings = game.settings.get(sbcConfig.modData.mod, "customCompendiums")
 
+    // Gather and add all the custom compendiums
     if (customCompendiumSettings !== "") {
         customCompendiumSettings = customCompendiumSettings.replace(/\s/g, "");
         searchableCompendiums = searchableCompendiums.concat(customCompendiumSettings.split(/[,;]/g));
     }
 
-    searchableCompendiums.map(compendium => {
-        for (let entry of game.packs.get(compendium).index) {
-            if (entry.type === "class" && entry.name !== "") { sbcConfig.classes.push(entry.name) }
+    // Search through all the compendiums to process the class items
+    searchableCompendiums.map(async compendium => {
+        for (let entry of game.packs.get(compendium)?.index ?? []) {
+            if (entry.type === "class" && entry.name !== "") {
+
+                // Grab the entry data
+                if(!entry.system) {
+                    entry = await fromUuid(entry.uuid)
+                }
+                
+                if(entry.system.subType !== "prestige") sbcConfig.classes.push(entry.name)
+                else sbcConfig.prestigeClassNames.push(entry.name)
+            }
         }
     });
     // let classIndex = await game.packs.get("pf1.classes").index
@@ -208,6 +233,14 @@ sbcConfig.initializeConfig = async function () {
 
     // let prestigeClassIndex = Object.keys(sbcContent.prestigeClasses)
     // for (let entry of prestigeClassIndex) { if (entry.name !== "") { sbcConfig.prestigeClassNames.push(entry) } }
+
+    // Grab the natural attacks introduced in the system.
+    let naturalAttacksIndex = await game.packs.get("pf1.monster-abilities").index
+    for (let entry of naturalAttacksIndex) {
+        if (entry.name !== "") {
+            sbcConfig.naturalAttacks.push(entry.name)
+        }
+    }
 }
 
 
@@ -227,6 +260,7 @@ sbcConfig.items = []
 sbcConfig.skills = []
 sbcConfig["class-abilities"] = []
 sbcConfig["monster-abilities"] = []
+sbcConfig.naturalAttacks = []
 
 sbcConfig.compendiumsToBeIndexed = [
     "pf1.classes",

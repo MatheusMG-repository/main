@@ -1,4 +1,48 @@
 # Change Log
+
+2024_02_10 - v4.5.3
+* Fixed: SBC was inoperable if the WIP folder didn't exist but the main import folder did.
+
+2024_02_10 - v4.5.2
+* Fixed: Pincer attacks were not picked up during attack parsing
+* Fixed: Languages were sometimes not all imported
+* Fixed: Failed to find Broken items when parsing gear
+* Fixed: Failed to properly calculate broken effects on attacks
+* Fixed: Issues with Magus spell blocks (and others, but more rarely)
+* Fixed: Failed to detect quantity of consumables, and plural versions of potions/scrolls/wands
+* Fixed: SBC would generate an error when importing currency, but did it anyways
+* Changed: Added a hidden WIP folder to hold actors while importing (import button moves them into the import folder itself)
+
+2024_01_02 - v4.5.1
+* Fixed: Masterwork gear wasn't being marked as such without an enhancement bonus
+* Fixed: Masterwork status wasn't accounted for in attack comparison for attack parsing
+* Fixed: Abilities that have an '*' at the end would lose this on import
+* Fixed: Statblocks without a special abilities section would break.
+* Fixed: Special Abilities without a type wouldn't import properly (NOTE: You need to mark a typeless ability with `(--)`!)
+* Fixed: Special Abilities with 'special abilities' in the text would not be parsed
+* Fixed: SBC would break on initialization when trying to load custom compendiums that don't exist (such as from inactive modules)
+
+2023_12_25 - v4.5.0
+*  Added: processing for weapon focus, weapon specialization, and weapon training
+*  Added: find attacks from inventory weapons and use those as a source for processing
+*  Added: buffs added from spells reference the spell's caster level when possible
+*  Added: buffs from constant spells will automatically be active when added
+*  Added: detection for different attack patterns for same sources and adding as actions instead of a new attack
+*  Added: spell-based items (like wands) that specify CL will now use that CL
+*  Added: two new settings (both default to OFF); one for creating attacks when they match the inventory item and another for whether to process the weapon focus, weapon specialization, and weapon training or leave them to be done later with the Roll Bonuses module
+*  Fixed: CMB and CMD context notes weren't kept when processing
+*  Fixed: aura processing would duplicate the aura if there were commas in the entry
+*  Fixed: edge cases with name detection inside parentheses
+*  Fixed: tremorsense wasn't processed correctly
+*  Fixed: spell-based items (like wands) would only process charges, and instead catch CL if given first
+*  Fixed: special ability processing would ignore the last special ability
+*  Fixed: reach processing was parsed incorrectly, ignoring stature
+*  Fixed: processing of CL and Concentration Bonus for spellbooks was handled poorly
+*  Refactored: processing statblocks now tries to handle stray newline characters (PDF statblocks should now be parseable!)
+*  Refactored: Special Attacks, Special Qualities, and Defensive Abilities now check for an existing class feature or special ability before creating a placeholder
+*  Refactored: aura processing now checks for an existing special ability or class feature, tweaking it as-needed.
+*  Refactored: spellbook processing now prefers and uses the spellcasting on an existing class item when possible
+
 2023_11_20 - v4.4.0
 *  Added: processing for space and reach below 1 square (tiny creatures, anyone?)
 *  Added: process all feats, class features, and spells for buffs to add to the actor

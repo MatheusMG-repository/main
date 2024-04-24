@@ -73,6 +73,7 @@ export async function parseTactics(data, startLine) {
 
 
         } catch (err) {
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = `Parsing the tactics data failed at line ${line+startLine} (non-critical)`
             let error = new sbcError(2, "Parse/Tactics", errorMessage, line+startLine)
             sbcData.errors.push(error)

@@ -127,6 +127,8 @@
   "MonksActiveTiles.action.ping": "Ping",
   "MonksActiveTiles.action.gametime": "Game Time",
   "MonksActiveTiles.action.shuffle": "Shuffle Collection",
+  "MonksActiveTiles.action.preloadtileimage": "Preload Tile Images",
+  "MonksActiveTiles.action.runcode": "Run Code",
 
   "MonksActiveTiles.filter.distance": "Filter tokens by distance",
   "MonksActiveTiles.filter.exists": "Check entity count",
@@ -148,6 +150,7 @@
   "MonksActiveTiles.logic.loop": "Loop through Entities",
   "MonksActiveTiles.logic.method": "Redirect based on Method",
   "MonksActiveTiles.logic.checkdata": "Check data",
+  "MonksActiveTiles.logic.stoptriggers": "Stop additional tiles triggering",
 
   "MonksActiveTiles.ctrl.snap": "Snap to grid",
   "MonksActiveTiles.ctrl.select-coordinates": "Select Coordinates",
@@ -203,6 +206,7 @@
   "MonksActiveTiles.ctrl.delay": "Delay by (seconds)",
   "MonksActiveTiles.ctrl.limit": "Limit to (loops)",
   "MonksActiveTiles.ctrl.resume": "Resume after limit",
+  "MonksActiveTiles.ctrl.resumeloop": "Resume after looping",
   "MonksActiveTiles.ctrl.preservesettings": "Preserve settings if token already exists",
   "MonksActiveTiles.ctrl.images": "Images",
   "MonksActiveTiles.ctrl.imgat": "Showing Image #",
@@ -288,6 +292,11 @@
   "MonksActiveTiles.ctrl.pingstyle": "Ping Style",
   "MonksActiveTiles.ctrl.delayactions": "Delay Actions until finished",
   "MonksActiveTiles.ctrl.time": "Time (min)",
+  "MonksActiveTiles.ctrl.landingname": "Landing Name",
+  "MonksActiveTiles.ctrl.resettype": "Reset Type",
+  "MonksActiveTiles.ctrl.triggerremote": "Trigger at Destination",
+  "MonksActiveTiles.ctrl.code": "Code",
+  "MonksActiveTiles.ctrl.hascondition": "Has",
 
   "MonksActiveTiles.mode.enter": "Enter",
   "MonksActiveTiles.mode.exit": "Exit",
@@ -447,6 +456,9 @@
   "MonksActiveTiles.ping.chevron": "Chevron",
   "MonksActiveTiles.ping.arrow": "Arrow",
 
+  "MonksActiveTiles.resettype.everything": "Everything",
+  "MonksActiveTiles.resettype.token": "Token",
+
   "MonksActiveTiles.msg.prevent-teleport": "Teleporting off the map has been prevented",
   "MonksActiveTiles.msg.prevent-movement": "Moving off the map has been prevented",
   "MonksActiveTiles.msg.invalid-entity": "Invalid Entity Type",
@@ -507,5 +519,20 @@
   "MonksActiveTiles.show-landing.name": "Show Landing Highlight",
   "MonksActiveTiles.show-landing.hint": "Highlight the actions that happen within landings",
   "MonksActiveTiles.drop-macro.name": "Drop Macro on Canvas",
-  "MonksActiveTiles.drop-macro.hint": "Allow macros dropped on the canvas to be created as Active Tiles"
+  "MonksActiveTiles.drop-macro.hint": "Allow macros dropped on the canvas to be created as Active Tiles",
+  "MonksActiveTiles.tile-edit.name": "Allow Tile Template Editing",
+  "MonksActiveTiles.tile-edit.hint": "Allow editing of Tile Templates, I'd strongly recommend not using this unless you're sure you know what you're doing",
+
+  "MonksActiveTiles.tabs.Setup": "Setup",
+  "MonksActiveTiles.tabs.Actions": "Actions",
+  "MonksActiveTiles.tabs.Images": "Images",
+
+  "MonksActiveTiles.history.ViewHistory": "View History",
+  "MonksActiveTiles.history.ViewVariables": "View Variables",
+  "MonksActiveTiles.history.Token": "Token",
+  "MonksActiveTiles.history.When": "When",
+  "MonksActiveTiles.history.How": "How",
+  "MonksActiveTiles.history.Who": "Who",
+  "MonksActiveTiles.history.Name": "Name",
+  "MonksActiveTiles.history.Value": "Value"
 }

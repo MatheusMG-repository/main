@@ -8,6 +8,7 @@ import { sbcUtils } from "../sbcUtils.js"
 /* ------------------------------------ */
 /* Parser for offense data              */
 /* ------------------------------------ */
+let usedSpellbooks = []
 export async function parseOffense(data, startLine) {
     sbcConfig.options.debug && console.groupCollapsed("sbc-pf1 | " + sbcData.parsedCategories + "/" + sbcData.foundCategories + " >> PARSING OFFENSE DATA")
 
@@ -22,13 +23,16 @@ export async function parseOffense(data, startLine) {
     let currentSpellBookType = {
         0: "primary",
         1: "secondary",
-        2: "tertiary"
+        2: "tertiary",
     }
     let startIndexOfSpellLikeAbilities = 0
     let startIndexOfSpellBooks = []
     let spellLikeAbilitiesFound = false
-    let endOfSpellLikeAbilitiesFound = false
-    let endOfSpellBookFound = []
+    usedSpellbooks = []
+
+    let meleeData = { text: "", line: 0}
+    let rangedData = { text: "", line: 0}
+    let specialAttacksExist = data.some(line => /^Special\s+Attacks\b\s*/i.test(line));
 
     // Loop through the lines
     for (let line = 0; line < data.length; line++) {
@@ -90,24 +94,35 @@ export async function parseOffense(data, startLine) {
             // Parse Melee Attacks
             if (!parsedSubCategories["melee"]) {
                 if (/^Melee\s*/i.test(lineContent)) {
-                    let parserMelee = parserMapping.map.offense.attacks
-                    let melee = lineContent.match(/^Melee\s*(.*)/i)[1].trim()
+                    meleeData.text = lineContent.match(/^Melee\s*(.*)/i)[1].trim()
+                    if(meleeData.text.match(/(or|and)$/i)) meleeData.text += " " + data[line+1].trim();
 
-                    sbcData.notes.offense.melee = melee
+                    meleeData.line = line + startLine;
+                    sbcData.notes.offense.melee = meleeData.text
 
-                    parsedSubCategories["melee"] = await parserMelee.parse(melee, "mwak", line + startLine)
+                    // Process later after Special Attacks
+                    if(!specialAttacksExist) {
+                        let parserMelee = parserMapping.map.offense.attacks
+                        parsedSubCategories["melee"] = await parserMelee.parse(meleeData.text, "mwak", meleeData.line)
+                    }
                 }
             }
 
             // Parse Ranged Attacks
             if (!parsedSubCategories["ranged"]) {
                 if (/^Ranged\s*/i.test(lineContent)) {
-                    let parserRanged = parserMapping.map.offense.attacks
-                    let ranged = lineContent.match(/^Ranged\s*(.*)/i)[1].trim()
+                    rangedData.text = lineContent.match(/^Ranged\s*(.*)/i)[1].trim()
+                    if(rangedData.text.match(/(or|and)$/i)) rangedData.text += " " + data[line+1].trim();
 
-                    sbcData.notes.offense.ranged = ranged
 
-                    parsedSubCategories["ranged"] = await parserRanged.parse(ranged, "rwak", line + startLine)
+                    rangedData.line = line + startLine;
+                    sbcData.notes.offense.ranged = rangedData.text;
+
+                    // Process later after Special Attacks
+                    if(!specialAttacksExist) {
+                        let parserRanged = parserMapping.map.offense.attacks
+                        parsedSubCategories["ranged"] = await parserRanged.parse(rangedData.text, "rwak", rangedData.line)
+                    }
                 }
             }
 
@@ -115,13 +130,21 @@ export async function parseOffense(data, startLine) {
             if (!parsedSubCategories["specialAttacks"]) {
                 if (/^Special\s+Attacks\b\s*/i.test(lineContent)) {
                     let parserSpecialAttacks = parserMapping.map.offense.specialAttacks
+                    let parserMelee = parserMapping.map.offense.attacks
+                    let parserRanged = parserMapping.map.offense.attacks
+
                     let specialAttacks = lineContent.match(/^Special\s+Attacks\s*(.*)/i)[1].trim()
 
                     sbcData.notes.offense.specialAttacks = specialAttacks
 
                     // parsedSubCategories["specialAttacks"] = await parserSpecialAttacks.parse(specialAttacks, line+startLine)
                     parsedSubCategories["specialAttacks"] = await parserSpecialAttacks.parse(specialAttacks, line + startLine, ["special-attacks", "class-abilities"], ["equipment", "feat", "weapon"], false)
-                }
+
+                    // Process Weapon Groups before attacks
+                    await processWeaponGroups();
+
+                    parsedSubCategories["melee"] = await parserMelee.parse(meleeData.text, "mwak", meleeData.line)
+                    parsedSubCategories["ranged"] = await parserRanged.parse(rangedData.text, "rwak", rangedData.line)                }
             }
 
             // Parse Space, Reach and StatureparserStature
@@ -149,12 +172,14 @@ export async function parseOffense(data, startLine) {
                     let reachContext = ""
 
                     if (reachInput[0]) {
-                        let reach = reachInput[0];
+                        reach = reachInput[0];
                         // reach = reachInput[0].replace(/(\d+)(.*)/g, "$1").trim()
                         reach = reach.replace(/(.)\-(.)/g, "$1\.$2");
                         let reachMatch = reach.match(/(\d*)\.+(\d*)\/+(\d*)/);
                         if (reachMatch?.length > 1)
                             reach = +reachMatch[1] + (reachMatch[2] / reachMatch[3]);
+
+                        reach = reach.replace(/(\d+\.?\d*)(.*)/g, "$1");
                     }
 
                     if (reachInput[1])
@@ -216,27 +241,32 @@ export async function parseOffense(data, startLine) {
                     }
 
                     currentSpellBook = spellBooksFound
-                    //spellBooksFound += 1
+                    spellBooksFound += 1
+                    console.log(`Current Spellbook: ${currentSpellBook}, Spellbooks found: ${spellBooksFound}`)
+
                 }
 
                 /* If there are Spell-Like Abilities
                  * and the current line comes after the start of this section
                  */
-                if (spellLikeAbilitiesFound && +line > +startIndexOfSpellLikeAbilities) {
+                if (spellLikeAbilitiesFound && +line > +startIndexOfSpellLikeAbilities && rawSpellBooks[currentSpellBook].spellBookType === "spelllike") {
                     /* If the line contains any of the keyswords that denote a new spell section
                      * like "spells prepared" or "spells known"
                      * set endOfSpellLikeAbilitiesFound to true
                      */
-                    if (/Spells|Extracts (?:Prepared|Known)|Psychic Magic/gi.test(lineContent)) {
-                        endOfSpellLikeAbilitiesFound = true
+                    if (/Spells|Extracts (?:Prepared|Known)|Psychic Magic/gi.test(lineContent) === false) {
+                        // endOfSpellLikeAbilitiesFound = true
+                        // Push the line into the array holding the raw data for Spell-Like Abilities
+                        console.log("Spellbook", currentSpellBook, lineContent);
+                        rawSpellBooks[currentSpellBook].spells.push(lineContent)
                     }
 
                     // If the end of the section containing these was not found
-                    if (!endOfSpellLikeAbilitiesFound) {
-                        // Push the line into the array holding the raw data for Spell-Like Abilities
-                        //rawSpellLikeAbilities.push(lineContent)
-                        rawSpellBooks[currentSpellBook].spells.push(lineContent)
-                    }
+                    // if (!endOfSpellLikeAbilitiesFound) {
+                    //     // Push the line into the array holding the raw data for Spell-Like Abilities
+                    //     //rawSpellLikeAbilities.push(lineContent)
+                    //     rawSpellBooks[currentSpellBook].spells.push(lineContent)
+                    // }
                 }
             }
 
@@ -284,6 +314,7 @@ export async function parseOffense(data, startLine) {
                     currentSpellBook = spellBooksFound
                     startIndexOfSpellBooks[currentSpellBook] = line
                     spellBooksFound += 1
+                    console.log(`Current Spellbook: ${currentSpellBook}, Spellbooks found: ${spellBooksFound}`)
 
                     sbcData.notes.offense.hasSpellcasting = true
 
@@ -311,10 +342,13 @@ export async function parseOffense(data, startLine) {
                                         lineContent.match(patternWizardClasses);
                     if (castingClass !== null) {
                         spellCastingClass = castingClass[0].split(/\s/)[0]
+                    } else {
+                        let classItem = sbcData.characterData.actorData.itemTypes.class.find(c => c.system.casting);
+                        spellCastingClass = classItem ? classItem.name : "hd";
                     }
 
                     // Push the line into the array holding the raw data for spellBook
-                    rawSpellBooks[spellBooksFound] = {
+                    rawSpellBooks[currentSpellBook] = {
                         firstLine: lineContent,
                         spells: [],
                         spellCastingClass: spellCastingClass,
@@ -337,15 +371,17 @@ export async function parseOffense(data, startLine) {
                      * set endOfSpellBookFound to true
                      */
 
-                    if (/Spells|Extracts (?:Prepared|Known)|Psychic Magic/gi.test(lineContent)) {
-                        endOfSpellBookFound[spellBooksFound] = true
+                    if (/Spells|Extracts (?:Prepared|Known)|Psychic Magic/gi.test(lineContent) === false) {
+                        // endOfSpellBookFound[spellBooksFound] = true
+                        // Push the line into the array holding the raw data for Spell-Like Abilities
+                        rawSpellBooks[currentSpellBook].spells.push(lineContent)
                     }
 
                     // If the end of the section containing these was not found
-                    if (!endOfSpellBookFound[spellBooksFound]) {
+                    // if (!endOfSpellBookFound[spellBooksFound]) {
                         // Push the line into the array holding the raw data for Spell-Like Abilities
-                        rawSpellBooks[spellBooksFound].spells.push(lineContent)
-                    }
+                        // rawSpellBooks[spellBooksFound].spells.push(lineContent)
+                    // }
                 }
             }
 
@@ -370,21 +406,63 @@ export async function parseOffense(data, startLine) {
 
                         sbcData.notes.offense["spellBooks"][i] = spellBookNote
 
-                        await parserSpellBooks.parse(rawSpellBook, startIndexOfSpellBooks[i])
+                        console.log(`Spellbook ${i}: ${rawSpellBook.spellBookType}`, rawSpellBook);
+                        let [blank, type] = await parserSpellBooks.parse(rawSpellBook, startIndexOfSpellBooks[i])
+                        console.log(`Spellbook ${i}: ${type}`, blank);
+                        usedSpellbooks.push(type);
                     }
                 }
             }
         } catch (err) {
-            console.error(err);
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = `Parsing the offense data failed at line ${line + startLine}`
             let error = new sbcError(1, "Parse/Offense", errorMessage, line + startLine)
             sbcData.errors.push(error)
             return false
         }
     }
+
     sbcConfig.options.debug && sbcUtils.log("RESULT OF PARSING OFFENSE DATA (TRUE = PARSED SUCCESSFULLY)")
     sbcConfig.options.debug && console.log(parsedSubCategories)
     sbcConfig.options.debug && console.groupEnd()
 
     return true
+}
+
+export async function pruneSpellbooks() {
+    for(let book of Object.keys(sbcData.characterData.actorData.system.attributes.spells.spellbooks)) {
+        if(!usedSpellbooks.includes(book)) {
+
+            await sbcData.characterData.actorData.update({
+                [`system.attributes.spells.spellbooks.${book}`]: {
+                    inUse: false,
+                    label: "",
+                    class: ""
+                }
+            });
+        }
+    }
+}
+
+async function processWeaponGroups() {
+    let features = sbcData.characterData.actorData.itemTypes.feat.filter(feat => feat.system.subType === "classFeat");
+    let weaponGroups = Object.values(sbcConfig.weaponGroups);
+
+    for (let feature of features) {
+        let subText = sbcUtils.parseSubtext(feature.name.toLowerCase());
+        subText.shift();
+        for (let group of subText) {
+            let foundGroup = weaponGroups.find(wg => group.includes(wg));
+            if(foundGroup) {
+                let foundBonus = parseInt(group.match(/\+(\d+)/)[1]);
+                sbcConfig.options.debug && console.log("Found Group", foundGroup, "Found Bonus", foundBonus);
+                let groupKey = Object.keys(sbcConfig.weaponGroups)[weaponGroups.indexOf(foundGroup)]
+
+                if(foundGroup && foundBonus && !Object.keys(sbcData.characterData.weaponGroups).includes(groupKey))
+                    sbcData.characterData.weaponGroups[groupKey] = foundBonus;
+            }
+        }
+    }
+
+    sbcConfig.options.debug && console.log("Weapon Groups", sbcData.characterData.weaponGroups);
 }

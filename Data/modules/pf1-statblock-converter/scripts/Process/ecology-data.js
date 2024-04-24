@@ -78,6 +78,7 @@ export async function parseEcology(data, startLine) {
             }
 
         } catch (err) {
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = `Parsing the ecology data failed at line ${line+startLine} (non-critical)`
             let error = new sbcError(2, "Parse/Ecology", errorMessage, line+startLine)
             sbcData.errors.push(error)

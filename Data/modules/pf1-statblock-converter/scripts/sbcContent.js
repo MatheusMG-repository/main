@@ -1203,65 +1203,10 @@ export class sbcContent {
     }
 
     static "naturalAttacks" = {
-        "claw": {
-            "img": "systems/pf1/icons/items/inventory/monster-paw-bear.jpg",
-            "isPrimaryAttack": true,
-            "damageTypes": "B and S"
-        },
-        "bite": {
-            "img": "systems/pf1/icons/items/inventory/monster-head.jpg",
-            "isPrimaryAttack": true,
-            "damageTypes": "B, P and S"
-        },
-        "gore": {
-            "img": "systems/pf1/icons/items/inventory/monster-tusk-bloody.jpg",
-            "isPrimaryAttack": true,
-            "damageTypes": "P"
-        },
-        "hoof": {
-            "img": "systems/pf1/icons/items/inventory/monster-hoof.jpg",
-            "isPrimaryAttack": false,
-            "damageTypes": "B"
-        },
-        "tentacle": {
-            "img": "systems/pf1/icons/items/inventory/monster-tentacle.jpg",
-            "isPrimaryAttack": false,
-            "damageTypes": "B"
-        },
-        "wing": {
-            "img": "systems/pf1/icons/items/inventory/monster-demon-wing.jpg",
-            "isPrimaryAttack": false,
-            "damageTypes": "B"
-        },
-        "pincer": {
-            "img": "systems/pf1/icons/items/inventory/monster-claw.jpg",
-            "isPrimaryAttack": false,
-            "damageTypes": "B"
-        },
         "tail": {
             "img": "systems/pf1/icons/items/inventory/monster-tail.jpg",
             "isPrimaryAttack": false,
             "damageTypes": "B"
-        },
-        "tail slap": {
-            "img": "systems/pf1/icons/items/inventory/monster-tail.jpg",
-            "isPrimaryAttack": false,
-            "damageTypes": "B"
-        },
-        "slam": {
-            "img": "systems/pf1/icons/items/inventory/monster-forearm.jpg",
-            "isPrimaryAttack": true,
-            "damageTypes": "B"
-        },
-        "sting": {
-            "img": "systems/pf1/icons/items/inventory/monster-scorpion.jpg",
-            "isPrimaryAttack": true,
-            "damageTypes": "P"
-        },
-        "talon": {
-            "img": "systems/pf1/icons/items/inventory/monster-talon-green.jpg",
-            "isPrimaryAttack": true,
-            "damageTypes": "S"
         },
         "other": {
             "img": "systems/pf1/icons/items/inventory/monster-cat.jpg",

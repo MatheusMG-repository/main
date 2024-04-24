@@ -19,137 +19,120 @@ export class SpellBooksParser extends ParserBase {
         let spellBookType = value.spellBookType
         let isAlchemist = value.isAlchemist
 
-        // Save Data needed for validation
-        // and put it into the notes sections as well
-        //sbcData.characterData.conversionValidation.spellBooks[spellBookType] = {
-        //    casterLevel: +casterLevel,
-        //    concentrationBonus: +concentrationBonus
-        //}
-
         // Set the spellBook data
         let altNameSuffix = spellCastingType == "prepared" ? "Prepared" : "Known"
         if (spellCastingType == "points") altNameSuffix = "Psychic"
 
-            // WIP: Check for special cases Arcanist and Red Mantis Assassin
-            /*
-             Arcanist: spellPreparationMode = "hybrid"
-             Red Mantis Assassin: spellPreparationMode = "prestige"
-            */
+        // WIP: Check for special cases Arcanist and Red Mantis Assassin
+        /*
+            Arcanist: spellPreparationMode = "hybrid"
+            Red Mantis Assassin: spellPreparationMode = "prestige"
+        */
 
         let spellsOrExtracts = isAlchemist ? "Extracts" : "Spells"
-        let arcaneSpellFailure = true
-        let castingClass = spellCastingClass
-        let castingAbility = "int";
         let classItem = null;
-        let altName = ""
-        let hasCantrips = false;
+        let hasCantrips = true;
         let domainSlots = 0;
-        let castingProgression = "high";
-        let autoSpellCalc = false;
         let isPsychic = false;
 
-        if (spellBookType == "spelllike") {
-            altName = "Spell-like Abilities";
-            arcaneSpellFailure = false;
-            castingAbility = "cha";
-        } else if (spellCastingType == "points") {
-           altName = "Psychic Magic";
-            arcaneSpellFailure = false;
-            spellCastingType = "spontaneous";
-            isPsychic = true;
-        } else {
-            castingClass = spellCastingClass.toLowerCase();
-            altName = sbcUtils.capitalize(spellCastingClass) + " " + spellsOrExtracts + " " + altNameSuffix;
+        // General spellbook update defaults
+        let spellBookUpdates = {
+            domainSlotValue: domainSlots,
+            psychic: isPsychic,
+            spontaneous: spellCastingType !== "prepared",
+            spellPreparationMode: spellCastingType === "prepared" ? "prepared" : "spontaneous",
         }
 
-        if(spellCastingClass !== "hd") {
-                console.log(`Checking for class ${spellCastingClass}.`)
-                let patternWizardClasses = new RegExp("(" + sbcContent.wizardSchoolClasses.join("\\b|\\b") + ")", "gi")
-                if(spellCastingClass.match(patternWizardClasses)) spellCastingClass = "Wizard"
+        // Now customize the spellbook updates based on type of casting
+        if (spellBookType == "spelllike") {                 // Spell-Like Abilities
+            spellBookUpdates = mergeObject(spellBookUpdates, {
+                ability: "cha",
+                arcaneSpellFailure: false,
+                name: "Spell-like Abilities",
+                hasCantrips: hasCantrips,
+            });
+        } else if (spellCastingType == "points") {          // Psychic Magic
+            spellBookUpdates = mergeObject(spellBookUpdates, {
+                arcaneSpellFailure: false,
+                name: "Psychic Magic",
+                hasCantrips: true,
+                isPsychic: true,
+                spontaneous: false,
+                spellPreparationMode: "spontaneous",
+                spellPoints: {
+                    useSystem: true,
+                    maxFormula: "0",
+                    max: 0,
+                },
+                ability: sbcData.characterData.actorData.system.data.abilities.int.total >= sbcData.characterData.actorData.system.data.abilities.cha.total ? "int" : "cha",
+            });
+        } else {                                            // Spell Books
+            spellBookUpdates = mergeObject(spellBookUpdates, {
+                class: spellCastingClass.toLowerCase(),
+                name: sbcUtils.capitalize(spellCastingClass) + " " + spellsOrExtracts + " " + altNameSuffix,
+            });
+        }
+
+        // If the class isn't based on hit dice, try to use the class
+        if(["hd", "_hd"].includes(spellCastingClass) === false) {
+            let patternWizardClasses = new RegExp("(" + sbcContent.wizardSchoolClasses.join("\\b|\\b") + ")", "gi")
+            if(spellCastingClass.match(patternWizardClasses)) spellCastingClass = "Wizard"
+
+            // Try to find the spellcasting class
             classItem = sbcData.characterData.actorData.items.filter(i => i.type === "class" && i.system.tag === spellCastingClass.toLowerCase())[0] ?? null;
-            if(classItem !== null) {
-                    console.log(`Casting class: ${castingClass}.`)
-                    console.log("Class item: ", classItem);
-                casterLevel = classItem.system.level;
-                castingClass = classItem.system.tag;
-                castingAbility = classItem.system.casting.ability;
-                spellCastingType = classItem.system.casting.type;
-                hasCantrips = classItem.system.casting.cantrips;
-                domainSlots = classItem.system.casting.domainSlots;
-                castingProgression = classItem.system.casting.progression;
-                autoSpellCalc = true;
-                isPsychic = classItem.system.casting.spells === "psychic";
-                arcaneSpellFailure = classItem.system.casting.spells === "arcane";
+            
+            // If the class is found, update the spellbook updates
+            if(classItem) {
+                casterLevel = Math.min(casterLevel, classItem.system.level);
 
                 for(const [type, book] of Object.entries(sbcData.characterData.actorData.system.attributes.spells.spellbooks)) {
-                    if(book.class === spellCastingClass) {
+                    if(book.class === spellCastingClass.toLowerCase()) {
                         spellBookType = type;
                         break;
                     }
                 }
+
+                delete spellBookUpdates["name"];
+                spellBookUpdates = mergeObject(spellBookUpdates, {
+                    class: classItem.system.tag,
+                    ability: classItem.system.casting.ability,
+                    arcaneSpellFailure: classItem.system.casting.spells === "arcane",
+                    domainSlotValue: classItem.system.casting.domainSlots,
+                    casterType: classItem.system.casting.progression,
+                    hasCantrips: classItem.system.casting.cantrips,
+                    autoSpellLevelCalculation: true,
+                    psychic: classItem.system.casting.spells === "psychic",
+                    spontaneous: classItem.system.casting.type,
+                    spellPreparationMode: classItem.system.casting.type === "prepared" ? "prepared" : "spontaneous",
+                });
             }
+        } else if (spellCastingClass === "hd") {
+            spellBookUpdates = mergeObject(spellBookUpdates, {
+                class: "_hd",
+                ability: "cha",
+                inUse: true,
+            });
         }
 
-        concentrationBonus += +(sbcData.characterData.actorData.system.abilities[castingAbility].mod)
+
         // Save Data needed for validation
         // and put it into the notes sections as well
         sbcData.characterData.conversionValidation.spellBooks[spellBookType] = {
             casterLevel: +casterLevel,
             concentrationBonus: +concentrationBonus
         }
+
+        // Run all the updates at once
         await sbcData.characterData.actorData.update({
-            "system.attributes": {
-                spells: {
-                    spellbooks: {
-                        [spellBookType]: {
-                            inUse: true,
-                            altName,
-                            class: castingClass,
-                            ability: castingAbility,
-                            // clNotes: "sbc | Total in statblock was CL " + casterLevel + ", adjust as needed.",
-                            // concentrationNotes: "sbc | Total in statblock was +" + concentrationBonus + ", adjust as needed.",
-                            arcaneSpellFailure: arcaneSpellFailure,
-                            domainSlotValue: domainSlots,
-                            casterType: castingProgression,
-                            hasCantrips: hasCantrips,
-                            autoSpellLevelCalculation: autoSpellCalc,
-                            autoSpellLevels: false,
-                            psychic: isPsychic,
-                            spontaneous: spellCastingType !== "prepared",
-                            spellPreparationMode: spellCastingType === "prepared" ? "prepared" : "spontaneous"
-                        }
-                    }
-                }
-            }
+            [`system.attributes.spells.spellbooks.${spellBookType}`]: spellBookUpdates
         })
 
         try {
-            // Psychic
-            if (spellCastingType == "points") {
-                sbcData.characterData.actorData.update({
-                    "system.attributes": {
-                        spells: {
-                            spellbooks: {
-                                [spellBookType]: {
-                                    spontaneous: false,
-                                    spellPreparationMode: "spontaneous",
-                                    spellPoints: {
-                                        useSystem: true,
-                                        maxFormula: "0",
-                                        max: 0,
-                                    },
-                                    ability: sbcData.characterData.actorData.system.data.abilities.int.total >= sbcData.characterData.actorData.system.data.abilities.cha.total ? "int" : "cha",
-                                }
-                            }
-                        }
-                    }
-                })
-            }
-
             /* Parse the spell rows
              * line by line
              */
             for (let i=0; i<spellRows.length; i++) {
+                if (spellRows[i] === "") continue
                 let spellRow = spellRows[i]
 
                 let spellLevel = -1
@@ -167,13 +150,12 @@ export class SpellBooksParser extends ParserBase {
                 switch (spellCastingType) {
                     case "prepared":
                         if (/^(\d+)(?!\/(?:day|week|month|year))/.test(spellRow)) {
-                            console.log(`Hit Case #1: ${spellRow}.`);
+                            // console.log(`Hit Case #1: ${spellRow}.`);
                             spellLevel = spellRow.match(/^(\d+)(?!\/(?:day|week|month|year))/)[1];
-                            //spellsPerXTotal = spellRow.match(/(\d+)(?:\/(?:day|week|month|year))/)[1];
                             isSpellRow = true;
                         }
                         else if (/(\d+)(?:\/(?:day|week|month|year))/.test(spellRow)) {
-                            console.log(`Hit Case #2: ${spellRow}.`);
+                            // console.log(`Hit Case #2: ${spellRow}.`);
                             spellsPerXTotal = spellRow.match(/(\d+)(?:\/(?:day|week|month|year))/)[1];
                             isSpellRow = true;
                         }
@@ -185,20 +167,14 @@ export class SpellBooksParser extends ParserBase {
                     case "spontaneous":
                         if (/^(\d+)\s*\bPE\b/.test(spellRow)) {
                             let PE = spellRow.match(/^(\d+)\s*\bPE\b/)[1];
+
+                            // Update psychic spell points
                             sbcData.characterData.actorData.update({
-                                "system.attributes": {
-                                    spells: {
-                                        spellbooks: {
-                                            [spellBookType]: {
-                                                spellPoints: {
-                                                    maxFormula: PE,
-                                                    value: +PE,
-                                                }
-                                            }
-                                         }
-                                     }
+                                [`system.attributes.spells.spellbooks.${spellBookType}.spellPoints`]: {
+                                    maxFormula: PE,
+                                    value: +PE,
                                 }
-                            })
+                            });
                             isSpellRow = true;
                         }
                         else if (/^(\d+)(?!\/(?:day|week|month|year))/.test(spellRow)) {
@@ -217,23 +193,15 @@ export class SpellBooksParser extends ParserBase {
                         break;
                 }
 
-                // Check for "at will" and "constant"
+                // Check for use frequencies
                 if (/(Constant)/i.test(spellRow)) {
                     isConstant = true;
                     isSpellRow = true;
                 }
-
-                if (/(\d+)\/week/i.test(spellRow)) {
-                    isWeekly = true;
-                }
-                if (/(\d+)\/month/i.test(spellRow)) {
-                    isMonthly = true;
-                }
-                if (/(\d+)\/year/i.test(spellRow)) {
-                    isYearly = true;
-                }
-
-                if (/(At will|At-will)/i.test(spellRow)) {
+                else if (/(\d+)\/week/i.test(spellRow))  isWeekly = true;
+                else if (/(\d+)\/month/i.test(spellRow)) isMonthly = true;
+                else if (/(\d+)\/year/i.test(spellRow))  isYearly = true;
+                else if (/(At will|At-will)/i.test(spellRow)) {
                     isAtWill = true;
                     isSpellRow = true;
                 }
@@ -456,7 +424,7 @@ export class SpellBooksParser extends ParserBase {
                             type: "domains",
                         }
                         let placeholder = await sbcUtils.generatePlaceholderEntity(domains, line)
-                        // sbcData.characterData.items.push(placeholder)
+                        
                         await createItem(placeholder);
                     }
 
@@ -470,30 +438,31 @@ export class SpellBooksParser extends ParserBase {
                         }
 
                         let placeholder = await sbcUtils.generatePlaceholderEntity(mysteries, line)
-                        // sbcData.characterData.items.push(placeholder)
+                        
                         await createItem(placeholder);
                     }
 
-                    if (spellRow.match(/(?:Opposition Schools\s)(.*$)/i) !== null) {
-                        let oppositionSchools = spellRow.match(/(?:Opposition Schools\s)(.*$)/i)[1]
+                    if (spellRow.match(/(?:(Opposition|Prohibited) Schools\s)(.*$)/i) !== null) {
+                        let [_, oppositionTag, oppositionSchools] = spellRow.match(/(?:(Opposition|Prohibited) Schools\s)(.*$)/i)
 
                         // Create Class Feature for the Domain
                         let oppositions = {
-                            name: "Opposition Schools: " + oppositionSchools,
+                            name: `${oppositionTag} Schools: ${oppositionSchools}`,
                             type: "oppositions",
                         }
 
                         let placeholder = await sbcUtils.generatePlaceholderEntity(oppositions, line)
-                        // sbcData.characterData.items.push(placeholder)
+                        
                         await createItem(placeholder);
                     }
                 }
             }
 
-            return true
+            // Return true for the try, and the spellBookType for further processing.
+            return [true, spellBookType]
 
         } catch (err) {
-            console.error(err);
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse the following Spell Book."
             sbcConfig.options.debug && console.log(value)
             let error = new sbcError(1, "Parse/Offense", errorMessage, line)

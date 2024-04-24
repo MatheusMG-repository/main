@@ -45,11 +45,10 @@ export class ResistanceParser extends ParserBase {
                 } else {
                     // Its a custom resistance, as there is no place for that, just put it into energy resistances
                     let existingImmunities = sbcData.characterData.actorData.system.traits.eres.custom;
-                    sbcData.characterData.actorData.update({"system.traits.eres.custom": existingImmunities + `${sbcUtils.capitalize(resistance)};`});
+                    await sbcData.characterData.actorData.update({"system.traits.eres.custom": existingImmunities + `${sbcUtils.capitalize(resistance)};`});
                 }
               } else if (resistance.search(patternDamageTypes) !== -1) {
                   // its a damage resistance
-                  console.log(`Resistance: ${resistance}, result: ${resistance.split(/\s%/)}.`);
                   const [type, value] = resistance.split(/\s/);
                   let existingImmunities = sbcData.characterData.actorData.system.traits.eres.value;
                   existingImmunities.push({amount: value, types: [type], operator: false});
@@ -58,15 +57,15 @@ export class ResistanceParser extends ParserBase {
               else {
                   // Its a custom resistance, as there is no place for that, just put it into energy resistances
                   let existingImmunities = sbcData.characterData.actorData.system.traits.eres.custom;
-                  sbcData.characterData.actorData.update({"system.traits.eres.custom": existingImmunities + `${sbcUtils.capitalize(resistance)};`});
+                  await sbcData.characterData.actorData.update({"system.traits.eres.custom": existingImmunities + `${sbcUtils.capitalize(resistance)};`});
               }
             }
 
-            sbcData.characterData.actorData.update({"system.traits.eres.custom": sbcData.characterData.actorData.system.traits.eres.custom.replace(/(;)$/, "") })
+            await sbcData.characterData.actorData.update({"system.traits.eres.custom": sbcData.characterData.actorData.system.traits.eres.custom.replace(/;$/, "") })
             return true
 
         } catch (err) {
-
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as Resistances."
             let error = new sbcError(1, "Parse/Defense", errorMessage, line)
             sbcData.errors.push(error)

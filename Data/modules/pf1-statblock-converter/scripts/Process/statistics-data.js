@@ -97,9 +97,9 @@ export async function parseStatistics(data, startLine) {
             if (!parsedSubCategories["cmb"]) {
                 if (/\bCMB\b/i.test(lineContent)) {
                     let parserCmb = parserMapping.map.statistics.cmb
-                    let cmbRaw = lineContent.match(/CMB\s+([+-]?\d+.*?;?)/i)[1].trim().replace(';', '');
+                    let cmbRaw = lineContent.match(/CMB\s+([+-]?\d+\s*(\(.*\))?;?)/i)[1].trim().replace(';', '');
 
-                    let cmb = cmbRaw.match(/([+-]?\d+)/)?.[0] ?? 0;
+                    let cmb = cmbRaw.match(/^([+-]?\d+)/)?.[0] ?? 0;
 
                     let cmbContext = sbcUtils.parseSubtext(cmbRaw)[1]
 
@@ -117,10 +117,10 @@ export async function parseStatistics(data, startLine) {
             if (!parsedSubCategories["cmd"]) {
                 if (/\bCMD\b/i.test(lineContent)) {
                     let parserCmd = parserMapping.map.statistics.cmd
-                    let cmdRaw = lineContent.match(/CMD\s+([+-]?\d+.*?;?)/i)[1].trim().replace(';', '');
+                    let cmdRaw = lineContent.match(/CMD\s+([+-]?\d+\s*(\(.*\))?;?)/i)[1].trim().replace(';', '');
 
                     // Check if CMD is "-"
-                    let cmd = cmdRaw.match(/(\d+)/)?.[0] ?? 0;
+                    let cmd = cmdRaw.match(/^(\d+)/)?.[0] ?? 0;
 
                     let cmdContext = sbcUtils.parseSubtext(cmdRaw)[1]
 
@@ -140,6 +140,8 @@ export async function parseStatistics(data, startLine) {
                     let feats = lineContent.match(/(?:Feats\b\s*)(.*)/i)[1].replace(/\s*[,;]+/g,",").trim()
                     sbcData.notes.statistics.feats = feats
                     parsedSubCategories["feats"] = await parserFeats.parse(feats, startLine + line, "feats", "feat")
+
+                    await processFeats();
                 }
             }
 
@@ -193,7 +195,7 @@ export async function parseStatistics(data, startLine) {
             //}
 
         } catch (err) {
-            console.error(err);
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Parsing the statistics data failed at the highlighted line"
             let error = new sbcError(1, "Parse/Statistics", errorMessage, (startLine+line) )
             sbcData.errors.push(error)
@@ -209,4 +211,32 @@ export async function parseStatistics(data, startLine) {
 
     return true
 
+}
+
+async function processFeats() {
+    let feats = sbcData.characterData.actorData.itemTypes.feat.filter(feat => feat.system.subType === "feat");
+
+    for (let feat of feats) {
+        let featName = feat.name.toLowerCase();
+        let featSubtext = sbcUtils.parseSubtext(featName)[1];
+        if(!featSubtext) continue;
+
+        if (/greater weapon focus/.test(featName)) {
+            sbcData.characterData.weaponFocusGreater.push(featSubtext);
+        }
+        else if(/weapon focus/.test(featName)) {
+            sbcData.characterData.weaponFocus.push(featSubtext);
+        }
+        else if(/greater weapon specialization/.test(featName)) {
+            sbcData.characterData.weaponSpecializationGreater.push(featSubtext);
+        }
+        else if(/weapon specialization/.test(featName)) {
+            sbcData.characterData.weaponSpecialization.push(featSubtext);
+        }
+    }
+
+    sbcConfig.options.debug && console.log("Weapon Focus", sbcData.characterData.weaponFocus);
+    sbcConfig.options.debug && console.log("Weapon Focus Greater", sbcData.characterData.weaponFocusGreater);
+    sbcConfig.options.debug && console.log("Weapon Specialization", sbcData.characterData.weaponSpecialization);
+    sbcConfig.options.debug && console.log("Weapon Specialization Greater", sbcData.characterData.weaponSpecializationGreater);
 }

@@ -33,7 +33,10 @@ export class ClassParser extends ParserBase {
                 let isPrestigeClass = false
                 let isWizardClass = false
 
-                if (classInput.search(patternPrestigeClasses) !== -1) {
+                sbcUtils.log("Pattern", [patternPrestigeClasses, "Result", classInput.search(patternPrestigeClasses)])
+                sbcUtils.log("Pattern", [patternSupportedClasses, "Result", classInput.search(patternSupportedClasses)])
+                sbcUtils.log("Pattern", [patternWizardClasses, "Result", classInput.search(patternWizardClasses)])
+                if (classInput.search(patternPrestigeClasses) !== -1 && sbcConfig.prestigeClassNames.length > 0) {
                     isPrestigeClass = true
                 }
                 if (classInput.search(patternSupportedClasses) !== -1) {
@@ -43,6 +46,7 @@ export class ClassParser extends ParserBase {
                     isWizardClass = true
                 }
 
+                sbcUtils.log(`${isPrestigeClass}, ${isSupportedClass}, ${isWizardClass}`)
                 // Supported Class, Prestige Class or Wizard Class found
                 if (isPrestigeClass || isSupportedClass || isWizardClass) {
                     let tempClassName = sbcUtils.parseSubtext(classInput.replace(/\d+/g, "").trim())
@@ -181,7 +185,12 @@ export class ClassParser extends ParserBase {
                         })
 
                         //sbcData.characterData.items.push(classItem)
-                        await createItem(classItem);
+                        let [type, book] = await createItem(classItem);
+
+                        // Add a spellbook if the class has one.
+                        // Calling this manually right away so that we know the spellbook exists later.
+                        // Clean up any extra spellbooks later on.
+                        await sbcData.characterData.actorData.createSpellbook(book[0].system.casting)
                     }
 
 
@@ -198,7 +207,7 @@ export class ClassParser extends ParserBase {
             return true
 
         } catch (err) {
-
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as classes."
             let error = new sbcError(1, "Parse/Base", errorMessage, line)
             sbcData.errors.push(error)

@@ -68,7 +68,7 @@ export class SpeedParser extends ParserBase {
                 return true
             }
         } catch (err) {
-            console.error(err);
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as Speed of type " + type + "."
             let error = new sbcError(1, "Parse/Offense", errorMessage, line)
             sbcData.errors.push(error)

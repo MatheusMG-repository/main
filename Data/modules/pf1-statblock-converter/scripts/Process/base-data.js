@@ -251,7 +251,7 @@ export async function parseBase(data, startLine) {
         }
       }
     } catch (err) {
-      console.error(err);
+      sbcConfig.options.debug && console.error(err);
       let errorMessage = "Parsing the base data failed at the highlighted line"
       let error = new sbcError(1, "Parse/Base", errorMessage, (startLine+line) )
       sbcData.errors.push(error)

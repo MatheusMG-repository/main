@@ -10,6 +10,7 @@ export class sbcData {
     static characterData = {};
     static notes = {};
     static customFolderId = "";
+    static customWIPFolderId = "";
     static treasureParsing = {
         treasureToParse: "",
         lineToRemove: 0,

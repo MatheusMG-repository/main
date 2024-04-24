@@ -1,3 +1,195 @@
+## Version 11.26
+
+Fixed issue with the Movement trigger
+
+## Version 11.25
+
+Removing debug statements
+
+## Version 11.24
+
+Fixed issues with teleporting to another tile using the relative to entry option
+
+Added the option to reverse the relative to entry direction by using a negative scale
+
+Fixed issue with playing/resetting a tile's animation for players
+
+Added the option to use the same randome number ranges for tile images that delay allows
+
+Added the option to check for not having a condition when filtering by condition
+
+Added the option to set the collection when using Taggers Alter Tag action
+
+Fixed issues with avoiding tokens at destination
+
+Fixed issues with multiple trigger methods not actually stopping remaining Actions
+
+Fixed issue where the person to show the dialog to wasn't saving properly.
+
+Fixed issue where stopping token movement was hiding the token until a browser refresh.
+
+Fixed issue where trigger methods that required a delay before being activated weren't stopping after stop remaining actions was run
+
+## Version 11.23
+
+Fixed issue with open url not opening into a new tab
+
+Added support for the Celebrate module
+
+Fixed issue with additional right clicks when double-right clicking
+
+Fixed issue with triggering a tile when teleporting
+
+Fixed issue with sorting by z-index
+
+Fixed issue when running sorted actions
+
+## Version 11.22
+
+Added tagger to teleport options
+
+Updated teleport so selecting This Tile will allow you to set the position within the tile
+
+Added the option to allow a teleport to trigger the remote Tile
+
+Fixed the code finding a vacant spot when teleporting Tokens
+
+Fixed issue with Hurt/Heal in D&D 5e
+
+Fixed issue adding an item to a character in D&D 5e
+
+Fixed issue with filtering conditions in D&D 5e
+
+Fixed issue with setting the current entities not resuming after a pause
+
+Fixed issue with processing the chat message text when it starts with dice roll notation
+
+Added the action to run code in case you don't want to create a macro to store the code
+
+Fixed the help icon in the entity count message
+
+Removed the additional conditions in the PF2e list of conditions
+
+Updated the check value action to allow checking values that aren't specifically in the list of values
+
+Fixed issues with getting the tracked attributes in the action config dialog
+
+Allow drag and drop of actors onto the Attack action
+
+Fixed issue with sorting triggers causing an error message
+
+Fixed issue with playing a sound only on a specific Scene
+
+Fixed issue with stop token movement when a player moves the token
+
+## Version 11.21
+
+Allow `This Tile` teleport destination to use `Random Within`, `Centered` and `Relative`
+
+Removing debug statement
+
+## Version 11.20
+
+Fixed issue with pan canvas to player token, will now pan for individual players rather than panning to every player.
+
+Reset the drag ruler movement history when teleporting within the same scene.
+
+Added the option to reset tile history for everything or for a specific token.
+
+Fixed warning for conditional effect using label instead of name.
+
+Fixed issue with checking values in case the name, through handlebars, returns as blank.
+
+Added the option to stop all remaining triggers.
+
+Fixed issue with DFreds Convenient Effects filtering by conditions.
+
+Fixed issue with triggering a Tile that is scaled.
+
+Fixed an issue with the `movement` trigger.  It was incorrectly triggering on an enter and an exit.  `movement` triggers when movement *starts* in a Tile.
+
+Sorting triggers by "distance to effect", "trigger type", and "z-index" so you can now set a Tile on top of another tile and choose which one gets triggered first.  This changes how the `Stop Token Movement` works.  Before, tokens were stopped regardless of if the action was processed.  For example if the stop was within a landing that wasn't called, then the movement was stopped regardless.  You'll no longer need to use this, as the token should stop now when it reaches the trigger point.  If the stop is within a landing, you may see a bit of a hiccup where the token reverses movement back to the triggering point.
+
+## Version 11.19
+
+Changed the quantity field when adding items to allow for dice notation
+
+Fixed issue with dice roll notation.
+
+## Version 11.18
+
+Fixed issue with delay time not using fractions of seconds.
+
+Fixed issues with pan canvas waiting until the gm was finished before starting the players panning.
+
+Fixed issue with teleport wash colour not happening when an owner of a tile changes scenes.
+
+Fixed issue with creating a token on a scene the GM is currently not on
+
+Fixed label for Play sound action.
+
+Fixed issue when changing wall type from proximity to normal.
+
+Fixed issue using polyglot with chatmessage.
+
+Fixed issue when adding and removing effects in PF2e.
+
+Added the option to change permissions for a Journal Page.
+
+Hopefully fixed issue where having two attacks in the same action list would overwrite the first attack with the second attacks data.
+
+Hopefully fixed some of the issues with transitions.
+
+Fixed an issue with close dialog not firing for all users.
+
+Added the options to append a line, or prepend a line when writing to a journal.
+
+Added the option to insert text into a journal, at a specific character spot, with the option to replace a certain number of characters.
+
+Added polyglot support when adding text to a journal entry.
+
+Added the `datetime` handlebar value when appending to journal entries, if you have the simple calendar module active.  To be able to write the current game time to a journal.
+
+Changed all the `Find` text to `Filter` to make it clearer what actions are being performed.
+
+Added handlebar support when redirecting based on player type
+
+Updated the landing action to default to stop when reached.
+
+Fixed issues with how DnD5e is now listing their languages.
+
+Automatically closes Action edits when you close the Tile edit window.
+
+Fixed issue where image files weren't saving when the Tile was first created.
+
+Added the option to add tile images by picking a folder.
+
+Added the option to edit the Tile data in the Tile Template browser.
+
+Added the option to use `!=` when comparing values
+
+Fixed issue when finding tagger entities across scenes.
+
+Fixed issues with DnD5e enrichers.
+
+Fixed issue with right clicking on a door triggering it twice.
+
+Fixed issue when correcting who to show the action for, for both chat messages and dialogs.
+
+Updated the inline link for Tiles to be more flexible and not need to specify the scene.
+
+Fixed issue with running the fade action not finding the correct users to fade for.
+
+Fixed issue with Scrolling Text not finding the correct center of the entity.
+
+Fixed issue with running a transition for a tile that shouldn't be visible
+
+Fixed issue with redirecting tokens from a jump to landing.
+
+Fixed issue with order of operations when updating a token.  Made sure that MATT comes last in the list.
+
+Fixed issue with the stop within tile trigger
+
 ## Version 11.17
 
 Fixed issue with Activate/Deactivate action

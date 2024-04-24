@@ -12,7 +12,7 @@ export class sbcUtils {
         let tempActor = await Actor.create({
             name: "sbc | Actor Template",
             type: sbcConfig.const.actorType[sbcData.actorType],
-            folder: sbcData.customFolderId
+            folder: sbcData.customWIPFolderId
         }, { temporary: false })
         return tempActor
     }
@@ -58,7 +58,12 @@ export class sbcUtils {
                 "attributes": {},
                 "skills": {},
                 "spellBooks": {}
-            }
+            },
+            weaponFocus: [],
+            weaponSpecialization: [],
+            weaponFocusGreater: [],
+            weaponSpecializationGreater: [],
+            weaponGroups: {},
         }
     }
 
@@ -376,7 +381,7 @@ export class sbcUtils {
             if (typeof compendium === "string") searchableCompendiums.push(compendium)
             else searchableCompendiums = compendium;
 
-            console.log("COMPENDIUMS 1", searchableCompendiums);
+            sbcConfig.options.debug && console.log("COMPENDIUMS 1", searchableCompendiums);
         }
 
         // If there are customCompendiums, given as a string in the module settings,
@@ -389,7 +394,7 @@ export class sbcUtils {
             customCompendiums = customCompendiumSettings.split(/[,;]/g)
             // searchableCompendiums = customCompendiums.concat(searchableCompendiums)
             searchableCompendiums = searchableCompendiums.concat(customCompendiums)
-            console.log("COMPENDIUMS 2", searchableCompendiums);
+            sbcConfig.options.debug && console.log("COMPENDIUMS 2", searchableCompendiums);
         }
 
         let searchResult = false
@@ -402,16 +407,20 @@ export class sbcUtils {
         }
 
 
-        if (input.altName) {
-            console.log(`Checking Alt "${input.altName}".`)
+        if (input.altName2) {
+            sbcConfig.options.debug && console.log(`Checking Alt2 "${input.altName2}".`)
+            searchResult = await sbcUtils.findInCompendia(input.altName2, searchOptions);
+        }
+        if (searchResult === false && input.altName) {
+            sbcConfig.options.debug && console.log(`Checking Alt "${input.altName}".`)
             searchResult = await sbcUtils.findInCompendia(input.altName, searchOptions);
         }
         if (searchResult === false) {
-            console.log(`Checking "${input.name}".`)
+            sbcConfig.options.debug && console.log(`Checking "${input.name}".`)
             searchResult = await sbcUtils.findInCompendia(input.name, searchOptions);
         }
         // searchResult = await globalThis.pf1.utils.findInCompendia(input.name, searchOptions);
-        console.log("Search Result: ", searchResult)
+        sbcConfig.options.debug && console.log("Search Result: ", searchResult)
         // Return the searchResult, which either is a clone of the found entity or null
         if (searchResult !== false) {
             let packName = searchResult.pack.metadata.id;
@@ -978,7 +987,7 @@ export class sbcUtils {
 
             Hooks.callAll("sbc.validated", actor);
         } catch (err) {
-
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to validate the conversion and create a conversion buff"
             let error = new sbcError(1, "Validation", errorMessage)
             sbcData.errors.push(error)
@@ -1098,6 +1107,16 @@ export class sbcUtils {
         } else {
             return [value]
         }
+    }
+
+    static fixSplitGroup(input) {
+        const reversedInput = input.reverse();
+        return reversedInput.map((element, index) => {
+            if(index > 0 && reversedInput[index - 1].startsWith("+"))
+                return `${element} ${reversedInput[index - 1]}`;
+            if(!element.startsWith("+"))
+                return element;
+        }).filter(element => !!element).reverse();
     }
 
     static getKeyByValue(object, value) {

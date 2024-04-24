@@ -8,9 +8,9 @@
     }
   ],
   "url": "https://www.forgotten-adventures.net/",
-  "version": "1.0.44",
+  "version": "1.0.57",
   "compatibility": {
-    "minimum": "9",
+    "minimum": "10",
     "verified": "11"
   },
   "esmodules": [

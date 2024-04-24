@@ -44,7 +44,7 @@ export class TacticsParser extends ParserBase {
                 }
 
                 let placeholder = await sbcUtils.generatePlaceholderEntity(tacticsEntry, line)
-                // sbcData.characterData.items.push(placeholder)
+                
                 await createItem(placeholder);
 
             }
@@ -52,6 +52,7 @@ export class TacticsParser extends ParserBase {
             return true
 
         } catch (err) {
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as tactics."
             let error = new sbcError(2, "Parse/Ecology", errorMessage, line)
             sbcData.errors.push(error)

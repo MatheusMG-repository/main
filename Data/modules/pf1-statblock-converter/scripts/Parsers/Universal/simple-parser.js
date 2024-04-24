@@ -24,6 +24,7 @@ export class SimpleParser extends ParserBase {
                 }
                 return true
             } catch (err) {
+                sbcConfig.options.debug && console.error(err);
                 let errorMessage = `Failed to parse ${value} into ${this.targetFields}`
                 let error = new sbcError(0, "Parse", errorMessage, line)
                 sbcData.errors.push(error)

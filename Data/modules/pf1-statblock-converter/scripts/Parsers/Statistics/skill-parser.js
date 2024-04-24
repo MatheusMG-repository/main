@@ -363,7 +363,7 @@ export class SkillParser extends ParserBase {
                     }
 
                 } catch (err) {
-
+                    sbcConfig.options.debug && console.error(err);
                     let errorMessage = "Failed to parse " + skill + "."
                     let error = new sbcError(1, "Parse/Statistics", errorMessage, line)
                     sbcData.errors.push(error)
@@ -377,7 +377,7 @@ export class SkillParser extends ParserBase {
             return true
 
         } catch (err) {
-
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as skills."
             let error = new sbcError(1, "Parse/Statistics", errorMessage, line)
             sbcData.errors.push(error)

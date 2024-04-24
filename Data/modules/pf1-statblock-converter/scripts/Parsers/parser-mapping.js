@@ -101,8 +101,8 @@ export class parserMapping {
                 feats: new EntityParser(),
                 skills: new SkillParser(),
                 languages: new LanguageParser(),
-                sq: new SpecialQualityParser(),
-                // sq: new EntityParser(),
+                // sq: new SpecialQualityParser(),
+                sq: new EntityParser(),
                 gear: new GearParser(),
 
             },

@@ -31,14 +31,14 @@ export class RaceParser extends ParserBase {
                 }
 
                 let placeholder = await sbcUtils.generatePlaceholderEntity(raceItem, line)
-                // sbcData.characterData.items.push(placeholder)
+                
                 await createItem(placeholder);
             }
 
             return true
 
         } catch (err) {
-
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as race."
             let error = new sbcError(1, "Parse/Base", errorMessage, line)
             sbcData.errors.push(error)

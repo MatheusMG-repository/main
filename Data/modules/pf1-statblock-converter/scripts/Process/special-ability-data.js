@@ -16,36 +16,22 @@ export async function parseSpecialAbilities(data, startLine) {
         "hasSpecialAbilities": true
     }
 
-    let specialAbility = "";
-    let patternSpecialAbilityTypes = new RegExp("((\\-\\-)|(\\((\\bSU\\b|\\bSP\\b|\\bEX\\b)\\)))", "i")
-
     // Loop through the lines
     for (let line = 0; line < data.length; line++) {
         try {
             let lineContent = data[line]
-            if (lineContent.length == 0) { lineContent = "\n"; }
 
             // Parse Special Ability
             if (!parsedSubCategories["specialAbility-" + parsedSubCategoriesCounter]) {
-                if (lineContent && lineContent.search(/Special Abilities/i) === -1) {
-                    if (lineContent.search(patternSpecialAbilityTypes) === -1) {
-                        specialAbility += lineContent
-                        if (lineContent === "\n") specialAbility += lineContent
-                    } else {
-                        if (specialAbility !== "" && specialAbility !== "\n\n") {
-                            specialAbility = specialAbility.trim()
-                            
-                            let parserSpecialAbility = parserMapping.map["special abilities"]
-                            parsedSubCategories["specialAbility-" + parsedSubCategoriesCounter] = await parserSpecialAbility.parse(specialAbility, startLine + line)
-                            if (parsedSubCategories["specialAbility-" + parsedSubCategoriesCounter]) parsedSubCategoriesCounter++
-                        }
-
-                        specialAbility = lineContent
-                    }
+                if (lineContent && lineContent.search(/^Special Abilities/i) === -1) {
+                    let parserSpecialAbility = parserMapping.map["special abilities"]
+                    parsedSubCategories["specialAbility-" + parsedSubCategoriesCounter] = await parserSpecialAbility.parse(lineContent, startLine + line)
+                    if (parsedSubCategories["specialAbility-" + parsedSubCategoriesCounter]) parsedSubCategoriesCounter++
                 }
             }
 
         } catch (err) {
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = `Parsing the special abilities failed at line ${line+startLine} (non-critical)`
             let error = new sbcError(2, "Parse/Special Abilities", errorMessage, line+startLine)
             sbcData.errors.push(error)

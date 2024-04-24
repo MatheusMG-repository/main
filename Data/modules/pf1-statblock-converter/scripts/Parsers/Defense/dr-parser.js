@@ -37,7 +37,7 @@ export class DRParser extends ParserBase {
                     } else {
                         // Its a custom resistance, as there is no place for that, just put it into energy resistances
                         let existingReductions = sbcData.characterData.actorData.system.traits.dr.custom;
-                        sbcData.characterData.actorData.update({"system.traits.dr.custom": existingReductions + `${sbcUtils.capitalize(reduction)};`});
+                        await sbcData.characterData.actorData.update({"system.traits.dr.custom": existingReductions + `${sbcUtils.capitalize(reduction)};`});
                     }
                 } else if (reduction.search(patternDamageTypes) !== -1) {
                     // its a damage resistance
@@ -49,14 +49,14 @@ export class DRParser extends ParserBase {
                 else {
                     // Its a custom resistance, as there is no place for that, just put it into energy resistances
                     let existingReductions = sbcData.characterData.actorData.system.traits.dr.custom;
-                    sbcData.characterData.actorData.update({"system.traits.dr.custom": existingReductions + `${sbcUtils.capitalize(reduction)};`});
+                    await sbcData.characterData.actorData.update({"system.traits.dr.custom": existingReductions + `${sbcUtils.capitalize(reduction)};`});
                 }
             }
-            sbcData.characterData.actorData.update({"system.traits.dr.custom": sbcData.characterData.actorData.system.traits.dr.custom.replace(/(;)$/, "") })
+            await sbcData.characterData.actorData.update({"system.traits.dr.custom": sbcData.characterData.actorData.system.traits.dr.custom.replace(/;$/, "") })
             return true
 
         } catch (err) {
-            console.error(err);
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as Reductions."
             let error = new sbcError(1, "Parse/Defense", errorMessage, line)
             sbcData.errors.push(error)

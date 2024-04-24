@@ -32,6 +32,7 @@ export async function parseDescription(data, startLine) {
             }
 
         } catch (err) {
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = `Parsing the description data failed at line ${line+startLine}`
             let error = new sbcError(2, "Parse/Description", errorMessage, line+startLine)
             sbcData.errors.push(error)

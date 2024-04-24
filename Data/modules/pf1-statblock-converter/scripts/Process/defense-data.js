@@ -140,12 +140,13 @@ export async function parseDefense(data, startLine) {
                     let parserDefensiveAbilities = parserMapping.map.defense.defensiveAbilities
                     let defensiveAbilities = lineContent.match(/(?:Defensive Abilities\b\s*)([\s\S]*?)(?=$|\bDR\b|\bImmune\b|\bResist\b(?!\s\blife\b)|\bSR\b|\bWeakness\b)/i)[1].replace(/\s*[,;]+/g,",").replace(/(,\s*$)/, "").trim()
                     sbcData.notes.defense.defensiveAbilities = defensiveAbilities
-                    parsedSubCategories["defensiveAbilities"] = await parserDefensiveAbilities.parse(defensiveAbilities, line+startLine, "class-abilities", ["buff", "consumable", "equipment", "feat", "loot", "weapon"])
+                    parsedSubCategories["defensiveAbilities"] = await parserDefensiveAbilities.parse(defensiveAbilities, line+startLine, "class-abilities", ["classFeat", "buff", "consumable", "equipment", "feat", "loot", "weapon"])
                 }
             }
 
 
         } catch (err) {
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = `Parsing the defense data failed at line ${line+startLine}`
             let error = new sbcError(1, "Parse/Defense", errorMessage, line+startLine)
             sbcData.errors.push(error)

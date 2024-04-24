@@ -13,7 +13,8 @@ export class AuraParser extends ParserBase {
         try {
             sbcData.notes.aura = value
 
-            let auras = sbcUtils.sbcSplit(value)
+            let auras = sbcUtils.sbcSplit(value, false)
+            console.log("Auras: ", auras);
 
             for (let i=0; i<auras.length; i++) {
 
@@ -103,7 +104,7 @@ export class AuraParser extends ParserBase {
             }
 
         } catch (err) {
-
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as aura."
             let error = new sbcError(1, "Parse/Base", errorMessage, line)
             sbcData.errors.push(error)

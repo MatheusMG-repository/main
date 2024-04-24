@@ -108,7 +108,7 @@ export class CreatureParser extends ParserBase {
             return true
 
         } catch (err) {
-            console.error(err);
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as creatureType."
             let error = new sbcError(1, "Parse/Base", errorMessage, line)
             sbcData.errors.push(err)

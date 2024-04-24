@@ -21,7 +21,7 @@ export class ActionConfig extends FormApplication {
         let player = game.actors.find(a => a.type == 'character');
         if (player) {
             try {
-            let attributes = getDocumentClass("Token").getTrackedAttributes(player.system ?? {});
+                let attributes = getDocumentClass("Token").getTrackedAttributes(player.system ?? {});
                 if (attributes)
                     this.tokenAttr = (this.tokenAttr || []).concat(attributes.value.concat(attributes.bar).map(a => a.join('.')));
             } catch {}
@@ -30,8 +30,12 @@ export class ActionConfig extends FormApplication {
         let tile = canvas.scene.tiles?.contents[0];
         if (tile) {
             try {
-                this.tileAttr = (ActionConfig.getTileTrackedAttributes(tile ?? {}) || []).map(a => a.join('.'));
-            } catch { }
+                this.tileAttr = (ActionConfig.getTileTrackedAttributes(tile.schema ?? {}) || [])
+                    .filter(a => a && a.length > 0)
+                    .map(a => a.join('.'));
+            } catch (e) {
+                log(e);
+            }
         }
 
         this.autoanchors = [
@@ -85,7 +89,8 @@ export class ActionConfig extends FormApplication {
             height: 'auto',
             dragDrop: [
                 { dragSelector: ".document.actor", dropSelector: ".action-container" },
-                { dragSelector: ".document.item", dropSelector: ".action-container" }
+                { dragSelector: ".document.item", dropSelector: ".action-container" },
+                { dragSelector: ".items-list .button-list .file-row", dropSelector: ".items-list .button-list" }
             ]
         });
     }
@@ -160,29 +165,50 @@ export class ActionConfig extends FormApplication {
         return fp.browse();
     }
 
-    static getTileTrackedAttributes(data, _path = []) {
-        if (!data)
-            return {};
+    static getTileTrackedAttributes(schema, _path = [], depth = 0) {
+        if (!schema)
+            return [];
+        if (depth > 5)
+            return [];
 
         // Track the path and record found attributes
         const attributes = [];
 
-        // Recursively explore the object
-        for (let [k, v] of Object.entries(data)) {
-            let p = _path.concat([k]);
-
-            // Check objects for both a "value" and a "max"
-            if (v instanceof Object) {
-                const inner = this.getTileTrackedAttributes(data[k], p);
-                attributes.push(...inner);
-            }
-
-            // Otherwise identify values which are numeric or null
-            else if (Number.isNumeric(v) || (v === null)) {
+        for (const [name, field] of Object.entries(schema.fields)) {
+            const p = _path.concat([name]);
+            if (field instanceof foundry.data.fields.NumberField)
                 attributes.push(p);
+            else {
+                const isSchema = field instanceof foundry.data.fields.SchemaField;
+                const isModel = field instanceof foundry.data.fields.EmbeddedDataField;
+                if (isSchema || isModel) {
+                    const schema = isModel ? field.model.schema : field;
+
+                    const inner = this.getTileTrackedAttributes(schema, p, depth + 1);
+                    attributes.push(...inner);
+                }
             }
         }
         return attributes;
+    }
+
+    _onDragStart(event) {
+        let li = event.currentTarget.closest(".file-row");
+        let list = event.currentTarget.closest(".items-list");
+        if (list) {
+            const dragData = {
+                type: "button",
+                tileId: this.object.id,
+                collection: list.dataset.collection,
+                id: li.dataset.id
+            };
+            event.dataTransfer.setData("text/plain", JSON.stringify(dragData));
+            this._dragType = dragData.type;
+        }
+    }
+
+    _canDragStart(selector) {
+        return true;
     }
 
     async _onDrop(event) {
@@ -204,24 +230,46 @@ export class ActionConfig extends FormApplication {
         } else if (data.type == "RollTable" && action == "rolltable") {
             let id = (data.pack ? `Compendium.${data.pack}.${data.id}` : `RollTable.${data.id}`);
             $('input[name="data.rolltableid"]').val(id).data("value", { id });
+        } else if (data.type == "Actor" && action == "attack") {
+            let field = $('input[name="data.actor"]', this.element);
+            if (field.length == 0)
+                return;
+
+            let actor = await fromUuid(data.uuid);
+            if (!actor) return;
+
+            this.waitingfield = field;
+            ActionConfig.updateSelection.call(this, { id: actor.uuid, name: actor.name });
         } else if (data.type == "Item" && action == "additem") {
             let field = $('input[name="data.item"]', this.element);
 
             if (field.length == 0)
                 return;
 
-            let item;
-            if (data.pack) {
-                const pack = game.packs.get(data.pack);
-                if (!pack) return;
-                item = await pack.getDocument(data.id);
-            } else
-                item = game.items.get(data.id);
+            let item = await fromUuid(data.uuid);
 
             if (!item) return;
 
             this.waitingfield = field;
             ActionConfig.updateSelection.call(this, { id: item.uuid, name: (item?.parent?.name ? item.parent.name + ": " : "") + item.name });
+        } else if (data.type == "button") {
+            // Call the drop handler
+            if (target && target.dataset.id) {
+                let items = duplicate(this.buttonlist);
+
+                if (data.id === target.dataset.id) return; // Don't drop on yourself
+
+                let from = items.findIndex(a => a.id == data.id);
+                let to = items.findIndex(a => a.id == target.dataset.id);
+                log('from', from, 'to', to);
+                items.splice(to, 0, items.splice(from, 1)[0]);
+
+                this.object.flags["monks-active-tiles"].buttonlist = items;
+                if (from < to)
+                    $('.item[data-id="' + data.id + '"]', this.element).insertAfter(target);
+                else
+                    $('.item[data-id="' + data.id + '"]', this.element).insertBefore(target);
+            }
         } else {
             //check to see if there's an entity field on the form, or an item field if it's adding an item.
             let field = $(`input[name="data.${action == "attack" ? "actor" : "entity"}"]`, this.element);
@@ -273,15 +321,15 @@ export class ActionConfig extends FormApplication {
             return list
                 .map(g => {
                     if (g.groups) {
-                        let gtext = g.label ?? g.id;
+                        let gtext = g.label ?? g.text ?? g.id;
                         if (game.i18n.has(gtext))
                             gtext = i18n(gtext);
                         return $('<optgroup>')
                             .attr('label', gtext)
                             .append(Object.entries(g.groups)
                                 .map(([k, v]) => {
-                                    let gid = (g.id ? g.id + ":" : '') + k;
-                                    let text = v.label ?? v;
+                                    let gid = (g.id ? g.id + ":" : '') + (g.groups instanceof Array ? v.id : k);
+                                    let text = typeof v == "string" ? v : v.label ?? v.name;
                                     if (game.i18n.has(text))
                                         text = i18n(text);
                                     return $('<option>')
@@ -290,8 +338,8 @@ export class ActionConfig extends FormApplication {
                                         .prop('selected', gid == id)
                                 }))
                     } else {
-                        let gid = g.id || g;
-                        let text = g.label ?? g;
+                        let gid = g.id ?? g;
+                        let text = typeof g == "string" ? g : g.label ?? g.name;
                         if (game.i18n.has(text))
                             text = i18n(text);
                         return $('<option>').attr('value', gid).html(text).prop('selected', gid == id)
@@ -300,7 +348,8 @@ export class ActionConfig extends FormApplication {
         } else {
             return Object.entries(list)
                 .map(([k, v]) => {
-                    let text = v.label ?? v;
+                    if (!v) return null;
+                    let text = typeof v == "string" ? v : v?.label ?? v?.name;
                     if (game.i18n.has(text))
                         text = i18n(text);
 
@@ -308,7 +357,7 @@ export class ActionConfig extends FormApplication {
                         .attr('value', k)
                         .html(text)
                         .prop('selected', k == id)
-                });
+                }).filter(o => !!o);
         }
     }
 
@@ -918,6 +967,7 @@ export class ActionConfig extends FormApplication {
         for (let ctrl of (action?.ctrls || [])) {
             let options = mergeObject({ hide: [], show: [] }, ctrl.options);
             let field = $('<div>').addClass('form-fields').data('ctrl', ctrl);
+            if (ctrl["class"]) field.addClass(ctrl["class"]);
             let id = 'data.' + ctrl.id + (ctrl.variation ? '.value' : '');
             let val = data[ctrl.id] != undefined ? (data[ctrl.id].value != undefined ? data[ctrl.id].value : data[ctrl.id]) : (data[ctrl.id] === null ? "" : ctrl.defvalue);
 
@@ -1070,7 +1120,8 @@ export class ActionConfig extends FormApplication {
                                 input.attr('max', ctrl.max);
                             if (ctrl.step)
                                 input.attr('step', ctrl.step);
-                            input.css({ flex: '0 0 75px', 'text-align': 'right' });
+                            input.css({ 'text-align': 'right' });
+                            field.addClass("small-field");
                         }
                         if (ctrl.onBlur)
                             input.on('blur', ctrl.onBlur.bind(this, this));

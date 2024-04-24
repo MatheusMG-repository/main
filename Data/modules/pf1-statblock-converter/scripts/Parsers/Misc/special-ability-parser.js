@@ -24,7 +24,7 @@ export class SpecialAbilityParser extends ParserBase {
             let specialAbilityName = null
             let specialAbilityDesc = null
 
-            let patternSpecialAbilityTypes = new RegExp("(\\((\\bSU\\b|\\bSP\\b|\\bEX\\b)\\))", "i")
+            let patternSpecialAbilityTypes = new RegExp("((\\(\\-\\-\\))|(\\((\\bSU\\b|\\bSP\\b|\\bEX\\b)\\)))", "i")
 
             if (value.search(patternSpecialAbilityTypes) !== -1) {
 
@@ -32,8 +32,10 @@ export class SpecialAbilityParser extends ParserBase {
                 //     Because we can separate the name from that
 
                 specialAbilityType = value.match(patternSpecialAbilityTypes)[1].toLowerCase().replace(/[()]*/g, "").trim()
-                specialAbilityName = value.split(patternSpecialAbilityTypes)[0].trim()
-                specialAbilityDesc = value.split(patternSpecialAbilityTypes)[3].trim()
+                if(specialAbilityType === "--") specialAbilityType = "none";
+                let results = value.split(patternSpecialAbilityTypes);
+                specialAbilityName = results[0].trim()
+                specialAbilityDesc = results[5].trim()
             } else {
 
                 // (2) If no abilityType is found, things aren't solvable.
@@ -82,13 +84,17 @@ export class SpecialAbilityParser extends ParserBase {
             specialAbility.desc = `<p>${specialAbilityDesc.replace(/\n\n/g, "</p><p>")}</p>`;
 
             let placeholder = await sbcUtils.generatePlaceholderEntity(specialAbility, line)
-                console.log("Placeholder", placeholder)
-            // sbcData.characterData.items.push(placeholder)
-            await createItem(placeholder);
+
+            // Check for an existing aura (the only time we need to worry about special abilities pre-existing AFAIK)
+            let existingAura = sbcData.characterData.actorData.itemTypes.feat.find((i) => i.name === `Aura: ${placeholder.name}` && i.system.subType === "racial");
+            if(existingAura)
+                existingAura.update({"system.description.value": specialAbility.desc});
+            else
+                await createItem(placeholder);
 
             return [true, specialAbilityNote]
         } catch (err) {
-
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse [" + value + "] as Special Ability."
             let error = new sbcError(1, "Parse/Special Abilties", errorMessage, line)
             sbcData.errors.push(error)

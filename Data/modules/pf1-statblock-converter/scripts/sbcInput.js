@@ -167,6 +167,7 @@ export class sbcInputDialog extends Application {
                 const hp = sbcData.characterData.actorData.system.attributes.hp;
                 if (hp.value !== hp.max) await sbcData.characterData.actorData.update({ "attributes.hp.value": hp.max });
 
+                await sbcData.characterData.actorData.update({ "folder": sbcData.customFolderId })
                 sbcData.imported = true;
                 sbcInputDialog.sbcInputDialogInstance.close()
                 sbcApp.resetSBC(false)

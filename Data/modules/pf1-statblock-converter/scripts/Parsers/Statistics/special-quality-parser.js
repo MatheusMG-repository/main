@@ -13,6 +13,7 @@ export class SpecialQualityParser extends ParserBase {
         try {
 
             let specialQualities = sbcUtils.sbcSplit(value)
+            specialQualities = sbcUtils.fixSplitGroup(specialQualities);
             let type = "misc"
 
             for (let i=0; i<specialQualities.length; i++) {
@@ -22,12 +23,12 @@ export class SpecialQualityParser extends ParserBase {
                     desc: "sbc | Placeholder for Special Qualities, which in most statblocks are listed under SQ in the statistics block, but described in the Special Abilities. Remove duplicates as needed!"
                 }
                 let placeholder = await sbcUtils.generatePlaceholderEntity(specialQuality, line)
-                // sbcData.characterData.items.push(placeholder)
+                
                 await createItem(placeholder);
             }
 
         } catch (err) {
-
+            sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as SQ."
             let error = new sbcError(1, "Parse/Statistics", errorMessage, line)
             sbcData.errors.push(error)

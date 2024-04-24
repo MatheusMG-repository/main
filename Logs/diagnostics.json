@@ -1,5 +1,5 @@
 {
-  "timestamp": 1713472215989,
+  "timestamp": 1713974899093,
   "os": {
     "platform": "win32",
     "version": "10.0.22631",
@@ -17,7 +17,7 @@
       "version": "3.0.0"
     },
     "fa-battlemaps": {
-      "version": "1.0.44"
+      "version": "1.0.57"
     },
     "gm-screen": {
       "version": "4.0.4"
@@ -25,11 +25,14 @@
     "ivan-duch-music-packs": {
       "version": "2.2"
     },
+    "lib-wrapper": {
+      "version": "1.12.13.0"
+    },
     "lmrtfy": {
       "version": "3.1.9"
     },
     "monks-active-tiles": {
-      "version": "11.17"
+      "version": "11.26"
     },
     "multilevel-tokens": {
       "version": "1.6.0"
@@ -41,13 +44,16 @@
       "version": "0.1.6"
     },
     "pf1-statblock-converter": {
-      "version": "4.4.0"
+      "version": "4.5.3"
+    },
+    "popout": {
+      "version": "2.16"
     },
     "soundfxlibrary": {
       "version": "1.0.2"
     },
     "statblock-library": {
-      "version": "0.3.0"
+      "version": "0.3.1"
     },
     "tagger": {
       "version": "1.4.5"
@@ -56,12 +62,12 @@
   "systems": {
     "pf1": {
       "version": "9.6",
-      "playtime": 25886
+      "playtime": 33502
     }
   },
   "worlds": {},
   "playtime": {
-    "total": 25886,
-    "max": 25886
+    "total": 33502,
+    "max": 33502
   }
 }
