@@ -1,8 +1,8 @@
 {
-  "timestamp": 1713974899093,
+  "timestamp": 1714500833115,
   "os": {
     "platform": "win32",
-    "version": "10.0.22631",
+    "version": "10.0.19045",
     "node": "18.14.0",
     "electron": "24.8.5"
   },
@@ -62,12 +62,12 @@
   "systems": {
     "pf1": {
       "version": "9.6",
-      "playtime": 33502
+      "playtime": 35035
     }
   },
   "worlds": {},
   "playtime": {
-    "total": 33502,
-    "max": 33502
+    "total": 35035,
+    "max": 35035
   }
 }

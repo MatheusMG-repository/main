@@ -1,3 +1,5 @@
-2024/04/24-12:33:45.495 254c Recovering log #94
-2024/04/24-12:33:45.498 254c Delete type=0 #94
-2024/04/24-12:33:45.498 254c Delete type=3 #93
+2024/04/30-19:13:58.200 5a74 Log #98: 0 ops saved to Table #99 OK
+2024/04/30-19:13:58.201 5a74 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\ultimate-equipment/000098.log: OK
+2024/04/30-19:13:58.204 5a74 Table #78: 3965 entries OK
+2024/04/30-19:13:58.213 5a74 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\ultimate-equipment/MANIFEST-000097: OK
+2024/04/30-19:13:58.228 5a74 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\ultimate-equipment; recovered 1 files; 385424 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2024/04/24-12:33:45.368 39b4 Recovering log #94
-2024/04/24-12:33:45.371 39b4 Delete type=0 #94
-2024/04/24-12:33:45.371 39b4 Delete type=3 #93
+2024/04/30-19:13:57.039 4778 Log #98: 0 ops saved to Table #99 OK
+2024/04/30-19:13:57.040 4778 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\mythic-paths/000098.log: OK
+2024/04/30-19:13:57.042 4778 Table #78: 6 entries OK
+2024/04/30-19:13:57.053 4778 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\mythic-paths/MANIFEST-000097: OK
+2024/04/30-19:13:57.065 4778 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\mythic-paths; recovered 1 files; 19471 bytes. Some data may have been lost. ****

@@ -32,9 +32,9 @@
     }
   ],
   "featuredContent": {
-    "title": "Plan Your Next Session with Forgotten Adventures Battlemaps!",
-    "caption": "Forgotten Adventures have released a terrific pack of free battle maps that will continue to be updated and expanded. Forgotten Adventures Battlemaps Patrons can even download their premium releases directly inside of Foundry!",
-    "url": "https://foundryvtt.com/packages/fa-battlemaps",
-    "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/fa-battlemaps-block-2024-03-26.webp"
+    "title": "Play Faster with Token Action HUD!",
+    "caption": "The Token Action HUD Core module provides a helpful and customizable quick access menu for your token's most useful features with support for 17 different game systems!",
+    "url": "https://foundryvtt.com/packages/token-action-hud-core",
+    "image": "https://foundryvtt.s3.us-west-2.amazonaws.com/website-media-dev/user_70/screen/tahud-2024-04-29.webp"
   }
 }

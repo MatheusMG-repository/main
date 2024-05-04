@@ -1,3 +1,5 @@
-2024/04/24-12:33:45.720 254c Recovering log #98
-2024/04/24-12:33:45.724 254c Delete type=0 #98
-2024/04/24-12:33:45.724 254c Delete type=3 #97
+2024/04/30-19:13:59.418 1cf8 Log #102: 0 ops saved to Table #103 OK
+2024/04/30-19:13:59.419 1cf8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-encounter-tables/000102.log: OK
+2024/04/30-19:13:59.420 1cf8 Table #82: 321 entries OK
+2024/04/30-19:13:59.429 1cf8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-encounter-tables/MANIFEST-000101: OK
+2024/04/30-19:13:59.439 1cf8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-encounter-tables; recovered 1 files; 42186 bytes. Some data may have been lost. ****

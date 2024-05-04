@@ -1,3 +1,5 @@
-2024/04/24-12:33:46.802 4030 Recovering log #29
-2024/04/24-12:33:46.805 4030 Delete type=0 #29
-2024/04/24-12:33:46.805 4030 Delete type=3 #28
+2024/04/30-19:14:05.029 1cf8 Log #33: 0 ops saved to Table #34 OK
+2024/04/30-19:14:05.031 1cf8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-plunder-and-peril/000033.log: OK
+2024/04/30-19:14:05.032 1cf8 Table #11: 36 entries OK
+2024/04/30-19:14:05.040 1cf8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-plunder-and-peril/MANIFEST-000032: OK
+2024/04/30-19:14:05.051 1cf8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-plunder-and-peril; recovered 1 files; 26568 bytes. Some data may have been lost. ****

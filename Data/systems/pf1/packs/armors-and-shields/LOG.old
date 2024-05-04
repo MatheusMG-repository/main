@@ -1,3 +1,5 @@
-2024/04/24-12:33:45.418 39b4 Recovering log #94
-2024/04/24-12:33:45.421 39b4 Delete type=0 #94
-2024/04/24-12:33:45.421 39b4 Delete type=3 #93
+2024/04/30-19:13:57.477 1cf8 Log #98: 0 ops saved to Table #99 OK
+2024/04/30-19:13:57.478 1cf8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\armors-and-shields/000098.log: OK
+2024/04/30-19:13:57.480 1cf8 Table #78: 64 entries OK
+2024/04/30-19:13:57.486 1cf8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\armors-and-shields/MANIFEST-000097: OK
+2024/04/30-19:13:57.493 1cf8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\armors-and-shields; recovered 1 files; 28717 bytes. Some data may have been lost. ****

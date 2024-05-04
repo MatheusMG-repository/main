@@ -1,3 +1,5 @@
-2024/04/24-12:33:46.741 4030 Recovering log #29
-2024/04/24-12:33:46.745 4030 Delete type=0 #29
-2024/04/24-12:33:46.745 4030 Delete type=3 #28
+2024/04/30-19:14:04.521 4778 Log #33: 0 ops saved to Table #34 OK
+2024/04/30-19:14:04.522 4778 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters/000033.log: OK
+2024/04/30-19:14:04.524 4778 Table #11: 171 entries OK
+2024/04/30-19:14:04.642 4778 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters/MANIFEST-000032: OK
+2024/04/30-19:14:04.651 4778 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters; recovered 1 files; 193133 bytes. Some data may have been lost. ****

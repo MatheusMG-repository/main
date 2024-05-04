@@ -1,3 +1,5 @@
-2024/04/24-12:33:45.952 4030 Recovering log #98
-2024/04/24-12:33:45.955 4030 Delete type=0 #98
-2024/04/24-12:33:45.956 4030 Delete type=3 #97
+2024/04/30-19:14:01.259 5a74 Log #102: 0 ops saved to Table #103 OK
+2024/04/30-19:14:01.260 5a74 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-player/000102.log: OK
+2024/04/30-19:14:01.262 5a74 Table #82: 20 entries OK
+2024/04/30-19:14:01.271 5a74 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-player/MANIFEST-000101: OK
+2024/04/30-19:14:01.281 5a74 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-player; recovered 1 files; 53944 bytes. Some data may have been lost. ****

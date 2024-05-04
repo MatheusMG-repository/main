@@ -1,3 +1,5 @@
-2024/04/24-12:33:45.488 39b4 Recovering log #94
-2024/04/24-12:33:45.491 39b4 Delete type=0 #94
-2024/04/24-12:33:45.492 39b4 Delete type=3 #93
+2024/04/30-19:13:58.149 1cf8 Log #98: 0 ops saved to Table #99 OK
+2024/04/30-19:13:58.150 1cf8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\roll-tables/000098.log: OK
+2024/04/30-19:13:58.151 1cf8 Table #78: 54 entries OK
+2024/04/30-19:13:58.160 1cf8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\roll-tables/MANIFEST-000097: OK
+2024/04/30-19:13:58.170 1cf8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\roll-tables; recovered 1 files; 11150 bytes. Some data may have been lost. ****

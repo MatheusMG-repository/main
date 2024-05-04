@@ -1,3 +1,5 @@
-2024/04/24-12:33:45.886 4030 Recovering log #98
-2024/04/24-12:33:45.889 4030 Delete type=0 #98
-2024/04/24-12:33:45.889 4030 Delete type=3 #97
+2024/04/30-19:14:00.746 1cf8 Log #102: 0 ops saved to Table #103 OK
+2024/04/30-19:14:00.748 1cf8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-technology/000102.log: OK
+2024/04/30-19:14:00.801 1cf8 Table #82: 284 entries OK
+2024/04/30-19:14:00.811 1cf8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-technology/MANIFEST-000101: OK
+2024/04/30-19:14:00.821 1cf8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-technology; recovered 1 files; 669093 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2024/04/24-12:33:46.818 39b4 Recovering log #29
-2024/04/24-12:33:46.821 39b4 Delete type=0 #29
-2024/04/24-12:33:46.821 39b4 Delete type=3 #28
+2024/04/30-19:14:05.138 4778 Log #33: 0 ops saved to Table #34 OK
+2024/04/30-19:14:05.139 4778 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air/000033.log: OK
+2024/04/30-19:14:05.141 4778 Table #11: 664 entries OK
+2024/04/30-19:14:05.150 4778 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air/MANIFEST-000032: OK
+2024/04/30-19:14:05.160 4778 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air; recovered 1 files; 471414 bytes. Some data may have been lost. ****
