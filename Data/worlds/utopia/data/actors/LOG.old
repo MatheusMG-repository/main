@@ -1,10 +1,31 @@
-2024/04/30-19:13:55.939 471c Log #294: 239 ops saved to Table #296 OK
-2024/04/30-19:13:55.941 471c Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/000294.log: OK
-2024/04/30-19:13:55.973 471c Table #268: 466 entries OK
-2024/04/30-19:13:55.975 471c Table #281: 10 entries OK
-2024/04/30-19:13:55.976 471c Table #285: 5 entries OK
-2024/04/30-19:13:55.985 471c Table #289: 1573 entries OK
-2024/04/30-19:13:55.992 471c Table #295: 698 entries OK
-2024/04/30-19:13:55.994 471c Table #296: 239 entries OK
-2024/04/30-19:13:56.000 471c Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/MANIFEST-000292: OK
-2024/04/30-19:13:56.009 471c **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors; recovered 6 files; 4677966 bytes. Some data may have been lost. ****
+2024/05/09-19:14:48.547 6924 Delete type=3 #1
+2024/05/09-19:14:57.493 69f8 Compacting 3@0 + 0@1 files
+2024/05/09-19:14:57.532 69f8 Generated table #308@0: 1569 keys, 2125978 bytes
+2024/05/09-19:14:57.576 69f8 Generated table #309@0: 540 keys, 598020 bytes
+2024/05/09-19:14:57.576 69f8 Compacted 3@0 + 0@1 files => 2723998 bytes
+2024/05/09-19:14:57.577 69f8 compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/05/09-19:14:57.577 69f8 Delete type=2 #303
+2024/05/09-19:14:57.577 69f8 Delete type=2 #304
+2024/05/09-19:14:57.578 69f8 Delete type=2 #305
+2024/05/09-19:55:39.599 69f8 Level-0 table #311: started
+2024/05/09-19:55:39.622 69f8 Level-0 table #311: 1349442 bytes OK
+2024/05/09-19:55:39.623 69f8 Delete type=0 #307
+2024/05/09-20:04:56.495 69f8 Compacting 1@0 + 2@1 files
+2024/05/09-20:04:56.546 69f8 Generated table #312@0: 1560 keys, 2124396 bytes
+2024/05/09-20:04:56.591 69f8 Generated table #313@0: 585 keys, 645532 bytes
+2024/05/09-20:04:56.591 69f8 Compacted 1@0 + 2@1 files => 2769928 bytes
+2024/05/09-20:04:56.592 69f8 compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/05/09-20:04:56.592 69f8 Delete type=2 #308
+2024/05/09-20:04:56.593 69f8 Delete type=2 #309
+2024/05/09-20:04:56.593 69f8 Delete type=2 #311
+2024/05/09-22:57:36.255 69f8 Level-0 table #315: started
+2024/05/09-22:57:36.282 69f8 Level-0 table #315: 1495941 bytes OK
+2024/05/09-22:57:36.283 69f8 Delete type=0 #310
+2024/05/09-22:59:51.623 69f8 Compacting 1@0 + 2@1 files
+2024/05/09-22:59:51.662 69f8 Generated table #316@0: 1560 keys, 2125109 bytes
+2024/05/09-22:59:51.708 69f8 Generated table #317@0: 590 keys, 652442 bytes
+2024/05/09-22:59:51.708 69f8 Compacted 1@0 + 2@1 files => 2777551 bytes
+2024/05/09-22:59:51.708 69f8 compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/05/09-22:59:51.708 69f8 Delete type=2 #312
+2024/05/09-22:59:51.709 69f8 Delete type=2 #313
+2024/05/09-22:59:51.709 69f8 Delete type=2 #315

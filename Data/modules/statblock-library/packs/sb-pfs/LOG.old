@@ -1,6 +1,1 @@
-2024/04/30-19:14:04.798 471c Log #34: 0 ops saved to Table #35 OK
-2024/04/30-19:14:04.799 471c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-pfs/000034.log: OK
-2024/04/30-19:14:04.807 471c Table #11: 3429 entries OK
-2024/04/30-19:14:04.900 471c Table #12: 1647 entries OK
-2024/04/30-19:14:04.911 471c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-pfs/MANIFEST-000033: OK
-2024/04/30-19:14:04.920 471c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-pfs; recovered 2 files; 3881068 bytes. Some data may have been lost. ****
+2024/05/09-19:14:52.834 6924 Delete type=3 #1

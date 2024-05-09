@@ -1,11 +1,5 @@
-2024/04/30-19:14:03.654 1cf8 Log #63: 0 ops saved to Table #64 OK
-2024/04/30-19:14:03.655 1cf8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-20/000063.log: OK
-2024/04/30-19:14:03.664 1cf8 Table #21: 1095 entries OK
-2024/04/30-19:14:03.673 1cf8 Table #22: 1519 entries OK
-2024/04/30-19:14:03.683 1cf8 Table #23: 1531 entries OK
-2024/04/30-19:14:03.692 1cf8 Table #24: 1671 entries OK
-2024/04/30-19:14:03.700 1cf8 Table #41: 1557 entries OK
-2024/04/30-19:14:03.709 1cf8 Table #42: 1558 entries OK
-2024/04/30-19:14:03.713 1cf8 Table #43: 534 entries OK
-2024/04/30-19:14:03.719 1cf8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-20/MANIFEST-000062: OK
-2024/04/30-19:14:03.729 1cf8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-20; recovered 7 files; 13554485 bytes. Some data may have been lost. ****
+2024/05/09-19:14:52.322 5660 Delete type=3 #1
+2024/05/09-19:14:52.323 69f8 Moved #21 to level-1 2124780 bytes OK: files[ 6 1 0 0 0 0 0 ]
+2024/05/09-19:14:52.324 69f8 Moved #22 to level-1 2130115 bytes OK: files[ 5 2 0 0 0 0 0 ]
+2024/05/09-19:14:52.324 69f8 Moved #23 to level-1 2128385 bytes OK: files[ 4 3 0 0 0 0 0 ]
+2024/05/09-19:14:52.325 69f8 Moved #24 to level-1 2130758 bytes OK: files[ 3 4 0 0 0 0 0 ]

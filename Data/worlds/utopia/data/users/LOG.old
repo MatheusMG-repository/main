@@ -1,6 +1,1 @@
-2024/04/30-19:13:56.880 5a74 Log #140: 0 ops saved to Table #141 OK
-2024/04/30-19:13:56.881 5a74 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/users/000140.log: OK
-2024/04/30-19:13:56.882 5a74 Table #119: 8 entries OK
-2024/04/30-19:13:56.883 5a74 Table #135: 26 entries OK
-2024/04/30-19:13:56.896 5a74 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/users/MANIFEST-000139: OK
-2024/04/30-19:13:56.906 5a74 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/users; recovered 2 files; 13950 bytes. Some data may have been lost. ****
+2024/05/09-19:14:49.131 6924 Delete type=3 #1
