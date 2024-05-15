@@ -1,6 +1,3 @@
-2024/05/09-19:14:51.094 674c Delete type=3 #1
-2024/05/09-19:14:51.094 69f8 Compacting 4@0 + 0@1 files
-2024/05/09-19:14:51.144 69f8 Generated table #74@0: 857 keys, 2122303 bytes
-2024/05/09-19:14:51.144 69f8 Compacted 4@0 + 0@1 files => 2122303 bytes
-2024/05/09-19:14:51.145 69f8 compacted to: files[ 4 1 0 0 0 0 0 ]
-2024/05/09-19:14:51.146 69f8 Moved #23 to level-1 2129833 bytes OK: files[ 3 2 0 0 0 0 0 ]
+2024/05/14-18:59:19.861 c18 Recovering log #81
+2024/05/14-18:59:19.865 c18 Delete type=0 #81
+2024/05/14-18:59:19.866 c18 Delete type=3 #80

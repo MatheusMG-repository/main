@@ -1,1 +1,5 @@
-2024/05/09-19:14:48.641 60fc Delete type=3 #1
+2024/05/14-18:59:17.891 1aec Recovering log #165
+2024/05/14-18:59:17.891 1aec Level-0 table #167: started
+2024/05/14-18:59:17.893 1aec Level-0 table #167: 16978 bytes OK
+2024/05/14-18:59:17.897 1aec Delete type=0 #165
+2024/05/14-18:59:17.897 1aec Delete type=3 #163

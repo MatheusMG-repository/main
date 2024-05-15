@@ -1,5 +1,5 @@
-2024/05/09-23:12:35.899 595c Recovering log #179
-2024/05/09-23:12:35.899 595c Level-0 table #182: started
-2024/05/09-23:12:35.907 595c Level-0 table #182: 2660 bytes OK
-2024/05/09-23:12:35.911 595c Delete type=0 #179
-2024/05/09-23:12:35.911 595c Delete type=3 #178
+2024/05/15-19:09:15.854 1cb4 Recovering log #193
+2024/05/15-19:09:15.854 1cb4 Level-0 table #195: started
+2024/05/15-19:09:15.859 1cb4 Level-0 table #195: 2660 bytes OK
+2024/05/15-19:09:15.862 1cb4 Delete type=0 #193
+2024/05/15-19:09:15.862 1cb4 Delete type=3 #191

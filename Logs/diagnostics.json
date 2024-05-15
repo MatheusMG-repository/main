@@ -1,5 +1,5 @@
 {
-  "timestamp": 1715292753287,
+  "timestamp": 1715796453755,
   "os": {
     "platform": "win32",
     "version": "10.0.22631",
@@ -62,12 +62,12 @@
   "systems": {
     "pf1": {
       "version": "9.6",
-      "playtime": 35035
+      "playtime": 38966
     }
   },
   "worlds": {},
   "playtime": {
-    "total": 35035,
-    "max": 35035
+    "total": 38966,
+    "max": 38966
   }
 }
