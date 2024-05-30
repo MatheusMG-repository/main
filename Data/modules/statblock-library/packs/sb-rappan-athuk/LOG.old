@@ -1,3 +1,5 @@
-2024/05/14-18:59:21.341 20a8 Recovering log #46
-2024/05/14-18:59:21.344 20a8 Delete type=0 #46
-2024/05/14-18:59:21.344 20a8 Delete type=3 #45
+2024/05/21-18:25:30.369 5d54 Log #50: 0 ops saved to Table #51 OK
+2024/05/21-18:25:30.370 5d54 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-rappan-athuk/000050.log: OK
+2024/05/21-18:25:30.377 5d54 Table #11: 1358 entries OK
+2024/05/21-18:25:30.394 5d54 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-rappan-athuk/MANIFEST-000049: OK
+2024/05/21-18:25:30.411 5d54 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-rappan-athuk; recovered 1 files; 935976 bytes. Some data may have been lost. ****

@@ -1,3 +1,9 @@
-2024/05/14-18:59:17.929 20a8 Recovering log #208
-2024/05/14-18:59:17.932 20a8 Delete type=0 #208
-2024/05/14-18:59:17.932 20a8 Delete type=3 #207
+2024/05/21-18:25:15.312 5d54 Log #213: 3 ops saved to Table #214 OK
+2024/05/21-18:25:15.314 5d54 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog/000213.log: OK
+2024/05/21-18:25:15.317 5d54 Table #160: 1 entries OK
+2024/05/21-18:25:15.321 5d54 Table #205: 89 entries OK
+2024/05/21-18:25:15.322 5d54 Table #206: 7 entries OK
+2024/05/21-18:25:15.324 5d54 Table #212: 35 entries OK
+2024/05/21-18:25:15.324 5d54 Table #214: 3 entries OK
+2024/05/21-18:25:15.334 5d54 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000211: OK
+2024/05/21-18:25:15.344 5d54 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog; recovered 5 files; 3340310 bytes. Some data may have been lost. ****

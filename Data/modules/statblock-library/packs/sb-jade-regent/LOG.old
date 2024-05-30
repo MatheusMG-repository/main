@@ -1,3 +1,5 @@
-2024/05/14-18:59:21.580 41a0 Recovering log #46
-2024/05/14-18:59:21.584 41a0 Delete type=0 #46
-2024/05/14-18:59:21.584 41a0 Delete type=3 #45
+2024/05/21-18:25:31.297 6fa8 Log #50: 0 ops saved to Table #51 OK
+2024/05/21-18:25:31.298 6fa8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-jade-regent/000050.log: OK
+2024/05/21-18:25:31.303 6fa8 Table #11: 368 entries OK
+2024/05/21-18:25:31.312 6fa8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-jade-regent/MANIFEST-000049: OK
+2024/05/21-18:25:31.322 6fa8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-jade-regent; recovered 1 files; 398310 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2024/05/14-18:59:21.641 c18 Recovering log #46
-2024/05/14-18:59:21.644 c18 Delete type=0 #46
-2024/05/14-18:59:21.644 c18 Delete type=3 #45
+2024/05/21-18:25:31.575 6964 Log #50: 0 ops saved to Table #51 OK
+2024/05/21-18:25:31.577 6964 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-serpents-skull/000050.log: OK
+2024/05/21-18:25:31.606 6964 Table #11: 517 entries OK
+2024/05/21-18:25:31.615 6964 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-serpents-skull/MANIFEST-000049: OK
+2024/05/21-18:25:31.625 6964 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-serpents-skull; recovered 1 files; 504908 bytes. Some data may have been lost. ****

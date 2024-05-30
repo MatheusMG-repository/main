@@ -1,3 +1,5 @@
-2024/05/14-18:59:21.697 1aec Recovering log #46
-2024/05/14-18:59:21.700 1aec Delete type=0 #46
-2024/05/14-18:59:21.700 1aec Delete type=3 #45
+2024/05/21-18:25:31.777 6964 Log #50: 0 ops saved to Table #51 OK
+2024/05/21-18:25:31.779 6964 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-reign-of-winter/000050.log: OK
+2024/05/21-18:25:31.784 6964 Table #11: 402 entries OK
+2024/05/21-18:25:31.793 6964 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-reign-of-winter/MANIFEST-000049: OK
+2024/05/21-18:25:31.803 6964 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-reign-of-winter; recovered 1 files; 397208 bytes. Some data may have been lost. ****

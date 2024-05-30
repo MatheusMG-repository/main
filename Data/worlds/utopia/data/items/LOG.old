@@ -1,3 +1,8 @@
-2024/05/14-18:59:17.969 20a8 Recovering log #140
-2024/05/14-18:59:17.972 20a8 Delete type=0 #140
-2024/05/14-18:59:17.973 20a8 Delete type=3 #139
+2024/05/21-18:25:15.461 4870 Log #144: 0 ops saved to Table #145 OK
+2024/05/21-18:25:15.462 4870 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/items/000144.log: OK
+2024/05/21-18:25:15.469 4870 Table #66: 1 entries OK
+2024/05/21-18:25:15.473 4870 Table #79: 1 entries OK
+2024/05/21-18:25:15.479 4870 Table #84: 2 entries OK
+2024/05/21-18:25:15.486 4870 Table #87: 6 entries OK
+2024/05/21-18:25:15.495 4870 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/items/MANIFEST-000143: OK
+2024/05/21-18:25:15.505 4870 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/items; recovered 4 files; 8393 bytes. Some data may have been lost. ****

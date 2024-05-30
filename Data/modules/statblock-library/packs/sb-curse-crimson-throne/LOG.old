@@ -1,3 +1,5 @@
-2024/05/14-18:59:21.504 c18 Recovering log #46
-2024/05/14-18:59:21.507 c18 Delete type=0 #46
-2024/05/14-18:59:21.507 c18 Delete type=3 #45
+2024/05/21-18:25:30.961 5d54 Log #50: 0 ops saved to Table #51 OK
+2024/05/21-18:25:30.962 5d54 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne/000050.log: OK
+2024/05/21-18:25:30.967 5d54 Table #11: 340 entries OK
+2024/05/21-18:25:30.977 5d54 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne/MANIFEST-000049: OK
+2024/05/21-18:25:30.987 5d54 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne; recovered 1 files; 315016 bytes. Some data may have been lost. ****

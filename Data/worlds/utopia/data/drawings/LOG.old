@@ -1,3 +1,4 @@
-2024/05/14-18:59:17.916 1aec Recovering log #137
-2024/05/14-18:59:17.919 1aec Delete type=0 #137
-2024/05/14-18:59:17.919 1aec Delete type=3 #136
+2024/05/21-18:25:15.246 6fa8 Log #141: 0 ops saved to Table #142 OK
+2024/05/21-18:25:15.247 6fa8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings/000141.log: OK
+2024/05/21-18:25:15.257 6fa8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings/MANIFEST-000140: OK
+2024/05/21-18:25:15.266 6fa8 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings; recovered 0 files; 0 bytes. Some data may have been lost. ****

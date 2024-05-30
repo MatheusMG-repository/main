@@ -1,3 +1,5 @@
-2024/05/14-18:59:21.618 c18 Recovering log #46
-2024/05/14-18:59:21.622 c18 Delete type=0 #46
-2024/05/14-18:59:21.622 c18 Delete type=3 #45
+2024/05/21-18:25:31.471 4870 Log #50: 0 ops saved to Table #51 OK
+2024/05/21-18:25:31.472 4870 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box/000050.log: OK
+2024/05/21-18:25:31.474 4870 Table #11: 45 entries OK
+2024/05/21-18:25:31.483 4870 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box/MANIFEST-000049: OK
+2024/05/21-18:25:31.493 4870 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box; recovered 1 files; 31862 bytes. Some data may have been lost. ****

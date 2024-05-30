@@ -1,3 +1,6 @@
-2024/05/14-18:59:19.047 c18 Recovering log #118
-2024/05/14-18:59:19.051 c18 Delete type=0 #118
-2024/05/14-18:59:19.051 c18 Delete type=3 #117
+2024/05/21-18:25:19.089 6fa8 Log #122: 0 ops saved to Table #123 OK
+2024/05/21-18:25:19.090 6fa8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-familiars/000122.log: OK
+2024/05/21-18:25:19.111 6fa8 Table #84: 1205 entries OK
+2024/05/21-18:25:19.122 6fa8 Table #85: 800 entries OK
+2024/05/21-18:25:19.134 6fa8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-familiars/MANIFEST-000121: OK
+2024/05/21-18:25:19.150 6fa8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-familiars; recovered 2 files; 2764616 bytes. Some data may have been lost. ****

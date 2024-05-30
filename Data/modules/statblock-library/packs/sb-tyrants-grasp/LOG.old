@@ -1,3 +1,5 @@
-2024/05/14-18:59:21.759 1aec Recovering log #46
-2024/05/14-18:59:21.762 1aec Delete type=0 #46
-2024/05/14-18:59:21.762 1aec Delete type=3 #45
+2024/05/21-18:25:32.132 6fa8 Log #50: 0 ops saved to Table #51 OK
+2024/05/21-18:25:32.133 6fa8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tyrants-grasp/000050.log: OK
+2024/05/21-18:25:32.138 6fa8 Table #11: 412 entries OK
+2024/05/21-18:25:32.147 6fa8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tyrants-grasp/MANIFEST-000049: OK
+2024/05/21-18:25:32.156 6fa8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tyrants-grasp; recovered 1 files; 462860 bytes. Some data may have been lost. ****

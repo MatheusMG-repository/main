@@ -1,3 +1,5 @@
-2024/05/14-18:59:21.593 c18 Recovering log #46
-2024/05/14-18:59:21.596 c18 Delete type=0 #46
-2024/05/14-18:59:21.597 c18 Delete type=3 #45
+2024/05/21-18:25:31.354 6964 Log #50: 0 ops saved to Table #51 OK
+2024/05/21-18:25:31.356 6964 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker/000050.log: OK
+2024/05/21-18:25:31.360 6964 Table #11: 383 entries OK
+2024/05/21-18:25:31.369 6964 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker/MANIFEST-000049: OK
+2024/05/21-18:25:31.379 6964 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker; recovered 1 files; 369419 bytes. Some data may have been lost. ****

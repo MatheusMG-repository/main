@@ -1,3 +1,5 @@
-2024/05/14-18:59:21.748 20a8 Recovering log #46
-2024/05/14-18:59:21.752 20a8 Delete type=0 #46
-2024/05/14-18:59:21.752 20a8 Delete type=3 #45
+2024/05/21-18:25:32.083 4870 Log #50: 0 ops saved to Table #51 OK
+2024/05/21-18:25:32.084 4870 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tomb-of-the-iron-medusa/000050.log: OK
+2024/05/21-18:25:32.086 4870 Table #11: 18 entries OK
+2024/05/21-18:25:32.094 4870 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tomb-of-the-iron-medusa/MANIFEST-000049: OK
+2024/05/21-18:25:32.104 4870 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tomb-of-the-iron-medusa; recovered 1 files; 17237 bytes. Some data may have been lost. ****

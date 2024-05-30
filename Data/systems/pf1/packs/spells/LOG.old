@@ -1,3 +1,6 @@
-2024/05/14-18:59:18.185 c18 Recovering log #113
-2024/05/14-18:59:18.189 c18 Delete type=0 #113
-2024/05/14-18:59:18.189 c18 Delete type=3 #112
+2024/05/21-18:25:16.293 6fa8 Log #117: 0 ops saved to Table #118 OK
+2024/05/21-18:25:16.294 6fa8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\spells/000117.log: OK
+2024/05/21-18:25:16.473 6fa8 Table #79: 2328 entries OK
+2024/05/21-18:25:16.495 6fa8 Table #80: 701 entries OK
+2024/05/21-18:25:16.504 6fa8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\spells/MANIFEST-000116: OK
+2024/05/21-18:25:16.514 6fa8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\spells; recovered 2 files; 2738890 bytes. Some data may have been lost. ****
