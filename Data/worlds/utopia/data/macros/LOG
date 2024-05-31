@@ -1,1 +1,5 @@
-2024/05/21-18:25:15.649 5d54 Delete type=3 #1
+2024/05/31-11:16:24.495 5cfc Recovering log #165
+2024/05/31-11:16:24.495 5cfc Level-0 table #168: started
+2024/05/31-11:16:24.501 5cfc Level-0 table #168: 1092 bytes OK
+2024/05/31-11:16:24.505 5cfc Delete type=0 #165
+2024/05/31-11:16:24.505 5cfc Delete type=3 #164

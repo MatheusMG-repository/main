@@ -1,9 +1,10 @@
-2024/05/21-18:25:15.312 5d54 Log #213: 3 ops saved to Table #214 OK
-2024/05/21-18:25:15.314 5d54 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog/000213.log: OK
-2024/05/21-18:25:15.317 5d54 Table #160: 1 entries OK
-2024/05/21-18:25:15.321 5d54 Table #205: 89 entries OK
-2024/05/21-18:25:15.322 5d54 Table #206: 7 entries OK
-2024/05/21-18:25:15.324 5d54 Table #212: 35 entries OK
-2024/05/21-18:25:15.324 5d54 Table #214: 3 entries OK
-2024/05/21-18:25:15.334 5d54 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000211: OK
-2024/05/21-18:25:15.344 5d54 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog; recovered 5 files; 3340310 bytes. Some data may have been lost. ****
+2024/05/30-17:49:08.847 6270 Delete type=3 #1
+2024/05/30-17:49:08.847 5750 Compacting 4@0 + 0@1 files
+2024/05/30-17:49:08.859 5750 Generated table #224@0: 87 keys, 2104609 bytes
+2024/05/30-17:49:08.863 5750 Generated table #225@0: 14 keys, 417419 bytes
+2024/05/30-17:49:08.863 5750 Compacted 4@0 + 0@1 files => 2522028 bytes
+2024/05/30-17:49:08.864 5750 compacted to: files[ 1 2 0 0 0 0 0 ]
+2024/05/30-17:49:08.864 5750 Delete type=2 #217
+2024/05/30-17:49:08.864 5750 Delete type=2 #218
+2024/05/30-17:49:08.864 5750 Delete type=2 #220
+2024/05/30-17:49:08.864 5750 Delete type=2 #221

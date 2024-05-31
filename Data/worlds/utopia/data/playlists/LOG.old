@@ -1,7 +1,9 @@
-2024/05/21-18:25:15.662 6964 Log #156: 0 ops saved to Table #157 OK
-2024/05/21-18:25:15.663 6964 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/000156.log: OK
-2024/05/21-18:25:15.665 6964 Table #150: 230 entries OK
-2024/05/21-18:25:15.667 6964 Table #152: 720 entries OK
-2024/05/21-18:25:15.668 6964 Table #155: 1174 entries OK
-2024/05/21-18:25:15.677 6964 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/MANIFEST-000154: OK
-2024/05/21-18:25:15.695 6964 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists; recovered 3 files; 137860 bytes. Some data may have been lost. ****
+2024/05/30-17:49:08.967 4c3c Delete type=3 #1
+2024/05/30-17:49:08.967 5750 Compacting 4@0 + 0@1 files
+2024/05/30-17:49:08.970 5750 Generated table #163@0: 230 keys, 24807 bytes
+2024/05/30-17:49:08.970 5750 Compacted 4@0 + 0@1 files => 24807 bytes
+2024/05/30-17:49:08.971 5750 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/05/30-17:49:08.971 5750 Delete type=2 #150
+2024/05/30-17:49:08.971 5750 Delete type=2 #152
+2024/05/30-17:49:08.971 5750 Delete type=2 #155
+2024/05/30-17:49:08.971 5750 Delete type=2 #160

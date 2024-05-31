@@ -1,6 +1,7 @@
-2024/05/21-18:25:15.193 4870 Log #167: 46 ops saved to Table #169 OK
-2024/05/21-18:25:15.195 4870 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/000167.log: OK
-2024/05/21-18:25:15.196 4870 Table #168: 42 entries OK
-2024/05/21-18:25:15.196 4870 Table #169: 46 entries OK
-2024/05/21-18:25:15.205 4870 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/MANIFEST-000165: OK
-2024/05/21-18:25:15.215 4870 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats; recovered 2 files; 7659 bytes. Some data may have been lost. ****
+2024/05/30-17:49:08.802 3210 Delete type=3 #1
+2024/05/30-19:17:14.294 5750 Compacting 2@0 + 0@1 files
+2024/05/30-19:17:14.301 5750 Generated table #176@0: 28 keys, 3194 bytes
+2024/05/30-19:17:14.301 5750 Compacted 2@0 + 0@1 files => 3194 bytes
+2024/05/30-19:17:14.303 5750 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/05/30-19:17:14.303 5750 Delete type=2 #172
+2024/05/30-19:17:14.303 5750 Delete type=2 #173

@@ -1,13 +1,5 @@
-2024/05/21-18:25:15.366 5d54 Delete type=3 #1
-2024/05/21-18:25:15.366 1a38 Compacting 4@0 + 0@1 files
-2024/05/21-18:25:15.390 1a38 Generated table #217@0: 91 keys, 2116163 bytes
-2024/05/21-18:25:15.396 1a38 Generated table #218@0: 11 keys, 391413 bytes
-2024/05/21-18:25:15.396 1a38 Compacted 4@0 + 0@1 files => 2507576 bytes
-2024/05/21-18:25:15.404 1a38 compacted to: files[ 1 2 0 0 0 0 0 ]
-2024/05/21-18:25:15.404 1a38 Delete type=2 #205
-2024/05/21-18:25:15.404 1a38 Delete type=2 #206
-2024/05/21-18:25:15.405 1a38 Delete type=2 #212
-2024/05/21-18:25:15.405 1a38 Delete type=2 #214
-2024/05/21-21:42:25.468 1a38 Level-0 table #220: started
-2024/05/21-21:42:25.807 1a38 Level-0 table #220: 2796108 bytes OK
-2024/05/21-21:42:25.889 1a38 Delete type=0 #216
+2024/05/31-11:16:24.404 5cfc Recovering log #223
+2024/05/31-11:16:24.404 5cfc Level-0 table #227: started
+2024/05/31-11:16:24.407 5cfc Level-0 table #227: 183168 bytes OK
+2024/05/31-11:16:24.411 5cfc Delete type=0 #223
+2024/05/31-11:16:24.411 5cfc Delete type=3 #222

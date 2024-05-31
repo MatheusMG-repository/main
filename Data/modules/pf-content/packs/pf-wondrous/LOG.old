@@ -1,6 +1,1 @@
-2024/05/21-18:25:21.117 5d54 Log #122: 0 ops saved to Table #123 OK
-2024/05/21-18:25:21.118 5d54 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous/000122.log: OK
-2024/05/21-18:25:21.131 5d54 Table #84: 1724 entries OK
-2024/05/21-18:25:21.211 5d54 Table #85: 1248 entries OK
-2024/05/21-18:25:21.222 5d54 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous/MANIFEST-000121: OK
-2024/05/21-18:25:21.236 5d54 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous; recovered 2 files; 3640262 bytes. Some data may have been lost. ****
+2024/05/30-17:49:10.783 2c68 Delete type=3 #1
