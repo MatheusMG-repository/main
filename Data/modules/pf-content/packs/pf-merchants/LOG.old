@@ -1,1 +1,5 @@
-2024/05/30-17:49:10.382 3210 Delete type=3 #1
+2024/06/04-17:45:21.105 1ca8 Log #127: 0 ops saved to Table #128 OK
+2024/06/04-17:45:21.105 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-merchants/000127.log: OK
+2024/06/04-17:45:21.111 1ca8 Table #82: 878 entries OK
+2024/06/04-17:45:21.114 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-merchants/MANIFEST-000126: OK
+2024/06/04-17:45:21.117 1ca8 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-merchants; recovered 1 files; 965848 bytes. Some data may have been lost. ****

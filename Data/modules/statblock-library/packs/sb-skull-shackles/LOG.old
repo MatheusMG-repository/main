@@ -1,1 +1,5 @@
-2024/05/30-17:49:13.145 2c68 Delete type=3 #1
+2024/06/04-17:45:25.496 7e4c Log #58: 0 ops saved to Table #59 OK
+2024/06/04-17:45:25.497 7e4c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-skull-shackles/000058.log: OK
+2024/06/04-17:45:25.501 7e4c Table #11: 547 entries OK
+2024/06/04-17:45:25.504 7e4c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-skull-shackles/MANIFEST-000057: OK
+2024/06/04-17:45:25.507 7e4c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-skull-shackles; recovered 1 files; 534590 bytes. Some data may have been lost. ****

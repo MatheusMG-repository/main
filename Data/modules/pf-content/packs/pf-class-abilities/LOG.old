@@ -1,1 +1,5 @@
-2024/05/30-17:49:09.860 6270 Delete type=3 #1
+2024/06/04-17:45:20.284 4c58 Log #127: 0 ops saved to Table #128 OK
+2024/06/04-17:45:20.285 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-class-abilities/000127.log: OK
+2024/06/04-17:45:20.290 4c58 Table #82: 935 entries OK
+2024/06/04-17:45:20.293 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-class-abilities/MANIFEST-000126: OK
+2024/06/04-17:45:20.296 4c58 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-class-abilities; recovered 1 files; 602920 bytes. Some data may have been lost. ****

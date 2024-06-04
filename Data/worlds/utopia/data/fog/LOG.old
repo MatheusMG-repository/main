@@ -1,10 +1,8 @@
-2024/05/30-17:49:08.847 6270 Delete type=3 #1
-2024/05/30-17:49:08.847 5750 Compacting 4@0 + 0@1 files
-2024/05/30-17:49:08.859 5750 Generated table #224@0: 87 keys, 2104609 bytes
-2024/05/30-17:49:08.863 5750 Generated table #225@0: 14 keys, 417419 bytes
-2024/05/30-17:49:08.863 5750 Compacted 4@0 + 0@1 files => 2522028 bytes
-2024/05/30-17:49:08.864 5750 compacted to: files[ 1 2 0 0 0 0 0 ]
-2024/05/30-17:49:08.864 5750 Delete type=2 #217
-2024/05/30-17:49:08.864 5750 Delete type=2 #218
-2024/05/30-17:49:08.864 5750 Delete type=2 #220
-2024/05/30-17:49:08.864 5750 Delete type=2 #221
+2024/06/04-17:45:18.704 4c58 Log #228: 0 ops saved to Table #229 OK
+2024/06/04-17:45:18.705 4c58 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/000228.log: OK
+2024/06/04-17:45:18.707 4c58 Table #160: 1 entries OK
+2024/06/04-17:45:18.711 4c58 Table #224: 87 entries OK
+2024/06/04-17:45:18.712 4c58 Table #225: 14 entries OK
+2024/06/04-17:45:18.713 4c58 Table #227: 14 entries OK
+2024/06/04-17:45:18.716 4c58 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000226: OK
+2024/06/04-17:45:18.719 4c58 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog; recovered 4 files; 2771594 bytes. Some data may have been lost. ****

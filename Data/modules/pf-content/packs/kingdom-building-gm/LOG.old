@@ -1,1 +1,5 @@
-2024/05/30-17:49:10.816 6270 Delete type=3 #1
+2024/06/04-17:45:21.781 4c58 Log #127: 0 ops saved to Table #128 OK
+2024/06/04-17:45:21.782 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\kingdom-building-gm/000127.log: OK
+2024/06/04-17:45:21.787 4c58 Table #82: 77 entries OK
+2024/06/04-17:45:21.790 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\kingdom-building-gm/MANIFEST-000126: OK
+2024/06/04-17:45:21.793 4c58 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\kingdom-building-gm; recovered 1 files; 104402 bytes. Some data may have been lost. ****

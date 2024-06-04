@@ -1,1 +1,6 @@
-2024/05/30-17:49:12.857 6270 Delete type=3 #1
+2024/06/04-17:45:24.927 4c58 Log #59: 0 ops saved to Table #60 OK
+2024/06/04-17:45:24.928 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors/000059.log: OK
+2024/06/04-17:45:24.937 4c58 Table #11: 2030 entries OK
+2024/06/04-17:45:24.991 4c58 Table #12: 713 entries OK
+2024/06/04-17:45:24.994 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors/MANIFEST-000058: OK
+2024/06/04-17:45:24.998 4c58 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors; recovered 2 files; 3268250 bytes. Some data may have been lost. ****

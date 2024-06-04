@@ -1,1 +1,5 @@
-2024/05/30-17:49:12.938 6270 Delete type=3 #1
+2024/06/04-17:45:25.118 4c58 Log #58: 0 ops saved to Table #59 OK
+2024/06/04-17:45:25.119 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-council-of-thieves/000058.log: OK
+2024/06/04-17:45:25.132 4c58 Table #11: 318 entries OK
+2024/06/04-17:45:25.135 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-council-of-thieves/MANIFEST-000057: OK
+2024/06/04-17:45:25.138 4c58 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-council-of-thieves; recovered 1 files; 347679 bytes. Some data may have been lost. ****

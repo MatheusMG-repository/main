@@ -1,5 +1,7 @@
-2024/05/31-11:16:24.371 5cfc Recovering log #175
-2024/05/31-11:16:24.372 5cfc Level-0 table #178: started
-2024/05/31-11:16:24.373 5cfc Level-0 table #178: 9720 bytes OK
-2024/05/31-11:16:24.376 5cfc Delete type=0 #175
-2024/05/31-11:16:24.377 5cfc Delete type=3 #174
+2024/06/04-17:45:18.674 4c58 Delete type=3 #1
+2024/06/04-19:26:49.891 4558 Compacting 2@0 + 0@1 files
+2024/06/04-19:26:49.895 4558 Generated table #183@0: 37 keys, 4275 bytes
+2024/06/04-19:26:49.895 4558 Compacted 2@0 + 0@1 files => 4275 bytes
+2024/06/04-19:26:49.897 4558 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/06/04-19:26:49.897 4558 Delete type=2 #176
+2024/06/04-19:26:49.898 4558 Delete type=2 #178

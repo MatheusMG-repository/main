@@ -1,1 +1,5 @@
-2024/05/30-17:49:10.726 4c3c Delete type=3 #1
+2024/06/04-17:45:21.641 4c58 Log #127: 0 ops saved to Table #128 OK
+2024/06/04-17:45:21.642 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-universal-monster-rules/000127.log: OK
+2024/06/04-17:45:21.647 4c58 Table #82: 147 entries OK
+2024/06/04-17:45:21.651 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-universal-monster-rules/MANIFEST-000126: OK
+2024/06/04-17:45:21.655 4c58 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-universal-monster-rules; recovered 1 files; 164076 bytes. Some data may have been lost. ****

@@ -1,1 +1,4 @@
-2024/05/30-17:49:10.221 3210 Delete type=3 #1
+2024/06/04-17:45:20.853 1ca8 Log #121: 0 ops saved to Table #122 OK
+2024/06/04-17:45:20.854 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\gm-quick-reference/000121.log: OK
+2024/06/04-17:45:20.857 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\gm-quick-reference/MANIFEST-000120: OK
+2024/06/04-17:45:20.860 1ca8 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\gm-quick-reference; recovered 0 files; 0 bytes. Some data may have been lost. ****

@@ -1,1 +1,5 @@
-2024/05/30-17:49:13.056 6270 Delete type=3 #1
+2024/06/04-17:45:25.350 4c58 Log #58: 0 ops saved to Table #59 OK
+2024/06/04-17:45:25.351 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-kingmaker/000058.log: OK
+2024/06/04-17:45:25.355 4c58 Table #11: 383 entries OK
+2024/06/04-17:45:25.357 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-kingmaker/MANIFEST-000057: OK
+2024/06/04-17:45:25.361 4c58 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-kingmaker; recovered 1 files; 369419 bytes. Some data may have been lost. ****

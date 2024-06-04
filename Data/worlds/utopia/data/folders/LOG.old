@@ -1,1 +1,7 @@
-2024/05/30-17:49:08.875 4c3c Delete type=3 #1
+2024/06/04-17:45:18.743 7e4c Log #165: 0 ops saved to Table #166 OK
+2024/06/04-17:45:18.744 7e4c Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/folders/000165.log: OK
+2024/06/04-17:45:18.750 7e4c Table #118: 20 entries OK
+2024/06/04-17:45:18.753 7e4c Table #122: 6 entries OK
+2024/06/04-17:45:18.756 7e4c Table #125: 1 entries OK
+2024/06/04-17:45:18.759 7e4c Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/folders/MANIFEST-000164: OK
+2024/06/04-17:45:18.763 7e4c **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/folders; recovered 3 files; 3525 bytes. Some data may have been lost. ****

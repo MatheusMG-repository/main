@@ -1,1 +1,5 @@
-2024/05/30-17:49:13.099 2c68 Delete type=3 #1
+2024/06/04-17:45:25.424 1ca8 Log #58: 0 ops saved to Table #59 OK
+2024/06/04-17:45:25.425 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-rise-of-runelords/000058.log: OK
+2024/06/04-17:45:25.429 1ca8 Table #11: 292 entries OK
+2024/06/04-17:45:25.431 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-rise-of-runelords/MANIFEST-000057: OK
+2024/06/04-17:45:25.435 1ca8 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-rise-of-runelords; recovered 1 files; 271905 bytes. Some data may have been lost. ****

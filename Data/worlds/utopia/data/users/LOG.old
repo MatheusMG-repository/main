@@ -1,9 +1,6 @@
-2024/05/30-17:49:09.080 3210 Delete type=3 #1
-2024/05/30-17:49:09.080 5750 Compacting 4@0 + 0@1 files
-2024/05/30-17:49:09.082 5750 Generated table #168@0: 9 keys, 4851 bytes
-2024/05/30-17:49:09.082 5750 Compacted 4@0 + 0@1 files => 4851 bytes
-2024/05/30-17:49:09.083 5750 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/05/30-17:49:09.083 5750 Delete type=2 #150
-2024/05/30-17:49:09.083 5750 Delete type=2 #155
-2024/05/30-17:49:09.083 5750 Delete type=2 #160
-2024/05/30-17:49:09.083 5750 Delete type=2 #165
+2024/06/04-17:45:19.028 1ca8 Log #171: 0 ops saved to Table #172 OK
+2024/06/04-17:45:19.029 1ca8 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/users/000171.log: OK
+2024/06/04-17:45:19.030 1ca8 Table #168: 9 entries OK
+2024/06/04-17:45:19.034 1ca8 Table #170: 9 entries OK
+2024/06/04-17:45:19.038 1ca8 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/users/MANIFEST-000169: OK
+2024/06/04-17:45:19.041 1ca8 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/users; recovered 2 files; 7818 bytes. Some data may have been lost. ****

@@ -1,1 +1,6 @@
-2024/05/30-17:49:10.099 6270 Delete type=3 #1
+2024/06/04-17:45:20.659 4c58 Log #130: 0 ops saved to Table #131 OK
+2024/06/04-17:45:20.660 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-familiars/000130.log: OK
+2024/06/04-17:45:20.670 4c58 Table #84: 1205 entries OK
+2024/06/04-17:45:20.675 4c58 Table #85: 800 entries OK
+2024/06/04-17:45:20.679 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-familiars/MANIFEST-000129: OK
+2024/06/04-17:45:20.681 4c58 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-familiars; recovered 2 files; 2764616 bytes. Some data may have been lost. ****

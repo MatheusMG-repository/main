@@ -1,1 +1,5 @@
-2024/05/30-17:49:10.710 3210 Delete type=3 #1
+2024/06/04-17:45:21.610 1ca8 Log #127: 0 ops saved to Table #128 OK
+2024/06/04-17:45:21.610 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-traps-and-haunts/000127.log: OK
+2024/06/04-17:45:21.615 1ca8 Table #82: 135 entries OK
+2024/06/04-17:45:21.619 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-traps-and-haunts/MANIFEST-000126: OK
+2024/06/04-17:45:21.623 1ca8 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-traps-and-haunts; recovered 1 files; 478717 bytes. Some data may have been lost. ****

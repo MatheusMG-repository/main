@@ -1,7 +1,10 @@
-2024/05/30-17:49:11.453 6270 Delete type=3 #1
-2024/05/30-17:49:11.454 5750 Compacting 3@0 + 0@1 files
-2024/05/30-17:49:11.482 5750 Generated table #88@0: 926 keys, 2122064 bytes
-2024/05/30-17:49:11.482 5750 Compacted 3@0 + 0@1 files => 2122064 bytes
-2024/05/30-17:49:11.483 5750 compacted to: files[ 5 1 0 0 0 0 0 ]
-2024/05/30-17:49:11.483 5750 Moved #22 to level-1 2130307 bytes OK: files[ 4 2 0 0 0 0 0 ]
-2024/05/30-17:49:11.484 5750 Moved #23 to level-1 2129521 bytes OK: files[ 3 3 0 0 0 0 0 ]
+2024/06/04-17:45:22.642 4c58 Log #90: 0 ops saved to Table #91 OK
+2024/06/04-17:45:22.643 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-06/000090.log: OK
+2024/06/04-17:45:22.654 4c58 Table #22: 1799 entries OK
+2024/06/04-17:45:22.665 4c58 Table #23: 1833 entries OK
+2024/06/04-17:45:22.745 4c58 Table #40: 1750 entries OK
+2024/06/04-17:45:22.755 4c58 Table #41: 1784 entries OK
+2024/06/04-17:45:22.763 4c58 Table #42: 1117 entries OK
+2024/06/04-17:45:22.771 4c58 Table #88: 926 entries OK
+2024/06/04-17:45:22.774 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-06/MANIFEST-000089: OK
+2024/06/04-17:45:22.778 4c58 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-06; recovered 6 files; 11918430 bytes. Some data may have been lost. ****
