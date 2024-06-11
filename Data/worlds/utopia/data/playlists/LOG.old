@@ -1,5 +1,6 @@
-2024/06/04-17:45:18.884 7e4c Log #166: 0 ops saved to Table #168 OK
-2024/06/04-17:45:18.885 7e4c Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists/000166.log: OK
-2024/06/04-17:45:18.886 7e4c Table #167: 230 entries OK
-2024/06/04-17:45:18.889 7e4c Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists/MANIFEST-000164: OK
-2024/06/04-17:45:18.892 7e4c **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists; recovered 1 files; 24787 bytes. Some data may have been lost. ****
+2024/06/11-18:40:21.463 6230 Log #170: 458 ops saved to Table #171 OK
+2024/06/11-18:40:21.464 6230 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/000170.log: OK
+2024/06/11-18:40:21.466 6230 Table #167: 230 entries OK
+2024/06/11-18:40:21.466 6230 Table #171: 458 entries OK
+2024/06/11-18:40:21.472 6230 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/MANIFEST-000169: OK
+2024/06/11-18:40:21.479 6230 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists; recovered 2 files; 64259 bytes. Some data may have been lost. ****

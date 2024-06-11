@@ -1,5 +1,5 @@
-2024/06/04-17:45:25.403 401c Log #58: 0 ops saved to Table #59 OK
-2024/06/04-17:45:25.403 401c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box/000058.log: OK
-2024/06/04-17:45:25.405 401c Table #11: 45 entries OK
-2024/06/04-17:45:25.407 401c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box/MANIFEST-000057: OK
-2024/06/04-17:45:25.411 401c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box; recovered 1 files; 31862 bytes. Some data may have been lost. ****
+2024/06/11-18:40:31.268 3124 Log #61: 0 ops saved to Table #62 OK
+2024/06/11-18:40:31.269 3124 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box/000061.log: OK
+2024/06/11-18:40:31.271 3124 Table #11: 45 entries OK
+2024/06/11-18:40:31.279 3124 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box/MANIFEST-000060: OK
+2024/06/11-18:40:31.289 3124 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box; recovered 1 files; 31862 bytes. Some data may have been lost. ****

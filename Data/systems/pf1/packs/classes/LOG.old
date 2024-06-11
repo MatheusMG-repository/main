@@ -1,5 +1,5 @@
-2024/06/04-17:45:19.081 7e4c Log #123: 0 ops saved to Table #124 OK
-2024/06/04-17:45:19.082 7e4c Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\classes/000123.log: OK
-2024/06/04-17:45:19.090 7e4c Table #78: 51 entries OK
-2024/06/04-17:45:19.093 7e4c Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\classes/MANIFEST-000122: OK
-2024/06/04-17:45:19.097 7e4c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\classes; recovered 1 files; 98795 bytes. Some data may have been lost. ****
+2024/06/11-18:40:21.870 5be8 Log #126: 0 ops saved to Table #127 OK
+2024/06/11-18:40:21.872 5be8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\classes/000126.log: OK
+2024/06/11-18:40:21.881 5be8 Table #78: 51 entries OK
+2024/06/11-18:40:21.888 5be8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\classes/MANIFEST-000125: OK
+2024/06/11-18:40:21.895 5be8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\classes; recovered 1 files; 98795 bytes. Some data may have been lost. ****

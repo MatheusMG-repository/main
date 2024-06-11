@@ -1,14 +1,14 @@
-2024/06/04-17:45:23.222 401c Log #98: 0 ops saved to Table #99 OK
-2024/06/04-17:45:23.223 401c Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-11/000098.log: OK
-2024/06/04-17:45:23.233 401c Table #21: 761 entries OK
-2024/06/04-17:45:23.244 401c Table #22: 1662 entries OK
-2024/06/04-17:45:23.254 401c Table #23: 1641 entries OK
-2024/06/04-17:45:23.264 401c Table #47: 1697 entries OK
-2024/06/04-17:45:23.275 401c Table #48: 1604 entries OK
-2024/06/04-17:45:23.361 401c Table #49: 1697 entries OK
-2024/06/04-17:45:23.372 401c Table #50: 1650 entries OK
-2024/06/04-17:45:23.382 401c Table #51: 1621 entries OK
-2024/06/04-17:45:23.471 401c Table #52: 1657 entries OK
-2024/06/04-17:45:23.473 401c Table #53: 48 entries OK
-2024/06/04-17:45:23.477 401c Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-11/MANIFEST-000097: OK
-2024/06/04-17:45:23.480 401c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-11; recovered 10 files; 19204944 bytes. Some data may have been lost. ****
+2024/06/11-18:40:28.065 6c84 Log #101: 0 ops saved to Table #102 OK
+2024/06/11-18:40:28.067 6c84 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-11/000101.log: OK
+2024/06/11-18:40:28.080 6c84 Table #21: 761 entries OK
+2024/06/11-18:40:28.092 6c84 Table #22: 1662 entries OK
+2024/06/11-18:40:28.103 6c84 Table #23: 1641 entries OK
+2024/06/11-18:40:28.115 6c84 Table #47: 1697 entries OK
+2024/06/11-18:40:28.127 6c84 Table #48: 1604 entries OK
+2024/06/11-18:40:28.229 6c84 Table #49: 1697 entries OK
+2024/06/11-18:40:28.240 6c84 Table #50: 1650 entries OK
+2024/06/11-18:40:28.251 6c84 Table #51: 1621 entries OK
+2024/06/11-18:40:28.366 6c84 Table #52: 1657 entries OK
+2024/06/11-18:40:28.369 6c84 Table #53: 48 entries OK
+2024/06/11-18:40:28.373 6c84 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-11/MANIFEST-000100: OK
+2024/06/11-18:40:28.383 6c84 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-11; recovered 10 files; 19204944 bytes. Some data may have been lost. ****

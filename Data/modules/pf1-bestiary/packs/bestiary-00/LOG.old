@@ -1,8 +1,8 @@
-2024/06/04-17:45:21.913 401c Log #85: 0 ops saved to Table #86 OK
-2024/06/04-17:45:21.914 401c Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00/000085.log: OK
-2024/06/04-17:45:21.924 401c Table #21: 1037 entries OK
-2024/06/04-17:45:21.988 401c Table #38: 1893 entries OK
-2024/06/04-17:45:21.998 401c Table #39: 1893 entries OK
-2024/06/04-17:45:22.002 401c Table #40: 405 entries OK
-2024/06/04-17:45:22.005 401c Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00/MANIFEST-000084: OK
-2024/06/04-17:45:22.009 401c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00; recovered 4 files; 6818966 bytes. Some data may have been lost. ****
+2024/06/11-18:40:26.532 6c84 Log #88: 0 ops saved to Table #89 OK
+2024/06/11-18:40:26.534 6c84 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00/000088.log: OK
+2024/06/11-18:40:26.546 6c84 Table #21: 1037 entries OK
+2024/06/11-18:40:26.658 6c84 Table #38: 1893 entries OK
+2024/06/11-18:40:26.670 6c84 Table #39: 1893 entries OK
+2024/06/11-18:40:26.674 6c84 Table #40: 405 entries OK
+2024/06/11-18:40:26.682 6c84 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00/MANIFEST-000087: OK
+2024/06/11-18:40:26.693 6c84 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00; recovered 4 files; 6818966 bytes. Some data may have been lost. ****

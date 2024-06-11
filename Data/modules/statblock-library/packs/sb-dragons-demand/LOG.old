@@ -1,5 +1,5 @@
-2024/06/04-17:45:24.466 401c Log #58: 0 ops saved to Table #59 OK
-2024/06/04-17:45:24.467 401c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand/000058.log: OK
-2024/06/04-17:45:24.469 401c Table #11: 45 entries OK
-2024/06/04-17:45:24.472 401c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand/MANIFEST-000057: OK
-2024/06/04-17:45:24.475 401c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand; recovered 1 files; 34737 bytes. Some data may have been lost. ****
+2024/06/11-18:40:29.588 6c84 Log #61: 0 ops saved to Table #62 OK
+2024/06/11-18:40:29.589 6c84 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand/000061.log: OK
+2024/06/11-18:40:29.591 6c84 Table #11: 45 entries OK
+2024/06/11-18:40:29.599 6c84 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand/MANIFEST-000060: OK
+2024/06/11-18:40:29.609 6c84 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand; recovered 1 files; 34737 bytes. Some data may have been lost. ****

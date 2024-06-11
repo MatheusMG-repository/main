@@ -1,13 +1,13 @@
-2024/06/04-17:45:23.652 1ca8 Log #97: 0 ops saved to Table #98 OK
-2024/06/04-17:45:23.653 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15/000097.log: OK
-2024/06/04-17:45:23.664 1ca8 Table #21: 852 entries OK
-2024/06/04-17:45:23.675 1ca8 Table #22: 1562 entries OK
-2024/06/04-17:45:23.685 1ca8 Table #46: 1520 entries OK
-2024/06/04-17:45:23.695 1ca8 Table #47: 1591 entries OK
-2024/06/04-17:45:23.705 1ca8 Table #48: 1593 entries OK
-2024/06/04-17:45:23.714 1ca8 Table #49: 1630 entries OK
-2024/06/04-17:45:23.724 1ca8 Table #50: 1587 entries OK
-2024/06/04-17:45:23.734 1ca8 Table #51: 1592 entries OK
-2024/06/04-17:45:23.744 1ca8 Table #52: 1419 entries OK
-2024/06/04-17:45:23.747 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15/MANIFEST-000096: OK
-2024/06/04-17:45:23.751 1ca8 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15; recovered 9 files; 18896954 bytes. Some data may have been lost. ****
+2024/06/11-18:40:28.578 3124 Log #100: 0 ops saved to Table #101 OK
+2024/06/11-18:40:28.579 3124 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15/000100.log: OK
+2024/06/11-18:40:28.591 3124 Table #21: 852 entries OK
+2024/06/11-18:40:28.603 3124 Table #22: 1562 entries OK
+2024/06/11-18:40:28.614 3124 Table #46: 1520 entries OK
+2024/06/11-18:40:28.626 3124 Table #47: 1591 entries OK
+2024/06/11-18:40:28.638 3124 Table #48: 1593 entries OK
+2024/06/11-18:40:28.650 3124 Table #49: 1630 entries OK
+2024/06/11-18:40:28.661 3124 Table #50: 1587 entries OK
+2024/06/11-18:40:28.672 3124 Table #51: 1592 entries OK
+2024/06/11-18:40:28.682 3124 Table #52: 1419 entries OK
+2024/06/11-18:40:28.686 3124 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15/MANIFEST-000099: OK
+2024/06/11-18:40:28.700 3124 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15; recovered 9 files; 18896954 bytes. Some data may have been lost. ****

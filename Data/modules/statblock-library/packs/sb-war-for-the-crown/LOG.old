@@ -1,5 +1,5 @@
-2024/06/04-17:45:25.718 401c Log #58: 0 ops saved to Table #59 OK
-2024/06/04-17:45:25.719 401c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown/000058.log: OK
-2024/06/04-17:45:25.723 401c Table #11: 363 entries OK
-2024/06/04-17:45:25.726 401c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown/MANIFEST-000057: OK
-2024/06/04-17:45:25.729 401c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown; recovered 1 files; 427629 bytes. Some data may have been lost. ****
+2024/06/11-18:40:32.213 3124 Log #61: 0 ops saved to Table #62 OK
+2024/06/11-18:40:32.215 3124 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown/000061.log: OK
+2024/06/11-18:40:32.219 3124 Table #11: 363 entries OK
+2024/06/11-18:40:32.228 3124 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown/MANIFEST-000060: OK
+2024/06/11-18:40:32.237 3124 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown; recovered 1 files; 427629 bytes. Some data may have been lost. ****

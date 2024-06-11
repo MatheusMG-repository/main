@@ -1,5 +1,5 @@
-2024/06/04-17:45:24.399 4c58 Log #59: 0 ops saved to Table #60 OK
-2024/06/04-17:45:24.400 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets/000059.log: OK
-2024/06/04-17:45:24.401 4c58 Table #12: 18 entries OK
-2024/06/04-17:45:24.404 4c58 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets/MANIFEST-000058: OK
-2024/06/04-17:45:24.407 4c58 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets; recovered 1 files; 19440 bytes. Some data may have been lost. ****
+2024/06/11-18:40:29.446 3124 Log #62: 0 ops saved to Table #63 OK
+2024/06/11-18:40:29.447 3124 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets/000062.log: OK
+2024/06/11-18:40:29.449 3124 Table #12: 18 entries OK
+2024/06/11-18:40:29.457 3124 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets/MANIFEST-000061: OK
+2024/06/11-18:40:29.467 3124 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets; recovered 1 files; 19440 bytes. Some data may have been lost. ****

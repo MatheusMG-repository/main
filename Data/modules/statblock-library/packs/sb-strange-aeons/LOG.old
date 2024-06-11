@@ -1,5 +1,5 @@
-2024/06/04-17:45:25.643 7e4c Log #58: 0 ops saved to Table #59 OK
-2024/06/04-17:45:25.644 7e4c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons/000058.log: OK
-2024/06/04-17:45:25.647 7e4c Table #11: 408 entries OK
-2024/06/04-17:45:25.651 7e4c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons/MANIFEST-000057: OK
-2024/06/04-17:45:25.654 7e4c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons; recovered 1 files; 467232 bytes. Some data may have been lost. ****
+2024/06/11-18:40:32.060 6230 Log #61: 0 ops saved to Table #62 OK
+2024/06/11-18:40:32.061 6230 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons/000061.log: OK
+2024/06/11-18:40:32.066 6230 Table #11: 408 entries OK
+2024/06/11-18:40:32.075 6230 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons/MANIFEST-000060: OK
+2024/06/11-18:40:32.084 6230 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons; recovered 1 files; 467232 bytes. Some data may have been lost. ****

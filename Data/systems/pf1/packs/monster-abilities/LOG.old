@@ -1,5 +1,5 @@
-2024/06/04-17:45:19.458 401c Log #123: 0 ops saved to Table #124 OK
-2024/06/04-17:45:19.459 401c Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\monster-abilities/000123.log: OK
-2024/06/04-17:45:19.460 401c Table #78: 12 entries OK
-2024/06/04-17:45:19.462 401c Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\monster-abilities/MANIFEST-000122: OK
-2024/06/04-17:45:19.466 401c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\monster-abilities; recovered 1 files; 4619 bytes. Some data may have been lost. ****
+2024/06/11-18:40:22.497 6230 Log #126: 0 ops saved to Table #127 OK
+2024/06/11-18:40:22.498 6230 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-abilities/000126.log: OK
+2024/06/11-18:40:22.500 6230 Table #78: 12 entries OK
+2024/06/11-18:40:22.509 6230 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-abilities/MANIFEST-000125: OK
+2024/06/11-18:40:22.519 6230 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-abilities; recovered 1 files; 4619 bytes. Some data may have been lost. ****

@@ -1,9 +1,7 @@
-2024/06/04-17:45:18.452 4c58 Log #397: 0 ops saved to Table #400 OK
-2024/06/04-17:45:18.452 4c58 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors/000397.log: OK
-2024/06/04-17:45:18.461 4c58 Table #393: 1543 entries OK
-2024/06/04-17:45:18.495 4c58 Table #394: 727 entries OK
-2024/06/04-17:45:18.502 4c58 Table #396: 274 entries OK
-2024/06/04-17:45:18.509 4c58 Table #398: 1546 entries OK
-2024/06/04-17:45:18.512 4c58 Table #399: 682 entries OK
-2024/06/04-17:45:18.516 4c58 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors/MANIFEST-000395: OK
-2024/06/04-17:45:18.519 4c58 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors; recovered 5 files; 7334223 bytes. Some data may have been lost. ****
+2024/06/11-18:40:20.624 6230 Log #413: 135 ops saved to Table #417 OK
+2024/06/11-18:40:20.625 6230 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/000413.log: OK
+2024/06/11-18:40:20.634 6230 Table #415: 1523 entries OK
+2024/06/11-18:40:20.681 6230 Table #416: 831 entries OK
+2024/06/11-18:40:20.685 6230 Table #417: 135 entries OK
+2024/06/11-18:40:20.696 6230 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/MANIFEST-000401: OK
+2024/06/11-18:40:20.706 6230 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors; recovered 3 files; 4150637 bytes. Some data may have been lost. ****

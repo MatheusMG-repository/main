@@ -1,8 +1,8 @@
-2024/06/04-17:45:18.704 4c58 Log #228: 0 ops saved to Table #229 OK
-2024/06/04-17:45:18.705 4c58 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/000228.log: OK
-2024/06/04-17:45:18.707 4c58 Table #160: 1 entries OK
-2024/06/04-17:45:18.711 4c58 Table #224: 87 entries OK
-2024/06/04-17:45:18.712 4c58 Table #225: 14 entries OK
-2024/06/04-17:45:18.713 4c58 Table #227: 14 entries OK
-2024/06/04-17:45:18.716 4c58 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000226: OK
-2024/06/04-17:45:18.719 4c58 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog; recovered 4 files; 2771594 bytes. Some data may have been lost. ****
+2024/06/11-18:40:21.047 5be8 Log #231: 17 ops saved to Table #234 OK
+2024/06/11-18:40:21.049 5be8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog/000231.log: OK
+2024/06/11-18:40:21.051 5be8 Table #160: 1 entries OK
+2024/06/11-18:40:21.054 5be8 Table #232: 89 entries OK
+2024/06/11-18:40:21.056 5be8 Table #233: 16 entries OK
+2024/06/11-18:40:21.056 5be8 Table #234: 17 entries OK
+2024/06/11-18:40:21.066 5be8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000230: OK
+2024/06/11-18:40:21.076 5be8 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog; recovered 4 files; 2846356 bytes. Some data may have been lost. ****

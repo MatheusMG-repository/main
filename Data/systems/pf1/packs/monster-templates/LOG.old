@@ -1,5 +1,5 @@
-2024/06/04-17:45:19.708 401c Log #123: 0 ops saved to Table #124 OK
-2024/06/04-17:45:19.709 401c Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\monster-templates/000123.log: OK
-2024/06/04-17:45:19.739 401c Table #78: 189 entries OK
-2024/06/04-17:45:19.743 401c Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\monster-templates/MANIFEST-000122: OK
-2024/06/04-17:45:19.747 401c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\monster-templates; recovered 1 files; 485872 bytes. Some data may have been lost. ****
+2024/06/11-18:40:22.893 6230 Log #126: 0 ops saved to Table #127 OK
+2024/06/11-18:40:22.894 6230 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates/000126.log: OK
+2024/06/11-18:40:22.930 6230 Table #78: 189 entries OK
+2024/06/11-18:40:22.939 6230 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates/MANIFEST-000125: OK
+2024/06/11-18:40:22.949 6230 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates; recovered 1 files; 485872 bytes. Some data may have been lost. ****

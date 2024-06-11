@@ -1,6 +1,6 @@
-2024/06/04-17:45:18.857 4c58 Log #169: 0 ops saved to Table #170 OK
-2024/06/04-17:45:18.859 4c58 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros/000169.log: OK
-2024/06/04-17:45:18.860 4c58 Table #166: 114 entries OK
-2024/06/04-17:45:18.863 4c58 Table #168: 5 entries OK
-2024/06/04-17:45:18.866 4c58 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros/MANIFEST-000167: OK
-2024/06/04-17:45:18.870 4c58 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros; recovered 2 files; 23682 bytes. Some data may have been lost. ****
+2024/06/11-18:40:21.376 5be8 Log #172: 0 ops saved to Table #173 OK
+2024/06/11-18:40:21.378 5be8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros/000172.log: OK
+2024/06/11-18:40:21.379 5be8 Table #166: 114 entries OK
+2024/06/11-18:40:21.384 5be8 Table #168: 5 entries OK
+2024/06/11-18:40:21.396 5be8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros/MANIFEST-000171: OK
+2024/06/11-18:40:21.409 5be8 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros; recovered 2 files; 23682 bytes. Some data may have been lost. ****

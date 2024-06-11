@@ -1,5 +1,5 @@
-2024/06/04-17:45:19.112 401c Log #123: 0 ops saved to Table #124 OK
-2024/06/04-17:45:19.112 401c Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\mythic-paths/000123.log: OK
-2024/06/04-17:45:19.115 401c Table #78: 6 entries OK
-2024/06/04-17:45:19.117 401c Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\mythic-paths/MANIFEST-000122: OK
-2024/06/04-17:45:19.121 401c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\mythic-paths; recovered 1 files; 19471 bytes. Some data may have been lost. ****
+2024/06/11-18:40:21.922 6230 Log #126: 0 ops saved to Table #127 OK
+2024/06/11-18:40:21.924 6230 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\mythic-paths/000126.log: OK
+2024/06/11-18:40:21.926 6230 Table #78: 6 entries OK
+2024/06/11-18:40:21.935 6230 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\mythic-paths/MANIFEST-000125: OK
+2024/06/11-18:40:21.945 6230 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\mythic-paths; recovered 1 files; 19471 bytes. Some data may have been lost. ****

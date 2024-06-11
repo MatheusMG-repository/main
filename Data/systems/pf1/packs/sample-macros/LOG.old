@@ -1,5 +1,5 @@
-2024/06/04-17:45:19.764 1ca8 Log #123: 0 ops saved to Table #124 OK
-2024/06/04-17:45:19.765 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\sample-macros/000123.log: OK
-2024/06/04-17:45:19.766 1ca8 Table #78: 9 entries OK
-2024/06/04-17:45:19.770 1ca8 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\sample-macros/MANIFEST-000122: OK
-2024/06/04-17:45:19.774 1ca8 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\sample-macros; recovered 1 files; 10692 bytes. Some data may have been lost. ****
+2024/06/11-18:40:22.979 5be8 Log #126: 0 ops saved to Table #127 OK
+2024/06/11-18:40:22.981 5be8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros/000126.log: OK
+2024/06/11-18:40:22.982 5be8 Table #78: 9 entries OK
+2024/06/11-18:40:22.991 5be8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros/MANIFEST-000125: OK
+2024/06/11-18:40:23.001 5be8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros; recovered 1 files; 10692 bytes. Some data may have been lost. ****

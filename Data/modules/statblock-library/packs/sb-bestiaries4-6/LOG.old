@@ -1,6 +1,6 @@
-2024/06/04-17:45:24.275 7e4c Log #59: 0 ops saved to Table #60 OK
-2024/06/04-17:45:24.276 7e4c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-bestiaries4-6/000059.log: OK
-2024/06/04-17:45:24.286 7e4c Table #11: 1924 entries OK
-2024/06/04-17:45:24.321 7e4c Table #12: 455 entries OK
-2024/06/04-17:45:24.324 7e4c Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-bestiaries4-6/MANIFEST-000058: OK
-2024/06/04-17:45:24.328 7e4c **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-bestiaries4-6; recovered 2 files; 2902108 bytes. Some data may have been lost. ****
+2024/06/11-18:40:29.258 6230 Log #62: 0 ops saved to Table #63 OK
+2024/06/11-18:40:29.259 6230 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-bestiaries4-6/000062.log: OK
+2024/06/11-18:40:29.269 6230 Table #11: 1924 entries OK
+2024/06/11-18:40:29.315 6230 Table #12: 455 entries OK
+2024/06/11-18:40:29.324 6230 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-bestiaries4-6/MANIFEST-000061: OK
+2024/06/11-18:40:29.333 6230 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-bestiaries4-6; recovered 2 files; 2902108 bytes. Some data may have been lost. ****
