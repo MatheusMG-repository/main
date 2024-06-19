@@ -45,3 +45,9 @@
 
 **version 2.1**
 - Adds 8 new songs from my new album shepherds of Haven, Volume 2.
+
+**version 2.3**
+- Adds 11 new songs from my my Sauria: Winter Weathered Soundtrack and my The Cimmerian album.
+
+**version 2.4**
+- Fixes compatibility with Foundry v12

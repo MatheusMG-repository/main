@@ -1,5 +1,3 @@
-2024/06/11-18:40:29.493 5be8 Log #61: 0 ops saved to Table #62 OK
-2024/06/11-18:40:29.494 5be8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-clash-of-the-kingslayers/000061.log: OK
-2024/06/11-18:40:29.496 5be8 Table #11: 15 entries OK
-2024/06/11-18:40:29.504 5be8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-clash-of-the-kingslayers/MANIFEST-000060: OK
-2024/06/11-18:40:29.514 5be8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-clash-of-the-kingslayers; recovered 1 files; 17891 bytes. Some data may have been lost. ****
+2024/06/17-17:35:59.628 5908 Recovering log #70
+2024/06/17-17:35:59.631 5908 Delete type=0 #70
+2024/06/17-17:35:59.632 5908 Delete type=3 #68

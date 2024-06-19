@@ -1,7 +1,3 @@
-2024/06/11-18:40:20.624 6230 Log #413: 135 ops saved to Table #417 OK
-2024/06/11-18:40:20.625 6230 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/000413.log: OK
-2024/06/11-18:40:20.634 6230 Table #415: 1523 entries OK
-2024/06/11-18:40:20.681 6230 Table #416: 831 entries OK
-2024/06/11-18:40:20.685 6230 Table #417: 135 entries OK
-2024/06/11-18:40:20.696 6230 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/MANIFEST-000401: OK
-2024/06/11-18:40:20.706 6230 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors; recovered 3 files; 4150637 bytes. Some data may have been lost. ****
+2024/06/17-17:35:57.354 550c Recovering log #458
+2024/06/17-17:35:57.357 550c Delete type=0 #458
+2024/06/17-17:35:57.357 550c Delete type=3 #455

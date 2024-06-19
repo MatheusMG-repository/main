@@ -1,8 +1,3 @@
-2024/06/11-18:40:21.047 5be8 Log #231: 17 ops saved to Table #234 OK
-2024/06/11-18:40:21.049 5be8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog/000231.log: OK
-2024/06/11-18:40:21.051 5be8 Table #160: 1 entries OK
-2024/06/11-18:40:21.054 5be8 Table #232: 89 entries OK
-2024/06/11-18:40:21.056 5be8 Table #233: 16 entries OK
-2024/06/11-18:40:21.056 5be8 Table #234: 17 entries OK
-2024/06/11-18:40:21.066 5be8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000230: OK
-2024/06/11-18:40:21.076 5be8 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog; recovered 4 files; 2846356 bytes. Some data may have been lost. ****
+2024/06/17-17:35:57.404 5908 Recovering log #247
+2024/06/17-17:35:57.407 5908 Delete type=0 #247
+2024/06/17-17:35:57.407 5908 Delete type=3 #244

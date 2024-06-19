@@ -1,6 +1,3 @@
-2024/06/11-18:40:20.923 3124 Log #182: 44 ops saved to Table #184 OK
-2024/06/11-18:40:20.924 3124 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/000182.log: OK
-2024/06/11-18:40:20.925 3124 Table #183: 37 entries OK
-2024/06/11-18:40:20.925 3124 Table #184: 44 entries OK
-2024/06/11-18:40:20.935 3124 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/MANIFEST-000181: OK
-2024/06/11-18:40:20.945 3124 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats; recovered 2 files; 7837 bytes. Some data may have been lost. ****
+2024/06/17-17:35:57.391 5908 Recovering log #193
+2024/06/17-17:35:57.395 5908 Delete type=0 #193
+2024/06/17-17:35:57.395 5908 Delete type=3 #190

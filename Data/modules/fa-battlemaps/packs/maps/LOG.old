@@ -1,5 +1,1 @@
-2024/06/11-18:40:23.198 6230 Log #50: 0 ops saved to Table #51 OK
-2024/06/11-18:40:23.199 6230 Archiving C:\Users\mathe\utopia\main\Data\modules\fa-battlemaps\packs\maps/000050.log: OK
-2024/06/11-18:40:23.237 6230 Table #5: 43549 entries OK
-2024/06/11-18:40:23.246 6230 Archiving C:\Users\mathe\utopia\main\Data\modules\fa-battlemaps\packs\maps/MANIFEST-000049: OK
-2024/06/11-18:40:23.255 6230 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\fa-battlemaps\packs\maps; recovered 1 files; 6492354 bytes. Some data may have been lost. ****
+2024/06/17-17:35:57.663 5908 Delete type=3 #1

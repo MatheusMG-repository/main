@@ -1,5 +1,3 @@
-2024/06/11-18:40:26.062 6c84 Log #130: 0 ops saved to Table #131 OK
-2024/06/11-18:40:26.063 6c84 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-universal-monster-rules/000130.log: OK
-2024/06/11-18:40:26.070 6c84 Table #82: 147 entries OK
-2024/06/11-18:40:26.079 6c84 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-universal-monster-rules/MANIFEST-000129: OK
-2024/06/11-18:40:26.093 6c84 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-universal-monster-rules; recovered 1 files; 164076 bytes. Some data may have been lost. ****
+2024/06/17-17:35:58.840 46ec Recovering log #139
+2024/06/17-17:35:58.849 46ec Delete type=0 #139
+2024/06/17-17:35:58.849 46ec Delete type=3 #137

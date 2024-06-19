@@ -1,5 +1,3 @@
-2024/06/11-18:40:26.429 3124 Log #130: 0 ops saved to Table #131 OK
-2024/06/11-18:40:26.430 3124 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-buildings/000130.log: OK
-2024/06/11-18:40:26.435 3124 Table #82: 95 entries OK
-2024/06/11-18:40:26.444 3124 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-buildings/MANIFEST-000129: OK
-2024/06/11-18:40:26.453 3124 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-buildings; recovered 1 files; 425211 bytes. Some data may have been lost. ****
+2024/06/17-17:35:58.897 46ec Recovering log #139
+2024/06/17-17:35:58.900 46ec Delete type=0 #139
+2024/06/17-17:35:58.900 46ec Delete type=3 #137

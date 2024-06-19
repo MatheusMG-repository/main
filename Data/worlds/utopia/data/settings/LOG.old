@@ -1,6 +1,3 @@
-2024/06/11-18:40:21.723 3124 Log #209: 4 ops saved to Table #211 OK
-2024/06/11-18:40:21.724 3124 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/000209.log: OK
-2024/06/11-18:40:21.725 3124 Table #210: 21 entries OK
-2024/06/11-18:40:21.725 3124 Table #211: 4 entries OK
-2024/06/11-18:40:21.735 3124 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/MANIFEST-000208: OK
-2024/06/11-18:40:21.745 3124 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings; recovered 2 files; 7747 bytes. Some data may have been lost. ****
+2024/06/17-17:35:57.468 46ec Recovering log #221
+2024/06/17-17:35:57.472 46ec Delete type=0 #221
+2024/06/17-17:35:57.472 46ec Delete type=3 #217

@@ -1,8 +1,8 @@
 {
-  "timestamp": 1718127616063,
+  "timestamp": 1718727262018,
   "os": {
     "platform": "win32",
-    "version": "10.0.19045",
+    "version": "10.0.22631",
     "node": "18.14.0",
     "electron": "24.8.5"
   },
@@ -14,19 +14,19 @@
   },
   "modules": {
     "dd-import": {
-      "version": "3.0.0"
+      "version": "3.0.1"
     },
     "fa-battlemaps": {
-      "version": "1.0.57"
+      "version": "1.0.60"
     },
     "gm-screen": {
       "version": "4.0.4"
     },
     "ivan-duch-music-packs": {
-      "version": "2.2"
+      "version": "2.4"
     },
     "lib-wrapper": {
-      "version": "1.12.13.0"
+      "version": "1.12.13.1"
     },
     "lmrtfy": {
       "version": "3.1.9"
@@ -35,7 +35,7 @@
       "version": "11.26"
     },
     "multilevel-tokens": {
-      "version": "1.6.0"
+      "version": "1.7.1"
     },
     "pf-content": {
       "version": "0.3.7"
@@ -47,27 +47,27 @@
       "version": "4.5.3"
     },
     "popout": {
-      "version": "2.16"
+      "version": "2.18"
     },
     "soundfxlibrary": {
-      "version": "1.0.2"
+      "version": "1.0.3"
     },
     "statblock-library": {
       "version": "0.3.1"
     },
     "tagger": {
-      "version": "1.4.5"
+      "version": "1.4.6"
     }
   },
   "systems": {
     "pf1": {
       "version": "9.6",
-      "playtime": 39777
+      "playtime": 68232
     }
   },
   "worlds": {},
   "playtime": {
-    "total": 39777,
-    "max": 39777
+    "total": 68232,
+    "max": 68232
   }
 }

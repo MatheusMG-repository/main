@@ -1,5 +1,3 @@
-2024/06/11-18:40:24.821 6c84 Log #130: 0 ops saved to Table #131 OK
-2024/06/11-18:40:24.822 6c84 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-items/000130.log: OK
-2024/06/11-18:40:24.880 6c84 Table #82: 1110 entries OK
-2024/06/11-18:40:24.889 6c84 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-items/MANIFEST-000129: OK
-2024/06/11-18:40:24.899 6c84 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-items; recovered 1 files; 1237371 bytes. Some data may have been lost. ****
+2024/06/17-17:35:58.713 5f9c Recovering log #139
+2024/06/17-17:35:58.716 5f9c Delete type=0 #139
+2024/06/17-17:35:58.717 5f9c Delete type=3 #137

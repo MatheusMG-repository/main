@@ -1,6 +1,3 @@
-2024/06/11-18:40:21.313 6c84 Log #176: 46 ops saved to Table #178 OK
-2024/06/11-18:40:21.314 6c84 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal/000176.log: OK
-2024/06/11-18:40:21.315 6c84 Table #177: 25 entries OK
-2024/06/11-18:40:21.315 6c84 Table #178: 46 entries OK
-2024/06/11-18:40:21.326 6c84 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal/MANIFEST-000175: OK
-2024/06/11-18:40:21.338 6c84 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal; recovered 2 files; 31856 bytes. Some data may have been lost. ****
+2024/06/17-17:35:57.424 46ec Recovering log #188
+2024/06/17-17:35:57.428 46ec Delete type=0 #188
+2024/06/17-17:35:57.428 46ec Delete type=3 #184

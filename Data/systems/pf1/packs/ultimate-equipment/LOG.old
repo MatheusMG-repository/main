@@ -1,5 +1,3 @@
-2024/06/11-18:40:23.076 6c84 Log #126: 0 ops saved to Table #127 OK
-2024/06/11-18:40:23.078 6c84 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\ultimate-equipment/000126.log: OK
-2024/06/11-18:40:23.083 6c84 Table #78: 3965 entries OK
-2024/06/11-18:40:23.092 6c84 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\ultimate-equipment/MANIFEST-000125: OK
-2024/06/11-18:40:23.102 6c84 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\ultimate-equipment; recovered 1 files; 385424 bytes. Some data may have been lost. ****
+2024/06/17-17:35:57.634 550c Recovering log #135
+2024/06/17-17:35:57.638 550c Delete type=0 #135
+2024/06/17-17:35:57.638 550c Delete type=3 #133

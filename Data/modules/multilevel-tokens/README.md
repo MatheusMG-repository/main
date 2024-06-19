@@ -1,4 +1,9 @@
 # Multilevel Tokens module for Foundry VTT
+ 
+
+**Forked from https://github.com/grandseiken/foundryvtt-multilevel-tokens with the author authorization on june 2024.**
+
+**Beneos is now the official maintener of multilevel-tokens module.**
 
 This module for FoundryVTT adds several helpful token automation features, particularly (but not only) suited to maps with multiple levels.
 * Teleport tokens to another location when they move into a particular region (e.g. from the bottom of a staircase to the top).
@@ -15,10 +20,10 @@ You might also like my other module, [Vehicles and Mechanisms](https://github.co
 
 ## Installation
 
-You can install this module by searching for it in Foundry's built-in module browser, or with the following public URL:
+You can install this module by searching for it in Foundry's built-in module browser (**strongly recommanded**), or with the following public URL:
 
 ```
-https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/master/module.json
+https://raw.githubusercontent.com/BeneosBattlemaps/Beneos-Multilevel-Tokens/main/module.json
 ```
 
 Remember to enable the module in the **Manage Modules** menu after installation.
@@ -145,6 +150,8 @@ drawing.update({flags: {"multilevel-tokens": {disabled: !drawing.data.flags["mul
 
 # Version history
 
+* **1.7.0**:
+  * Compatibility with Foundry version 12.
 * **1.6.0**:
   * Compatibility with Foundry version 10.
   * Slightly reorganised the UI.
