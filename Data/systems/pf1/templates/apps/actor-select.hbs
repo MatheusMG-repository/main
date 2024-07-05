@@ -1,0 +1,50 @@
+<form autocomplete="off" data-tooltip-class="pf1">
+  {{#*inline "actorEntry"}}
+    <li class="actor{{#if (eq @root.selected id)}} selected{{/if}} {{#if isDisabled}}disabled{{/if}}">
+        <label>
+          <input type="radio" name="selected" value="{{id}}"
+          {{checked (eq @root.selected id)}}
+          {{#if isDisabled}}disabled{{/if}}
+          >
+          <img class="image" src="{{img}}" height="64" loading="lazy">
+          <div class="details">
+            <h3 class="actor-name">{{name}}</h3>
+          </div>
+        </label>
+      </li>
+  {{/inline}}
+
+  <div class="actor-list-search">
+    <input class="search-input" type="search" placeholder="{{localize 'PF1.SearchFilterPlaceholder'}}" value="{{searchTerm}}"></input>
+    <i class="fas fa-times-circle clear-search"></i>
+  </div>
+  <hr>
+
+  <h2>{{localize "PF1.Application.ActorSelector.OwnedActors"}}</h2>
+  <ul class="actor-list">
+  {{#each ownedActors}}
+    {{> "actorEntry"}}
+  {{/each}}
+  </ul>
+  <hr>
+
+  {{#if showUnowned}}
+    <h2>{{localize "PF1.Application.ActorSelector.UnownedActors"}}</h2>
+    <ul class="actor-list">
+    {{#if unownedActors.length}}
+      {{#each unownedActors}}
+        {{> "actorEntry"}}
+      {{/each}}
+    {{else}}
+      {{localize "PF1.Application.ActorSelector.NoUnownedActors"}}
+      <br>
+      {{localize "PF1.Application.ActorSelector.MinimumPermissionLevel"}}
+    {{/if}}
+	</ul>
+	<hr>
+  {{/if}}
+
+  <button type="button" class="commit-select">
+    {{localize "PF1.Select"}}
+  </button>
+</form>

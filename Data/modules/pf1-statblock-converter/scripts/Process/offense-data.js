@@ -128,12 +128,12 @@ export async function parseOffense(data, startLine) {
 
             // Parse Special Attacks
             if (!parsedSubCategories["specialAttacks"]) {
-                if (/^Special\s+Attacks\b\s*/i.test(lineContent)) {
+                if (/^Special\s+Attacks?\b\s*/i.test(lineContent)) {
                     let parserSpecialAttacks = parserMapping.map.offense.specialAttacks
                     let parserMelee = parserMapping.map.offense.attacks
                     let parserRanged = parserMapping.map.offense.attacks
 
-                    let specialAttacks = lineContent.match(/^Special\s+Attacks\s*(.*)/i)[1].trim()
+                    let specialAttacks = lineContent.match(/^Special\s+Attacks?\s*(.*)/i)[1].trim()
 
                     sbcData.notes.offense.specialAttacks = specialAttacks
 
@@ -160,7 +160,7 @@ export async function parseOffense(data, startLine) {
                     // This used to check for a number, but failed to catch creatures that took up less space.
                     // For example, an Imp has a space of "2-1/2 ft."
                     let space = lineContent.match(/^Space\s*(\S+)\s+/i)[1]
-                    space = space.replace(/(.)\-(.)/g, "$1\.$2");
+                    space = space.replace(/(.)-(.)/g, "$1.$2");
                     let spaceMatch = space.match(/(\d*)\.+(\d*)\/+(\d*)/);
                     if (spaceMatch?.length > 0)
                         space = +spaceMatch[1] + (spaceMatch[2] / spaceMatch[3]);
@@ -174,7 +174,7 @@ export async function parseOffense(data, startLine) {
                     if (reachInput[0]) {
                         reach = reachInput[0];
                         // reach = reachInput[0].replace(/(\d+)(.*)/g, "$1").trim()
-                        reach = reach.replace(/(.)\-(.)/g, "$1\.$2");
+                        reach = reach.replace(/(.)-(.)/g, "$1.$2");
                         let reachMatch = reach.match(/(\d*)\.+(\d*)\/+(\d*)/);
                         if (reachMatch?.length > 1)
                             reach = +reachMatch[1] + (reachMatch[2] / reachMatch[3]);
@@ -183,7 +183,7 @@ export async function parseOffense(data, startLine) {
                     }
 
                     if (reachInput[1])
-                        reachContext = reachInput[1].replace(/[\(\)]/g, "").trim()
+                        reachContext = reachInput[1].replace(/[()]/g, "").trim()
 
                     sbcData.notes.offense.space = space
                     sbcData.notes.offense.reach = reach
@@ -314,7 +314,7 @@ export async function parseOffense(data, startLine) {
                     currentSpellBook = spellBooksFound
                     startIndexOfSpellBooks[currentSpellBook] = line
                     spellBooksFound += 1
-                    console.log(`Current Spellbook: ${currentSpellBook}, Spellbooks found: ${spellBooksFound}`)
+                    sbcUtils.log(`Current Spellbook: ${currentSpellBook}, Spellbooks found: ${spellBooksFound}`)
 
                     sbcData.notes.offense.hasSpellcasting = true
 
@@ -334,7 +334,7 @@ export async function parseOffense(data, startLine) {
                     let patternSupportedClasses = new RegExp("(" + sbcConfig.classes.join("\\b|\\b") + ")", "gi")
                     //let patternPrestigeClasses = new RegExp("(" + sbcConfig.prestigeClassNames.join("\\b|\\b") + ")(.*)", "gi")
                     //let patternWizardClasses = new RegExp("(" + sbcContent.wizardSchoolClasses.join("\\b|\\b") + ")(.*)", "gi")
-                    let patternPrestigeClasses = new RegExp("(" + sbcConfig.prestigeClassNames.join("\\b|\\b") + ")\\s*(Spells|Extracts)", "gi")
+                    let patternPrestigeClasses = new RegExp(`(${sbcConfig.prestigeClassNames.length ? sbcConfig.prestigeClassNames.join("\\b|\\b") : "_"} + )\\s*(Spells|Extracts)`, "gi")
                     let patternWizardClasses = new RegExp("(" + sbcContent.wizardSchoolClasses.join("\\b|\\b") + ")\\s*(Spells|Extracts)", "gi")
 
                     let castingClass = lineContent.match(patternSupportedClasses) ??
@@ -390,6 +390,7 @@ export async function parseOffense(data, startLine) {
              * and the notes section
              */
             if (line == data.length - 1) {
+                //await sbcData.characterData.actorData.prepareData();
                 let keysRawSpellBooks = Object.keys(rawSpellBooks)
 
                 if (keysRawSpellBooks.length > 0) {
@@ -406,9 +407,9 @@ export async function parseOffense(data, startLine) {
 
                         sbcData.notes.offense["spellBooks"][i] = spellBookNote
 
-                        console.log(`Spellbook ${i}: ${rawSpellBook.spellBookType}`, rawSpellBook);
+                        sbcUtils.log(`Spellbook ${i}: ${rawSpellBook.spellBookType}`, rawSpellBook);
                         let [blank, type] = await parserSpellBooks.parse(rawSpellBook, startIndexOfSpellBooks[i])
-                        console.log(`Spellbook ${i}: ${type}`, blank);
+                        sbcUtils.log(`Spellbook ${i}: ${type}`, blank);
                         usedSpellbooks.push(type);
                     }
                 }
@@ -422,7 +423,7 @@ export async function parseOffense(data, startLine) {
         }
     }
 
-    sbcConfig.options.debug && sbcUtils.log("RESULT OF PARSING OFFENSE DATA (TRUE = PARSED SUCCESSFULLY)")
+    sbcUtils.log("RESULT OF PARSING OFFENSE DATA (TRUE = PARSED SUCCESSFULLY)")
     sbcConfig.options.debug && console.log(parsedSubCategories)
     sbcConfig.options.debug && console.groupEnd()
 

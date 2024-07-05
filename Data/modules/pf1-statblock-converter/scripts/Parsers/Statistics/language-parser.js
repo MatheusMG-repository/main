@@ -7,7 +7,7 @@ import { ParserBase } from "../base-parser.js";
 export class LanguageParser extends ParserBase {
 
   async parse(value, line) {
-    sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as languages")
+    sbcUtils.log(`Trying to parse "${value}" ` + " as languages")
 
     try {
       let systemSupportedLanguages = Object.values(CONFIG["PF1"].languages).map(x => x.toLowerCase())
@@ -28,7 +28,10 @@ export class LanguageParser extends ParserBase {
           language = checkForLanguageContext[0]
           languageContext = checkForLanguageContext[1]
 
-          sbcData.characterData.actorData.update({ "system.traits.languages.custom": sbcData.characterData.actorData.system.traits.languages.custom + languageContext + ";" })
+          let customLanguages = sbcData.characterData.actorData.system.traits.languages.custom;
+          customLanguages.push(`${language} (${languageContext})`);
+
+          sbcData.characterData.actorData.update({ "system.traits.languages.custom": customLanguages})
         }
 
         if (language.search(patternLanguages) !== -1) {
@@ -43,11 +46,10 @@ export class LanguageParser extends ParserBase {
         await sbcData.characterData.actorData.update({ "system.traits.languages.value": realLanguages});
       }
       if (specialLanguages.length > 0) {
-        await sbcData.characterData.actorData.update({ "system.traits.languages.custom": sbcData.characterData.actorData.system.traits.languages.custom + specialLanguages.join(";") })
+        let customLanguages = sbcData.characterData.actorData.system.traits.languages.custom;
+        customLanguages = customLanguages.concat(specialLanguages);
+        await sbcData.characterData.actorData.update({ "system.traits.languages.custom": customLanguages })
       }
-
-      // Remove trailing semicolons
-      sbcData.characterData.actorData.update({ "system.traits.languages.custom": sbcData.characterData.actorData.system.traits.languages.custom.replace(/(;)$/, "") })
 
       return true
     } catch (err) {

@@ -1,13 +1,13 @@
-<form autocomplete="off" onsubmit="event.preventDefault();">
+<form autocomplete="off" data-tooltip-class="pf1">
   <div class="selectors">
     {{!-- PC selector --}}
     <h2>{{localize "PF1.PCs"}}</h2>
     <div class="character-selector">
-      {{#each actors.characters as |actor|}}
-        <div class="actor{{#if actor.toggled}} toggled{{/if}}" data-id="{{actor.id}}">
-          <img class="portrait" src="{{actor.actor.img}}">
-          <span class="name">{{actor.actor.name}}</span>
-          <input type="checkbox" {{checked actor.toggled}}/>
+      {{#each actors.characters}}
+        <div class="actor{{#if selected}} toggled{{/if}}" data-id="{{id}}">
+          <img class="portrait" src="{{actor.img}}">
+          <span class="name">{{actor.name}}</span>
+          <input type="checkbox" {{checked selected}}>
         </div>
       {{/each}}
     </div>
@@ -15,12 +15,12 @@
     {{!-- NPC selector --}}
     <h2>{{localize "PF1.NPCs"}}</h2>
     <div class="npc-selector">
-      {{#each actors.npcs as |actor|}}
-        <div class="actor{{#if actor.toggled}} toggled{{/if}}" data-id="{{actor.id}}">
-          <img class="portrait" src="{{actor.actor.img}}">
-          <span class="name">{{actor.actor.name}}</span>
-          <span class="xp">{{actor.xpString}} XP</span>
-          <input type="checkbox" {{checked actor.toggled}}/>
+      {{#each actors.npcs}}
+        <div class="actor{{#if selected}} toggled{{/if}}" data-id="{{id}}">
+          <img class="portrait" src="{{actor.img}}">
+          <span class="name">{{actor.name}}</span>
+          <span class="xp">{{localize "PF1.XPValue" value=xpString}}</span>
+          <input type="checkbox" {{checked selected}}>
         </div>
       {{/each}}
     </div>
@@ -28,45 +28,58 @@
 
   <div class="footer">
     {{!-- Options --}}
-    <h2>{{localize "PF1.Options"}}</h2>
-    <div class="options flexcol">
+    <fieldset class="options flexcol">
+      <legend>{{localize "PF1.Options"}}</legend>
+
       <div class="bonus-xp form-group">
-        <label>{{localize "PF1.Application.XPDistributor.Options.BonusExperience"}}
-          <input class="form-fields" type="number" value="{{bonusXP}}" />
-        </label>
+        <label>{{localize "PF1.Application.XPDistributor.Options.BonusExperience"}}</label>
+        <div class="form-fields">
+          <input type="number" value="{{bonusXP}}">
+        </div>
       </div>
-    </div>
+    </fieldset>
 
     {{!-- Show result --}}
+    <fieldset>
+      <legend>{{localize "PF1.Application.XPDistributor.Reward"}}</legend>
+
+
+
     <div class="flexcol result">
       {{!-- Split XP --}}
-      <div class="property xp-split">
-        <strong>
+      <div class="property xp-split form-group">
+        <label>
           <i class="fas fa-people-arrows"></i> {{localize "PF1.Application.XPDistributor.SplitExperience"}}
-        </strong>
-        <strong class="value">{{labels.xp.split}}</strong>
+        </label>
+        <div class="form-fields">
+          <strong class="value">{{numberFormat xp.split sign=true}}</strong>
+        </div>
       </div>
 
       {{!-- Total XP --}}
-      <div class="property xp-total">
-        <strong>
+      <div class="property xp-total form-group">
+        <label>
           <i class="fas fa-star"></i> {{localize "PF1.Application.XPDistributor.TotalExperience"}}
-        </strong>
-        <strong class="value">{{labels.xp.total}}</strong>
+        </label>
+        <div class="form-fields">
+          <strong class="value">{{numberFormat xp.total sign=true}}</strong>
+        </div>
       </div>
     </div>
+    </fieldset>
 
     {{!-- Buttons --}}
     <div class="flexrow">
-      <button type="button" name="split-evenly">
+      <button type="button" data-reward="split">
         <i class="fas fa-people-arrows"></i> {{localize "PF1.Application.XPDistributor.SplitEvenly"}}
       </button>
 
-      <button type="button" name="give-to-all">
+      <button type="button" data-reward="max">
         <i class="fas fa-star"></i> {{localize "PF1.Application.XPDistributor.GiveToAll"}}
       </button>
 
-      <button type="button" name="cancel">
+      <button type="button" class="cancel">
+        <i class="fa-solid fa-ban"></i>
         {{localize "PF1.Cancel"}}
       </button>
     </div>

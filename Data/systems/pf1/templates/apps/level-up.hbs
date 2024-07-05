@@ -1,40 +1,47 @@
-<form class="{{cssClass}}" autocomplete="off">
-  <div class="tab section flexcol" data-section="{{section.name}}" data-section-index="{{sectionIdx}}">
-    <h2 class="form-header">{{localize section.label}}</h2>
-
-    {{#if section.items}}
-      <div class="flexrow">
-        <nav class="list-selector" data-content="{{section.name}}">
-          {{#each section.items as |item a|}}
-            <a class="item{{#if (eq item.id ../section.currentItem.id)}} active{{/if}}" data-id="{{item.id}}" data-target="{{item.target}}" data-type="{{item.type}}">
-              {{#if item.img}}
-                <img src="{{item.img}}"></img>
-              {{else}}
-                <span class="fake-img"></span>
-              {{/if}}
-              <span class="name">{{item.name}}</span>
-            </a>
-          {{/each}}
-        </nav>
-
-        <div class="content {{section.name}}-body">
-          {{#with section.currentItem}}
-            {{#if (eq type "html")}}
-              {{> (lookup . "target") ..}}
-            {{/if}}
-          {{/with}}
-        </div>
-      </div>
-    {{/if}}
-
-    {{#if section.template}}
-      {{> (lookup section "template") .}}
-    {{/if}}
+<form autocomplete="off" data-tooltip-class="pf1">
+  <div class="summary">
+    <h2>{{localize "PF1.LevelUp.Summary.Label"}}</h2>
+    {{> "systems/pf1/templates/apps/level-up/summary.hbs"}}
   </div>
 
-  <div class="nav-buttons">
-    <button type="button" disabled data-type="previous">{{localize "PF1.Previous"}}</button>
-    <button type="button" disabled data-type="next">{{localize "PF1.Next"}}</button>
-    <button type="submit" disabled data-type="submit">{{localize "PF1.Submit"}}</button>
-  </div>
+  <section>
+    <div class="segment health">
+      <h2>{{localize "PF1.LevelUp.Health.Label"}}</h2>
+      {{> "systems/pf1/templates/apps/level-up/health.hbs"}}
+    </div>
+
+    <div class="segment fcb">
+      <h2>{{localize "PF1.LevelUp.FC.Label"}}</h2>
+      {{> "systems/pf1/templates/apps/level-up/fcb.hbs"}}
+    </div>
+
+    {{#unless isMythic}}
+    <div class="segment ability-score">
+      <h2>{{localize "PF1.LevelUp.AbilityScore.Label"}}</h2>
+      {{#if abilityScore.new}}
+      {{> "systems/pf1/templates/apps/level-up/ability-score.hbs"}}
+      {{else if abilityScore.next}}
+      <p class="info">{{localize "PF1.LevelUp.AbilityScore.Next" level=abilityScore.next}}</p>
+      {{/if}}
+    </div>
+    {{/unless}}
+  </section>
+
+  <footer class="buttons">
+    <button type="button" data-action="skip" data-tooltip="PF1.LevelUp.SkipHint">
+      <i class="fa-solid fa-pen"></i>
+      {{localize "PF1.Manual"}}
+    </button>
+
+    <div class="padding"> </div>
+
+    <select name="visibility">
+      {{selectOptions visibilityOptions selected=visibility localize=true blank="PF1.Default"}}
+    </select>
+
+    <button type="submit" {{#unless ready}}disabled{{/unless}} data-action="commit">
+      <i class="fa-solid fa-floppy-disk"></i>
+      {{localize "PF1.Finish"}}
+    </button>
+  </footer>
 </form>

@@ -11,10 +11,16 @@ async function cleanLine(content, line) {
     return line.replace(content, "");
 }
 
+/**
+ *
+ * @param {Array.<string>} data Array of separated data.
+ * @param {number} startLine Index from where base part starts.
+ * @returns {Promise.<Boolean>} `false` if any error is catch.
+ */
 export async function parseBase(data, startLine) {
   sbcConfig.options.debug && console.groupCollapsed("sbc-pf1 | " + sbcData.parsedCategories + "/" + sbcData.foundCategories + " >> PARSING BASE DATA")
 
-//  let parsingBreaks = new RegExp("^(" + sbcConfig.lineStarts.join("\\b|\\b") + ")", "gi");
+  //  let parsingBreaks = new RegExp("^(" + sbcConfig.lineStarts.join("\\b|\\b") + ")", "gi");
   let parsedSubCategories = []
   sbcData.notes["base"] = {}
 
@@ -46,8 +52,8 @@ export async function parseBase(data, startLine) {
       }
 
       // Parse Challenge Rating
-      if (!parsedSubCategories["cr"]) {
-        if (/\s*CR\s*/.test(lineContent)) {
+      if (/\s*CR\s*/.test(lineContent)) {
+        if (!parsedSubCategories["cr"]) {
           let parserCR = parserMapping.map.base.cr
           let cr = lineContent.match(/\s*CR\s*(\d+\/*\d*|-)/)[1].trim()
 
@@ -162,8 +168,18 @@ export async function parseBase(data, startLine) {
           // So as not to match the class "Witch" when it's included in "Source Pathfinder #72: The Witch Queen's Revenge pg. 86"
           let isSourceLine = lineContent.match(/^(Source)\s*/)
 
+          let isAgeLine = lineContent.match(/(Old|Middle Age|Middle-aged|Venerable)/i);
+          if(isAgeLine && !parsedSubCategories["age"]) {
+            let age = isAgeLine[1];
+            let parserAge = parserMapping.map.base.age
+            parsedSubCategories["age"] = await parserAge.parse(age, line);
+
+            if(parsedSubCategories["age"] === true) lineContent = await cleanLine(age, lineContent);
+          }
+
+
           if (!isAlignmentLine && !isSourceLine) {
-            let patternClasses = new RegExp("(" + sbcConfig.classes.join("\\b|\\b") + "\\b|\\b" + sbcConfig.prestigeClassNames.join("\\b|\\b") + "\\b|\\b" + sbcContent.wizardSchoolClasses.join("\\b|\\b") + ")(?![^(]*\\))(.*)", "gi")
+            let patternClasses = new RegExp("(" + sbcConfig.classes.join("\\b|\\b") + "\\b|\\b" + `${sbcConfig.prestigeClassNames.length ? sbcConfig.prestigeClassNames.join("\\b|\\b") : "_"}` + "\\b|\\b" + sbcContent.wizardSchoolClasses.join("\\b|\\b") + ")(?![^(]*\\))(.*)", "gi")
             if (patternClasses.test(lineContent)) {
               // Take everything from the first class found up until the end of line
               let classes = lineContent.match(patternClasses)[0]
@@ -263,18 +279,18 @@ export async function parseBase(data, startLine) {
 
   // Parse errors and warnings
   if (!parsedSubCategories["cr"] && sbcData.actorType === 0) {
-      let errorMessage = `No CR for this NPC detected, please check the highlighted line`
+      let errorMessage = "No CR for this NPC detected, please check the highlighted line"
       let error = new sbcError(2, "Parse/Base", errorMessage, 0)
       sbcData.errors.push(error)
   }
 
   if (!parsedSubCategories["creatureType"]) {
-      let errorMessage = `No creature type found!`
+      let errorMessage = "No creature type found!"
       let error = new sbcError(1, "Parse/Base", errorMessage)
       sbcData.errors.push(error)
   }
 
-  sbcConfig.options.debug && sbcUtils.log("RESULT OF PARSING BASE DATA (TRUE = PARSED SUCCESSFULLY)")
+  sbcUtils.log("RESULT OF PARSING BASE DATA (TRUE = PARSED SUCCESSFULLY)")
   sbcConfig.options.debug && console.log(parsedSubCategories)
   sbcConfig.options.debug && console.groupEnd()
 

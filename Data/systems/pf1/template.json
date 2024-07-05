@@ -1,7 +1,15 @@
 {
   "Actor": {
-    "types": ["character", "npc", "basic"],
+    "types": ["character", "npc", "vehicle", "haunt", "trap", "basic"],
+    "htmlFields": ["details.notes.value", "details.biography.value"],
     "templates": {
+      "notes": {
+        "details": {
+          "notes": {
+            "value": ""
+          }
+        }
+      },
       "common": {
         "abilities": {
           "str": {
@@ -71,7 +79,7 @@
             "rangedAbility": "dex"
           },
           "energyDrain": 0,
-          "quadruped": false,
+          "quadruped": null,
           "savingThrows": {
             "fort": {
               "base": 0,
@@ -87,26 +95,18 @@
             }
           },
           "hp": {
-            "value": 0,
             "base": 0,
             "temp": 0,
             "nonlethal": 0,
-            "max": 0,
             "offset": 0
           },
           "wounds": {
-            "min": 0,
             "base": 0,
-            "value": 0,
-            "max": 0,
             "offset": 0
           },
           "vigor": {
-            "min": 0,
-            "value": 0,
             "temp": 0,
             "base": 0,
-            "max": 0,
             "offset": 0
           },
           "init": {
@@ -131,11 +131,11 @@
               "maneuverability": "average"
             }
           },
-          "conditions": {},
           "spells": {
             "spellbooks": {
               "primary": {
                 "name": "",
+                "inUse": false,
                 "castPerDayAllOffsetFormula": "",
                 "preparedAllOffsetFormula": "",
                 "casterType": "high",
@@ -154,7 +154,6 @@
                 "hasCantrips": true,
                 "spellPreparationMode": "spontaneous",
                 "baseDCFormula": "10 + @sl + @ablMod",
-                "spontaneous": false,
                 "spellPoints": {
                   "useSystem": false,
                   "value": 0,
@@ -208,6 +207,7 @@
               },
               "secondary": {
                 "name": "",
+                "inUse": false,
                 "castPerDayAllOffsetFormula": "",
                 "preparedAllOffsetFormula": "",
                 "casterType": "high",
@@ -226,7 +226,6 @@
                 "hasCantrips": true,
                 "spellPreparationMode": "spontaneous",
                 "baseDCFormula": "10 + @sl + @ablMod",
-                "spontaneous": false,
                 "spellPoints": {
                   "useSystem": false,
                   "value": 0,
@@ -280,6 +279,7 @@
               },
               "tertiary": {
                 "name": "",
+                "inUse": false,
                 "castPerDayAllOffsetFormula": "",
                 "preparedAllOffsetFormula": "",
                 "casterType": "high",
@@ -298,7 +298,6 @@
                 "hasCantrips": true,
                 "spellPreparationMode": "spontaneous",
                 "baseDCFormula": "10 + @sl + @ablMod",
-                "spontaneous": false,
                 "spellPoints": {
                   "useSystem": false,
                   "value": 0,
@@ -352,6 +351,7 @@
               },
               "spelllike": {
                 "name": "",
+                "inUse": false,
                 "castPerDayAllOffsetFormula": "",
                 "preparedAllOffsetFormula": "",
                 "casterType": "high",
@@ -370,7 +370,6 @@
                 "hasCantrips": true,
                 "spellPreparationMode": "spontaneous",
                 "baseDCFormula": "10 + @sl + @ablMod",
-                "spontaneous": false,
                 "spellPoints": {
                   "useSystem": false,
                   "value": 0,
@@ -426,17 +425,16 @@
           }
         },
         "details": {
-          "level": {
-            "value": 0
-          },
-          "bonusFeatFormula": "",
+          "height": "",
+          "weight": "",
+          "gender": "",
+          "deity": "",
+          "age": "",
           "alignment": "tn",
           "biography": {
             "value": ""
           },
-          "notes": {
-            "value": ""
-          },
+          "bonusFeatFormula": "",
           "bonusSkillRankFormula": "",
           "tooltip": {
             "name": "",
@@ -714,19 +712,19 @@
           "fastHealing": "",
           "languages": {
             "value": [],
-            "custom": ""
+            "custom": []
           },
           "di": {
             "value": [],
-            "custom": ""
+            "custom": []
           },
           "dv": {
             "value": [],
-            "custom": ""
+            "custom": []
           },
           "ci": {
             "value": [],
-            "custom": ""
+            "custom": []
           },
           "stature": "tall"
         },
@@ -742,37 +740,128 @@
           "sp": 0,
           "cp": 0
         }
+      },
+      "cr": {
+        "details": {
+          "cr": {
+            "base": 0
+          }
+        }
       }
     },
     "character": {
-      "templates": ["common"],
+      "templates": ["common", "notes"],
       "details": {
         "xp": {
           "value": 0
-        },
-        "height": "",
-        "weight": "",
-        "gender": "",
-        "deity": "",
-        "age": ""
+        }
       },
       "traits": {
         "weaponProf": {
           "value": [],
-          "custom": ""
+          "custom": []
         },
         "armorProf": {
           "value": [],
-          "custom": ""
+          "custom": []
         }
       }
     },
     "npc": {
-      "templates": ["common"],
-      "details": {
-        "cr": {
-          "base": 1
+      "templates": ["common", "notes", "cr"]
+    },
+    "vehicle": {
+      "templates": ["notes"],
+      "abilities": {
+        "str": {
+          "value": 10
         }
+      },
+      "attributes": {
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "init": {
+          "value": 0
+        },
+        "savingThrows": {
+          "save": {
+            "base": 0
+          }
+        },
+        "ac": {
+          "normal": {
+            "base": 0
+          }
+        },
+        "cmd": {
+          "value": 0
+        }
+      },
+      "details": {
+        "carryCapacity": {},
+        "acceleration": 0,
+        "cost": 0,
+        "crew": 0,
+        "decks": 1,
+        "description": "",
+        "drivingCheck": "",
+        "drivingDevice": "",
+        "drivingSpace": "",
+        "forwardFacing": "",
+        "hardness": 0,
+        "maxSpeed": 0,
+        "propulsion": ""
+      },
+      "traits": {
+        "size": "lg",
+        "type": "land"
+      },
+      "currency": {
+        "pp": 0,
+        "gp": 0,
+        "sp": 0,
+        "cp": 0
+      }
+    },
+    "haunt": {
+      "templates": ["notes", "cr"],
+      "attributes": {
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "init": {
+          "value": 10
+        }
+      },
+      "traits": {
+        "size": "med"
+      },
+      "details": {
+        "alignment": "",
+        "area": "",
+        "aura": "",
+        "cl": 0,
+        "notice": "",
+        "weakness": "",
+        "reset": "",
+        "trigger": "",
+        "effect": "",
+        "destruction": ""
+      }
+    },
+    "trap": {
+      "templates": ["notes", "cr"],
+      "details": {
+        "type": "",
+        "perception": 0,
+        "disarm": 0,
+        "trigger": "",
+        "duration": "",
+        "reset": "",
+        "effect": ""
       }
     }
   },
@@ -788,14 +877,17 @@
       "buff",
       "attack",
       "race",
+      "implant",
       "container"
     ],
+    "htmlFields": ["description.value", "description.unidentified"],
     "templates": {
       "changes": {
         "changes": [],
         "changeFlags": {
           "loseDexToAC": false,
-          "noEncumbrance": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
           "mediumArmorFullSpeed": false,
           "heavyArmorFullSpeed": false
         }
@@ -803,37 +895,61 @@
       "scriptCalls": {
         "scriptCalls": []
       },
+      "resource": {
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        }
+      },
       "contextNotes": {
         "contextNotes": []
       },
-      "itemDescription": {
+      "description": {
         "description": {
-          "value": "",
-          "unidentified": ""
+          "value": ""
         },
         "tags": []
       },
-      "physicalItem": {
-        "quantity": 1,
-        "weight": {
-          "value": 0
-        },
-        "price": 0,
-        "size": "med",
-        "equipped": true,
-        "resizing": false,
-        "identified": true,
+      "ammo": {
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        }
+      },
+      "fragile": {
         "hp": {
           "max": 10,
           "value": 10
         },
         "broken": false,
-        "hardness": 0,
+        "hardness": 0
+      },
+      "physical": {
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
         "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
         "unidentified": {
           "price": 0,
           "name": ""
         },
+        "description": {
+          "unidentified": ""
+        },
+        "cursed": false,
         "cl": 0,
         "aura": {
           "custom": false,
@@ -842,11 +958,6 @@
       },
       "action": {
         "actions": [],
-        "uses": {
-          "per": "",
-          "value": 0,
-          "maxFormula": ""
-        },
         "attackNotes": [],
         "effectNotes": []
       },
@@ -856,11 +967,14 @@
         }
       },
       "inventory": {
-        "inventoryItems": [],
+        "items": {},
         "maxWeight": null,
-        "weightReduction": 0,
         "weight": {
-          "value": 0
+          "value": 0,
+          "reduction": {
+            "value": 0,
+            "percent": null
+          }
         },
         "sellMultiplier": 0.5,
         "currency": {
@@ -871,21 +985,20 @@
         }
       },
       "tagged": {
-        "tag": "",
-        "useCustomTag": false
+        "tag": ""
       },
       "proficiencies": {
         "armorProf": {
           "value": [],
-          "custom": ""
+          "custom": []
         },
         "weaponProf": {
           "value": [],
-          "custom": ""
+          "custom": []
         },
         "languages": {
           "value": [],
-          "custom": ""
+          "custom": []
         }
       },
       "flags": {
@@ -899,12 +1012,12 @@
         "enh": null
       },
       "hasAttack": {
-        "proficient": true,
+        "proficient": false,
         "held": "normal"
       }
     },
     "class": {
-      "templates": ["itemDescription", "changes", "links", "tagged", "proficiencies", "flags", "scriptCalls"],
+      "templates": ["description", "changes", "links", "tagged", "proficiencies", "flags", "scriptCalls"],
       "subType": "base",
       "level": 1,
       "hd": 8,
@@ -921,13 +1034,25 @@
         "skill": { "value": 0 },
         "alt": { "value": 0, "notes": "" }
       },
+      "wealth": "",
+      "alignment": "",
       "classSkills": {},
       "links": {
         "classAssociations": []
       }
     },
     "buff": {
-      "templates": ["itemDescription", "changes", "contextNotes", "links", "tagged", "flags", "scriptCalls"],
+      "templates": [
+        "description",
+        "changes",
+        "action",
+        "resource",
+        "contextNotes",
+        "links",
+        "tagged",
+        "flags",
+        "scriptCalls"
+      ],
       "subType": "temp",
       "active": false,
       "level": 0,
@@ -935,15 +1060,26 @@
         "value": null,
         "units": ""
       },
+      "conditions": {
+        "value": [],
+        "custom": []
+      },
       "hideFromToken": false
     },
     "consumable": {
-      "templates": ["itemDescription", "physicalItem", "action", "links", "tagged", "flags", "scriptCalls"],
+      "templates": [
+        "description",
+        "physical",
+        "fragile",
+        "resource",
+        "action",
+        "links",
+        "tagged",
+        "flags",
+        "scriptCalls"
+      ],
       "subType": "potion",
       "uses": {
-        "value": 0,
-        "maxFormula": "",
-        "per": null,
         "pricePerUse": 0
       },
       "links": {
@@ -953,30 +1089,43 @@
     },
     "equipment": {
       "templates": [
-        "itemDescription",
-        "physicalItem",
+        "description",
+        "physical",
+        "fragile",
         "changes",
         "contextNotes",
         "action",
+        "resource",
         "links",
         "tagged",
         "flags",
         "scriptCalls",
         "enhancable",
-        "hasAttack"
+        "hasAttack",
+        "ammo"
       ],
-      "equipped": true,
       "subType": "armor",
-      "baseTypes": [],
+      "slot": "slotless",
       "equipmentSubtype": "lightArmor",
+      "baseTypes": [],
       "armor": {
         "value": 0,
         "dex": null,
         "acp": 0,
-        "enh": 0
+        "enh": 0,
+        "material": {
+          "base": {
+            "value": "",
+            "custom": false
+          },
+          "normal": {
+            "value": "",
+            "custom": false
+          },
+          "addon": []
+        }
       },
       "spellFailure": 0,
-      "slot": "slotless",
       "links": {
         "charges": []
       },
@@ -984,8 +1133,9 @@
     },
     "feat": {
       "templates": [
-        "itemDescription",
+        "description",
         "action",
+        "resource",
         "changes",
         "contextNotes",
         "links",
@@ -995,11 +1145,11 @@
         "scriptCalls"
       ],
       "subType": "feat",
+      "abilityType": "na",
       "associations": {
         "classes": []
       },
       "showInQuickbar": false,
-      "abilityType": "none",
       "crOffset": "",
       "links": {
         "charges": []
@@ -1009,8 +1159,11 @@
     },
     "loot": {
       "templates": [
-        "itemDescription",
-        "physicalItem",
+        "description",
+        "action",
+        "physical",
+        "fragile",
+        "resource",
         "changes",
         "contextNotes",
         "links",
@@ -1019,10 +1172,11 @@
         "scriptCalls"
       ],
       "subType": "misc",
-      "extraType": ""
+      "extraType": "",
+      "abundant": false
     },
     "spell": {
-      "templates": ["itemDescription", "action", "links", "flags", "scriptCalls"],
+      "templates": ["description", "action", "links", "flags", "scriptCalls"],
       "learnedAt": {
         "class": {},
         "domain": {},
@@ -1035,7 +1189,10 @@
       "slOffset": 0,
       "school": "",
       "subschool": "",
-      "types": "",
+      "descriptors": {
+        "value": [],
+        "custom": []
+      },
       "components": {
         "value": "",
         "verbal": false,
@@ -1046,7 +1203,6 @@
         "focus": false,
         "divineFocus": 0
       },
-      "castTime": "",
       "materials": {
         "value": "",
         "focus": "",
@@ -1054,69 +1210,133 @@
       },
       "spellbook": "",
       "preparation": {
-        "preparedAmount": 0,
-        "maxAmount": 0,
-        "spontaneousPrepared": true
+        "value": 0,
+        "max": 0
+      },
+      "uses": {
+        "autoDeductChargesCost": ""
       },
       "atWill": false,
       "sr": true,
-      "shortDescription": "",
       "showInQuickbar": false,
       "domain": false,
       "slotCost": 1
     },
     "weapon": {
       "templates": [
-        "itemDescription",
-        "physicalItem",
+        "description",
+        "physical",
+        "fragile",
         "changes",
         "action",
+        "resource",
         "contextNotes",
         "links",
         "tagged",
         "flags",
         "scriptCalls",
         "enhancable",
-        "hasAttack"
+        "hasAttack",
+        "ammo"
       ],
+      "subType": "simple",
+      "weaponSubtype": "light",
       "baseTypes": [],
       "weaponGroups": {
         "value": [],
-        "custom": ""
+        "custom": []
       },
-      "subType": "simple",
-      "weaponSubtype": "light",
+      "material": {
+        "base": {
+          "value": "",
+          "custom": false
+        },
+        "normal": {
+          "value": "",
+          "custom": false
+        },
+        "addon": []
+      },
       "properties": {},
-      "showInQuickbar": true,
-      "ammoType": ""
+      "showInQuickbar": true
     },
     "attack": {
-      "templates": ["itemDescription", "action", "links", "tagged", "flags", "scriptCalls", "enhancable", "hasAttack"],
-      "showInQuickbar": true,
+      "templates": [
+        "description",
+        "action",
+        "links",
+        "tagged",
+        "flags",
+        "resource",
+        "scriptCalls",
+        "enhancable",
+        "hasAttack",
+        "ammo"
+      ],
+      "subType": "",
+      "baseTypes": [],
       "broken": false,
       "links": {
         "charges": []
       },
-      "ammoType": "",
-      "subType": "",
-      "baseTypes": [],
       "weaponGroups": {
         "value": [],
-        "custom": ""
-      }
+        "custom": []
+      },
+      "showInQuickbar": true
     },
     "race": {
-      "templates": ["itemDescription", "changes", "contextNotes", "links", "proficiencies", "flags", "scriptCalls"],
+      "templates": ["description", "changes", "contextNotes", "links", "proficiencies", "flags", "scriptCalls"],
       "creatureType": "humanoid",
       "size": "med",
+      "speeds": {
+        "land": null,
+        "fly": null,
+        "flyManeuverability": "",
+        "swim": null,
+        "climb": null,
+        "burrow": null
+      },
       "subTypes": []
     },
-    "container": {
-      "templates": ["itemDescription", "physicalItem", "inventory", "flags"],
+    "implant": {
+      "templates": [
+        "description",
+        "changes",
+        "contextNotes",
+        "resource",
+        "links",
+        "flags",
+        "scriptCalls",
+        "tagged",
+        "action",
+        "physical"
+      ],
+      "subType": "",
+      "implant": null,
+      "install": null,
+      "implanted": false,
+      "slot": "none",
+      "quantity": 1,
+      "weight": {
+        "value": 0
+      },
       "price": 0,
-      "unidentified": {
-        "price": 0
+      "size": "med",
+      "resizing": false,
+      "timeworn": false,
+      "artifact": false,
+      "cursed": false,
+      "carried": true,
+      "cl": 0,
+      "aura": {
+        "custom": false,
+        "school": ""
       }
+    },
+    "container": {
+      "templates": ["description", "changes", "physical", "fragile", "inventory", "tagged", "flags"],
+      "items": {}
     }
   }
 }

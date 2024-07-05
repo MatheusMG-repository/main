@@ -1,26 +1,52 @@
-<form class="{{cssClass}} flexcol" autocomplete="off">
+<form class="{{cssClass}} flexcol" autocomplete="off" data-tooltip-class="pf1">
 
   {{!-- Item Sheet Header --}}
   <header class="sheet-header flexrow">
-    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img"/>
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img">
 
     <div class="header-details flexrow">
       <h1 class="item-name">
-        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PF1.ItemName"}}"/>
+        <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PF1.ItemName"}}">
       </h1>
 
-      <div class="item-subtitle">
-        <h4 class="item-type">{{itemType}}</h4>
-        <span class="item-status">{{itemStatus}}</span>
-      </div>
+      {{! Content Source }}
+      {{~> "systems/pf1/templates/internal/content-source-view.hbs"}}
 
       <ul class="summary">
-        <li>
-          {{lookup config.attackTypes system.subType }}
-        </li>
       </ul>
     </div>
   </header>
+
+  {{!-- Sidebar --}}
+  <section class="sidebar">
+    <header>
+      <h3 class="item-type">{{itemType}}</h3>
+
+      <h4 class="item-subtype">{{labels.subType}}</h4>
+    </header>
+
+    {{#if (and showIdentified (gt system.enh 0))}}
+    <h4 class="enhancement">{{localize "PF1.Enhancement" bonus=system.enh}}</h4>
+    {{/if}}
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-inputs.hbs"}}
+
+    <label class="descriptor checkbox quickbar" data-tooltip="PF1.QuickbarHint">
+      <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}>
+      {{localize "PF1.Quickbar"}}
+    </label>
+
+    {{#if system.weaponGroups.total.size}}
+    <ul class="property-list weapon-groups">
+      <h5>{{localize "PF1.WeaponGroups"}}</h5>
+      {{#each system.weaponGroups.total}}
+      <li class="property weapon-group {{@key}}">{{this}}</li>
+      {{/each}}
+    </ul>
+    {{/if}}
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-tags.hbs"}}
+  </section>
 
   {{!-- Item Sheet Navigation --}}
   <nav class="sheet-navigation tabs" data-group="primary">
@@ -34,7 +60,7 @@
   <section class="primary-body">
 
     {{!-- Description Tab --}}
-    <div class="tab flexcol" data-group="primary" data-tab="description">
+    <div class="tab description" data-group="primary" data-tab="description">
       {{editor descriptionHTML.identified target="system.description.value" button=true editable=editable engine="prosemirror" collaborate=false}}
     </div>
 
@@ -42,70 +68,37 @@
     <div class="tab details" data-group="primary" data-tab="details">
       {{> "systems/pf1/templates/items/parts/item-actions.hbs"}}
 
-      <h3 class="form-header">{{localize "PF1.Properties"}}</h3>
-
-      <div class="form-group stacked">
-        <label class="checkbox">
-          <input type="checkbox" name="system.proficient" {{checked system.proficient}}/> {{localize "PF1.Proficient"}}
-        </label>
-
-        {{#unless isNaturalAttack}}
-        <label class="checkbox">
-          <input type="checkbox" name="system.masterwork" {{checked system.masterwork}}/> {{localize "PF1.Masterwork"}}
-        </label>
-        {{/unless}}
-
-        {{#if owner}}
-        <label class="checkbox">
-          <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}/> {{localize "PF1.ShowInQuickbar"}}
-        </label>
-        {{/if}}
-
-        {{#unless isNaturalAttack}}
-        <label class="checkbox">
-          <input type="checkbox" name="system.broken" {{checked system.broken}}/> {{localize "PF1.Broken"}}
-        </label>
-        {{/unless}}
-      </div>
-
-      <div class="form-group">
-        <label>{{localize "PF1.EnhancementBonus"}}</label>
-        <div class="form-fields">
-          <input type="text" name="system.enh" value="{{system.enh}}" data-dtype="Number" placeholder="0"/>
-        </div>
-      </div>
-
-      <h3 class="form-header">{{localize "PF1.AttackDetails"}}</h3>
-
       {{!-- Attack Type --}}
       <div class="form-group">
         <label>{{localize "PF1.AttackType"}}</label>
         <div class="form-fields">
           <select name="system.subType">
-            {{#select system.subType}}
-            {{#each config.attackTypes as |name type|}}
-            <option value="{{type}}">{{name}}</option>
-            {{/each}}
-            {{/select}}
+            {{selectOptions config.attackTypes selected=system.subType}}
           </select>
         </div>
       </div>
 
-      {{!-- Weapon Hold Type --}}
       {{#unless isNaturalAttack}}
+      {{!-- Weapon Hold Type --}}
       <div class="form-group">
         <label>{{localize "PF1.Held"}}</label>
         <div class="form-fields">
           <select name="system.held">
-            {{#select system.held}}
-            {{#each config.weaponHoldTypes as |name type|}}
-            <option value="{{type}}">{{name}}</option>
-            {{/each}}
-            {{/select}}
+            {{selectOptions config.weaponHoldTypes selected=system.held}}
           </select>
         </div>
       </div>
       {{/unless}}
+
+      <div class="form-group">
+        <label>{{localize "PF1.EnhancementBonus"}}</label>
+        <div class="form-fields">
+          <input type="number" name="system.enh" value="{{system.enh}}" data-dtype="Number" placeholder="0">
+        </div>
+      </div>
+
+      {{!-- Ammo Config --}}
+      {{> "systems/pf1/templates/items/parts/item-ammo.hbs"}}
 
       {{!-- Base Types --}}
       {{> "systems/pf1/templates/items/parts/item-base-types.hbs"}}
@@ -113,21 +106,57 @@
       {{!-- Weapon Groups --}}
       {{> "systems/pf1/templates/items/parts/item-weapon-groups.hbs"}}
 
+      <h3 class="form-header">{{localize "PF1.Properties"}}</h3>
+
+      <div class="form-group stacked">
+        {{#unless isNaturalAttack}}
+        <label class="checkbox proficient">
+          <input type="checkbox" name="system.proficient" {{checked system.proficient}}> {{localize "PF1.Proficient"}}
+        </label>
+
+        <label class="checkbox timeworn">
+          <input type="checkbox" name="system.timeworn" {{checked system.timeworn}}> {{localize "PF1.Timeworn"}}
+        </label>
+
+        {{#if @root.showIdentifiedData}}
+        <label class="checkbox artifact">
+          <input type="checkbox" name="system.artifact" {{checked system.artifact}}> {{localize "PF1.Artifact"}}
+        </label>
+        {{/if}}
+        {{/unless}}
+      </div>
+
+      <h3 class="form-header">{{localize "PF1.Materials.Label"}}</h3>
+      {{!-- Base Material --}}
+      {{> "systems/pf1/templates/items/parts/item-materials.hbs" label="PF1.Materials.Base" value_ref="system.material.base.value" value=system.material.base.value custom_ref="system.material.base.custom" custom=system.material.base.custom choices=materialCategories.basics}}
+
+      {{!-- Chosen Material --}}
+      {{> "systems/pf1/templates/items/parts/item-materials.hbs" label="PF1.Materials.Normal" value_ref="system.material.normal.value" value=system.material.normal.value custom_ref="system.material.normal.custom" custom=system.material.normal.custom choices=materialCategories.materials}}
+
+      {{!-- Material Addon --}}
+      {{> "systems/pf1/templates/items/parts/item-materials-addon.hbs" reference="system.material.addon"}}
+
+      {{!-- Alignment Types --}}
+      {{> "systems/pf1/templates/items/parts/item-alignments.hbs" reference="system.alignments" value=system.alignments}}
+
       {{!-- Advanced --}}
-      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+      <h3 class="form-header">{{localize "PF1.Advanced"}}</h3>
 
       {{! Tags }}
       {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
 
       {{! Identifier Tag }}
       {{~> "systems/pf1/templates/items/parts/item-tag.hbs"}}
+
+      {{!-- Associated Class --}}
+      {{> "systems/pf1/templates/items/parts/item-class-link.hbs"}}
     </div>
 
-    <div class="tab flexcol" data-group="primary" data-tab="links">
+    <div class="tab links" data-group="primary" data-tab="links">
       {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
     </div>
 
-    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+    <div class="tab advanced" data-group="primary" data-tab="advanced">
       {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
     </div>
   </section>

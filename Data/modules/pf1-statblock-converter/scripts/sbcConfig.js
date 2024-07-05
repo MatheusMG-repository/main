@@ -1,5 +1,3 @@
-import { sbcContent } from "./sbcContent.js"
-
 export const sbcConfig = {};
 
 /* ------------------------------------ */
@@ -7,7 +5,7 @@ export const sbcConfig = {};
 /* ------------------------------------ */
 
 sbcConfig.modData = {
-    "version": "4.5.3",
+    "version": "4.6.4",
     "mod": "pf1-statblock-converter",
     "modName": "sbc | PF1 Statblock Converter"
 }
@@ -90,6 +88,8 @@ sbcConfig.options = {
         "bar2": {}
     },
     "flags": {
+        "hasNoCMB": false,
+        "hasNoCMD": false,
         "noStr": false,
         "noDex": false,
         "noCon": false,
@@ -111,12 +111,12 @@ sbcConfig.sources = ["APG","ACG","U[CEM]","HA","OA","ISWG","TG","CRB","GMG","Bot
                     "M:?TotIM","M:?WBG","M:?WL"];
 
 sbcConfig.lineCategories = ["Defense", "Offense", "Statistics", "Special Abilities", "Description", "Tactics", "Ecology", "^Spells", "^(.*) Spells", "^Spell-Like", "^(.*) Spell-Like"];
-sbcConfig.lineStarts = ["CR", "XP", "LG", "LN", "LE", "NG", "N", "NE", "CG", "CN", "CE", "Init", "Aura", "Senses", "Defense", "AC", "HP", "Fort", "Immune", "Immunities", "Weaknesses", "DR", "Offense", "Speed", "Spd", "Melee", "Ranged", "Space", "Special", "^Spell-Like", "^(.*) Spell-Like", "^Spells", "^(.*) Spells", "At-will", "At will", "9th", "8th", "7th", "6th", "5th", "4th", "3rd", "2nd", "1st", "Cantrips", "Orisons", "0", "Statistics", "Str", "Base", "Feats", "Skills", "Languages", "Ecology", "Environment", "Organization", "Treasure", "SQ", "Gear", "Combat Gear", "Male", "Female", "Tactics", "Before Combat", "During Combat", "Morale", "Opposition School", "Prohibited School", "Defensive Abilities", "Immune", "SR", "Weaknesses", "Description", "\\d+\\/day", ".*\\((SU|EX|SP|\\-\\-)\\)"];
+sbcConfig.lineStarts = ["CR", "XP", "LG", "LN", "LE", "NG", "N", "NE", "CG", "CN", "CE", "Init", "Aura", "Senses", "Defense", "AC", "HP", "Fort", "Immune", "Immunities", "Weaknesses", "DR", "Offense", "Speed", "Spd", "Melee", "Ranged", "Space", "Special", "^Spell-Like", "^(.*) Spell-Like", "^Spells", "^(.*) Spells", "At-will", "At will", "9th", "8th", "7th", "6th", "5th", "4th", "3rd", "2nd", "1st", "Cantrips", "Orisons", "0", "Statistics", "Str", "Base", "Feats", "Skills", "Languages", "Ecology", "Environment", "Organization", "Treasure", "SQ", "Other Gear", "Combat Gear", "Gear", "Male", "Female", "Tactics", "Before Combat", "During Combat", "Morale", "Opposition School", "Prohibited School", "Defensive Abilities", "Immune", "SR", "Weaknesses", "Description", "\\d+\\/day", ".*\\((SU|EX|SP|\\-\\-)\\)"];
 
 sbcConfig.techColors = ["Black", "Blue", "Brown", "Gray", "Green", "Orange", "Prismatic", "Red", "White"];
 sbcConfig.techTiers = ["Mark I", "Mark II", "Mark III", "Mark IV", "Mark V", "Grade I", "Grade II", "Grade III", "Grade IV", "Grade V"];
 
-sbcConfig.magicalAbilities = ["Shrinking","Agile","Allying","Answering","Bane","([A-Za-z]*) Bane", "Bane \([A-Za-z]*\)","Benevolent",
+sbcConfig.magicalAbilities = ["Shrinking","Agile","Allying","Answering","Bane","([A-Za-z]*) Bane", "Bane ([A-Za-z]*)","Benevolent",
                               "Bewildering","Blood-Hunting","Bloodsong","Brawling","Breaking","Called","Catalytic","Compassionate",
                               "Conductive","Confounding","Corrosive","Countering","Courageous","Cruel","Cunning","Dazzling Radiance",
                               "Deadly","Debilitating","Deceptive","Defending","Disjoining","Dispelling","Distracting","Drowscourge","Dueling",

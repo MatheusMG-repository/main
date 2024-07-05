@@ -7,7 +7,7 @@ import { ParserBase } from "../base-parser.js";
 export class ResistanceParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as Resistances")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as Resistances")
 
         try {
 

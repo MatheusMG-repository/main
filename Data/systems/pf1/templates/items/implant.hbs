@@ -1,0 +1,146 @@
+<form class="{{cssClass}} flexcol" autocomplete="off" data-tooltip-class="pf1">
+  <header class="sheet-header flexrow">
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img">
+
+    <div class="header-details flexrow">
+      {{> "systems/pf1/templates/items/parts/item-name.hbs"}}
+
+      <ul class="summary">
+        {{#if isCybertech}}
+        <label class="checkbox">
+          <input type="checkbox" name="system.disabled" {{checked system.disabled}}> {{localize "PF1.Disabled"}}
+        </label>
+        {{/if}}
+      </ul>
+    </div>
+  </header>
+
+  {{!-- Sidebar --}}
+  <section class="sidebar">
+    <header>
+      <h3 class="item-type">{{itemType}}</h3>
+
+      <h4 class="item-subtype">
+        {{labels.subType}}
+      </h4>
+
+      <h4 class="slot">{{labels.slot}}</h4>
+    </header>
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-inputs.hbs"}}
+
+    <label class="descriptor checkbox quickbar" data-tooltip="PF1.QuickbarHint">
+      <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}>
+      {{localize "PF1.Quickbar"}}
+    </label>
+
+    <label>
+      <span>{{localize "PF1.Cybertech.Implantation"}}</span>
+      <input type="number" name="system.implant" value="{{system.implant}}" placeholder="0" min="0" step="1">
+    </label>
+    <label>
+      <span>{{localize "PF1.Cybertech.Install"}}</span>
+      <input type="number" name="system.install" value="{{system.install}}" placeholder="0" min="0" step="1">
+    </label>
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-aura.hbs"}}
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-tags.hbs"}}
+  </section>
+
+  {{!-- Item Sheet Navigation --}}
+  <nav class="sheet-navigation tabs" data-group="primary">
+    <a class="item" data-tab="description">{{localize "PF1.Description"}}</a>
+    <a class="item" data-tab="details">{{localize "PF1.Details"}}</a>
+    {{#unless showUnidentifiedData}}
+    <a class="item" data-tab="changes">{{localize "PF1.Changes"}}</a>
+    {{/unless}}
+    <a class="item" data-tab="links">{{localize "PF1.Links"}}</a>
+    {{#unless showUnidentifiedData}}
+    <a class="item" data-tab="advanced">{{localize "PF1.Advanced"}}</a>
+    {{/unless}}
+  </nav>
+
+  {{!-- Item Sheet Body --}}
+  <section class="primary-body">
+    {{!-- Description Tab --}}
+    {{> "systems/pf1/templates/items/parts/item-description.hbs"}}
+
+    {{!-- Details Tab --}}
+    <div class="tab details" data-group="primary" data-tab="details">
+      {{> "systems/pf1/templates/items/parts/item-actions.hbs"}}
+
+      {{!-- Type --}}
+      <div class="form-group">
+        <label>{{localize "PF1.Type"}}</label>
+        <div class="form-fields">
+          <select name="system.subType">
+            {{selectOptions subTypes selected=system.subType}}
+          </select>
+        </div>
+      </div>
+
+      {{!-- Slot --}}
+      <div class="form-group">
+        <label>{{localize "PF1.Slot"}}</label>
+        <div class="form-fields">
+          <select name="system.slot">
+            {{selectOptions slots selected=system.slot}}
+          </select>
+        </div>
+      </div>
+
+      {{!-- Equipment Size --}}
+      {{> "systems/pf1/templates/items/parts/item-size.hbs" allowAutoResizing=true}}
+
+      {{!-- Properties --}}
+      <h3 class="form-header">{{localize "PF1.Properties"}}</h3>
+      <div class="form-group stacked">
+        {{#if @root.showIdentifiedData}}
+        <label class="checkbox artifact">
+          <input type="checkbox" name="system.artifact" {{checked system.artifact}}> {{localize "PF1.Artifact"}}
+        </label>
+        {{/if}}
+        <label class="checkbox timeworn">
+          <input type="checkbox" name="system.timeworn" {{checked system.timeworn}}> {{localize "PF1.Timeworn"}}
+        </label>
+        <label class="checkbox nonlethal">
+          <input type="checkbox" name="system.nonlethal" {{checked system.nonlethal}}> {{localize "PF1.Nonlethal"}}
+        </label>
+      </div>
+
+      {{> "systems/pf1/templates/items/parts/item-aura.hbs"}}
+
+      {{!-- Proficiencies --}}
+      {{~> "systems/pf1/templates/items/parts/item-proficiencies.hbs"}}
+
+      {{!-- Advanced --}}
+      {{#unless showUnidentifiedData}}
+      <h3 class="form-header">{{localize "PF1.Advanced"}}</h3>
+
+      {{! Tags }}
+      {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
+
+      {{! Identifier Tag }}
+      {{~> "systems/pf1/templates/items/parts/item-tag.hbs"}}
+      {{/unless}}
+    </div>
+
+    {{!-- Changes Tab --}}
+    {{#unless showUnidentifiedData}}
+    <div class="tab changes" data-group="primary" data-tab="changes">
+      {{~> "systems/pf1/templates/items/parts/item-changes.hbs"}}
+    </div>
+    {{/unless}}
+
+    <div class="tab links" data-group="primary" data-tab="links">
+      {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
+    </div>
+
+    {{#unless showUnidentifiedData}}
+    <div class="tab advanced" data-group="primary" data-tab="advanced">
+      {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
+    </div>
+    {{/unless}}
+  </section>
+</form>

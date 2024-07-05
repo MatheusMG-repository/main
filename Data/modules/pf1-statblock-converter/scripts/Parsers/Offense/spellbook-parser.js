@@ -8,7 +8,7 @@ import { createItem } from "../../sbcParser.js";
 // Parse Spell Books and Spell-Like Abilities
 export class SpellBooksParser extends ParserBase {
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log("Trying to parse the following Spell Book.")
+        sbcUtils.log("Trying to parse the following Spell Book.", value)
         sbcConfig.options.debug && console.log(value)
 
         let spellCastingType = value.spellCastingType
@@ -70,6 +70,7 @@ export class SpellBooksParser extends ParserBase {
             spellBookUpdates = mergeObject(spellBookUpdates, {
                 class: spellCastingClass.toLowerCase(),
                 name: sbcUtils.capitalize(spellCastingClass) + " " + spellsOrExtracts + " " + altNameSuffix,
+                inUse: true,
             });
         }
 
@@ -83,7 +84,9 @@ export class SpellBooksParser extends ParserBase {
             
             // If the class is found, update the spellbook updates
             if(classItem) {
-                casterLevel = Math.min(casterLevel, classItem.system.level);
+                // casterLevel = Math.min(casterLevel, classItem.system.level);
+                console.log("Class Item is ", classItem);
+                casterLevel = classItem.system.level + (isNaN(classItem.system.casting.offset) ? 0 : classItem.system.casting.offset);
 
                 for(const [type, book] of Object.entries(sbcData.characterData.actorData.system.attributes.spells.spellbooks)) {
                     if(book.class === spellCastingClass.toLowerCase()) {
@@ -104,6 +107,7 @@ export class SpellBooksParser extends ParserBase {
                     psychic: classItem.system.casting.spells === "psychic",
                     spontaneous: classItem.system.casting.type,
                     spellPreparationMode: classItem.system.casting.type === "prepared" ? "prepared" : "spontaneous",
+                    inUse: true,
                 });
             }
         } else if (spellCastingClass === "hd") {
@@ -185,8 +189,8 @@ export class SpellBooksParser extends ParserBase {
                             spellsPerXTotal = spellRow.match(/(\d+)(?:\/(?:day|week|month|year))/)[1];
                             isSpellRow = true;
                         }
-                        else if (/\/([a-zA-Z]*)\)*\-/.test(spellRow)) {
-                            spellsPerX = spellRow.match(/(?:\d+)\/([a-zA-Z]*)\)*\-/)[1];
+                        else if (/\/([a-zA-Z]*)\)*-/.test(spellRow)) {
+                            spellsPerX = spellRow.match(/(?:\d+)\/([a-zA-Z]*)\)*-/)[1];
                         }
                         break;
                     default:
@@ -207,7 +211,7 @@ export class SpellBooksParser extends ParserBase {
                 }
 
                 if (isSpellRow) {
-                    let spells = sbcUtils.sbcSplit(spellRow.replace(/(^[^\-]*\-)/, ""), false)
+                    let spells = sbcUtils.sbcSplit(spellRow.replace(/(^[^-]*-)/, ""), false)
 
                     let spellRowIsInitialized = false
 
@@ -215,7 +219,12 @@ export class SpellBooksParser extends ParserBase {
                     for (let j=0; j<spells.length; j++) {
                         let spell = spells[j].trim()
                         let spellMultiple = 1;
-                        if(spell.match(/\(\d+\)$/) !== null) spellMultiple = parseInt(spell.match(/\(\d+\)$/)[0]?.replace(/\(|\)/, "") ?? 1);
+                        let regex = /\((\d+)(?!.*\d)\)|,\s*(DC\s*)?(\d+)\)$/g;
+                        let match = spell.match(regex);
+                        if(match !== null) {
+                            console.log("Spell is ", spell, " and spellMultiple is ", match[0]);
+                            spellMultiple = parseInt(match[0]?.replace(/\(|\)|DC|\s|,/g, "")) ?? 1;
+                        }
                         let spellName = sbcUtils.parseSubtext(spell)[0].trim()
                         let isDomainSpell = false
 
@@ -248,7 +257,7 @@ export class SpellBooksParser extends ParserBase {
 
                             // If the input is found in one of the compendiums, generate an entity from that
                             let entity = await sbcUtils.findEntityInCompendium(compendium, searchEntity, "spell")
-                            console.log("Entity is ", entity);
+
                             // otherwise overwrite "entity" with a placeholder
                             if (entity === null) {
                                 entity = await sbcUtils.generatePlaceholderEntity(searchEntity, line)
@@ -260,34 +269,6 @@ export class SpellBooksParser extends ParserBase {
                             // Set the spellLevel
                             if (spellLevel !== -1) {
                                 entity.updateSource({"system.level": +spellLevel})
-                            }
-
-                            // Set the spellDC
-                            // This is the offset for the dc, not the total!
-                            let spellDCOffset = 0
-
-                            // Calculate the DC in the Actor
-                            let spellCastingAbility = sbcData.characterData.actorData.system.attributes.spells.spellbooks[spellBookType].ability
-                            let spellCastingAbilityModifier = sbcData.characterData.actorData.system.abilities[spellCastingAbility].mod
-                            let spellDCInActor = 10 + +entity.system.level + +spellCastingAbilityModifier
-
-                            spellDCOffset =  +spellDC - +spellDCInActor
-
-                            // WIP, Save DC is now found in the action, not in the spell
-                            if (spellDC !== -1) {
-
-                                // Try yo get the action
-                                let spellAction = entity.firstAction
-
-                                // TODO: This may still be broken, check after v4.0.0
-
-                                //spellAction.update({"data.save.dc": spellDCOffset.toString()})
-                                entity.updateSource({
-                                    firstAction: {
-                                        "save.dc": 99
-                                    }
-                                })
-                                //entity.updateSource({"firstAction.data.save.dc": "" + spellDCOffset.toString()});
                             }
 
                             // Set the spellPE
@@ -323,8 +304,8 @@ export class SpellBooksParser extends ParserBase {
                                                 per: spellsPerX
                                             },
                                             preparation: {
-                                                maxAmount: +spellsPerXTotal,
-                                                preparedAmount: +spellsPerXTotal
+                                                max: +spellsPerXTotal,
+                                                value: +spellsPerXTotal
                                             }
                                         }
                                     })
@@ -348,8 +329,8 @@ export class SpellBooksParser extends ParserBase {
                                     entity.updateSource({
                                         system: {
                                             preparation: {
-                                                maxAmount: spellMultiple,
-                                                preparedAmount: spellMultiple
+                                                max: spellMultiple,
+                                                value: spellMultiple
                                             }
                                         }
                                     })
@@ -408,7 +389,33 @@ export class SpellBooksParser extends ParserBase {
                             }
 
                             // sbcData.characterData.items.push(entity)
-                            await createItem(entity);
+                            let [_result, resultItems] = await createItem(entity);
+                            let entityItem = resultItems[0];
+
+                            // Set the spellDC
+                            // This is the offset for the dc, not the total!
+                            let spellDCOffset = 0
+
+                            // Calculate the DC in the Actor
+                            let spellCastingAbility = sbcData.characterData.actorData.system.attributes.spells.spellbooks[spellBookType].ability
+                            let spellCastingAbilityModifier = sbcData.characterData.actorData.system.abilities[spellCastingAbility].mod
+                            let spellDCInActor = 10 + +entity.system.level + +spellCastingAbilityModifier
+
+                            spellDCOffset =  +spellDC - +spellDCInActor
+
+                            if (spellDC !== -1) {
+                                // Try to get the action
+                                let actions = entityItem.system.actions;
+                                if(actions.length > 0) {
+                                    let spellAction = entityItem.actions.get(entity.actions.contents[0].id);
+
+                                    if(spellAction) {
+                                        await spellAction.update({"save.dc": spellDCOffset });
+                                        actions[0] = spellAction.data;
+                                        await entityItem.update({"system.actions": actions})
+                                    }
+                                }
+                            }
                         }
                     }
                 } else {
@@ -443,7 +450,7 @@ export class SpellBooksParser extends ParserBase {
                     }
 
                     if (spellRow.match(/(?:(Opposition|Prohibited) Schools\s)(.*$)/i) !== null) {
-                        let [_, oppositionTag, oppositionSchools] = spellRow.match(/(?:(Opposition|Prohibited) Schools\s)(.*$)/i)
+                        let [_a, oppositionTag, oppositionSchools] = spellRow.match(/(?:(Opposition|Prohibited) Schools\s)(.*$)/i)
 
                         // Create Class Feature for the Domain
                         let oppositions = {

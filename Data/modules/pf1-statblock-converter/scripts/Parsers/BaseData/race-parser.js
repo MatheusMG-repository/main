@@ -8,7 +8,7 @@ import { createItem } from "../../sbcParser.js";
 export class RaceParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as race")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as race")
 
         try {
 
@@ -18,7 +18,7 @@ export class RaceParser extends ParserBase {
             sbcData.notes.base.race = sbcUtils.capitalize(race.name)
 
             let compendium = "pf1.races"
-            let raceItem = await sbcUtils.findEntityInCompendium(compendium, race, "race", line)
+            let raceItem = await sbcUtils.findEntityInCompendium(compendium, race, "race", null, line)
 
             if (raceItem) {
                 // sbcData.characterData.items.push(raceItem)

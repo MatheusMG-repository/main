@@ -22,7 +22,6 @@ import { SpecialAbilityParser } from "./Misc/special-ability-parser.js";
 import { EcologyParser } from "./Misc/ecology-parser.js";
 
 import { AttackParser } from "./Offense/attack-parser.js";
-import { SpecialAttackParser } from "./Offense/special-attack-parser.js";
 import { SpeedParser } from "./Offense/speed-parser.js";
 import { SpellBooksParser } from "./Offense/spellbook-parser.js";
 
@@ -30,9 +29,32 @@ import { AbilityParser } from "./Statistics/ability-parser.js";
 import { GearParser } from "./Statistics/gear-parser.js";
 import { LanguageParser } from "./Statistics/language-parser.js";
 import { SkillParser } from "./Statistics/skill-parser.js";
-import { SpecialQualityParser } from "./Statistics/special-quality-parser.js";
 
 export class parserMapping {
+  /**
+   * @typedef parserMap
+   * @prop {Object} base
+   * @prop {SimpleParser} base.name
+   * @prop {SimpleParser} base.cr
+   * @prop {NotesParser} base.mr
+   * @prop {NotesParser} base.level
+   * @prop {NotesParser} base.xp
+   * @prop {SimpleParser} base.gender
+   * @prop {RaceParser} base.race
+   * @prop {ClassParser} base.classes
+   * @prop {NotesParser} base.source
+   * @prop {SimpleParser} base.alignment
+   * @prop {SimpleParser} base.size
+   * @prop {SimpleParser} base.space
+   * @prop {SimpleParser} base.scale
+   * @prop {CreatureParser} base.creatureType
+   * @prop {SimpleParser} base.init
+   * @prop {SensesParser} base.senses
+   * @prop {AuraParser} base.aura
+  */
+
+
+    /** @type {parserMap} */
     static map = {};
 
     /* ------------------------------------ */
@@ -49,6 +71,7 @@ export class parserMapping {
                 level: new NotesParser(["system.details.level.value"]),                             // gets calculated by foundry
                 xp: new NotesParser(["system.details.xp.value"]),                                   // gets calculated by foundry
                 gender: new SimpleParser(["system.details.gender"], "string"),
+                age: new SimpleParser(["system.details.age"], "string"),
                 race: new RaceParser(),
                 classes: new ClassParser(),
                 source: new NotesParser(["base.source"]),                                         // used in the notes section

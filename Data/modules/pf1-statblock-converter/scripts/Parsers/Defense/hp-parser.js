@@ -8,7 +8,7 @@ import { createItem } from "../../sbcParser.js";
 // Parse HP, HD and special HD/HP Abilities (like Regeneration or Fast Healing)
 export class HPParser extends ParserBase {
   async parse(value, line) {
-    sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as HP/HD")
+    sbcUtils.log(`Trying to parse "${value}" ` + " as HP/HD")
 
     try {
       // Check the current Items for classes and racialHD
@@ -135,7 +135,7 @@ export class HPParser extends ParserBase {
                 if (parsedClasses < classesLeftToParse && !classItem.isRacial && (numberOfHitDice == classItem.level || hdPool.length === 1)) {
                   //console.log(`Class is ${foundClassItem.name}, and is level ${classItem.level}`);
                   // Calculate the HP for Classes of type Class as long as there are classes left to parse
-                  if(parsedNonRacialClasses < 1 && classItem.type !== 'npc') {
+                  if(parsedNonRacialClasses < 1 && classItem.type !== "npc") {
                     calcHp = +sizeOfHitDice + +Math.floor(+sbcUtils.getDiceAverage(+sizeOfHitDice) * (+classItem.level-1))
                     calcFcHp = +classItem.level;
                     parsedNonRacialClasses++
@@ -159,14 +159,14 @@ export class HPParser extends ParserBase {
                   classItems[j].isParsed = true
                 } else {
                   // THIS SHOULD NOT HAPPEN AT ALL
-                  sbcConfig.options.debug && sbcUtils.log("This should not happen while parsing hit dice and hit points. Please let me know it this happens on my github.")
+                  sbcUtils.log("This should not happen while parsing hit dice and hit points. Please let me know it this happens on my github.")
                 }
               } else {
                 //console.log(`Only class HD. Setting level to ${classItem.level}.`);
                 // Calculate the HP for Entries with just Class Hit Dice
                 if (parsedClasses < classesLeftToParse) {
                   // Calculate the HP for Classes of type Class as long as there are classes left to parse
-                  if(parsedNonRacialClasses < 1 && classItem.type !== 'npc') {
+                  if(parsedNonRacialClasses < 1 && classItem.type !== "npc") {
                     calcHp = +sizeOfHitDice + +Math.floor(+sbcUtils.getDiceAverage(+sizeOfHitDice) * (+classItem.level-1))
                     calcFcHp = +classItem.level;
                     parsedNonRacialClasses++
@@ -189,7 +189,7 @@ export class HPParser extends ParserBase {
         if(numberOfHitDice > 0) lastHitDiceSize = sizeOfHitDice;
 
         // Save Total HP and HD for the preview
-        sbcData.notes.defense["hpTotal"] = hpTotalInStatblock
+        sbcData.notes.defense["hpTotal"] = calculatedHpTotal
         sbcData.notes.defense["hdTotal"] = calculatedHdTotal
         sbcData.notes.defense["hdPool"] = hdInput
       }
@@ -214,9 +214,9 @@ export class HPParser extends ParserBase {
         if(classItem.type === "class") {
           if(classItem.system.level === 0) {
             classItem.update({"system.savingThrows": {
-              fort: {value: '', base: 0, good: classItem.system.savingThrows.fort.good },
-              ref: {value: '', base: 0, good: classItem.system.savingThrows.ref.good },
-              will: {value: '', base: 0, good: classItem.system.savingThrows.will.good },
+              fort: {value: "", base: 0, good: classItem.system.savingThrows.fort.good },
+              ref: {value: "", base: 0, good: classItem.system.savingThrows.ref.good },
+              will: {value: "", base: 0, good: classItem.system.savingThrows.will.good },
             }});
           }
         }
@@ -240,16 +240,16 @@ export class HPParser extends ParserBase {
                 // Input the hdAbility into the correct places in the sheet
 
                 let hpAbilityType = tempInput.match(hdAbilitiesPattern)[0].toLowerCase()
-
+                let parser = null;
                 switch (hpAbilityType) {
                   case "regeneration":
-                    let parserRegeneration = parserMapping.map.defense.regeneration;
-                    await parserRegeneration.parse(tempInput, line)
+                    parser = parserMapping.map.defense.regeneration;
+                    await parser.parse(tempInput, line)
                     break
                   case "fast healing":
                   case "fast-healing":
-                    let parserFastHealing = parserMapping.map.defense.fastHealing;
-                    await parserFastHealing.parse(tempInput, line)
+                    parser = parserMapping.map.defense.fastHealing;
+                    await parser.parse(tempInput, line)
                     break
                   default:
                     break

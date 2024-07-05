@@ -1,21 +1,42 @@
-<form autocomplete="off" onsubmit="event.preventDefault();">
+<form autocomplete="off" data-tooltip-class="pf1">
   <ol class="trait-list">
-    {{#each choices as |choice key|}}
-    <li>
+    {{#each choices}}
+    <li data-choice="{{@key}}">
       <label class="checkbox">
-        <input type="checkbox" name="{{key}}" data-dtype="Boolean" {{checked choice.chosen}}>
-        {{choice.label}}
+        <input type="checkbox" name="choices.{{@key}}" data-dtype="Boolean" {{checked chosen}}>
+        {{label}}
       </label>
     </li>
     {{/each}}
   </ol>
-  <div class="form-group stacked">
-    <label>{{localize "PF1.Custom"}}</label>
-    <input type="text" name="custom" value="{{custom}}" data-dtype="String"/>
+
+  {{! Custom }}
+  <div class="form-group stacked custom-tags">
+    <h3>{{localize "PF1.Custom"}}</h3>
+    <ul class="custom-tag-list">
+      {{#each custom}}
+      <li class="custom-tag" data-custom-tag="{{this}}">
+        <a data-custom-tag="{{this}}" data-action="delete">
+          <span>{{this}}</span>
+          <i class="fa-solid fa-delete-left"></i>
+        </a>
+      </li>
+      {{/each}}
+      {{#unless custom.length}}
+      <li class="info">{{localize "PF1.Application.TraitSelector.NoCustomEntries"}}</li>
+      {{/unless}}
+    </ul>
+
+    <input type="text" name="custom" data-dtype="String" placeholder="{{localize "PF1.Application.TraitSelector.CustomPlaceholder"}}">
+
     <p class="hint">
       <i class="fa-solid fa-circle-info"></i>
       {{localize "PF1.Application.TraitSelector.CustomHint"}}
     </p>
   </div>
-  <button type="submit" name="submit" value="1"><i class="far fa-save"></i> {{localize updateButton}}</button>
+
+  <button type="submit">
+    <i class="far fa-save"></i>
+    {{localize updateButton}}
+  </button>
 </form>

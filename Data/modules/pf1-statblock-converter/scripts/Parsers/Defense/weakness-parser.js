@@ -7,7 +7,7 @@ import { ParserBase } from "../base-parser.js";
 export class WeaknessParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as Weaknesses")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as Weaknesses")
 
         try {
 
@@ -34,12 +34,12 @@ export class WeaknessParser extends ParserBase {
                 } else {
                     // Its a custom weakness / vulnerability
                     let existingCustomWeakness = sbcData.characterData.actorData.system.traits.dv.custom
-                    sbcData.characterData.actorData.update({ "system.traits.dv.custom": existingCustomWeakness + sbcUtils.capitalize(weakness) + ";" })
+                    sbcData.characterData.actorData.update({ "system.traits.dv.custom": existingCustomWeakness.push(sbcUtils.capitalize(weakness)) })
                 }
             }
 
             // Remove any semicolons at the end of the custom vulnerabilities
-            sbcData.characterData.actorData.update({ "system.traits.dv.custom": sbcData.characterData.actorData.system.traits.dv.custom.replace(/(;)$/, "") })
+            //sbcData.characterData.actorData.update({ "system.traits.dv.custom": sbcData.characterData.actorData.system.traits.dv.custom.replace(/(;)$/, "") })
 
             return true
 

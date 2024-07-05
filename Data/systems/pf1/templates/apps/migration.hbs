@@ -1,0 +1,76 @@
+{{#with state}}
+<div class="categories">
+  <div class="category header">
+    <span class="label">{{localize "PF1.Migration.Dialog.Category"}}</span>
+    <label class="value processed" data-tooltip="PF1.Migration.Dialog.Tooltip.Processed"><i class="fa-solid fa-arrow-up-wide-short"></i></label>
+    <label class="delimiter"> </label>
+    <label class="value total" data-tooltip="PF1.Migration.Dialog.Tooltip.Total"><i class="fa-solid fa-layer-group"></i></label>
+    <label class="value ignored" data-tooltip="PF1.Migration.Dialog.Tooltip.Ignored"><i class="fa-solid fa-ban"></i></label>
+    <label class="value errors" data-tooltip="PF1.Migration.Dialog.Tooltip.Errors"><i class="fa-solid fa-solid fa-triangle-exclamation"></i></label>
+    <label class="value invalid" data-tooltip="PF1.Migration.Dialog.Tooltip.Invalid"><i class="fa-solid fa-link-slash"></i></label>
+    <label class="value status" data-tooltip="PF1.Migration.Dialog.Tooltip.Status"><i class="fa-solid fa-heart-pulse"></i></label>
+  </div>
+  {{#each categories}}
+  <div class="category item" data-category="{{id}}">
+    <h3 class="header">
+      <span class="label">{{label}}</span>
+      <span class="current">{{currentName}}</span>
+    </h3>
+    <span class="padding"> </span>
+
+    {{#if isNumber}}
+      <span class="value processed">{{processed}}</span>
+      <span class="delimiter">/</span>
+      <span class="value total">{{total}}</span>
+      <span class="value ignored {{#if ignored}}found{{/if}}" data-tooltip="PF1.Migration.Dialog.Tooltip.Ignored">{{ignored}}</span>
+      <span class="value errors {{#if errors.length}}found has-details{{/if}}" data-tooltip="PF1.Migration.Dialog.Tooltip.Errors">{{errors.length}}</span>
+      <span class="value invalid {{#if invalid}}found has-details{{/if}}" data-tooltip="PF1.Migration.Dialog.Tooltip.Invalid">{{invalid}}</span>
+      {{else}}
+      <span class="empty"> </span>
+    {{/if}}
+
+    <div class="status {{#if completed}}completed{{else}}in-progress{{/if}}">
+      {{#if completed}}
+      <i class="fa-regular fa-square-check"></i>
+      {{else}}
+      <i class="fa-regular fa-square"></i>
+      {{/if}}
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+<div class="migration-info">
+  {{#if unlock}}
+  <i class="fa-solid fa-unlock-keyhole"></i>
+  {{localize "PF1.Migration.Dialog.ProcessLocked"}}
+  {{else}}
+  <i class="fa-solid fa-lock"></i>
+  {{localize "PF1.Migration.Dialog.IgnoreLocked"}}
+  {{/if}}
+</div>
+
+{{#if (or errors invalid)}}
+<div class="error-info">
+  <i class="fa-solid fa-solid fa-triangle-exclamation"></i>
+  {{#if errors}}
+  <span class="detail"><label>{{localize "PF1.Migration.Dialog.Errors"}}</label>: <span>{{errors}}</span></span>
+  {{~/if}}
+  {{#if invalid~}}
+  <span class="detail"><label>{{localize "PF1.Migration.Dialog.InvalidDocuments"}}</label>: <span>{{invalid}}</span></span>
+  {{/if}}
+  <br>
+  <span class="instructions">{{localize "PF1.Migration.Dialog.ErrorHelp"}}</span>
+</div>
+{{/if}}
+
+<h3 class="status {{#if completed}}completed{{else}}in-progress{{/if}}">
+  {{#if completed}}
+  <i class="fa-solid fa-check-double fa-beat"></i>
+  {{localize "PF1.Migration.Dialog.Completed"}}
+  {{else}}
+  <i class="fa-regular fa-hourglass-half fa-spin"></i>
+  {{localize "PF1.Migration.Dialog.Ongoing"}}
+  {{/if}}
+</h3>
+{{/with}}

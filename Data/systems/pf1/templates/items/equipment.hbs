@@ -1,25 +1,83 @@
-<form class="{{cssClass}} flexcol" autocomplete="off">
+<form class="{{cssClass}} flexcol" autocomplete="off" data-tooltip-class="pf1">
 
   {{!-- Item Sheet Header --}}
   <header class="sheet-header flexrow">
-    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img" />
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img">
 
     <div class="header-details flexrow">
       {{> "systems/pf1/templates/items/parts/item-name.hbs"}}
 
       <ul class="summary">
-        <li>
-          {{itemType}}
-        </li>
-        <li>
-          {{#unless showUnidentifiedData}}{{labels.equipmentSubtype}}{{/unless}}
-        </li>
-        <li>
-          {{#if hasMultipleSlots}}{{#unless showUnidentifiedData}}{{labels.slot}}{{/unless}}{{/if}}
-        </li>
       </ul>
     </div>
   </header>
+
+  {{!-- Sidebar --}}
+  <section class="sidebar">
+    <header>
+      <h3 class="item-type">{{itemType}}</h3>
+
+      <h4 class="item-subtype">
+        {{#if labels.childTypeDistinct}}
+        {{labels.childType}}
+        {{else}}
+        {{labels.subType}}
+        {{/if}}
+      </h4>
+
+      {{#if hasMultipleSlots}}
+      <h4 class="slot">{{labels.slot}}</h4>
+      {{/if}}
+    </header>
+
+    {{#if (and showIdentified (gt system.armor.enh 0))}}
+    <label class="enhancement">
+      <span>{{localize "PF1.Enhancement"}}</span>
+      <span class="value">{{numberFormat system.armor.enh sign=true}}</span>
+    </label>
+    {{/if}}
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-inputs.hbs"}}
+
+    <label class="descriptor checkbox quickbar" data-tooltip="PF1.QuickbarHint">
+      <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}>
+      {{localize "PF1.Quickbar"}}
+    </label>
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-aura.hbs"}}
+
+    {{#if (or labels.armor labels.mdex labels.acp)}}
+    <div class="details">
+      <h5>{{localize "PF1.Details"}}</h5>
+      {{#if labels.armor}}
+      <label class="armor-class">
+        <span>{{localize "PF1.ACNormal"}}</span>
+        <span class="value">{{labels.armorValue}}</span>
+      </label>
+      {{/if}}
+      {{#if labels.acp}}
+      <label class="acp">
+        <span>{{localize "PF1.ACP"}}</span>
+        <span class="value">{{labels.acpEffective}}</span>
+      </label>
+      {{/if}}
+      {{#if labels.mdex}}
+      <label class="mdex">
+        <span>{{localize "PF1.MaxDexShort"}}</span>
+        <span class="value">{{numberFormat system.armor.dex sign=true}}</span>
+      </label>
+      {{/if}}
+      {{#if system.spellFailure}}
+      <label class="asf">
+        <span>{{localize "PF1.ArcaneSpellFailureAbbr"}}</span>
+        <span class="value">{{system.spellFailure}}%</span>
+      </label>
+      {{/if}}
+    </div>
+    {{/if}}
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-tags.hbs"}}
+  </section>
 
   {{!-- Item Sheet Navigation --}}
   <nav class="sheet-navigation tabs" data-group="primary">
@@ -44,16 +102,11 @@
       {{> "systems/pf1/templates/items/parts/item-actions.hbs"}}
 
       {{!-- Equipment Type --}}
-      <h3 class="form-header">{{localize "PF1.InventoryArmorEquipment"}}</h3>
       <div class="form-group">
         <label>{{localize "PF1.Type"}}</label>
         <div class="form-fields">
           <select name="system.subType">
-            {{#select system.subType}}
-            {{#each equipmentCategories.types as |name type|}}
-            <option value="{{type}}">{{name}}</option>
-            {{/each}}
-            {{/select}}
+            {{selectOptions equipmentCategories.types selected=system.subType}}
           </select>
         </div>
       </div>
@@ -64,11 +117,7 @@
         <label>{{localize "PF1.Category"}}</label>
         <div class="form-fields">
           <select name="system.equipmentSubtype">
-            {{#select system.equipmentSubtype}}
-            {{#each equipmentCategories.subTypes as |name type|}}
-            <option value="{{type}}">{{name}}</option>
-            {{/each}}
-            {{/select}}
+            {{selectOptions equipmentCategories.subTypes selected=system.equipmentSubtype}}
           </select>
         </div>
       </div>
@@ -80,16 +129,12 @@
         <label>{{localize "PF1.Slot"}}</label>
         <div class="form-fields">
           <select name="system.slot">
-            {{#select system.slot}}
-            {{#each equipmentSlots as |name type|}}
-            <option value="{{type}}">{{name}}</option>
-            {{/each}}
-            {{/select}}
+            {{selectOptions equipmentSlots selected=system.slot}}
           </select>
         </div>
       </div>
       {{else}}
-      <input type="hidden" name="system.slot" value="{{system.subType}}" />
+      <input type="hidden" name="system.slot" value="{{system.subType}}">
       {{/if}}
 
       {{!-- Equipment Size --}}
@@ -98,13 +143,13 @@
       {{!-- Base Types --}}
       {{> "systems/pf1/templates/items/parts/item-base-types.hbs"}}
 
-      <hr>
+      <h3 class="form-header">{{localize "PF1.ArmorOrShield"}}</h3>
 
       {{!-- Armor Class --}}
       <div class="form-group">
         <label>{{localize "PF1.ArmorClass"}}</label>
         <div class="form-fields">
-          <input type="text" name="system.armor.value" value="{{system.armor.value}}" data-dtype="Number"/>
+          <input type="number" name="system.armor.value" value="{{system.armor.value}}" data-dtype="Number">
         </div>
       </div>
 
@@ -113,7 +158,7 @@
       <div class="form-group">
         <label>{{localize "PF1.EnhancementBonus"}}</label>
         <div class="form-fields">
-          <input type="text" name="system.armor.enh" value="{{system.armor.enh}}" data-dtype="Number"/>
+          <input type="number" name="system.armor.enh" value="{{system.armor.enh}}" data-dtype="Number">
         </div>
       </div>
       {{/unless}}
@@ -122,7 +167,7 @@
       <div class="form-group">
         <label>{{localize "PF1.MaxDexterityModifier"}}</label>
         <div class="form-fields">
-          <input type="text" name="system.armor.dex" value="{{system.armor.dex}}" placeholder="{{localize "PF1.Unlimited"}}" data-dtype="Number"/>
+          <input type="number" name="system.armor.dex" value="{{system.armor.dex}}" placeholder="{{localize "PF1.Unlimited"}}" data-dtype="Number">
         </div>
       </div>
 
@@ -130,7 +175,7 @@
       <div class="form-group">
         <label>{{localize "PF1.ArmorCheckPenalty"}}</label>
         <div class="form-fields">
-          <input type="text" name="system.armor.acp" value="{{system.armor.acp}}" data-dtype="Number" placeholder="0"/>
+          <input type="number" name="system.armor.acp" value="{{system.armor.acp}}" data-dtype="Number" placeholder="0">
         </div>
       </div>
 
@@ -138,7 +183,7 @@
       <div class="form-group">
         <label>{{localize "PF1.ArcaneSpellFailure"}}</label>
         <div class="form-fields">
-          <input type="text" name="system.spellFailure" value="{{system.spellFailure}}" data-dtype="Number" placeholder="0"/>
+          <input type="number" name="system.spellFailure" value="{{system.spellFailure}}" data-dtype="Number" placeholder="0">
         </div>
       </div>
 
@@ -146,44 +191,47 @@
 
       {{!-- Equipment Status --}}
       <div class="form-group stacked">
-        {{#if isGM}}
-        <label class="checkbox">
-          <input type="checkbox" name="system.identified" {{checked system.identified}}/> {{localize "PF1.Identified"}}
+        {{#if @root.showIdentifiedData}}
+        <label class="checkbox artifact">
+          <input type="checkbox" name="system.artifact" {{checked system.artifact}}> {{localize "PF1.Artifact"}}
         </label>
         {{/if}}
-        <label class="checkbox">
-          <input type="checkbox" name="system.masterwork" {{checked system.masterwork}}/> {{localize "PF1.Masterwork"}}
+        <label class="checkbox timeworn">
+          <input type="checkbox" name="system.timeworn" {{checked system.timeworn}}> {{localize "PF1.Timeworn"}}
         </label>
-        <label class="checkbox">
-          <input type="checkbox" name="system.broken" {{checked system.broken}}/> {{localize "PF1.Broken"}}
-        </label>
-        <label class="checkbox">
-          <input type="checkbox" name="system.nonlethal" {{checked system.nonlethal}}/> {{localize "PF1.Nonlethal"}}
-        </label>
-        <label class="checkbox">
-          <input type="checkbox" name="system.proficient" {{checked system.proficient}}/> {{localize "PF1.ProficientAttack"}}
+        <label class="checkbox nonlethal">
+          <input type="checkbox" name="system.nonlethal" {{checked system.nonlethal}}> {{localize "PF1.Nonlethal"}}
         </label>
       </div>
 
-      <h4 class="form-header">{{localize "PF1.Misc"}}</h4>
+      <h3 class="form-header">{{localize "PF1.Misc"}}</h3>
 
       <div class="form-group stacked">
-        {{#if owner}}
         <label class="checkbox">
-          <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}/> {{localize "PF1.ShowInQuickbar"}}
+          <input type="checkbox" name="system.proficient" {{checked system.proficient}}> {{localize "PF1.ProficientAttack"}}
         </label>
-        {{/if}}
       </div>
 
       {{> "systems/pf1/templates/items/parts/item-aura.hbs"}}
 
+      {{!-- Equipment Materials --}}
+      {{#if (or (eq item.subType "armor") (eq item.subType "shield"))}}
+        <h3 class="form-header">{{localize "PF1.Materials.Label"}}</h3>
+        {{!-- Base Material --}}
+        {{> "systems/pf1/templates/items/parts/item-materials.hbs" label="PF1.Materials.Base" value_ref="system.armor.material.base.value" value=system.armor.material.base.value custom_ref="system.armor.material.base.custom" custom=system.armor.material.base.custom choices=materialCategories.basics}}
+
+        {{!-- Chosen Material --}}
+        {{> "systems/pf1/templates/items/parts/item-materials.hbs" label="PF1.Materials.Normal" value_ref="system.armor.material.normal.value" value=system.armor.material.normal.value custom_ref="system.armor.material.normal.custom" custom=system.armor.material.normal.custom choices=materialCategories.materials}}
+
+        {{> "systems/pf1/templates/items/parts/item-materials-addon.hbs" reference="system.armor.material.addon"}}
+      {{/if}}
 
       {{!-- Proficiencies --}}
       {{~> "systems/pf1/templates/items/parts/item-proficiencies.hbs"}}
 
       {{!-- Advanced --}}
       {{#unless showUnidentifiedData}}
-      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+      <h3 class="form-header">{{localize "PF1.Advanced"}}</h3>
 
       {{! Tags }}
       {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
@@ -195,17 +243,17 @@
 
     {{!-- Changes Tab --}}
     {{#unless showUnidentifiedData}}
-    <div class="tab flexcol" data-group="primary" data-tab="changes">
+    <div class="tab changes" data-group="primary" data-tab="changes">
       {{~> "systems/pf1/templates/items/parts/item-changes.hbs"}}
     </div>
     {{/unless}}
 
-    <div class="tab flexcol" data-group="primary" data-tab="links">
+    <div class="tab links" data-group="primary" data-tab="links">
       {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
     </div>
 
     {{#unless showUnidentifiedData}}
-    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+    <div class="tab advanced" data-group="primary" data-tab="advanced">
       {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
     </div>
     {{/unless}}

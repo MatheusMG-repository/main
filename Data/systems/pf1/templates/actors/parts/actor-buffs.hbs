@@ -1,12 +1,26 @@
 {{!-- Buffs --}}
 <div class="flexrow buffs-conditions">
-  {{#each config.conditions as |value con|}}
-  <div class="condition">
-    <a class="checkbox {{#if (lookup ../system.attributes.conditions con)}}active{{/if}}" name="system.attributes.conditions.{{con}}">
-      <img src="{{lookup ../config.conditionTextures con}}" width="32" height="32">
-      {{!--  <input type="checkbox" name="system.attributes.conditions.{{con}}" {{checked (lookup ../system.attributes.conditions con)}}/>  --}}
-      <span>{{lookup ../config.conditions con}}</span>
+  {{#each conditions}}
+  <div class="condition {{#if active}}active{{/if}}">
+    <a class="checkbox" data-condition-id="{{id}}">
+      <img src="{{img}}" width="32" height="32">
+      <div class="details">
+        <span class="name">{{label}}</span>
+        {{#if inherited}}
+        <div class="sources">
+        {{#each items}}
+        <span class="source">{{name}}</span>
+        {{/each}}
+        </div>
+        {{/if}}
+      </div>
     </a>
+
+    {{#if compendium}}
+    <a class="compendium-entry" data-compendium-entry="{{compendium}}">
+      <i class="fas fa-book compendium-icon"></i>
+    </a>
+    {{/if}}
   </div>
   {{/each}}
 </div>
@@ -15,9 +29,9 @@
 <div class="inventory-filters flexrow">
   {{~> "systems/pf1/templates/internal/item-search.hbs" category="buffs"}}
 
-  <ul class="filter-list flexrow" data-filter="buffs">
+  <ul class="filter-list flexrow" data-category="buffs">
     {{#each sections as |section sid|}}
-    <li class="filter-item" data-filter="type-{{sid}}">{{section.label}}</li>
+    <li class="filter-item" data-category="buffs" data-filter="{{section.id}}">{{section.label}}</li>
     {{/each}}
   </ul>
 </div>
@@ -40,9 +54,9 @@
           <span>{{localize "PF1.Level"}}</span>
         </div>
 
-        {{#if section.hasActions}}
+        {{#if section.interface.actions}}
         <div class="item-detail item-actions">
-          <i class="icon icon-gears large" data-tooltip="PF1.ActionPlural"></i>
+          <i class="icon-pf icon-gears" data-tooltip="PF1.ActionPlural"></i>
         </div>
         {{/if}}
 
@@ -50,14 +64,14 @@
           <span>{{localize "PF1.Active"}}</span>
         </div>
 
-        {{#if ../owner}}
         <div class="item-controls">
-          <a class="item-control item-create" data-tooltip="PF1.CreateItem" {{#each section.dataset as |v k|}}data-{{k}}="{{v}}"{{/each}}>
+          {{#if @root.owner}}
+          <a class="item-control item-create" data-tooltip="PF1.CreateItem" data-create="{{path}}">
             <i class="fas fa-plus"></i> {{localize "PF1.Add"}}
           </a>
-          <a data-action="compendium" data-action-target="buffs" data-tooltip="PF1.OpenCompendium"><i class="fas fa-folder-plus"></i></a>
+          <a data-action="browse" data-category="buffs" data-tooltip="PF1.BrowseBuffs"><i class="fas fa-folder-plus"></i></a>
+          {{/if}}
         </div>
-        {{/if}}
       </li>
 
       {{#each section.items as |item iid|}}
@@ -72,10 +86,10 @@
         </div>
 
         <div class="item-detail item-level">
-          <span class="text-box" data-dtype="Number">{{#if item.level}}{{item.level}}{{/if}}</span>
+          <span class="text-box allow-relative" data-dtype="Number">{{#if item.level}}{{item.level}}{{/if}}</span>
         </div>
 
-        {{#if section.hasActions}}
+        {{#if section.interface.actions}}
         <div class="item-detail item-actions">
           <div class="item-action">
             {{#if item.hasAction}}
@@ -88,16 +102,16 @@
         {{/if}}
 
         <div class="item-detail item-active">
-          <input type="checkbox" {{checked item.active}}/>
+          <input type="checkbox" {{checked item.active}}>
         </div>
 
-        {{#if ../../owner}}
         <div class="item-controls">
+          {{#if @root.owner}}
           <a class="item-control item-edit" data-tooltip="PF1.EditItem"><i class="fas fa-edit"></i></a>
           <a class="item-control item-duplicate" data-tooltip="PF1.DuplicateItem"><i class="fas fa-copy"></i></a>
           <a class="item-control item-delete" data-tooltip="PF1.DeleteItem"><i class="fas fa-trash"></i></a>
+          {{/if}}
         </div>
-        {{/if}}
       </li>
       {{/each}}
     </ol>

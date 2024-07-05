@@ -8,7 +8,7 @@ import { createItem } from "../../sbcParser.js";
 export class SpecialAbilityParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as Special Abilities")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as Special Abilities")
 
         try {
             // Try to find the name of the special ability
@@ -60,7 +60,7 @@ export class SpecialAbilityParser extends ParserBase {
                 specialAbilityName = `Special Ability (${line})`;
                 specialAbilityDesc = value.trim();
 
-                let errorMessage = `There may be some issues here. Please check the preview!`
+                let errorMessage = "There may be some issues here. Please check the preview!"
                 let error = new sbcError(3, "Parse/Special Abilties", errorMessage, line)
                 sbcData.errors.push(error)
             }

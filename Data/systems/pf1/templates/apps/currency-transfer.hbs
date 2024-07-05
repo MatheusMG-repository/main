@@ -1,6 +1,6 @@
-<form class="currency-transfer" autocomplete="off" onsubmit="event.preventDefault();">
+<form class="currency-transfer" data-tooltip-class="pf1" autocomplete="off">
     <div class="form-group">
-      <label>{{localize "PF1.CurrencyPlatinumP"}}</label>
+      <label>{{localize "PF1.Currency.Full.pp"}}</label>
       <div class="form-fields">
         <button class="cur-range down" type="button" data-tooltip="PF1.None" tabindex="-1">
           <i class="fas fa-arrow-alt-circle-down"></i>
@@ -15,7 +15,7 @@
     </div>
 
     <div class="form-group">
-      <label>{{localize "PF1.CurrencyGoldP"}}</label>
+      <label>{{localize "PF1.Currency.Full.gp"}}</label>
       <div class="form-fields">
         <button class="cur-range down" type="button" data-tooltip="PF1.None" tabindex="-1">
           <i class="fas fa-arrow-alt-circle-down"></i>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="form-group">
-      <label>{{localize "PF1.CurrencySilverP"}}</label>
+      <label>{{localize "PF1.Currency.Full.sp"}}</label>
       <div class="form-fields">
         <button class="cur-range down" type="button" data-tooltip="PF1.None" tabindex="-1">
           <i class="fas fa-arrow-alt-circle-down"></i>
@@ -45,7 +45,7 @@
     </div>
 
     <div class="form-group">
-      <label>{{localize "PF1.CurrencyCopperP"}}</label>
+      <label>{{localize "PF1.Currency.Full.cp"}}</label>
       <div class="form-fields">
         <button class="cur-range down" type="button" data-tooltip="PF1.None" tabindex="-1">
           <i class="fas fa-arrow-alt-circle-down"></i>
@@ -64,11 +64,11 @@
       <div class="form-fields">
         <label></label>
         <label>/</label>
-        <label>{{total}} {{localize "PF1.CurrencyGP"}}</label>
+        <label>{{localize "PF1.Currency.Inline.gp" value=total}}</label>
       </div>
     </div>
 
-    <button type="submit" name="submit">
-        <i class="fas fa-save"></i> {{localize "PF1.CurrencySend"}}
+    <button type="submit" class="submit">
+        <i class="fas fa-save"></i> {{localize "PF1.Application.CurrencyTransfer.Send"}}
     </button>
 </form>

@@ -10,11 +10,11 @@ For a quick reference, you can find a lot of this information in tooltips on act
 
 ### `@abilities.X.total`
 
-The total value of an ability score. Replace X with one of the following: 'str', 'dex', 'con', 'int', 'wis', 'cha'.
+The total value of an ability score. Replace `X` with one of the following: `str`, `dex`, `con`, `int`, `wis`, `cha`.
 
 ### `@abilities.X.mod`
 
-The modifier of an ability score. Replace X with one of the following: 'str', 'dex', 'con', 'int', 'wis', 'cha'.
+The modifier of an ability score. Replace `X` with one of the following: `str`, `dex`, `con`, `int`, `wis`, `cha`.
 
 ### `@attributes.hd.total`
 
@@ -64,6 +64,30 @@ The current round of combat, or `0` if not in combat.
 The critical multiplier of the attack, or `1` if the attack is not a critical threat.
 Only appropriate for use in damage rolls and attack and effect notes.
 
+### `@sizeBonus`
+
+Effective attack roll bonus or penalty from size.
+
+### `@powerAttackBonus`
+
+Base bonus damage given by power attack to individual damage. E.g. two-handed attack at level 2 would always give 3 for this.
+
+Defaults to `0` if power attack is disabled.
+
+### `@powerAttackPenalty`
+
+Attack penalty power attacking causes. Goes hand in hand with `@powerAttackBonus`.
+
+For example furious focus is easy to implement with conditional attack roll modifier of `-@powerAttackPenalty` on the first attack.
+
+Defaults to `0` if power attack is disabled.
+
+### `@attackCount`
+
+Zero-indexed counter for which attack is being processed. So if this was placed as damage bonus, it would give you `0`, `1`, `2`, `3`, etc. bonus to damage as the attacks progress.
+
+Can also be used for ternaries to add modifications to specific attack, e.g. `@attackCount == 0 ? 4 : 0` would add 4 to first attack but no other.
+
 ## Functions
 
 Foundry (and by extension this system) allow using JavaScript's [`Math` functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) in its formulas.
@@ -77,6 +101,18 @@ Alters a damage roll to that of another size category.
 **Example:** `sizeRoll(1, 8, @size)` – Rolls 1d8 for medium actors, and alters the damage formula according to the calling actor's current size.
 
 **Example:** `sizeRoll(1, 4, 6, 2)` – Translates a damage roll of `1d4` from a tiny actor (size `2`) to a huge actor (size `6`); Output: `3d6`
+
+| `@size` | Actual     |
+| :------ | :--------- |
+| `0`     | Fine       |
+| `1`     | Diminutive |
+| `2`     | Tiny       |
+| `3`     | Small      |
+| `4`     | Small      |
+| `5`     | Large      |
+| `6`     | Huge       |
+| `7`     | Gargantuan |
+| `8`     | Colossal   |
 
 ### `sizeReach`
 

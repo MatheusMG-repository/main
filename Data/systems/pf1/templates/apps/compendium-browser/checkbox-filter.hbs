@@ -2,7 +2,7 @@
   <div class="filter-controls flexrow">
     {{#if filter.hasSearch}}
       <div class="choice-filter search-form control formgroup flexrow">
-        <input type="search" name="choice-query" value="{{choiceQuery}}" placeholder="{{localize "PF1.SearchFilterPlaceholder"}}" autocomplete="off" />
+        <input type="search" name="choice-query" value="{{choiceQuery}}" placeholder="{{localize "PF1.SearchFilterPlaceholder"}}" autocomplete="off">
         <i class="fas fa-search"></i>
       </div>
     {{/if}}
@@ -24,7 +24,7 @@
         name="filter.{{../id}}.choice.{{choice.key}}"
         id="{{@root.id}}.filter.{{../id}}.choice.{{choice.key}}"
         {{checked choice.active}}
-      />
+>
       <label for="{{@root.id}}.filter.{{../id}}.choice.{{choice.key}}">
         {{choice.label}}
       </label>

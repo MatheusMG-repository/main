@@ -24,26 +24,34 @@ export class sbcParser {
     /* Prepare the input                    */
     /* ------------------------------------ */
 
-    static async prepareInput() {
+    /**
+     * Modifies the Statblock input in order to have it as an array per line break.
+     */
+    static async prepareInput(inputElement = null) {
         sbcConfig.options.debug && console.group("sbc-pf1 | PREPARING INPUT")
+        if (sbcData.input === "") {
+            let errorMessage = "Given input is empty.";
+            sbcData.errors.push(new sbcError(0, "Prepare", errorMessage));
+            throw errorMessage;
+        }
 
         try {
             // Check if David's "Roll Bonuses PF1" module is installed and active
             if (game.modules.get("roll-bonuses-pf1")?.active) {
-                sbcConfig.options.debug && sbcUtils.log("Roll Bonuses PF1 module is active")
+                sbcUtils.log("Roll Bonuses PF1 module is active")
                 sbcConfig.options.flags["rollBonusesPF1"] = true
             }
-            
+
             // Initial Clean-up of input
             $( "#sbcProgressBar" ).css("width", "5%")
 
             const sourceScrubbing = new RegExp("(" + sbcConfig.sources.join("\\b|") + ")", "gm");
             // Replace different dash-glyphs with the minus-glyph
-            sbcData.preparedInput.data = sbcData.input.replace(/–|—|−/gm,"-")
+            sbcData.preparedInput.data = sbcData.input.replace(/[–—−]/gm,"-")
             // Remove weird multiplication signs
             .replace(/×/gm, "x")
             // Remove double commas
-            .replace(/,,/gm, ",")
+            .replace(/[,,]/gm, ",")
             // Replace real fractions with readable characters (½ ⅓ ¼ ⅕ ⅙ ⅛)
             .replace(/½/gm, "1/2")
             .replace(/⅓/gm, "1/3")
@@ -64,6 +72,8 @@ export class sbcParser {
             .replace(/ﬄ/igm, "ffl")
             .replace(/ﬆ/igm, "st")
 
+            // Remove lines that only consist of 20 dashes (Hero Lab Online)
+            .replace(/^-{20}$/gm, "")
 
             // Separate the input into separate lines and put them into an array,
             // so that we can place highlights on specific lines when for
@@ -76,27 +86,27 @@ export class sbcParser {
             // If a line starter is found, then it's a new line.
             sbcConfig.options.debug && console.log("Before: ", sbcData.preparedInput.data)
             let result = [];
-            const lineCategoryPattern = new RegExp("^\(" + sbcConfig.lineCategories.join("|") + "\)","i");
-            const lineStarterPattern = new RegExp("^\(" + sbcConfig.lineStarts.join("|") + "\)(?!\\)\)","i");
-
+            const lineCategoryPattern = new RegExp("^(" + sbcConfig.lineCategories.join("|") + ")","i");
+            const lineStarterPattern = new RegExp("^(" + sbcConfig.lineStarts.join("|") + ")(?!\\))","i");
 
             sbcData.preparedInput.data.forEach((line, index) => {
+                // Capitalize the line if it's a category
                 if(lineCategoryPattern.test(line.toLowerCase().capitalize()))
                     line = line.toLowerCase().capitalize();
 
-                let caseNum = 0;
+                // let caseNum = 0;
                 if (line && sbcConfig.lineStarts.some((starter) => line.startsWith(starter))) {
                     // The line starts with a string from the other array, push it as a new line
-                    caseNum = 1;
+                    // caseNum = 1;
                     result.push(line);
                 } else if (index > 0 && lineStarterPattern.test(result[result.length - 1]) &&
                     !lineStarterPattern.test(line) && !/^Description/i.test(result[result.length - 1])) {
                     // The line doesn't start with a string from the other array, append it to the last line
-                    caseNum = 2;
+                    // caseNum = 2;
                     result[result.length - 1] += " " + line;
                 } else {
                     // The first line doesn't start with a string from the other array, push it as a new line
-                    caseNum = 3;
+                    // caseNum = 3;
                     result.push(line);
                 }
             });
@@ -109,6 +119,7 @@ export class sbcParser {
             sbcRenderer.resetHighlights()
 
             sbcData.preparedInput.success = true
+            if(inputElement) inputElement.val(sbcData.preparedInput.data.join("\n"));
 
             await this.parseInput()
 
@@ -200,6 +211,7 @@ export class sbcParser {
                         // via the index positions found earlier
                         // and send these chunks off to the correct parser in sbcParsers.js
 
+                        /** @type {Object.<string, Array.<string>} */
                         let dataChunks = {
                             "base": [],
                             "defense": [],
@@ -211,6 +223,7 @@ export class sbcParser {
                             "description": [],
                         }
 
+                        /** @type {Object.<string, number>} */
                         let startLines = {
                             "base": 0,
                             "defense": 0,
@@ -261,8 +274,12 @@ export class sbcParser {
                             let category = orderedFoundCategories[i]
                             sbcRenderer.updateProgressBar("Parsing", category, orderedFoundCategories.length, i+1)
                             parsedCategories[category] = await sbcParser.parseCategories(category, dataChunks[category], startLines[category])
-
                         }
+
+                        // Remove any semicolons at the end of the custom immunities
+                        //sbcData.characterData.actorData.update({ "system.traits.ci.custom": sbcData.characterData.actorData.system.traits.ci.custom.replace(/;$/, "") })
+                        //sbcData.characterData.actorData.update({ "system.traits.di.custom": sbcData.characterData.actorData.system.traits.di.custom.replace(/;$/, "") })
+                        //sbcData.characterData.actorData.update({ "system.traits.dv.custom": sbcData.characterData.actorData.system.traits.dv.custom.replace(/;$/, "") })
 
                         // Attempt to prune unused spellbooks
                         await pruneSpellbooks();
@@ -281,7 +298,7 @@ export class sbcParser {
                         sbcRenderer.updateProgressBar("Preview", "Generating Preview", 1, 1)
                         await generateNotesSection()
 
-                        
+
                         // If parsing and character generation is success
                         // close the inputDialog and resetSBC
 
@@ -328,8 +345,17 @@ export class sbcParser {
 
     }
 
-    // Try to find a matching parser for a given category
+    /**
+     * Try to find a matching parser for a given category
+     *
+     * @param {"base"|"defense"|"offense"|"statistics"|"ecology"|"special abilities"|"description"} category The part of the statblock we are parsing.
+     * @param {Array.<string>} data Array of separated data contained.
+     * @param {number} startLine Index from where this part of the statblock starts.
+     */
     static async parseCategories(category, data, startLine) {
+        let errorMessage = ""
+        let error = null
+
         switch (category) {
             case "base":
                 await parseBase(data, startLine)
@@ -364,8 +390,8 @@ export class sbcParser {
                 sbcData.parsedCategories++
                 break
             default:
-                let errorMessage = `No Parser found for category: ${category}`
-                let error = new sbcError(1, "Parse/Categories", errorMessage)
+                errorMessage = `No Parser found for category: ${category}`
+                error = new sbcError(1, "Parse/Categories", errorMessage)
                 sbcData.errors.push(error)
                 sbcData.parsedInput.success = false
                 break
@@ -380,13 +406,21 @@ export const parseInteger = (value) => { let p = parseInt(value); return isNaN(p
 export const parseSubtext = (value) => { return sbcUtils.parseSubtext(value); }
 
 export const parseValueToPath = async (obj, path, value) => {
-    var parts = path.split('.');
+    var parts = path.split(".");
     var curr = obj;
     for (var i = 0; i < parts.length - 1; i++)
         curr = curr[parts[i]] || {};
     curr[parts[parts.length - 1]] = value;
 }
 
+/**
+ * Wrapper for {@link Actor#update}.
+ *
+ * @param {Actor} obj The actor to be updated.
+ * @param {string} path Where to perform the update.
+ * @param {any} value Value to substitute.
+ * @returns {Promise.<Actor>} The update document instance.
+ */
 export const parseValueToDocPath = async (obj, path, value) => {
     return obj.update({ [path]: value });
 }
@@ -398,7 +432,7 @@ export const parseValueToDocPath = async (obj, path, value) => {
 // Check if some special flags were set during parsing
 export async function checkFlags() {
 
-    sbcConfig.options.debug && sbcUtils.log("Flags set during the conversion process")
+    sbcUtils.log("Flags set during the conversion process")
     sbcConfig.options.debug && console.log(sbcConfig.options.flags)
 
     let parsedFlags = []
@@ -426,26 +460,32 @@ export async function checkFlags() {
                 case "noStr":
                   fields = ["system.abilities.str.base", "system.abilities.str.value", "system.abilities.str.total"];
                   flagNeedsAdditionalParsing = true
+                  value = "NaN";
                   break;
                 case "noDex":
                   fields = ["system.abilities.dex.base", "system.abilities.dex.value", "system.abilities.dex.total"];
                   flagNeedsAdditionalParsing = true
+                  value = "NaN";
                   break;
                 case "noCon":
                   fields = ["system.abilities.con.base", "system.abilities.con.value", "system.abilities.con.total"];
                   flagNeedsAdditionalParsing = true
+                  value = "NaN";
                   break;
                 case "noInt":
                   fields = ["system.abilities.int.base", "system.abilities.int.value", "system.abilities.int.total"];
                   flagNeedsAdditionalParsing = true
+                  value = "NaN";
                   break;
                 case "noWis":
                   fields = ["system.abilities.wis.base", "system.abilities.wis.value", "system.abilities.wis.total"];
                   flagNeedsAdditionalParsing = true
+                  value = "NaN";
                   break;
                 case "noCha":
                   fields = ["system.abilities.cha.base", "system.abilities.cha.value", "system.abilities.cha.total"];
                   flagNeedsAdditionalParsing = true
+                  value = "NaN";
                   break;
                 default:
                     break
@@ -453,7 +493,7 @@ export async function checkFlags() {
 
             if (flagNeedsAdditionalParsing) {
               let parser = new SimpleParser(fields, supportedTypes)
-              parsedFlags[flag] = await parser.parse(value)
+              parsedFlags[flag] = await parser.parse(value, -1)
             }
 
 
@@ -493,11 +533,11 @@ export async function createBuffs() {
 
             let searchEntity = {
                 name: name,
-                altName: `${name.replace(/(constant|weekly|monthly|yearly)\:/gi, "").trim()}`,
+                altName: `${name.replace(/(constant|weekly|monthly|yearly):/gi, "").trim()}`,
                 type: "buff"
             }
 
-            let entity = await sbcUtils.findEntityInCompendium(["pf1.commonbuffs"], searchEntity, "buff")
+            let entity = await sbcUtils.findEntityInCompendium(["pf1.commonbuffs"], searchEntity, "buff", null, sbcData.characterData.classes)
             if(!entity) entity = game.items.getName(searchEntity.name)
             if(!entity) entity = game.items.getName(searchEntity.altName)
 
@@ -512,15 +552,15 @@ export async function createBuffs() {
                     // let casterLevel = buffableItem.casterLevel ?? -1;
                     // let casterLevel = buffableItem.getRollData().cl ?? -1;
                     console.log(`Caster level for ${buffableItem.name}: ${casterLevel}`);
-                    
-                    if (casterLevel > 0) entity.updateSource({'system.level': casterLevel});
+
+                    if (casterLevel > 0) entity.updateSource({"system.level": casterLevel});
                 }
-                
+
                 console.log(`Creating buff for ${name}.`);
                 await createItem(entity)
                 let buff = sbcData.characterData.actorData.itemTypes.buff.find((i) => i.name === entity.name);
                 console.log(buff)
-                if (/^Constant\:/i.test(name)) { await buff.update({'system.duration.value': ''}); await buff.setActive(true); }
+                if (/^Constant:/i.test(name)) { await buff.update({"system.duration.value": ""}); await buff.setActive(true); }
 
             }
         }
@@ -558,29 +598,59 @@ export async function createBuffs() {
 // }
 
 export async function generateNotesSection() {
-    let preview = await renderTemplate('modules/pf1-statblock-converter/templates/sbcPreview.hbs' , {actor: sbcData.characterData.actorData, notes: sbcData.notes })
+  let preview = await renderTemplate(
+    "modules/pf1-statblock-converter/templates/sbcPreview.hbs",
+    {
+      actor: sbcData.characterData.actorData || {},
+      notes: sbcData.notes,
+      flags: sbcConfig.options.flags,
+    }
+  );
 
-    let d = new Date()
-    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  let d = new Date();
 
-    let sbcInfo = `
-        <div class="sbcInfo" style="margin-top: 15px; margin-bottom: 5px; text-align: center; font-size: 1em; font-weight: 900;">sbc | Generated with version ${sbcConfig.modData.version} on ${months[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}</div>
-    `
+  let sbcInfo = `
+    <div
+      class="sbcInfo"
+      style="margin-top: 15px;
+      margin-bottom: 5px;
+      text-align: center;
+      font-size: 1em;
+      font-weight: 900;"
+    >
+      <p>
+        sbc | Generated with version ${sbcConfig.modData.version} on
+        ${d.toLocaleString(game.settings?.get("core", "language") || "en", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        })}
+      </p>
+    </div>
+  `;
 
-    let styledNotes = `
-        <hr>
-        <div class="statblockContainer" style="margin-top: 15px">${preview}</div>
-    `
-    let rawNotes = `
-        <br>
-        <hr>
-        <div class="rawInputContainer" style="margin-top: 15px;">
-            <h2 style="text-align:middle; border: none; text-transform: uppercase; color: #000;">RAW INPUT</h2>
-            <hr>
-            <pre style="white-space: pre-wrap; font-size: 10px;">${sbcData.input}</pre>
-        </div>
-    `
+  let styledNotes = `
+    <hr>
+    <div class="statblockContainer" style="margin-top: 15px">
+      <p>${preview}</p>
+    </div>
+  `;
+  let rawNotes = `
+    <br>
+    <hr>
+    <div class="rawInputContainer" style="margin-top: 15px;">
+      <h2 style="text-align:middle; border: none; text-transform: uppercase; color: #000;">
+        RAW INPUT
+      </h2>
+      <hr>
+      <pre style="white-space: pre-wrap; font-size: 10px;">
+        ${sbcData.input}
+      </pre>
+    </div>
+  `;
 
-    // WRITE EVERYTHING TO THE NOTES
-    await sbcData.characterData.actorData.update({ "system.details.notes.value": sbcInfo + styledNotes + rawNotes })
+  // WRITE EVERYTHING TO THE NOTES
+  await sbcData.characterData.actorData?.update({
+    "system.details.notes.value": sbcInfo + styledNotes + rawNotes,
+  });
 }

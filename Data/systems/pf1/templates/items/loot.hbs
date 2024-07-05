@@ -1,22 +1,34 @@
-<form class="{{cssClass}} flexcol" autocomplete="off">
+<form class="{{cssClass}} flexcol" autocomplete="off" data-tooltip-class="pf1">
 
   {{!-- Item Sheet Header --}}
   <header class="sheet-header loot-header flexrow">
-    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img" />
+    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img">
 
     <div class="header-details flexrow">
       {{> "systems/pf1/templates/items/parts/item-name.hbs"}}
 
       <ul class="summary">
-        <li>
-          {{itemType}}
-        </li>
-        <li>
-          {{#unless showUnidentifiedData}}{{lookup config.lootTypes system.subType}}{{/unless}}
-        </li>
       </ul>
     </div>
   </header>
+
+  {{!-- Sidebar --}}
+  <section class="sidebar">
+    <header>
+      <h3 class="item-type">{{itemType}}</h3>
+
+      {{#if showIdentifiedData}}
+      <h4 class="item-subtype">{{labels.subType}}</h4>
+      {{/if}}
+    </header>
+
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-inputs.hbs"}}
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-aura.hbs"}}
+
+    {{> "systems/pf1/templates/items/parts/item-sidebar-tags.hbs"}}
+  </section>
 
   {{!-- Item Sheet Navigation --}}
   <nav class="sheet-navigation tabs" data-group="primary">
@@ -35,48 +47,42 @@
   <section class="primary-body">
     {{> "systems/pf1/templates/items/parts/item-description.hbs"}}
 
+    {{!-- Details Tab --}}
     <div class="tab details" data-group="primary" data-tab="details">
-      {{> "systems/pf1/templates/items/parts/item-aura.hbs"}}
-
-      <h3 class="form-header">{{localize "PF1.Details"}}</h3>
+      {{> "systems/pf1/templates/items/parts/item-actions.hbs"}}
 
       {{!-- Loot Type --}}
       <div class="form-group">
         <label>{{localize "PF1.Type"}}</label>
         <div class="form-fields">
           <select name="system.subType">
-            {{#select system.subType}}
-            {{#each config.lootTypes as |name type|}}
-            <option value="{{type}}">{{name}}</option>
-            {{/each}}
-            {{/select}}
+            {{selectOptions config.lootTypes selected=system.subType}}
           </select>
         </div>
       </div>
 
+      {{!-- Item Size --}}
+      {{> "systems/pf1/templates/items/parts/item-size.hbs" allowAutoResizing=true}}
+
       {{#if (eq system.subType "ammo")}}
         <div class="form-group">
-          <label>{{localize "PF1.AmmunitionSubtype"}}</label>
+          <label>{{localize "PF1.AmmunitionType"}}</label>
           <div class="form-fields">
             <select name="system.extraType">
-              {{#select system.extraType}}
-              <option value=""></option>
-              {{#each config.ammoTypes as |name type|}}
-                <option value="{{type}}">{{name}}</option>
-              {{/each}}
-              {{/select}}
+              {{selectOptions config.ammoTypes selected=system.extraType blank=""}}
             </select>
           </div>
         </div>
 
         <div class="form-group" data-tooltip="PF1.AbundantDesc">
           <label class="checkbox">
-            <input type="checkbox" name="flags.pf1.abundant" {{checked item.flags.pf1.abundant}} /> {{localize "PF1.Abundant"}}
+            <input type="checkbox" name="system.abundant" {{checked system.abundant}}> {{localize "PF1.Abundant"}}
           </label>
         </div>
 
+
         {{! Recovery Chance}}
-        {{#unless item.flags.pf1.abundant}}
+        {{#unless system.abundant}}
         <div class="form-group">
           <label>{{localize "PF1.RecoverChancePercentage"}}</label>
           <div class="form-fields">
@@ -86,21 +92,21 @@
         {{/unless}}
       {{/if}}
 
-      <hr>
+      <h3 class="form-header">{{localize "PF1.Properties"}}</h3>
 
-      {{!-- Item Size --}}
-      {{> "systems/pf1/templates/items/parts/item-size.hbs" allowAutoResizing=true}}
-
-      {{#if isGM}}
-      <hr>
-      <label class="checkbox">
-        <input type="checkbox" name="system.identified" {{checked system.identified}}/> {{localize "PF1.Identified"}}
-      </label>
+      {{#if @root.showIdentifiedData}}
+      <div class="form-group stacked">
+        <label class="checkbox artifact">
+          <input type="checkbox" name="system.artifact" {{checked system.artifact}}> {{localize "PF1.Artifact"}}
+        </label>
+      </div>
       {{/if}}
+
+      {{> "systems/pf1/templates/items/parts/item-aura.hbs"}}
 
       {{!-- Advanced --}}
       {{#unless showUnidentifiedData}}
-      <h4 class="form-header">{{localize "PF1.Advanced"}}</h4>
+      <h3 class="form-header">{{localize "PF1.Advanced"}}</h3>
 
       {{! Tags }}
       {{~> "systems/pf1/templates/items/parts/item-tags.hbs"}}
@@ -112,17 +118,17 @@
 
     {{!-- Changes Tab --}}
     {{#unless showUnidentifiedData}}
-    <div class="tab flexcol" data-group="primary" data-tab="changes">
+    <div class="tab changes" data-group="primary" data-tab="changes">
       {{~> "systems/pf1/templates/items/parts/item-changes.hbs"}}
     </div>
     {{/unless}}
 
-    <div class="tab flexcol" data-group="primary" data-tab="links">
+    <div class="tab links" data-group="primary" data-tab="links">
       {{> "systems/pf1/templates/items/parts/item-links.hbs"}}
     </div>
 
     {{#unless showUnidentifiedData}}
-    <div class="tab flexcol" data-group="primary" data-tab="advanced">
+    <div class="tab advanced" data-group="primary" data-tab="advanced">
       {{> "systems/pf1/templates/items/parts/item-advanced.hbs"}}
     </div>
     {{/unless}}

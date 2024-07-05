@@ -5,13 +5,13 @@ export class sbcSettings {
 
     // Toggle Debug Mode, which will post log data to the console
     static toggleDebugMode () {
-        sbcConfig.options.debug && sbcUtils.log("Toggling debug mode")
+        sbcUtils.log("Toggling debug mode")
         sbcConfig.options.debug = game.settings.get(sbcConfig.modData.mod, "debug")
     }
 
     // Updates the array of custom compendia, which is used to find items, feats, etc. with a higher priority then the pf1.compendia
     static async updateCustomCompendiums (isInitializing = false) {
-        sbcConfig.options.debug && sbcUtils.log("Updating custom compendiums")
+        sbcUtils.log("Updating custom compendiums")
 
         let customCompendiums = game.settings.get(sbcConfig.modData.mod, "customCompendiums")
         let validCompendiums = []
@@ -26,7 +26,6 @@ export class sbcSettings {
 
             // Loop through the custom compendiums ...
             for(let i=0; i<customCompendiums.length; i++) {
-
                 let customCompendium = customCompendiums[i].trim()
                 
                 // ... and check if its available
@@ -44,16 +43,18 @@ export class sbcSettings {
                 if (invalidCompendiums.length > 0) {
                     let error = "sbc-pf1 | Failed to add the following compendiums to sbc, please check for typos (" + invalidCompendiums.toString() + ")"
                     ui.notifications.error(error)
-                    sbcConfig.options.debug && sbcUtils.log(error)
+                    sbcUtils.log(error)
                 } 
 
                 if (validCompendiums.length > 0) {
                     let info = "sbc-pf1 | Added the following compendiums to sbc (" + validCompendiums.toString() + ")"
                     ui.notifications.info(info)
-                    sbcConfig.options.debug && sbcUtils.log(info)
+                    sbcUtils.log(info)
                     customCompendiums = validCompendiums
                 }
             }
+
+            await sbcUtils.processCompendiums(validCompendiums)
 
             // Create an index for each (custom) compendium
             /*
@@ -65,8 +66,6 @@ export class sbcSettings {
                 }
             }
             */
-            
-            
         } else {
             customCompendiums = validCompendiums
         }   
@@ -74,7 +73,7 @@ export class sbcSettings {
 
     // Update the default folder into which statblocks get imported
     static async updateImportFolder () {
-        sbcConfig.options.debug && sbcUtils.log("Updating custom import folder")
+        sbcUtils.log("Updating custom import folder")
         
         // Get the custom folder name from the settings
         let customFolderName = game.settings.get(sbcConfig.modData.mod, "importFolder")
@@ -88,7 +87,7 @@ export class sbcSettings {
             } catch (err) {
                 let info = "sbc-pf1 | Something went wrong while searching for an existing import folder."
                 ui.notifications.info(info)
-                sbcConfig.options.debug && sbcUtils.log(info)
+                sbcUtils.log(info)
             }
 
             if(searchForExistingFolder === null) {
@@ -97,7 +96,7 @@ export class sbcSettings {
                 
                 let info = "Created a custom folder for imported statblocks."
                 ui.notifications.info(info)
-                sbcConfig.options.debug && sbcUtils.log(info)
+                sbcUtils.log(info)
                 return newFolder.id
             } else {
                 // Existing folder found
@@ -199,7 +198,7 @@ export const registerSettings = function () {
         scope: "world",
         type: Boolean,
         config: true,
-        onChange: _ => sbcSettings.toggleDebugMode()
+        onChange: () => sbcSettings.toggleDebugMode()
     });
 
     game.settings.register(sbcConfig.modData.mod, "defaultActorType", {
@@ -210,7 +209,7 @@ export const registerSettings = function () {
         type: String,
         choices: {0:"NPC",1:"PC"},
         config: true,
-        onChange: _ => sbcSettings.updateDefaultActorType()
+        onChange: () => sbcSettings.updateDefaultActorType()
     });
 
     game.settings.register(sbcConfig.modData.mod, "inputDelay", {
@@ -221,7 +220,7 @@ export const registerSettings = function () {
         type: Number,
         range: {min: 250, max: 2000, step: 10},
         config: true,
-        onChange: _ => sbcSettings.updateInputDelay()
+        onChange: () => sbcSettings.updateInputDelay()
     });
     
     game.settings.register(sbcConfig.modData.mod, "importFolder", {
@@ -231,7 +230,7 @@ export const registerSettings = function () {
         scope: "world",
         type: String,
         config: true,
-        onChange: _ => sbcSettings.updateImportFolder()
+        onChange: () => sbcSettings.updateImportFolder()
     });
 
     game.settings.register(sbcConfig.modData.mod, "customCompendiums", {
@@ -244,7 +243,7 @@ export const registerSettings = function () {
         scope: "world",
         type: String,
         config: true,
-        onChange: _ => sbcSettings.updateCustomCompendiums()
+        onChange: () => sbcSettings.updateCustomCompendiums()
     });
 
     game.settings.register(sbcConfig.modData.mod, "createBuff", {
@@ -254,7 +253,7 @@ export const registerSettings = function () {
         scope: "world",
         type: Boolean,
         config: true,
-        onChange: _ => sbcSettings.updateConversionBuffCreation()
+        onChange: () => sbcSettings.updateConversionBuffCreation()
     });
 
     game.settings.register(sbcConfig.modData.mod, "createAttacks", {
@@ -264,7 +263,7 @@ export const registerSettings = function () {
         scope: "world",
         type: Boolean,
         config: true,
-        onChange: _ => sbcSettings.updateKnownAttackCreation()
+        onChange: () => sbcSettings.updateKnownAttackCreation()
     });
 
     game.settings.register(sbcConfig.modData.mod, "rollBonusesIntegration", {
@@ -274,7 +273,7 @@ export const registerSettings = function () {
         scope: "world",
         type: Boolean,
         config: true,
-        onChange: _ => sbcSettings.updateRollBonusesIntegration()
+        onChange: () => sbcSettings.updateRollBonusesIntegration()
     });
 
     game.settings.register(sbcConfig.modData.mod, "pcsight", {
@@ -284,7 +283,7 @@ export const registerSettings = function () {
         scope: "world",
         type: Boolean,
         config: true,
-        onChange: _ => sbcSettings.updatePrototypeTokenSettings("pcsight")
+        onChange: () => sbcSettings.updatePrototypeTokenSettings("pcsight")
     });
 
     game.settings.register(sbcConfig.modData.mod, "npcsight", {
@@ -294,7 +293,7 @@ export const registerSettings = function () {
         scope: "world",
         type: Boolean,
         config: true,
-        onChange: _ => sbcSettings.updatePrototypeTokenSettings("npcsight")
+        onChange: () => sbcSettings.updatePrototypeTokenSettings("npcsight")
     });
 
     game.settings.register(sbcConfig.modData.mod, "disposition", {
@@ -305,7 +304,7 @@ export const registerSettings = function () {
         type: String,
         choices: {"-1": "Hostile", "0": "Neutral", "1": "Friendly"},
         config: true,
-        onChange: _ => sbcSettings.updatePrototypeTokenSettings("disposition")
+        onChange: () => sbcSettings.updatePrototypeTokenSettings("disposition")
     });
 
     game.settings.register(sbcConfig.modData.mod, "displayName", {
@@ -316,7 +315,7 @@ export const registerSettings = function () {
         type: String,
         choices: {0: "None", 10: "Control", 20: "Owner Hover", 30: "Hover", 40: "Owner", 50: "Always"},
         config: true,
-        onChange: _ => sbcSettings.updatePrototypeTokenSettings("displayName")
+        onChange: () => sbcSettings.updatePrototypeTokenSettings("displayName")
     });
 
     game.settings.register(sbcConfig.modData.mod, "displayBars", {
@@ -327,7 +326,7 @@ export const registerSettings = function () {
         type: String,
         choices: {0: "None", 10: "Control", 20: "Owner Hover", 30: "Hover", 40: "Owner", 50: "Always"},
         config: true,
-        onChange: _ => sbcSettings.updatePrototypeTokenSettings("displayBars")
+        onChange: () => sbcSettings.updatePrototypeTokenSettings("displayBars")
     });
 
     game.settings.register(sbcConfig.modData.mod, "bar1", {
@@ -338,7 +337,7 @@ export const registerSettings = function () {
         type: String,
         choices: attributeKeys,
         config: true,
-        onChange: _ => sbcSettings.updatePrototypeTokenSettings("attributeBar1", attributeKeys)
+        onChange: () => sbcSettings.updatePrototypeTokenSettings("attributeBar1", attributeKeys)
     });
 
     game.settings.register(sbcConfig.modData.mod, "bar2", {
@@ -349,9 +348,8 @@ export const registerSettings = function () {
         type: String,
         choices: attributeKeys,
         config: true,
-        onChange: _ => sbcSettings.updatePrototypeTokenSettings("attributeBar2", attributeKeys)
+        onChange: () => sbcSettings.updatePrototypeTokenSettings("attributeBar2", attributeKeys)
     });
-    
 }
 
 export const initializeSettings = async function () {
@@ -371,12 +369,13 @@ export const initializeSettings = async function () {
     sbcConfig.options.tokenSettings.displayName = +game.settings.get(sbcConfig.modData.mod, "displayName")
     sbcConfig.options.tokenSettings.displayBars = +game.settings.get(sbcConfig.modData.mod, "displayBars")
     sbcConfig.options.customFolder = game.settings.get(sbcConfig.modData.mod, "importFolder")
+    sbcConfig.options.createBuff = game.settings.get(sbcConfig.modData.mod, "createBuff")
+    sbcConfig.options.createAttacks = game.settings.get(sbcConfig.modData.mod, "createAttacks")
 
     sbcSettings.updatePrototypeTokenSettings("attributeBar1", attributeKeys)
     sbcSettings.updatePrototypeTokenSettings("attributeBar2", attributeKeys)
     sbcSettings.updateCustomCompendiums(true)
     
-    sbcConfig.options.debug && sbcUtils.log("Initialized Settings:")
+    sbcUtils.log("Initialized Settings:")
     sbcConfig.options.debug && console.log(sbcConfig.options)
-    
 }

@@ -1,5 +1,47 @@
 # Change Log
 
+2024_06_30 - v4.6.4
+* Fixed: SBC didn't account for conditions that were now in `pf1.registry.conditions`.
+* Fixed: SBC didn't know that the Technology was moved into the system from PF-Content.
+* Fixed: Now properly adds oil versions of spells
+* Fixed: Failed to properly update custom languages
+* Fixed: Arrows were forgotten about, as well as entries that begain with "And" or a number and weren't money were not being handled properly
+* Fixed: Assumed that every class with casting had an offset, which caused conversion validation to fail for most casters.
+
+2024_06_26 - v4.6.3
+* Fixed: Processing cases where an ability is -- would throw pointless errors.
+* Fixed: Conversion Validation would fail for cases like CMB and CMD where the value in the statblock was -- or NaN.
+
+2024_06_18 - v4.6.2
+* Fixed: Processing flags like CHA to HP or an ability score of -- would break.
+
+2024_06_18 - v4.6.1
+* Fixed: The hook for loading custom compendiums didn't actually do anything with the data.
+* Fixed: Skill changes would break Conversion Validation.
+
+2024_06_17 - v4.6.0
+* Fixed: Checking for changes on an item would throw an error if the item didn't have any.
+* Fixed: Treat `[` and `]` as `(` and `)` respecitively when seeing them in gear/quantities.
+* Fixed: Statblocks that had "Special Attack" instead of "Special Attacks" failed during processing.
+* Fixed: Skip running conversion validation if there's no CMB or CMD.
+* Fixed: Ensured that the "Create Buff" and "Create Attack" settings are respected.
+* Fixed: Cleaned up dashed borders around categories in Hero Lab Online exports (thanks JC!)
+* Fixed: Made detection of DR entries with "and" / "or" more reliable.
+* Fixed: Made SBC more tolerant when a `(` is missing its `)`.
+* Fixed: Items with an "*" at the end of the name would not be found properly.
+* Fixed: At some point, SBC stopped processing the spell DC and quantity in spell entries.
+* Changed: Improved parsing of attacks when feat bonuses exist (weapon focus and similar).
+* Changed: Updated display of the Preview and Notes formatting when displaying null or blank ability scores, CMB, and CMD values.
+* Changed: SBC should now be more accurate when searching for content appropriate to its section (like feats or class features); this comes at the increased likelihood of redundant names, such as "Mesmerist Tricks 6/day (mesmeric mirror)" instead of just "Mesmeric Mirror".
+* Changed: SBC now looks for Mythic feats (if the feat name has "M" at the end, SBC changes it to " (mythic)").
+* Changed: SBC now replaces the statblock input with the cleaned version for better processing and error logging
+* Changed: SBC now processes Ability Scores and Skills *after* gear and feats have been processed to account for mechanical changes.
+* Added: SBC now calls a hook `sbc.loadCustomCompendiums` which can be passed an array of compendiums (of the format "<module-id>.<compendium-id>") to register as part of SBC's Custom Compendiums setting.
+* Added: SBC now attempts to update items' actions with damage formulas and saving throws (like auras).
+* Added: SBC now adds the aura line from statblocks to the actor's aura field in their traits/attributes tab.
+* Added: SBC now tries to find spell items in custom compendiums (potions, scrolls, wands).
+* Added: SBC now processes weapons, armors, and attacks for material types (adamantine, noqual, .etc) and material addons (alchemical silver, for example).
+
 2024_02_10 - v4.5.3
 * Fixed: SBC was inoperable if the WIP folder didn't exist but the main import folder did.
 

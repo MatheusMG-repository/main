@@ -1,11 +1,9 @@
-<form autocomplete="off">
-  <h2>{{localize "PF1.CreateItemForSpell" name=name}}</h2>
-
+<form autocomplete="off" data-tooltip-class="pf1">
   {{!-- Spell Level --}}
   <div class="form-group">
     <label>{{localize "PF1.SpellLevel"}}</label>
     <div class="form-fields">
-      <input type="number" data-dtype="Number" min="0" step="1" name="sl" value="{{sl}}" placeholder="1" />
+      <input type="number" data-dtype="Number" min="0" step="1" name="sl" value="{{sl}}" placeholder="1">
     </div>
   </div>
 
@@ -13,14 +11,28 @@
   <div class="form-group">
     <label>{{localize "PF1.CasterLevel"}}</label>
     <div class="form-fields">
-      <input type="number" data-dtype="Number" min="1" step="1" name="cl" value="{{cl}}" placeholder="1" />
+      <input type="number" data-dtype="Number" min="1" step="1" name="cl" value="{{cl}}" placeholder="1">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "PF1.Spellcasting.Type.Label"}}</label>
+    <div class="form-fields">
+      <select name="spellType">
+      {{selectOptions config.spellcasting.spells selected=spellType localize=true}}
+      </select>
     </div>
   </div>
 
   {{#if isGM}}
   <div class="form-group">
     <label class="checkbox">
-      <input type="checkbox" data-dtype="Boolean" name="identified" checked />
+      <input
+        type="checkbox"
+        data-dtype="Boolean"
+        name="identified"
+        {{checked (not isNPC)}}
+      >
       {{localize "PF1.Identified"}}
     </label>
   </div>

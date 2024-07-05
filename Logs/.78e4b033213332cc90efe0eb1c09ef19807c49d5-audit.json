@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 5
+    },
+    "auditLog": "C:\\Users\\mathe\\utopia\\main\\Logs\\.78e4b033213332cc90efe0eb1c09ef19807c49d5-audit.json",
+    "files": [
+        {
+            "date": 1719939255594,
+            "name": "C:\\Users\\mathe\\utopia\\main\\Logs\\error.2024-07-02.log",
+            "hash": "3a8f6c5647ef5f3a015b988a1cbbf044413e404c49dc136e45eae18f84830fd8"
+        }
+    ],
+    "hashType": "sha256"
+}

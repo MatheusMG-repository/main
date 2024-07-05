@@ -8,7 +8,7 @@ import { ParserBase } from "../base-parser.js";
 export class CreatureParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as creatureType")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as creatureType")
 
         try {
 
@@ -30,7 +30,7 @@ export class CreatureParser extends ParserBase {
 
             let compendium = "pf1.racialhd"
             // Always search the english compendia for entries, so use the english creatureType instead of the localized one
-            let creatureTypeItem = await sbcUtils.findEntityInCompendium(compendium, creatureType, "class", line)
+            let creatureTypeItem = await sbcUtils.findEntityInCompendium(compendium, creatureType, "class", null, line)
 
             await creatureTypeItem.updateSource({
                 system: {
@@ -111,7 +111,7 @@ export class CreatureParser extends ParserBase {
             sbcConfig.options.debug && console.error(err);
             let errorMessage = "Failed to parse " + value + " as creatureType."
             let error = new sbcError(1, "Parse/Base", errorMessage, line)
-            sbcData.errors.push(err)
+            sbcData.errors.push(error)
             return false
 
         }

@@ -1,11 +1,11 @@
-<form>
+<form autocomplete="off" data-tooltip-class="pf1">
   <div class="form-group">
       <label>{{#if nonlethal}}{{localize "PF1.Nonlethal"}} {{/if}}{{#if healing}}{{localize "PF1.Healing"}}{{else}}{{localize "PF1.Damage"}}{{/if}}</label>
-      <input type="text" name="damage" data-dtype="Number" value="{{damage}}"/>
+      <input type="text" name="damage" data-dtype="Number" value="{{damage}}">
   </div>
   <div class="form-group">
     <label>{{localize "PF1.ReduceBy"}}</label>
-    <input type="text" name="damage-reduction" data-dtype="Number" value="{{damageReduction}}"/>
+    <input type="text" name="damage-reduction" data-dtype="Number" value="{{damageReduction}}">
   </div>
 
   {{!-- Selected tokens --}}
@@ -21,7 +21,7 @@
     {{#each tokens as | token |}}
     <div class="form-fields">
       <label class="checkbox">
-        <input type="checkbox" class="tokenAffected" name="affect.{{_id}}" {{checked this.checked}}/> {{name}}
+        <input type="checkbox" class="tokenAffected" name="affect.{{_id}}" {{checked this.checked}}> {{name}}
       </label>
     </div>
     {{#if (or dr eres)}}

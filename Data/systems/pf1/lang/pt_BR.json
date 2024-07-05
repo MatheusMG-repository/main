@@ -26,7 +26,7 @@
   "SETTINGS.pf1NPCWoundsAndVigorH": "Usar o conjunto de regras opcional de Ferimentos e Vigor para personagens do mestre.",
   "SETTINGS.pf1NPCWoundsAndVigorN": "Feridas e Vigor para PdMs",
   "SETTINGS.pf1MeasureStyleL": "Se deve usar o estilo de medição do Pathfinder em vez do estilo padrão do FoundryVTT",
-  "PF1.Title": "Pathfinder 1",
+  "PF1.Title": "Pathfinder 1e",
   "SETTINGS.pf1MeasureStyleN": "Use o estilo de medida do Pathfinder",
   "SETTINGS.pf1LowLightVisionModeN": "Visão na penumbra requer seleção",
   "SETTINGS.pf1CoinWeightN": "Divisor de Peso da Moeda",
@@ -152,10 +152,10 @@
   "PF1.LinkTypeCharges": "Cargas",
   "PF1.LinkTypeClassAssociations": "Associações de classe",
   "PF1.LinkTypeAmmunition": "Munição",
-  "PF1.LinkHelpCharges": "Os itens vinculados herdam e compartilham as cargas do vínculo principal (este item).",
-  "PF1.LinkHelpAmmunition": "Os itens vinculados perdem automaticamente a quantidade (ou carga) para cada ataque feito com o vínculo principal (este item).",
+  "PF1.LinkHelpCharges": "Os itens vinculados herdam e compartilham as responsabilidades do pai do link (este item).",
+  "PF1.LinkHelpAmmunition": "Os itens vinculados automaticamente perdem quantidade (ou carga) a cada ataque feito com o pai do link (este item).",
   "PF1.HelpSellMultiplierN": "Taxa de venda",
-  "PF1.HelpSellMultiplier": "A taxa na qual os bens não comerciais são vendidos. As mercadorias comerciais sempre são vendidas pelo preço total. O padrão é 0,5.",
+  "PF1.HelpSellMultiplier": "A taxa na qual os bens são vendidos. <br>O padrão é 0,5.<br> Bens comerciais sempre são vendidos pelo preço total (1,0).",
   "PF1.HelpDomainSpell": "Este feitiço não custará nenhum espaço de magia para restaurar após o descanso.",
   "PF1.AbilityStr": "Força",
   "PF1.AbilityDex": "Destreza",
@@ -405,7 +405,7 @@
   "PF1.Properties": "Propriedades",
   "PF1.Migration.AlreadyInProgress": "A migração do sistema PF1 já está em andamento. Aguarde a conclusão antes de tentar novamente.",
   "PF1.Migration.Ongoing": "A migração está em andamento. Aguarde até que termine.",
-  "PF1.Migration.End": "Migração do sistema PF1 para a versão {version} bem-sucedida!",
+  "PF1.Migration.End": "Migração do Sistema PF1 para a versão {version} concluída!",
   "PF1.DenyDexBonus": "Negar Bônus de Destreza",
   "PF1.Application": {
     "ActionChooser": {
@@ -425,13 +425,16 @@
       "SplitEvenly": "Dividir Igualmente",
       "GiveToAll": "Dê a todos",
       "TotalExperience": "Experiência Total",
-      "SplitExperience": "Dividir Experiência"
+      "SplitExperience": "Dividir Experiência",
+      "Reward": "Recompensa"
     },
     "EntrySelector": {
-      "Title": "Seletor de entrada"
+      "Title": "Seletor de entrada",
+      "TitleIsolated": "{item} – {title}",
+      "TitleOwned": "{item} – {actor} – {title}"
     },
     "TraitSelector": {
-      "CustomHint": "Você pode separar entradas distintas com ponto e vírgula (;)."
+      "CustomHint": "Adicione novas entradas com Enter ou ponto e vírgula (;). Pressionar Backspace duas vezes quando a entrada está vazia remove o último item."
     },
     "DamageResistanceSelector": {
       "ERTitle": "Seleção de Resistência a Energia",
@@ -488,7 +491,7 @@
   "PF1.AbilityDrain": "Drenagem de Atributo",
   "PF1.PointBuyCalculatorWarning": "A calculadora de compra de pontos irá SUBSTITUIR os valores básicos de atributo do personagem.",
   "PF1.DeleteSkillConfirmation": "Tem certeza de que deseja excluir esta perícia?",
-  "PF1.LinkHelpChildren": "As Heranças vinculadas são excluídas do ator quando o vínculo principal (este item) é excluído.",
+  "PF1.LinkHelpChildren": "Os filhos vinculados são excluídos do ator quando o pai do link (este item) é excluído.",
   "PF1.LinkHelpClassAssociations": "Os itens vinculados à associação de classe são adicionados automaticamente ao ator no nível de classe apropriado. Ao contrário de outros vínculos de itens, eles devem ser vinculados a um compêndio.",
   "PF1.AbilityWisMod": "Modificador de Sabedoria",
   "PF1.ACTypeFlatFooted": "Diverso Desprevenido",
@@ -517,7 +520,7 @@
   "SETTINGS.pf1HealthConfigInstructions": "Configure os parâmetros de computação de vida para os vários tipos de atores. Para referência, a Sociedade Pathfinder usa a seguinte configuração para os personagens dos jogadores: cálculo automático, taxa de 0,5, um dado de vida maximizado, arredondado para cima, continuidade discreta.",
   "SETTINGS.pf1HealthComputeManual": "Manual",
   "SETTINGS.pf1HealthRoundingName": "Vida Arredondada",
-  "SETTINGS.pf1HealthRoundingHint": "Os valores de vida devem ser números inteiros. Arredondar para cima, mais próximo ou para baixo?",
+  "SETTINGS.pf1HealthRoundingHint": "Os valores de vida devem ser números inteiros. Qual método de arredondamento utilizar?",
   "SETTINGS.pf1HealthContinuityName": "Continuidade da Vida",
   "SETTINGS.pf1HealthContinuityHint": "A vida pode ser calculada discretamente ou continuamente. A vida discreta é arredondada em cada nível, o que significa que as criaturas receberão uma quantidade estável de saúde para cada dado de vida. A saúde contínua é arredondada depois que cada fonte de dado de vida é avaliada, o que significa que as criaturas receberão uma quantidade flutuante de saúde para cada dado de vida.",
   "SETTINGS.pf1HealthContinuityContinuous": "Contínua",
@@ -546,6 +549,10 @@
     "ForceShowItem": {
       "Name": "Forçar Mostrar Item",
       "Hint": "Se o item deve ser mostrado para o bate-papo ao usar uma macro para ele"
+    },
+    "StickyTokenTooltip": {
+      "Name": "Dica de Ferramenta do Token Fixa",
+      "Hint": "Manter a dica de ferramenta do token aberta mesmo após retirar o cursor do token."
     }
   },
   "PF1.OptionalAndVariantRules": "Regras Opcionais e Variantes",
@@ -909,7 +916,7 @@
   "PF1.BonusFeatFormula": "Fórmula Bônus de Talento",
   "PF1.Advanced": "Avançado",
   "PF1.LeftToPrepare": "Quantidade restante para preparar",
-  "PF1.SpellsTotalEachDay": "Total de magias por dia (excluindo magias gratuitas como domínio e magias escolares)",
+  "PF1.SpellsTotalEachDay": "Total de magias por dia",
   "PF1.UseItem": "Usar Item",
   "PF1.UseSpell": "Usa Magia",
   "PF1.UseFeat": "Usar Recurso",
@@ -968,8 +975,9 @@
   "PF1.SpellbookName": "Nome do Livro de Magia",
   "PF1.StaticSize": "Tamanho Estático",
   "PF1.CustomVisionRules": {
-    "Label": "Regras de visão personalizada",
-    "Description": "Ignore os sentidos do ator, permitindo que as regras de visão personalizadas sejam aplicadas corretamente."
+    "Label": "Desativar Visão Controlada pelo Sistema",
+    "Description": "Prevenir o sistema de controlar a visão, permitindo personalizá-la.",
+    "ConfigHint": "Os sentidos controlados pelo sistema são configurados na guia de atributos da ficha do ator."
   },
   "PF1.DomainSlotValue": "Espaços de Domínio/Escola",
   "PF1.DisableLightLowLightVision": "Desativar visão na penumbra para fonte de luz",
@@ -1315,7 +1323,7 @@
   "PF1.ArmorProfMedium": "Armadura Média",
   "PF1.ArmorProfHeavy": "Armadura Pesada",
   "PF1.ArmorProfShield": "Escudos",
-  "PF1.ArmorProfTowerShield": "Escudo Torre",
+  "PF1.ArmorProfTowerShield": "Escudos Torre",
   "PF1.WeaponProfSimple": "Armas Simples",
   "PF1.WeaponProfMartial": "Armas Marciais",
   "PF1.InventoryWeapons": "Armas",
@@ -1329,9 +1337,9 @@
   "PF1.ChangeFlagNoDex": "Sem Destreza",
   "PF1.ChangeFlagNoStr": "Sem Força",
   "PF1.Undefined": "Indefinido",
-  "PF1.ErrorGenericPermission": "Você não tem permissão para executar essa ação",
-  "PF1.ErrorNoActorPermission": "Você não tem permissão para controlar este ator",
-  "PF1.ErrorNoActorPermissionAlt": "Você não tem permissão para controlar o ator '{name}'",
+  "PF1.ErrorGenericPermission": "Você não está autorizado a realizar essa ação",
+  "PF1.ErrorNoActorPermission": "Você não está autorizado a controlar este ator",
+  "PF1.ErrorNoActorPermissionAlt": "Você não está autorizado a controlar o ator \"{name}\"",
   "PF1.ErrorNoFormula": "{name} não tem uma fórmula para rolar!",
   "PF1.ErrorItemNoOwner": "Este item não tem dono",
   "PF1.ErrorSpellbookExists": "O livro de magia já existe",
@@ -1348,7 +1356,7 @@
   "PF1.WarningNoDiceAllowedInFormula": "Nenhuma jogada de dados é permitida na fórmula '{formula}' para {context}",
   "PF1.WarningMissingAmmunition": "A munição ligada ao ataque está faltando.",
   "PF1.WarningConditionalRoll": "Rolar a fórmula condicional № {number} da condicional {name} causou um erro",
-  "PF1.WarningNoItemOnActor": "Ator {actor} não tem item {item}",
+  "PF1.WarningNoItemOnActor": "Ator \"{actor}\" não tem item \"{item}\"",
   "PF1.ErrorActorFormula": "Erro de fórmula do tipo {context} no ator {name}",
   "PF1.ErrorActorNotFound": "Ator com ID {id} não encontrado",
   "PF1.ErrorCantIdentify": "Você não tem permissão para identificar itens",
@@ -1614,26 +1622,26 @@
   "PF1.LanguageTengu": "Tengu",
   "PF1.ScriptCalls": {
     "Use": {
-      "Info": "Chamado quando o item foi 'usado' (ataque, beber poção, etc.). Tem a variável extra 'attacks', que é um vetor contendo as ações das jogadas de ataque, se houver.",
+      "Info": "Chamado quando o item foi 'usado' (ataque, beber poção, etc.). Possui a variável de arranjo adicional <code>attacks</code>, que contém os resultados dos ataques da ação, se houver.",
       "Name": "Usar"
     },
     "Name": "Chamadas de script",
     "NewName": "Nova chamada de script",
     "ChangeQuantity": {
       "Name": "Alterar Quantidade",
-      "Info": "Chamado quando a quantidade do item foi alterada. Tem as variáveis extras 'quantity.previous' e 'quantity.new', que são ambos números."
+      "Info": "Chamado quando a quantidade do item foi alterada. Possui as variáveis numéricas adicionais <code>quantity.previous</code> e <code>quantity.new</code>."
     },
     "ChangeLevel": {
-      "Info": "Chamado quando o nível do item foi alterado. Tem as variáveis extras 'quantity.previous' e 'quantity.new', que são ambos números.",
+      "Info": "Chamado quando o nível do item foi alterado. Possui as variáveis numéricas adicionais <code>level.previous</code> e <code>level.new</code>.",
       "Name": "Alterar Nível"
     },
     "Equip": {
       "Name": "Equipar",
-      "Info": "Chamado quando o item foi equipado ou desequipado. Tem a variável extra 'equipped', que é 'verdadeiro' ou 'falso'."
+      "Info": "Chamado quando o item foi equipado ou desequipado. Possui a variável booleana adicional <code>equipped</code>."
     },
     "Toggle": {
       "Name": "Alternar",
-      "Info": "Chamado quando o item foi habilitado ou desabilitado. Tem a variável extra 'state', que é 'verdadeiro' ou 'falso'."
+      "Info": "Chamado quando o item foi ativado ou desativado. Possui a variável booleana adicional <code>state</code>."
     },
     "Create": "Criar chamada de script incorporada"
   },
@@ -1890,5 +1898,349 @@
   },
   "PF1.WarningDuplicateDFlag": "Conflito de bandeira no dicionário \"{key}\" para o item \"{item}\" (com identificador \"{tag}\") no personagem \"{actor}\".",
   "PF1.LanguageAndroffan": "Androfanês",
-  "PF1.AmmoTypeSiege": "Cerco"
+  "PF1.AmmoTypeSiege": "Cerco",
+  "SETTINGS.pf1HealthRoundingUp": "Cima",
+  "SETTINGS.pf1HealthRoundingDown": "Baixo",
+  "SETTINGS.pf1HealthRate": "Taxa",
+  "SETTINGS.pf1HealthMaximized": "Maximizado",
+  "SETTINGS.pf1HealthRoundingNearest": "Mais próximo",
+  "SETTINGS.pf1OverlandVariantL": "Variante de como a velocidade em terra é calculada com distâncias métricas.",
+  "SETTINGS.pf1OverlandVariantN": "Variante de Velocidade em Terrestre",
+  "PF1.ChangeFlagNoMediumEncumbrance": "Não Afetado por Sobrecarga Média",
+  "SETTINGS.pf1OverlandMetricRounded": "Arredondado (Alemão e Francês)",
+  "SETTINGS.pf1OverlandMetricExact": "Exato (Espanhol)",
+  "PF1.ChangeFlagNoHeavyEncumbrance": "Não Afetado por Sobrecarga Pesada",
+  "PF1.AbilityBonus": "Bônus de Atributo",
+  "PF1.Cursed": "Amaldiçoado",
+  "PF1.Artifact": "Artefato",
+  "PF1.Timeworn": "Envelhecido",
+  "PF1.NotSelected": "Não Selecionado",
+  "PF1.IdentifyCurseDC": "Identificar CD da Maldição",
+  "TYPES": {
+    "Actor": {
+      "character": "Personagem do Jogador (PJ)",
+      "npc": "Personagem Não-Jogador (PNJ)",
+      "haunt": "Assombração",
+      "vehicle": "Veículo",
+      "basic": "Básico (para módulos)",
+      "trap": "Armadilha"
+    },
+    "Item": {
+      "weapon": "Arma",
+      "equipment": "Equipamento",
+      "consumable": "Consumível",
+      "loot": "Espólio",
+      "race": "Raça",
+      "container": "Contêiner",
+      "attack": "Ataque",
+      "spell": "Magia",
+      "class": "Classe",
+      "feat": "Talento",
+      "buff": "Buff"
+    }
+  },
+  "PF1.NegativeLevels": "Níveis Negativos",
+  "PF1.CriticalHitPlural": "Acertos Críticos",
+  "PF1.MediumEncumbrance": "Sobrecarga Média",
+  "PF1.HeavyEncumbrance": "Sobrecarga Pesada",
+  "PF1.StaticSizeHint": "Se habilitado, as dimensões e escala do token não são ajustadas automaticamente para corresponder ao tamanho do personagem.",
+  "PF1.RestMessage": "{name} descansou por {hours} horas.",
+  "PF1.FullRestMessage": "{name} descansou por {hours} horas e restaurou os usos diários.",
+  "PF1.InheritAs": "Herdar ({inherited})",
+  "SETTINGS.pf1pcDispositionN": "Disposição do Personagem do Jogador",
+  "SETTINGS.pf1pcDispositionH": "Substituir para a disposição padrão de token para personagens do jogador.",
+  "SETTINGS.pf1npcDispositionN": "Disposição do Personagem Não-Jogador",
+  "SETTINGS.pf1npcDispositionH": "Substituir para a disposição padrão de token para personagens não-jogadores",
+  "PF1.NoOverride": "Não Substituir",
+  "PF1.XPValue": "{value} XP",
+  "PF1.WeightDetails": {
+    "Base": "Base: {value}",
+    "Stack": "Pilha: {value}",
+    "Contents": "Conteúdo: {value}",
+    "Total": "Total: {value}"
+  },
+  "PF1.DieSize": "d{size}",
+  "PF1.Missing": "Ausente",
+  "PF1.Excess": "Excesso",
+  "PF1.Rolls": {
+    "Check": {
+      "Override": "Verificar Substituição",
+      "OverrideHint": "ex.: 2d20kl"
+    },
+    "Bonus": "Verifique o Bônus",
+    "BonusHint": "ex.: 1d6[Inspiração] + 2[Ajuda] + 1"
+  },
+  "PF1.DamageBonusHint": "ex.: 1d4[Fogo] + 2",
+  "PF1.BaseFormula": "Fórmula Base",
+  "PF1.DamageFormulaHint": "ex.: sizeRoll(1, 8, @size)",
+  "PF1.OnCritBonusFormula": "Fórmula Bônus em Caso de Crítico",
+  "PF1.NonMultBonusFormula": "Fórmula Bônus que Não Multiplica",
+  "PF1.AddBaseInstance": "Adicionar Instância Base",
+  "PF1.AddOnCritInstance": "Adicionar Instância em Caso de Crítico",
+  "PF1.AddNonMultInstance": "Adicionar Instância que Não Multiplica",
+  "PF1": {
+    "AlignmentL": "Ordeiro",
+    "Currency": {
+      "Full": {
+        "gp": "Ouro",
+        "pp": "Platina",
+        "sp": "Prata",
+        "cp": "Cobre"
+      },
+      "Label": "Moeda",
+      "Abbr": {
+        "cp": "PC",
+        "pp": "PL",
+        "gp": "PO",
+        "sp": "PP"
+      },
+      "Weightless": "Moeda sem peso",
+      "Inline": {
+        "pp": "{value} pl",
+        "gp": "{value} po",
+        "sp": "{value} pp",
+        "cp": "{value} pc"
+      }
+    },
+    "ModifierOnlyShort": "Apenas Mod",
+    "AlignmentC": "Caótico",
+    "AlignmentG": "Bom",
+    "AlignmentE": "Mal",
+    "SpellComponents": {
+      "Label": "Componentes de Magia",
+      "Misc": "Componentes Diversos",
+      "Type": {
+        "verbal": {
+          "Label": "Verbal",
+          "Abbr": "V"
+        },
+        "somatic": {
+          "Label": "Somático",
+          "Abbr": "S"
+        },
+        "thought": {
+          "Label": "Pensamento",
+          "Abbr": "P"
+        },
+        "emotion": {
+          "Label": "Emoção",
+          "Abbr": "E"
+        },
+        "material": {
+          "Label": "Material",
+          "Abbr": "M",
+          "Desc": "Descrição do Material",
+          "Value": "Valor do Material"
+        },
+        "focus": {
+          "Label": "Foco",
+          "Abbr": "F"
+        },
+        "divineFocus": {
+          "Label": "Foco Divino",
+          "Abbr": "FD"
+        }
+      },
+      "DFVariants": {
+        "DF": "FD",
+        "MDF": "M/FD",
+        "FDF": "F/FD"
+      }
+    },
+    "ActionTypes": {
+      "mwak": "Ataque com Arma Corpo-a-corpo",
+      "msak": "Ataque Mágico Corpo a Corpo",
+      "rsak": "Ataque Mágico à Distância",
+      "mcman": "Manobra de Combate Corpo-a-corpo",
+      "rcman": "Manobra de Combate à Distância",
+      "spellSave": "Teste de Resistência (Magia)",
+      "save": "Teste de Resistência",
+      "heal": "Cura",
+      "rwak": "Ataque com Arma à Distância",
+      "twak": "Ataque com Arma de Arremesso",
+      "other": "Outro"
+    },
+    "LinkTypeSupplements": "Suplementos",
+    "LinkHelpSupplements": "Itens suplementares são adicionados ao lado deste item quando adicionados a um ator.",
+    "WeightReductionFlat": "Fixo",
+    "Subtypes": {
+      "Item": {
+        "class": {
+          "base": {
+            "Single": "Classe Base"
+          },
+          "prestige": {
+            "Single": "Classe de Prestígio"
+          },
+          "npc": {
+            "Single": "Classe PnJ"
+          },
+          "racial": {
+            "Single": "DV Racial"
+          },
+          "mythic": {
+            "Single": "Caminho Mítico"
+          }
+        },
+        "equipment": {
+          "armor": {
+            "Plural": "Armaduras",
+            "Single": "Armadura"
+          },
+          "shield": {
+            "Single": "Escudo"
+          },
+          "wondrous": {
+            "Single": "Maravilhoso"
+          },
+          "clothing": {
+            "Single": "Roupa",
+            "Plural": "Roupas"
+          }
+        },
+        "loot": {
+          "ammo": {
+            "Plural": "Munições",
+            "Single": "Munição"
+          },
+          "gear": {
+            "Plural": "Equipamentos",
+            "Single": "Equipamento"
+          }
+        }
+      }
+    },
+    "DamageAlignment": {
+      "Override": "Substitui o item pai",
+      "Inherit": "Herdado do item pai"
+    },
+    "Containers": {
+      "TotalValue": "Valor total: {gp} po, {sp} pp, {cp} pc",
+      "SellValue": "Valor de Venda: {gp} po, {sp} pp, {cp} pc",
+      "Contents": {
+        "Weight": "Peso dos Conteúdos",
+        "Value": "Valor dos Conteúdos",
+        "Label": "Conteúdos",
+        "SellValue": "Valor de Venda dos Conteúdos",
+        "Take": "Retirar do Recipiente"
+      }
+    },
+    "TotalItemValue": "Valor Total do Item: {gp} po, {sp} pp, {cp} pc",
+    "WeightReduction": "Redução de Peso",
+    "WoundLevel": {
+      "grazed": "Condição Ralado",
+      "wounded": "Condição Ferido",
+      "critical": "Condição Crítica",
+      "healthy": "Condição Saudável"
+    },
+    "LevelUp": {
+      "Title": "Subir de nível {className}",
+      "Health": {
+        "Label": "Saúde",
+        "Roll": {
+          "Label": "Rolar"
+        },
+        "Manual": {
+          "Label": "Manual"
+        }
+      }
+    },
+    "WeaponGroup": {
+      "bladesHeavy": "Lâminas Pesadas",
+      "bladesLight": "Lâminas Leves",
+      "bows": "Arcos",
+      "close": "Próximo",
+      "crossbows": "Bestas",
+      "double": "Duplo",
+      "firearms": "Armas de Fogo",
+      "flails": "Manguais",
+      "monk": "Monge",
+      "natural": "Natural",
+      "axes": "Machados",
+      "hammers": "Martelos",
+      "polearms": "Armas de Haste",
+      "siegeEngines": "Máquinas de Cerco",
+      "spears": "Lanças",
+      "thrown": "Arremesso",
+      "tribal": "Tribal"
+    },
+    "Condition": {
+      "blind": "Cego",
+      "paralyzed": "Paralisado",
+      "deathEffects": "Efeitos de Morte",
+      "bleed": "Sangrando",
+      "confused": "Confuso",
+      "dazzled": "Ofuscado",
+      "deaf": "Surdo",
+      "entangled": "Enredado",
+      "fatigued": "Fatigado",
+      "exhausted": "Exausto",
+      "grappled": "Agarrado",
+      "helpless": "Indefeso",
+      "incorporeal": "Incorpóreo",
+      "invisible": "Invisível",
+      "pinned": "Imobilizado",
+      "prone": "Caído",
+      "fear": "Medo",
+      "shaken": "Abalado",
+      "frightened": "Amedrontado",
+      "panicked": "Em Pânico",
+      "sickened": "Enjoado",
+      "staggered": "Zonzo",
+      "stunned": "Atordoado",
+      "nauseated": "Nauseado",
+      "dazed": "Pasmo",
+      "sleep": "Dormir",
+      "cowering": "Acovardado",
+      "squeezing": "Apertado",
+      "disease": "Doença",
+      "energyDrain": "Drenagem de Energia",
+      "mindAffecting": "Afetando a Mente",
+      "poison": "Veneno",
+      "petrified": "Petrificado"
+    },
+    "Alignments": {
+      "l": "Ordeiro",
+      "cn": "Caótico e Neutro",
+      "c": "Caótico",
+      "g": "Bom",
+      "e": "Mau",
+      "ng": "Neutro e Bom",
+      "cg": "Caótico e Bom",
+      "lg": "Ordeiro e Bom",
+      "ln": "Ordeiro e Neutro",
+      "tn": "Neutro",
+      "le": "Ordeiro e Mau",
+      "ne": "Neutro e Mau",
+      "ce": "Caótico e Mau",
+      "Short": {
+        "lg": "OB",
+        "ng": "NB",
+        "cg": "CB",
+        "ln": "ON",
+        "tn": "N",
+        "cn": "CN",
+        "le": "OM",
+        "ne": "NM",
+        "ce": "CM"
+      }
+    },
+    "Distance": {
+      "ft": "Pés",
+      "personal": "Pessoal",
+      "touch": "Toque",
+      "melee": "Corpo a Corpo",
+      "reach": "Alcance",
+      "close": "Curto",
+      "medium": "Médio",
+      "long": "Longo",
+      "ftShort": "pés",
+      "mi": "Milhas",
+      "miShort": "mi",
+      "m": "Metros",
+      "mShort": "m",
+      "km": "Quilômetros",
+      "kmShort": "km"
+    }
+  }
 }

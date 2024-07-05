@@ -7,7 +7,7 @@ import { ParserBase } from "../base-parser.js";
 export class SRParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as Spell Resistance")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as Spell Resistance")
 
         try {
             let rawInput = value.replace(/(^[,;\s]*|[,;\s]*$)/g, "");

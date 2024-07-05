@@ -1,6 +1,6 @@
 import { sbcConfig } from "./sbcConfig.js";
 import { sbcApp } from "./sbc.js";
-import { sbcParser, parseInteger, parseSubtext, parseValueToDocPath, parseValueToPath } from "./sbcParser.js";
+import { sbcParser } from "./sbcParser.js";
 import { sbcUtils } from "./sbcUtils.js";
 import { sbcData, sbcError } from "./sbcData.js";
 import { sbcRenderer } from "./sbcRenderer.js";
@@ -29,7 +29,7 @@ export class sbcInputDialog extends Application {
           "resizable": true,
           "classes": ["sbcModal"],
           "popOut": true,
-          "title": "sbc | Statblock Converter by Lavaeolous",
+          "title": "sbc | Statblock Converter by Fair Strides",
           "scrollY": [".sbcInput", ".sbcHighlights"]});
     }
 
@@ -65,7 +65,7 @@ export class sbcInputDialog extends Application {
 
         actorTypeToggle.on("click", async function() {
             // When the actorTypeToggle is clicked, check if there i input and try to generate an updated preview
-            sbcConfig.options.debug && sbcUtils.log("Switching between PC and NPC actor type")
+            sbcUtils.log("Switching between PC and NPC actor type")
 
             await sbcUtils.resetCategoryCounter()
             await sbcRenderer.updateActorType()
@@ -81,8 +81,6 @@ export class sbcInputDialog extends Application {
                 sbcRenderer.updatePreview()
                 sbcRenderer.updateErrorArea()
                 Hooks.callAll("sbc.inputParsed");
-            } else {
-
             }
 
             sbcRenderer.updateErrorArea()
@@ -108,7 +106,7 @@ export class sbcInputDialog extends Application {
           // Check, if there is an input and try to parse that
           if (sbcData.input) {
             // Prepare and parse the input
-            await sbcParser.prepareInput()
+            await sbcParser.prepareInput(inputArea);
 
             // if the input could successly be parsed, generate a new preview
             if (sbcData.parsedInput.success) {
@@ -148,16 +146,16 @@ export class sbcInputDialog extends Application {
         // Get the input from the textArea when sbcImportButton is clicked
         let sbcImportButton = $(".sbcContainer #sbcImportButton")
         sbcImportButton.on("click", async function() {
-          sbcConfig.options.debug && sbcUtils.log("Processing input")
+          sbcUtils.log("Processing input")
 
           // If there is Input
           if (sbcData.input) {
             // If the input could be parsed correctly
             if (sbcConfig.options.actorReady) {
-              try {
+              // try {
                 // Create a permanent actor using the data from the temporary one
                 let actorData = sbcData.characterData.actorData.toObject();
-                let actorUpdates = pf1.migrations.migrateActorData(actorData);
+                let actorUpdates = pf1.migrations.migrateActorData(actorData, null, {actor: sbcData.characterData.actorData });
                 if (!foundry.utils.isEmpty(actorUpdates)) {
                     await sbcData.characterData.actorData.update(actorUpdates);
                 }
@@ -171,9 +169,9 @@ export class sbcInputDialog extends Application {
                 sbcData.imported = true;
                 sbcInputDialog.sbcInputDialogInstance.close()
                 sbcApp.resetSBC(false)
-              } catch (err) {
-                  throw err
-              }
+              // } catch (err) {
+              //     throw err
+              // }
             } else {
               let errorMessage = "Could not create an Actor"
               let error = new sbcError(0, "Import", errorMessage)

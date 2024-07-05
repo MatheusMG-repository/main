@@ -1,7 +1,6 @@
 import { sbcUtils } from "../sbcUtils.js"
 import { sbcData, sbcError } from "../sbcData.js"
 import { sbcConfig } from "../sbcConfig.js"
-import { sbcContent } from "../sbcContent.js"
 import { parserMapping } from "../Parsers/parser-mapping.js";
 
 /* ------------------------------------ */
@@ -55,7 +54,7 @@ export async function parseSpecialAbilities(data, startLine) {
 
 `)
 
-    sbcConfig.options.debug && sbcUtils.log("RESULT OF PARSING SPECIAL ABILITY DATA (TRUE = PARSED SUCCESSFULLY)")
+    sbcUtils.log("RESULT OF PARSING SPECIAL ABILITY DATA (TRUE = PARSED SUCCESSFULLY)")
     sbcConfig.options.debug && console.log(parsedSubCategories)
     sbcConfig.options.debug && console.groupEnd()
 

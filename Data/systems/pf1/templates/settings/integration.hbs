@@ -1,0 +1,36 @@
+<form autocomplete="off" data-tooltip-class="pf1">
+  {{! Dice So Nice }}
+  <div class="module {{#if dsnFound}}active{{else}}disabled{{/if}}">
+    <label class="checkbox">
+      <input name="settings.diceSoNice" type="checkbox" {{checked diceSoNice}}>
+      {{localize "PF1.Application.Integration.Modules.dice-so-nice.Label"}}
+    </label>
+    <p class="info">{{{localize "PF1.Application.Integration.Modules.dice-so-nice.Info"}}}</p>
+  </div>
+
+  {{! Drag Ruler }}
+  <div class="module {{#if drFound}}active{{else}}disabled{{/if}}">
+    <label class="checkbox">
+      <input name="settings.dragRuler" type="checkbox" {{checked dragRuler}}>
+      {{localize "PF1.Application.Integration.Modules.drag-ruler.Label"}}
+    </label>
+    <p class="info">{{{localize "PF1.Application.Integration.Modules.drag-ruler.Info"}}}</p>
+  </div>
+
+  {{! Enhanced Terrain Layer; support disabled until module is fixed or support is removed }}
+  {{#if dragRuler}}
+  <!--
+  <div class="module {{#if etlFound}}active{{else}}disabled{{/if}}">
+    <label class="checkbox">
+      <input name="settings.enhancedTerrainLayer" type="checkbox" {{checked enhancedTerrainLayer}}>
+      {{localize "PF1.Application.Integration.Modules.enhanced-terrain-layer.Label"}}
+    </label>
+    <p class="info">{{{localize "PF1.Application.Integration.Modules.enhanced-terrain-layer.Info"}}}</p>
+  </div>
+  -->
+  {{/if}}
+
+  <div class="flexrow">
+    <button type="submit">{{localize "Save"}}</button>
+  </div>
+</form>

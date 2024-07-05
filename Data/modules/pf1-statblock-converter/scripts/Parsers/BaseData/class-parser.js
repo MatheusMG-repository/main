@@ -9,14 +9,13 @@ import { createItem } from "../../sbcParser.js";
 export class ClassParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as class(es)")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as class(es)")
 
         try {
-
             let compendium = "pf1.classes"
 
             let patternSupportedClasses = new RegExp("(" + sbcConfig.classes.join("\\b|\\b") + ")", "gi")
-            let patternPrestigeClasses = new RegExp("(" + sbcConfig.prestigeClassNames.join("\\b|\\b") + ")(.*)", "gi")
+            let patternPrestigeClasses = new RegExp(`(${sbcConfig.prestigeClassNames.length ? sbcConfig.prestigeClassNames.join("\\b|\\b") : "_"})(.*)`, "gi")
             let patternWizardClasses = new RegExp("(" + sbcContent.wizardSchoolClasses.join("\\b|\\b") + ")(.*)", "gi")
 
             // Put the raw class info into the notes, to be used in the preview
@@ -83,7 +82,7 @@ export class ClassParser extends ParserBase {
                         return false
                     }
 
-                    let classItem = await sbcUtils.findEntityInCompendium(compendium, classData, "class", line)
+                    let classItem = await sbcUtils.findEntityInCompendium(compendium, classData, "class", null, line, sbcData.characterData.classes)
 
                     /*
                      * If the input is a prestige class AND this prestige class could not be found,
@@ -153,6 +152,7 @@ export class ClassParser extends ParserBase {
 
                         let className = classData.name;
                         let deity;
+                        let updates = {};
                         // If the suffix contains an "of" the probability it names a deity is high. So, set that and hope for the best
                         if (classData.suffix.search(/^(of\b)/i) !== -1 && classData.archetype !== "") {
                             deity = classData.suffix.replace(/^(of\b)/i, "").trim()
@@ -164,28 +164,34 @@ export class ClassParser extends ParserBase {
                             className = sbcUtils.capitalize(classData.name) + " (" + sbcUtils.capitalize(classData.archetype) + ")"
                         } else if (classData.wizardClass !== "") {
                             className = sbcUtils.capitalize(classData.wizardClass)
-                            classItem.update({
-                                system: {
-                                    tag: "wizard",
-                                    useCustomTag: true,
-                                }
-                            })
+                            updates["system.tag"] = "wizard"
+                            updates["system.useCustomTag"] = true
+                            // classItem.updateSource({
+                            //     system: {
+                            //         tag: "wizard",
+                            //         useCustomTag: true,
+                            //     }
+                            // })
                         } else {
                             className = sbcUtils.capitalize(classData.name)
                         }
 
                         if (deity) sbcData.characterData.actorData.update({ "system.details.deity": deity })
 
-                        classItem.updateSource({
-                            name: className,
-                            system: {
-                                level: +classData.level,
-                                hp: +classItem.system.hd + +Math.floor(sbcUtils.getDiceAverage(+classItem.system.hd) * (+classData.level-1)),
-                            }
-                        })
+                        updates["name"] = className;
+                        updates["system.level"] = +classData.level;
+                        updates["system.hp"] = +classItem.system.hd + +Math.floor(sbcUtils.getDiceAverage(+classItem.system.hd) * (+classData.level-1));
+
+                        // Update the classItem with the new data
+                        await classItem.updateSource(updates);
 
                         //sbcData.characterData.items.push(classItem)
-                        let [type, book] = await createItem(classItem);
+                        let [_type, book] = await createItem(classItem);
+
+                        // Add the class identifier to the list of classses on the actor.
+                        if(sbcData.characterData.classes.includes(book[0].system.tag) === false) {
+                            sbcData.characterData.classes.push(book[0].system.tag);
+                        }
 
                         // Add a spellbook if the class has one.
                         // Calling this manually right away so that we know the spellbook exists later.
@@ -196,7 +202,7 @@ export class ClassParser extends ParserBase {
 
 
                 }  else {
-                    let errorMessage = "Failed to create an item for the class " + value + "."
+                    let errorMessage = "Failed to create an item for the class " + classInput + "."
                     let error = new sbcError(1, "Parse/Base/Class", errorMessage, line)
                     sbcData.errors.push(error)
                     return false

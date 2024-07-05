@@ -7,7 +7,7 @@ import { ParserBase } from "../base-parser.js";
 export class SavesParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as Saves")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as Saves")
 
         try {
 
@@ -23,16 +23,16 @@ export class SavesParser extends ParserBase {
 
             for (let k = 0; k < saves.length; k++) {
                 let save = 0, saveType;
-                if (/(?:Fort\s*[\+]?)(\-?\d+)/i.test(saves[k][0])) {
-                    save = saves[k][0].match(/(?:Fort\s*[\+]?)(\-?\d+)/i)[1];
+                if (/(?:Fort\s*[+]?)(-?\d+)/i.test(saves[k][0])) {
+                    save = saves[k][0].match(/(?:Fort\s*[+]?)(-?\d+)/i)[1];
                     saveType = "fort";
                 }
-                else if (/(?:Ref\s*[\+]?)(\-?\d+)/i.test(saves[k][0])) {
-                    save = saves[k][0].match(/(?:Ref\s*[\+]?)(\-?\d+)/i)[1];
+                else if (/(?:Ref\s*[+]?)(-?\d+)/i.test(saves[k][0])) {
+                    save = saves[k][0].match(/(?:Ref\s*[+]?)(-?\d+)/i)[1];
                     saveType = "ref";
                 }
-                else if (/(?:Will\s*[\+]?)(\-?\d+)/i.test(saves[k][0])) {
-                    save = saves[k][0].match(/(?:Will\s*[\+]?)(\-?\d+)/i)[1];
+                else if (/(?:Will\s*[+]?)(-?\d+)/i.test(saves[k][0])) {
+                    save = saves[k][0].match(/(?:Will\s*[+]?)(-?\d+)/i)[1];
                     saveType = "will";
                 }
                 if (!saveType) {

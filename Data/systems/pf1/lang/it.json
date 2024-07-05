@@ -198,7 +198,7 @@
     "BonusModifierSacred": "Sacro",
     "BonusModifierSize": "Taglia",
     "BonusModifierTrait": "Tratto",
-    "BonusModifierUntyped": "Generico",
+    "BonusModifierUntyped": "Senza Tipo",
     "BonusModifierUntypedPerm": "Generico (Permanente)",
     "Broken": "Rotto",
     "BrowseBestiary": "Sfoglia Bestiario",
@@ -210,7 +210,7 @@
     "BuffName": "Nome Effetto",
     "BuffTarAC": "CA",
     "BuffTarACArmor": "Armatura",
-    "BuffTarACGeneric": "Generico",
+    "BuffTarACGeneric": "CA Generica",
     "BuffTarACNatural": "Armatura Naturale",
     "BuffTarACShield": "Scudo",
     "BuffTarAbilityChecks": "Prove di Caratteristica",
@@ -307,7 +307,7 @@
     "CondEntangled": "Intralciato",
     "CondExhausted": "Esausto",
     "CondFatigued": "Affaticato",
-    "CondFear": "Scosso",
+    "CondFear": "Paura (qualsiasi)",
     "CondGrappled": "In Lotta",
     "CondHelpless": "Indifeso",
     "CondIncorporeal": "Incorporeo",
@@ -442,7 +442,7 @@
     "DistPersonal": "Personale",
     "DistTouch": "Contatto",
     "Domain": "Dominio",
-    "DontShowAgain": "Non mostrare di nuovo",
+    "DontShowAgain": "Non mostrare il changelog dopo gli aggiornamenti del sistema",
     "Drain": "Risucchio",
     "DuplicateItem": "Duplica Oggetto",
     "Duration": "Durata",
@@ -494,13 +494,13 @@
     "ErrorInsufficientCharges": "Non sono rimaste sufficienti cariche in {name}",
     "ErrorItemFormula": "C'è un errore di una formula nell'oggetto {item} relativo all'attore {actor}",
     "ErrorItemNoOwner": "Questo oggetto non ha un proprietario",
-    "ErrorNoActorPermission": "Non hai il permesso di controllare questo attore",
+    "ErrorNoActorPermission": "Non sei autorizzato a controllare questo attore",
     "ErrorNoCharges": "Non ci sono piu' cariche in {name}",
     "ErrorNoFormula": "{name} non ha una formula da lanciare!",
     "ErrorNoQuantity": "Non ti rimangono altri oggetti di quel tipo",
     "ErrorNoSpellsLeft": "Non ti rimangono altri incantesimi di quel tipo",
     "ErrorUnauthorizedAction": "Non sei autorizzato a compiere quell'azione",
-    "Exhaustion": "Esausto",
+    "Exhaustion": "Affaticamento",
     "Experience": "Esperienza",
     "ExperienceConfigHint": "Configura aspetti dell'avanzamento di livello.",
     "ExperienceConfigLabel": "Configura Esperienza",
@@ -552,7 +552,7 @@
     "Height": "Altezza",
     "Held": "Impugnatura",
     "HelpDomainSpell": "Questo incantesimo non costerà slot incantesimo che vengono ripristinati quando si riposa.",
-    "HelpSellMultiplier": "Il tasso a cui gli oggetti che non sono Merci di Scambio vengono venduti. Le Merci di Scambio si vendono sempre a prezzo pieno.",
+    "HelpSellMultiplier": "Il tasso a cui gli oggetti che vengono venduti.<br>Il valore di default è 0.5.<br>Le Merci di Scambio si vendono sempre a prezzo pieno (1.0).",
     "HelpSellMultiplierN": "Tasso di Vendita",
     "HideFromToken": "Nascondi dal token",
     "High": "Alto",
@@ -850,7 +850,7 @@
     "SourceInfoSize": "Taglia",
     "SourceInfoTemporaryBuffs": "Effetti Temporanei",
     "SourceInfoTraits": "Tratti",
-    "SourceInfoWeapons": "Armi",
+    "SourceInfoWeapons": "Arma",
     "Special": "Speciale",
     "SpecialTraits": "Tratti Speciali",
     "Speed": "Velocità",
@@ -875,7 +875,11 @@
     "SpellComponentMaterial": "Materiale",
     "SpellComponentSomatic": "Somatica",
     "SpellComponentVerbal": "Verbale",
-    "SpellComponents": "Componenti Incantesimo",
+    "SpellComponents": {
+      "DFVariants": {
+        "FDF": "F/FD"
+      }
+    },
     "SpellComponentsMisc": "Altri Componenti",
     "SpellDamage": "Danno Incantesimo",
     "SpellDetails": "Dettagli Incantesimo",
@@ -923,7 +927,7 @@
     "SpellcastingFocus": "Focus Incantesimo",
     "SpellcastingMaterials": "Materiali Incantesimo",
     "Spells": "Incantesimi",
-    "SpellsTotalEachDay": "Incantesimi totali al giorno (escludento incantesimi gratuiti come quelli di dominio o di scuola)",
+    "SpellsTotalEachDay": "Incantesimi totali al giorno",
     "SubDomain": "Sottodominio",
     "SubSchool": "Sottoscuola",
     "SubSchoolExample": "es.: convocazione, compulsione",
@@ -1057,7 +1061,7 @@
     "General": "Generale",
     "OptionalAndVariantRules": "Varianti e Regole Opzionali",
     "WoundThresholdOverride": "Gestione Soglie di Ferimento",
-    "TooltipConfigName": "Configurazione Tooltip",
+    "TooltipConfigName": "Configurazione Tooltip dei Token",
     "HideHeld": "Nascondi Oggetti Impugnati",
     "HideArmor": "Nascondi Armatura",
     "HideBuffs": "Nascondi Effetto",
@@ -1066,8 +1070,8 @@
     "HideName": "Nascondi Nome",
     "SpellbookName": "Nome Libro Incantesimi",
     "SpellSlotAbilityBonus": "Slot Incantesimi Bonus",
-    "DomainSlotValue": "Valore Slot Dominio",
-    "DomainSlotValueDesc": "Quanti slot 'gratuiti' per livello incantesimo sono forniti da Dominio/Scuola?",
+    "DomainSlotValue": "Slot di Dominio/Scuola",
+    "DomainSlotValueDesc": "Numero di slot bonus che gli incantesimi di Dominio/Scuola hanno per ciascun livello di incantesimo.",
     "AutoSpellClassLevelOffset": {
       "Formula": "Modificatore Livello Classe",
       "InfoBox": "Se hai una classe di prestigio che altera il tuo livello di classe, aggiungine il livello qui (e.g. @classes.mysticTheurge.level)"
@@ -1175,7 +1179,7 @@
     "AddCriticalDamage": "Aggiungi Formula Danno Critico",
     "AddNonCriticalDamage": "Aggiungi Formula Danno Non-critico",
     "AmmoDepleted": "Munizioni Esaurite!",
-    "AmmoRemaining": "Munizioni rimanenti: {0}",
+    "AmmoRemaining": "Munizioni rimanenti: {quantity}",
     "Application": {
       "ChangeTargetSelector": {
         "Title": "Seleziona Cambio Target"
@@ -1205,11 +1209,11 @@
     "Enable": "Abilita",
     "ErrorCouldNotFindActorByName": "Impossibile trovare attore con nome '{name}'",
     "ErrorFeatDisabled": "Questo talento è disabilitato",
-    "ErrorGenericPermission": "Non hai il permesso di eseguire questa azione",
-    "ErrorNoActorPermissionAlt": "Non hai il permesso di controllare l'attore '{name}'",
+    "ErrorGenericPermission": "Non sei autorizzato ad eseguire questa azione",
+    "ErrorNoActorPermissionAlt": "Non sei autorizzato a controllare l'attore \"{name}\"",
     "ErrorNoApplicableActorFoundForAction": "Nessun attore applicabile trovato per l'azione '{name}'",
     "ErrorNoMacroID": "Nessuna macro con ID '{id}' è stata trovata",
-    "Flags": "Flags",
+    "Flags": "Flag",
     "FlagsBoolean": "Flags Booleani",
     "FlagsDictionary": "Flags Dizionario",
     "FormulaAttack": "Attacco #{0}",
@@ -1248,7 +1252,7 @@
     "Manyshot": "Tiro Multiplo",
     "MeleeSpell": "Incantesimo in Mischia",
     "MeleeWeapon": "Arma da Mischia",
-    "Migration.End": "Migrazione Sistema PF1 alla versione {version} avvenuta con successo!",
+    "Migration.End": "Migrazione Sistema PF1 alla versione {version} completato!",
     "Migration.Ongoing": "Migrazione in corso. Prego attendere.",
     "Migration.Start": "Applicazione Migrazione Sistema PF1 alla versione {version}. Prego attendere.",
     "MinimumDamage": "Danno Minimo",
@@ -1277,7 +1281,7 @@
     "TooltipConfigHidePortraits": "Nascondi Ritratti",
     "TooltipConfigHideWithoutKey": "Mostra solo se {key} è premuto",
     "TooltipConfigHint": "Modifica impostazioni tooltip",
-    "TooltipConfigLabel": "Tooltip",
+    "TooltipConfigLabel": "Tooltip dei Token",
     "TooltipConfigLocationPreview": "Posizione Anteprima",
     "TooltipConfigMaxPortraitSize": "Dimensione Massima Ritratto",
     "TooltipConfigOffset": "Offset Tooltip",
@@ -1296,9 +1300,9 @@
     "TooltipWorldConfigHideHeld": "Nascondi Oggetti Impugnati (globale)",
     "TooltipWorldConfigHideHeld_Hint": "Nascondi Oggetti Impugnati a tutti i giocatori",
     "TooltipWorldConfigHidePortraits": "Nascondi Ritratti (globale)",
-    "TooltipWorldConfigHint": "Cambia le impostazioni globali dei Tooltip",
-    "TooltipWorldConfigLabel": "Tooltip (Mondo)",
-    "TooltipWorldConfigName": "Configurazione Tooltip Mondo",
+    "TooltipWorldConfigHint": "Cambia le impostazioni dei Tooltip per tutti gli utenti",
+    "TooltipWorldConfigLabel": "Configurazione Globale",
+    "TooltipWorldConfigName": "Configurazione Globale Tooltip dei Token",
     "Vertical": "Verticale",
     "WarningCannotCreateChargeLink": "Non è possibile creare link di tipo Carica tra {soure} e {target}, perché {target} ha già link di questo tipo",
     "WarningCannotCreateChargeLink2": "Non è possibile creare link di tipo Carica tra {source} e {target}, perché {target} è già linkato a {deeptarget}",
@@ -1313,28 +1317,29 @@
       "NewName": "Nuovo Script",
       "Use": {
         "Name": "Utilizzo",
-        "Info": "Richiamato quando l'oggetto viene 'usato' (attacco, bere pozione, ecc.). Prevede la variabile extra `attacks`, che contiene la serie di tiri per colpire, se disponibile."
+        "Info": "Richiamato quando l'oggetto viene 'usato' (attacco, bere pozione, ecc.). Prevede la variabile array <code>attacks</code>, che contiene i tiri per colpire dell'azione, se disponibile."
       },
       "Equip": {
         "Name": "Equipaggiato",
-        "Info": "Richiamato quando l'oggetto viene equipaggiato o disequipaggiato. Prevede la variabile extra `equipped`, che può essere `true` o `false`."
+        "Info": "Richiamato quando l'oggetto viene equipaggiato o disequipaggiato. Prevede la variabile booleana extra <code>equipped</code>."
       },
       "Toggle": {
         "Name": "Attiva/Disattiva",
-        "Info": "Richiamato quando l'oggetto viene attivato o disattivato. Prevede la variabile extra `state`, che può essere `true` o `false`."
+        "Info": "Richiamato quando l'oggetto viene attivato o disattivato. Prevede la variabile booleana extra <code>state</code>."
       },
       "ChangeQuantity": {
         "Name": "Cambio Quantità",
-        "Info": "Richiamato quando vengono cambiate le quantità dell'oggetto. Prevede la variabile extra `quantity.previous` e `quantity.new`, entrambi numeriche."
+        "Info": "Richiamato quando vengono cambiate le quantità dell'oggetto. Prevede le variabili numeriche extra <code>quantity.previous</code> e <code>quantity.new</code>."
       },
       "ChangeLevel": {
         "Name": "Cambio Livello",
-        "Info": "Richiamato quando viene cambiato il livello dell'oggetto. Prevede la variabile extra `quantity.previous` e `quantity.new`, entrambi numeriche."
+        "Info": "Richiamato quando viene cambiato il livello dell'oggetto. Prevede le variabili numeriche extra <code>level.previous</code> e <code>level.new</code>."
       }
     },
     "Help": {
       "Label": "Guida"
-    }
+    },
+    "Title": "Pathfinder 1e"
   },
   "SETTINGS": {
     "pf1AlternativeReachCornerRuleH": "Nasconde gli angoli esterni dalle misurazioni della portata di 10-ft",

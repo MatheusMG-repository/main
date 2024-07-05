@@ -16,26 +16,7 @@
             {{#each system.abilities as |ability id|}}
             <tr class="ability" data-ability="{{id}}">
                 {{!-- Ability name --}}
-                <th class="tooltip">
-                    <span class="tooltipcontent">
-                        <span class="span2 align-left">@abilities.{{id}}.total :</span><span class="span1 align-right"> {{ability.total}}</span>
-                        <span class="span2 align-left">@abilities.{{id}}.value :</span><span class="span1 align-right"> {{ability.value}}</span>
-                        <span class="span2 align-left">@abilities.{{id}}.mod :</span><span class="span1 align-right"> {{ability.mod}}</span>
-                        <span class="span2 align-left">@abilities.{{id}}.damage :</span><span class="span1 align-right"> {{ability.damage}}</span>
-                        <span class="span2 align-left">@abilities.{{id}}.drain :</span><span class="span1 align-right"> {{ability.drain}}</span>
-                        <span class="span2 align-left">@abilities.{{id}}.penalty :</span><span class="span1 align-right"> {{ability.penalty}}</span>
-                        <span class="span2 align-left">@abilities.{{id}}.base :</span><span class="span1 align-right"> {{ability.base}}</span>
-                        <span class="span2 align-left">@abilities.{{id}}.baseMod :</span><span class="span1 align-right"> {{ability.baseMod}}</span>
-
-                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=ability.sourceDetails sublabel="PF1.AbilityScore" plain=true}}
-
-                        {{#with (lookup ../sourceDetails.system.abilities id)}}
-                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=mod sublabel="PF1.Modifier"}}
-                        {{/with}}
-
-                        {{> "systems/pf1/templates/actors/parts/actor-contextNotes.hbs" target=(concat "abilityChecks." id)}}
-                    </span>
-
+                <th data-tooltip-extended="abilityScore.{{id}}">
                     <a class="ability-name rollable">
                         <i class="fas fa-dice"></i>
                         {{ability.label}}
@@ -74,81 +55,42 @@
     <div class="form-group temporary">
         <button type="button" class="pointbuy-calculator">
             <i class="fa-solid fa-calculator"></i>
-            {{localize "PF1.PointBuyCalculator"}}
+            {{localize "PF1.Application.PointBuy.Title"}}
         </button>
         <p class="hint">
             <i class="fa-solid fa-triangle-exclamation"></i>
-            {{localize "PF1.PointBuyCalculatorSetupHint"}}
+            {{localize "PF1.Application.PointBuy.SetupHint"}}
         </p>
     </div>
     {{/if}}
 
-    <table>
-        <thead>
-            <th class="tooltip">
-                {{localize "PF1.ACP"}}
-                <div class="tooltipcontent">
-                    <span class="span2 align-left">@attributes.acp.total :</span><span class="span1 align-right"> {{system.attributes.acp.total}}</span>
+    <div class="armor-attributes">
+      {{! ACP }}
+      <div class="info-box acp" data-tooltip-extended="acp">
+        <h5>{{localize "PF1.ACP"}}</h5>
+        <span class="value">{{system.attributes.acp.total}}</span>
+      </div>
 
-                    {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.acp.total forceLabel=1 forceCheck=system.attributes.acp.total }}
-                    
-                    {{#if sourceDetails.system.attributes.acp.total.length}}
-                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.acp.armorBonus sublabel="PF1.EquipTypeArmor"}}
-                    {{else}}
-                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.acp.armorBonus sublabel="PF1.EquipTypeArmor" bypassLabel=true}}
-                    {{/if}}
+      {{! Max Dex }}
+      <div class="info-box maxdex" data-tooltip-extended="max-dex">
+        <h5>{{localize "PF1.MaxDexShort"}}</h5>
+        <span class="value">{{system.attributes.maxDexBonus}}</span>
+      </div>
 
-                    {{#if (or sourceDetails.system.attributes.acp.total.length sourceDetails.system.attributes.acp.armorBonus.length)}}
-                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.acp.shieldBonus sublabel="PF1.EquipTypeShield"}}
-                    {{else}}
-                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.acp.shieldBonus sublabel="PF1.EquipTypeShield" bypassLabel=true}}
-                    {{/if}}
-                </div>
-            </th>
-            <th class="tooltip">
-                {{localize "PF1.MaxDexShort"}}
-                <div class="tooltipcontent">
-                    <span class="span2 align-left">@attributes.maxDexBonus :</span><span class="span1 align-right"> {{system.attributes.maxDexBonus}}</span>
+      {{#if implants}}
+      <div class="info-box implants" data-tooltip-extended="implants">
+        <h5>{{localize "PF1.Cybertech.Implantation"}}</h5>
+        <span class="value">{{implants.load}} / {{implants.max}}</span>
+      </div>
+      {{/if}}
 
-                    {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.maxDexBonus forceLabel=1 forceCheck=system.attributes.maxDexBonus}}
-
-                    {{#if sourceDetails.system.attributes.maxDexBonus.length}}
-                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.mDex.armorBonus sublabel="PF1.EquipTypeArmor"}}
-                    {{else}}
-                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.mDex.armorBonus sublabel="PF1.EquipTypeArmor" bypassLabel=true}}
-                    {{/if}}
-
-                    {{#if (or sourceDetails.system.attributes.maxDexBonus.length sourceDetails.system.attributes.mDex.armorBonus.length)}}
-                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.mDex.shieldBonus sublabel="PF1.EquipTypeShield"}}
-                    {{else}}
-                        {{> "systems/pf1/templates/actors/parts/actor-source-details.hbs" target=sourceDetails.system.attributes.mDex.shieldBonus sublabel="PF1.EquipTypeShield" bypassLabel=true}}
-                    {{/if}}
-                </div>
-            </th>
-            {{#if asf}}
-            <th class="tooltip">
-                {{localize "PF1.ArcaneSpellFailureAbbr"}}
-
-                {{#if asf.sources.length}}
-                <div class="tooltipcontent">
-                    <span class="span3">{{localize "PF1.FromSources"}}:</span>
-                    {{#each asf.sources}}
-                    <span class="span2 align-left">{{item.name}} :</span><span class="span1 align-right"> {{asf}}%</span>
-                    {{/each}}
-                </div>
-                {{/if}}
-            </th>
-            {{/if}}
-        </thead>
-
-        <tbody>
-            <td class="acp">{{system.attributes.acp.total}}</td>
-            <td class="maxdex">{{system.attributes.maxDexBonus}}</td>
-            {{#if asf}}
-            <td class="asf">{{asf.total}}%</td>
-            {{/if}}
-        </tbody>
-    </table>
+      {{#if asf}}
+      <div class="info-box asf" data-tooltip-extended="asf">
+        <h5>{{localize "PF1.ArcaneSpellFailureAbbr"}}</h5>
+        <span class="value">{{asf.total}}%</span>
+      </div>
+      {{/if}}
+    </div>
 </div>
 
 {{!-- Traits --}}

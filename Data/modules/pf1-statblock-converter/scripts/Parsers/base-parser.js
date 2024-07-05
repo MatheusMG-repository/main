@@ -4,7 +4,7 @@ export class ParserBase {
 
     }
 
-    async parse(key, value) {
+    async parse(_key, _value) {
         return {};
     }
 }

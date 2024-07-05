@@ -1,4 +1,4 @@
-<form autocomplete="off">
+<form autocomplete="off" data-tooltip-class="pf1">
   <ol class="ability-list">
     {{#each abilities as |abl|}}
     <li class="ability flexrow" data-ability="{{abl.key}}">
@@ -30,15 +30,15 @@
 
   <div class="info">
     <p class="usage">
-      {{localize "PF1.PointBuyCalculatorSpent"}}: {{points}}
+      {{localize "PF1.Application.PointBuy.Spent"}}: {{points}}
       {{#if invalidPoints}}
-        <i class="fa-solid fa-triangle-exclamation" data-tooltip="PF1.PointBuyCalculatorInvalidPoints"></i>
+        <i class="fa-solid fa-triangle-exclamation" data-tooltip="PF1.Application.PointBuy.InvalidPoints"></i>
       {{/if}}
     </p>
     <table class="categories">
       <tr>
-        <th>{{localize "PF1.PointBuyCalculatorCampaignType"}}</th>
-        <th>{{localize "PF1.PointBuyCalculatorPoints"}}</th>
+        <th>{{localize "PF1.Application.PointBuy.CampaignType"}}</th>
+        <th>{{localize "PF1.Application.PointBuy.Points"}}</th>
       </tr>
       {{#each limits}}
       <tr{{#if (eq @root.closest key)}} class="closest"{{/if}} data-category="{{key}}">
@@ -48,7 +48,7 @@
       {{/each}}
     </table>
     <p>
-      <i class="fas fa-exclamation-triangle"></i> {{localize "PF1.PointBuyCalculatorWarning"}}
+      <i class="fas fa-exclamation-triangle"></i> {{localize "PF1.Application.PointBuy.Warning"}}
     </p>
   </div>
 

@@ -1,4 +1,4 @@
-import { sbcData, sbcError, sbcErrorLevels } from "./sbcData.js"
+import { sbcData, sbcErrorLevels } from "./sbcData.js"
 import { sbcUtils } from "./sbcUtils.js"
 import { sbcConfig } from "./sbcConfig.js"
 import { sbcApp } from "./sbc.js"
@@ -34,7 +34,7 @@ export class sbcRenderer {
     static async updatePreview() {
         this.resetPreview()
         let previewArea = $(".sbcContainer #sbcPreview")
-        let preview = await renderTemplate('modules/pf1-statblock-converter/templates/sbcPreview.hbs' , {actor: sbcData.characterData.actorData, notes: sbcData.notes })
+        let preview = await renderTemplate("modules/pf1-statblock-converter/templates/sbcPreview.hbs" , {actor: sbcData.characterData.actorData, notes: sbcData.notes, flags: sbcConfig.options.flags })
         previewArea.append(preview)
     }
 
@@ -73,7 +73,7 @@ export class sbcRenderer {
         sbcData.preparedInput.data.splice(sbcData.treasureParsing.lineToRemove, 1)
 
         // Add the treasure line into statistics
-        sbcData.treasureParsing.treasureToParse = sbcData.treasureParsing.treasureToParse.replace(/,?\s?other treasure/i, '');
+        sbcData.treasureParsing.treasureToParse = sbcData.treasureParsing.treasureToParse.replace(/,?\s?other treasure/i, "");
         sbcData.preparedInput.data.splice(sbcData.treasureParsing.statisticsStartLine+1, 0, "Gear " + sbcData.treasureParsing.treasureToParse)
 
         let newInput = sbcData.preparedInput.data.join("\n")
@@ -142,6 +142,7 @@ export class sbcRenderer {
                 newWidth = 100
                 progressBarText = subProcess
                 progressBar.addClass("ready")
+                break;
             default:
                 break
         }

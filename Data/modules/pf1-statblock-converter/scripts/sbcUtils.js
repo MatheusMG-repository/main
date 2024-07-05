@@ -2,11 +2,13 @@ import { sbcConfig } from "./sbcConfig.js";
 import { sbcData, sbcError } from "./sbcData.js";
 
 export class sbcUtils {
-    static openingBrackets = ['(', '[', '{'];
-    static closingBrackers = [')', ']', '}'];
-    static matchingClosingBrackets = { '(': ')', '[': ']', '{': '}' };
+    static openingBrackets = ["(", "[", "{"];
+    static closingBrackers = [")", "]", "}"];
+    static matchingClosingBrackets = { "(": ")", "[": "]", "{": "}" };
     static uncapitals = ["a", "an", "the", "for", "and", "nor", "but", "or", "yet", "so", "at", "around", "by", "after", "for", "from", "of", "on", "to", "with", "without"];
-
+    static packLookup = {};
+    static packData = {};
+    static packProcessing = false;
 
     static async createActor() {
         let tempActor = await Actor.create({
@@ -40,7 +42,11 @@ export class sbcUtils {
 
     static async reinitActor() {
         if (sbcData.characterData.actorData) {
-            console.log(`Deleting actor ${sbcData.characterData.actorData.name} with ID ${sbcData.characterData.actorData.id}.`);
+            sbcUtils.log(
+              `Deleting actor ${sbcData.characterData.actorData.name} with ID ${sbcData.characterData.actorData.id}.`,
+              undefined,
+              "info"
+            );
             sbcData.characterData.actorData.delete();
         }
         while (game.actors.getName("sbc | Actor Template")) {
@@ -59,6 +65,8 @@ export class sbcUtils {
                 "skills": {},
                 "spellBooks": {}
             },
+            classes: [],
+            race: "",
             weaponFocus: [],
             weaponSpecialization: [],
             weaponFocusGreater: [],
@@ -71,148 +79,8 @@ export class sbcUtils {
         await this.reinitActor();
 
         this.resetCategoryCounter()
-        //await this.resetTraits()
-        //await this.resetDefaults()
         await this.resetTokenData()
 
-    }
-
-    static async resetTraits() {
-        // Reset traits
-        return sbcData.characterData.actorData.update({
-            "system.traits": {
-                cres: "",
-                size: "",
-                stature: "tall",
-                regen: "",
-                fastHealing: "",
-                ci: {
-                    custom: "",
-                    value: [],
-                },
-                di: {
-                    custom: "",
-                    value: [],
-                },
-                dr: {
-                    custom: "",
-                    value: []
-                },
-                dv: {
-                    custom: "",
-                    value: [],
-                },
-                eres: {
-                    custom: "",
-                    value: []
-                },
-                languages: {
-                    custom: "",
-                    value: [],
-                },
-                senses: {
-                    bs: 0,
-                    bse: 0,
-                    custom: "",
-                    dv: 0,
-                    ll: {
-                        enabled: false,
-                        multiplier: {
-                            bright: 2,
-                            dim: 2
-                        }
-                    },
-                    sc: 0,
-                    si: false,
-                    sid: false,
-                    tr: false,
-                    ts: 0
-                }
-            }
-        });
-    }
-
-    static async resetDefaults() {
-        return sbcData.characterData.actorData.update({
-            "system.details": {
-                gender: "",
-                deity: "",
-                age: "",
-                height: "",
-                weight: ""
-            },
-            "system.traits": {
-                cres: "",
-                size: "",
-                stature: "tall",
-                regen: "",
-                fastHealing: "",
-                ci: {
-                    custom: "",
-                    value: [],
-                },
-                di: {
-                    custom: "",
-                    value: [],
-                },
-                dr: {
-                    custom: "",
-                    value: []
-                },
-                dv: {
-                    custom: "",
-                    value: [],
-                },
-                eres: {
-                    custom: "",
-                    value: []
-                },
-                languages: {
-                    custom: "",
-                    value: [],
-                },
-                senses: {
-                    bs: 0,
-                    bse: 0,
-                    custom: "",
-                    dv: 0,
-                    ll: {
-                        enabled: false,
-                        multiplier: {
-                            bright: 2,
-                            dim: 2
-                        }
-                    },
-                    sc: 0,
-                    si: false,
-                    sid: false,
-                    tr: false,
-                    ts: 0
-                }
-            },
-            "system.attributes": {
-                woundThresholds: {
-                    override: -1
-                },
-                spells: {
-                    spellbooks: {
-                        primary: {
-                            inUse: false
-                        },
-                        secondary: {
-                            inUse: false
-                        },
-                        tertiary: {
-                            inUse: false
-                        },
-                        spelllike: {
-                            inUse: false
-                        }
-                    }
-                }
-            }
-
-        })
     }
 
     static async resetTokenData() {
@@ -234,6 +102,8 @@ export class sbcUtils {
 
     static resetFlags() {
         sbcConfig.options.flags = {
+            hasNoCMB: false,
+            hasNoCMD: false,
             noStr: false,
             noDex: false,
             noCon: false,
@@ -245,17 +115,75 @@ export class sbcUtils {
         }
     }
 
-    /* ------------------------------------ */
-    /* Log to the console and errorArea     */
-    /* ------------------------------------ */
+    /**
+     * Log to the console and errorArea
+     *
+     * @param {any} message Output to the console.
+     * @param {any[]} [data=null] See {@link https://developer.mozilla.org/en-US/docs/Web/API/console/debug_static#parameters console.debug}
+     * @param {"debug"|"error"|"info"|"log"|"warn"} [outputFunc="debug"] The log level by log func call (default "debug").
+     *
+     * @todo The params should be an object in order to be able to destructure and avoid 'undefined' placeholder.
+     */
+    static log(message, data = null, outputFunc = "debug") {
+        const logFunc = console[outputFunc];
 
-    static log(message) {
-        sbcConfig.options.debug && console.log("sbc-pf1 | " + message);
+        // Skipping debug log when debug is off
+        if (logFunc === "debug" && !sbcConfig.options.debug) {
+          return;
+        }
+
+        if(data)
+            logFunc("sbc-pf1 | " + message, data);
+        else
+            logFunc("sbc-pf1 | " + message);
     }
 
     /* ------------------------------------ */
     /* Compendiums and Entities             */
     /* ------------------------------------ */
+
+    static processCompendiums = async function (packs = [], reset = false) {
+        if(sbcUtils.packProcessing) return;
+
+        sbcUtils.packProcessing = true;
+        if(sbcUtils.packData && reset) {
+            sbcUtils.packData = {};
+            sbcUtils.packLookup = {};
+        }
+
+        for(const pack of packs) {
+            let compendium = await game.packs.get(pack);
+
+            if (compendium) {
+                await compendium.getIndex();
+                compendium.fuzzyIndex = await globalThis.pf1.utils.sortArrayByName([...compendium.index]);
+
+                // Cache the compendium for later use
+                sbcUtils.packData[pack] = compendium;
+
+                // Create a lookup for the compendium's contents by item (and subtype if available)
+                // Each entry will be the item's name as the key and the UUID as the value
+                for(const entity of compendium.fuzzyIndex) {
+                    let type = entity.type;
+                    let subtype = entity.system?.subType ?? null;
+
+                    // Special exception, as the fuzzyIndex seems to not add the subtype for feat feats.
+                    // I assume it's because that's the default in template.json.
+                    if(type === "feat" && !subtype) subtype = "feat";
+
+                    if (!sbcUtils.packLookup[type]) sbcUtils.packLookup[type] = {items: []};
+                    sbcUtils.packLookup[type]["items"].push({name: entity.name, uuid: entity.uuid});
+                    
+                    if(subtype) {
+                        if (subtype in sbcUtils.packLookup[type] === false) sbcUtils.packLookup[type][subtype] = [];
+                        sbcUtils.packLookup[type][subtype].push({name: entity.name, uuid: entity.uuid});
+                    }
+                }
+            }
+        }
+
+        sbcUtils.packProcessing = false;
+    }
 
     /**
      * Generate permutations of an array. Complexity is O(n!).
@@ -295,40 +223,52 @@ export class sbcUtils {
      * @param {string[]} [options.packs] - An array of packs to search in
      * @param {"Actor"|"Item"|"Scene"|"JournalEntry"|"Macro"|"RollTable"|"Playlist"} [options.type] - A Document type to limit which packs are searched in
      * @param {"Actor"|"Item"|"Scene"|"JournalEntry"|"Macro"|"RollTable"|"Playlist"} [options.itemType] - An Item type to limit which form is acceptable
+     * @param {string} [options.itemSubtype] - An Item subtype to limit which form is acceptable
      * @returns {{pack: CompendiumCollection, index: object}|undefined} The index and pack containing it or undefined if no match is found
      */
-    static findInCompendia = async function (searchTerm, options = { packs: [], type: undefined, itemType: undefined }) {
+    static findInCompendia = async function (searchTerm, options = { packs: [], type: undefined, itemType: null, itemSubtype: null, classes: [] }) {
         let packs;
         if (options?.packs && options.packs.length) packs = options.packs.flatMap((o) => game.packs.get(o) ?? []);
         else packs = game.packs.filter((o) => !options?.type || o.metadata.type == options.type);
-
         searchTerm = searchTerm.toLocaleLowerCase();
-        let found, foundDoc, foundPack;
+        let found, uuid;
 
         let itemTypes = [];
-        if (typeof options.itemType === "string") itemTypes.push(options.itemType)
-        else itemTypes = options.itemType
+        if (typeof options.itemType === "string") itemTypes.push(options.itemType);
+        else itemTypes = options.itemType;
 
         for (const pack of packs) {
-            if (!pack.fuzzyIndex) pack.fuzzyIndex = await globalThis.pf1.utils.sortArrayByName([...pack.index]);
-
-            if (!itemTypes.includes(pack.fuzzyIndex[0].type)) continue;
-
-            found = globalThis.pf1.utils.binarySearch(pack.fuzzyIndex, searchTerm, (sp, it) => {
-
-                const item = sp.localeCompare(it.name, undefined, { ignorePunctuation: true });
-                if (item > -1 && !options?.itemType) {
-                    return itemTypes.includes(it.type);
-                }
-                return item
-            });
-            if (found > -1) {
-                foundDoc = pack.index.get(pack.fuzzyIndex[found]._id);
-                foundPack = pack;
-                break;
+            // sbcUtils.log(`Pack Name: ${pack.metadata.id}`)
+            let packdata = sbcUtils.packData[pack.metadata.id];
+            
+            if (!packdata) {
+                sbcUtils.log(`Pack ${pack.metadata.id} not found in cache. Processing...`)
+                sbcUtils.processCompendiums([pack.metadata.id], false);
+                packdata = sbcUtils.packData[pack.metadata.id];
             }
         }
-        if (foundDoc) return { pack: foundPack, index: foundDoc };
+
+        let searchArray = [];
+        for(const type of itemTypes) {
+            if(options?.itemSubtype && sbcUtils.packLookup[type][options.itemSubtype]) {
+                searchArray = searchArray.concat(sbcUtils.packLookup[type][options.itemSubtype]);
+            } else if(!options?.itemSubtype) {
+                searchArray = searchArray.concat(sbcUtils.packLookup[type]["items"]);
+            }
+        }
+
+        searchArray = await globalThis.pf1.utils.sortArrayByName(searchArray);
+
+        if (searchArray.length > 0) {
+            found = globalThis.pf1.utils.binarySearch(searchArray, searchTerm, (sp, it) => 
+                sp.localeCompare(it.name, undefined, { ignorePunctuation: true })
+            );
+            if (found > -1) {
+                uuid = searchArray[found].uuid;
+            }
+        }
+
+        if (uuid) return uuid;
 
         let searchMutations = sbcUtils.uniquePermutations(searchTerm.split(/[ _-]/));
         if (searchMutations) searchMutations = searchMutations.map((o) => o.join(" "));
@@ -345,34 +285,20 @@ export class sbcUtils {
             );
         }
 
-        for (const pack of packs) {
-            // if(!options?.itemType && (pack.fuzzyIndex[0]?.type !== options.itemType)) continue;
-            if (pack.fuzzyIndex[0].type !== options.itemType) continue;
-            // Skip first mutation since it is already searched for manually before computing mutations
-            for (let mut = 1; mut < searchMutations.length; mut++) {
-                found = globalThis.pf1.utils.binarySearch(pack.fuzzyIndex, searchMutations[mut], (sp, it) => {
-
-                    const item = sp.localeCompare(it.name, undefined, { ignorePunctuation: true });
-                    if (item > -1 && !options?.itemType) {
-                        return itemTypes.includes(it.type);
-                    }
-                    return item
-                });
-                if (found > -1) {
-                    foundDoc = pack.index.get(pack.fuzzyIndex[found]._id);
-                    foundPack = pack;
-                    break;
-                }
+        for (let mut = 1; mut < searchMutations.length; mut++) {
+            found = globalThis.pf1.utils.binarySearch(searchArray, searchMutations[mut], (sp, it) => 
+              sp.localeCompare(it.name, undefined, { ignorePunctuation: true })
+            );
+            if (found > -1) {
+                uuid = searchArray[found].uuid;
             }
-            if (foundDoc) break;
         }
 
-        if (foundDoc) return { pack: foundPack, index: foundDoc };
+        if (uuid) return uuid;
         return false;
     };
 
-    static async findEntityInCompendium(compendium, input, itemType = null, line = -1) {
-
+    static async findEntityInCompendium(compendium, input, itemType = null, itemSubtype = null, _line = -1, classes = []) {
         // Create an array for all compendiums to search through
         let searchableCompendiums = []
 
@@ -381,7 +307,7 @@ export class sbcUtils {
             if (typeof compendium === "string") searchableCompendiums.push(compendium)
             else searchableCompendiums = compendium;
 
-            sbcConfig.options.debug && console.log("COMPENDIUMS 1", searchableCompendiums);
+            // sbcUtils.log("COMPENDIUMS 1", searchableCompendiums);
         }
 
         // If there are customCompendiums, given as a string in the module settings,
@@ -392,9 +318,9 @@ export class sbcUtils {
         if (customCompendiumSettings !== "") {
             customCompendiumSettings = customCompendiumSettings.replace(/\s/g, "");
             customCompendiums = customCompendiumSettings.split(/[,;]/g)
-            // searchableCompendiums = customCompendiums.concat(searchableCompendiums)
-            searchableCompendiums = searchableCompendiums.concat(customCompendiums)
-            sbcConfig.options.debug && console.log("COMPENDIUMS 2", searchableCompendiums);
+            searchableCompendiums = customCompendiums.concat(searchableCompendiums)
+            // searchableCompendiums = searchableCompendiums.concat(customCompendiums)
+            // sbcUtils.log("COMPENDIUMS 2", searchableCompendiums);
         }
 
         let searchResult = false
@@ -403,39 +329,41 @@ export class sbcUtils {
         let searchOptions = {
             "packs": searchableCompendiums,
             "type": "Item",
-            "itemType": itemType
+            "itemType": itemType,
+            "itemSubtype": itemSubtype,
+            "classes": classes
         }
 
+        sbcUtils.log(`Checking "${input.name}".`)
+        searchResult = await sbcUtils.findInCompendia(input.name, searchOptions);
 
-        if (input.altName2) {
-            sbcConfig.options.debug && console.log(`Checking Alt2 "${input.altName2}".`)
-            searchResult = await sbcUtils.findInCompendia(input.altName2, searchOptions);
+        if (searchResult === false && input.shortName) {
+            sbcUtils.log(`Checking short version "${input.shortName}".`)
+            searchResult = await sbcUtils.findInCompendia(input.shortName, searchOptions);
         }
+
         if (searchResult === false && input.altName) {
-            sbcConfig.options.debug && console.log(`Checking Alt "${input.altName}".`)
+            sbcUtils.log(`Checking Alt "${input.altName}".`)
             searchResult = await sbcUtils.findInCompendia(input.altName, searchOptions);
         }
-        if (searchResult === false) {
-            sbcConfig.options.debug && console.log(`Checking "${input.name}".`)
-            searchResult = await sbcUtils.findInCompendia(input.name, searchOptions);
+        if (searchResult === false && input.altName2) {
+            sbcUtils.log(`Checking Alt2 "${input.altName2}".`)
+            searchResult = await sbcUtils.findInCompendia(input.altName2, searchOptions);
         }
-        // searchResult = await globalThis.pf1.utils.findInCompendia(input.name, searchOptions);
-        sbcConfig.options.debug && console.log("Search Result: ", searchResult)
+
+        sbcUtils.log("Search Result: ", searchResult);
+
         // Return the searchResult, which either is a clone of the found entity or null
         if (searchResult !== false) {
-            let packName = searchResult.pack.metadata.id;
-
-            let pack = await game.packs.get(packName);
-            foundEntity = await pack.getDocument(searchResult.index._id);
+            foundEntity = await fromUuid(searchResult);
 
             return new Item.implementation(foundEntity.toObject());
         } else {
             return null
         }
-
     }
 
-    static async generatePlaceholderEntity(input, line = -1) {
+    static async generatePlaceholderEntity(input, _line = -1) {
         // If the input is NOT found in any of the given compendiums, create a placeholder
 
         let entityData = {
@@ -621,35 +549,41 @@ export class sbcUtils {
 
             // Check, if the currentItem has changes to be considered
             if (!isEmpty(itemChanges)) {
-                itemChanges.map(function (element) {
-                    if (sbcData.changes[element.subTarget] == null) sbcData.changes[element.subTarget] = {}
-                    if (sbcData.changes[element.subTarget][element.modifier] == null)
-                        sbcData.changes[element.subTarget][element.modifier] = element.value;
-                    else
-                        sbcData.changes[element.subTarget][element.modifier] += element.value;
+                itemChanges.map(async (element) => {
+                    if (sbcData.changes[element.target] == null) sbcData.changes[element.target] = {}
+                    let processedFormula = await Roll.fromTerms(Roll.parse(element.formula, sbcData.characterData.actorData.getRollData())).evaluate();
+                    //await new Roll(element.formula).evaluate();
+                    processedFormula = processedFormula?.total ?? +element.formula;// element.value;
+
+                    if (sbcData.changes[element.target][element.type] == null) {
+                        sbcData.changes[element.target][element.type] = processedFormula//element.value;
+                    }
+                    else {
+                        sbcData.changes[element.target][element.type] += processedFormula//element.value;
+                    }
                 })
             }
         });
     }
 
-    static async getValueFromChanges(subTarget = null, modifier = null) {
+    static async getValueFromChanges(target = null, type = null) {
         let total = 0;
-        if (subTarget == null && modifier == null) return total;
-        else if (subTarget !== "all") {
-            if (sbcData.changes[subTarget] == null) return 0;
+        if (target == null && type == null) return total;
+        else if (target !== "all") {
+            if (sbcData.changes[target] == null) return 0;
 
-            for (const key in Object.keys(sbcData.changes[subTarget])) {
-                if ((modifier && key === modifier) || modifier == null)
-                    total += sbcData.changes[subTarget][key]
+            for (const key in Object.keys(sbcData.changes[target])) {
+                if ((type && key === type) || type == null)
+                    total += sbcData.changes[target][key]
             }
 
             return total;
         } else {
             Object.keys(sbcData.changes).map(subtarget => {
-                console.log(`Checking subtarget ${subtarget}:`)
+                sbcUtils.log(`Checking subtarget ${subtarget}:`)
                 Object.keys(sbcData.changes[subtarget]).map(k => {
-                    console.log(`modifier k is ${k} = ${sbcData.changes[subtarget][k]}`)
-                    if ((modifier && k === modifier) || modifier == null)
+                    sbcUtils.log(`type k is ${k} = ${sbcData.changes[subtarget][k]}`)
+                    if ((type && k === type) || type == null)
                         total += +sbcData.changes[subtarget][k]
                 });
             });
@@ -679,8 +613,8 @@ export class sbcUtils {
                 let concentrationBonusToValidate = conversionValidation.spellBooks[spellBookToValidate].concentrationBonus
                 let casterLevelInActor = actor.system.attributes.spells.spellbooks[spellBookToValidate].cl.total
 
-                let spellCastingAbility = actor.system.attributes.spells.spellbooks[spellBookToValidate].ability
-                let spellCastingAbilityModifier = actor.system.abilities[spellCastingAbility].mod
+                // let spellCastingAbility = actor.system.attributes.spells.spellbooks[spellBookToValidate].ability
+                // let spellCastingAbilityModifier = actor.system.abilities[spellCastingAbility].mod
 
                 const concentrationBonusOnActor = actor.system.attributes.spells.spellbooks[spellBookToValidate].concentration.total;
 
@@ -716,9 +650,8 @@ export class sbcUtils {
                 if (difference !== 0) {
                     let attributeChange = Object.assign({}, pf1.components.ItemChange.defaultData, {
                         formula: difference.toString(),
-                        modifier: "untypedPerm",
-                        subTarget: abl,
-                        target: "ability",
+                        type: "untypedPerm",
+                        target: abl,
                         value: +difference,
                     });
 
@@ -762,18 +695,20 @@ export class sbcUtils {
             attributesToValidate.push("acNormal", "acTouch", "acFlatFooted")
 
             // Get an array of all items the actor currently owns
-            let currentItems = await actor.items
+            // let currentItems = await actor.items
 
             // Loop through the attributes ...
             for (let i = 0; i < attributesToValidate.length; i++) {
                 let attribute = attributesToValidate[i]
-                let modifier = ""
+                let type = ""
                 let target = ""
-                let subTarget = ""
                 let totalInStatblock = conversionValidation.attributes[attribute]
                 let totalInActor = 0
                 let valueInItems = 0
                 let difference = 0
+
+                // Skip if it's not a number (such as CMB being a dash)
+                if(isNaN(totalInStatblock)) continue;
 
                 // (1) ... and loop through the current items looking for relevant changes
                 // currentItems.forEach(currentItem => {
@@ -782,7 +717,7 @@ export class sbcUtils {
                 //     // Check, if the currentItem has changes to be considered
                 //     if (!isEmpty(currentItemChanges)) {
                 //         currentItemChanges.map( function (element) {
-                //             if(element.subTarget === attribute.toLowerCase() || element.modifier === attribute.toLowerCase()) {
+                //             if(element.subTarget === attribute.toLowerCase() || element.type === attribute.toLowerCase()) {
                 //                 valueInItems += element.value;
                 //             }
                 //         })
@@ -806,28 +741,28 @@ export class sbcUtils {
                     case "cmb":
                     case "init":
                         totalInActor = actor.system.attributes[attribute].total
-                        modifier = "untypedPerm"
-                        subTarget = attribute
-                        console.log(`Attribute: ${attribute} | Total in Actor: ${totalInActor} | Total in Statblock: ${totalInStatblock}`)
+                        type = "untypedPerm"
+                        target = attribute
+                        sbcUtils.log(`Attribute: ${attribute} | Total in Actor: ${totalInActor} | Total in Statblock: ${totalInStatblock}`)
                         if (totalInActor !== totalInStatblock) {
                             difference = +totalInStatblock - +totalInActor
                         }
                         break
                     case "hpbonus":
-                        modifier = "untypedPerm"
-                        subTarget = "mhp"
+                        type = "untypedPerm"
+                        target = "mhp"
                         difference = +totalInStatblock
                         break
                     case "hptotal":
                         totalInActor = actor.system.attributes.hp.max
-                        modifier = "untypedPerm"
-                        subTarget = "mhp"
+                        type = "untypedPerm"
+                        target = "mhp"
                         difference = +totalInStatblock - +totalInActor
                         break
                     case "acnormal":
                         totalInActor = actor.system.attributes.ac.normal.total
-                        modifier = "untypedPerm"
-                        subTarget = "aac"
+                        type = "untypedPerm"
+                        target = "aac"
                         difference = +totalInStatblock - +totalInActor - +valueInAcTypes
                         break
                     case "base":
@@ -849,21 +784,21 @@ export class sbcUtils {
                     case "penalty":
                         valueInItems = await this.getValueFromChanges("all", attribute.toLowerCase());
 
-                        modifier = attribute
-                        subTarget = "aac"
+                        type = attribute
+                        target = "aac"
                         difference = +totalInStatblock - +valueInItems
                         valueInAcTypes += +difference
                         break
                     case "rage":
-                        modifier = "untypedPerm"
-                        subTarget = "ac"
+                        type = "untypedPerm"
+                        target = "ac"
                         difference = +totalInStatblock
                         break
                     case "fort":
                     case "ref":
                     case "will":
-                        modifier = "untypedPerm"
-                        subTarget = attribute
+                        type = "untypedPerm"
+                        target = attribute
                         totalInActor = actor.system.attributes.savingThrows[attribute].total ?? 0
                         difference = +totalInStatblock - +totalInActor
                         break
@@ -873,15 +808,14 @@ export class sbcUtils {
 
                 // If the total in the statblock differs from the total in foundry, add a change to the conversion buff
                 if (difference !== 0) {
-                    let attributeChange = Object.assign({}, pf1.components.ItemChange.defaultData, {
+                    let attributeChange = await new pf1.components.ItemChange({
                         formula: difference.toString(),
-                        modifier: modifier,
-                        subTarget: subTarget,
+                        type: type,
                         target: target,
                         value: +difference,
                     });
 
-                    stage2changes.push(attributeChange)
+                    stage2changes.push(attributeChange.toObject())
                 }
 
             }
@@ -916,25 +850,24 @@ export class sbcUtils {
 
                 let skillSubKeys = Object.keys(actor.system.skills[parentSkillKey])
 
-                // For Skills with subskill --> subTarget: "skill.prf.subSkills.prf1"
-                let subTarget = ""
+                // For Skills with subskill --> target: "skill.prf.subSkills.prf1"
+                let target = ""
 
                 if (!skillSubKeys.includes("subSkills")) {
                     const skInfo = actor.getSkillInfo(skillKey);
                     skillModInActor = skInfo.mod ?? 0
-                    subTarget = "skill." + skillKey
+                    target = "skill." + skillKey
                 } else {
                     const subSkillInfo = actor.getSkillInfo(`${parentSkillKey}.subSkills.${skillKey}`);
                     skillModInActor = subSkillInfo.mod ?? 0
-                    subTarget = "skill." + parentSkillKey + ".subSkills." + skillKey
+                    target = "skill." + parentSkillKey + ".subSkills." + skillKey
                 }
 
                 // (1) Create skillContext Objects to add to the Buff
                 if (skillToValidate.context !== "") {
                     let contextNote = skillToValidate.context
                     let skillContext = {
-                        subTarget: subTarget,
-                        target: "skill",
+                        target: target,
                         text: contextNote
                     }
                     contextNotes.push(skillContext)
@@ -945,16 +878,22 @@ export class sbcUtils {
                     let difference = +skillToValidate.total - +skillModInActor
 
                     if (difference !== 0) {
-                        let skillChange = {
+                        let skillChange = await new pf1.components.ItemChange({
                             formula: difference.toString(),
-                            modifier: "untypedPerm",
-                            operator: "add",
-                            priority: 0,
-                            subTarget: subTarget,
+                            type: "untypedPerm",
+                            target: target,
                             value: +difference,
-                            id: randomID(8)
-                        }
-                        stage2changes.push(skillChange)
+                        });
+                        // let skillChange = {
+                        //     formula: difference.toString(),
+                        //     type: "untypedPerm",
+                        //     operator: "add",
+                        //     priority: 0,
+                        //     target: target,
+                        //     value: +difference,
+                        //     id: randomID(8)
+                        // }
+                        stage2changes.push(skillChange.toObject())
                     }
                 }
             }
@@ -992,10 +931,10 @@ export class sbcUtils {
             let error = new sbcError(1, "Validation", errorMessage)
             sbcData.errors.push(error)
             throw err
-            return false
         }
         sbcConfig.options.debug && console.groupEnd()
     }
+
 
     /* ------------------------------------ */
     /* Workers                              */
@@ -1026,7 +965,7 @@ export class sbcUtils {
                     if (separateClusters) {
                         const re = /^(?<name>.*?)(?:\s\((?<parens>.*)\)(?<bonus>.*))?$/g.exec(tempItem);
                         const { name, parens, bonus } = re.groups;
-                        parens.split(',').forEach((subItem) => {
+                        parens.split(",").forEach((subItem) => {
 
                             subItem = subItem.trim();
 
@@ -1084,8 +1023,13 @@ export class sbcUtils {
         // Remove punctuation at the end of the input
         let input = value.replace(/(^[,;.: ]*|[,;.: ]+$)/g, "")
 
-        let startSubtextIndex = input.indexOf('(')
-        let endSubtextIndex = input.indexOf(')')
+        let startSubtextIndex = input.indexOf("(")
+        let endSubtextIndex = input.indexOf(")")
+
+        if(endSubtextIndex === -1) {
+            input += ")";
+            endSubtextIndex = input.indexOf(")");
+        }
 
         if (startSubtextIndex > -1 && endSubtextIndex > startSubtextIndex) {
             let baseValue = input.substring(0, startSubtextIndex).trim()
@@ -1180,7 +1124,7 @@ export class sbcUtils {
             return text
         }
 
-        return text.replace(/^([A-Z])|[\s-_]+(\w)/g, function (match, p1, p2, offset) {
+        return text.replace(/^([A-Z])|[\s-_]+(\w)/g, function (_match, p1, p2, _offset) {
             if (p2) return p2.toUpperCase();
             return p1.toLowerCase();
         });

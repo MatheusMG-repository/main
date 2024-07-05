@@ -1,0 +1,46 @@
+{{#each descriptionAttributes}}
+  {{#if isBoolean}}
+  <label class="descriptor checkbox">
+    <input type="checkbox" name="{{name}}" {{checked value}} {{disabled disabled}}>
+    <span>{{label}}</span>
+  </label>
+  {{else if isRange}}
+  <div class="descriptor range-value">
+    <label>
+      <span>{{label}}</span>
+
+      {{!-- Value --}}
+      <input data-action="input-text" class="select-on-click" name="{{value.name}}"
+        {{#with value.constraints}}
+        min="{{min}}" step="{{step}}" max="{{max}}"
+        {{/with}}
+        type="number" data-dtype="Number" value="{{value.value}}" {{disabled disabled}} readonly>
+    </label>
+    <span class="separator">/</span>
+    {{!-- Max --}}
+    <input data-action="input-text" class="select-on-click" name="{{max.name}}"
+        {{#with max.constraints}}
+        min="{{min}}" step="{{step}}" max="{{max}}"
+        {{/with}}
+      type="number" data-dtype="Number" value="{{max.value}}" {{disabled disabled}} readonly>
+  </div>
+  {{else if isNumber}}
+  <label class="descriptor">
+    <span>{{label}}</span>
+    <input data-action="input-text" name="{{name}}"
+      class="select-on-click{{#if tooltip}} details-tooptip{{/if}}"
+      {{#with constraints}}
+      min="{{min}}" step="{{step}}" max="{{max}}"
+      {{/with}}
+      value="{{numberFormat value decimals=decimals}}"{{#if tooltip}} data-tooltip-type="{{tooltip}}"{{/if}}
+      {{#if fakeValue}}data-input-value="{{inputValue}}"{{/if}}
+      type="number" data-dtype="Number" {{disabled disabled}} readonly>
+  </label>
+  {{else if isString}}
+  <label class="descriptor">
+    <span>{{label}}</span>
+    <input data-action="input-text" name="{{name}}"
+      type="text" value="{{value}}" {{disabled disabled}} readonly>
+  </label>
+  {{/if}}
+{{/each}}

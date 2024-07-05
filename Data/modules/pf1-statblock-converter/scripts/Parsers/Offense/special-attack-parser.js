@@ -7,7 +7,7 @@ import { createItem } from "../../sbcParser.js";
 // Parse Special Attacks
 export class SpecialAttackParser extends ParserBase {
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as a Special Attack.")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as a Special Attack.")
 
         try {
 

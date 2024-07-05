@@ -1,11 +1,10 @@
 {{!-- Activation Cost --}}
-<div class="form-group input-select">
+<div class="form-group input-select activation-cost">
   <label>{{localize "PF1.ActivationCost"}}</label>
   <div class="form-fields">
-    <input type="text" name="activation{{#if unchainedActionEconomy}}.unchained{{/if}}.cost"
-      value="{{@root.activation.cost}}" data-dtype="Number" placeholder=""/>
+    <input type="number" name="activation{{#if unchainedActionEconomy}}.unchained{{/if}}.cost"
+      value="{{@root.activation.cost}}" data-dtype="Number" placeholder="1" min="0">
     <select name="activation{{#if unchainedActionEconomy}}.unchained{{/if}}.type">
-      <option value=""></option>
       {{selectOptions @root.abilityActivationTypes selected=@root.activation.type}}
     </select>
   </div>
@@ -25,7 +24,7 @@
 <div class="form-group input-select-select">
   <label>{{localize "PF1.Target"}}</label>
   <div class="form-fields">
-    <input type="text" name="target.value" value="{{data.target.value}}"/>
+    <input type="text" name="target.value" value="{{data.target.value}}">
   </div>
 </div>
 
@@ -33,31 +32,22 @@
 <div class="form-group input-select">
   <label>{{localize "PF1.Range"}}</label>
   <div class="form-fields">
-    {{#if canInputRange}}<input class="formula" type="text" name="range.value" value="{{data.range.value}}" placeholder="{{#unless isSpell}}{{localize "PF1.Formula"}}{{/unless}}"/>{{/if}}
+    {{#if canInputRange}}<input class="formula" type="text" name="range.value" value="{{data.range.value}}" placeholder="{{#unless isSpell}}{{localize "PF1.Formula"}}{{/unless}}">{{/if}}
     <select name="range.units">
-      {{#select data.range.units}}
-      <option value=""></option>
-      {{#each distanceUnits as |name key|}}
-      <option value="{{key}}">{{name}}</option>
-      {{/each}}
-      {{/select}}
+      {{selectOptions distanceUnits selected=data.range.units blank=""}}
     </select>
   </div>
 </div>
 
-{{#if data.range.units}}
+{{!-- Only show for reach, feet, miles, and See Text --}}
+{{#if minRangeAvailable}}
 {{!-- Minimum Range --}}
 <div class="form-group input-select">
   <label>{{localize "PF1.MinRange"}}</label>
   <div class="form-fields">
-    {{#if canInputMinRange}}<input class="formula" type="text" name="range.minValue" value="{{data.range.minValue}}" placeholder="{{#unless isSpell}}{{localize "PF1.Formula"}}{{/unless}}"/>{{/if}}
+    {{#if canInputMinRange}}<input class="formula" type="text" name="range.minValue" value="{{data.range.minValue}}" placeholder="{{#unless isSpell}}{{localize "PF1.Formula"}}{{/unless}}">{{/if}}
     <select name="range.minUnits">
-      {{#select data.range.minUnits}}
-      <option value=""></option>
-      {{#each distanceUnits as |name key|}}
-      <option value="{{key}}">{{name}}</option>
-      {{/each}}
-      {{/select}}
+      {{selectOptions distanceUnits selected=data.range.minUnits blank=""}}
     </select>
   </div>
 </div>
@@ -68,7 +58,7 @@
 <div class="form-group input-select-select">
   <label>{{localize "PF1.MaximumRangeIncrements"}}</label>
   <div class="form-fields">
-    <input type="text" data-dtype="Number" name="range.maxIncrements" value="{{data.range.maxIncrements}}"/>
+    <input type="text" data-dtype="Number" name="range.maxIncrements" value="{{data.range.maxIncrements}}">
   </div>
 </div>
 {{/if}}
@@ -77,57 +67,83 @@
 <div class="form-group input-select-select">
   <label>{{localize "PF1.Area"}}</label>
   <div class="form-fields">
-    <input type="text" name="spellArea" value="{{data.spellArea}}"/>
+    <input type="text" name="area" value="{{data.area}}">
   </div>
 </div>
 
 {{!-- Effect Duration --}}
-<div class="form-group input-select">
+<div class="form-group input-select duration">
   <label>{{localize "PF1.Duration"}}</label>
   <div class="form-fields">
-    {{#if isSpell}}
-    <input type="text" name="duration.value" value="{{data.duration.value}}" placeholder="{{localize "PF1.SpellDurationExample"}}"/>
-    {{else}}
-    {{#if canInputDuration}}<input class="formula" type="text" name="duration.value" value="{{data.duration.value}}" placeholder="{{localize "PF1.Formula"}}"/>{{/if}}
-    <select name="duration.units">
-      {{#select data.duration.units}}
-      <option value=""></option>
-      {{#each config.timePeriods as |name key|}}
-      <option value="{{key}}">{{name}}</option>
-      {{/each}}
-      {{/select}}
-    </select>
+    {{#if canInputDuration}}
+    <input class="{{#if (eq data.duration.units "spec")}}text-input{{else}}formula{{/if}}" type="text" name="duration.value" value="{{data.duration.value}}" placeholder="{{localize "PF1.Formula"}}">
     {{/if}}
+    <select name="duration.units">
+      {{selectOptions @root.config.timePeriods selected=data.duration.units blank=""}}
+    </select>
   </div>
 </div>
 
-{{!-- Uses and charges --}}
-{{#unless isSpell}}
+<div class="form-group">
+  <label></label>
+  <div class="form-fields">
+    <label class="checkbox duration-concentration">
+      <input type="checkbox" name="duration.concentration" {{checked data.duration.concentration}}>
+      {{localize "PF1.Concentration"}}
+    </label>
+    <label class="checkbox duration-dismissable">
+      <input type="checkbox" name="duration.dismiss" {{checked data.duration.dismiss}}>
+      {{localize "PF1.Dismissable"}}
+    </label>
+  </div>
+</div>
+
+{{!-- Ammunition --}}
 {{#if canUseAmmo}}
 <h3 class="form-header">{{localize "PF1.Ammunition"}}</h3>
-<div class="form-group">
-  <label class="checkbox">
-    <input type="checkbox" name="usesAmmo" {{checked data.usesAmmo}} /> {{localize "PF1.UsesAmmo"}}
-  </label>
-</div>
 
-{{#if data.usesAmmo}}
-<div class="form-group">
-  <label>{{localize "PF1.AmmunitionSubtype"}}</label>
-  <select name="ammoType">
-    {{#select data.ammoType}}
-    <option value=""></option>
-    {{#each config.ammoTypes as |name type|}}
+<div class="form-group ammo-type">
+  <label>{{localize "PF1.AmmunitionType"}}</label>
+  <div class="form-fields">
+    <select name="ammo.type">
+    {{#select data.ammo.type}}
+      <option value="none">{{localize "PF1.None"}}</option>
+      {{#if inheritedAmmoType}}
+      <option value="">{{localize "PF1.InheritAs" inherited=(lookup @root.config.ammoTypes inheritedAmmoType)}}</option>
+      {{/if}}
+      {{#each @root.config.ammoTypes as |name type|}}
       <option value="{{type}}">{{name}}</option>
-    {{/each}}
+      {{/each}}
     {{/select}}
-  </select>
+    </select>
+  </div>
+</div>
+
+{{#if usesAmmo}}
+<div class="form-group ammo-cost">
+  <label>{{localize "PF1.AmmunitionPerAttack"}}</label>
+  <div class="form-fields">
+    <input type="number" name="ammo.cost" data-dtype="Number" value="{{data.ammo.cost}}" placeholder="1">
+  </div>
+</div>
+
+<div class="form-group misfire">
+  <label>{{localize "PF1.Misfire"}}</label>
+  <div class="form-fields">
+    <input type="number" min="0" step="1" max="20" name="ammo.misfire" value="{{data.ammo.misfire}}" placeholder="{{#if inheritedMisfire}}{{inheritedMisfire}}{{else}}{{localize "PF1.None"}}{{/if}}">
+  </div>
 </div>
 {{/if}}
 {{/if}}
-{{/unless}}
 
-<h3 class="form-header">{{localize "PF1.LimitedUses"}}</h3>
+<h3 class="form-header">{{localize "PF1.Notes"}}</h3>
+{{!-- Effect Notes --}}
+{{~> "systems/pf1/templates/items/parts/item-notes.hbs" name="effectNotes" title="PF1.EffectNotes" hint="PF1.EffectNotesHint" notes=data.effectNotes css="effect"}}
+{{!-- Footnotes --}}
+{{~> "systems/pf1/templates/items/parts/item-notes.hbs" name="attackNotes" title="PF1.Footnotes" hint="PF1.FootnotesHint" notes=data.attackNotes css="footnotes"}}
+
+{{!-- Uses and charges --}}
+<h3 class="form-header">{{localize "PF1.LimitedUses.Label"}}</h3>
 <h4 class="form-header">{{localize "PF1.Item"}}</h4>
 <div class="form-group">
   <label>
@@ -141,10 +157,16 @@
   </label>
   <div class="form-fields">
     {{#if usesSpellPoints}}
-    <input class="formula" type="text" name="uses.spellPointCost" placeholder="{{defaultChargeFormula}}" value="{{data.uses.spellPointCost}}" />
+    <input class="formula" type="text" name="uses.spellPointCost" placeholder="{{defaultChargeFormula}}" value="{{data.uses.spellPointCost}}">
     {{else}}
-    <input class="formula" type="text" name="uses.autoDeductChargesCost" placeholder="{{defaultChargeFormula}}" value="{{data.uses.autoDeductChargesCost}}" />
+    <input class="formula" type="text" name="uses.autoDeductChargesCost" placeholder="{{defaultChargeFormula}}" value="{{data.uses.autoDeductChargesCost}}">
     {{/if}}
+    {{#unless isSpell}}
+    <label class="checkbox">
+      <input type="checkbox" name="uses.perAttack" {{checked data.uses.perAttack}}>
+      {{localize "PF1.PerAttack"}}
+    </label>
+    {{/unless}}
   </div>
 </div>
 
@@ -153,24 +175,20 @@
   <div class="form-group uses-per">
     <div class="form-fields">
       {{#if isSelfCharged}}
-      <input type="text" name="uses.self.value" value="{{data.uses.self.value}}" data-dtype="Number"/>
+      <input type="text" name="uses.self.value" value="{{data.uses.self.value}}" data-dtype="Number">
       <span class="sep"> / </span>
-      <input type="text" value="{{data.uses.self.max}}" disabled data-dtype="Number"/>
+      <input type="text" value="{{data.uses.self.max}}" disabled data-dtype="Number">
       {{/if}}
       <select name="uses.self.per">
-        {{#select data.uses.self.per}}
-        <option value=""></option>
-        {{#each config.limitedUsePeriods as |name key|}}
-        <option value="{{key}}">{{name}}</option>
-        {{/each}}
-        {{/select}}
+        <option value="">{{localize "PF1.Unlimited"}}</option>
+        {{selectOptions limitedUsePeriods selected=data.uses.self.per}}
       </select>
     </div>
   </div>
 
   {{#if showMaxChargeFormula}}
   <div class="form-group uses-per">
-    <input class="formula" type="text" name="uses.self.maxFormula" value="{{data.uses.self.maxFormula}}" placeholder="{{localize "PF1.MaximumUsesFormula"}}"/>
+    <input class="formula" type="text" name="uses.self.maxFormula" value="{{data.uses.self.maxFormula}}" placeholder="{{localize "PF1.MaximumUsesFormula"}}">
   </div>
   {{/if}}
 </div>

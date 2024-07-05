@@ -8,7 +8,7 @@ import { ParserBase } from "../base-parser.js";
 export class SpeedParser extends ParserBase {
 
     async parse(value, type, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as Speed of type " + type + ".")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as Speed of type " + type + ".")
 
         try {
             if (value.length > 0) {
@@ -17,7 +17,7 @@ export class SpeedParser extends ParserBase {
 
                 if(!sbcData.notes.offense.speed) sbcData.notes.offense.speed = "";
                 sbcData.notes.offense.speed += `, ${sbcUtils.capitalize(type)} ${rawInput}`;
-                sbcData.notes.offense.speed = sbcData.notes.offense.speed.replace(/^, /, '');
+                sbcData.notes.offense.speed = sbcData.notes.offense.speed.replace(/^, /, "");
 
                 let speed = input[0].match(/(\d+)/)?.[1];
                 let speedContext = "";

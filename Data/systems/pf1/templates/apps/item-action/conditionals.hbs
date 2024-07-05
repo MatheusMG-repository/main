@@ -5,16 +5,16 @@
 <ol class="conditionals form-group">
   {{#each data.conditionals as |conditional a|}}
   <li class="conditional flexcolumn" data-conditional="{{conditional._id}}"><div class="conditional flexrow" data-conditional="{{conditional._id}}">
-      <input class="conditional-default" type="checkbox" data-tooltip="PF1.Default" name="conditionals.{{a}}.default" {{checked this.default}}/>
+      <input class="conditional-default" type="checkbox" data-tooltip="PF1.Default" name="conditionals.{{a}}.default" {{checked this.default}}>
       <input class="conditional-name" type="text" name="conditionals.{{a}}.name" value="{{lookup this "name"}}"
-      placeholder="{{localize "PF1.Name"}}"/>
+      placeholder="{{localize "PF1.Name"}}">
       <a class="delete-conditional conditional-control delete-conditional"><i class="fas fa-trash"></i></a>
     </div>
     <ol class="conditionals form-group">
       {{#each this.modifiers as |modifier m|}}
       <li class="conditional-modifier flexrow" data-conditional="{{conditional._id}}" data-modifier="{{modifier._id}}">
         <input class="conditional-formula formula" type="text" name="conditionals.{{a}}.modifiers.{{m}}.formula" value="{{lookup this "formula"}}"
-        placeholder="{{localize "PF1.Formula"}}" required/>
+        placeholder="{{localize "PF1.Formula"}}" required>
 
         <select class="conditional-target" name="conditionals.{{a}}.modifiers.{{m}}.target" required>
           {{#select (lookup this "target") }}
@@ -25,7 +25,7 @@
           {{/select}}
         </select>
 
-        {{#unless (eq modifier.target "size")}}
+        {{#unless (or (eq modifier.target "size") (eq modifier.target "critMult"))}}
           <select class="conditional-sub-target" name="conditionals.{{a}}.modifiers.{{m}}.subTarget">
             {{#select (lookup this "subTarget") }}
             {{#if (lookup this "target") }}

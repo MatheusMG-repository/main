@@ -1,4 +1,4 @@
-<form autocomplete="off" onsubmit="event.preventDefault();">
+<form autocomplete="off" data-tooltip-class="pf1">
   <table>
     <thead>
       {{#each fields as |value|}}
@@ -9,10 +9,10 @@
     <tbody>
       {{#each entries as |entry index|}}
       <tr class="resistance" data-index="{{index}}">
-        <td><input type="number" class="textarea" data-index="amount" value={{entry.amount}} data-dtype={{@root.dtypes.[0]}} name="{{index}}-amount" /></td>
+        <td><input type="number" class="textarea" data-index="amount" value={{entry.amount}} data-dtype={{@root.dtypes.[0]}} name="{{index}}-amount"></td>
         <td><select data-index="types0" value={{entry.types.[0]}} data-dtype={{@root.dtypes.[1]}} name="{{index}}-types0">
             {{#if @root.isDR}}
-              {{selectOptions @root.damages localize=true selected=entry.types.[0] blank="PF1.Application.DamageResistanceSelector.TypeNothing"}}
+              {{selectOptions @root.damages localize=true selected=entry.types.[0] blank="PF1.None"}}
             {{else}}
               {{selectOptions @root.damages localize=true selected=entry.types.[0]}}
             {{/if}}
@@ -23,7 +23,7 @@
             </select>
         </td>
         <td><select data-index="types1" value={{entry.types.[1]}} data-dtype={{@root.dtypes.[3]}} name="{{index}}-types1">
-            {{selectOptions @root.damages localize=true selected=entry.types.[1] blank="Nothing"}}
+            {{selectOptions @root.damages localize=true selected=entry.types.[1] blank="PF1.None"}}
             </select>
         </td>
         <td class="resistance-control"><a class="resistance-control delete-resistance"><i class="fas fa-minus"></i></a></td>
@@ -36,7 +36,7 @@
 
   <div class="form-group stacked">
     <label>{{localize "PF1.Special"}}</label>
-    <input type="text" name="custom" value="{{@root.custom}}" data-dtype="String"/>
+    <input type="text" name="custom" value="{{@root.custom}}" data-dtype="String">
   </div>
 
   <button type="submit" name="submit" value="1"><i class="far fa-save"></i> {{localize "PF1.UpdateActor"}}</button>

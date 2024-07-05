@@ -1,8 +1,8 @@
 {
-  "timestamp": 1718987779853,
+  "timestamp": 1719939873732,
   "os": {
     "platform": "win32",
-    "version": "10.0.22631",
+    "version": "10.0.19045",
     "node": "18.14.0",
     "electron": "24.8.5"
   },
@@ -17,7 +17,7 @@
       "version": "3.0.1"
     },
     "fa-battlemaps": {
-      "version": "1.0.60"
+      "version": "1.0.62"
     },
     "gm-screen": {
       "version": "4.0.4"
@@ -32,19 +32,19 @@
       "version": "3.1.9"
     },
     "monks-active-tiles": {
-      "version": "11.26"
+      "version": "12.01"
     },
     "multilevel-tokens": {
       "version": "1.7.1"
     },
     "pf-content": {
-      "version": "0.3.7"
+      "version": "10.0.0"
     },
     "pf1-bestiary": {
       "version": "0.1.6"
     },
     "pf1-statblock-converter": {
-      "version": "4.5.3"
+      "version": "4.6.4"
     },
     "popout": {
       "version": "2.18"
@@ -62,12 +62,12 @@
   "systems": {
     "pf1": {
       "version": "9.6",
-      "playtime": 86982
+      "playtime": 91783
     }
   },
   "worlds": {},
   "playtime": {
-    "total": 86982,
-    "max": 86982
+    "total": 91783,
+    "max": 91783
   }
 }

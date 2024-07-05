@@ -8,7 +8,7 @@ import { createItem } from "../../sbcParser.js";
 export class SpecialQualityParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as SQ")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as SQ")
 
         try {
 

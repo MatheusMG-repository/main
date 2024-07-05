@@ -1,0 +1,33 @@
+<div class="content-source {{#unless @root.bookSources.main.title}}missing{{/unless}}">
+  <span class="source"
+  {{#with @root.bookSources.main~}}
+    {{#if title~}}
+    data-tooltip-class="pf1 source"
+    data-tooltip="
+    <p>{{~#if id}}{{localize "PF1.ContentSource.Info.ID"}}: {{id}}<br>{{/if~}}
+    {{~#if edition}}{{localize "PF1.ContentSource.Info.Edition"}}: {{edition}}<br>{{/if~}}
+    {{~#if errata}}{{localize "PF1.ContentSource.Info.Errata"}}: {{errata}}<br>{{else if date}}{{localize "PF1.ContentSource.Info.Release"}}: {{date}}<br>{{/if~}}
+    {{~#if publisher}}{{localize "PF1.ContentSource.Info.Publisher"}}: {{publisher}}<br>{{/if~}}
+    {{#with ../bookSources.extras}}
+      <h4>{{localize "PF1.ContentSource.Extras"}}</h4>
+      <p>{{#each this}}{{title}}<br>{{/each}}
+    {{/with}}
+    "{{/if}}>
+    <span class="title">{{title}}</span>
+    {{#if abbr}}
+    <span class="abbr">{{abbr}}</span>
+    {{/if}}
+    {{#if pages}}
+    <span class="pages">{{localize "PF1.ContentSource.Pages" pages=pages}}</span>
+    {{/if}}
+    {{#if ../bookSources.extras}}<span class="extra-source-count">{{numberFormat ../bookSources.extras.length sign=true}}</span>{{/if}}
+  {{else}}
+    >{{localize "PF1.ContentSource.Missing"}}
+  {{/with}}
+  </span>
+  <div class="control">
+    <a data-action="edit" class="edit" data-tooltip="PF1.ContentSource.EditHint">
+      <i class="fas fa-edit edit"></i>
+    </a>
+  </div>
+</div>

@@ -10,7 +10,7 @@ export class AttackParser extends ParserBase {
 
     async parse(value, type, line) {
         if(!value) return;
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as " + type + "-Attack.")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as " + type + "-Attack.")
 
         try {
             // The next task is to re-organize the code below to accomplish the following in order:
@@ -52,6 +52,9 @@ export class AttackParser extends ParserBase {
                     // [4] Parse the attack and save the found data in two temporary constructs
                     // <param name="m_AttackData">Saves all parsed data related to the parent attack document.</param>
                     // <param name="m_ActionData">Saves all parsed data related to the child action document(s).</param>
+                    let foundAddonTerms = [];
+                    let foundMaterialTerm = "";
+
                     let m_AttackData = {
                         attackName: "",
                         formattedAttackName: "",
@@ -71,9 +74,11 @@ export class AttackParser extends ParserBase {
                         isBroken: false,
                         baseTypes: [],
                         weaponGroups: {
-                            'value': [],
-                            'custom': ''
-                        }
+                            "value": [],
+                            "custom": ""
+                        },
+                        material: null,
+                        addons: {}
                     }
 
                     let m_ActionData = {
@@ -123,8 +128,8 @@ export class AttackParser extends ParserBase {
                     let weaponAttackDetails = {
                         attackName: "",
                         weaponGroups: {
-                            'value': [],
-                            'custom': ''
+                            "value": [],
+                            "custom": ""
                         },
                         isMasterwork: false,
                         attackAbilityType: "",
@@ -141,6 +146,8 @@ export class AttackParser extends ParserBase {
                         featDamageBonus: 0,
                         featAttackBonusString: "",
                         featDamageBonusString: "",
+                        material: null,
+                        addons: [],
                     };
 
                     let attackComparison = {
@@ -173,7 +180,7 @@ export class AttackParser extends ParserBase {
                         m_AttackData.isTouch = true;
 
                         // Remove the found data from the current input
-                        m_InputAttack = m_InputAttack.replace(/(ranged\s*\btouch\b|melee\s*\btouch\b|(\+\d+)\s*\btouch\b)/i, `$2`);
+                        m_InputAttack = m_InputAttack.replace(/(ranged\s*\btouch\b|melee\s*\btouch\b|(\+\d+)\s*\btouch\b)/i, "$2");
 
                         //No valid name remaining
                         if (!/[a-z](?![^(]*\))/i.test(m_InputAttack))
@@ -218,9 +225,44 @@ export class AttackParser extends ParserBase {
                         m_AttackData.attackNotes = "mwk " + m_AttackData.attackNotes
                     }
 
+                    // Handle materials
+                    let patternMaterials = new RegExp("(" + pf1.registry.materialTypes.contents.filter(mt => mt.addon === false).map(mt => mt.name).join("\\b|\\b") + ")", "gi");
+                    let patternMaterialsNonBasics = new RegExp("(" + pf1.registry.materialTypes.contents.filter(mt => mt.addon === false && mt.basic === false).map(mt => mt.name).join("\\b|\\b") + ")", "gi");
+                    let patternAddons = new RegExp("(" + pf1.registry.materialTypes.contents.filter(mt => mt.addon === true).map(mt => mt.name).join("\\b|\\b") + ")", "gi");
+
+                    if (m_InputAttack.search(patternMaterials) !== -1) {
+                        m_AttackData.material = m_InputAttack.match(patternMaterialsNonBasics)[0];
+                        foundMaterialTerm = m_AttackData.material;
+                        m_AttackData.material = pf1.registry.materialTypes.contents.find(mt => mt.name === sbcUtils.capitalize(m_AttackData.material) || mt.id === m_AttackData.material)?.id ?? null;
+                        //altName = altName.replace(patternMaterialsNonBasics, "").trim();
+                    }
+            
+                    // Handle addons
+                    if (m_InputAttack.search(patternAddons) !== -1) {
+                        foundAddonTerms = m_InputAttack.match(patternAddons);
+                        foundAddonTerms.forEach((element, index) => {
+                            foundAddonTerms[index] = pf1.registry.materialTypes.contents.find(mt => mt.name === sbcUtils.capitalize(element) || mt.id === element.toLowerCase().replace(/\s/, ""))?.id ?? null;
+                        });
+                        foundAddonTerms = foundAddonTerms.filter(x => !!x);
+                        m_AttackData.addons = {};
+                        foundAddonTerms.forEach((element) => {
+                            element = element.toLowerCase().replace(/\s/, "");
+                            m_AttackData.addons[element] = element;
+                        });
+                        //altName = altName.replace(patternAddons, "");
+                    }
+
                     // attackName
-                    if (/((?:[\+1-5a-zA-Z’']| (?=[\+1-5a-zA-Z’'])|\*)+)(?:[ +0-9(/]+\(*)/.test(m_InputAttack) && !m_AttackData.attackName) {
-                        m_AttackData.attackName = m_InputAttack.match(/((?:[\+1-5a-zA-Z’']| (?=[\+1-5a-zA-Z’'])|\*)+)(?:[ +0-9(/]+\(*)/)[1].replace(/^ | $|\bmwk\b |\*|\+$/gi, "").replace(/\+[1-5]$/, "").replace(/^\d+/, "").trim().replace(/(^\+[1-5])|(\+[1-5]+$)/g, "").trim();
+                    if (/((?:[+1-5a-zA-Z’']| (?=[+1-5a-zA-Z’'])|\*)+)(?:[ +0-9(/]+\(*)/.test(m_InputAttack) && !m_AttackData.attackName) {
+                        m_AttackData.attackName = m_InputAttack.match(/((?:[+1-5a-zA-Z’']| (?=[+1-5a-zA-Z’'])|\*)+)(?:[ +0-9(/]+\(*)/)[1]
+                                                                .replace(/^ | $|\bmwk\b |\*|\+$/gi, "")
+                                                                .replace(/\+[1-5]$/, "")
+                                                                .replace(/^\d+/, "")
+                                                                .trim()
+                                                                .replace(/(^\+[1-5])|(\+[1-5]+$)/g, "")
+                                                                .trim()
+                                                                .replace(foundMaterialTerm, "")
+                                                                .replace(new RegExp(`(${foundAddonTerms.join("\\b|\\b")})`), "");
                         m_AttackData.attackNotes += m_AttackData.attackName + " "
                     }
 
@@ -232,7 +274,7 @@ export class AttackParser extends ParserBase {
                     let weapon = sbcData.characterData.actorData.itemTypes.weapon.find(w =>{
                         let weaponLowerCase = w.name.toLowerCase();
                         // Basic check
-                        let result = new RegExp(`${m_AttackData.attackName}`, 'i').test(weaponLowerCase);
+                        let result = new RegExp(`${m_AttackData.attackName}`, "i").test(weaponLowerCase);
 
                         if(result) {
                             // Mastework check
@@ -246,6 +288,19 @@ export class AttackParser extends ParserBase {
                             // Enhancement check
                             if(m_AttackData.enhancementBonus && !new RegExp("^\\+" + m_AttackData.enhancementBonus + "\\b").test(weaponLowerCase))
                                 result = false;
+
+                            // Material check
+                            if(m_AttackData.material !== w.system.material.normal.value)
+                                result = false; 
+
+                            // Addon check
+                            if(foundAddonTerms.length > 0) {
+                                let weaponAddons = w.system.material.addon;
+                                for(let addon of foundAddonTerms) {
+                                    if(!weaponAddons.includes(addon))
+                                        result = false;
+                                }
+                            }
 
                             // Composite *bow check
                             // if(!result && /Composite/i.test(m_AttackData.attackName))
@@ -277,9 +332,11 @@ export class AttackParser extends ParserBase {
                     let newAttack = null;
                     if (weapon) {
                         if(!m_AttackData.isNatural)
-                            newAttack = await sbcData.characterData.actorData.createAttackFromWeapon(weapon);
-                        else
-                            newAttack = (await createItem(weapon))[1][0];
+                        {
+                            let newAttackData = await pf1.documents.item.ItemAttackPF.fromItem(weapon);
+                            newAttack = (await sbcData.characterData.actorData.createEmbeddedDocuments("Item", [newAttackData]))[0];
+                        }
+                        else newAttack = (await createItem(weapon))[1][0];
                     }
                     
                     let weaponEqualsAttack = false;
@@ -290,6 +347,11 @@ export class AttackParser extends ParserBase {
 
                         if(!m_AttackData.isBroken && weapon.system.broken) weaponAttackDetails.isBroken = true;
                         weaponAttackDetails.weaponGroups = weapon.system.weaponGroups;
+
+                        if(weapon.system.material) {
+                            weaponAttackDetails.material = weapon.system.material.normal.value;
+                            weaponAttackDetails.addons = weapon.system.material.addon;
+                        }
 
                         // Process weapon groups vs feature bonuses
                         for(let group of weaponAttackDetails.weaponGroups.value) {
@@ -309,11 +371,11 @@ export class AttackParser extends ParserBase {
                             const result2 = await AttackParser.parseWeaponBonuses("damage", baseType);
 
                             if(result1[0]) {
-                                weaponAttackDetails.featAttackBonus += weaponAttackDetails.featAttackBonus, result1[0];
+                                weaponAttackDetails.featAttackBonus += +result1[0];
                                 weaponAttackDetails.featAttackBonusString += weaponAttackDetails.featAttackBonusString.length === 0 ? result1[1] : ` + ${result1[1]}`;
                             }
                             if(result2[0]) {
-                                weaponAttackDetails.featDamageBonus += result2[0];
+                                weaponAttackDetails.featDamageBonus += +result2[0];
                                 weaponAttackDetails.featDamageBonusString += weaponAttackDetails.featDamageBonusString.length === 0 ? result2[1] : ` + ${result2[1]}`;
                             }
                         }
@@ -330,10 +392,11 @@ export class AttackParser extends ParserBase {
                         weaponAttackDetails.critRange = newAttackAction.data.ability?.critRange;
 
                         // Build an iterative formula in the format of +X/+Y/+Z
-                        let iterativeFormulaArray = newAttack.getAttackArray(newAttackAction.id);
+                        // let iterativeFormulaArray = newAttack.getAttackArray(newAttackAction.id);
+                        let iterativeFormulaArray = newAttackAction.getAttacks();
                         let iterativeFormula = "";
                         iterativeFormulaArray.forEach((formula, index) => {
-                            formula += +weaponAttackDetails.featAttackBonus;
+                            // formula += +weaponAttackDetails.featAttackBonus;
                             if(weapon.system.masterwork) formula += 1;
                             if(weapon.system.masterwork && weapon.system.enh) formula -= 1;
                             if(formula > -1) iterativeFormula += "+";
@@ -345,7 +408,7 @@ export class AttackParser extends ParserBase {
 
                         // Build a damage formula (like 1d8 + 4/19-20/x4 plus 1d6 fire)
                         let damageFormulaArray = newAttack.getAllDamageSources(newAttackAction.id);
-                        let damageBonus = Math.floor(weaponAttackDetails.damageBonus * weaponAttackDetails.damageMult) + weaponAttackDetails.featDamageBonus;
+                        let damageBonus = Math.floor(weaponAttackDetails.damageBonus * weaponAttackDetails.damageMult)// + weaponAttackDetails.featDamageBonus;
                         let damageFormula = "";
                         if(weaponAttackDetails.critRange !== 20)
                             damageFormula += `/${weaponAttackDetails.critRange}-20`;
@@ -360,7 +423,7 @@ export class AttackParser extends ParserBase {
                             else if(source.flavor === "Broken") damageBonus += source.value;
                             else damageFormula += ` plus ${source.formula}`;
                         });
-                        attackComparison.itemDamageBonus = damageBonus;
+                        attackComparison.itemDamageBonus = +damageBonus;
 
                         // Process the damage formula for a simpler die formula
                         // Rather than "sizeRoll(1, 6, @size)", process it for 1d8 as a Large for example
@@ -368,6 +431,7 @@ export class AttackParser extends ParserBase {
                         let realDiceNum = null;
                         let realDiceSize = null;
                         let size = sbcData.characterData.actorData.system.traits.size;
+
                         if(realFormula) {
                             let results = realFormula.match(/sizeRoll\((?<num>\d+),\s?(?<size>\d+),?.*\)/);
                             if(results) {
@@ -375,12 +439,14 @@ export class AttackParser extends ParserBase {
                                 realDiceSize = results.groups.size;
                                 size = Object.keys(pf1.config.sizeChart).indexOf(size);
 
-                                let formula = Roll.fromTerms(pf1.utils.rollPreProcess.sizeRoll(realDiceNum, realDiceSize, size)).formula;
+                                let processedRoll = pf1.utils.roll.sizeRoll(+realDiceNum, +realDiceSize, +size);
+                                let formula = Roll.fromTerms(processedRoll).formula;
+
                                 attackComparison.itemDamageFormula = formula;
                                 if(damageBonus > -1) damageFormula = `${formula} +${damageBonus}${damageFormula}`;
                                 else damageFormula = `${formula} ${damageBonus}${damageFormula}`;
                                 attackComparison.itemFullFormula = damageFormula;
-                                weaponAttackDetails.originalDamageFormula = formula;
+                                weaponAttackDetails.originalDamageFormula = realFormula;
                             }
                         }
 
@@ -458,8 +524,8 @@ export class AttackParser extends ParserBase {
                             // }
                         }
                         // damageBonus
-                        if (m_InputAttack.match(/(?:d\d+)(\+\d+|\-\d+)/) !== null) {
-                            m_ActionData.damageBonus = m_InputAttack.match(/(?:d\d+)(\+\d+|\-\d+)/)[1]
+                        if (m_InputAttack.match(/(?:d\d+)(\+\d+|-\d+)/) !== null) {
+                            m_ActionData.damageBonus = m_InputAttack.match(/(?:d\d+)(\+\d+|-\d+)/)[1]
                             m_AttackData.attackNotes += m_ActionData.damageBonus
                             attackComparison.statblockDamageBonus = +m_ActionData.damageBonus;
                         }
@@ -477,8 +543,8 @@ export class AttackParser extends ParserBase {
                         }
 
                         // effectNotes
-                        if (m_InputAttack.match(/(?:\(\d+d\d+[\+\d\/\-x\s]*)([^\)\n]*)(?:$|\))/) !== null) {
-                            let specialEffects = m_InputAttack.match(/(?:\(\d+d\d+[\+\d\/\-x\s]*)([^\)\n]*)(?:$|\))/)[1];
+                        if (m_InputAttack.match(/(?:\(\d+d\d+[+\d/\-x\s]*)([^)\n]*)(?:$|\))/) !== null) {
+                            let specialEffects = m_InputAttack.match(/(?:\(\d+d\d+[+\d/\-x\s]*)([^)\n]*)(?:$|\))/)[1];
                             m_AttackData.specialEffects = specialEffects;
                             specialEffects = specialEffects
                                             .replace(/(\s+\band\b\s+|\s*\bplus\b\s+)/gi, ",")
@@ -521,18 +587,18 @@ export class AttackParser extends ParserBase {
                         m_AttackData.effectNotes.push(specialEffect)
                     } else {
                         // If there are neither damage dice nor special effects in parenthesis
-                        sbcConfig.options.debug && sbcUtils.log("Kind of embarrasing, but this should never happen.")
+                        sbcUtils.log("Kind of embarrasing, but this should never happen.")
                     }
 
                     // [4.C] Compare the item data to the statblock data if it exists, then decide if we need to create a new attack
                     if(attackComparison.itemExists) {
-                        sbcConfig.options.debug && console.log(`Comparing statblock data to attack item:\n` +
-                            `Iterative Formula: ${attackComparison.statblockIterativeFormula} vs ${attackComparison.itemIterativeFormula}\n` +
-                            `Damage Formula: ${attackComparison.statblockDamageFormula} vs ${attackComparison.itemDamageFormula}\n` +
-                            `Damage Bonus: ${attackComparison.statblockDamageBonus} vs ${attackComparison.itemDamageBonus}\n` +
-                            `Enhancement Bonus: ${attackComparison.statblockEnhancementBonus} vs ${attackComparison.itemEnhancementBonus}\n` +
-                            `Full Formula: ${attackComparison.statblockFullFormula} vs ${attackComparison.itemFullFormula}\n`
-                            );
+                        // sbcUtils.log(`Comparing statblock data to attack item:\n` +
+                        //     `Iterative Formula: ${attackComparison.statblockIterativeFormula} vs ${attackComparison.itemIterativeFormula}\n` +
+                        //     `Damage Formula: ${attackComparison.statblockDamageFormula} vs ${attackComparison.itemDamageFormula}\n` +
+                        //     `Damage Bonus: ${attackComparison.statblockDamageBonus} vs ${attackComparison.itemDamageBonus}\n` +
+                        //     `Enhancement Bonus: ${attackComparison.statblockEnhancementBonus} vs ${attackComparison.itemEnhancementBonus}\n` +
+                        //     `Full Formula: ${attackComparison.statblockFullFormula} vs ${attackComparison.itemFullFormula}\n`
+                        //     );
                         
                         // If the attack is identical to the statblock, we may not need to make a new attack
                         if((attackComparison.statblockIterativeFormula === attackComparison.itemIterativeFormula) &&
@@ -557,6 +623,9 @@ export class AttackParser extends ParserBase {
                             m_ActionData.featDamageBonus = weaponAttackDetails.featDamageBonus;
                             m_ActionData.featAttackBonusString = weaponAttackDetails.featAttackBonusString;
                             m_ActionData.featDamageBonusString = weaponAttackDetails.featDamageBonusString;
+                            m_ActionData.useOriginalDamage = (attackComparison.statblockDamageFormula === attackComparison.itemDamageFormula);
+
+                            // sbcUtils.log("1", m_ActionData);
                         }
 
                         // [4.D] Continue to parse the attack and action data and calculations
@@ -652,7 +721,7 @@ export class AttackParser extends ParserBase {
 
                         // Handle baseTypes
                         if (newAttack && newAttack.type !== "attack") { m_AttackData.baseTypes = newAttack.system.baseTypes; }
-                        else m_AttackData.baseTypes = [m_AttackData.formattedAttackName];
+                        else m_AttackData.baseTypes = [m_AttackData.formattedAttackName.replace(/(^\+[1-5])|(\+[1-5]$)/g, "").trim()];
                         if(m_AttackData.isNatural) m_AttackData.baseTypes.push("natural");
 
                         // Handle feat/feature bonuses
@@ -670,6 +739,8 @@ export class AttackParser extends ParserBase {
                                     m_ActionData.featDamageBonus += m_ActionData.featDamageBonus, result2[0];
                                     m_ActionData.featDamageBonusString += result2[1];
                                 }
+
+                                // sbcUtils.log("2", m_ActionData);
                             }
                         }
                         // m_ActionData.featAttackBonus = this.parseWeaponBonuses("attack", "natural");
@@ -683,12 +754,12 @@ export class AttackParser extends ParserBase {
                             + +m_ActionData.featAttackBonus
                             + (m_AttackData.isBroken ? -2 : 0);
                         
-                        sbcConfig.options.debug && console.log(`Calculated Attack Modifier: ${calculatedAttackModifier} =\n` +
-                            `Bab: ${sbcData.characterData.conversionValidation.attributes.bab}\n` +
-                            `Size Mod: ${CONFIG["PF1"].sizeMods[sbcData.characterData.actorData.system.traits.size]}\n` +
-                            `Attack Ability Modifier: ${m_ActionData.attackAbilityModifier}\n` +
-                            `Feat Attack Bonus: ${m_ActionData.featAttackBonus}\n` +
-                            `Broken: ${m_AttackData.isBroken ? -2 : 0}\n`);
+                        // sbcUtils.log(`Calculated Attack Modifier: ${calculatedAttackModifier} =\n` +
+                        //     `Bab: ${sbcData.characterData.conversionValidation.attributes.bab}\n` +
+                        //     `Size Mod: ${CONFIG["PF1"].sizeMods[sbcData.characterData.actorData.system.traits.size]}\n` +
+                        //     `Attack Ability Modifier: ${m_ActionData.attackAbilityModifier}\n` +
+                        //     `Feat Attack Bonus: ${m_ActionData.featAttackBonus}\n` +
+                        //     `Broken: ${m_AttackData.isBroken ? -2 : 0}\n`);
 
                         // account for Masterwork status
                         if (m_AttackData.isMasterwork)
@@ -707,9 +778,9 @@ export class AttackParser extends ParserBase {
                             calculatedAttackModifier -= 5
 
                         // Now compare our value with the statblock's
-                        sbcConfig.options.debug && console.log(`Calculated Attack Modifier: ${calculatedAttackModifier}\n` +
-                            `Input Attack Modifier: ${m_ActionData.inputAttackModifier}\n` +
-                            `Calculated Attack Bonus: ${+m_ActionData.inputAttackModifier - +calculatedAttackModifier}\n`);
+                        // sbcUtils.log(`Calculated Attack Modifier: ${calculatedAttackModifier}\n` +
+                        //     `Input Attack Modifier: ${m_ActionData.inputAttackModifier}\n` +
+                        //     `Calculated Attack Bonus: ${+m_ActionData.inputAttackModifier - +calculatedAttackModifier}\n`);
                         
                         if (+calculatedAttackModifier !== +m_ActionData.inputAttackModifier)
                             m_ActionData.calculatedAttackBonus = +m_ActionData.inputAttackModifier - +calculatedAttackModifier
@@ -725,12 +796,12 @@ export class AttackParser extends ParserBase {
                         // let calculatedDamageBonus = (m_AttackData.isPrimaryAttack) ? +strDamageBonus + +m_AttackData.enhancementBonus : strDamageBonus + +m_AttackData.enhancementBonus - 5
                         let calculatedDamageBonus = +strDamageBonus + +m_AttackData.enhancementBonus + +m_ActionData.featDamageBonus + (m_AttackData.isBroken ? -2 : 0);
                         let damageOffset = +m_ActionData.damageBonus - +calculatedDamageBonus;
-                        sbcConfig.options.debug && console.log(`Damage Offset: ${damageOffset}\n` +
-                            `Damage Bonus: ${m_ActionData.damageBonus}\n` +
-                            `Calculated Damage Bonus: ${calculatedDamageBonus}\n` +
-                            `Str Damage Bonus: ${strDamageBonus}\n` +
-                            `Enhancement Bonus: ${m_AttackData.enhancementBonus}\n` +
-                            `Broken: ${m_AttackData.isBroken ? -2 : 0}\n`);
+                        // sbcUtils.log(`Damage Offset: ${damageOffset}\n` +
+                        //     `Damage Bonus: ${m_ActionData.damageBonus}\n` +
+                        //     `Calculated Damage Bonus: ${calculatedDamageBonus}\n` +
+                        //     `Str Damage Bonus: ${strDamageBonus}\n` +
+                        //     `Enhancement Bonus: ${m_AttackData.enhancementBonus}\n` +
+                        //     `Broken: ${m_AttackData.isBroken ? -2 : 0}\n`);
                         if((damageOffset === Math.floor(strDamageBonus / 2)) && strDamageBonus > 0) {
                             calculatedDamageBonus += Math.floor(strDamageBonus / 2);
                             m_ActionData.damageMult = 1.5;
@@ -752,7 +823,10 @@ export class AttackParser extends ParserBase {
                             if(m_ActionData.featDamageBonusString && !sbcConfig.options.rollBonusesIntegration)
                                 damageDiceString += " + " + m_ActionData.featDamageBonusString
                         } else {
-                            damageDiceString = newAttack.actions.contents[0]?.data.damage.parts[0]?.formula + " + " + weaponAttackDetails.featDamageBonusString;
+                            // damageDiceString = newAttack.actions.contents[0]?.data.damage.parts[0]?.formula + " + " + weaponAttackDetails.featDamageBonusString;
+                            damageDiceString = weaponAttackDetails.originalDamageFormula;
+                            if(weaponAttackDetails.featDamageBonus)
+                                damageDiceString += " + " + weaponAttackDetails.featDamageBonusString;
                         }
 
                         // ... and if there is a difference between the statblock and the calculation, add an adjustment modifier
@@ -902,18 +976,18 @@ export class AttackParser extends ParserBase {
                         for (let i=1; i < m_ActionData.numberOfAttacks; i++) {
                             let prefixAttackName = i+1 + sbcConfig.const.suffixMultiples[Math.min(3, i)]
                             m_ActionData.attackParts.push(
-                                [
-                                    "",
-                                    prefixAttackName + " " + sbcUtils.capitalize(m_AttackData.attackName.replace(/(s|es)$/, ""))
-                                ]
+                                {
+                                    formula: "",
+                                    name: prefixAttackName + " " + sbcUtils.capitalize(m_AttackData.attackName.replace(/(s|es)$/, ""))
+                                }
                             )
                         }
 
                         // Push extra attacks from numberOfIterativeAttacks
                         // WIP: This does not register or handle statblocks with errors in the iterations
-                        if (m_ActionData.numberOfIterativeAttacks > 0 || m_ActionData.numberOfAttacks === 0) {
-                            m_ActionData.formulaicAttacksCountFormula = "ceil(@attributes.bab.total/5)-1"
-                        }
+                        // if (m_ActionData.numberOfIterativeAttacks > 0 || m_ActionData.numberOfAttacks === 0) {
+                        //     m_ActionData.formulaicAttacksCountFormula = "ceil(@attributes.bab.total/5)-1"
+                        // }
 
                         // [5] Create an attack from m_AttackData
                         // If the attack already exists, update it instead
@@ -936,20 +1010,28 @@ export class AttackParser extends ParserBase {
                                     subType: m_AttackData.subType,
                                     identifiedName: sbcUtils.capitalize(m_AttackData.formattedAttackName) || "undefined",
                                     baseTypes: m_AttackData.baseTypes,
+                                    material: {
+                                        normal: {
+                                            value: m_AttackData.material
+                                        },
+                                        addon: Object.keys(m_AttackData.addons)
+                                    }
                                 },
                             });
 
                             m_NewAttack.prepareData();
                         } else {
                             attackUpdates = {
-                                '_id': newAttack.id,
-                                'system.enh': +m_AttackData.enhancementBonus,
-                                'system.masterwork': (m_AttackData.isMasterwork || (m_AttackData.enhancementBonus ?? 0) !== 0) ? true : false,
-                                'system.held': m_AttackData.held,
-                                'system.attackNotes': sbcUtils.sbcSplit(m_AttackData.attackNotes),
-                                'system.effectNotes': m_AttackData.effectNotes,
-                                'system.broken': m_AttackData.isBroken,
-                                'name': sbcUtils.capitalize(m_AttackData.formattedAttackName) || 'undefined'
+                                "_id": newAttack.id,
+                                "system.enh": +m_AttackData.enhancementBonus,
+                                "system.masterwork": (m_AttackData.isMasterwork || (m_AttackData.enhancementBonus ?? 0) !== 0) ? true : false,
+                                "system.held": m_AttackData.held,
+                                "system.attackNotes": sbcUtils.sbcSplit(m_AttackData.attackNotes),
+                                "system.effectNotes": m_AttackData.effectNotes,
+                                "system.broken": m_AttackData.isBroken,
+                                "name": sbcUtils.capitalize(m_AttackData.formattedAttackName) || "undefined",
+                                "system.material.normal.value": m_AttackData.material,
+                                "system.material.addon": Object.keys(m_AttackData.addons)
                             }
                             m_NewAttack = newAttack;
                         }
@@ -964,7 +1046,14 @@ export class AttackParser extends ParserBase {
                             attackBonusString = attackBonusString ? `${attackBonusString} + ${m_ActionData.featAttackBonusString}` : m_ActionData.featAttackBonusString;
                         }
                         if(attackBonusString)
-                            attackBonusString = attackBonusString.replace(/\+ \+/g, "+ ").replace(/\s\s/g, " ");
+                            attackBonusString = attackBonusString.replace(/\+ \+/g, "+ ").replace(/\s\s/g, " ").replace(/^\+ /, "").replace(/ \+$/, "");
+
+                        // Update the extra attack types setting from PF1E v10.0
+                        let extraAttacksType = m_ActionData.attackParts.length > 0 && m_ActionData.numberOfIterativeAttacks > 0
+                        ? "advanced"
+                        : m_ActionData.numberOfIterativeAttacks > 0 && m_ActionData.attackParts.length === 0
+                        ? "standard"
+                        : "custom";
 
                         if(!newAttack) {
                             m_NewAction = 
@@ -996,6 +1085,10 @@ export class AttackParser extends ParserBase {
                                     nonCritParts: m_ActionData.nonCritParts,
                                     parts: m_ActionData.damageParts
                                 },
+                                extraAttacks: {
+                                    type: extraAttacksType,
+                                    manual: m_ActionData.attackParts
+                                },
                                 formulaicAttacks: {
                                     count: {
                                         formula: m_ActionData.formulaicAttacksCountFormula,
@@ -1015,29 +1108,29 @@ export class AttackParser extends ParserBase {
                                     primaryAttack: m_AttackData.isPrimaryAttack
                                 },
                                 nonlethal: m_AttackData.isNonlethal,
-                                attackParts: m_ActionData.attackParts,
+                                // attackParts: m_ActionData.attackParts,
                                 touch: m_AttackData.isTouch
                             };
                         } else {
                             let action = newAttack.actions.get(newAttack.actions.contents[0].id);
                             let updates = {
-                                'attackBonus': attackBonusString,
-                                'damage': {
+                                "attackBonus": attackBonusString,
+                                "damage": {
                                     critParts: [],
                                     nonCritParts: m_ActionData.nonCritParts,
                                     parts: m_ActionData.damageParts
                                 },
-                                'attackParts': m_ActionData.attackParts,
-                                [`ability.attack`]: m_ActionData.attackAbilityType,
-                                [`ability.critRange`]: m_ActionData.critRange,
-                                [`ability.critMult`]: m_ActionData.critMult,
-                                ['ability.damageMult']: m_ActionData.damageMult,
-                                'nonlethal': m_AttackData.isNonlethal,
-                                'touch': m_AttackData.isTouch,
+                                "attackParts": m_ActionData.attackParts,
+                                ["ability.attack"]: m_ActionData.attackAbilityType,
+                                ["ability.critRange"]: m_ActionData.critRange,
+                                ["ability.critMult"]: m_ActionData.critMult,
+                                ["ability.damageMult"]: m_ActionData.damageMult,
+                                "nonlethal": m_AttackData.isNonlethal,
+                                "touch": m_AttackData.isTouch,
                             }
 
                             if(newAttack.system.subType === "natural") {
-                                updates['naturalAttack.primaryAttack'] = m_AttackData.isPrimaryAttack
+                                updates["naturalAttack.primaryAttack"] = m_AttackData.isPrimaryAttack
                             }
 
                             await action.update(updates);
@@ -1053,9 +1146,9 @@ export class AttackParser extends ParserBase {
 
                         if(existingAttack) {
                             let comparisonData = {
-                                'enh': newAttack ? newAttack.system.enh : m_AttackData.enhancementBonus,
-                                'masterwork': newAttack ? newAttack.system.masterwork : m_AttackData.isMasterwork,
-                                'broken': newAttack ? newAttack.system.broken : m_AttackData.isBroken,
+                                "enh": newAttack ? newAttack.system.enh : m_AttackData.enhancementBonus,
+                                "masterwork": newAttack ? newAttack.system.masterwork : m_AttackData.isMasterwork,
+                                "broken": newAttack ? newAttack.system.broken : m_AttackData.isBroken,
                             };
                             if(!comparisonData.enh) comparisonData.enh = 0;
 
@@ -1066,9 +1159,9 @@ export class AttackParser extends ParserBase {
                                 let newAttackNotes = existingAttack.system.attackNotes.concat(sbcUtils.sbcSplit(m_AttackData.attackNotes));
                                 let newEffectNotes = existingAttack.system.effectNotes.concat(m_AttackData.effectNotes);
                                 await sbcData.characterData.actorData.updateEmbeddedDocuments("Item", [{
-                                    '_id': existingAttack.id,
-                                    'system.attackNotes': newAttackNotes,
-                                    'system.effectNotes': newEffectNotes
+                                    "_id": existingAttack.id,
+                                    "system.attackNotes": newAttackNotes,
+                                    "system.effectNotes": newEffectNotes
                                 }]);
 
                                 let actionData = newAttack ? newAttack.actions.contents[0] : m_NewAction;
@@ -1141,7 +1234,7 @@ export class AttackParser extends ParserBase {
             }
         }
 
-        console.log(`Weapon ${type} bonus for ${value}: ${result}, ${resultString}`);
+        // sbcUtils.log(`Weapon ${type} bonus for ${value}: ${result}, ${resultString}`);
         return [result, resultString];
     }
 }

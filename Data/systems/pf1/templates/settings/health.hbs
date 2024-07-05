@@ -1,111 +1,125 @@
-<form autocomplete="off">
+<form autocomplete="off" data-tooltip-class="pf1">
   <nav class="sheet-tabs tabs">
-    <a class="item" data-tab="base"><i class="fas fa-heartbeat"></i> {{localize "SETTINGS.pf1HealthConfigTabBase"}}</a>
-    <a class="item" data-tab="variants"><i class="fas fa-prescription-bottle-alt"></i> {{localize "SETTINGS.pf1HealthConfigTabVariant"}}</a>
+    <a class="item" data-tab="base">
+      <i class="fas fa-heartbeat"></i>
+      {{localize "PF1.SETTINGS.Health.TabBase"}}
+    </a>
+    <a class="item" data-tab="variants">
+      <i class="fas fa-prescription-bottle-alt"></i>
+      {{localize "PF1.SETTINGS.Health.TabVariant"}}
+    </a>
   </nav>
 
   <div class="tabbed">
-  <!-- Base Tab -->
+    <!-- Base Tab -->
     <section class="tab" data-tab="base">
-      <p class="notes">{{localize 'SETTINGS.pf1HealthConfigInstructions'}}</p>
-      <div id="hitdice">
-        <label class="index table-header">{{localize 'PF1.HitDie'}}</label>
-        {{#each hitdieOptions}}
-          <label class="table-header">{{this}}</label>
-        {{/each}}
+      <p class="notes">{{localize 'PF1.SETTINGS.Health.Instructions'}}</p>
+      <div class="hitdice-table">
+        <label class="index table-header">{{localize 'PF1.ClassType'}}</label>
+        <label class="table-header">{{localize "PF1.SETTINGS.Health.Compute"}}</label>
+        <label class="table-header">{{localize "PF1.SETTINGS.Health.Rate"}}</label>
+        <label class="table-header" data-tooltip="PF1.SETTINGS.Health.CanMaximizeHint">{{localize "PF1.SETTINGS.Health.CanMaximize"}}</label>
 
-        {{#each hitdice as |opt hd|}}
-          <label class="index">{{hd}}</label>
+        {{#each hitdice}}
+          <label class="index">{{localize label}}</label>
           <div class="switch">
-            <input class="switch-check" type="checkbox" {{#if opt.auto}}checked{{/if}} name="hitdice.{{hd}}.auto" id="hitdice.{{hd}}.auto">
-            <label class="switch-label" for="hitdice.{{hd}}.auto">
-              <span class="switch-auto">{{localize 'SETTINGS.pf1HealthComputeAuto'}}</span>
-              <span class="switch-manual">{{localize 'SETTINGS.pf1HealthComputeManual'}}</span>
+            <input class="switch-check" type="checkbox" {{#if auto}}checked{{/if}} name="hitdice.{{@key}}.auto" id="hitdice.{{@key}}.auto">
+            <label class="switch-label" for="hitdice.{{@key}}.auto">
+              <span class="switch-auto">{{localize 'PF1.SETTINGS.Health.ComputeAuto'}}</span>
+              <span class="switch-manual">{{localize 'PF1.SETTINGS.Health.ComputeManual'}}</span>
             </label>
           </div>
-          <span><input type="text" data-dtype="Number" name="hitdice.{{hd}}.rate" value="{{opt.rate}}"></span>
-          <span><input type="text" data-dtype="Number" name="hitdice.{{hd}}.maximized" value="{{opt.maximized}}"></span>
+          <span><input type="number" min="0.1" step="0.1" max="1" data-dtype="Number" name="hitdice.{{@key}}.rate" value="{{rate}}"></span>
+          <span><input type="checkbox" data-dtype="Boolean" name="hitdice.{{@key}}.maximized" {{checked maximized}}></span>
         {{/each}}
         </ul>
       </div>
 
       <div class="form-group">
-        <label>{{localize 'SETTINGS.pf1HealthRoundingName'}}</label>
-        <select name="rounding">
-          {{#select rounding}}
-            <option value="up">&uarr;</option>
-            <option value="nearest">&#8597;</option>
-            <option value="down">&darr;</option>
-          {{/select}}
-        </select>
-        <p class="notes">{{localize 'SETTINGS.pf1HealthRoundingHint'}}</p>
+        <label>{{localize "PF1.SETTINGS.Health.MaximizedLimit"}}</label>
+        <div class="form-fields">
+          <input type="number" data-dtype="Number" value="{{maximized}}" min="0" step="1">
+        </div>
       </div>
 
       <div class="form-group">
-        <label>{{localize 'SETTINGS.pf1HealthContinuityName'}}</label>
-        <select name="continuity">
-          {{#select continuity}}
-            <option value="continuous">{{localize 'SETTINGS.pf1HealthContinuityContinuous'}}</option>
-            <option value="discrete">{{localize 'SETTINGS.pf1HealthContinuityDiscrete'}}</option>
+        <label>{{localize 'PF1.SETTINGS.Health.Rounding'}}</label>
+        <select name="rounding">
+          {{#select rounding}}
+            <option value="up">{{localize "PF1.SETTINGS.Health.RoundingUp"}}</option>
+            <option value="nearest">{{localize "PF1.SETTINGS.Health.RoundingNearest"}}</option>
+            <option value="down">{{localize "PF1.SETTINGS.Health.RoundingDown"}}</option>
           {{/select}}
         </select>
-        <p class="notes">{{localize 'SETTINGS.pf1HealthContinuityHint'}}</p>
+        <p class="notes">{{localize 'PF1.SETTINGS.Health.RoundingHint'}}</p>
+      </div>
+
+      <div class="form-group">
+        <label>{{localize 'PF1.SETTINGS.Health.Continuity'}}</label>
+        <select name="continuous" data-dtype="Boolean">
+          {{#select continuous}}
+            <option value="true">{{localize 'PF1.SETTINGS.Health.Continuous'}}</option>
+            <option value="false">{{localize 'PF1.SETTINGS.Health.Discrete'}}</option>
+          {{/select}}
+        </select>
+        <p class="notes">{{localize 'PF1.SETTINGS.Health.ContinuityHint'}}</p>
       </div>
     </section>
 
-    <!-- Variants Tab -->
+    <!-- Variant Rules Tab -->
     <section class="tab" data-tab="variants">
       <!-- Wounds & Vigor -->
       <div class="form-group">
-        <label>{{localize 'SETTINGS.pf1HealthConfigWoundsAndVigorPCName'}}</label>
-        <input type="checkbox" {{#if variants.pc.useWoundsAndVigor}}checked{{/if}} name="variants.pc.useWoundsAndVigor">
-        <p class="notes">{{localize 'SETTINGS.pf1HealthConfigWoundsAndVigorPCHint'}}</p>
+        <label>{{localize 'PF1.SETTINGS.Health.WoundsAndVigor.PC'}}</label>
+        <input type="checkbox" {{checked variants.pc.useWoundsAndVigor}} name="variants.pc.useWoundsAndVigor">
+        <p class="notes">{{localize 'PF1.SETTINGS.Health.WoundsAndVigor.PCHint'}}</p>
       </div>
 
       <div class="form-group">
-        <label>{{localize 'SETTINGS.pf1HealthConfigWoundsAndVigorNPCName'}}</label>
-        <input type="checkbox" {{#if variants.npc.useWoundsAndVigor}}checked{{/if}} name="variants.npc.useWoundsAndVigor">
-        <p class="notes">{{localize 'SETTINGS.pf1HealthConfigWoundsAndVigorNPCHint'}}</p>
+        <label>{{localize 'PF1.SETTINGS.Health.WoundsAndVigor.NPC'}}</label>
+        <input type="checkbox" {{checked variants.npc.useWoundsAndVigor}} name="variants.npc.useWoundsAndVigor">
+        <p class="notes">{{localize 'PF1.SETTINGS.Health.WoundsAndVigor.NPCHint'}}</p>
       </div>
+
+      <hr>
 
       <!-- Wound Thresholds -->
       <div class="form-group">
-        <label>{{localize 'SETTINGS.pf1HealthConfigWoundThresholdsPCName'}}</label>
+        <label>{{localize 'PF1.SETTINGS.Health.WoundThresholds.PC'}}</label>
         <select data-dtype="Number" name="variants.pc.useWoundThresholds">
-        {{#select variants.pc.useWoundThresholds}}
-            <option value="0">{{localize 'SETTINGS.pf1HealthConfigWoundThresholdDisabled'}}</option>
-            <option value="1">{{localize 'SETTINGS.pf1HealthConfigWoundThresholdNormal'}}</option>
-            <option value="2">{{localize 'SETTINGS.pf1HealthConfigWoundThresholdGritty'}}</option>
-        {{/select}}
+          {{selectOptions woundThesholdOptions selected=variants.pc.useWoundThresholds}}
         </select>
-        <p class="notes">{{localize 'SETTINGS.pf1HealthConfigWoundsThresholdsPCHint'}}</p>
+        <p class="notes">{{localize 'PF1.SETTINGS.Health.WoundThresholds.PCHint'}}</p>
+        {{#if (and variants.pc.useWoundsAndVigor (ne variants.pc.useWoundThresholds 0))}}
+        <p class="warning"><i class="fa-solid fa-triangle-exclamation"></i> {{localize "PF1.SETTINGS.Health.WoundThresholds.VigorConflict"}}</p>
+        {{/if}}
       </div>
 
       <div class="form-group">
-        <label>{{localize 'SETTINGS.pf1HealthConfigWoundThresholdsNPCName'}}</label>
+        <label>{{localize 'PF1.SETTINGS.Health.WoundThresholds.NPC'}}</label>
         <select data-dtype="Number" name="variants.npc.useWoundThresholds">
-        {{#select variants.npc.useWoundThresholds}}
-            <option value="0">{{localize 'SETTINGS.pf1HealthConfigWoundThresholdDisabled'}}</option>
-            <option value="1">{{localize 'SETTINGS.pf1HealthConfigWoundThresholdNormal'}}</option>
-            <option value="2">{{localize 'SETTINGS.pf1HealthConfigWoundThresholdGritty'}}</option>
-        {{/select}}
+          {{selectOptions woundThesholdOptions selected=variants.npc.useWoundThresholds}}
         </select>
-        <p class="notes">{{localize 'SETTINGS.pf1HealthConfigWoundsThresholdsNPCHint'}}</p>
+        <p class="notes">{{localize 'PF1.SETTINGS.Health.WoundThresholds.NPCHint'}}</p>
+        {{#if (and variants.npc.useWoundsAndVigor (ne variants.npc.useWoundThresholds 0))}}
+        <p class="warning"><i class="fa-solid fa-triangle-exclamation"></i> {{localize "PF1.SETTINGS.Health.WoundThresholds.VigorConflict"}}</p>
+        {{/if}}
       </div>
 
       <div class="form-group">
-        <label>{{localize 'SETTINGS.pf1HealthConfigWoundThresholdsPCOverrideName'}}</label>
-        <input data-dtype="Boolean" type="checkbox" {{#if variants.pc.allowWoundThresholdOverride}}checked{{/if}} name="variants.pc.allowWoundThresholdOverride">
-        <p class="notes">{{localize 'SETTINGS.pf1HealthConfigWoundThresholdsPCOverrideHint'}}</p>
+        <label>{{localize 'PF1.SETTINGS.Health.WoundThresholds.PCOverride'}}</label>
+        <input data-dtype="Boolean" type="checkbox" {{checked variants.pc.allowWoundThresholdOverride}}
+          name="variants.pc.allowWoundThresholdOverride">
+        <p class="notes">{{localize 'PF1.SETTINGS.Health.WoundThresholds.PCOverrideHint'}}</p>
       </div>
     </section>
   </div>
 
   <div class="form-group">
-    <button type="submit" name="submit" >
+    <button type="button" class="save" >
       <i class="far fa-save"></i> {{localize 'SETTINGS.Save'}}
     </button>
-    <button type="button" name="reset">
+    <button type="button" class="reset">
       <i class="fas fa-undo"></i> {{localize 'SETTINGS.Reset'}}
     </button>
   </div>

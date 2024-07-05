@@ -1,16 +1,86 @@
 <div class="pf1-tooltip">
-    <div class="controls">
-        <button type="button" class="close">
-            <span class="fas fa-times-circle"></span>
-        </button>
+  <div class="controls">
+    <button type="button" class="close">
+      <span class="fas fa-times-circle"></span>
+    </button>
+  </div>
+
+  {{!-- Actor --}}
+  {{#if portrait}}
+  <div class="portrait">
+    <img src="{{portrait.url}}" style="max-width: {{portrait.maxWidth}}px; max-height: {{portrait.maxHeight}}px;">
+  </div>
+  {{/if}}
+
+  <h1>{{name}}</h1>
+
+  {{!-- Show Conditions --}}
+  {{#if conditions}}
+  <h2>{{localize "PF1.ConditionPlural"}}</h2>
+
+  <div class="conditions">
+    {{#each conditions as |c|}}
+    <div class="condition">
+      <img src="{{c.icon}}">
+      <span>{{c.label}}</span>
     </div>
+    {{/each}}
+  </div>
+  {{/if}}
 
-    {{#if stringContent}}
-        {{{stringContent}}}
-    {{/if}}
+  {{!-- Show Buffs --}}
+  {{#if buffs}}
+  <h2>{{localize "PF1.Buffs"}}</h2>
 
-    {{!-- Actor --}}
-    {{#if actorData}}
-        {{> "systems/pf1/templates/hud/tooltip_actor.hbs" actorData}}
-    {{/if}}
+  <div class="buffs">
+    {{#each buffs as |b|}}
+    <div class="buff">
+      <img src="{{b.icon}}">
+      <span>{{b.label}}{{#if b.level}} ({{b.level}}){{/if}}</span>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+
+  {{!-- Show Held items --}}
+  {{#if held}}
+  <h2>{{localize "PF1.Held"}}</h2>
+
+  <div class="held-items">
+    {{#each held as |i|}}
+    <div class="held-item">
+      <img src="{{i.icon}}">
+      <span>{{i.label}}</span>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+
+  {{!-- Show equipped armor --}}
+  {{#if armor}}
+  <h2>{{localize "PF1.Subtypes.Item.equipment.armor.Plural"}}</h2>
+
+  <div class="held-items">
+    {{#each armor as |i|}}
+    <div class="held-item">
+      <img src="{{i.icon}}">
+      <span>{{i.label}}</span>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+
+  {{!-- Show Clothing --}}
+  {{#if clothing}}
+  <h2>{{localize "PF1.Subtypes.Item.equipment.clothing.Plural"}}</h2>
+
+  <div class="held-items">
+    {{#each clothing as |i|}}
+    <div class="held-item">
+      <img src="{{i.icon}}">
+      <span>{{i.label}}</span>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
 </div>

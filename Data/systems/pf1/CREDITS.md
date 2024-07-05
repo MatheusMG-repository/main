@@ -1,6 +1,6 @@
 ## Disclaimer
 
-None of the people on this list necessarily endorse me. See the respective licences for more info.
+None of the people on this list necessarily endorse this project or those involved. See the respective licences for more info.
 
 People and credits are listed in no particular order.
 

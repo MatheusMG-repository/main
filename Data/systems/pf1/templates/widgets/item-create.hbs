@@ -1,0 +1,51 @@
+<form id="document-create" autocomplete="off" data-tooltip-class="pf1">
+  <div class="form-group">
+    <label>{{localize "Name"}}</label>
+    <div class="form-fields">
+      <input type="text" name="name" placeholder="{{defaultName}}" value="{{name}}" autofocus>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "Type"}}</label>
+    <div class="form-fields">
+      <select name="type">
+        {{selectOptions types selected=type localize=true}}
+      </select>
+    </div>
+  </div>
+
+  {{#if subtypes}}
+  <div class="form-group">
+    <label>{{localize "PF1.Subtype"}}</label>
+    <div class="form-fields">
+      <select name="system.subType">
+        {{selectOptions subtypes selected=subtype localize=true}}
+      </select>
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if hasFolders}}
+  <div class="form-group">
+    <label>{{ localize "DOCUMENT.Folder" }}</label>
+    <div class="form-fields">
+      <select name="folder">
+      {{#select folder}}
+        <option value=""></option>
+        {{#each folders}}
+        <option value="{{id}}">{{name}}</option>
+        {{/each}}
+      {{/select}}
+      </select>
+    </div>
+  </div>
+  {{/if}}
+
+  <div class="buttons">
+    <button type="submit" class="create-document">
+      <i class="fas fa-check"></i>
+        {{localize "DOCUMENT.Create" type=(localize "DOCUMENT.Item")}}
+    </button>
+  </div>
+</form>

@@ -1,10 +1,10 @@
 {
   "id": "pf1-statblock-converter",
   "title": "sbc | PF1 Stackblock Converter",
-  "description": "Converts Pathfinder 1. Edition statblocks into working PC or NPC actors.",
+  "description": "Converts Pathfinder 1st Edition statblocks into working PC or NPC actors.",
   "authors": [
     {
-      "name": "Tristan Goucher",
+      "name": "Tristan Goucher (Fair Strides)",
       "discord": "fairstrides"
     },
     {
@@ -15,10 +15,10 @@
   "url": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter",
   "bugs": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/issues",
   "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/releases/permalink/latest/downloads/module.json",
-  "download": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/releases/4.5.3/downloads/pf1-statblock-converter.zip",
-  "version": "4.5.3",
+  "download": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/releases/4.6.4/downloads/pf1-statblock-converter.zip",
+  "version": "4.6.4",
   "compatibility": {
-    "minimum": "10",
+    "minimum": "11",
     "verified": "11"
   },
   "esmodules": [
@@ -31,17 +31,11 @@
     "systems": [
       {
         "id": "pf1",
-        "type": "system",
-        "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/foundryvtt-pathfinder1/-/releases/permalink/latest/downloads/system.json",
         "compatibility": {
-          "minimum": "9.5",
-          "verified": "9.6"
+          "minimum": "10",
+          "verified": "10"
         }
       }
     ]
-  },
-  "socket": false,
-  "protected": false,
-  "coreTranslation": false,
-  "library": false
+  }
 }

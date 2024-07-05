@@ -1,14 +1,18 @@
 {
-  "title": "Pathfinder 1e Content",
+  "title": "Pathfinder 1E Content",
   "description": "Contains magic items, non-magical items, feats, traits, class abilities, racial traits, diseases, drugs, special weapon/armor qualities, buffs/debuffs, familiars, eidolons, companions, technology items, magic item, and encounter tables. Additoinally, Includes a huge amount of Rule journals for PF, bios and info for deities, as well as rule for Kingdom Building. Along with a host of other resources. These compendiums are not perfect. Except for buffs, most of them do not contain the appropriate changes to attacks, bonuses, etc. However, the item description and most of the relevant info needed to make work them are included, and Change formulas are slowly being added.",
-  "version": "0.3.7",
+  "version": "10.0.0",
+  "esmodules": [
+    "./pf-content.js"
+  ],
   "relationships": {
     "systems": [
       {
         "id": "pf1",
         "type": "system",
         "compatibility": {
-          "minimum": "9.5"
+          "minimum": "10",
+          "verified": "10.3"
         }
       }
     ]
@@ -32,7 +36,6 @@
     {
       "name": "Character Building",
       "packs": [
-        "pf-buffs",
         "pf-class-abilities",
         "pf-companion-features",
         "pf-eidolon-evolutions",
@@ -44,14 +47,21 @@
       "color": "#996300"
     },
     {
+      "name": "Conditions",
+      "packs": [
+        "pf-buffs"
+      ],
+      "color": "#792291"
+    },
+    {
       "name": "Equipment",
       "packs": [
         "pf-artifacts",
+        "pf-cursed-items",
         "pf-goods-services",
         "pf-items",
         "pf-magicitems",
         "pf-special-qualities",
-        "pf-tech",
         "pf-wondrous"
       ],
       "color": "#777777"
@@ -90,6 +100,7 @@
       "name": "Miscellaneous",
       "packs": [
         "pf-35-content",
+        "pf-collab-content",
         "pf-elephant",
         "pf-maladies",
         "pf-occult-rituals"
@@ -120,7 +131,7 @@
     },
     {
       "name": "pf-buffs",
-      "label": "Buffs",
+      "label": "Additional Buffs",
       "system": "pf1",
       "path": "packs/pf-buffs.db",
       "type": "Item",
@@ -129,8 +140,18 @@
       }
     },
     {
+      "name": "pf-collab-content",
+      "label": "Paizo Collaborations",
+      "system": "pf1",
+      "path": "packs/pf-collab-content.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
       "name": "pf-class-abilities",
-      "label": "Class Abilities",
+      "label": "Additional Class Abilities",
       "system": "pf1",
       "path": "packs/pf-class-abilities.db",
       "type": "Item",
@@ -153,6 +174,16 @@
       "label": "Animal Companion Features",
       "system": "pf1",
       "path": "packs/pf-companion-features.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "pf-cursed-items",
+      "label": "Cursed Items",
+      "system": "pf1",
+      "path": "packs/pf-cursed-items.db",
       "type": "Item",
       "ownership": {
         "PLAYER": "OBSERVER"
@@ -220,7 +251,7 @@
     },
     {
       "name": "pf-feats",
-      "label": "Feats",
+      "label": "Additional Feats",
       "system": "pf1",
       "path": "packs/pf-feats.db",
       "type": "Item",
@@ -260,7 +291,7 @@
     },
     {
       "name": "pf-items",
-      "label": "Items",
+      "label": "Additional Items",
       "system": "pf1",
       "path": "packs/pf-items.db",
       "type": "Item",
@@ -350,20 +381,10 @@
     },
     {
       "name": "pf-tables",
-      "label": "Tables",
+      "label": "Additional Tables",
       "system": "pf1",
       "path": "packs/pf-tables.db",
       "type": "RollTable",
-      "ownership": {
-        "PLAYER": "OBSERVER"
-      }
-    },
-    {
-      "name": "pf-tech",
-      "label": "Technology",
-      "system": "pf1",
-      "path": "packs/pf-technology.db",
-      "type": "Item",
       "ownership": {
         "PLAYER": "OBSERVER"
       }
@@ -461,8 +482,12 @@
   ],
   "authors": [
     {
-      "name": "Tristan Goucher, with major contributions (see Credits)",
+      "name": "Tristan Goucher (Fair Strides), with major contributions (see Credits)",
       "discord": "fairstrides"
+    },
+    {
+      "name": "McGreger",
+      "discord": "McGreger"
     },
     {
       "name": "Michael Bailey",
@@ -471,8 +496,8 @@
   ],
   "id": "pf-content",
   "url": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content",
-  "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content/-/releases/0.3.7/downloads/module.json",
-  "download": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content/-/releases/0.3.7/downloads/pf1-content.zip",
+  "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content/-/releases/10.0.0/downloads/module.json",
+  "download": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content/-/releases/10.0.0/downloads/pf1-content.zip",
   "readme": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content/-/blob/main/README.md",
   "changelog": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-content/-/blob/main/changelog.md"
 }

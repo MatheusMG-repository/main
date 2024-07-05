@@ -7,7 +7,7 @@ import { ParserBase } from "../base-parser.js";
 export class DRParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as Damage Reductions")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as Damage Reductions")
 
         try {
             let rawInput = value.replace(/(^[,;\s]*|[,;\s]*$)/g, "")
@@ -16,6 +16,9 @@ export class DRParser extends ParserBase {
             sbcData.notes.defense["dr"] = rawInput
 
             let systemSupportedDamageTypes = Object.values(pf1.registry.damageTypes.getLabels()).map(x => x.toLowerCase())
+                .concat(Object.values(pf1.registry.materialTypes.getLabels()).map(x => x.toLowerCase()))
+                .concat(Object.values(CONFIG.PF1.damageResistances).map(x => x.toLowerCase()))
+            
             let patternDamageTypes = new RegExp("(" + systemSupportedDamageTypes.join("\\b|\\b") + ")", "gi")
 
             for (let i=0; i<input.length; i++) {
@@ -24,13 +27,16 @@ export class DRParser extends ParserBase {
                     .trim()
 
                 if (reduction.match(/\s(or|and)\s/)) {
-                    const re = /^(?<amount>\d*?)\s?(?:\/\s?(?<type1>\S+)\s?(?<operator>(or|and))\s?(?<type2>\S+))?$/g.exec(reduction);
+                    const re = /^(?<amount>\d*?)\s?(?:\/\s?(?<type1>.+?)\s?(?<operator>(or|and))\s?(?<type2>.+?))?$/g.exec(reduction);
                     let {amount, type1, operator, type2} = re.groups;
+                    console.log("DR: ", amount, type1, operator, type2, type1.search(patternDamageTypes), type2.search(patternDamageTypes))
                     operator = operator === "or" ? true : false;
 
                     // Check that both types are supported
                     if(type1.search(patternDamageTypes) !== -1 &&
                     type2.search(patternDamageTypes) !== -1) {
+                        type1 = type1.replace(/\s/g, "").toLowerCase();
+                        type2 = type2.replace(/\s/g, "").toLowerCase();
                         let existingImmunities = sbcData.characterData.actorData.system.traits.dr.value;
                         existingImmunities.push({amount: amount, types: [type1, type2], operator: operator});
                         await sbcData.characterData.actorData.update({ "system.traits.dr.value": existingImmunities})
@@ -41,7 +47,8 @@ export class DRParser extends ParserBase {
                     }
                 } else if (reduction.search(patternDamageTypes) !== -1) {
                     // its a damage resistance
-                    const [value, type] = reduction.split(/\s*\/\s*/);
+                    let [value, type] = reduction.split(/\s*\/\s*/);
+                    type = type.replace(/\s/g, "").toLowerCase();
                     let existingImmunities = sbcData.characterData.actorData.system.traits.dr.value;
                     existingImmunities.push({amount: value, types: [type], operator: false});
                     await sbcData.characterData.actorData.update({ "system.traits.dr.value": existingImmunities})

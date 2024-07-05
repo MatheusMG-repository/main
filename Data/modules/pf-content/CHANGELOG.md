@@ -1,4 +1,20 @@
 # Changelog
+## 10.0.0
+### Changelog
+* Added: Content was migrated for PF1E v10.3, along with many changes to work with the new features in the system.
+* Added: MANY if not all traits have various changes, actions, usage limitations, context notes, and script calls to improve usability.
+* Added: The Dwarven alternate racial trait "Mountaineer" was missing".
+* Added: Niobe and Vampire Hunter D content moved from the system into a new "Paizo Collaborations" compendium.
+* Added: All traits now have source information moved to the dedicated field.
+* Added: Many new buffs have been created for common spell effects
+* Fixed: Many typos and minor corrections in descriptions and context notes
+* Changed: Wondrous Items now have an icon matching the slot they belong to.
+* Changed: Traits now have an icon matching the type of trait.
+* Changed: Many redundant/duplicated items were removed from PF-Content; some were moved to the system when better displayed.
+* Changed: Technology has been moved to the system itself, following procedure when quality standards were met.
+* Changed: Cursed items were moved to their own compendium.
+* Changed: The descriptions for many class features were cleaned up.
+* Changed: Trap actors were rebuilt to make use of the new Trap actor type. **Note**: Haunt actors not yet rebuilt.
 
 ## 0.3.7
 ### Changelog

@@ -21,19 +21,17 @@
 </div>
 {{/if}}
 
-{{#if hasExtraText}}
+{{#if extraText}}
 <div class="extra-text gm-sensitive">{{{extraText}}}</div>
 {{/if}}
 
-{{#if hasProperties}}
-{{#each properties as |prop|}}
-<div class="flexcol property-group gm-sensitive general-notes {{prop.css}}">
-  <label>{{prop.header}}</label>
+{{#each properties}}
+<div class="flexcol property-group gm-sensitive general-notes {{css}}">
+  <label>{{header}}</label>
   <div class="flexrow tag-list">
-    {{#each prop.value as |v|}}
-    <span class="tag">{{{v}}}</span>
+    {{#each value}}
+    <span class="tag">{{{this}}}</span>
     {{/each}}
   </div>
 </div>
 {{/each}}
-{{/if}}

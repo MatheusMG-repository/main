@@ -1,0 +1,24 @@
+<form autocomplete="off" data-tooltip-class="pf1">
+  <div class="form-group">
+    <label>{{localize "PF1.Default"}}</label>
+    <select name="default" data-dtype="Boolean">
+      {{selectOptions @root.levels selected=default localize=true}}
+    </select>
+  </div>
+
+  <hr>
+
+  {{#each users}}
+  <div class="form-group">
+    <label>{{user.name}}</label>
+    <select name="users.{{user.id}}">
+      {{selectOptions @root.levels selected=level blank="PF1.Default" localize=true}}
+    </select>
+  </div>
+  {{/each}}
+
+  <button type="submit" name="submit">
+    <i class="far fa-save"></i>
+    {{localize "Save"}}
+  </button>
+</form>

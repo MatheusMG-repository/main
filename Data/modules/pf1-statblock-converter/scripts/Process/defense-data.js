@@ -1,7 +1,6 @@
 import { sbcUtils } from "../sbcUtils.js"
 import { sbcData, sbcError } from "../sbcData.js"
 import { sbcConfig } from "../sbcConfig.js"
-import { sbcContent } from "../sbcContent.js"
 import { parserMapping } from "../Parsers/parser-mapping.js";
 
 /* ------------------------------------ */
@@ -59,9 +58,9 @@ export async function parseDefense(data, startLine) {
 
             // Parse AC Types
             if (!parsedSubCategories["acTypes"]) {
-                if (/^(?:AC[^\(]*[\(])([^\)]*)/i.test(lineContent)) {
+                if (/^(?:AC[^(]*[(])([^)]*)/i.test(lineContent)) {
                     let parserAcTypes = parserMapping.map.defense.acTypes
-                    let acTypes = lineContent.match(/^(?:AC[^\(]*[\(])([^\)]*)/i)[1].trim()
+                    let acTypes = lineContent.match(/^(?:AC[^(]*[(])([^)]*)/i)[1].trim()
 
                     sbcData.characterData.conversionValidation.attributes["acTypes"] = acTypes
 
@@ -156,7 +155,7 @@ export async function parseDefense(data, startLine) {
 
     }
 
-    sbcConfig.options.debug && sbcUtils.log("RESULT OF PARSING DEFENSE DATA (TRUE = PARSED SUCCESSFULLY)")
+    sbcUtils.log("RESULT OF PARSING DEFENSE DATA (TRUE = PARSED SUCCESSFULLY)")
     sbcConfig.options.debug && console.log(parsedSubCategories, sbcData.characterData.actorData.system)
     sbcConfig.options.debug && console.groupEnd()
 

@@ -7,7 +7,7 @@ import { ParserBase } from "../base-parser.js";
 export class ImmunityParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as Immunities")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as Immunities")
 
         try {
 
@@ -22,34 +22,49 @@ export class ImmunityParser extends ParserBase {
             let systemSupportedDamageTypes = Object.values(pf1.registry.damageTypes.getLabels()).map(x => x.toLowerCase())
             let patternDamageTypes = new RegExp("(" + systemSupportedDamageTypes.join("\\b|\\b") + ")", "gi")
 
+            let systemSupportedConditionRegistryTypes = Object.values(pf1.registry.conditions.getLabels()).map(x => x.toLowerCase());
+            let patternConditionRegistryTypes = new RegExp("(" + systemSupportedConditionRegistryTypes.join("\\b|\\b") + ")", "gi")
+
             for (let i=0; i<input.length; i++) {
                 let immunity = input[i]
                     .replace(/Effects/gi, "")
                     .trim()
+                let immunityKey = "";
+                let existingImmunities = [];
 
-                if (immunity.search(patternConditionTypes) !== -1) {
+                if (/fatigue/i.test(immunity) || immunity.search(patternConditionTypes) !== -1) {
                     // its a condition immunity
-                    let immunityKey = sbcUtils.getKeyByValue(CONFIG["PF1"].conditionTypes, immunity)
-                    let existingImmunities = sbcData.characterData.actorData.system.traits.ci.value;
+                    if(/fatigue/i.test(immunity)) immunity = "fatigued";
+
+                    immunityKey = sbcUtils.getKeyByValue(CONFIG["PF1"].conditionTypes, immunity);
+                    existingImmunities = sbcData.characterData.actorData.system.traits.ci.value;
                     existingImmunities.push(sbcUtils.camelize(immunityKey));
                     sbcData.characterData.actorData.update({ "system.traits.ci.value": existingImmunities})
                 } else if (immunity.search(patternDamageTypes) !== -1) {
                     // its a damage immunity
-                    let immunityKey = sbcUtils.getKeyByValue(pf1.registry.damageTypes.getLabels(), immunity)
-                    let existingImmunities = sbcData.characterData.actorData.system.traits.di.value;
+                    immunityKey = sbcUtils.getKeyByValue(pf1.registry.damageTypes.getLabels(), immunity)
+                    existingImmunities = sbcData.characterData.actorData.system.traits.di.value;
                     existingImmunities.push(sbcUtils.camelize(immunityKey));
                     sbcData.characterData.actorData.update({ "system.traits.di.value": existingImmunities})
+                } else if(immunity.search(patternConditionRegistryTypes) !== -1) {
+                    // its a condition immunity
+                    immunityKey = sbcUtils.getKeyByValue(pf1.registry.conditions.getLabels(), immunity);
+                    existingImmunities = sbcData.characterData.actorData.system.traits.ci.value;
+                    existingImmunities.push(sbcUtils.camelize(immunityKey));
+                    sbcData.characterData.actorData.update({ "system.traits.ci.value": existingImmunities})
+
                 } else {
                     // Its a custom immunity
-                    let existingCustomImmunities = sbcData.characterData.actorData.system.traits.ci.custom
-                    sbcData.characterData.actorData.update({ "system.traits.ci.custom": existingCustomImmunities + sbcUtils.capitalize(immunity) + ";" })
+                    existingImmunities = sbcData.characterData.actorData.system.traits.ci.custom;
+                    existingImmunities.push(sbcUtils.capitalize(immunity));
+                    sbcData.characterData.actorData.update({ "system.traits.ci.custom": existingImmunities})
                 }
 
 
             }
 
             // Remove any semicolons at the end of the custom immunities
-            sbcData.characterData.actorData.update({ "system.traits.ci.custom": sbcData.characterData.actorData.system.traits.ci.custom.replace(/(;)$/, "") })
+            //sbcData.characterData.actorData.update({ "system.traits.ci.custom": sbcData.characterData.actorData.system.traits.ci.custom.replace(/;$/, "") })
 
             return true
 

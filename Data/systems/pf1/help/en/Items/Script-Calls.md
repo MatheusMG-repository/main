@@ -14,6 +14,8 @@ Below you will find a list of variables which are present within Script Calls.
 | ------ | ------ |
 | `item` | The item from which this event was called. |
 | `actor` | The actor which owns the calling item. Can be `null` if the item is not on an actor. |
+| `action` | The action that triggered this. Can be `null` if there's no action. |
+| `token` | Token associated with unlinked actor, or the first active token for linked actor on currently viewed scene. |
 | `shared` | An object which starts out as empty, but is shared between all script calls of a single event, after which it is returned to the calling function, which may or may not do something with it. |
 
 ## Categories

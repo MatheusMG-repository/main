@@ -1,4 +1,4 @@
-<ol class="item-groups-list changes-list">
+<ol class="item-groups-list changeflags-list">
   {{!-- Flags --}}
   <li class="item-list-header flexrow">
     <div class="item-name flag-name flexrow">
@@ -10,108 +10,131 @@
   <ol class="item-list">
     <li class="item change-flag flexrow">
       <div class="item-name flag-name flexrow">
-        <h4>{{localize "PF1.ChangeFlagDwarflikeEncumbrance"}}</h4>
+        <h4>{{localize "PF1.ChangeFlags.NoMediumEncumbrance"}}</h4>
       </div>
-      <div class="item-enabled flexrow"><input type="checkbox" name="system.changeFlags.noEncumbrance" {{checked system.changeFlags.noEncumbrance}}/></div>
+      <div class="item-enabled flexrow"><input type="checkbox" name="system.changeFlags.noMediumEncumbrance" {{checked system.changeFlags.noMediumEncumbrance}}></div>
     </li>
     <li class="item change-flag flexrow">
       <div class="item-name flag-name flexrow">
-        <h4>{{localize "PF1.ChangeFlagMediumArmorFullSpeed"}}</h4>
+        <h4>{{localize "PF1.ChangeFlags.NoHeavyEncumbrance"}}</h4>
       </div>
-      <div class="item-enabled flexrow"><input type="checkbox" name="system.changeFlags.mediumArmorFullSpeed" {{checked system.changeFlags.mediumArmorFullSpeed}}/></div>
+      <div class="item-enabled flexrow"><input type="checkbox" name="system.changeFlags.noHeavyEncumbrance" {{checked system.changeFlags.noHeavyEncumbrance}}></div>
     </li>
     <li class="item change-flag flexrow">
       <div class="item-name flag-name flexrow">
-        <h4>{{localize "PF1.ChangeFlagHeavyArmorFullSpeed"}}</h4>
+        <h4>{{localize "PF1.ChangeFlags.MediumArmorFullSpeed"}}</h4>
       </div>
-      <div class="item-enabled flexrow"><input type="checkbox" name="system.changeFlags.heavyArmorFullSpeed" {{checked system.changeFlags.heavyArmorFullSpeed}}/></div>
+      <div class="item-enabled flexrow"><input type="checkbox" name="system.changeFlags.mediumArmorFullSpeed" {{checked system.changeFlags.mediumArmorFullSpeed}}></div>
     </li>
     <li class="item change-flag flexrow">
       <div class="item-name flag-name flexrow">
-        <h4>{{localize "PF1.ChangeFlagLoseDexToAC"}}</h4>
+        <h4>{{localize "PF1.ChangeFlags.HeavyArmorFullSpeed"}}</h4>
       </div>
-      <div class="item-enabled flexrow"><input type="checkbox" name="system.changeFlags.loseDexToAC" {{checked system.changeFlags.loseDexToAC}}/></div>
+      <div class="item-enabled flexrow"><input type="checkbox" name="system.changeFlags.heavyArmorFullSpeed" {{checked system.changeFlags.heavyArmorFullSpeed}}></div>
+    </li>
+    <li class="item change-flag flexrow">
+      <div class="item-name flag-name flexrow">
+        <h4>{{localize "PF1.ChangeFlags.LoseDexToAC"}}</h4>
+      </div>
+      <div class="item-enabled flexrow"><input type="checkbox" name="system.changeFlags.loseDexToAC" {{checked system.changeFlags.loseDexToAC}}></div>
     </li>
   </ol>
+</ol>
 
-  {{!-- Changes --}}
+{{!-- Changes --}}
+<ol class="item-groups-list changes-list">
   <li class="item-list-header change-header flexrow">
-    <div class="item-name">
-      <h3>{{localize "PF1.Changes"}}</h3>
-      <a class='help-browser' data-url="Help/Items/Changes"><i class="far fa-question-circle"></i></a>
-    </div>
-    <div class="item-operator flexrow">{{localize "PF1.Operator"}}</div>
-    <div class="item-target flexrow">{{localize "PF1.Target"}}</div>
-    <div class="item-modifier flexrow">{{localize "PF1.Modifier"}}</div>
-    <div class="item-priority flexrow" data-tooltip="PF1.Priority"><i class="fas fa-sort"></i></div>
-
-    {{#if owner}}
-    <div class="item-controls basic flexrow">
-      <a class="item-control item-create change-control add-change">
+    <h3>{{localize "PF1.Changes"}}</h3>
+    <div class="controls flexrow">
+      <a class="control change-control add-change" data-target="change" data-action="add">
         <i class="fas fa-plus"></i>
+        {{localize "PF1.Add"}}
       </a>
     </div>
-    {{/if}}
   </li>
 
   <ol class="item-list changes">
-  {{#each changes as |change a|}}
-    <li class="item change flexrow" data-change="{{change.data._id}}">
-      <div class="item-name item-formula flexrow">
-        {{#unless isScript}}
-        <input class="change-formula formula" type="text" name="system.changes.{{a}}.formula" value="{{lookup this.data "formula"}}" placeholder="{{localize "PF1.Formula"}}" required/>
+  {{#each changes}}
+    <li class="change flexrow {{#if isDeferred}}check{{else}}deterministic{{/if}}" data-change-id="{{id}}">
+      <span class="operator"
+        {{#if isAdd}}
+        data-tooltip="PF1.Application.ChangeEditor.Operator.AddHint">
+        <i class="fa-solid fa-plus-minus fa-fw"></i>
+        {{else if isSet}}
+        data-tooltip="PF1.Application.ChangeEditor.Operator.SetHint">
+        <i class="fa-solid fa-equals fa-fw"></i>
         {{else}}
-        <button type="button" class="edit-change-contents"><i class="fas fa-edit"></i> {{localize "PF1.Edit"}}</button>
-        {{/unless}}
-      </div>
-
-      <div class="item-operator flexrow">
-        <select class="change-operator" name="system.changes.{{a}}.operator">
-          {{#select (lookup this.data "operator") }}
-          <option value="add">+</option>
-          <option value="set">=</option>
-          <option value="script">S</option>
-          {{/select}}
-        </select>
-      </div>
-
-      <div class="item-target flexrow">
-        <span class="change-target{{#unless isValid}} invalid{{/unless}}">{{label}}</span>
-      </div>
-
-      <div class="item-modifier flexrow">
-        <select class="change-modifier" name="system.changes.{{a}}.modifier">
-          {{#select (lookup this.data "modifier") }}
-          {{#each ../changeGlobals.modifiers as |name type|}}
-          <option value="{{type}}">{{localize name}}</option>
-          {{/each}}
-          {{/select}}
-        </select>
-      </div>
-
-      <div class="item-priority flexrow">
-        <input class="change-priority" type="text" data-dtype="Number" name="system.changes.{{a}}.priority" value="{{lookup change.data "priority"}}"
-          placeholder="0" />
-      </div>
-
-      <div class="item-controls flexrow basic">
-        {{#if ../owner}}
-        <a class="item-control change-control delete-change"><i class="fas fa-trash"></i></a>
+        data-tooltip="PF1.Application.ChangeEditor.Operator.InvalidHint">
+        {{operator}}
         {{/if}}
+      </span>
+
+      <div class="details">
+        <div class="target">
+          <label>
+            {{#if isAdd}}
+            {{localize "PF1.Application.ChangeEditor.Operator.AddVerb"}}
+            {{else if isSet}}
+            {{localize "PF1.Application.ChangeEditor.Operator.SetVerb"}}
+            {{/if}}
+          </label>
+          <span class="value{{#unless isValid}} invalid{{/unless}}">
+            {{#if isValid}}
+            {{label}}
+            {{else}}
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            {{localize "PF1.Application.ChangeEditor.Invalid"}}{{#if subTarget}} ({{subTarget}}){{/if}}
+            {{/if}}
+          </span>
+        </div>
+
+        <div class="type">
+          <label>{{localize "PF1.Application.ChangeEditor.AsType"}}</label>
+          <span class="type value{{#unless isValidType}} invalid{{/unless}}">
+            {{#if isValidType}}
+            {{typeLabel}}
+            {{else}}
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            {{localize "PF1.Application.ChangeEditor.Invalid"}}{{#if modifier}} ({{modifier}}){{/if}}
+            {{/if}}
+          </span>
+        </div>
+
+        {{#if @root.changePriority}}
+        <div class="priority">
+          <label>{{localize "PF1.Priority"}}</label>
+          <span>{{numberFormat priority sign=true}}</span>
+        </div>
+        {{/if}}
+      </div>
+
+      <div class="value">
+        <input class="formula {{#if isDeferred}}check{{else}}deterministic{{/if}}"
+          type="text" value="{{formula}}" placeholder="0" readonly>
+      </div>
+
+      <div class="controls">
+        <a class="menu" data-change-id="{{id}}">
+          <i class="fa-solid fa-ellipsis-vertical fa-fw"></i>
+        </a>
       </div>
     </li>
   {{/each}}
   </ol>
+</ol>
 
+{{! Context Notes }}
+<ol class="item-groups-list contextnotes-list">
   <li class="item-list-header change-header flexrow">
     <div class="item-name">
       <h3>{{localize "PF1.ContextNotes"}}</h3>
     </div>
     <div class="item-target flexrow">{{localize "PF1.Target"}}</div>
-    {{#if owner}}
+    {{#if @root.owner}}
     <div class="item-controls basic flexrow">
       <a class="context-note-control add-note">
         <i class="fas fa-plus"></i>
+        {{localize "PF1.Add"}}
       </a>
     </div>
     {{/if}}
@@ -120,8 +143,8 @@
   <ol class="item-list context-notes">
     {{#each contextNotes as |note a|}}
     <li class="item context-note flexrow" data-note="{{a}}">
-      <div class="item-name">
-        <textarea class="context-note-text context-text" name="system.contextNotes.{{a}}.text" placeholder="{{localize "PF1.Notes"}}">{{{lookup this "text"}}}</textarea>
+      <div class="item-name flexrow">
+        <textarea class="context-note-text context-text" name="system.contextNotes.{{a}}.text" placeholder="{{localize "PF1.Notes"}}">{{{text}}}</textarea>
       </div>
 
       <div class="item-target flexrow">
@@ -129,7 +152,7 @@
       </div>
 
       <div class="item-controls flexrow basic">
-        {{#if ../owner}}
+        {{#if @root.owner}}
         <a class="context-note-control delete-note"><i class="fas fa-trash"></i></a>
         {{/if}}
       </div>

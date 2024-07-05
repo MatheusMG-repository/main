@@ -10,8 +10,8 @@
         <div class="form-group">
             <div class="form-fields boolean-flags">
                 <div class="data-selector">
-                    <a class="entry-selector" for="system.flags.boolean" data-flag="true" data-boolean="true" data-fields="{{localize "PF1.FlagsBoolean"}}" data-dtypes="String"><i class="fas fa-edit"></i></a>
-                    <label for="system.flags.boolean">{{localize "PF1.FlagsBoolean"}}</label>
+                    <a class="entry-selector" data-for="system.flags.boolean" data-flag="true" data-boolean="true" data-fields="PF1.Name" data-dtypes="String" data-title="PF1.FlagsBoolean"><i class="fas fa-edit"></i></a>
+                    <label>{{localize "PF1.FlagsBoolean"}}</label>
                 </div>
 
                 <div class="tag-list flexrow">
@@ -26,8 +26,8 @@
         <div class="form-group">
             <div class="form-fields dictionary-flags">
                 <div class="data-selector">
-                    <a class="entry-selector" for="system.flags.dictionary" data-flag="true" data-fields="{{localize "PF1.Name"}};{{localize "PF1.Value"}}" data-dtypes="String;String"><i class="fas fa-edit"></i></a>
-                    <label for="system.flags.dictionary">{{localize "PF1.FlagsDictionary"}}</label>
+                    <a class="entry-selector" data-for="system.flags.dictionary" data-flag="true" data-fields="PF1.Name;PF1.Value" data-dtypes="String;String" data-title="PF1.FlagsDictionary"><i class="fas fa-edit"></i></a>
+                    <label>{{localize "PF1.FlagsDictionary"}}</label>
                 </div>
             </div>
 
@@ -60,52 +60,56 @@
             {{localize "PF1.ScriptCalls.Name"}}
         </h3>
 
-        {{#each scriptCalls as |section k|}}
-        <ol class="item-list" {{#each section.dataset as |v k|}}data-{{k}}="{{v}}"{{/each}}>
+        {{#each scriptCalls}}
+        <ol class="item-list" {{#each dataset as |value|}}data-{{@key}}="{{value}}"{{/each}}>
             <li class="item-list-header flexrow">
                 <div class="item-name">
-                    {{#if section.info}}
-                    <i class="fas fa-info item-info" data-tooltip="{{section.info}}"></i>
+                    {{#if tooltip}}
+                    <i class="fas fa-info fa-fw item-info" data-tooltip="{{tooltip}}"></i>
                     {{/if}}
-                    <h3>{{localize section.name}}</h3>
+                    <h3>{{localize name}}</h3>
                 </div>
 
-                {{#if ../isGM}}
+                {{#if @root.isGM}}
                 <div class="item-detail item-hidden">
                     <i class="fas fa-eye-slash" data-tooltip="PF1.Hidden"></i>
                 </div>
                 {{/if}}
 
                 <div class="item-controls">
-                    {{#if ../owner}}
-                    <a class="item-control item-create" data-tooltip="PF1.ScriptCalls.Create">
-                        <i class="fas fa-plus"></i>
-                    </a>
-                    {{/if}}
+                  {{#if @root.owner}}
+                  <a class="item-control item-create" data-tooltip="PF1.ScriptCalls.Create">
+                      <i class="fas fa-plus"></i>
+                  </a>
+                  {{/if}}
                 </div>
             </li>
 
             <ol class="item-list">
-                {{#each section.items as |item i|}}
-                {{#unless hide}}
-                <li class="item flexrow" data-item-id="{{item._id}}">
+                {{#each items}}
+                <li class="item flexrow" data-item-id="{{id}}">
                     <div class="item-name">
-                        <div class="item-image no-hover" style='background-image: url("{{item.img}}")'></div>
-                        <h4>{{item.name}}</h4>
+                        <div class="item-image no-hover" style='background-image: url("{{img}}")'></div>
+                        <h4>{{name}}</h4>
                     </div>
 
-                    {{#if ../../isGM}}
+                    {{#if @root.isGM}}
                     <div class="item-detail item-hidden">
-                        <a class="item-control item-hide"><span>{{{item.hiddenIcon}}}</span></a>
+                        <a class="item-control item-hide">
+                        <span class='hidden-icon'>
+                          <i class="fas {{#if hidden}}fa-check is-visible{{else}}fa-times is-hidden{{/if}} fa-fw"></i>
+                        </span>
+                        </a>
                     </div>
                     {{/if}}
 
                     <div class="item-controls">
                         <a class="item-control item-edit" data-tooltip="PF1.EditItem"><i class="fas fa-edit"></i></a>
+                        {{#if @root.owner}}
                         <a class="item-control item-delete" data-tooltip="PF1.DeleteItem"><i class="fas fa-trash"></i></a>
+                        {{/if}}
                     </div>
                 </li>
-                {{/unless}}
                 {{/each}}
             </ol>
         </ol>

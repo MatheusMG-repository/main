@@ -8,7 +8,7 @@ import { createItem } from "../../sbcParser.js";
 export class EcologyParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value.name}" and "${value.entry}" ` + " as ecology")
+        sbcUtils.log(`Trying to parse "${value.name}" and "${value.entry}" ` + " as ecology")
 
         try {
 

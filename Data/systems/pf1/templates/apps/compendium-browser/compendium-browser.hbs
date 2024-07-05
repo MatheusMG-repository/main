@@ -1,7 +1,7 @@
-<div class="compendium-browser flexrow" data-type="{{type}}">
+<div class="flexrow" data-type="{{type}}">
   <aside class="sidebar flexcol">
     <div class="entry-filter search-form formgroup flexrow">
-      <input type="search" name="filter" value="{{query}}" placeholder="{{localize "PF1.SearchFilterPlaceholder"}}" autocomplete="off" />
+      <input type="search" name="filter" value="{{query}}" placeholder="{{localize "PF1.SearchFilterPlaceholder"}}" autocomplete="off">
       <i class="fas fa-search"></i>
     </div>
 
@@ -9,7 +9,7 @@
       {{#each filters as |filter|}}
         <div class="filter" data-filter-id="{{filter.id}}">
           <h3 class="rollable">{{filter.label}}
-            {{#if filter.active}}<i class="fas fa-filter"></i>×{{filter.activeCount}}{{/if}}
+            {{#if filter.active}}<span class="filter-count"><i class="fas fa-filter"></i>×{{filter.activeCount}}</span>{{/if}}
           </h3>
           <div class="filter-content flexcol {{filter.collapsed}}">
             {{> (lookup . "template") filter=filter}}
@@ -19,8 +19,8 @@
     </div>
 
     <div class="buttons flexrow">
-      <button class="refresh">{{localize "PF1.Refresh"}}</button>
-      <button class="reset">{{localize "PF1.Reset"}}</button>
+      <button class="reload refresh">{{localize "PF1.CompendiumBrowser.ReloadPacks"}}</button>
+      <button class="reset clear-filters">{{localize "PF1.CompendiumBrowser.ClearFilters"}}</button>
     </div>
   </aside>
 

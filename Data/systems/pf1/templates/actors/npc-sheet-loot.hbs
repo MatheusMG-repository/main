@@ -1,37 +1,38 @@
-<form class="{{cssClass}}" autocomplete="off">
+<form class="{{cssClass}}" data-tooltip-class="pf1" autocomplete="off">
+  <header class="sheet-header flexrow">
+    <img class="profile" src="{{actor.img}}" data-tooltip="{{actor.name}}" data-edit="img">
+
+    <div class="header-details flexcol">
+      <div class="header-top flexrow">
+        <h1 class="char-name">
+          <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize "PF1.CharacterName"}}">
+        </h1>
+      </div>
+
+      {{!-- Options --}}
+      <div class="flexcol">
+        <ul class="summary options">
+          {{!-- Sell Multiplier --}}
+          <li>
+            <label data-tooltip="PF1.HelpSellMultiplier">
+              {{localize "PF1.HelpSellMultiplierN"}}
+              <input class="value sell-rate blended" type="number" name="flags.pf1.sellMultiplier" value="{{sellMultiplier}}" placeholder="0.5" min="0" step="0.01" data-dtype="Number">
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
   <nav class="sheet-navigation tabs" data-group="primary">
     <a class="item" data-tab="inventory">{{ localize "PF1.Inventory" }}</a>
     <a class="item" data-tab="notes">{{ localize "PF1.Notes" }}</a>
   </nav>
-  
+
   <section class="primary-body">
 
     {{!-- Inventory Tab --}}
     <div class="tab inventory flexcol" data-group="primary" data-tab="inventory">
-      <header class="sheet-header flexrow">
-        <img class="profile" src="{{actor.img}}" data-tooltip="{{actor.name}}" data-edit="img"/>
-        
-        <div class="header-details flexcol">
-          <div class="header-top flexrow">
-            <h1 class="char-name">
-              <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize "PF1.CharacterName"}}"/>
-            </h1>
-          </div>
-
-          {{!-- Options --}}
-          <div class="flexcol">
-            <ul class="summary options">
-              {{!-- Sell Multiplier --}}
-              <li>
-                <input type="text" name="flags.pf1.sellMultiplier" value="{{sellMultiplier}}" placeholder="{{localize "PF1.HelpSellMultiplierN"}}" data-dtype="Number"
-                  data-tooltip="PF1.HelpSellMultiplier" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-
       {{> "systems/pf1/templates/actors/parts/actor-inventory.hbs" sections=inventory}}
     </div>
 
@@ -47,5 +48,5 @@
     </div>
 
   </section>
-  
+
 </form>

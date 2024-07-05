@@ -1,0 +1,26 @@
+<form autocomplete="off" data-tooltip-class="pf1">
+  <ul class="item-list">
+  {{#each items}}
+    <li class="item{{#if (eq @root.selected id)}} selected{{/if}}">
+      <label>
+        <input type="radio" name="selected" value="{{id}}" {{checked (eq @root.selected id)}}>
+        <img class="image" src="{{img}}" height="64" loading="lazy">
+        <div class="details">
+          <h3 class="item-name">{{name}}</h3>
+          {{#if system.quantity}}
+          <span>{{localize "PF1.Quantity"}}: {{system.quantity}}</span>
+          {{else if system.level}}
+          <span>{{localize "PF1.Level"}}: {{system.level}}</span>
+          {{/if}}
+        </div>
+      </label>
+    </li>
+  {{/each}}
+  </ul>
+
+  <hr>
+
+  <button type="button" class="commit-select">
+    {{localize "PF1.Select"}}
+  </button>
+</form>

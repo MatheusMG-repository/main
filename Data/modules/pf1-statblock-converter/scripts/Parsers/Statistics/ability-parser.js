@@ -1,7 +1,6 @@
 import { sbcUtils } from "../../sbcUtils.js";
 import { sbcData, sbcError } from "../../sbcData.js";
-import { sbcConfig } from "../../sbcConfig.js";
-import { sbcParser, parseInteger, parseSubtext, parseValueToDocPath, parseValueToPath } from "../../sbcParser.js";
+import { parseValueToDocPath } from "../../sbcParser.js";
 import { ParserBase } from "../base-parser.js";
 
 // Parse Ability Values and Mods
@@ -14,7 +13,7 @@ export class AbilityParser extends ParserBase {
     }
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " into " + this.targetValueFields)
+        sbcUtils.log(`Trying to parse "${value}" ` + " into " + this.targetValueFields)
         // Check if the given value is one of the supported ones
         if (typeof (value) === this.supportedTypes) {
             try {

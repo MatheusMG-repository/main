@@ -8,7 +8,7 @@ import { ParserBase } from "../base-parser.js";
 export class SensesParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as senses")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as senses")
 
         try {
             let systemSupportedSenses = Object.values(CONFIG["PF1"].senses).map(x => x.toLowerCase())
@@ -31,7 +31,9 @@ export class SensesParser extends ParserBase {
 
                     let range = -1
                     let rangeRegEx = new RegExp ("(?:" + searchSense + ")\\s(\\d+)", "")
-
+                    let errorMessage = ""
+                    let error = null
+                    
                     switch (searchSense) {
                         // Custom Senses
                         case "all-around vision":
@@ -88,8 +90,8 @@ export class SensesParser extends ParserBase {
                             break
 
                         default:
-                            let errorMessage = "No match found for " + value + ". This definitily should not have happened. Sorry!"
-                            let error = new sbcError(1, "Parse/Base", errorMessage, line)
+                            errorMessage = "No match found for " + value + ". This definitily should not have happened. Sorry!"
+                            error = new sbcError(1, "Parse/Base", errorMessage, line)
                             sbcData.errors.push(error)
                             break
                     }

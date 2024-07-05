@@ -7,7 +7,7 @@ import { ParserBase } from "../base-parser.js";
 export class ACParser extends ParserBase {
 
     async parse(value, line) {
-        sbcConfig.options.debug && sbcUtils.log(`Trying to parse "${value}" ` + " as Armor Class")
+        sbcUtils.log(`Trying to parse "${value}" ` + " as Armor Class")
 
         try {
 
@@ -32,10 +32,11 @@ export class ACParser extends ParserBase {
                 let foundAc = foundAcTypes[i].trim();
                 let foundAcType = foundAc.match(patternAcTypes)?.[0].toLowerCase();
                 let foundAcTypeValue = foundAc.match(/[+-]\d+/)?.[0] ?? 0;
+                console.log(`AC Type: ${foundAcType} Value: ${foundAcTypeValue}`);
 
                 switch (foundAcType) {
                     case "natural":
-                        sbcData.characterData.actorData.update({"system.attributes.naturalAC": foundAcTypeValue})
+                        await sbcData.characterData.actorData.update({"system.attributes.naturalAC": +foundAcTypeValue})
                         break
                     case "size":
                     case "dex":

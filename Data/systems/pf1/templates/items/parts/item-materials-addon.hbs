@@ -1,0 +1,17 @@
+<div class="form-group stacked">
+  <h4 class="form-header">
+    {{#if label}}
+      {{localize label}}
+    {{else}}
+      {{localize "PF1.Materials.Addon"}}
+    {{/if}}
+  </h4>
+  <div class="form-group stacked material-addons">
+    {{#each materialCategories.addons}}
+    <label class="checkbox">
+      <input type="checkbox" value="{{key}}" name="{{../reference}}.{{key}}" {{checked (lookup @root.materialAddons key)}}/>
+      {{localize name}}
+    </label>
+    {{/each}}
+  </div>
+</div>
