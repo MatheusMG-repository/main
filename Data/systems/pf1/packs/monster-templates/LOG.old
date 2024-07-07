@@ -1,8 +1,5 @@
-2024/07/02-18:17:29.845 4364 Recovering log #12
-2024/07/02-18:17:29.857 4364 Delete type=0 #12
-2024/07/02-18:17:29.858 4364 Delete type=3 #10
-2024/07/02-18:20:50.764 3070 Level-0 table #17: started
-2024/07/02-18:20:50.764 3070 Level-0 table #17: 0 bytes OK
-2024/07/02-18:20:50.774 3070 Delete type=0 #15
-2024/07/02-18:20:50.790 3070 Manual compaction at level-0 from '!items!055IbpMbY3yfbwPb' @ 72057594037927935 : 1 .. '!items!zfZ7M3PGgvWeolOz' @ 0 : 0; will stop at (end)
-2024/07/02-18:20:50.790 3070 Manual compaction at level-1 from '!items!055IbpMbY3yfbwPb' @ 72057594037927935 : 1 .. '!items!zfZ7M3PGgvWeolOz' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:00.205 12d0 Log #19: 0 ops saved to Table #20 OK
+2024/07/07-13:15:00.205 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\monster-templates/000019.log: OK
+2024/07/07-13:15:00.236 12d0 Table #5: 189 entries OK
+2024/07/07-13:15:00.237 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\monster-templates/MANIFEST-000018: OK
+2024/07/07-13:15:00.239 12d0 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\monster-templates; recovered 1 files; 485606 bytes. Some data may have been lost. ****

@@ -1,7 +1,5 @@
-2024/07/02-18:17:32.095 48ec Recovering log #93
-2024/07/02-18:17:32.107 48ec Delete type=0 #93
-2024/07/02-18:17:32.107 48ec Delete type=3 #91
-2024/07/02-18:20:51.214 3070 Level-0 table #98: started
-2024/07/02-18:20:51.214 3070 Level-0 table #98: 0 bytes OK
-2024/07/02-18:20:51.219 3070 Delete type=0 #96
-2024/07/02-18:20:51.219 3070 Manual compaction at level-0 from '!journal!4BQEAukAYrtX1qR2' @ 72057594037927935 : 1 .. '!journal.pages!qKlFxUUihXlZdgr6.BLcly0Tksc4zkg4H' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:03.206 694 Log #100: 0 ops saved to Table #101 OK
+2024/07/07-13:15:03.206 694 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-plunder-and-peril/000100.log: OK
+2024/07/07-13:15:03.207 694 Table #86: 36 entries OK
+2024/07/07-13:15:03.208 694 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-plunder-and-peril/MANIFEST-000099: OK
+2024/07/07-13:15:03.210 694 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-plunder-and-peril; recovered 1 files; 26568 bytes. Some data may have been lost. ****

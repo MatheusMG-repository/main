@@ -1,8 +1,5 @@
-2024/07/02-18:17:29.659 4364 Recovering log #12
-2024/07/02-18:17:29.671 4364 Delete type=0 #12
-2024/07/02-18:17:29.671 4364 Delete type=3 #10
-2024/07/02-18:20:50.696 3070 Level-0 table #17: started
-2024/07/02-18:20:50.696 3070 Level-0 table #17: 0 bytes OK
-2024/07/02-18:20:50.701 3070 Delete type=0 #15
-2024/07/02-18:20:50.701 3070 Manual compaction at level-0 from '!items!0KZvBoqEfb1AUZ64' @ 72057594037927935 : 1 .. '!items!ztV5oURW9cFsLdXT' @ 0 : 0; will stop at (end)
-2024/07/02-18:20:50.701 3070 Manual compaction at level-1 from '!items!0KZvBoqEfb1AUZ64' @ 72057594037927935 : 1 .. '!items!ztV5oURW9cFsLdXT' @ 0 : 0; will stop at (end)
+2024/07/07-13:14:59.973 12d0 Log #19: 0 ops saved to Table #20 OK
+2024/07/07-13:14:59.973 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\feats/000019.log: OK
+2024/07/07-13:14:59.979 12d0 Table #5: 265 entries OK
+2024/07/07-13:14:59.981 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\feats/MANIFEST-000018: OK
+2024/07/07-13:14:59.982 12d0 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\feats; recovered 1 files; 164682 bytes. Some data may have been lost. ****

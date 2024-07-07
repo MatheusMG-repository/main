@@ -1,7 +1,5 @@
-2024/07/02-18:17:31.964 48ec Recovering log #93
-2024/07/02-18:17:31.977 48ec Delete type=0 #93
-2024/07/02-18:17:31.977 48ec Delete type=3 #91
-2024/07/02-18:20:51.163 3070 Level-0 table #98: started
-2024/07/02-18:20:51.163 3070 Level-0 table #98: 0 bytes OK
-2024/07/02-18:20:51.172 3070 Delete type=0 #96
-2024/07/02-18:20:51.188 3070 Manual compaction at level-0 from '!journal!0LWCZ3sN69p71vdT' @ 72057594037927935 : 1 .. '!journal.pages!zZT0f0CsZMyZSAzs.U95gE4v61El5RccR' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:03.044 4b84 Log #100: 0 ops saved to Table #101 OK
+2024/07/07-13:15:03.044 4b84 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-mythic-monsters/000100.log: OK
+2024/07/07-13:15:03.045 4b84 Table #86: 171 entries OK
+2024/07/07-13:15:03.047 4b84 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-mythic-monsters/MANIFEST-000099: OK
+2024/07/07-13:15:03.048 4b84 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-mythic-monsters; recovered 1 files; 193133 bytes. Some data may have been lost. ****

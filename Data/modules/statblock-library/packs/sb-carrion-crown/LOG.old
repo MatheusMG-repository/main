@@ -1,7 +1,5 @@
-2024/07/02-18:17:32.309 4364 Recovering log #93
-2024/07/02-18:17:32.323 4364 Delete type=0 #93
-2024/07/02-18:17:32.323 4364 Delete type=3 #91
-2024/07/02-18:20:51.256 3070 Level-0 table #98: started
-2024/07/02-18:20:51.257 3070 Level-0 table #98: 0 bytes OK
-2024/07/02-18:20:51.262 3070 Delete type=0 #96
-2024/07/02-18:20:51.273 3070 Manual compaction at level-0 from '!journal!0IjGUyPwhouAF3s9' @ 72057594037927935 : 1 .. '!journal.pages!xlU7Iuac7PV6nMi4.z3KXFNO6bH26fVIT' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:03.356 12d0 Log #100: 0 ops saved to Table #101 OK
+2024/07/07-13:15:03.357 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-carrion-crown/000100.log: OK
+2024/07/07-13:15:03.358 12d0 Table #86: 377 entries OK
+2024/07/07-13:15:03.360 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-carrion-crown/MANIFEST-000099: OK
+2024/07/07-13:15:03.362 12d0 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-carrion-crown; recovered 1 files; 344921 bytes. Some data may have been lost. ****

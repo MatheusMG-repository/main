@@ -1,7 +1,6 @@
-2024/07/02-18:17:29.365 48ec Recovering log #282
-2024/07/02-18:17:29.377 48ec Delete type=0 #282
-2024/07/02-18:17:29.377 48ec Delete type=3 #280
-2024/07/02-18:20:50.609 3070 Level-0 table #288: started
-2024/07/02-18:20:50.609 3070 Level-0 table #288: 0 bytes OK
-2024/07/02-18:20:50.615 3070 Delete type=0 #286
-2024/07/02-18:20:50.628 3070 Manual compaction at level-0 from '!scenes!0TyrkbfKvPqd0Bda' @ 72057594037927935 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at (end)
+2024/07/07-13:14:59.690 4b84 Log #290: 589 ops saved to Table #291 OK
+2024/07/07-13:14:59.690 4b84 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes/000290.log: OK
+2024/07/07-13:14:59.694 4b84 Table #284: 4720 entries OK
+2024/07/07-13:14:59.695 4b84 Table #291: 589 entries OK
+2024/07/07-13:14:59.697 4b84 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes/MANIFEST-000289: OK
+2024/07/07-13:14:59.698 4b84 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes; recovered 2 files; 2017082 bytes. Some data may have been lost. ****

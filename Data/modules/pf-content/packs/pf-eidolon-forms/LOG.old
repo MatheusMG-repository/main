@@ -1,8 +1,5 @@
-2024/07/02-18:17:30.139 48ec Recovering log #12
-2024/07/02-18:17:30.151 48ec Delete type=0 #12
-2024/07/02-18:17:30.151 48ec Delete type=3 #10
-2024/07/02-18:20:50.873 3070 Level-0 table #17: started
-2024/07/02-18:20:50.873 3070 Level-0 table #17: 0 bytes OK
-2024/07/02-18:20:50.887 3070 Delete type=0 #15
-2024/07/02-18:20:50.903 3070 Manual compaction at level-0 from '!actors!1MtxTKRS4WoOq2YK' @ 72057594037927935 : 1 .. '!actors.items!sZ0DpKCo4mzz46r6.xsKjH2TH0AZJzmdp' @ 0 : 0; will stop at (end)
-2024/07/02-18:20:50.903 3070 Manual compaction at level-1 from '!actors!1MtxTKRS4WoOq2YK' @ 72057594037927935 : 1 .. '!actors.items!sZ0DpKCo4mzz46r6.xsKjH2TH0AZJzmdp' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:00.565 323c Log #19: 0 ops saved to Table #20 OK
+2024/07/07-13:15:00.566 323c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-eidolon-forms/000019.log: OK
+2024/07/07-13:15:00.567 323c Table #5: 223 entries OK
+2024/07/07-13:15:00.568 323c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-eidolon-forms/MANIFEST-000018: OK
+2024/07/07-13:15:00.571 323c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-eidolon-forms; recovered 1 files; 186404 bytes. Some data may have been lost. ****

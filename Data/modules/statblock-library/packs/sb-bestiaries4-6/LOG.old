@@ -1,7 +1,6 @@
-2024/07/02-18:17:31.794 48ec Recovering log #96
-2024/07/02-18:17:31.806 48ec Delete type=0 #96
-2024/07/02-18:17:31.806 48ec Delete type=3 #94
-2024/07/02-18:20:51.119 3070 Level-0 table #101: started
-2024/07/02-18:20:51.119 3070 Level-0 table #101: 0 bytes OK
-2024/07/02-18:20:51.124 3070 Delete type=0 #99
-2024/07/02-18:20:51.135 3070 Manual compaction at level-0 from '!journal!02b0BCNESqOYqqc8' @ 72057594037927935 : 1 .. '!journal.pages!ztomY6NDAcPZljXb.yBWLJ3ajCwEpIRyE' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:02.875 4b84 Log #103: 0 ops saved to Table #104 OK
+2024/07/07-13:15:02.876 4b84 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-bestiaries4-6/000103.log: OK
+2024/07/07-13:15:02.881 4b84 Table #88: 1924 entries OK
+2024/07/07-13:15:02.910 4b84 Table #89: 455 entries OK
+2024/07/07-13:15:02.911 4b84 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-bestiaries4-6/MANIFEST-000102: OK
+2024/07/07-13:15:02.913 4b84 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-bestiaries4-6; recovered 2 files; 2902108 bytes. Some data may have been lost. ****

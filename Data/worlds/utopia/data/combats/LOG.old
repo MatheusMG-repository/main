@@ -1,7 +1,6 @@
-2024/07/02-18:17:29.201 48ec Recovering log #219
-2024/07/02-18:17:29.213 48ec Delete type=0 #219
-2024/07/02-18:17:29.213 48ec Delete type=3 #217
-2024/07/02-18:20:50.539 3070 Level-0 table #224: started
-2024/07/02-18:20:50.539 3070 Level-0 table #224: 0 bytes OK
-2024/07/02-18:20:50.543 3070 Delete type=0 #222
-2024/07/02-18:20:50.555 3070 Manual compaction at level-0 from '!combats!3Srhe1KJJIhs2SVr' @ 72057594037927935 : 1 .. '!combats.combatants!jvtXbcPNleOYpR6L.pPVjC0YkW0aWG6FV' @ 0 : 0; will stop at (end)
+2024/07/07-13:14:59.488 323c Log #226: 108 ops saved to Table #227 OK
+2024/07/07-13:14:59.488 323c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats/000226.log: OK
+2024/07/07-13:14:59.489 323c Table #212: 50 entries OK
+2024/07/07-13:14:59.489 323c Table #227: 108 entries OK
+2024/07/07-13:14:59.490 323c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats/MANIFEST-000225: OK
+2024/07/07-13:14:59.492 323c **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats; recovered 2 files; 14453 bytes. Some data may have been lost. ****

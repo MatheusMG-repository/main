@@ -1,8 +1,8 @@
 {
-  "timestamp": 1719939873732,
+  "timestamp": 1720354495431,
   "os": {
     "platform": "win32",
-    "version": "10.0.19045",
+    "version": "10.0.22631",
     "node": "18.14.0",
     "electron": "24.8.5"
   },
@@ -19,6 +19,9 @@
     "fa-battlemaps": {
       "version": "1.0.62"
     },
+    "fragmaps-free": {
+      "version": "1.1.1"
+    },
     "gm-screen": {
       "version": "4.0.4"
     },
@@ -32,7 +35,7 @@
       "version": "3.1.9"
     },
     "monks-active-tiles": {
-      "version": "12.01"
+      "version": "11.27"
     },
     "multilevel-tokens": {
       "version": "1.7.1"
@@ -61,13 +64,13 @@
   },
   "systems": {
     "pf1": {
-      "version": "9.6",
-      "playtime": 91783
+      "version": "10.3",
+      "playtime": 92341
     }
   },
   "worlds": {},
   "playtime": {
-    "total": 91783,
-    "max": 91783
+    "total": 92341,
+    "max": 92341
   }
 }

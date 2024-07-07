@@ -1,8 +1,12 @@
-2024/07/02-18:17:31.129 30d0 Recovering log #149
-2024/07/02-18:17:31.142 30d0 Delete type=0 #149
-2024/07/02-18:17:31.142 30d0 Delete type=3 #147
-2024/07/02-18:20:51.094 3070 Level-0 table #154: started
-2024/07/02-18:20:51.094 3070 Level-0 table #154: 0 bytes OK
-2024/07/02-18:20:51.100 3070 Delete type=0 #152
-2024/07/02-18:20:51.109 3070 Manual compaction at level-0 from '!actors!04voMJCA7OI9U6bz' @ 72057594037927935 : 1 .. '!actors.items!zxqLFwmUlpOcrBt9.zd3rgzy032k68rdg' @ 0 : 0; will stop at (end)
-2024/07/02-18:20:51.109 3070 Manual compaction at level-1 from '!actors!04voMJCA7OI9U6bz' @ 72057594037927935 : 1 .. '!actors.items!zxqLFwmUlpOcrBt9.zd3rgzy032k68rdg' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:01.968 12d0 Log #156: 0 ops saved to Table #157 OK
+2024/07/07-13:15:01.968 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-08/000156.log: OK
+2024/07/07-13:15:01.973 12d0 Table #21: 732 entries OK
+2024/07/07-13:15:01.980 12d0 Table #136: 1683 entries OK
+2024/07/07-13:15:01.986 12d0 Table #137: 1685 entries OK
+2024/07/07-13:15:01.991 12d0 Table #138: 1762 entries OK
+2024/07/07-13:15:01.996 12d0 Table #139: 1675 entries OK
+2024/07/07-13:15:02.001 12d0 Table #140: 1845 entries OK
+2024/07/07-13:15:02.006 12d0 Table #141: 1838 entries OK
+2024/07/07-13:15:02.083 12d0 Table #142: 1592 entries OK
+2024/07/07-13:15:02.085 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-08/MANIFEST-000155: OK
+2024/07/07-13:15:02.086 12d0 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-08; recovered 8 files; 16857940 bytes. Some data may have been lost. ****

@@ -1,7 +1,9 @@
-2024/07/02-18:17:30.714 4364 Recovering log #127
-2024/07/02-18:17:30.725 4364 Delete type=0 #127
-2024/07/02-18:17:30.725 4364 Delete type=3 #125
-2024/07/02-18:20:51.073 3070 Level-0 table #132: started
-2024/07/02-18:20:51.074 3070 Level-0 table #132: 0 bytes OK
-2024/07/02-18:20:51.081 3070 Delete type=0 #130
-2024/07/02-18:20:51.090 3070 Manual compaction at level-0 from '!actors!02iKHCVZAu7ldZ79' @ 72057594037927935 : 1 .. '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:01.321 12d0 Log #134: 0 ops saved to Table #135 OK
+2024/07/07-13:15:01.322 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-00/000134.log: OK
+2024/07/07-13:15:01.328 12d0 Table #112: 1035 entries OK
+2024/07/07-13:15:01.331 12d0 Table #113: 2 entries OK
+2024/07/07-13:15:01.379 12d0 Table #118: 1893 entries OK
+2024/07/07-13:15:01.385 12d0 Table #119: 1893 entries OK
+2024/07/07-13:15:01.386 12d0 Table #120: 405 entries OK
+2024/07/07-13:15:01.388 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-00/MANIFEST-000133: OK
+2024/07/07-13:15:01.389 12d0 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-00; recovered 5 files; 6819247 bytes. Some data may have been lost. ****

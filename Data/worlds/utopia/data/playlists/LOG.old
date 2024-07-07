@@ -1,14 +1,6 @@
-2024/07/02-18:17:29.326 30d0 Recovering log #212
-2024/07/02-18:17:29.339 30d0 Delete type=0 #212
-2024/07/02-18:17:29.339 30d0 Delete type=3 #210
-2024/07/02-18:20:50.593 3070 Level-0 table #218: started
-2024/07/02-18:20:50.598 3070 Level-0 table #218: 11726 bytes OK
-2024/07/02-18:20:50.603 3070 Delete type=0 #216
-2024/07/02-18:20:50.615 3070 Manual compaction at level-0 from '!playlists!33oAyOXr3mlCUrMj' @ 72057594037927935 : 1 .. '!playlists.sounds!9cxdVW1ubxQXlMfU.yutzTyzdhw1lnvFm' @ 0 : 0; will stop at '!playlists.sounds!6ZXnOxzIXpOBMSnD.zOjHa5pLkItLjhfC' @ 45564 : 1
-2024/07/02-18:20:50.615 3070 Compacting 1@0 + 1@1 files
-2024/07/02-18:20:50.621 3070 Generated table #219@0: 350 keys, 37885 bytes
-2024/07/02-18:20:50.621 3070 Compacted 1@0 + 1@1 files => 37885 bytes
-2024/07/02-18:20:50.627 3070 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/07/02-18:20:50.627 3070 Delete type=2 #214
-2024/07/02-18:20:50.627 3070 Delete type=2 #218
-2024/07/02-18:20:50.646 3070 Manual compaction at level-0 from '!playlists.sounds!6ZXnOxzIXpOBMSnD.zOjHa5pLkItLjhfC' @ 45564 : 1 .. '!playlists.sounds!9cxdVW1ubxQXlMfU.yutzTyzdhw1lnvFm' @ 0 : 0; will stop at (end)
+2024/07/07-13:14:59.646 694 Log #221: 440 ops saved to Table #222 OK
+2024/07/07-13:14:59.647 694 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/playlists/000221.log: OK
+2024/07/07-13:14:59.648 694 Table #219: 350 entries OK
+2024/07/07-13:14:59.648 694 Table #222: 440 entries OK
+2024/07/07-13:14:59.649 694 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/playlists/MANIFEST-000220: OK
+2024/07/07-13:14:59.651 694 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/playlists; recovered 2 files; 63625 bytes. Some data may have been lost. ****

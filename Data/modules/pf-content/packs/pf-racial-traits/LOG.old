@@ -1,8 +1,5 @@
-2024/07/02-18:17:30.445 30d0 Recovering log #12
-2024/07/02-18:17:30.457 30d0 Delete type=0 #12
-2024/07/02-18:17:30.457 30d0 Delete type=3 #10
-2024/07/02-18:20:50.985 3070 Level-0 table #17: started
-2024/07/02-18:20:50.985 3070 Level-0 table #17: 0 bytes OK
-2024/07/02-18:20:50.990 3070 Delete type=0 #15
-2024/07/02-18:20:50.990 3070 Manual compaction at level-0 from '!items!03lDLNTSNRDEgNrh' @ 72057594037927935 : 1 .. '!items!zsHfAFzwio7xc52p' @ 0 : 0; will stop at (end)
-2024/07/02-18:20:50.990 3070 Manual compaction at level-1 from '!items!03lDLNTSNRDEgNrh' @ 72057594037927935 : 1 .. '!items!zsHfAFzwio7xc52p' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:00.963 694 Log #19: 0 ops saved to Table #20 OK
+2024/07/07-13:15:00.963 694 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-racial-traits/000019.log: OK
+2024/07/07-13:15:01.050 694 Table #5: 1215 entries OK
+2024/07/07-13:15:01.052 694 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-racial-traits/MANIFEST-000018: OK
+2024/07/07-13:15:01.054 694 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-racial-traits; recovered 1 files; 432625 bytes. Some data may have been lost. ****

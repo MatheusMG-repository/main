@@ -1,8 +1,5 @@
-2024/07/02-18:17:30.308 30d0 Recovering log #12
-2024/07/02-18:17:30.321 30d0 Delete type=0 #12
-2024/07/02-18:17:30.321 30d0 Delete type=3 #10
-2024/07/02-18:20:50.953 3070 Level-0 table #17: started
-2024/07/02-18:20:50.953 3070 Level-0 table #17: 0 bytes OK
-2024/07/02-18:20:50.959 3070 Delete type=0 #15
-2024/07/02-18:20:50.959 3070 Manual compaction at level-0 from '!folders!B8yeiGCU6nhcjOzu' @ 72057594037927935 : 1 .. '!journal.pages!zz7vrjfL7ZA5Ln1K.jQGUY1qlJt67pyU8' @ 0 : 0; will stop at (end)
-2024/07/02-18:20:50.959 3070 Manual compaction at level-1 from '!folders!B8yeiGCU6nhcjOzu' @ 72057594037927935 : 1 .. '!journal.pages!zz7vrjfL7ZA5Ln1K.jQGUY1qlJt67pyU8' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:00.800 694 Log #19: 0 ops saved to Table #20 OK
+2024/07/07-13:15:00.800 694 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\harrow-deck/000019.log: OK
+2024/07/07-13:15:00.802 694 Table #5: 133 entries OK
+2024/07/07-13:15:00.803 694 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\harrow-deck/MANIFEST-000018: OK
+2024/07/07-13:15:00.805 694 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\harrow-deck; recovered 1 files; 39776 bytes. Some data may have been lost. ****

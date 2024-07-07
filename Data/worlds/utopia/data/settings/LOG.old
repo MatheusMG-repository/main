@@ -1,14 +1,6 @@
-2024/07/02-18:17:29.406 4364 Recovering log #249
-2024/07/02-18:17:29.419 4364 Delete type=0 #249
-2024/07/02-18:17:29.419 4364 Delete type=3 #247
-2024/07/02-18:20:50.628 3070 Level-0 table #255: started
-2024/07/02-18:20:50.640 3070 Level-0 table #255: 2956 bytes OK
-2024/07/02-18:20:50.645 3070 Delete type=0 #253
-2024/07/02-18:20:50.660 3070 Manual compaction at level-0 from '!settings!1Kw2DbYvE9efHswc' @ 72057594037927935 : 1 .. '!settings!xPVPfow8JAu6aJb5' @ 0 : 0; will stop at '!settings!xPVPfow8JAu6aJb5' @ 272 : 1
-2024/07/02-18:20:50.660 3070 Compacting 1@0 + 1@1 files
-2024/07/02-18:20:50.664 3070 Generated table #256@0: 24 keys, 6163 bytes
-2024/07/02-18:20:50.664 3070 Compacted 1@0 + 1@1 files => 6163 bytes
-2024/07/02-18:20:50.668 3070 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/07/02-18:20:50.669 3070 Delete type=2 #251
-2024/07/02-18:20:50.669 3070 Delete type=2 #255
-2024/07/02-18:20:50.675 3070 Manual compaction at level-0 from '!settings!xPVPfow8JAu6aJb5' @ 272 : 1 .. '!settings!xPVPfow8JAu6aJb5' @ 0 : 0; will stop at (end)
+2024/07/07-13:14:59.738 694 Log #258: 5 ops saved to Table #259 OK
+2024/07/07-13:14:59.738 694 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/settings/000258.log: OK
+2024/07/07-13:14:59.739 694 Table #256: 24 entries OK
+2024/07/07-13:14:59.739 694 Table #259: 5 entries OK
+2024/07/07-13:14:59.740 694 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/settings/MANIFEST-000257: OK
+2024/07/07-13:14:59.742 694 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/settings; recovered 2 files; 9151 bytes. Some data may have been lost. ****

@@ -1,7 +1,7 @@
-2024/07/02-18:17:29.120 48ec Recovering log #517
-2024/07/02-18:17:29.132 48ec Delete type=0 #517
-2024/07/02-18:17:29.132 48ec Delete type=3 #515
-2024/07/02-18:20:50.534 3070 Level-0 table #522: started
-2024/07/02-18:20:50.534 3070 Level-0 table #522: 0 bytes OK
-2024/07/02-18:20:50.539 3070 Delete type=0 #520
-2024/07/02-18:20:50.555 3070 Manual compaction at level-0 from '!actors!09bLtHJV60j9KFdM' @ 72057594037927935 : 1 .. '!actors.items!zpQA4Fna3XTFUjyM.c99NjdqTRFRCte7t' @ 0 : 0; will stop at (end)
+2024/07/07-13:14:59.353 323c Log #525: 41 ops saved to Table #529 OK
+2024/07/07-13:14:59.353 323c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/actors/000525.log: OK
+2024/07/07-13:14:59.360 323c Table #527: 1414 entries OK
+2024/07/07-13:14:59.397 323c Table #528: 1301 entries OK
+2024/07/07-13:14:59.398 323c Table #529: 41 entries OK
+2024/07/07-13:14:59.400 323c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/actors/MANIFEST-000523: OK
+2024/07/07-13:14:59.401 323c **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/actors; recovered 3 files; 3933271 bytes. Some data may have been lost. ****

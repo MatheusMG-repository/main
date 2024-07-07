@@ -1,8 +1,5 @@
-2024/07/02-18:17:29.584 5bec Recovering log #12
-2024/07/02-18:17:29.599 5bec Delete type=0 #12
-2024/07/02-18:17:29.599 5bec Delete type=3 #10
-2024/07/02-18:20:50.685 3070 Level-0 table #17: started
-2024/07/02-18:20:50.685 3070 Level-0 table #17: 0 bytes OK
-2024/07/02-18:20:50.690 3070 Delete type=0 #15
-2024/07/02-18:20:50.701 3070 Manual compaction at level-0 from '!items!4ja8qHtoH10kLBMG' @ 72057594037927935 : 1 .. '!items!u7edWPktC4cruJQQ' @ 0 : 0; will stop at (end)
-2024/07/02-18:20:50.701 3070 Manual compaction at level-1 from '!items!4ja8qHtoH10kLBMG' @ 72057594037927935 : 1 .. '!items!u7edWPktC4cruJQQ' @ 0 : 0; will stop at (end)
+2024/07/07-13:14:59.825 323c Log #19: 0 ops saved to Table #20 OK
+2024/07/07-13:14:59.826 323c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\mythic-paths/000019.log: OK
+2024/07/07-13:14:59.827 323c Table #5: 6 entries OK
+2024/07/07-13:14:59.828 323c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\mythic-paths/MANIFEST-000018: OK
+2024/07/07-13:14:59.831 323c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\mythic-paths; recovered 1 files; 18031 bytes. Some data may have been lost. ****

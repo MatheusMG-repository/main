@@ -1,8 +1,5 @@
-2024/07/02-18:17:30.627 4364 Recovering log #12
-2024/07/02-18:17:30.639 4364 Delete type=0 #12
-2024/07/02-18:17:30.640 4364 Delete type=3 #10
-2024/07/02-18:20:51.037 3070 Level-0 table #17: started
-2024/07/02-18:20:51.037 3070 Level-0 table #17: 0 bytes OK
-2024/07/02-18:20:51.042 3070 Delete type=0 #15
-2024/07/02-18:20:51.042 3070 Manual compaction at level-0 from '!journal!0OsipKCp3TWhmvoD' @ 72057594037927935 : 1 .. '!journal!yCW3X969nm8xIUot' @ 0 : 0; will stop at (end)
-2024/07/02-18:20:51.042 3070 Manual compaction at level-1 from '!journal!0OsipKCp3TWhmvoD' @ 72057594037927935 : 1 .. '!journal!yCW3X969nm8xIUot' @ 0 : 0; will stop at (end)
+2024/07/07-13:15:01.247 694 Log #19: 0 ops saved to Table #20 OK
+2024/07/07-13:15:01.248 694 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\kingdom-building-gm/000019.log: OK
+2024/07/07-13:15:01.250 694 Table #5: 77 entries OK
+2024/07/07-13:15:01.252 694 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\kingdom-building-gm/MANIFEST-000018: OK
+2024/07/07-13:15:01.253 694 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\kingdom-building-gm; recovered 1 files; 97481 bytes. Some data may have been lost. ****

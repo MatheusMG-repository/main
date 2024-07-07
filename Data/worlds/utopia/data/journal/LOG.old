@@ -1,7 +1,6 @@
-2024/07/02-18:17:29.289 30d0 Recovering log #211
-2024/07/02-18:17:29.302 30d0 Delete type=0 #211
-2024/07/02-18:17:29.302 30d0 Delete type=3 #209
-2024/07/02-18:20:50.565 3070 Level-0 table #216: started
-2024/07/02-18:20:50.566 3070 Level-0 table #216: 0 bytes OK
-2024/07/02-18:20:50.571 3070 Delete type=0 #214
-2024/07/02-18:20:50.582 3070 Manual compaction at level-0 from '!journal!AKH9sf0R2O0A9G95' @ 72057594037927935 : 1 .. '!journal.pages!vLwrBm4ZR3G9iLb6.rIPdpk2nWlTpd03J' @ 0 : 0; will stop at (end)
+2024/07/07-13:14:59.599 12d0 Log #218: 18 ops saved to Table #219 OK
+2024/07/07-13:14:59.600 12d0 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/journal/000218.log: OK
+2024/07/07-13:14:59.601 12d0 Table #204: 28 entries OK
+2024/07/07-13:14:59.601 12d0 Table #219: 18 entries OK
+2024/07/07-13:14:59.602 12d0 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/journal/MANIFEST-000217: OK
+2024/07/07-13:14:59.604 12d0 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/journal; recovered 2 files; 28338 bytes. Some data may have been lost. ****
