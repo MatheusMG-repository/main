@@ -1,6 +1,1 @@
-2024/07/07-13:14:59.761 323c Log #214: 5 ops saved to Table #215 OK
-2024/07/07-13:14:59.762 323c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/users/000214.log: OK
-2024/07/07-13:14:59.763 323c Table #200: 9 entries OK
-2024/07/07-13:14:59.763 323c Table #215: 5 entries OK
-2024/07/07-13:14:59.764 323c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/users/MANIFEST-000213: OK
-2024/07/07-13:14:59.766 323c **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/users; recovered 2 files; 6789 bytes. Some data may have been lost. ****
+2024/07/09-18:22:02.541 57b4 Delete type=3 #1

@@ -1,6 +1,7 @@
-2024/07/07-13:14:59.488 323c Log #226: 108 ops saved to Table #227 OK
-2024/07/07-13:14:59.488 323c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats/000226.log: OK
-2024/07/07-13:14:59.489 323c Table #212: 50 entries OK
-2024/07/07-13:14:59.489 323c Table #227: 108 entries OK
-2024/07/07-13:14:59.490 323c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats/MANIFEST-000225: OK
-2024/07/07-13:14:59.492 323c **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats; recovered 2 files; 14453 bytes. Some data may have been lost. ****
+2024/07/09-18:22:02.088 57b4 Delete type=3 #1
+2024/07/09-19:54:54.427 25f8 Compacting 2@0 + 0@1 files
+2024/07/09-19:54:54.431 25f8 Generated table #233@0: 61 keys, 7071 bytes
+2024/07/09-19:54:54.431 25f8 Compacted 2@0 + 0@1 files => 7071 bytes
+2024/07/09-19:54:54.432 25f8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/07/09-19:54:54.432 25f8 Delete type=2 #212
+2024/07/09-19:54:54.432 25f8 Delete type=2 #227

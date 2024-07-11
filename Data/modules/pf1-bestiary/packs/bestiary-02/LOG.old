@@ -1,10 +1,6 @@
-2024/07/07-13:15:01.445 12d0 Log #140: 6 ops saved to Table #141 OK
-2024/07/07-13:15:01.445 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-02/000140.log: OK
-2024/07/07-13:15:01.450 12d0 Table #23: 1902 entries OK
-2024/07/07-13:15:01.456 12d0 Table #103: 857 entries OK
-2024/07/07-13:15:01.551 12d0 Table #124: 1944 entries OK
-2024/07/07-13:15:01.557 12d0 Table #125: 1907 entries OK
-2024/07/07-13:15:01.560 12d0 Table #126: 1038 entries OK
-2024/07/07-13:15:01.560 12d0 Table #141: 6 entries OK
-2024/07/07-13:15:01.561 12d0 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-02/MANIFEST-000139: OK
-2024/07/07-13:15:01.563 12d0 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-02; recovered 6 files; 9728050 bytes. Some data may have been lost. ****
+2024/07/09-18:22:05.542 57b4 Delete type=3 #1
+2024/07/09-18:22:05.542 25f8 Compacting 3@0 + 0@1 files
+2024/07/09-18:22:05.594 25f8 Generated table #148@0: 857 keys, 2123229 bytes
+2024/07/09-18:22:05.594 25f8 Compacted 3@0 + 0@1 files => 2123229 bytes
+2024/07/09-18:22:05.595 25f8 compacted to: files[ 4 1 0 0 0 0 0 ]
+2024/07/09-18:22:05.596 25f8 Moved #23 to level-1 2129833 bytes OK: files[ 3 2 0 0 0 0 0 ]

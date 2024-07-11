@@ -1,6 +1,25 @@
-2024/07/07-13:14:59.690 4b84 Log #290: 589 ops saved to Table #291 OK
-2024/07/07-13:14:59.690 4b84 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes/000290.log: OK
-2024/07/07-13:14:59.694 4b84 Table #284: 4720 entries OK
-2024/07/07-13:14:59.695 4b84 Table #291: 589 entries OK
-2024/07/07-13:14:59.697 4b84 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes/MANIFEST-000289: OK
-2024/07/07-13:14:59.698 4b84 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes; recovered 2 files; 2017082 bytes. Some data may have been lost. ****
+2024/07/09-18:22:02.435 57b4 Delete type=3 #1
+2024/07/09-18:22:13.146 25f8 Compacting 2@0 + 0@1 files
+2024/07/09-18:22:13.182 25f8 Generated table #298@0: 4972 keys, 1092068 bytes
+2024/07/09-18:22:13.182 25f8 Compacted 2@0 + 0@1 files => 1092068 bytes
+2024/07/09-18:22:13.183 25f8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/07/09-18:22:13.183 25f8 Delete type=2 #294
+2024/07/09-18:22:13.183 25f8 Delete type=2 #295
+2024/07/09-19:54:52.360 25f8 Level-0 table #300: started
+2024/07/09-19:54:52.390 25f8 Level-0 table #300: 3326678 bytes OK
+2024/07/09-19:54:52.392 25f8 Delete type=0 #297
+2024/07/09-19:54:54.449 25f8 Compacting 1@0 + 1@1 files
+2024/07/09-19:54:54.480 25f8 Generated table #301@0: 5067 keys, 1102961 bytes
+2024/07/09-19:54:54.480 25f8 Compacted 1@0 + 1@1 files => 1102961 bytes
+2024/07/09-19:54:54.481 25f8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/07/09-19:54:54.481 25f8 Delete type=2 #298
+2024/07/09-19:54:54.481 25f8 Delete type=2 #300
+2024/07/09-20:10:35.395 25f8 Level-0 table #303: started
+2024/07/09-20:10:35.433 25f8 Level-0 table #303: 3624015 bytes OK
+2024/07/09-20:10:35.436 25f8 Delete type=0 #299
+2024/07/09-21:59:25.217 25f8 Compacting 1@0 + 1@1 files
+2024/07/09-21:59:25.246 25f8 Generated table #304@0: 5087 keys, 1106178 bytes
+2024/07/09-21:59:25.246 25f8 Compacted 1@0 + 1@1 files => 1106178 bytes
+2024/07/09-21:59:25.247 25f8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/07/09-21:59:25.247 25f8 Delete type=2 #301
+2024/07/09-21:59:25.248 25f8 Delete type=2 #303

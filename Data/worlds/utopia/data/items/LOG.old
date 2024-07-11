@@ -1,8 +1,2 @@
-2024/07/07-13:14:59.574 4b84 Log #193: 0 ops saved to Table #194 OK
-2024/07/07-13:14:59.574 4b84 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/items/000193.log: OK
-2024/07/07-13:14:59.575 4b84 Table #66: 1 entries OK
-2024/07/07-13:14:59.575 4b84 Table #79: 1 entries OK
-2024/07/07-13:14:59.575 4b84 Table #84: 2 entries OK
-2024/07/07-13:14:59.578 4b84 Table #183: 1 entries OK
-2024/07/07-13:14:59.580 4b84 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/items/MANIFEST-000192: OK
-2024/07/07-13:14:59.581 4b84 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/items; recovered 4 files; 7131 bytes. Some data may have been lost. ****
+2024/07/09-18:22:02.243 57b4 Delete type=3 #1
+2024/07/09-18:22:02.245 25f8 Moved #183 to level-1 2360 bytes OK: files[ 3 1 0 0 0 0 0 ]

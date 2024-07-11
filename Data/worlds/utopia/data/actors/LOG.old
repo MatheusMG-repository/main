@@ -1,7 +1,42 @@
-2024/07/07-13:14:59.353 323c Log #525: 41 ops saved to Table #529 OK
-2024/07/07-13:14:59.353 323c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/actors/000525.log: OK
-2024/07/07-13:14:59.360 323c Table #527: 1414 entries OK
-2024/07/07-13:14:59.397 323c Table #528: 1301 entries OK
-2024/07/07-13:14:59.398 323c Table #529: 41 entries OK
-2024/07/07-13:14:59.400 323c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/actors/MANIFEST-000523: OK
-2024/07/07-13:14:59.401 323c **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/actors; recovered 3 files; 3933271 bytes. Some data may have been lost. ****
+2024/07/09-18:22:01.940 57b4 Delete type=3 #1
+2024/07/09-18:22:13.189 25f8 Compacting 3@0 + 0@1 files
+2024/07/09-18:22:13.235 25f8 Generated table #537@0: 1416 keys, 2122397 bytes
+2024/07/09-18:22:13.311 25f8 Generated table #538@0: 1296 keys, 1542709 bytes
+2024/07/09-18:22:13.311 25f8 Compacted 3@0 + 0@1 files => 3665106 bytes
+2024/07/09-18:22:13.316 25f8 compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/07/09-18:22:13.316 25f8 Delete type=2 #532
+2024/07/09-18:22:13.316 25f8 Delete type=2 #533
+2024/07/09-18:22:13.316 25f8 Delete type=2 #534
+2024/07/09-19:06:17.407 25f8 Level-0 table #540: started
+2024/07/09-19:06:17.433 25f8 Level-0 table #540: 1411751 bytes OK
+2024/07/09-19:06:17.434 25f8 Delete type=0 #536
+2024/07/09-19:33:21.806 25f8 Compacting 1@0 + 2@1 files
+2024/07/09-19:33:21.857 25f8 Generated table #541@0: 1402 keys, 2122848 bytes
+2024/07/09-19:33:21.972 25f8 Generated table #542@0: 1387 keys, 1649898 bytes
+2024/07/09-19:33:21.972 25f8 Compacted 1@0 + 2@1 files => 3772746 bytes
+2024/07/09-19:33:21.973 25f8 compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/07/09-19:33:21.973 25f8 Delete type=2 #537
+2024/07/09-19:33:21.974 25f8 Delete type=2 #538
+2024/07/09-19:33:21.974 25f8 Delete type=2 #540
+2024/07/09-20:06:40.959 25f8 Level-0 table #544: started
+2024/07/09-20:06:40.985 25f8 Level-0 table #544: 1523130 bytes OK
+2024/07/09-20:06:40.986 25f8 Delete type=0 #539
+2024/07/09-20:11:38.466 25f8 Compacting 1@0 + 2@1 files
+2024/07/09-20:11:38.518 25f8 Generated table #545@0: 1382 keys, 2122144 bytes
+2024/07/09-20:11:38.625 25f8 Generated table #546@0: 1487 keys, 1740767 bytes
+2024/07/09-20:11:38.625 25f8 Compacted 1@0 + 2@1 files => 3862911 bytes
+2024/07/09-20:11:38.627 25f8 compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/07/09-20:11:38.627 25f8 Delete type=2 #541
+2024/07/09-20:11:38.627 25f8 Delete type=2 #542
+2024/07/09-20:11:38.628 25f8 Delete type=2 #544
+2024/07/09-21:40:05.289 25f8 Level-0 table #548: started
+2024/07/09-21:40:05.336 25f8 Level-0 table #548: 1561295 bytes OK
+2024/07/09-21:40:05.337 25f8 Delete type=0 #543
+2024/07/09-21:40:25.127 25f8 Compacting 1@0 + 2@1 files
+2024/07/09-21:40:25.184 25f8 Generated table #549@0: 1375 keys, 2122545 bytes
+2024/07/09-21:40:25.301 25f8 Generated table #550@0: 1514 keys, 1776205 bytes
+2024/07/09-21:40:25.301 25f8 Compacted 1@0 + 2@1 files => 3898750 bytes
+2024/07/09-21:40:25.302 25f8 compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/07/09-21:40:25.302 25f8 Delete type=2 #545
+2024/07/09-21:40:25.302 25f8 Delete type=2 #546
+2024/07/09-21:40:25.303 25f8 Delete type=2 #548
