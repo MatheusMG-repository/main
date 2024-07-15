@@ -1,3 +1,6 @@
-2024/07/11-21:12:36.222 2ae4 Recovering log #148
-2024/07/11-21:12:36.227 2ae4 Delete type=0 #148
-2024/07/11-21:12:36.227 2ae4 Delete type=3 #147
+2024/07/15-18:11:58.181 2afc Recovering log #153
+2024/07/15-18:11:58.181 2afc Level-0 table #155: started
+2024/07/15-18:11:58.187 2afc Level-0 table #155: 4053 bytes OK
+2024/07/15-18:11:58.191 2afc Delete type=0 #153
+2024/07/15-18:11:58.191 2afc Delete type=3 #152
+2024/07/15-18:11:58.195 43cc Moved #130 to level-1 2129745 bytes OK: files[ 3 4 0 0 0 0 0 ]
