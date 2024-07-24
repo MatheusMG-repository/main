@@ -1,5 +1,5 @@
-2024/07/15-18:11:56.451 2afc Recovering log #271
-2024/07/15-18:11:56.451 2afc Level-0 table #273: started
-2024/07/15-18:11:56.457 2afc Level-0 table #273: 2956 bytes OK
-2024/07/15-18:11:56.460 2afc Delete type=0 #271
-2024/07/15-18:11:56.460 2afc Delete type=3 #270
+2024/07/23-17:15:52.276 2564 Recovering log #277
+2024/07/23-17:15:52.277 2564 Level-0 table #280: started
+2024/07/23-17:15:52.283 2564 Level-0 table #280: 2956 bytes OK
+2024/07/23-17:15:52.286 2564 Delete type=0 #277
+2024/07/23-17:15:52.286 2564 Delete type=3 #275
