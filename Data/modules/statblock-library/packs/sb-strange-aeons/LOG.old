@@ -1,3 +1,5 @@
-2024/07/21-13:17:53.707 3380 Recovering log #113
-2024/07/21-13:17:53.710 3380 Delete type=0 #113
-2024/07/21-13:17:53.711 3380 Delete type=3 #112
+2024/08/13-17:32:34.295 4468 Log #117: 0 ops saved to Table #118 OK
+2024/08/13-17:32:34.297 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons/000117.log: OK
+2024/08/13-17:32:34.302 4468 Table #86: 408 entries OK
+2024/08/13-17:32:34.311 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons/MANIFEST-000116: OK
+2024/08/13-17:32:34.324 4468 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons; recovered 1 files; 467232 bytes. Some data may have been lost. ****

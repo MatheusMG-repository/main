@@ -1,3 +1,5 @@
-2024/07/21-13:17:53.149 92b4 Recovering log #113
-2024/07/21-13:17:53.152 92b4 Delete type=0 #113
-2024/07/21-13:17:53.152 92b4 Delete type=3 #112
+2024/08/13-17:32:32.335 44fc Log #117: 0 ops saved to Table #118 OK
+2024/08/13-17:32:32.336 44fc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians/000117.log: OK
+2024/08/13-17:32:32.354 44fc Table #86: 2478 entries OK
+2024/08/13-17:32:32.360 44fc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians/MANIFEST-000116: OK
+2024/08/13-17:32:32.370 44fc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians; recovered 1 files; 1781272 bytes. Some data may have been lost. ****

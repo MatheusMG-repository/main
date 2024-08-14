@@ -1,3 +1,5 @@
-2024/07/21-13:17:51.466 7f14 Recovering log #32
-2024/07/21-13:17:51.470 7f14 Delete type=0 #32
-2024/07/21-13:17:51.470 7f14 Delete type=3 #31
+2024/08/13-17:32:28.138 2efc Log #36: 0 ops saved to Table #37 OK
+2024/08/13-17:32:28.139 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-traits/000036.log: OK
+2024/08/13-17:32:28.153 2efc Table #5: 1998 entries OK
+2024/08/13-17:32:28.162 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-traits/MANIFEST-000035: OK
+2024/08/13-17:32:28.171 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-traits; recovered 1 files; 1303427 bytes. Some data may have been lost. ****

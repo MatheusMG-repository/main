@@ -1,3 +1,5 @@
-2024/07/21-13:17:50.484 7f14 Recovering log #32
-2024/07/21-13:17:50.487 7f14 Delete type=0 #32
-2024/07/21-13:17:50.487 7f14 Delete type=3 #31
+2024/08/13-17:32:25.391 3614 Log #36: 0 ops saved to Table #37 OK
+2024/08/13-17:32:25.392 3614 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd/000036.log: OK
+2024/08/13-17:32:25.394 3614 Table #5: 13 entries OK
+2024/08/13-17:32:25.403 3614 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd/MANIFEST-000035: OK
+2024/08/13-17:32:25.412 3614 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd; recovered 1 files; 13911 bytes. Some data may have been lost. ****

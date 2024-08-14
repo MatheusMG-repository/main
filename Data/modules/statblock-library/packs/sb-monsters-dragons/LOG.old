@@ -1,3 +1,5 @@
-2024/07/21-13:17:53.120 7f14 Recovering log #113
-2024/07/21-13:17:53.124 7f14 Delete type=0 #113
-2024/07/21-13:17:53.124 7f14 Delete type=3 #112
+2024/08/13-17:32:32.223 44fc Log #117: 0 ops saved to Table #118 OK
+2024/08/13-17:32:32.224 44fc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons/000117.log: OK
+2024/08/13-17:32:32.232 44fc Table #86: 1392 entries OK
+2024/08/13-17:32:32.241 44fc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons/MANIFEST-000116: OK
+2024/08/13-17:32:32.254 44fc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons; recovered 1 files; 1207648 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2024/07/21-13:17:53.492 3380 Recovering log #113
-2024/07/21-13:17:53.495 3380 Delete type=0 #113
-2024/07/21-13:17:53.495 3380 Delete type=3 #112
+2024/08/13-17:32:33.402 4468 Log #117: 0 ops saved to Table #118 OK
+2024/08/13-17:32:33.405 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-rebels/000117.log: OK
+2024/08/13-17:32:33.410 4468 Table #86: 408 entries OK
+2024/08/13-17:32:33.419 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-rebels/MANIFEST-000116: OK
+2024/08/13-17:32:33.433 4468 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-rebels; recovered 1 files; 454718 bytes. Some data may have been lost. ****

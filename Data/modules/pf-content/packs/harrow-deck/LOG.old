@@ -1,3 +1,5 @@
-2024/07/21-13:17:51.168 a194 Recovering log #32
-2024/07/21-13:17:51.172 a194 Delete type=0 #32
-2024/07/21-13:17:51.172 a194 Delete type=3 #31
+2024/08/13-17:32:27.322 2efc Log #36: 0 ops saved to Table #37 OK
+2024/08/13-17:32:27.323 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\harrow-deck/000036.log: OK
+2024/08/13-17:32:27.325 2efc Table #5: 133 entries OK
+2024/08/13-17:32:27.334 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\harrow-deck/MANIFEST-000035: OK
+2024/08/13-17:32:27.344 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\harrow-deck; recovered 1 files; 39776 bytes. Some data may have been lost. ****

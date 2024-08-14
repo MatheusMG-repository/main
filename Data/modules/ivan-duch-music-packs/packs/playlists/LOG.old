@@ -1,3 +1,5 @@
-2024/07/21-13:17:50.703 7f14 Recovering log #127
-2024/07/21-13:17:50.713 7f14 Delete type=0 #127
-2024/07/21-13:17:50.713 7f14 Delete type=3 #126
+2024/08/13-17:32:26.009 3614 Log #131: 0 ops saved to Table #132 OK
+2024/08/13-17:32:26.011 3614 Archiving C:\Users\mathe\utopia\main\Data\modules\ivan-duch-music-packs\packs\playlists/000131.log: OK
+2024/08/13-17:32:26.013 3614 Table #100: 449 entries OK
+2024/08/13-17:32:26.021 3614 Archiving C:\Users\mathe\utopia\main\Data\modules\ivan-duch-music-packs\packs\playlists/MANIFEST-000130: OK
+2024/08/13-17:32:26.030 3614 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\ivan-duch-music-packs\packs\playlists; recovered 1 files; 59808 bytes. Some data may have been lost. ****

@@ -1,3 +1,7 @@
-2024/07/21-13:17:50.085 92b4 Recovering log #236
-2024/07/21-13:17:50.089 92b4 Delete type=0 #236
-2024/07/21-13:17:50.089 92b4 Delete type=3 #235
+2024/08/13-17:32:24.228 4468 Log #240: 354 ops saved to Table #241 OK
+2024/08/13-17:32:24.229 4468 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/000240.log: OK
+2024/08/13-17:32:24.230 4468 Table #225: 350 entries OK
+2024/08/13-17:32:24.232 4468 Table #230: 1897 entries OK
+2024/08/13-17:32:24.232 4468 Table #241: 354 entries OK
+2024/08/13-17:32:24.241 4468 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/MANIFEST-000239: OK
+2024/08/13-17:32:24.251 4468 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists; recovered 3 files; 174169 bytes. Some data may have been lost. ****

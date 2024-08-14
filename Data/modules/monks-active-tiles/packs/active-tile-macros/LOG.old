@@ -1,3 +1,5 @@
-2024/07/21-13:17:50.724 7f14 Recovering log #74
-2024/07/21-13:17:50.727 7f14 Delete type=0 #74
-2024/07/21-13:17:50.727 7f14 Delete type=3 #73
+2024/08/13-17:32:26.060 44fc Log #78: 0 ops saved to Table #79 OK
+2024/08/13-17:32:26.061 44fc Archiving C:\Users\mathe\utopia\main\Data\modules\monks-active-tiles\packs\active-tile-macros/000078.log: OK
+2024/08/13-17:32:26.062 44fc Table #53: 10 entries OK
+2024/08/13-17:32:26.072 44fc Archiving C:\Users\mathe\utopia\main\Data\modules\monks-active-tiles\packs\active-tile-macros/MANIFEST-000077: OK
+2024/08/13-17:32:26.081 44fc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\monks-active-tiles\packs\active-tile-macros; recovered 1 files; 6841 bytes. Some data may have been lost. ****

@@ -1,3 +1,6 @@
-2024/07/21-13:17:53.331 7f14 Recovering log #116
-2024/07/21-13:17:53.336 7f14 Delete type=0 #116
-2024/07/21-13:17:53.336 7f14 Delete type=3 #115
+2024/08/13-17:32:32.885 2efc Log #120: 0 ops saved to Table #121 OK
+2024/08/13-17:32:32.886 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors/000120.log: OK
+2024/08/13-17:32:32.905 2efc Table #88: 2030 entries OK
+2024/08/13-17:32:32.971 2efc Table #89: 713 entries OK
+2024/08/13-17:32:32.981 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors/MANIFEST-000119: OK
+2024/08/13-17:32:32.993 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors; recovered 2 files; 3268250 bytes. Some data may have been lost. ****

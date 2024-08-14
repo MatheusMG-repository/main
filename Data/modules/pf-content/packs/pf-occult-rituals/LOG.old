@@ -1,3 +1,5 @@
-2024/07/21-13:17:51.296 3380 Recovering log #32
-2024/07/21-13:17:51.299 3380 Delete type=0 #32
-2024/07/21-13:17:51.299 3380 Delete type=3 #31
+2024/08/13-17:32:27.714 3614 Log #36: 0 ops saved to Table #37 OK
+2024/08/13-17:32:27.715 3614 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-occult-rituals/000036.log: OK
+2024/08/13-17:32:27.734 3614 Table #5: 77 entries OK
+2024/08/13-17:32:27.743 3614 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-occult-rituals/MANIFEST-000035: OK
+2024/08/13-17:32:27.752 3614 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-occult-rituals; recovered 1 files; 137547 bytes. Some data may have been lost. ****

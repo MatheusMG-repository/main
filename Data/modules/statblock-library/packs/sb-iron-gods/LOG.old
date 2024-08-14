@@ -1,3 +1,5 @@
-2024/07/21-13:17:53.518 a194 Recovering log #113
-2024/07/21-13:17:53.521 a194 Delete type=0 #113
-2024/07/21-13:17:53.521 a194 Delete type=3 #112
+2024/08/13-17:32:33.519 4468 Log #117: 0 ops saved to Table #118 OK
+2024/08/13-17:32:33.520 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-iron-gods/000117.log: OK
+2024/08/13-17:32:33.526 4468 Table #86: 385 entries OK
+2024/08/13-17:32:33.536 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-iron-gods/MANIFEST-000116: OK
+2024/08/13-17:32:33.550 4468 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-iron-gods; recovered 1 files; 430838 bytes. Some data may have been lost. ****

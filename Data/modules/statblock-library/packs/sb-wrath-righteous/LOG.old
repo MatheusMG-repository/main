@@ -1,3 +1,5 @@
-2024/07/21-13:17:53.760 7f14 Recovering log #113
-2024/07/21-13:17:53.764 7f14 Delete type=0 #113
-2024/07/21-13:17:53.764 7f14 Delete type=3 #112
+2024/08/13-17:32:34.519 4468 Log #117: 0 ops saved to Table #118 OK
+2024/08/13-17:32:34.520 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-wrath-righteous/000117.log: OK
+2024/08/13-17:32:34.527 4468 Table #86: 339 entries OK
+2024/08/13-17:32:34.536 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-wrath-righteous/MANIFEST-000116: OK
+2024/08/13-17:32:34.550 4468 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-wrath-righteous; recovered 1 files; 439215 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2024/07/21-13:17:50.877 3380 Recovering log #32
-2024/07/21-13:17:50.881 3380 Delete type=0 #32
-2024/07/21-13:17:50.881 3380 Delete type=3 #31
+2024/08/13-17:32:26.560 4468 Log #36: 0 ops saved to Table #37 OK
+2024/08/13-17:32:26.561 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-cursed-items/000036.log: OK
+2024/08/13-17:32:26.569 4468 Table #5: 77 entries OK
+2024/08/13-17:32:26.577 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-cursed-items/MANIFEST-000035: OK
+2024/08/13-17:32:26.586 4468 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-cursed-items; recovered 1 files; 47503 bytes. Some data may have been lost. ****

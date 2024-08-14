@@ -1,3 +1,5 @@
-2024/07/21-13:17:50.472 92b4 Recovering log #32
-2024/07/21-13:17:50.475 92b4 Delete type=0 #32
-2024/07/21-13:17:50.475 92b4 Delete type=3 #31
+2024/08/13-17:32:25.345 2efc Log #36: 0 ops saved to Table #37 OK
+2024/08/13-17:32:25.346 2efc Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-abilities/000036.log: OK
+2024/08/13-17:32:25.348 2efc Table #5: 12 entries OK
+2024/08/13-17:32:25.357 2efc Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-abilities/MANIFEST-000035: OK
+2024/08/13-17:32:25.366 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-abilities; recovered 1 files; 4601 bytes. Some data may have been lost. ****

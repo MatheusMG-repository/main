@@ -1,5 +1,6 @@
-2024/07/21-13:17:50.117 92b4 Recovering log #317
-2024/07/21-13:17:50.117 92b4 Level-0 table #320: started
-2024/07/21-13:17:50.123 92b4 Level-0 table #320: 245 bytes OK
-2024/07/21-13:17:50.127 92b4 Delete type=0 #317
-2024/07/21-13:17:50.127 92b4 Delete type=3 #315
+2024/08/13-17:32:24.364 2efc Log #335: 900 ops saved to Table #338 OK
+2024/08/13-17:32:24.365 2efc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/000335.log: OK
+2024/08/13-17:32:24.371 2efc Table #337: 5441 entries OK
+2024/08/13-17:32:24.373 2efc Table #338: 900 entries OK
+2024/08/13-17:32:24.382 2efc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/MANIFEST-000322: OK
+2024/08/13-17:32:24.393 2efc **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes; recovered 2 files; 1461577 bytes. Some data may have been lost. ****

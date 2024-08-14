@@ -1,3 +1,5 @@
-2024/07/21-13:17:53.531 92b4 Recovering log #113
-2024/07/21-13:17:53.535 92b4 Delete type=0 #113
-2024/07/21-13:17:53.535 92b4 Delete type=3 #112
+2024/08/13-17:32:33.579 2efc Log #117: 0 ops saved to Table #118 OK
+2024/08/13-17:32:33.580 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion/000117.log: OK
+2024/08/13-17:32:33.586 2efc Table #86: 481 entries OK
+2024/08/13-17:32:33.595 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion/MANIFEST-000116: OK
+2024/08/13-17:32:33.607 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion; recovered 1 files; 508492 bytes. Some data may have been lost. ****

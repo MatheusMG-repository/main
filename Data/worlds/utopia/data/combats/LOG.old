@@ -1,13 +1,6 @@
-2024/07/21-13:17:49.942 7f14 Recovering log #242
-2024/07/21-13:17:49.942 7f14 Level-0 table #244: started
-2024/07/21-13:17:49.947 7f14 Level-0 table #244: 254 bytes OK
-2024/07/21-13:17:49.951 7f14 Delete type=0 #242
-2024/07/21-13:17:49.951 7f14 Delete type=3 #240
-2024/07/21-13:17:49.951 994c Compacting 4@0 + 0@1 files
-2024/07/21-13:17:49.958 994c Generated table #246@0: 50 keys, 5607 bytes
-2024/07/21-13:17:49.958 994c Compacted 4@0 + 0@1 files => 5607 bytes
-2024/07/21-13:17:49.959 994c compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/07/21-13:17:49.959 994c Delete type=2 #233
-2024/07/21-13:17:49.959 994c Delete type=2 #235
-2024/07/21-13:17:49.959 994c Delete type=2 #241
-2024/07/21-13:17:49.959 994c Delete type=2 #244
+2024/08/13-17:32:23.698 44fc Log #248: 141 ops saved to Table #249 OK
+2024/08/13-17:32:23.699 44fc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/000248.log: OK
+2024/08/13-17:32:23.700 44fc Table #246: 50 entries OK
+2024/08/13-17:32:23.700 44fc Table #249: 141 entries OK
+2024/08/13-17:32:23.709 44fc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/MANIFEST-000247: OK
+2024/08/13-17:32:23.720 44fc **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats; recovered 2 files; 14994 bytes. Some data may have been lost. ****

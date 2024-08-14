@@ -1,3 +1,5 @@
-2024/07/21-13:17:53.422 7f14 Recovering log #113
-2024/07/21-13:17:53.426 7f14 Delete type=0 #113
-2024/07/21-13:17:53.426 7f14 Delete type=3 #112
+2024/08/13-17:32:33.114 44fc Log #117: 0 ops saved to Table #118 OK
+2024/08/13-17:32:33.115 44fc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-we-be-goblins/000117.log: OK
+2024/08/13-17:32:33.117 44fc Table #86: 99 entries OK
+2024/08/13-17:32:33.126 44fc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-we-be-goblins/MANIFEST-000116: OK
+2024/08/13-17:32:33.137 44fc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-we-be-goblins; recovered 1 files; 65127 bytes. Some data may have been lost. ****

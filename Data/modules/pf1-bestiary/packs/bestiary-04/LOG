@@ -1,3 +1,7 @@
-2024/07/23-17:15:54.095 5960 Recovering log #158
-2024/07/23-17:15:54.099 5960 Delete type=0 #158
-2024/07/23-17:15:54.099 5960 Delete type=3 #157
+2024/08/13-17:32:29.526 2efc Delete type=3 #1
+2024/08/13-17:32:29.526 4f00 Compacting 2@0 + 0@1 files
+2024/08/13-17:32:29.580 4f00 Generated table #164@0: 868 keys, 2120639 bytes
+2024/08/13-17:32:29.580 4f00 Compacted 2@0 + 0@1 files => 2120639 bytes
+2024/08/13-17:32:29.583 4f00 compacted to: files[ 5 1 0 0 0 0 0 ]
+2024/08/13-17:32:29.588 4f00 Moved #128 to level-1 2130353 bytes OK: files[ 4 2 0 0 0 0 0 ]
+2024/08/13-17:32:29.590 4f00 Moved #129 to level-1 2131549 bytes OK: files[ 3 3 0 0 0 0 0 ]

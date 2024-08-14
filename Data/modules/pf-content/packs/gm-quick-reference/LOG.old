@@ -1,3 +1,5 @@
-2024/07/21-13:17:51.140 a194 Recovering log #32
-2024/07/21-13:17:51.144 a194 Delete type=0 #32
-2024/07/21-13:17:51.144 a194 Delete type=3 #31
+2024/08/13-17:32:27.217 4468 Log #36: 0 ops saved to Table #37 OK
+2024/08/13-17:32:27.218 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference/000036.log: OK
+2024/08/13-17:32:27.220 4468 Table #5: 50 entries OK
+2024/08/13-17:32:27.229 4468 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference/MANIFEST-000035: OK
+2024/08/13-17:32:27.239 4468 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference; recovered 1 files; 52579 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2024/07/21-13:17:53.693 a194 Recovering log #113
-2024/07/21-13:17:53.697 a194 Delete type=0 #113
-2024/07/21-13:17:53.697 a194 Delete type=3 #112
+2024/08/13-17:32:34.239 3614 Log #117: 0 ops saved to Table #118 OK
+2024/08/13-17:32:34.240 3614 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ruins-of-azlant/000117.log: OK
+2024/08/13-17:32:34.245 3614 Table #86: 408 entries OK
+2024/08/13-17:32:34.254 3614 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ruins-of-azlant/MANIFEST-000116: OK
+2024/08/13-17:32:34.265 3614 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ruins-of-azlant; recovered 1 files; 425108 bytes. Some data may have been lost. ****

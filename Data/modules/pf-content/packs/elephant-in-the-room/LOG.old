@@ -1,3 +1,5 @@
-2024/07/21-13:17:50.987 a194 Recovering log #32
-2024/07/21-13:17:50.990 a194 Delete type=0 #32
-2024/07/21-13:17:50.990 a194 Delete type=3 #31
+2024/08/13-17:32:26.883 2efc Log #36: 0 ops saved to Table #37 OK
+2024/08/13-17:32:26.884 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\elephant-in-the-room/000036.log: OK
+2024/08/13-17:32:26.891 2efc Table #5: 36 entries OK
+2024/08/13-17:32:26.900 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\elephant-in-the-room/MANIFEST-000035: OK
+2024/08/13-17:32:26.909 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\elephant-in-the-room; recovered 1 files; 21384 bytes. Some data may have been lost. ****

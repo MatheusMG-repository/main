@@ -1,13 +1,7 @@
-2024/07/21-13:17:49.852 92b4 Recovering log #564
-2024/07/21-13:17:49.856 92b4 Level-0 table #566: started
-2024/07/21-13:17:49.862 92b4 Level-0 table #566: 616632 bytes OK
-2024/07/21-13:17:49.866 92b4 Delete type=0 #564
-2024/07/21-13:17:49.866 92b4 Delete type=3 #563
-2024/07/21-13:17:57.237 994c Compacting 1@0 + 2@1 files
-2024/07/21-13:17:57.263 994c Generated table #568@0: 1371 keys, 2123693 bytes
-2024/07/21-13:17:57.360 994c Generated table #569@0: 1652 keys, 1925166 bytes
-2024/07/21-13:17:57.360 994c Compacted 1@0 + 2@1 files => 4048859 bytes
-2024/07/21-13:17:57.361 994c compacted to: files[ 0 2 0 0 0 0 0 ]
-2024/07/21-13:17:57.361 994c Delete type=2 #561
-2024/07/21-13:17:57.361 994c Delete type=2 #562
-2024/07/21-13:17:57.361 994c Delete type=2 #566
+2024/08/13-17:32:23.314 2efc Log #591: 188 ops saved to Table #595 OK
+2024/08/13-17:32:23.315 2efc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/000591.log: OK
+2024/08/13-17:32:23.324 2efc Table #593: 1348 entries OK
+2024/08/13-17:32:23.441 2efc Table #594: 1780 entries OK
+2024/08/13-17:32:23.446 2efc Table #595: 188 entries OK
+2024/08/13-17:32:23.457 2efc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/MANIFEST-000570: OK
+2024/08/13-17:32:23.466 2efc **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors; recovered 3 files; 5844650 bytes. Some data may have been lost. ****

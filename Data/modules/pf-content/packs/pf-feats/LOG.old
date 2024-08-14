@@ -1,3 +1,5 @@
-2024/07/21-13:17:51.063 3380 Recovering log #32
-2024/07/21-13:17:51.066 3380 Delete type=0 #32
-2024/07/21-13:17:51.066 3380 Delete type=3 #31
+2024/08/13-17:32:27.062 3614 Log #36: 0 ops saved to Table #37 OK
+2024/08/13-17:32:27.064 3614 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-feats/000036.log: OK
+2024/08/13-17:32:27.154 3614 Table #5: 3303 entries OK
+2024/08/13-17:32:27.163 3614 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-feats/MANIFEST-000035: OK
+2024/08/13-17:32:27.173 3614 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-feats; recovered 1 files; 1834178 bytes. Some data may have been lost. ****

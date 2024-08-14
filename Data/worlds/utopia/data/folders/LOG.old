@@ -1,3 +1,6 @@
-2024/07/21-13:17:50.001 92b4 Recovering log #224
-2024/07/21-13:17:50.004 92b4 Delete type=0 #224
-2024/07/21-13:17:50.005 92b4 Delete type=3 #223
+2024/08/13-17:32:23.911 4468 Log #228: 0 ops saved to Table #229 OK
+2024/08/13-17:32:23.912 4468 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders/000228.log: OK
+2024/08/13-17:32:23.918 4468 Table #205: 32 entries OK
+2024/08/13-17:32:23.922 4468 Table #212: 3 entries OK
+2024/08/13-17:32:23.932 4468 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders/MANIFEST-000227: OK
+2024/08/13-17:32:23.944 4468 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders; recovered 2 files; 4149 bytes. Some data may have been lost. ****
