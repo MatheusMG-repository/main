@@ -1,5 +1,3 @@
-2024/08/13-17:32:32.651 2efc Log #117: 0 ops saved to Table #118 OK
-2024/08/13-17:32:32.652 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street/000117.log: OK
-2024/08/13-17:32:32.654 2efc Table #86: 51 entries OK
-2024/08/13-17:32:32.663 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street/MANIFEST-000116: OK
-2024/08/13-17:32:32.674 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street; recovered 1 files; 41425 bytes. Some data may have been lost. ****
+2024/08/20-20:02:48.748 57d4 Recovering log #129
+2024/08/20-20:02:48.752 57d4 Delete type=0 #129
+2024/08/20-20:02:48.752 57d4 Delete type=3 #128

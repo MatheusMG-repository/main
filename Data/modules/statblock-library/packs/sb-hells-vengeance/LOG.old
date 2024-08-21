@@ -1,5 +1,3 @@
-2024/08/13-17:32:33.462 2efc Log #117: 0 ops saved to Table #118 OK
-2024/08/13-17:32:33.463 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance/000117.log: OK
-2024/08/13-17:32:33.469 2efc Table #86: 431 entries OK
-2024/08/13-17:32:33.478 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance/MANIFEST-000116: OK
-2024/08/13-17:32:33.489 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance; recovered 1 files; 489110 bytes. Some data may have been lost. ****
+2024/08/20-20:02:48.912 718c Recovering log #129
+2024/08/20-20:02:48.916 718c Delete type=0 #129
+2024/08/20-20:02:48.917 718c Delete type=3 #128

@@ -1,5 +1,3 @@
-2024/08/13-17:32:34.121 2efc Log #117: 0 ops saved to Table #118 OK
-2024/08/13-17:32:34.122 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-reign-of-winter/000117.log: OK
-2024/08/13-17:32:34.127 2efc Table #86: 402 entries OK
-2024/08/13-17:32:34.136 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-reign-of-winter/MANIFEST-000116: OK
-2024/08/13-17:32:34.148 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-reign-of-winter; recovered 1 files; 397208 bytes. Some data may have been lost. ****
+2024/08/20-20:02:49.038 6514 Recovering log #129
+2024/08/20-20:02:49.042 6514 Delete type=0 #129
+2024/08/20-20:02:49.042 6514 Delete type=3 #128

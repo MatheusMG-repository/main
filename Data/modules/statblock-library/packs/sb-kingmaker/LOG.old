@@ -1,5 +1,3 @@
-2024/08/13-17:32:33.694 2efc Log #117: 0 ops saved to Table #118 OK
-2024/08/13-17:32:33.695 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker/000117.log: OK
-2024/08/13-17:32:33.700 2efc Table #86: 383 entries OK
-2024/08/13-17:32:33.709 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker/MANIFEST-000116: OK
-2024/08/13-17:32:33.727 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker; recovered 1 files; 369419 bytes. Some data may have been lost. ****
+2024/08/20-20:02:48.961 230c Recovering log #129
+2024/08/20-20:02:48.965 230c Delete type=0 #129
+2024/08/20-20:02:48.965 230c Delete type=3 #128

@@ -1,7 +1,14 @@
-2024/08/13-17:32:24.469 4468 Log #281: 6 ops saved to Table #282 OK
-2024/08/13-17:32:24.471 4468 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/000281.log: OK
-2024/08/13-17:32:24.472 4468 Table #278: 24 entries OK
-2024/08/13-17:32:24.478 4468 Table #280: 2 entries OK
-2024/08/13-17:32:24.478 4468 Table #282: 6 entries OK
-2024/08/13-17:32:24.488 4468 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/MANIFEST-000279: OK
-2024/08/13-17:32:24.498 4468 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings; recovered 3 files; 12134 bytes. Some data may have been lost. ****
+2024/08/20-20:02:46.449 718c Recovering log #297
+2024/08/20-20:02:46.449 718c Level-0 table #299: started
+2024/08/20-20:02:46.456 718c Level-0 table #299: 2964 bytes OK
+2024/08/20-20:02:46.460 718c Delete type=0 #297
+2024/08/20-20:02:46.460 718c Delete type=3 #295
+2024/08/20-20:02:46.460 24a8 Compacting 4@0 + 1@1 files
+2024/08/20-20:02:46.464 24a8 Generated table #301@0: 24 keys, 6097 bytes
+2024/08/20-20:02:46.464 24a8 Compacted 4@0 + 1@1 files => 6097 bytes
+2024/08/20-20:02:46.466 24a8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/08/20-20:02:46.466 24a8 Delete type=2 #288
+2024/08/20-20:02:46.466 24a8 Delete type=2 #290
+2024/08/20-20:02:46.466 24a8 Delete type=2 #293
+2024/08/20-20:02:46.467 24a8 Delete type=2 #296
+2024/08/20-20:02:46.467 24a8 Delete type=2 #299

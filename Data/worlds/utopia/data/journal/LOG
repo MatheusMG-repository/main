@@ -1,1 +1,5 @@
-2024/08/13-17:32:24.116 2efc Delete type=3 #1
+2024/08/21-08:02:16.980 12dc Recovering log #253
+2024/08/21-08:02:16.981 12dc Level-0 table #255: started
+2024/08/21-08:02:16.984 12dc Level-0 table #255: 23947 bytes OK
+2024/08/21-08:02:16.989 12dc Delete type=0 #253
+2024/08/21-08:02:16.989 12dc Delete type=3 #251

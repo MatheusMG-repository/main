@@ -1,4 +1,3 @@
-2024/08/13-17:32:29.845 2efc Delete type=3 #1
-2024/08/13-17:32:29.848 4f00 Moved #88 to level-1 2122064 bytes OK: files[ 5 1 0 0 0 0 0 ]
-2024/08/13-17:32:29.853 4f00 Moved #127 to level-1 2130307 bytes OK: files[ 4 2 0 0 0 0 0 ]
-2024/08/13-17:32:29.855 4f00 Moved #128 to level-1 2129521 bytes OK: files[ 3 3 0 0 0 0 0 ]
+2024/08/21-08:02:18.922 59a8 Recovering log #172
+2024/08/21-08:02:18.927 59a8 Delete type=0 #172
+2024/08/21-08:02:18.927 59a8 Delete type=3 #171

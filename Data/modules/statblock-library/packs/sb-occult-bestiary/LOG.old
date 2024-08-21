@@ -1,5 +1,3 @@
-2024/08/13-17:32:32.406 44fc Log #117: 0 ops saved to Table #118 OK
-2024/08/13-17:32:32.407 44fc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-occult-bestiary/000117.log: OK
-2024/08/13-17:32:32.411 44fc Table #86: 120 entries OK
-2024/08/13-17:32:32.417 44fc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-occult-bestiary/MANIFEST-000116: OK
-2024/08/13-17:32:32.426 44fc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-occult-bestiary; recovered 1 files; 189857 bytes. Some data may have been lost. ****
+2024/08/20-20:02:48.693 230c Recovering log #129
+2024/08/20-20:02:48.697 230c Delete type=0 #129
+2024/08/20-20:02:48.697 230c Delete type=3 #128

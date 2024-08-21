@@ -1,5 +1,3 @@
-2024/08/13-17:32:33.224 2efc Log #117: 0 ops saved to Table #118 OK
-2024/08/13-17:32:33.225 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-council-of-thieves/000117.log: OK
-2024/08/13-17:32:33.239 2efc Table #86: 318 entries OK
-2024/08/13-17:32:33.248 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-council-of-thieves/MANIFEST-000116: OK
-2024/08/13-17:32:33.260 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-council-of-thieves; recovered 1 files; 347679 bytes. Some data may have been lost. ****
+2024/08/20-20:02:48.866 718c Recovering log #129
+2024/08/20-20:02:48.869 718c Delete type=0 #129
+2024/08/20-20:02:48.870 718c Delete type=3 #128

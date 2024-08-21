@@ -1,5 +1,3 @@
-2024/08/13-17:32:32.291 2efc Log #117: 0 ops saved to Table #118 OK
-2024/08/13-17:32:32.292 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters/000117.log: OK
-2024/08/13-17:32:32.295 2efc Table #86: 171 entries OK
-2024/08/13-17:32:32.304 2efc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters/MANIFEST-000116: OK
-2024/08/13-17:32:32.313 2efc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters; recovered 1 files; 193133 bytes. Some data may have been lost. ****
+2024/08/20-20:02:48.658 6514 Recovering log #129
+2024/08/20-20:02:48.661 6514 Delete type=0 #129
+2024/08/20-20:02:48.662 6514 Delete type=3 #128

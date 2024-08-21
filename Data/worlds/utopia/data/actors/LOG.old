@@ -1,7 +1,54 @@
-2024/08/13-17:32:23.314 2efc Log #591: 188 ops saved to Table #595 OK
-2024/08/13-17:32:23.315 2efc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/000591.log: OK
-2024/08/13-17:32:23.324 2efc Table #593: 1348 entries OK
-2024/08/13-17:32:23.441 2efc Table #594: 1780 entries OK
-2024/08/13-17:32:23.446 2efc Table #595: 188 entries OK
-2024/08/13-17:32:23.457 2efc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/MANIFEST-000570: OK
-2024/08/13-17:32:23.466 2efc **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors; recovered 3 files; 5844650 bytes. Some data may have been lost. ****
+2024/08/20-20:02:46.182 57d4 Recovering log #658
+2024/08/20-20:02:46.186 57d4 Level-0 table #664: started
+2024/08/20-20:02:46.200 57d4 Level-0 table #664: 839906 bytes OK
+2024/08/20-20:02:46.205 57d4 Delete type=0 #658
+2024/08/20-20:02:46.205 57d4 Delete type=3 #641
+2024/08/20-20:02:52.860 24a8 Compacting 1@0 + 3@1 files
+2024/08/20-20:02:52.902 24a8 Generated table #666@0: 1309 keys, 2123285 bytes
+2024/08/20-20:02:53.026 24a8 Generated table #667@0: 1828 keys, 2127841 bytes
+2024/08/20-20:02:53.049 24a8 Generated table #668@0: 260 keys, 293074 bytes
+2024/08/20-20:02:53.049 24a8 Compacted 1@0 + 3@1 files => 4544200 bytes
+2024/08/20-20:02:53.050 24a8 compacted to: files[ 0 3 0 0 0 0 0 ]
+2024/08/20-20:02:53.050 24a8 Delete type=2 #660
+2024/08/20-20:02:53.051 24a8 Delete type=2 #661
+2024/08/20-20:02:53.052 24a8 Delete type=2 #662
+2024/08/20-20:02:53.052 24a8 Delete type=2 #664
+2024/08/20-20:23:27.384 24a8 Level-0 table #670: started
+2024/08/20-20:23:27.410 24a8 Level-0 table #670: 1487071 bytes OK
+2024/08/20-20:23:27.411 24a8 Delete type=0 #665
+2024/08/20-20:35:27.771 24a8 Compacting 1@0 + 3@1 files
+2024/08/20-20:35:27.818 24a8 Generated table #671@0: 1308 keys, 2121859 bytes
+2024/08/20-20:35:27.949 24a8 Generated table #672@0: 1829 keys, 2129169 bytes
+2024/08/20-20:35:27.973 24a8 Generated table #673@0: 263 keys, 297096 bytes
+2024/08/20-20:35:27.973 24a8 Compacted 1@0 + 3@1 files => 4548124 bytes
+2024/08/20-20:35:27.974 24a8 compacted to: files[ 0 3 0 0 0 0 0 ]
+2024/08/20-20:35:27.974 24a8 Delete type=2 #666
+2024/08/20-20:35:27.974 24a8 Delete type=2 #667
+2024/08/20-20:35:27.975 24a8 Delete type=2 #668
+2024/08/20-20:35:27.975 24a8 Delete type=2 #670
+2024/08/20-21:13:53.877 24a8 Level-0 table #675: started
+2024/08/20-21:13:53.911 24a8 Level-0 table #675: 1529614 bytes OK
+2024/08/20-21:13:53.912 24a8 Delete type=0 #669
+2024/08/20-21:13:53.940 24a8 Compacting 1@0 + 3@1 files
+2024/08/20-21:13:53.984 24a8 Generated table #676@0: 1304 keys, 2122922 bytes
+2024/08/20-21:13:54.025 24a8 Generated table #677@0: 1833 keys, 2127131 bytes
+2024/08/20-21:13:54.050 24a8 Generated table #678@0: 268 keys, 299711 bytes
+2024/08/20-21:13:54.050 24a8 Compacted 1@0 + 3@1 files => 4549764 bytes
+2024/08/20-21:13:54.051 24a8 compacted to: files[ 0 3 0 0 0 0 0 ]
+2024/08/20-21:13:54.051 24a8 Delete type=2 #671
+2024/08/20-21:13:54.051 24a8 Delete type=2 #672
+2024/08/20-21:13:54.052 24a8 Delete type=2 #673
+2024/08/20-21:13:54.052 24a8 Delete type=2 #675
+2024/08/20-22:30:09.838 24a8 Level-0 table #680: started
+2024/08/20-22:30:09.861 24a8 Level-0 table #680: 1574123 bytes OK
+2024/08/20-22:30:09.863 24a8 Delete type=0 #674
+2024/08/20-22:32:32.272 24a8 Compacting 1@0 + 3@1 files
+2024/08/20-22:32:32.342 24a8 Generated table #681@0: 1301 keys, 2121369 bytes
+2024/08/20-22:32:32.472 24a8 Generated table #682@0: 1830 keys, 2129025 bytes
+2024/08/20-22:32:32.499 24a8 Generated table #683@0: 274 keys, 307473 bytes
+2024/08/20-22:32:32.499 24a8 Compacted 1@0 + 3@1 files => 4557867 bytes
+2024/08/20-22:32:32.500 24a8 compacted to: files[ 0 3 0 0 0 0 0 ]
+2024/08/20-22:32:32.500 24a8 Delete type=2 #676
+2024/08/20-22:32:32.501 24a8 Delete type=2 #677
+2024/08/20-22:32:32.501 24a8 Delete type=2 #678
+2024/08/20-22:32:32.501 24a8 Delete type=2 #680
