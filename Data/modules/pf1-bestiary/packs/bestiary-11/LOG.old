@@ -1,3 +1,11 @@
-2024/08/20-20:02:48.014 6514 Recovering log #187
-2024/08/20-20:02:48.019 6514 Delete type=0 #187
-2024/08/20-20:02:48.019 6514 Delete type=3 #186
+2024/08/25-13:11:13.982 4368 Delete type=3 #1
+2024/08/25-13:11:13.983 4a00 Moved #21 to level-1 2121008 bytes OK: files[ 9 1 0 0 0 0 0 ]
+2024/08/25-13:11:13.984 4a00 Moved #22 to level-1 2129563 bytes OK: files[ 8 2 0 0 0 0 0 ]
+2024/08/25-13:11:13.984 4a00 Moved #23 to level-1 2128941 bytes OK: files[ 7 3 0 0 0 0 0 ]
+2024/08/25-13:11:13.985 4a00 Moved #138 to level-1 2130000 bytes OK: files[ 6 4 0 0 0 0 0 ]
+2024/08/25-13:11:13.985 4a00 Moved #139 to level-1 2128948 bytes OK: files[ 5 5 0 0 0 0 0 ]
+2024/08/25-13:11:13.985 4a00 Moved #140 to level-1 2128439 bytes OK: files[ 4 6 0 0 0 0 0 ]
+2024/08/25-13:11:13.986 4a00 Moved #21 to level-2 2121008 bytes OK: files[ 4 5 1 0 0 0 0 ]
+2024/08/25-13:11:13.987 4a00 Moved #22 to level-2 2129563 bytes OK: files[ 4 4 2 0 0 0 0 ]
+2024/08/25-13:11:13.987 4a00 Moved #141 to level-1 2128440 bytes OK: files[ 3 5 2 0 0 0 0 ]
+2024/08/25-13:11:13.988 4a00 Moved #23 to level-2 2128941 bytes OK: files[ 3 4 3 0 0 0 0 ]
