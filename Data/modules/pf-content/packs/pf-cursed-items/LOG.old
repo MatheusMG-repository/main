@@ -1,1 +1,5 @@
-2024/08/25-13:11:11.995 4368 Delete type=3 #1
+2024/09/03-16:00:33.216 504c Log #57: 0 ops saved to Table #58 OK
+2024/09/03-16:00:33.217 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-cursed-items/000057.log: OK
+2024/09/03-16:00:33.224 504c Table #5: 77 entries OK
+2024/09/03-16:00:33.231 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-cursed-items/MANIFEST-000056: OK
+2024/09/03-16:00:33.239 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-cursed-items; recovered 1 files; 47503 bytes. Some data may have been lost. ****

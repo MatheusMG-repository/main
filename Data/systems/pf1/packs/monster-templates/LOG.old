@@ -1,1 +1,5 @@
-2024/08/25-13:11:11.514 1a78 Delete type=3 #1
+2024/09/03-16:00:32.198 504c Log #57: 0 ops saved to Table #58 OK
+2024/09/03-16:00:32.199 504c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates/000057.log: OK
+2024/09/03-16:00:32.242 504c Table #5: 189 entries OK
+2024/09/03-16:00:32.249 504c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates/MANIFEST-000056: OK
+2024/09/03-16:00:32.256 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates; recovered 1 files; 485606 bytes. Some data may have been lost. ****

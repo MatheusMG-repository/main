@@ -1,1 +1,5 @@
-2024/08/25-13:11:14.587 2f9c Delete type=3 #1
+2024/09/03-16:00:37.856 50bc Log #138: 0 ops saved to Table #139 OK
+2024/09/03-16:00:37.858 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings/000138.log: OK
+2024/09/03-16:00:37.865 50bc Table #86: 1248 entries OK
+2024/09/03-16:00:37.872 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings/MANIFEST-000137: OK
+2024/09/03-16:00:37.879 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings; recovered 1 files; 1226470 bytes. Some data may have been lost. ****

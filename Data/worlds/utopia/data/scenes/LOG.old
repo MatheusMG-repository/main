@@ -1,1 +1,6 @@
-2024/08/25-13:11:10.943 1a78 Delete type=3 #1
+2024/09/03-16:00:31.044 50bc Log #366: 1533 ops saved to Table #368 OK
+2024/09/03-16:00:31.046 50bc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/000366.log: OK
+2024/09/03-16:00:31.053 50bc Table #367: 5790 entries OK
+2024/09/03-16:00:31.057 50bc Table #368: 1533 entries OK
+2024/09/03-16:00:31.064 50bc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/MANIFEST-000364: OK
+2024/09/03-16:00:31.072 50bc **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes; recovered 2 files; 2980890 bytes. Some data may have been lost. ****

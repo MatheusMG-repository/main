@@ -1,3 +1,11 @@
-2024/08/27-19:31:15.280 3afc Recovering log #194
-2024/08/27-19:31:15.285 3afc Delete type=0 #194
-2024/08/27-19:31:15.286 3afc Delete type=3 #193
+2024/09/03-16:00:36.922 504c Delete type=3 #1
+2024/09/03-16:00:36.924 44a8 Moved #21 to level-1 2121008 bytes OK: files[ 9 1 0 0 0 0 0 ]
+2024/09/03-16:00:36.928 44a8 Moved #22 to level-1 2129563 bytes OK: files[ 8 2 0 0 0 0 0 ]
+2024/09/03-16:00:36.929 44a8 Moved #23 to level-1 2128941 bytes OK: files[ 7 3 0 0 0 0 0 ]
+2024/09/03-16:00:36.933 44a8 Moved #138 to level-1 2130000 bytes OK: files[ 6 4 0 0 0 0 0 ]
+2024/09/03-16:00:36.934 44a8 Moved #139 to level-1 2128948 bytes OK: files[ 5 5 0 0 0 0 0 ]
+2024/09/03-16:00:36.938 44a8 Moved #140 to level-1 2128439 bytes OK: files[ 4 6 0 0 0 0 0 ]
+2024/09/03-16:00:36.940 44a8 Moved #21 to level-2 2121008 bytes OK: files[ 4 5 1 0 0 0 0 ]
+2024/09/03-16:00:36.943 44a8 Moved #22 to level-2 2129563 bytes OK: files[ 4 4 2 0 0 0 0 ]
+2024/09/03-16:00:36.945 44a8 Moved #141 to level-1 2128440 bytes OK: files[ 3 5 2 0 0 0 0 ]
+2024/09/03-16:00:36.949 44a8 Moved #23 to level-2 2128941 bytes OK: files[ 3 4 3 0 0 0 0 ]

@@ -1,1 +1,5 @@
-2024/08/25-13:11:11.304 4368 Delete type=3 #1
+2024/09/03-16:00:31.852 50bc Log #57: 0 ops saved to Table #58 OK
+2024/09/03-16:00:31.854 50bc Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\technology/000057.log: OK
+2024/09/03-16:00:31.858 50bc Table #5: 284 entries OK
+2024/09/03-16:00:31.865 50bc Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\technology/MANIFEST-000056: OK
+2024/09/03-16:00:31.872 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\technology; recovered 1 files; 375989 bytes. Some data may have been lost. ****

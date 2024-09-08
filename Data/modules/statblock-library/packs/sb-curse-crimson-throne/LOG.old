@@ -1,1 +1,5 @@
-2024/08/25-13:11:15.079 4368 Delete type=3 #1
+2024/09/03-16:00:39.035 504c Log #138: 0 ops saved to Table #139 OK
+2024/09/03-16:00:39.036 504c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne/000138.log: OK
+2024/09/03-16:00:39.040 504c Table #86: 340 entries OK
+2024/09/03-16:00:39.047 504c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne/MANIFEST-000137: OK
+2024/09/03-16:00:39.055 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne; recovered 1 files; 315016 bytes. Some data may have been lost. ****

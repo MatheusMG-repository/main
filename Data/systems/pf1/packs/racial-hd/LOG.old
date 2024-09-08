@@ -1,1 +1,5 @@
-2024/08/25-13:11:11.331 2f9c Delete type=3 #1
+2024/09/03-16:00:31.939 5070 Log #57: 0 ops saved to Table #58 OK
+2024/09/03-16:00:31.940 5070 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd/000057.log: OK
+2024/09/03-16:00:31.942 5070 Table #5: 13 entries OK
+2024/09/03-16:00:31.949 5070 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd/MANIFEST-000056: OK
+2024/09/03-16:00:31.956 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd; recovered 1 files; 13911 bytes. Some data may have been lost. ****

@@ -1,1 +1,5 @@
-2024/08/25-13:11:12.066 1a78 Delete type=3 #1
+2024/09/03-16:00:33.366 50bc Log #57: 0 ops saved to Table #58 OK
+2024/09/03-16:00:33.367 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms/000057.log: OK
+2024/09/03-16:00:33.370 50bc Table #5: 223 entries OK
+2024/09/03-16:00:33.378 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms/MANIFEST-000056: OK
+2024/09/03-16:00:33.385 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms; recovered 1 files; 186404 bytes. Some data may have been lost. ****

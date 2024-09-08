@@ -1,1 +1,6 @@
-2024/08/25-13:11:10.905 2ba4 Delete type=3 #1
+2024/09/03-16:00:30.902 2924 Log #263: 0 ops saved to Table #264 OK
+2024/09/03-16:00:30.903 2924 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/000263.log: OK
+2024/09/03-16:00:30.905 2924 Table #247: 120 entries OK
+2024/09/03-16:00:30.910 2924 Table #257: 6 entries OK
+2024/09/03-16:00:30.917 2924 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/MANIFEST-000262: OK
+2024/09/03-16:00:30.925 2924 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists; recovered 2 files; 14094 bytes. Some data may have been lost. ****

@@ -1,1 +1,5 @@
-2024/08/25-13:11:11.537 2f9c Delete type=3 #1
+2024/09/03-16:00:32.282 5070 Log #57: 0 ops saved to Table #58 OK
+2024/09/03-16:00:32.284 5070 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros/000057.log: OK
+2024/09/03-16:00:32.286 5070 Table #5: 9 entries OK
+2024/09/03-16:00:32.292 5070 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros/MANIFEST-000056: OK
+2024/09/03-16:00:32.299 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\sample-macros; recovered 1 files; 10640 bytes. Some data may have been lost. ****

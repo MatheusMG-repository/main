@@ -1,1 +1,5 @@
-2024/08/25-13:11:11.060 1a78 Delete type=3 #1
+2024/09/03-16:00:31.330 504c Log #57: 0 ops saved to Table #58 OK
+2024/09/03-16:00:31.331 504c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\companion-features/000057.log: OK
+2024/09/03-16:00:31.333 504c Table #5: 11 entries OK
+2024/09/03-16:00:31.339 504c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\companion-features/MANIFEST-000056: OK
+2024/09/03-16:00:31.347 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\companion-features; recovered 1 files; 6921 bytes. Some data may have been lost. ****

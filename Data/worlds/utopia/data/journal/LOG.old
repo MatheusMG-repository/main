@@ -1,1 +1,6 @@
-2024/08/25-13:11:10.867 1a78 Delete type=3 #1
+2024/09/03-16:00:30.781 50bc Log #262: 264 ops saved to Table #264 OK
+2024/09/03-16:00:30.782 50bc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal/000262.log: OK
+2024/09/03-16:00:30.789 50bc Table #263: 35 entries OK
+2024/09/03-16:00:30.790 50bc Table #264: 264 entries OK
+2024/09/03-16:00:30.796 50bc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal/MANIFEST-000260: OK
+2024/09/03-16:00:30.804 50bc **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal; recovered 2 files; 96828 bytes. Some data may have been lost. ****

@@ -1,1 +1,5 @@
-2024/08/25-13:11:15.176 1a78 Delete type=3 #1
+2024/09/03-16:00:39.315 2924 Log #138: 0 ops saved to Table #139 OK
+2024/09/03-16:00:39.316 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-jade-regent/000138.log: OK
+2024/09/03-16:00:39.320 2924 Table #86: 368 entries OK
+2024/09/03-16:00:39.327 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-jade-regent/MANIFEST-000137: OK
+2024/09/03-16:00:39.334 2924 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-jade-regent; recovered 1 files; 398310 bytes. Some data may have been lost. ****

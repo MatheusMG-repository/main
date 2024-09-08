@@ -1,1 +1,5 @@
-2024/08/25-13:11:12.826 4368 Delete type=3 #1
+2024/09/03-16:00:35.010 504c Log #57: 0 ops saved to Table #58 OK
+2024/09/03-16:00:35.011 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-scenes/000057.log: OK
+2024/09/03-16:00:35.015 504c Table #5: 106 entries OK
+2024/09/03-16:00:35.022 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-scenes/MANIFEST-000056: OK
+2024/09/03-16:00:35.030 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-scenes; recovered 1 files; 100464 bytes. Some data may have been lost. ****

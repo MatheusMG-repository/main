@@ -1,1 +1,5 @@
-2024/08/25-13:11:15.414 2f9c Delete type=3 #1
+2024/09/03-16:00:40.004 50bc Log #138: 0 ops saved to Table #139 OK
+2024/09/03-16:00:40.006 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown/000138.log: OK
+2024/09/03-16:00:40.010 50bc Table #86: 363 entries OK
+2024/09/03-16:00:40.016 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown/MANIFEST-000137: OK
+2024/09/03-16:00:40.023 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown; recovered 1 files; 427629 bytes. Some data may have been lost. ****

@@ -1,1 +1,5 @@
-2024/08/25-13:11:15.127 2ba4 Delete type=3 #1
+2024/09/03-16:00:39.174 5070 Log #138: 0 ops saved to Table #139 OK
+2024/09/03-16:00:39.175 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance/000138.log: OK
+2024/09/03-16:00:39.179 5070 Table #86: 431 entries OK
+2024/09/03-16:00:39.187 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance/MANIFEST-000137: OK
+2024/09/03-16:00:39.195 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance; recovered 1 files; 489110 bytes. Some data may have been lost. ****

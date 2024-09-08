@@ -1,1 +1,4 @@
-2024/08/25-13:11:10.775 1a78 Delete type=3 #1
+2024/09/03-16:00:30.507 5070 Log #227: 0 ops saved to Table #228 OK
+2024/09/03-16:00:30.508 5070 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings/000227.log: OK
+2024/09/03-16:00:30.515 5070 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings/MANIFEST-000226: OK
+2024/09/03-16:00:30.524 5070 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/drawings; recovered 0 files; 0 bytes. Some data may have been lost. ****

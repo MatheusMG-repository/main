@@ -1,1 +1,6 @@
-2024/08/25-13:11:10.990 2ba4 Delete type=3 #1
+2024/09/03-16:00:31.145 504c Log #310: 8 ops saved to Table #312 OK
+2024/09/03-16:00:31.147 504c Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/000310.log: OK
+2024/09/03-16:00:31.149 504c Table #311: 24 entries OK
+2024/09/03-16:00:31.149 504c Table #312: 8 entries OK
+2024/09/03-16:00:31.155 504c Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/MANIFEST-000308: OK
+2024/09/03-16:00:31.163 504c **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings; recovered 2 files; 9139 bytes. Some data may have been lost. ****

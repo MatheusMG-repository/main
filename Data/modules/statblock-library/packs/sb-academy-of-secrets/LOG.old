@@ -1,1 +1,5 @@
-2024/08/25-13:11:14.609 2ba4 Delete type=3 #1
+2024/09/03-16:00:37.916 5070 Log #139: 0 ops saved to Table #140 OK
+2024/09/03-16:00:37.917 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets/000139.log: OK
+2024/09/03-16:00:37.919 5070 Table #87: 18 entries OK
+2024/09/03-16:00:37.926 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets/MANIFEST-000138: OK
+2024/09/03-16:00:37.934 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets; recovered 1 files; 19440 bytes. Some data may have been lost. ****

@@ -1,1 +1,5 @@
-2024/08/25-13:11:12.453 1a78 Delete type=3 #1
+2024/09/03-16:00:34.227 50bc Log #57: 0 ops saved to Table #58 OK
+2024/09/03-16:00:34.228 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic-tables/000057.log: OK
+2024/09/03-16:00:34.231 50bc Table #5: 478 entries OK
+2024/09/03-16:00:34.239 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic-tables/MANIFEST-000056: OK
+2024/09/03-16:00:34.245 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic-tables; recovered 1 files; 65369 bytes. Some data may have been lost. ****

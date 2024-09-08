@@ -1,8 +1,8 @@
 {
-  "timestamp": 1724783467688,
+  "timestamp": 1725375620366,
   "os": {
     "platform": "win32",
-    "version": "10.0.22631",
+    "version": "10.0.19045",
     "node": "18.14.0",
     "electron": "24.8.5"
   },

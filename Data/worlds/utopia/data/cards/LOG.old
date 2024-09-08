@@ -1,1 +1,4 @@
-2024/08/25-13:11:10.720 4368 Delete type=3 #1
+2024/09/03-16:00:29.109 504c Log #227: 0 ops saved to Table #228 OK
+2024/09/03-16:00:29.110 504c Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/cards/000227.log: OK
+2024/09/03-16:00:29.321 504c Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/cards/MANIFEST-000226: OK
+2024/09/03-16:00:29.573 504c **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/cards; recovered 0 files; 0 bytes. Some data may have been lost. ****

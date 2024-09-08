@@ -1,1 +1,5 @@
-2024/08/25-13:11:14.662 2ba4 Delete type=3 #1
+2024/09/03-16:00:38.080 5070 Log #138: 0 ops saved to Table #139 OK
+2024/09/03-16:00:38.081 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-emerald-spire/000138.log: OK
+2024/09/03-16:00:38.084 5070 Table #86: 144 entries OK
+2024/09/03-16:00:38.091 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-emerald-spire/MANIFEST-000137: OK
+2024/09/03-16:00:38.101 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-emerald-spire; recovered 1 files; 104157 bytes. Some data may have been lost. ****

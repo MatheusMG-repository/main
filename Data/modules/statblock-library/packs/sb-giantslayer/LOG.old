@@ -1,1 +1,5 @@
-2024/08/25-13:11:15.094 2f9c Delete type=3 #1
+2024/09/03-16:00:39.080 50bc Log #138: 0 ops saved to Table #139 OK
+2024/09/03-16:00:39.081 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-giantslayer/000138.log: OK
+2024/09/03-16:00:39.085 50bc Table #86: 392 entries OK
+2024/09/03-16:00:39.092 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-giantslayer/MANIFEST-000137: OK
+2024/09/03-16:00:39.100 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-giantslayer; recovered 1 files; 390738 bytes. Some data may have been lost. ****

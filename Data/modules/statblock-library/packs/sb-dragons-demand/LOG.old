@@ -1,1 +1,5 @@
-2024/08/25-13:11:14.650 4368 Delete type=3 #1
+2024/09/03-16:00:38.040 504c Log #138: 0 ops saved to Table #139 OK
+2024/09/03-16:00:38.041 504c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand/000138.log: OK
+2024/09/03-16:00:38.042 504c Table #86: 45 entries OK
+2024/09/03-16:00:38.050 504c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand/MANIFEST-000137: OK
+2024/09/03-16:00:38.057 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand; recovered 1 files; 34737 bytes. Some data may have been lost. ****

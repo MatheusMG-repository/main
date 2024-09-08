@@ -1,11 +1,14 @@
-2024/08/25-13:11:13.982 4368 Delete type=3 #1
-2024/08/25-13:11:13.983 4a00 Moved #21 to level-1 2121008 bytes OK: files[ 9 1 0 0 0 0 0 ]
-2024/08/25-13:11:13.984 4a00 Moved #22 to level-1 2129563 bytes OK: files[ 8 2 0 0 0 0 0 ]
-2024/08/25-13:11:13.984 4a00 Moved #23 to level-1 2128941 bytes OK: files[ 7 3 0 0 0 0 0 ]
-2024/08/25-13:11:13.985 4a00 Moved #138 to level-1 2130000 bytes OK: files[ 6 4 0 0 0 0 0 ]
-2024/08/25-13:11:13.985 4a00 Moved #139 to level-1 2128948 bytes OK: files[ 5 5 0 0 0 0 0 ]
-2024/08/25-13:11:13.985 4a00 Moved #140 to level-1 2128439 bytes OK: files[ 4 6 0 0 0 0 0 ]
-2024/08/25-13:11:13.986 4a00 Moved #21 to level-2 2121008 bytes OK: files[ 4 5 1 0 0 0 0 ]
-2024/08/25-13:11:13.987 4a00 Moved #22 to level-2 2129563 bytes OK: files[ 4 4 2 0 0 0 0 ]
-2024/08/25-13:11:13.987 4a00 Moved #141 to level-1 2128440 bytes OK: files[ 3 5 2 0 0 0 0 ]
-2024/08/25-13:11:13.988 4a00 Moved #23 to level-2 2128941 bytes OK: files[ 3 4 3 0 0 0 0 ]
+2024/09/03-16:00:36.599 504c Log #196: 0 ops saved to Table #197 OK
+2024/09/03-16:00:36.601 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-11/000196.log: OK
+2024/09/03-16:00:36.610 504c Table #21: 761 entries OK
+2024/09/03-16:00:36.622 504c Table #22: 1662 entries OK
+2024/09/03-16:00:36.632 504c Table #23: 1641 entries OK
+2024/09/03-16:00:36.643 504c Table #138: 1697 entries OK
+2024/09/03-16:00:36.654 504c Table #139: 1604 entries OK
+2024/09/03-16:00:36.759 504c Table #140: 1697 entries OK
+2024/09/03-16:00:36.770 504c Table #141: 1650 entries OK
+2024/09/03-16:00:36.782 504c Table #142: 1621 entries OK
+2024/09/03-16:00:36.890 504c Table #143: 1657 entries OK
+2024/09/03-16:00:36.893 504c Table #144: 48 entries OK
+2024/09/03-16:00:36.897 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-11/MANIFEST-000195: OK
+2024/09/03-16:00:36.905 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-11; recovered 10 files; 19204944 bytes. Some data may have been lost. ****

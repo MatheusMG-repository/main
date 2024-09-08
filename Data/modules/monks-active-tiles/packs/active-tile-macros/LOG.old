@@ -1,1 +1,5 @@
-2024/08/25-13:11:11.818 2ba4 Delete type=3 #1
+2024/09/03-16:00:32.782 50bc Log #99: 0 ops saved to Table #100 OK
+2024/09/03-16:00:32.783 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\monks-active-tiles\packs\active-tile-macros/000099.log: OK
+2024/09/03-16:00:32.785 50bc Table #53: 10 entries OK
+2024/09/03-16:00:32.791 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\monks-active-tiles\packs\active-tile-macros/MANIFEST-000098: OK
+2024/09/03-16:00:32.799 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\monks-active-tiles\packs\active-tile-macros; recovered 1 files; 6841 bytes. Some data may have been lost. ****

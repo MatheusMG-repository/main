@@ -1,1 +1,5 @@
-2024/08/25-13:11:12.417 4368 Delete type=3 #1
+2024/09/03-16:00:34.116 504c Log #57: 0 ops saved to Table #58 OK
+2024/09/03-16:00:34.117 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies/000057.log: OK
+2024/09/03-16:00:34.125 504c Table #5: 101 entries OK
+2024/09/03-16:00:34.133 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies/MANIFEST-000056: OK
+2024/09/03-16:00:34.142 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies; recovered 1 files; 61890 bytes. Some data may have been lost. ****
