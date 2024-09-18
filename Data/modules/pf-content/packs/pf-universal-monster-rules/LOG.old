@@ -1,5 +1,5 @@
-2024/09/03-16:00:34.732 504c Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:34.734 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-universal-monster-rules/000057.log: OK
-2024/09/03-16:00:34.750 504c Table #5: 147 entries OK
-2024/09/03-16:00:34.757 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-universal-monster-rules/MANIFEST-000056: OK
-2024/09/03-16:00:34.764 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-universal-monster-rules; recovered 1 files; 94455 bytes. Some data may have been lost. ****
+2024/09/07-19:26:28.863879 7dfe127bf6c0 Delete type=3 #1
+2024/09/07-19:26:29.343231 7dfb73fff6c0 Level-0 table #5: started
+2024/09/07-19:26:29.347320 7dfb73fff6c0 Level-0 table #5: 94455 bytes OK
+2024/09/07-19:26:29.348963 7dfb73fff6c0 Delete type=0 #3
+2024/09/07-19:26:29.385241 7dfb73fff6c0 Manual compaction at level-0 from '!items!08AUpklXZzDRelUh' @ 72057594037927935 : 1 .. '!items!zoQfiz64IqME5iiu' @ 0 : 0; will stop at (end)

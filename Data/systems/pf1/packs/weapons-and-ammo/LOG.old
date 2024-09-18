@@ -1,5 +1,11 @@
-2024/09/03-16:00:31.800 2924 Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:31.801 2924 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\weapons-and-ammo/000057.log: OK
-2024/09/03-16:00:31.811 2924 Table #5: 484 entries OK
-2024/09/03-16:00:31.818 2924 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\weapons-and-ammo/MANIFEST-000056: OK
-2024/09/03-16:00:31.826 2924 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\weapons-and-ammo; recovered 1 files; 370784 bytes. Some data may have been lost. ****
+2024/09/17-18:38:49.510 2684 Delete type=3 #1
+2024/09/17-18:45:06.283 10ac Level-0 table #65: started
+2024/09/17-18:45:06.283 10ac Level-0 table #65: 0 bytes OK
+2024/09/17-18:45:06.284 10ac Delete type=0 #63
+2024/09/17-18:45:06.287 10ac Manual compaction at level-0 from '!folders!6XZWJB1Fu5AQ6KhP' @ 72057594037927935 : 1 .. '!items!zWRlna42PMJVX6un' @ 0 : 0; will stop at '!items!zWRlna42PMJVX6un' @ 304 : 1
+2024/09/17-18:45:06.287 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.304 10ac Generated table #66@0: 484 keys, 370784 bytes
+2024/09/17-18:45:06.304 10ac Compacted 1@0 + 0@1 files => 370784 bytes
+2024/09/17-18:45:06.305 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:06.306 10ac Delete type=2 #5
+2024/09/17-18:45:06.322 10ac Manual compaction at level-0 from '!items!zWRlna42PMJVX6un' @ 304 : 1 .. '!items!zWRlna42PMJVX6un' @ 0 : 0; will stop at (end)

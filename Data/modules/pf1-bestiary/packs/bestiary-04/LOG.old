@@ -1,10 +1,19 @@
-2024/09/03-16:00:35.655 2924 Log #183: 0 ops saved to Table #184 OK
-2024/09/03-16:00:35.656 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-04/000183.log: OK
-2024/09/03-16:00:35.667 2924 Table #128: 1860 entries OK
-2024/09/03-16:00:35.756 2924 Table #129: 1842 entries OK
-2024/09/03-16:00:35.766 2924 Table #130: 1772 entries OK
-2024/09/03-16:00:35.778 2924 Table #131: 1784 entries OK
-2024/09/03-16:00:35.783 2924 Table #132: 610 entries OK
-2024/09/03-16:00:35.793 2924 Table #168: 868 entries OK
-2024/09/03-16:00:35.797 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-04/MANIFEST-000182: OK
-2024/09/03-16:00:35.805 2924 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-04; recovered 6 files; 11334906 bytes. Some data may have been lost. ****
+2024/09/17-18:38:52.457 2644 Delete type=3 #1
+2024/09/17-18:38:52.458 10ac Moved #168 to level-1 2120639 bytes OK: files[ 5 1 0 0 0 0 0 ]
+2024/09/17-18:38:52.459 10ac Moved #128 to level-1 2130353 bytes OK: files[ 4 2 0 0 0 0 0 ]
+2024/09/17-18:38:52.460 10ac Moved #129 to level-1 2131549 bytes OK: files[ 3 3 0 0 0 0 0 ]
+2024/09/17-18:45:07.842 10ac Level-0 table #191: started
+2024/09/17-18:45:07.843 10ac Level-0 table #191: 0 bytes OK
+2024/09/17-18:45:07.843 10ac Delete type=0 #189
+2024/09/17-18:45:07.994 10ac Manual compaction at level-0 from '!actors!0CR1Rr9rlqa83d9o' @ 72057594037927935 : 1 .. '!actors.items!ztxGorV2iluYNo23.ye3dan9xd4ai9qba' @ 0 : 0; will stop at '!actors.items!ztxGorV2iluYNo23.ye3dan9xd4ai9qba' @ 8732 : 1
+2024/09/17-18:45:07.995 10ac Compacting 3@0 + 0@1 files
+2024/09/17-18:45:08.033 10ac Generated table #192@0: 1772 keys, 2129745 bytes
+2024/09/17-18:45:08.075 10ac Generated table #193@0: 1784 keys, 2129216 bytes
+2024/09/17-18:45:08.092 10ac Generated table #194@0: 610 keys, 693404 bytes
+2024/09/17-18:45:08.092 10ac Compacted 3@0 + 0@1 files => 4952365 bytes
+2024/09/17-18:45:08.092 10ac compacted to: files[ 0 6 0 0 0 0 0 ]
+2024/09/17-18:45:08.092 10ac Delete type=2 #130
+2024/09/17-18:45:08.093 10ac Delete type=2 #131
+2024/09/17-18:45:08.093 10ac Delete type=2 #132
+2024/09/17-18:45:08.309 10ac Manual compaction at level-0 from '!actors.items!ztxGorV2iluYNo23.ye3dan9xd4ai9qba' @ 8732 : 1 .. '!actors.items!ztxGorV2iluYNo23.ye3dan9xd4ai9qba' @ 0 : 0; will stop at (end)
+2024/09/17-18:45:08.492 10ac Moved #168 to level-2 2120639 bytes OK: files[ 0 5 1 0 0 0 0 ]

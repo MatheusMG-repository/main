@@ -1,6 +1,13 @@
-2024/09/03-16:00:37.602 504c Log #141: 0 ops saved to Table #142 OK
-2024/09/03-16:00:37.603 504c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-bestiaries1-3/000141.log: OK
-2024/09/03-16:00:37.613 504c Table #88: 2309 entries OK
-2024/09/03-16:00:37.678 504c Table #89: 565 entries OK
-2024/09/03-16:00:37.686 504c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-bestiaries1-3/MANIFEST-000140: OK
-2024/09/03-16:00:37.694 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-bestiaries1-3; recovered 2 files; 2989648 bytes. Some data may have been lost. ****
+2024/09/17-18:38:54.275 2684 Delete type=3 #1
+2024/09/17-18:45:08.494 10ac Level-0 table #149: started
+2024/09/17-18:45:08.494 10ac Level-0 table #149: 0 bytes OK
+2024/09/17-18:45:08.495 10ac Delete type=0 #147
+2024/09/17-18:45:08.872 10ac Manual compaction at level-0 from '!journal!06b0geDZQUcGrRKB' @ 72057594037927935 : 1 .. '!journal.pages!zzuZcrJIArkiAmDB.q6nT5mzJxMaK4S2I' @ 0 : 0; will stop at '!journal.pages!zzuZcrJIArkiAmDB.q6nT5mzJxMaK4S2I' @ 1128 : 1
+2024/09/17-18:45:08.872 10ac Compacting 2@0 + 0@1 files
+2024/09/17-18:45:08.907 10ac Generated table #150@0: 2309 keys, 2126059 bytes
+2024/09/17-18:45:08.979 10ac Generated table #151@0: 565 keys, 863589 bytes
+2024/09/17-18:45:08.979 10ac Compacted 2@0 + 0@1 files => 2989648 bytes
+2024/09/17-18:45:08.981 10ac compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/09/17-18:45:08.981 10ac Delete type=2 #88
+2024/09/17-18:45:08.982 10ac Delete type=2 #89
+2024/09/17-18:45:08.983 10ac Manual compaction at level-0 from '!journal.pages!zzuZcrJIArkiAmDB.q6nT5mzJxMaK4S2I' @ 1128 : 1 .. '!journal.pages!zzuZcrJIArkiAmDB.q6nT5mzJxMaK4S2I' @ 0 : 0; will stop at (end)

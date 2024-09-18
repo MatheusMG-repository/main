@@ -1,5 +1,5 @@
-2024/09/03-16:00:34.041 50bc Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:34.042 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic/000057.log: OK
-2024/09/03-16:00:34.069 50bc Table #5: 788 entries OK
-2024/09/03-16:00:34.077 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic/MANIFEST-000056: OK
-2024/09/03-16:00:34.086 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-magic; recovered 1 files; 618067 bytes. Some data may have been lost. ****
+2024/09/07-19:26:28.843393 7dfe117bd6c0 Delete type=3 #1
+2024/09/07-19:26:29.248199 7dfb73fff6c0 Level-0 table #5: started
+2024/09/07-19:26:29.261208 7dfb73fff6c0 Level-0 table #5: 615722 bytes OK
+2024/09/07-19:26:29.263336 7dfb73fff6c0 Delete type=0 #3
+2024/09/07-19:26:29.272092 7dfb73fff6c0 Manual compaction at level-0 from '!items!0Mkce8sScFXauUT6' @ 72057594037927935 : 1 .. '!items!zuJ9vpa3G83SwLzd' @ 0 : 0; will stop at (end)

@@ -1,6 +1,11 @@
-2024/09/03-16:00:31.044 50bc Log #366: 1533 ops saved to Table #368 OK
-2024/09/03-16:00:31.046 50bc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/000366.log: OK
-2024/09/03-16:00:31.053 50bc Table #367: 5790 entries OK
-2024/09/03-16:00:31.057 50bc Table #368: 1533 entries OK
-2024/09/03-16:00:31.064 50bc Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/MANIFEST-000364: OK
-2024/09/03-16:00:31.072 50bc **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes; recovered 2 files; 2980890 bytes. Some data may have been lost. ****
+2024/09/17-18:38:48.967 2aac Delete type=3 #1
+2024/09/17-18:39:01.367 10ac Compacting 2@0 + 0@1 files
+2024/09/17-18:39:01.392 10ac Generated table #375@0: 5846 keys, 989834 bytes
+2024/09/17-18:39:01.392 10ac Compacted 2@0 + 0@1 files => 989834 bytes
+2024/09/17-18:39:01.393 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:39:01.393 10ac Delete type=2 #371
+2024/09/17-18:39:01.393 10ac Delete type=2 #372
+2024/09/17-18:45:06.012 10ac Level-0 table #377: started
+2024/09/17-18:45:06.012 10ac Level-0 table #377: 0 bytes OK
+2024/09/17-18:45:06.013 10ac Delete type=0 #374
+2024/09/17-18:45:06.013 10ac Manual compaction at level-0 from '!scenes!0OEZklkn24Bxj9Qr' @ 72057594037927935 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at (end)

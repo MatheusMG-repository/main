@@ -1,5 +1,8 @@
 # Change Log
 
+2024_09_05 - v4.6.5
+* Fixed: Removed unnecessary noise and notifications with custom compendium settings being set by modules.
+
 2024_06_30 - v4.6.4
 * Fixed: SBC didn't account for conditions that were now in `pf1.registry.conditions`.
 * Fixed: SBC didn't know that the Technology was moved into the system from PF-Content.

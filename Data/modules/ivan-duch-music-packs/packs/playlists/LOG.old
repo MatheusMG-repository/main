@@ -1,5 +1,11 @@
-2024/09/03-16:00:32.735 5070 Log #152: 0 ops saved to Table #153 OK
-2024/09/03-16:00:32.737 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\ivan-duch-music-packs\packs\playlists/000152.log: OK
-2024/09/03-16:00:32.739 5070 Table #100: 449 entries OK
-2024/09/03-16:00:32.746 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\ivan-duch-music-packs\packs\playlists/MANIFEST-000151: OK
-2024/09/03-16:00:32.753 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\ivan-duch-music-packs\packs\playlists; recovered 1 files; 59808 bytes. Some data may have been lost. ****
+2024/09/17-18:38:50.240 2644 Delete type=3 #1
+2024/09/17-18:45:06.589 10ac Level-0 table #160: started
+2024/09/17-18:45:06.589 10ac Level-0 table #160: 0 bytes OK
+2024/09/17-18:45:06.590 10ac Delete type=0 #158
+2024/09/17-18:45:06.594 10ac Manual compaction at level-0 from '!playlists!1O5l5N99XlG8z1ZF' @ 72057594037927935 : 1 .. '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 0 : 0; will stop at '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 1801 : 1
+2024/09/17-18:45:06.594 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.598 10ac Generated table #161@0: 449 keys, 59808 bytes
+2024/09/17-18:45:06.598 10ac Compacted 1@0 + 0@1 files => 59808 bytes
+2024/09/17-18:45:06.599 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:06.599 10ac Delete type=2 #100
+2024/09/17-18:45:06.760 10ac Manual compaction at level-0 from '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 1801 : 1 .. '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 0 : 0; will stop at (end)

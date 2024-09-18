@@ -1,3 +1,30 @@
+# 1.13.0.0 (2024-09-17)
+
+- Implement support for listeners, i.e. functions that are called immediately before the target method is called, but aren't part of the usual call chain.
+  - Use when you just need to know a method is being called and the parameters used for the call.
+  - Listeners are always called before any other wrapper types, but are not able to modify the parameters or wait until the target method completes execution.
+  - You can register listeners using the libWrapper.LISTENER wrapper type.
+  - Note that asynchronous listeners are *not* awaited before execution is allowed to proceed.
+  - Because listeners are not part of the call chain and therefore do not provide the `wrapped` parameter.
+
+- Internal libWrapper wrappers (such as `Game.initialize` and `Hooks.onError`) now use listeners where possible, which reduces call stack pollution.
+
+- Fix broken argument passing when using `options.bind` with `OVERRIDE` wrappers.
+
+# 1.12.15.0 (2024-08-13)
+
+- Fixes to error message involved packages injection to ensure more errors display this information.
+  - Allow injecting involved packages even where the error object has a getter/setter stack property.
+  - Do not report libWrapper involvement related to `Hooks.onError` to avoid confusing the users.
+
+# 1.12.14.0 (2024-07-06)
+
+- Foundry VTT 12 compatibility
+  - Resolve deprecation warnings related to `isNewerVersion` ([Issue #81](https://github.com/ruipin/fvtt-lib-wrapper/issues/81))
+  - Remove `author` key from package manifest ([Issue #82](https://github.com/ruipin/fvtt-lib-wrapper/issues/82)).
+
+- Include package version in various error messages ([Issue #80](https://github.com/ruipin/fvtt-lib-wrapper/issues/80))
+
 # 1.12.13.1 (2024-05-22)
 
 - Declare compatibility with Foundry v12.

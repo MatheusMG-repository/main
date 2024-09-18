@@ -1,5 +1,11 @@
-2024/09/03-16:00:38.892 50bc Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:38.893 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-we-be-goblins/000138.log: OK
-2024/09/03-16:00:38.895 50bc Table #86: 99 entries OK
-2024/09/03-16:00:38.903 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-we-be-goblins/MANIFEST-000137: OK
-2024/09/03-16:00:38.910 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-we-be-goblins; recovered 1 files; 65127 bytes. Some data may have been lost. ****
+2024/09/17-18:38:55.157 243c Delete type=3 #1
+2024/09/17-18:45:10.970 10ac Level-0 table #146: started
+2024/09/17-18:45:10.970 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:10.971 10ac Delete type=0 #144
+2024/09/17-18:45:10.990 10ac Manual compaction at level-0 from '!journal!3rxe5KS9ntcHAxtG' @ 72057594037927935 : 1 .. '!journal.pages!zDj79YlTLqkSXRhc.tW6H8SvDMHtFjFkD' @ 0 : 0; will stop at '!journal.pages!zDj79YlTLqkSXRhc.tW6H8SvDMHtFjFkD' @ 196 : 1
+2024/09/17-18:45:10.990 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:10.993 10ac Generated table #147@0: 99 keys, 65127 bytes
+2024/09/17-18:45:10.993 10ac Compacted 1@0 + 0@1 files => 65127 bytes
+2024/09/17-18:45:10.994 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:10.994 10ac Delete type=2 #86
+2024/09/17-18:45:11.005 10ac Manual compaction at level-0 from '!journal.pages!zDj79YlTLqkSXRhc.tW6H8SvDMHtFjFkD' @ 196 : 1 .. '!journal.pages!zDj79YlTLqkSXRhc.tW6H8SvDMHtFjFkD' @ 0 : 0; will stop at (end)

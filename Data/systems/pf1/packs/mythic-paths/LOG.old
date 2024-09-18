@@ -1,5 +1,11 @@
-2024/09/03-16:00:31.371 50bc Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:31.372 50bc Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\mythic-paths/000057.log: OK
-2024/09/03-16:00:31.374 50bc Table #5: 6 entries OK
-2024/09/03-16:00:31.380 50bc Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\mythic-paths/MANIFEST-000056: OK
-2024/09/03-16:00:31.388 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\mythic-paths; recovered 1 files; 18031 bytes. Some data may have been lost. ****
+2024/09/17-18:38:49.186 2aac Delete type=3 #1
+2024/09/17-18:45:06.050 10ac Level-0 table #65: started
+2024/09/17-18:45:06.050 10ac Level-0 table #65: 0 bytes OK
+2024/09/17-18:45:06.051 10ac Delete type=0 #63
+2024/09/17-18:45:06.052 10ac Manual compaction at level-0 from '!items!4ja8qHtoH10kLBMG' @ 72057594037927935 : 1 .. '!items!u7edWPktC4cruJQQ' @ 0 : 0; will stop at '!items!u7edWPktC4cruJQQ' @ 4 : 1
+2024/09/17-18:45:06.052 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.056 10ac Generated table #66@0: 6 keys, 18031 bytes
+2024/09/17-18:45:06.056 10ac Compacted 1@0 + 0@1 files => 18031 bytes
+2024/09/17-18:45:06.057 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:06.057 10ac Delete type=2 #5
+2024/09/17-18:45:06.062 10ac Manual compaction at level-0 from '!items!u7edWPktC4cruJQQ' @ 4 : 1 .. '!items!u7edWPktC4cruJQQ' @ 0 : 0; will stop at (end)

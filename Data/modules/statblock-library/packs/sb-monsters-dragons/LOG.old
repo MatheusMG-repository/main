@@ -1,5 +1,11 @@
-2024/09/03-16:00:38.126 50bc Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:38.127 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons/000138.log: OK
-2024/09/03-16:00:38.134 50bc Table #86: 1392 entries OK
-2024/09/03-16:00:38.141 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons/MANIFEST-000137: OK
-2024/09/03-16:00:38.149 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons; recovered 1 files; 1207648 bytes. Some data may have been lost. ****
+2024/09/17-18:38:54.624 2644 Delete type=3 #1
+2024/09/17-18:45:10.571 10ac Level-0 table #146: started
+2024/09/17-18:45:10.572 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:10.573 10ac Delete type=0 #144
+2024/09/17-18:45:10.579 10ac Manual compaction at level-0 from '!journal!0070gIsSCGsunvah' @ 72057594037927935 : 1 .. '!journal.pages!zkHVWKCUzuShLjCb.xIWWGVr26A77rFuX' @ 0 : 0; will stop at '!journal.pages!zkHVWKCUzuShLjCb.xIWWGVr26A77rFuX' @ 757 : 1
+2024/09/17-18:45:10.579 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:10.601 10ac Generated table #147@0: 1392 keys, 1207648 bytes
+2024/09/17-18:45:10.601 10ac Compacted 1@0 + 0@1 files => 1207648 bytes
+2024/09/17-18:45:10.602 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:10.602 10ac Delete type=2 #86
+2024/09/17-18:45:10.606 10ac Manual compaction at level-0 from '!journal.pages!zkHVWKCUzuShLjCb.xIWWGVr26A77rFuX' @ 757 : 1 .. '!journal.pages!zkHVWKCUzuShLjCb.xIWWGVr26A77rFuX' @ 0 : 0; will stop at (end)

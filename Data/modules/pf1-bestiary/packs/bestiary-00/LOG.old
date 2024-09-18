@@ -1,9 +1,17 @@
-2024/09/03-16:00:35.144 504c Log #174: 0 ops saved to Table #175 OK
-2024/09/03-16:00:35.145 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00/000174.log: OK
-2024/09/03-16:00:35.151 504c Table #113: 2 entries OK
-2024/09/03-16:00:35.223 504c Table #118: 1893 entries OK
-2024/09/03-16:00:35.236 504c Table #119: 1893 entries OK
-2024/09/03-16:00:35.240 504c Table #120: 405 entries OK
-2024/09/03-16:00:35.251 504c Table #159: 1035 entries OK
-2024/09/03-16:00:35.258 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00/MANIFEST-000173: OK
-2024/09/03-16:00:35.266 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00; recovered 5 files; 6819406 bytes. Some data may have been lost. ****
+2024/09/17-18:38:51.958 2aac Delete type=3 #1
+2024/09/17-18:38:51.959 10ac Moved #159 to level-1 2122021 bytes OK: files[ 4 1 0 0 0 0 0 ]
+2024/09/17-18:38:51.959 10ac Moved #113 to level-1 2635 bytes OK: files[ 3 2 0 0 0 0 0 ]
+2024/09/17-18:45:07.841 10ac Level-0 table #182: started
+2024/09/17-18:45:07.842 10ac Level-0 table #182: 0 bytes OK
+2024/09/17-18:45:07.842 10ac Delete type=0 #180
+2024/09/17-18:45:07.844 10ac Manual compaction at level-0 from '!actors!02iKHCVZAu7ldZ79' @ 72057594037927935 : 1 .. '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 0 : 0; will stop at '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 5224 : 1
+2024/09/17-18:45:07.844 10ac Compacting 3@0 + 0@1 files
+2024/09/17-18:45:07.936 10ac Generated table #183@0: 1893 keys, 2129157 bytes
+2024/09/17-18:45:07.983 10ac Generated table #184@0: 1893 keys, 2130212 bytes
+2024/09/17-18:45:07.993 10ac Generated table #185@0: 405 keys, 435381 bytes
+2024/09/17-18:45:07.993 10ac Compacted 3@0 + 0@1 files => 4694750 bytes
+2024/09/17-18:45:07.993 10ac compacted to: files[ 0 5 0 0 0 0 0 ]
+2024/09/17-18:45:07.993 10ac Delete type=2 #118
+2024/09/17-18:45:07.994 10ac Delete type=2 #119
+2024/09/17-18:45:07.994 10ac Delete type=2 #120
+2024/09/17-18:45:08.309 10ac Manual compaction at level-0 from '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 5224 : 1 .. '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 0 : 0; will stop at (end)

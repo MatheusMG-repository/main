@@ -1,5 +1,5 @@
-2024/09/03-16:00:33.460 504c Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:33.462 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-encounter-tables/000057.log: OK
-2024/09/03-16:00:33.464 504c Table #5: 975 entries OK
-2024/09/03-16:00:33.471 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-encounter-tables/MANIFEST-000056: OK
-2024/09/03-16:00:33.479 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-encounter-tables; recovered 1 files; 99596 bytes. Some data may have been lost. ****
+2024/09/07-19:26:28.822719 7dfe10fbc6c0 Delete type=3 #1
+2024/09/07-19:26:29.086973 7dfb73fff6c0 Level-0 table #5: started
+2024/09/07-19:26:29.091312 7dfb73fff6c0 Level-0 table #5: 99595 bytes OK
+2024/09/07-19:26:29.092841 7dfb73fff6c0 Delete type=0 #3
+2024/09/07-19:26:29.118327 7dfb73fff6c0 Manual compaction at level-0 from '!tables!0GMSDmt7APUHxCjX' @ 72057594037927935 : 1 .. '!tables.results!yeQlfbQ6ARKZLOUH.zyw1NlKXzJXrN2yR' @ 0 : 0; will stop at (end)

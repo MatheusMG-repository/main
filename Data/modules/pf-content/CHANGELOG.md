@@ -1,4 +1,24 @@
 # Changelog
+## 10.1.1
+### Changelog
+* Fixed: Updated the custom compendium loading to SBC due to changes on SBC's end.
+
+## 10.1.0
+### Changelog
+* Added: Aberrant Unchained Eidolon base form was missing (both medium and small versions)
+* Changed: Removed Source abbreviations from descriptions
+* Changed: Reorganized and enhanced core race racial traits
+* Changed: Ensured racial trait icons matched their respective races' icons
+* Changed: Updated buffs with more accurate v10+ categories
+* Changed: Removed duplicate items that existed in the system
+* Changed: Updated tooling, readme, and contribution processes
+* Changed: Haunts were rebuilt to use the new haunt actor type
+* Fixed: Many typos in descriptions
+* Fixed: Buffs with an end time are now respected
+* Fixed: Removed Category dictionary tags to avoid conflicts and lots of noise for users
+* Fixed: Magic Item Generator roll table was broken
+* Fixed: Magic Items, Artifacts, and Cursed items lacked enhancement bonus
+
 ## 10.0.0
 ### Changelog
 * Added: Content was migrated for PF1E v10.3, along with many changes to work with the new features in the system.

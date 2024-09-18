@@ -15,8 +15,8 @@
   "url": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter",
   "bugs": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/issues",
   "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/releases/permalink/latest/downloads/module.json",
-  "download": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/releases/4.6.4/downloads/pf1-statblock-converter.zip",
-  "version": "4.6.4",
+  "download": "https://gitlab.com/foundryvtt_pathfinder1e/pf1-statblock-converter/-/releases/4.6.5/downloads/pf1-statblock-converter.zip",
+  "version": "4.6.5",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -33,7 +33,7 @@
         "id": "pf1",
         "compatibility": {
           "minimum": "10",
-          "verified": "10"
+          "verified": "10.7"
         }
       }
     ]

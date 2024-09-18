@@ -1,5 +1,11 @@
-2024/09/03-16:00:39.221 2924 Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:39.222 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-iron-gods/000138.log: OK
-2024/09/03-16:00:39.226 2924 Table #86: 385 entries OK
-2024/09/03-16:00:39.234 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-iron-gods/MANIFEST-000137: OK
-2024/09/03-16:00:39.242 2924 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-iron-gods; recovered 1 files; 430838 bytes. Some data may have been lost. ****
+2024/09/17-18:38:55.355 2aac Delete type=3 #1
+2024/09/17-18:45:11.065 10ac Level-0 table #146: started
+2024/09/17-18:45:11.065 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:11.067 10ac Delete type=0 #144
+2024/09/17-18:45:11.082 10ac Manual compaction at level-0 from '!journal!0AlYfwwitqAEITgb' @ 72057594037927935 : 1 .. '!journal.pages!z70LuUIuAaralTT3.X5rzwr6N8tczJlgE' @ 0 : 0; will stop at '!journal.pages!z70LuUIuAaralTT3.X5rzwr6N8tczJlgE' @ 628 : 1
+2024/09/17-18:45:11.082 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:11.092 10ac Generated table #147@0: 385 keys, 430838 bytes
+2024/09/17-18:45:11.092 10ac Compacted 1@0 + 0@1 files => 430838 bytes
+2024/09/17-18:45:11.093 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:11.093 10ac Delete type=2 #86
+2024/09/17-18:45:11.108 10ac Manual compaction at level-0 from '!journal.pages!z70LuUIuAaralTT3.X5rzwr6N8tczJlgE' @ 628 : 1 .. '!journal.pages!z70LuUIuAaralTT3.X5rzwr6N8tczJlgE' @ 0 : 0; will stop at (end)

@@ -1,5 +1,11 @@
-2024/09/03-16:00:31.758 5070 Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:31.759 5070 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\armors-and-shields/000057.log: OK
-2024/09/03-16:00:31.761 5070 Table #5: 68 entries OK
-2024/09/03-16:00:31.768 5070 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\armors-and-shields/MANIFEST-000056: OK
-2024/09/03-16:00:31.776 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\armors-and-shields; recovered 1 files; 32365 bytes. Some data may have been lost. ****
+2024/09/17-18:38:49.480 243c Delete type=3 #1
+2024/09/17-18:45:06.284 10ac Level-0 table #65: started
+2024/09/17-18:45:06.284 10ac Level-0 table #65: 0 bytes OK
+2024/09/17-18:45:06.285 10ac Delete type=0 #63
+2024/09/17-18:45:06.306 10ac Manual compaction at level-0 from '!folders!33jGfHlDL34jvwnX' @ 72057594037927935 : 1 .. '!items!ziXQ1DlDMGTAUOe9' @ 0 : 0; will stop at '!items!ziXQ1DlDMGTAUOe9' @ 48 : 1
+2024/09/17-18:45:06.306 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.309 10ac Generated table #66@0: 68 keys, 32365 bytes
+2024/09/17-18:45:06.309 10ac Compacted 1@0 + 0@1 files => 32365 bytes
+2024/09/17-18:45:06.310 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:06.310 10ac Delete type=2 #5
+2024/09/17-18:45:06.322 10ac Manual compaction at level-0 from '!items!ziXQ1DlDMGTAUOe9' @ 48 : 1 .. '!items!ziXQ1DlDMGTAUOe9' @ 0 : 0; will stop at (end)

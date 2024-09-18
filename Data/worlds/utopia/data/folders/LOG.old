@@ -1,6 +1,12 @@
-2024/09/03-16:00:30.646 2924 Log #249: 0 ops saved to Table #250 OK
-2024/09/03-16:00:30.647 2924 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders/000249.log: OK
-2024/09/03-16:00:30.653 2924 Table #205: 32 entries OK
-2024/09/03-16:00:30.658 2924 Table #212: 3 entries OK
-2024/09/03-16:00:30.665 2924 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders/MANIFEST-000248: OK
-2024/09/03-16:00:30.673 2924 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/folders; recovered 2 files; 4149 bytes. Some data may have been lost. ****
+2024/09/17-18:38:48.703 243c Delete type=3 #1
+2024/09/17-18:45:05.943 10ac Level-0 table #257: started
+2024/09/17-18:45:05.943 10ac Level-0 table #257: 0 bytes OK
+2024/09/17-18:45:05.945 10ac Delete type=0 #255
+2024/09/17-18:45:05.949 10ac Manual compaction at level-0 from '!folders!3Q3ZEse64Ns0wUn4' @ 72057594037927935 : 1 .. '!folders!ykpXxU9zlQmxiExP' @ 0 : 0; will stop at '!folders!aF5phw8Ao3eUp8RA' @ 44 : 1
+2024/09/17-18:45:05.949 10ac Compacting 2@0 + 0@1 files
+2024/09/17-18:45:05.956 10ac Generated table #258@0: 34 keys, 3826 bytes
+2024/09/17-18:45:05.956 10ac Compacted 2@0 + 0@1 files => 3826 bytes
+2024/09/17-18:45:05.958 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:05.958 10ac Delete type=2 #205
+2024/09/17-18:45:05.958 10ac Delete type=2 #212
+2024/09/17-18:45:05.964 10ac Manual compaction at level-0 from '!folders!aF5phw8Ao3eUp8RA' @ 44 : 1 .. '!folders!ykpXxU9zlQmxiExP' @ 0 : 0; will stop at (end)

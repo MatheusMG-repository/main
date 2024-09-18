@@ -1,5 +1,11 @@
-2024/09/03-16:00:31.939 5070 Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:31.940 5070 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd/000057.log: OK
-2024/09/03-16:00:31.942 5070 Table #5: 13 entries OK
-2024/09/03-16:00:31.949 5070 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd/MANIFEST-000056: OK
-2024/09/03-16:00:31.956 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd; recovered 1 files; 13911 bytes. Some data may have been lost. ****
+2024/09/17-18:38:49.582 243c Delete type=3 #1
+2024/09/17-18:45:06.331 10ac Level-0 table #65: started
+2024/09/17-18:45:06.331 10ac Level-0 table #65: 0 bytes OK
+2024/09/17-18:45:06.332 10ac Delete type=0 #63
+2024/09/17-18:45:06.354 10ac Manual compaction at level-0 from '!items!0jjH2XJVd6dzlaSm' @ 72057594037927935 : 1 .. '!items!mp1Zmbx0OAzSW4oW' @ 0 : 0; will stop at '!items!mp1Zmbx0OAzSW4oW' @ 12 : 1
+2024/09/17-18:45:06.354 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.357 10ac Generated table #66@0: 13 keys, 13911 bytes
+2024/09/17-18:45:06.357 10ac Compacted 1@0 + 0@1 files => 13911 bytes
+2024/09/17-18:45:06.358 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:06.359 10ac Delete type=2 #5
+2024/09/17-18:45:06.504 10ac Manual compaction at level-0 from '!items!mp1Zmbx0OAzSW4oW' @ 12 : 1 .. '!items!mp1Zmbx0OAzSW4oW' @ 0 : 0; will stop at (end)

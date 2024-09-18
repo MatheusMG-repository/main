@@ -1,5 +1,5 @@
-2024/09/03-16:00:33.506 2924 Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:33.508 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\elephant-in-the-room/000057.log: OK
-2024/09/03-16:00:33.514 2924 Table #5: 36 entries OK
-2024/09/03-16:00:33.522 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\elephant-in-the-room/MANIFEST-000056: OK
-2024/09/03-16:00:33.529 2924 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\elephant-in-the-room; recovered 1 files; 21384 bytes. Some data may have been lost. ****
+2024/09/07-19:26:28.778895 7dfe11fbe6c0 Delete type=3 #1
+2024/09/07-19:26:29.005759 7dfb73fff6c0 Level-0 table #5: started
+2024/09/07-19:26:29.008464 7dfb73fff6c0 Level-0 table #5: 21384 bytes OK
+2024/09/07-19:26:29.010437 7dfb73fff6c0 Delete type=0 #3
+2024/09/07-19:26:29.015656 7dfb73fff6c0 Manual compaction at level-0 from '!items!AjkiW6RI3joXEGla' @ 72057594037927935 : 1 .. '!items!z7YX1uI4MrNyv0PF' @ 0 : 0; will stop at (end)

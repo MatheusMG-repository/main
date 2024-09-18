@@ -1,5 +1,11 @@
-2024/09/03-16:00:38.653 50bc Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:38.655 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air/000138.log: OK
-2024/09/03-16:00:38.658 50bc Table #86: 664 entries OK
-2024/09/03-16:00:38.666 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air/MANIFEST-000137: OK
-2024/09/03-16:00:38.673 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air; recovered 1 files; 471414 bytes. Some data may have been lost. ****
+2024/09/17-18:38:54.975 243c Delete type=3 #1
+2024/09/17-18:45:10.819 10ac Level-0 table #146: started
+2024/09/17-18:45:10.820 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:10.821 10ac Delete type=0 #144
+2024/09/17-18:45:10.842 10ac Manual compaction at level-0 from '!journal!0J6DxfM7evrk1Z5k' @ 72057594037927935 : 1 .. '!journal.pages!ys2psqenZXrn7ZOc.R5RNaq7XIQAeooEb' @ 0 : 0; will stop at '!journal.pages!ys2psqenZXrn7ZOc.R5RNaq7XIQAeooEb' @ 334 : 1
+2024/09/17-18:45:10.842 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:10.853 10ac Generated table #147@0: 664 keys, 471414 bytes
+2024/09/17-18:45:10.853 10ac Compacted 1@0 + 0@1 files => 471414 bytes
+2024/09/17-18:45:10.854 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:10.854 10ac Delete type=2 #86
+2024/09/17-18:45:10.858 10ac Manual compaction at level-0 from '!journal.pages!ys2psqenZXrn7ZOc.R5RNaq7XIQAeooEb' @ 334 : 1 .. '!journal.pages!ys2psqenZXrn7ZOc.R5RNaq7XIQAeooEb' @ 0 : 0; will stop at (end)

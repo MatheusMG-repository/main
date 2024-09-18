@@ -5,7 +5,7 @@ export const sbcConfig = {};
 /* ------------------------------------ */
 
 sbcConfig.modData = {
-    "version": "4.6.4",
+    "version": "4.6.5",
     "mod": "pf1-statblock-converter",
     "modName": "sbc | PF1 Statblock Converter"
 }

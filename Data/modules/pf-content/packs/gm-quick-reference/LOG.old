@@ -1,5 +1,5 @@
-2024/09/03-16:00:33.810 5070 Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:33.811 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference/000057.log: OK
-2024/09/03-16:00:33.813 5070 Table #5: 50 entries OK
-2024/09/03-16:00:33.821 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference/MANIFEST-000056: OK
-2024/09/03-16:00:33.828 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\gm-quick-reference; recovered 1 files; 52579 bytes. Some data may have been lost. ****
+2024/09/07-19:26:28.778933 7dfe117bd6c0 Delete type=3 #1
+2024/09/07-19:26:29.010840 7dfb73fff6c0 Level-0 table #5: started
+2024/09/07-19:26:29.013827 7dfb73fff6c0 Level-0 table #5: 52579 bytes OK
+2024/09/07-19:26:29.015469 7dfb73fff6c0 Delete type=0 #3
+2024/09/07-19:26:29.020604 7dfb73fff6c0 Manual compaction at level-0 from '!journal!0mCHxfTWOdJfUOfy' @ 72057594037927935 : 1 .. '!journal.pages!tLgNhWuK06KIcarw.EGQY2u0lX55DtyLq' @ 0 : 0; will stop at (end)

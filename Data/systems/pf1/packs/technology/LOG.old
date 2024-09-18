@@ -1,5 +1,11 @@
-2024/09/03-16:00:31.852 50bc Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:31.854 50bc Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\technology/000057.log: OK
-2024/09/03-16:00:31.858 50bc Table #5: 284 entries OK
-2024/09/03-16:00:31.865 50bc Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\technology/MANIFEST-000056: OK
-2024/09/03-16:00:31.872 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\technology; recovered 1 files; 375989 bytes. Some data may have been lost. ****
+2024/09/17-18:38:49.538 2aac Delete type=3 #1
+2024/09/17-18:45:06.285 10ac Level-0 table #65: started
+2024/09/17-18:45:06.285 10ac Level-0 table #65: 0 bytes OK
+2024/09/17-18:45:06.287 10ac Delete type=0 #63
+2024/09/17-18:45:06.310 10ac Manual compaction at level-0 from '!folders!07LmOqf2qBzm5RsK' @ 72057594037927935 : 1 .. '!items!zf260gyIOr7wRR0b' @ 0 : 0; will stop at '!items!zf260gyIOr7wRR0b' @ 90 : 1
+2024/09/17-18:45:06.310 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.319 10ac Generated table #66@0: 284 keys, 375989 bytes
+2024/09/17-18:45:06.319 10ac Compacted 1@0 + 0@1 files => 375989 bytes
+2024/09/17-18:45:06.320 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:06.320 10ac Delete type=2 #5
+2024/09/17-18:45:06.322 10ac Manual compaction at level-0 from '!items!zf260gyIOr7wRR0b' @ 90 : 1 .. '!items!zf260gyIOr7wRR0b' @ 0 : 0; will stop at (end)

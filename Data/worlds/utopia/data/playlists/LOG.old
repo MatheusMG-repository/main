@@ -1,6 +1,13 @@
-2024/09/03-16:00:30.902 2924 Log #263: 0 ops saved to Table #264 OK
-2024/09/03-16:00:30.903 2924 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/000263.log: OK
-2024/09/03-16:00:30.905 2924 Table #247: 120 entries OK
-2024/09/03-16:00:30.910 2924 Table #257: 6 entries OK
-2024/09/03-16:00:30.917 2924 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/MANIFEST-000262: OK
-2024/09/03-16:00:30.925 2924 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists; recovered 2 files; 14094 bytes. Some data may have been lost. ****
+2024/09/17-18:38:48.887 243c Delete type=3 #1
+2024/09/17-18:45:05.972 10ac Level-0 table #271: started
+2024/09/17-18:45:05.973 10ac Level-0 table #271: 0 bytes OK
+2024/09/17-18:45:05.974 10ac Delete type=0 #269
+2024/09/17-18:45:06.005 10ac Manual compaction at level-0 from '!playlists!1H0pE2stVOT0O3AP' @ 72057594037927935 : 1 .. '!playlists.sounds!oVHW6HOfKP485AJR.JljPAMAAlT9Yljbh' @ 0 : 0; will stop at '!playlists.sounds!oVHW6HOfKP485AJR.JljPAMAAlT9Yljbh' @ 47991 : 1
+2024/09/17-18:45:06.005 10ac Compacting 3@0 + 0@1 files
+2024/09/17-18:45:06.008 10ac Generated table #272@0: 120 keys, 13149 bytes
+2024/09/17-18:45:06.008 10ac Compacted 3@0 + 0@1 files => 13149 bytes
+2024/09/17-18:45:06.009 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:06.010 10ac Delete type=2 #247
+2024/09/17-18:45:06.010 10ac Delete type=2 #257
+2024/09/17-18:45:06.010 10ac Delete type=2 #267
+2024/09/17-18:45:06.013 10ac Manual compaction at level-0 from '!playlists.sounds!oVHW6HOfKP485AJR.JljPAMAAlT9Yljbh' @ 47991 : 1 .. '!playlists.sounds!oVHW6HOfKP485AJR.JljPAMAAlT9Yljbh' @ 0 : 0; will stop at (end)

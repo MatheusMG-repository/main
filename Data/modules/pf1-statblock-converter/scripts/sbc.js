@@ -3,7 +3,7 @@
  *
  * Current Author: Fair Strides
  * Contributions by: Noon, mkahvi
- * 
+ *
  * Original Author: Lavaeolous
  */
 
@@ -24,7 +24,7 @@ export class sbcApp {
     static async startSBC () {
         sbcUtils.log("Opening the input dialog")
         await sbcInputDialog.renderInputDialog();
-        
+
         Hooks.callAll("sbc.started");
     }
 
@@ -108,12 +108,11 @@ export class sbcApp {
 /* ------------------------------------ */
 
 // Run when Foundry gets initialized
-Hooks.once("init", async function() { 
-    
+Hooks.once("init", async function() {
     window.SBC = {
         sbcApp, sbcUtils, sbcConfig, sbcData, sbcSettings, sbcInputDialog
     }
-    
+
 });
 
 // Do anything after initialization but before ready
@@ -123,26 +122,40 @@ Hooks.once("setup", function() {
 
 // Do anything once the module is ready
 Hooks.once("ready", async function() {
-    
+
     await initializeSettings();
-    Hooks.callAll("sbc.loadCustomCompendiums");
+    let packs = [];
+    Hooks.callAll("sbc.loadCustomCompendiums", packs);
+
+    game.settings.set(sbcConfig.modData.mod, "customCompendiums", Array.from(new Set(packs)).join(","));
+
     await sbcConfig.initializeConfig().then(() => {
-        console.log("sbc | Config initialized")
-        parserMapping.initMapping();
+      console.log("sbc | Config initialized")
+      parserMapping.initMapping();
     });
+
+    let customCompendiums = [];
+    let customCompendiumSettings = game.settings.get(sbcConfig.modData.mod, "customCompendiums");
+
+    if (customCompendiumSettings !== "") {
+        customCompendiumSettings = customCompendiumSettings.replace(/\s/g, "");
+        customCompendiums.push(...customCompendiumSettings.split(/[,;]/g));
+    }
+
+    await fuzzyIndexPacks(customCompendiums);
 });
 
 // Render the sbcButton when the actorDirectory is visible
 Hooks.on("renderActorDirectory", (app, html, _data) => {
     // Handle rendering the SBC window button
-    sbcUtils.log("Rendering sbc button")  
+    sbcUtils.log("Rendering sbc button")
     const startSBCButton = $("<button id='startSBCButton' class='create-entity sbcButton'><i class='fas fa-file-import'></i></i>sbc | Convert Statblock</button>");
     html.find(".directory-footer").append(startSBCButton)
     startSBCButton.click(async (_ev) => {
         await sbcApp.initializeSBC()
         sbcApp.startSBC()
     });
-    
+
     // Hide the WIP sub-folder
     const folder = game.actors.directory.folders.find((f) => f.name === "SBC_WIP");
     if (folder)
@@ -169,30 +182,9 @@ Hooks.on("sbc.reset", async function() {
     if (customCompendiumSettings !== "") {
         customCompendiumSettings = customCompendiumSettings.replace(/\s/g, "");
         customCompendiums.push(...customCompendiumSettings.split(/[,;]/g));
-        console.log(customCompendiums);
     }
-    
+
     await fuzzyIndexPacks(customCompendiums);
-});
-
-// Allow other modules to add custom compendiums
-Hooks.on("sbc.loadCustomCompendiums", async function(compendia) {
-    if(!compendia) return;
-
-    let customCompendiums = new Set();
-    let customCompendiumSettings = game.settings.get(sbcConfig.modData.mod, "customCompendiums")
-
-    if (customCompendiumSettings !== "") {
-        customCompendiumSettings = customCompendiumSettings.replace(/\s/g, "");
-        customCompendiums = new Set(customCompendiumSettings.split(/[,;]/g));
-    }
-    compendia.forEach(element => {
-        customCompendiums.add(element);
-    });
-
-    await fuzzyIndexPacks(Array.from(customCompendiums));
-    sbcConfig.initializeConfig();
-    game.settings.set(sbcConfig.modData.mod, "customCompendiums", Array.from(customCompendiums).join(","));
 });
 
 async function fuzzyIndexPacks(packs) {

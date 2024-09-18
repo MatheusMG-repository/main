@@ -1,5 +1,11 @@
-2024/09/03-16:00:39.406 504c Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:39.407 504c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mummys-mask/000138.log: OK
-2024/09/03-16:00:39.412 504c Table #86: 398 entries OK
-2024/09/03-16:00:39.418 504c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mummys-mask/MANIFEST-000137: OK
-2024/09/03-16:00:39.425 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mummys-mask; recovered 1 files; 417923 bytes. Some data may have been lost. ****
+2024/09/17-18:38:55.468 2aac Delete type=3 #1
+2024/09/17-18:45:11.122 10ac Level-0 table #146: started
+2024/09/17-18:45:11.122 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:11.124 10ac Delete type=0 #144
+2024/09/17-18:45:11.135 10ac Manual compaction at level-0 from '!journal!05gCiJ045vEFEcOU' @ 72057594037927935 : 1 .. '!journal.pages!z8Nk7I9ZbPLefVO5.iy83xmOJhLh1GWAe' @ 0 : 0; will stop at '!journal.pages!z8Nk7I9ZbPLefVO5.iy83xmOJhLh1GWAe' @ 562 : 1
+2024/09/17-18:45:11.135 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:11.145 10ac Generated table #147@0: 398 keys, 417923 bytes
+2024/09/17-18:45:11.145 10ac Compacted 1@0 + 0@1 files => 417923 bytes
+2024/09/17-18:45:11.146 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:11.146 10ac Delete type=2 #86
+2024/09/17-18:45:11.153 10ac Manual compaction at level-0 from '!journal.pages!z8Nk7I9ZbPLefVO5.iy83xmOJhLh1GWAe' @ 562 : 1 .. '!journal.pages!z8Nk7I9ZbPLefVO5.iy83xmOJhLh1GWAe' @ 0 : 0; will stop at (end)

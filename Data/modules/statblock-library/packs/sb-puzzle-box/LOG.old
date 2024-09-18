@@ -1,5 +1,11 @@
-2024/09/03-16:00:39.451 50bc Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:39.453 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box/000138.log: OK
-2024/09/03-16:00:39.454 50bc Table #86: 45 entries OK
-2024/09/03-16:00:39.461 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box/MANIFEST-000137: OK
-2024/09/03-16:00:39.470 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box; recovered 1 files; 31862 bytes. Some data may have been lost. ****
+2024/09/17-18:38:55.495 2684 Delete type=3 #1
+2024/09/17-18:45:11.134 10ac Level-0 table #146: started
+2024/09/17-18:45:11.134 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:11.135 10ac Delete type=0 #144
+2024/09/17-18:45:11.148 10ac Manual compaction at level-0 from '!journal!0x6lahYcbStMjnum' @ 72057594037927935 : 1 .. '!journal.pages!ktwzuTkbtnAw610A.xZ2jGQ3Gu8Eyh3ip' @ 0 : 0; will stop at '!journal.pages!ktwzuTkbtnAw610A.xZ2jGQ3Gu8Eyh3ip' @ 58 : 1
+2024/09/17-18:45:11.148 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:11.151 10ac Generated table #147@0: 45 keys, 31862 bytes
+2024/09/17-18:45:11.151 10ac Compacted 1@0 + 0@1 files => 31862 bytes
+2024/09/17-18:45:11.152 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:11.152 10ac Delete type=2 #86
+2024/09/17-18:45:11.163 10ac Manual compaction at level-0 from '!journal.pages!ktwzuTkbtnAw610A.xZ2jGQ3Gu8Eyh3ip' @ 58 : 1 .. '!journal.pages!ktwzuTkbtnAw610A.xZ2jGQ3Gu8Eyh3ip' @ 0 : 0; will stop at (end)

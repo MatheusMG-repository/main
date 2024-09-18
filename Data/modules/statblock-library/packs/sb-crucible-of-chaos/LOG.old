@@ -1,5 +1,11 @@
-2024/09/03-16:00:37.999 2924 Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:38.000 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-crucible-of-chaos/000138.log: OK
-2024/09/03-16:00:38.001 2924 Table #86: 24 entries OK
-2024/09/03-16:00:38.008 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-crucible-of-chaos/MANIFEST-000137: OK
-2024/09/03-16:00:38.016 2924 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-crucible-of-chaos; recovered 1 files; 20194 bytes. Some data may have been lost. ****
+2024/09/17-18:38:54.552 2aac Delete type=3 #1
+2024/09/17-18:45:10.426 10ac Level-0 table #146: started
+2024/09/17-18:45:10.426 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:10.428 10ac Delete type=0 #144
+2024/09/17-18:45:10.478 10ac Manual compaction at level-0 from '!journal!FjoFeNew2hg0OXdM' @ 72057594037927935 : 1 .. '!journal.pages!wgM0Pj1IqYxl4m4n.utZz0i1y9UCZUPgx' @ 0 : 0; will stop at '!journal.pages!wgM0Pj1IqYxl4m4n.utZz0i1y9UCZUPgx' @ 37 : 1
+2024/09/17-18:45:10.478 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:10.481 10ac Generated table #147@0: 24 keys, 20194 bytes
+2024/09/17-18:45:10.481 10ac Compacted 1@0 + 0@1 files => 20194 bytes
+2024/09/17-18:45:10.482 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:10.482 10ac Delete type=2 #86
+2024/09/17-18:45:10.529 10ac Manual compaction at level-0 from '!journal.pages!wgM0Pj1IqYxl4m4n.utZz0i1y9UCZUPgx' @ 37 : 1 .. '!journal.pages!wgM0Pj1IqYxl4m4n.utZz0i1y9UCZUPgx' @ 0 : 0; will stop at (end)

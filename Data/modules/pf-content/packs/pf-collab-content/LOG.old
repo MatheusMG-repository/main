@@ -1,5 +1,5 @@
-2024/09/03-16:00:32.966 50bc Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:32.967 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-collab-content/000057.log: OK
-2024/09/03-16:00:32.969 50bc Table #5: 40 entries OK
-2024/09/03-16:00:32.976 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-collab-content/MANIFEST-000056: OK
-2024/09/03-16:00:32.984 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-collab-content; recovered 1 files; 32086 bytes. Some data may have been lost. ****
+2024/09/07-19:26:28.812501 7dfe10fbc6c0 Delete type=3 #1
+2024/09/07-19:26:29.078007 7dfb73fff6c0 Level-0 table #5: started
+2024/09/07-19:26:29.080412 7dfb73fff6c0 Level-0 table #5: 32905 bytes OK
+2024/09/07-19:26:29.082065 7dfb73fff6c0 Delete type=0 #3
+2024/09/07-19:26:29.086962 7dfb73fff6c0 Manual compaction at level-0 from '!folders!95XArHh4WxRbxYHQ' @ 72057594037927935 : 1 .. '!items!zx3bDmMsNBEBNfIJ' @ 0 : 0; will stop at (end)

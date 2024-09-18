@@ -1,5 +1,11 @@
-2024/09/03-16:00:38.040 504c Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:38.041 504c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand/000138.log: OK
-2024/09/03-16:00:38.042 504c Table #86: 45 entries OK
-2024/09/03-16:00:38.050 504c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand/MANIFEST-000137: OK
-2024/09/03-16:00:38.057 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand; recovered 1 files; 34737 bytes. Some data may have been lost. ****
+2024/09/17-18:38:54.573 2684 Delete type=3 #1
+2024/09/17-18:45:10.483 10ac Level-0 table #146: started
+2024/09/17-18:45:10.483 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:10.484 10ac Delete type=0 #144
+2024/09/17-18:45:10.529 10ac Manual compaction at level-0 from '!journal!0oi7f13IW6WzNKTS' @ 72057594037927935 : 1 .. '!journal.pages!v9jdNUNquj3rrJwW.jJoKxsC2UeexNEDC' @ 0 : 0; will stop at '!journal.pages!v9jdNUNquj3rrJwW.jJoKxsC2UeexNEDC' @ 38 : 1
+2024/09/17-18:45:10.529 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:10.533 10ac Generated table #147@0: 45 keys, 34737 bytes
+2024/09/17-18:45:10.533 10ac Compacted 1@0 + 0@1 files => 34737 bytes
+2024/09/17-18:45:10.534 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:10.534 10ac Delete type=2 #86
+2024/09/17-18:45:10.573 10ac Manual compaction at level-0 from '!journal.pages!v9jdNUNquj3rrJwW.jJoKxsC2UeexNEDC' @ 38 : 1 .. '!journal.pages!v9jdNUNquj3rrJwW.jJoKxsC2UeexNEDC' @ 0 : 0; will stop at (end)

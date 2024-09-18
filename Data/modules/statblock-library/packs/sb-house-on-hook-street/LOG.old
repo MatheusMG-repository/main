@@ -1,5 +1,11 @@
-2024/09/03-16:00:38.517 5070 Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:38.519 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street/000138.log: OK
-2024/09/03-16:00:38.520 5070 Table #86: 51 entries OK
-2024/09/03-16:00:38.527 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street/MANIFEST-000137: OK
-2024/09/03-16:00:38.535 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street; recovered 1 files; 41425 bytes. Some data may have been lost. ****
+2024/09/17-18:38:54.896 2684 Delete type=3 #1
+2024/09/17-18:45:10.805 10ac Level-0 table #146: started
+2024/09/17-18:45:10.805 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:10.807 10ac Delete type=0 #144
+2024/09/17-18:45:10.809 10ac Manual compaction at level-0 from '!journal!7llzrC99ubDApObd' @ 72057594037927935 : 1 .. '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 0 : 0; will stop at '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 80 : 1
+2024/09/17-18:45:10.809 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:10.811 10ac Generated table #147@0: 51 keys, 41425 bytes
+2024/09/17-18:45:10.811 10ac Compacted 1@0 + 0@1 files => 41425 bytes
+2024/09/17-18:45:10.812 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:10.812 10ac Delete type=2 #86
+2024/09/17-18:45:10.821 10ac Manual compaction at level-0 from '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 80 : 1 .. '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 0 : 0; will stop at (end)

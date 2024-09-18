@@ -1,5 +1,11 @@
-2024/09/03-16:00:32.198 504c Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:32.199 504c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates/000057.log: OK
-2024/09/03-16:00:32.242 504c Table #5: 189 entries OK
-2024/09/03-16:00:32.249 504c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates/MANIFEST-000056: OK
-2024/09/03-16:00:32.256 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates; recovered 1 files; 485606 bytes. Some data may have been lost. ****
+2024/09/17-18:38:49.840 2644 Delete type=3 #1
+2024/09/17-18:45:06.501 10ac Level-0 table #65: started
+2024/09/17-18:45:06.501 10ac Level-0 table #65: 0 bytes OK
+2024/09/17-18:45:06.503 10ac Delete type=0 #63
+2024/09/17-18:45:06.504 10ac Manual compaction at level-0 from '!items!055IbpMbY3yfbwPb' @ 72057594037927935 : 1 .. '!items!zfZ7M3PGgvWeolOz' @ 0 : 0; will stop at '!items!zfZ7M3PGgvWeolOz' @ 31 : 1
+2024/09/17-18:45:06.504 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.552 10ac Generated table #66@0: 189 keys, 485606 bytes
+2024/09/17-18:45:06.552 10ac Compacted 1@0 + 0@1 files => 485606 bytes
+2024/09/17-18:45:06.553 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:06.553 10ac Delete type=2 #5
+2024/09/17-18:45:06.558 10ac Manual compaction at level-0 from '!items!zfZ7M3PGgvWeolOz' @ 31 : 1 .. '!items!zfZ7M3PGgvWeolOz' @ 0 : 0; will stop at (end)

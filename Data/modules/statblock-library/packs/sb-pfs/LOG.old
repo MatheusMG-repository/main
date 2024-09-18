@@ -1,6 +1,13 @@
-2024/09/03-16:00:38.338 5070 Log #141: 0 ops saved to Table #142 OK
-2024/09/03-16:00:38.339 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-pfs/000141.log: OK
-2024/09/03-16:00:38.348 5070 Table #88: 3429 entries OK
-2024/09/03-16:00:38.445 5070 Table #89: 1647 entries OK
-2024/09/03-16:00:38.452 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-pfs/MANIFEST-000140: OK
-2024/09/03-16:00:38.459 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-pfs; recovered 2 files; 3881068 bytes. Some data may have been lost. ****
+2024/09/17-18:38:54.840 2684 Delete type=3 #1
+2024/09/17-18:45:10.649 10ac Level-0 table #149: started
+2024/09/17-18:45:10.649 10ac Level-0 table #149: 0 bytes OK
+2024/09/17-18:45:10.651 10ac Delete type=0 #147
+2024/09/17-18:45:10.661 10ac Manual compaction at level-0 from '!journal!007n0qMlgaixzciX' @ 72057594037927935 : 1 .. '!journal.pages!zzsgk6coiIlKNJQP.oX91FTuoC5CoQcfJ' @ 0 : 0; will stop at '!journal.pages!zzsgk6coiIlKNJQP.oX91FTuoC5CoQcfJ' @ 5620 : 1
+2024/09/17-18:45:10.661 10ac Compacting 2@0 + 0@1 files
+2024/09/17-18:45:10.697 10ac Generated table #150@0: 3429 keys, 2130097 bytes
+2024/09/17-18:45:10.803 10ac Generated table #151@0: 1647 keys, 1750971 bytes
+2024/09/17-18:45:10.803 10ac Compacted 2@0 + 0@1 files => 3881068 bytes
+2024/09/17-18:45:10.804 10ac compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/09/17-18:45:10.805 10ac Delete type=2 #88
+2024/09/17-18:45:10.805 10ac Delete type=2 #89
+2024/09/17-18:45:10.809 10ac Manual compaction at level-0 from '!journal.pages!zzsgk6coiIlKNJQP.oX91FTuoC5CoQcfJ' @ 5620 : 1 .. '!journal.pages!zzsgk6coiIlKNJQP.oX91FTuoC5CoQcfJ' @ 0 : 0; will stop at (end)

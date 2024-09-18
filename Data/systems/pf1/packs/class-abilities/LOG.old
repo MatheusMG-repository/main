@@ -1,5 +1,12 @@
-2024/09/03-16:00:32.027 50bc Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:32.028 50bc Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\class-abilities/000057.log: OK
-2024/09/03-16:00:32.133 50bc Table #5: 4507 entries OK
-2024/09/03-16:00:32.140 50bc Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\class-abilities/MANIFEST-000056: OK
-2024/09/03-16:00:32.147 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\class-abilities; recovered 1 files; 2725009 bytes. Some data may have been lost. ****
+2024/09/17-18:38:49.725 2aac Delete type=3 #1
+2024/09/17-18:45:06.333 10ac Level-0 table #65: started
+2024/09/17-18:45:06.333 10ac Level-0 table #65: 0 bytes OK
+2024/09/17-18:45:06.334 10ac Delete type=0 #63
+2024/09/17-18:45:06.359 10ac Manual compaction at level-0 from '!folders!NcsnXMqsi3kBGntM' @ 72057594037927935 : 1 .. '!items!zyyB1AU3s5PAuBPU' @ 0 : 0; will stop at '!items!zyyB1AU3s5PAuBPU' @ 2967 : 1
+2024/09/17-18:45:06.359 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.460 10ac Generated table #66@0: 3536 keys, 2126230 bytes
+2024/09/17-18:45:06.499 10ac Generated table #67@0: 971 keys, 598708 bytes
+2024/09/17-18:45:06.499 10ac Compacted 1@0 + 0@1 files => 2724938 bytes
+2024/09/17-18:45:06.501 10ac compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/09/17-18:45:06.501 10ac Delete type=2 #5
+2024/09/17-18:45:06.504 10ac Manual compaction at level-0 from '!items!zyyB1AU3s5PAuBPU' @ 2967 : 1 .. '!items!zyyB1AU3s5PAuBPU' @ 0 : 0; will stop at (end)

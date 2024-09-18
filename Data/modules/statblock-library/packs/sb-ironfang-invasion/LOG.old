@@ -1,5 +1,11 @@
-2024/09/03-16:00:39.267 5070 Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:39.268 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion/000138.log: OK
-2024/09/03-16:00:39.273 5070 Table #86: 481 entries OK
-2024/09/03-16:00:39.280 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion/MANIFEST-000137: OK
-2024/09/03-16:00:39.287 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion; recovered 1 files; 508492 bytes. Some data may have been lost. ****
+2024/09/17-18:38:55.381 2684 Delete type=3 #1
+2024/09/17-18:45:11.080 10ac Level-0 table #146: started
+2024/09/17-18:45:11.080 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:11.082 10ac Delete type=0 #144
+2024/09/17-18:45:11.094 10ac Manual compaction at level-0 from '!journal!0HdTX8K96Q6Cp87D' @ 72057594037927935 : 1 .. '!journal.pages!zuENFL0Mnnm5Pi86.XiriPyx0FrrW3DuE' @ 0 : 0; will stop at '!journal.pages!zuENFL0Mnnm5Pi86.XiriPyx0FrrW3DuE' @ 390 : 1
+2024/09/17-18:45:11.094 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:11.106 10ac Generated table #147@0: 481 keys, 508492 bytes
+2024/09/17-18:45:11.106 10ac Compacted 1@0 + 0@1 files => 508492 bytes
+2024/09/17-18:45:11.108 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:11.108 10ac Delete type=2 #86
+2024/09/17-18:45:11.122 10ac Manual compaction at level-0 from '!journal.pages!zuENFL0Mnnm5Pi86.XiriPyx0FrrW3DuE' @ 390 : 1 .. '!journal.pages!zuENFL0Mnnm5Pi86.XiriPyx0FrrW3DuE' @ 0 : 0; will stop at (end)

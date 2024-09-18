@@ -1,6 +1,13 @@
-2024/09/03-16:00:38.701 5070 Log #141: 0 ops saved to Table #142 OK
-2024/09/03-16:00:38.703 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors/000141.log: OK
-2024/09/03-16:00:38.712 5070 Table #88: 2030 entries OK
-2024/09/03-16:00:38.776 5070 Table #89: 713 entries OK
-2024/09/03-16:00:38.783 5070 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors/MANIFEST-000140: OK
-2024/09/03-16:00:38.791 5070 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors; recovered 2 files; 3268250 bytes. Some data may have been lost. ****
+2024/09/17-18:38:55.063 2684 Delete type=3 #1
+2024/09/17-18:45:10.855 10ac Level-0 table #149: started
+2024/09/17-18:45:10.855 10ac Level-0 table #149: 0 bytes OK
+2024/09/17-18:45:10.856 10ac Delete type=0 #147
+2024/09/17-18:45:10.858 10ac Manual compaction at level-0 from '!journal!012e2S4dFAMlOArZ' @ 72057594037927935 : 1 .. '!journal.pages!zdtwGw7FmlCvwDRJ.yBBw7WxfcLkWsXDG' @ 0 : 0; will stop at '!journal.pages!zdtwGw7FmlCvwDRJ.yBBw7WxfcLkWsXDG' @ 3890 : 1
+2024/09/17-18:45:10.858 10ac Compacting 2@0 + 0@1 files
+2024/09/17-18:45:10.892 10ac Generated table #150@0: 2030 keys, 2123068 bytes
+2024/09/17-18:45:10.967 10ac Generated table #151@0: 713 keys, 1145182 bytes
+2024/09/17-18:45:10.967 10ac Compacted 2@0 + 0@1 files => 3268250 bytes
+2024/09/17-18:45:10.969 10ac compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/09/17-18:45:10.969 10ac Delete type=2 #88
+2024/09/17-18:45:10.969 10ac Delete type=2 #89
+2024/09/17-18:45:10.990 10ac Manual compaction at level-0 from '!journal.pages!zdtwGw7FmlCvwDRJ.yBBw7WxfcLkWsXDG' @ 3890 : 1 .. '!journal.pages!zdtwGw7FmlCvwDRJ.yBBw7WxfcLkWsXDG' @ 0 : 0; will stop at (end)

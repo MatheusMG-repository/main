@@ -1,5 +1,5 @@
-2024/09/03-16:00:34.690 50bc Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:34.692 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-traps-and-haunts/000057.log: OK
-2024/09/03-16:00:34.694 50bc Table #5: 143 entries OK
-2024/09/03-16:00:34.699 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-traps-and-haunts/MANIFEST-000056: OK
-2024/09/03-16:00:34.707 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-traps-and-haunts; recovered 1 files; 109601 bytes. Some data may have been lost. ****
+2024/09/07-19:26:28.865032 7dfe11fbe6c0 Delete type=3 #1
+2024/09/07-19:26:29.349039 7dfb73fff6c0 Level-0 table #5: started
+2024/09/07-19:26:29.353219 7dfb73fff6c0 Level-0 table #5: 103090 bytes OK
+2024/09/07-19:26:29.354924 7dfb73fff6c0 Delete type=0 #3
+2024/09/07-19:26:29.385279 7dfb73fff6c0 Manual compaction at level-0 from '!actors!1aan5IVfvLoK5nEA' @ 72057594037927935 : 1 .. '!folders!gSjqIp1FXk0A8hQl' @ 0 : 0; will stop at (end)

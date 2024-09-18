@@ -1,5 +1,11 @@
-2024/09/03-16:00:37.956 50bc Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:37.958 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-clash-of-the-kingslayers/000138.log: OK
-2024/09/03-16:00:37.960 50bc Table #86: 15 entries OK
-2024/09/03-16:00:37.966 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-clash-of-the-kingslayers/MANIFEST-000137: OK
-2024/09/03-16:00:37.974 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-clash-of-the-kingslayers; recovered 1 files; 17891 bytes. Some data may have been lost. ****
+2024/09/17-18:38:54.530 2644 Delete type=3 #1
+2024/09/17-18:45:10.383 10ac Level-0 table #146: started
+2024/09/17-18:45:10.383 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:10.384 10ac Delete type=0 #144
+2024/09/17-18:45:10.428 10ac Manual compaction at level-0 from '!journal!1eWjpCGtZKFz8Wzr' @ 72057594037927935 : 1 .. '!journal.pages!ulRO8TBYXPGjjWrw.uQsDTsBxy7amwLKD' @ 0 : 0; will stop at '!journal.pages!ulRO8TBYXPGjjWrw.uQsDTsBxy7amwLKD' @ 19 : 1
+2024/09/17-18:45:10.428 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:10.432 10ac Generated table #147@0: 15 keys, 17891 bytes
+2024/09/17-18:45:10.432 10ac Compacted 1@0 + 0@1 files => 17891 bytes
+2024/09/17-18:45:10.434 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:10.434 10ac Delete type=2 #86
+2024/09/17-18:45:10.484 10ac Manual compaction at level-0 from '!journal.pages!ulRO8TBYXPGjjWrw.uQsDTsBxy7amwLKD' @ 19 : 1 .. '!journal.pages!ulRO8TBYXPGjjWrw.uQsDTsBxy7amwLKD' @ 0 : 0; will stop at (end)

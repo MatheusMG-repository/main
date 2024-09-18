@@ -1,5 +1,11 @@
-2024/09/03-16:00:40.050 2924 Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:40.051 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-wrath-righteous/000138.log: OK
-2024/09/03-16:00:40.056 2924 Table #86: 339 entries OK
-2024/09/03-16:00:40.062 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-wrath-righteous/MANIFEST-000137: OK
-2024/09/03-16:00:40.069 2924 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-wrath-righteous; recovered 1 files; 439215 bytes. Some data may have been lost. ****
+2024/09/17-18:38:55.836 2644 Delete type=3 #1
+2024/09/17-18:45:11.309 10ac Level-0 table #146: started
+2024/09/17-18:45:11.310 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:11.311 10ac Delete type=0 #144
+2024/09/17-18:45:11.331 10ac Manual compaction at level-0 from '!journal!0RFOiMKxe0aeWrUG' @ 72057594037927935 : 1 .. '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 0 : 0; will stop at '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 171 : 1
+2024/09/17-18:45:11.331 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:11.349 10ac Generated table #147@0: 339 keys, 439215 bytes
+2024/09/17-18:45:11.349 10ac Compacted 1@0 + 0@1 files => 439215 bytes
+2024/09/17-18:45:11.351 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:11.351 10ac Delete type=2 #86
+2024/09/17-18:45:11.351 10ac Manual compaction at level-0 from '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 171 : 1 .. '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 0 : 0; will stop at (end)

@@ -1,5 +1,14 @@
-2024/09/03-16:00:32.468 50bc Log #21: 0 ops saved to Table #22 OK
-2024/09/03-16:00:32.470 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\fa-battlemaps\packs\maps/000021.log: OK
-2024/09/03-16:00:32.506 50bc Table #4: 49664 entries OK
-2024/09/03-16:00:32.516 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\fa-battlemaps\packs\maps/MANIFEST-000020: OK
-2024/09/03-16:00:32.524 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\fa-battlemaps\packs\maps; recovered 1 files; 7220820 bytes. Some data may have been lost. ****
+2024/09/17-18:38:50.022 2aac Delete type=3 #1
+2024/09/17-18:45:06.592 10ac Level-0 table #29: started
+2024/09/17-18:45:06.592 10ac Level-0 table #29: 0 bytes OK
+2024/09/17-18:45:06.594 10ac Delete type=0 #27
+2024/09/17-18:45:06.603 10ac Manual compaction at level-0 from '!scenes!0M8gKipOIXQMqdEz' @ 72057594037927935 : 1 .. '!scenes.walls!zV7yvi0j5VaRIjtL.ztpKjvOmnvSIKlHJ' @ 0 : 0; will stop at '!scenes.walls!zV7yvi0j5VaRIjtL.ztpKjvOmnvSIKlHJ' @ 49631 : 1
+2024/09/17-18:45:06.603 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.640 10ac Generated table #30@0: 4663 keys, 2128683 bytes
+2024/09/17-18:45:06.683 10ac Generated table #31@0: 4219 keys, 2139115 bytes
+2024/09/17-18:45:06.734 10ac Generated table #32@0: 27575 keys, 2174799 bytes
+2024/09/17-18:45:06.756 10ac Generated table #33@0: 13207 keys, 860071 bytes
+2024/09/17-18:45:06.757 10ac Compacted 1@0 + 0@1 files => 7302668 bytes
+2024/09/17-18:45:06.757 10ac compacted to: files[ 0 4 0 0 0 0 0 ]
+2024/09/17-18:45:06.758 10ac Delete type=2 #4
+2024/09/17-18:45:06.760 10ac Manual compaction at level-0 from '!scenes.walls!zV7yvi0j5VaRIjtL.ztpKjvOmnvSIKlHJ' @ 49631 : 1 .. '!scenes.walls!zV7yvi0j5VaRIjtL.ztpKjvOmnvSIKlHJ' @ 0 : 0; will stop at (end)

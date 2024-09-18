@@ -1,5 +1,11 @@
-2024/09/03-16:00:39.315 2924 Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:39.316 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-jade-regent/000138.log: OK
-2024/09/03-16:00:39.320 2924 Table #86: 368 entries OK
-2024/09/03-16:00:39.327 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-jade-regent/MANIFEST-000137: OK
-2024/09/03-16:00:39.334 2924 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-jade-regent; recovered 1 files; 398310 bytes. Some data may have been lost. ****
+2024/09/17-18:38:55.409 2aac Delete type=3 #1
+2024/09/17-18:45:11.093 10ac Level-0 table #146: started
+2024/09/17-18:45:11.093 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:11.094 10ac Delete type=0 #144
+2024/09/17-18:45:11.108 10ac Manual compaction at level-0 from '!journal!0MA1kL80y36n3Rs8' @ 72057594037927935 : 1 .. '!journal.pages!zMTFCQYrFjIKNUjf.eSOQ6ASdXJxOy2BE' @ 0 : 0; will stop at '!journal.pages!zMTFCQYrFjIKNUjf.eSOQ6ASdXJxOy2BE' @ 372 : 1
+2024/09/17-18:45:11.108 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:11.118 10ac Generated table #147@0: 368 keys, 398310 bytes
+2024/09/17-18:45:11.118 10ac Compacted 1@0 + 0@1 files => 398310 bytes
+2024/09/17-18:45:11.120 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:11.120 10ac Delete type=2 #86
+2024/09/17-18:45:11.124 10ac Manual compaction at level-0 from '!journal.pages!zMTFCQYrFjIKNUjf.eSOQ6ASdXJxOy2BE' @ 372 : 1 .. '!journal.pages!zMTFCQYrFjIKNUjf.eSOQ6ASdXJxOy2BE' @ 0 : 0; will stop at (end)

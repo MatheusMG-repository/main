@@ -1,5 +1,11 @@
-2024/09/03-16:00:32.322 2924 Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:32.324 2924 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\roll-tables/000057.log: OK
-2024/09/03-16:00:32.326 2924 Table #5: 350 entries OK
-2024/09/03-16:00:32.333 2924 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\roll-tables/MANIFEST-000056: OK
-2024/09/03-16:00:32.342 2924 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\roll-tables; recovered 1 files; 55665 bytes. Some data may have been lost. ****
+2024/09/17-18:38:49.889 2684 Delete type=3 #1
+2024/09/17-18:45:06.555 10ac Level-0 table #65: started
+2024/09/17-18:45:06.555 10ac Level-0 table #65: 0 bytes OK
+2024/09/17-18:45:06.557 10ac Delete type=0 #63
+2024/09/17-18:45:06.562 10ac Manual compaction at level-0 from '!folders!sAUz05nQd6u3BJBM' @ 72057594037927935 : 1 .. '!tables.results!x1eyeyxhEqbmdI8K.yC20GbM0XavdLMtR' @ 0 : 0; will stop at '!tables.results!x1eyeyxhEqbmdI8K.yC20GbM0XavdLMtR' @ 78 : 1
+2024/09/17-18:45:06.562 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.565 10ac Generated table #66@0: 350 keys, 55665 bytes
+2024/09/17-18:45:06.565 10ac Compacted 1@0 + 0@1 files => 55665 bytes
+2024/09/17-18:45:06.567 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:06.567 10ac Delete type=2 #5
+2024/09/17-18:45:06.581 10ac Manual compaction at level-0 from '!tables.results!x1eyeyxhEqbmdI8K.yC20GbM0XavdLMtR' @ 78 : 1 .. '!tables.results!x1eyeyxhEqbmdI8K.yC20GbM0XavdLMtR' @ 0 : 0; will stop at (end)

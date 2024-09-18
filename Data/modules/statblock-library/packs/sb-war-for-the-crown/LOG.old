@@ -1,5 +1,11 @@
-2024/09/03-16:00:40.004 50bc Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:40.006 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown/000138.log: OK
-2024/09/03-16:00:40.010 50bc Table #86: 363 entries OK
-2024/09/03-16:00:40.016 50bc Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown/MANIFEST-000137: OK
-2024/09/03-16:00:40.023 50bc **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown; recovered 1 files; 427629 bytes. Some data may have been lost. ****
+2024/09/17-18:38:55.805 2684 Delete type=3 #1
+2024/09/17-18:45:11.288 10ac Level-0 table #146: started
+2024/09/17-18:45:11.289 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:11.291 10ac Delete type=0 #144
+2024/09/17-18:45:11.311 10ac Manual compaction at level-0 from '!journal!0JYvLn5nk5IEpjUZ' @ 72057594037927935 : 1 .. '!journal.pages!zDdPbunuTeSVFcG0.ToToSVVFm91W3dxQ' @ 0 : 0; will stop at '!journal.pages!zDdPbunuTeSVFcG0.ToToSVVFm91W3dxQ' @ 420 : 1
+2024/09/17-18:45:11.311 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:11.328 10ac Generated table #147@0: 363 keys, 427629 bytes
+2024/09/17-18:45:11.328 10ac Compacted 1@0 + 0@1 files => 427629 bytes
+2024/09/17-18:45:11.330 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:11.330 10ac Delete type=2 #86
+2024/09/17-18:45:11.351 10ac Manual compaction at level-0 from '!journal.pages!zDdPbunuTeSVFcG0.ToToSVVFm91W3dxQ' @ 420 : 1 .. '!journal.pages!zDdPbunuTeSVFcG0.ToToSVVFm91W3dxQ' @ 0 : 0; will stop at (end)

@@ -1,5 +1,11 @@
-2024/09/03-16:00:31.898 504c Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:31.899 504c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-abilities/000057.log: OK
-2024/09/03-16:00:31.901 504c Table #5: 12 entries OK
-2024/09/03-16:00:31.907 504c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-abilities/MANIFEST-000056: OK
-2024/09/03-16:00:31.915 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-abilities; recovered 1 files; 4601 bytes. Some data may have been lost. ****
+2024/09/17-18:38:49.561 2644 Delete type=3 #1
+2024/09/17-18:45:06.320 10ac Level-0 table #65: started
+2024/09/17-18:45:06.320 10ac Level-0 table #65: 0 bytes OK
+2024/09/17-18:45:06.322 10ac Delete type=0 #63
+2024/09/17-18:45:06.323 10ac Manual compaction at level-0 from '!items!1sU57tRb1My6XZMC' @ 72057594037927935 : 1 .. '!items!szjeStouwI3F3WdP' @ 0 : 0; will stop at '!items!szjeStouwI3F3WdP' @ 1 : 1
+2024/09/17-18:45:06.323 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:06.327 10ac Generated table #66@0: 12 keys, 4601 bytes
+2024/09/17-18:45:06.327 10ac Compacted 1@0 + 0@1 files => 4601 bytes
+2024/09/17-18:45:06.328 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:06.328 10ac Delete type=2 #5
+2024/09/17-18:45:06.335 10ac Manual compaction at level-0 from '!items!szjeStouwI3F3WdP' @ 1 : 1 .. '!items!szjeStouwI3F3WdP' @ 0 : 0; will stop at (end)

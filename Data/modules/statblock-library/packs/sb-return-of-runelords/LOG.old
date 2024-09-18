@@ -1,5 +1,11 @@
-2024/09/03-16:00:39.779 2924 Log #138: 0 ops saved to Table #139 OK
-2024/09/03-16:00:39.780 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-return-of-runelords/000138.log: OK
-2024/09/03-16:00:39.785 2924 Table #86: 385 entries OK
-2024/09/03-16:00:39.792 2924 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-return-of-runelords/MANIFEST-000137: OK
-2024/09/03-16:00:39.799 2924 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-return-of-runelords; recovered 1 files; 462886 bytes. Some data may have been lost. ****
+2024/09/17-18:38:55.676 2684 Delete type=3 #1
+2024/09/17-18:45:11.238 10ac Level-0 table #146: started
+2024/09/17-18:45:11.239 10ac Level-0 table #146: 0 bytes OK
+2024/09/17-18:45:11.240 10ac Delete type=0 #144
+2024/09/17-18:45:11.241 10ac Manual compaction at level-0 from '!journal!04qLtOqfRRKSTcw8' @ 72057594037927935 : 1 .. '!journal.pages!zFNDDIxsrK4Ry1ux.HwsBnVXoMp9ATh64' @ 0 : 0; will stop at '!journal.pages!zFNDDIxsrK4Ry1ux.HwsBnVXoMp9ATh64' @ 680 : 1
+2024/09/17-18:45:11.241 10ac Compacting 1@0 + 0@1 files
+2024/09/17-18:45:11.252 10ac Generated table #147@0: 385 keys, 462886 bytes
+2024/09/17-18:45:11.252 10ac Compacted 1@0 + 0@1 files => 462886 bytes
+2024/09/17-18:45:11.253 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:45:11.253 10ac Delete type=2 #86
+2024/09/17-18:45:11.268 10ac Manual compaction at level-0 from '!journal.pages!zFNDDIxsrK4Ry1ux.HwsBnVXoMp9ATh64' @ 680 : 1 .. '!journal.pages!zFNDDIxsrK4Ry1ux.HwsBnVXoMp9ATh64' @ 0 : 0; will stop at (end)

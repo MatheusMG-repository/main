@@ -1,5 +1,5 @@
-2024/09/03-16:00:35.010 504c Log #57: 0 ops saved to Table #58 OK
-2024/09/03-16:00:35.011 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-scenes/000057.log: OK
-2024/09/03-16:00:35.015 504c Table #5: 106 entries OK
-2024/09/03-16:00:35.022 504c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-scenes/MANIFEST-000056: OK
-2024/09/03-16:00:35.030 504c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-scenes; recovered 1 files; 100464 bytes. Some data may have been lost. ****
+2024/09/07-19:26:28.788027 7dfe11fbe6c0 Delete type=3 #1
+2024/09/07-19:26:29.020619 7dfb73fff6c0 Level-0 table #5: started
+2024/09/07-19:26:29.024345 7dfb73fff6c0 Level-0 table #5: 100464 bytes OK
+2024/09/07-19:26:29.026260 7dfb73fff6c0 Delete type=0 #3
+2024/09/07-19:26:29.035827 7dfb73fff6c0 Manual compaction at level-0 from '!scenes!VfllkIzpnvc0RLpY' @ 72057594037927935 : 1 .. '!scenes.tokens.delta!VfllkIzpnvc0RLpY.ziOt9nGN3Or6R9vh.ziOt9nGN3Or6R9vh' @ 0 : 0; will stop at (end)

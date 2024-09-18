@@ -1,7 +1,13 @@
-2024/09/03-16:00:30.850 5070 Log #256: 7 ops saved to Table #257 OK
-2024/09/03-16:00:30.851 5070 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros/000256.log: OK
-2024/09/03-16:00:30.853 5070 Table #248: 151 entries OK
-2024/09/03-16:00:30.858 5070 Table #250: 1 entries OK
-2024/09/03-16:00:30.858 5070 Table #257: 7 entries OK
-2024/09/03-16:00:30.865 5070 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros/MANIFEST-000255: OK
-2024/09/03-16:00:30.873 5070 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros; recovered 3 files; 31904 bytes. Some data may have been lost. ****
+2024/09/17-18:38:48.850 2644 Delete type=3 #1
+2024/09/17-18:38:48.850 10ac Compacting 4@0 + 0@1 files
+2024/09/17-18:38:48.853 10ac Generated table #263@0: 162 keys, 32682 bytes
+2024/09/17-18:38:48.854 10ac Compacted 4@0 + 0@1 files => 32682 bytes
+2024/09/17-18:38:48.855 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/17-18:38:48.855 10ac Delete type=2 #248
+2024/09/17-18:38:48.855 10ac Delete type=2 #250
+2024/09/17-18:38:48.855 10ac Delete type=2 #257
+2024/09/17-18:38:48.856 10ac Delete type=2 #260
+2024/09/17-18:45:05.969 10ac Level-0 table #265: started
+2024/09/17-18:45:05.970 10ac Level-0 table #265: 0 bytes OK
+2024/09/17-18:45:05.971 10ac Delete type=0 #262
+2024/09/17-18:45:05.974 10ac Manual compaction at level-0 from '!macros!0OzaT1UOg21FfZlb' @ 72057594037927935 : 1 .. '!macros!zhFZV5lMYrcUWIgM' @ 0 : 0; will stop at (end)

@@ -1,65 +1,55 @@
 {
+  "id": "multilevel-tokens",
   "title": "Multilevel Tokens, by Beneos",
   "description": "<p>Adds several helpful token automation features, particularly (but not only) suited to maps with multiple levels.</p><p>Teleport tokens to another location when they move into a particular region (e.g. from the bottom of a staircase to the top). Clone tokens from one region to another, syncing movement and other property updates (e.g. allowing players to \"see\" what is happening on floors below). Trigger macros when a token enters or leaves a particular region.</p><p>See page at URL below for full usage instructions.</p>",
-  "version": "1.7.1",
-  "compatibility": {
-    "minimum": "11",
-    "verified": "12"
-  },
-  "scripts": [
-    "multilevel.js"
+  "url": "https://github.com/BeneosBattlemaps/Beneos-Multilevel-Tokens/",
+  "manifest": "https://raw.githubusercontent.com/BeneosBattlemaps/Beneos-Multilevel-Tokens/main/module.json",
+  "download": "https://github.com/BeneosBattlemaps/Beneos-Multilevel-Tokens/archive/refs/tags/v1.7.5.zip",
+  "authors": [
+    {
+      "name": "grandseiken"
+    },
+    {
+      "name": "LeRatierBretonnien"
+    }
   ],
+  "version": "1.7.5",
+  "compatibility": {
+    "minimum": 11,
+    "verified": 12
+  },
+  "scripts": ["multilevel.js"],
   "socket": true,
   "languages": [
     {
       "lang": "de",
       "name": "Deutsch",
-      "path": "lang/de.json",
-      "flags": {}
+      "path": "lang/de.json"
     },
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json",
-      "flags": {}
+      "path": "lang/en.json"
     },
     {
       "lang": "es",
       "name": "Español",
-      "path": "lang/es.json",
-      "flags": {}
+      "path": "lang/es.json"
     },
     {
       "lang": "fr",
       "name": "French",
-      "path": "lang/fr.json",
-      "flags": {}
+      "path": "lang/fr.json"
     },
     {
       "lang": "ja",
       "name": "日本語",
-      "path": "lang/ja.json",
-      "flags": {}
+      "path": "lang/ja.json"
     },
     {
       "lang": "ko",
       "name": "한국어",
-      "path": "lang/ko.json",
-      "flags": {}
-    }
-  ],
-  "url": "https://raw.githubusercontent.com/BeneosBattlemaps/Beneos-Multilevel-Tokens",
-  "manifest": "https://raw.githubusercontent.com/BeneosBattlemaps/Beneos-Multilevel-Tokens/main/module.json",
-  "download": "https://raw.githubusercontent.com/BeneosBattlemaps/Beneos-Multilevel-Tokens/archive/v1.7.1.zip",
-  "id": "multilevel-tokens",
-  "authors": [
-    {
-      "name": "grandseiken",
-      "flags": {}
-    },
-    {
-      "name": "LeRatierBretonnien",
-      "flags": {}
+      "path": "lang/ko.json"
     }
   ]
 }
