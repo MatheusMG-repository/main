@@ -1,3 +1,9 @@
-2024/09/17-18:46:58.399 2aac Recovering log #270
-2024/09/17-18:46:58.403 2aac Delete type=0 #270
-2024/09/17-18:46:58.404 2aac Delete type=3 #268
+2024/09/24-17:23:39.019 4120 Recovering log #279
+2024/09/24-17:23:39.023 4120 Delete type=0 #279
+2024/09/24-17:23:39.023 4120 Delete type=3 #278
+2024/09/24-19:26:04.991 dc3c Compacting 2@0 + 0@1 files
+2024/09/24-19:26:04.994 dc3c Generated table #282@0: 36 keys, 23605 bytes
+2024/09/24-19:26:04.994 dc3c Compacted 2@0 + 0@1 files => 23605 bytes
+2024/09/24-19:26:04.994 dc3c compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/24-19:26:04.994 dc3c Delete type=2 #272
+2024/09/24-19:26:04.994 dc3c Delete type=2 #275

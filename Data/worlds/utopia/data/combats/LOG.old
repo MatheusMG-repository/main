@@ -1,13 +1,9 @@
-2024/09/17-18:38:48.592 2644 Delete type=3 #1
-2024/09/17-18:45:05.945 10ac Level-0 table #283: started
-2024/09/17-18:45:05.945 10ac Level-0 table #283: 0 bytes OK
-2024/09/17-18:45:05.947 10ac Delete type=0 #281
-2024/09/17-18:45:05.958 10ac Manual compaction at level-0 from '!combats!3Srhe1KJJIhs2SVr' @ 72057594037927935 : 1 .. '!combats.combatants!WjNJF1S4EVLaYgT5.t5FMgDsIdnsHiUuE' @ 0 : 0; will stop at '!combats.combatants!PSEKJhxoRqk1xDfM.xC1MdunV90KmdgGO' @ 2627 : 1
-2024/09/17-18:45:05.958 10ac Compacting 3@0 + 0@1 files
-2024/09/17-18:45:05.960 10ac Generated table #284@0: 60 keys, 6958 bytes
-2024/09/17-18:45:05.960 10ac Compacted 3@0 + 0@1 files => 6958 bytes
-2024/09/17-18:45:05.961 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/09/17-18:45:05.962 10ac Delete type=2 #275
-2024/09/17-18:45:05.962 10ac Delete type=2 #276
-2024/09/17-18:45:05.962 10ac Delete type=2 #279
-2024/09/17-18:45:05.964 10ac Manual compaction at level-0 from '!combats.combatants!PSEKJhxoRqk1xDfM.xC1MdunV90KmdgGO' @ 2627 : 1 .. '!combats.combatants!WjNJF1S4EVLaYgT5.t5FMgDsIdnsHiUuE' @ 0 : 0; will stop at (end)
+2024/09/23-18:23:42.318 9c04 Recovering log #289
+2024/09/23-18:23:42.321 9c04 Delete type=0 #289
+2024/09/23-18:23:42.321 9c04 Delete type=3 #288
+2024/09/23-18:29:44.792 3828 Compacting 2@0 + 0@1 files
+2024/09/23-18:29:44.794 3828 Generated table #292@0: 69 keys, 8194 bytes
+2024/09/23-18:29:44.794 3828 Compacted 2@0 + 0@1 files => 8194 bytes
+2024/09/23-18:29:44.795 3828 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/23-18:29:44.795 3828 Delete type=2 #284
+2024/09/23-18:29:44.795 3828 Delete type=2 #287

@@ -1,68 +1,81 @@
-2024/09/17-18:46:58.284 2644 Recovering log #797
-2024/09/17-18:46:58.290 2644 Delete type=0 #797
-2024/09/17-18:46:58.291 2644 Delete type=3 #792
-2024/09/17-19:17:23.845 10ac Level-0 table #802: started
-2024/09/17-19:17:23.869 10ac Level-0 table #802: 1460940 bytes OK
-2024/09/17-19:17:23.872 10ac Delete type=0 #800
-2024/09/17-19:23:06.342 10ac Compacting 1@0 + 3@1 files
-2024/09/17-19:23:06.399 10ac Generated table #803@0: 1249 keys, 2122031 bytes
-2024/09/17-19:23:06.433 10ac Generated table #804@0: 1820 keys, 2127607 bytes
-2024/09/17-19:23:06.484 10ac Generated table #805@0: 568 keys, 618844 bytes
-2024/09/17-19:23:06.484 10ac Compacted 1@0 + 3@1 files => 4868482 bytes
-2024/09/17-19:23:06.484 10ac compacted to: files[ 0 3 0 0 0 0 0 ]
-2024/09/17-19:23:06.485 10ac Delete type=2 #794
-2024/09/17-19:23:06.485 10ac Delete type=2 #795
-2024/09/17-19:23:06.486 10ac Delete type=2 #796
-2024/09/17-19:23:06.486 10ac Delete type=2 #802
-2024/09/17-19:29:40.992 10ac Level-0 table #807: started
-2024/09/17-19:29:41.017 10ac Level-0 table #807: 1598109 bytes OK
-2024/09/17-19:29:41.018 10ac Delete type=0 #801
-2024/09/17-19:33:55.220 10ac Compacting 1@0 + 3@1 files
-2024/09/17-19:33:55.289 10ac Generated table #808@0: 1249 keys, 2121752 bytes
-2024/09/17-19:33:55.327 10ac Generated table #809@0: 1826 keys, 2127073 bytes
-2024/09/17-19:33:55.382 10ac Generated table #810@0: 553 keys, 607445 bytes
-2024/09/17-19:33:55.382 10ac Compacted 1@0 + 3@1 files => 4856270 bytes
-2024/09/17-19:33:55.383 10ac compacted to: files[ 0 3 0 0 0 0 0 ]
-2024/09/17-19:33:55.383 10ac Delete type=2 #803
-2024/09/17-19:33:55.384 10ac Delete type=2 #804
-2024/09/17-19:33:55.384 10ac Delete type=2 #805
-2024/09/17-19:33:55.384 10ac Delete type=2 #807
-2024/09/17-20:02:09.290 10ac Level-0 table #812: started
-2024/09/17-20:02:09.316 10ac Level-0 table #812: 1676089 bytes OK
-2024/09/17-20:02:09.317 10ac Delete type=0 #806
-2024/09/17-20:02:43.785 10ac Compacting 1@0 + 3@1 files
-2024/09/17-20:02:43.828 10ac Generated table #813@0: 1251 keys, 2121713 bytes
-2024/09/17-20:02:43.935 10ac Generated table #814@0: 1825 keys, 2127593 bytes
-2024/09/17-20:02:43.989 10ac Generated table #815@0: 551 keys, 604891 bytes
-2024/09/17-20:02:43.989 10ac Compacted 1@0 + 3@1 files => 4854197 bytes
-2024/09/17-20:02:43.990 10ac compacted to: files[ 0 3 0 0 0 0 0 ]
-2024/09/17-20:02:43.990 10ac Delete type=2 #808
-2024/09/17-20:02:43.991 10ac Delete type=2 #809
-2024/09/17-20:02:43.991 10ac Delete type=2 #810
-2024/09/17-20:02:43.992 10ac Delete type=2 #812
-2024/09/17-21:15:11.846 10ac Level-0 table #817: started
-2024/09/17-21:15:11.870 10ac Level-0 table #817: 1644961 bytes OK
-2024/09/17-21:15:11.870 10ac Delete type=0 #811
-2024/09/17-21:15:45.670 10ac Compacting 1@0 + 3@1 files
-2024/09/17-21:15:45.716 10ac Generated table #818@0: 1253 keys, 2122406 bytes
-2024/09/17-21:15:45.832 10ac Generated table #819@0: 1823 keys, 2127982 bytes
-2024/09/17-21:15:45.892 10ac Generated table #820@0: 563 keys, 616984 bytes
-2024/09/17-21:15:45.892 10ac Compacted 1@0 + 3@1 files => 4867372 bytes
-2024/09/17-21:15:45.893 10ac compacted to: files[ 0 3 0 0 0 0 0 ]
-2024/09/17-21:15:45.893 10ac Delete type=2 #813
-2024/09/17-21:15:45.894 10ac Delete type=2 #814
-2024/09/17-21:15:45.894 10ac Delete type=2 #815
-2024/09/17-21:15:45.894 10ac Delete type=2 #817
-2024/09/17-22:06:36.308 10ac Level-0 table #822: started
-2024/09/17-22:06:36.334 10ac Level-0 table #822: 1576113 bytes OK
-2024/09/17-22:06:36.336 10ac Delete type=0 #816
-2024/09/17-22:11:31.661 10ac Compacting 1@0 + 3@1 files
-2024/09/17-22:11:31.703 10ac Generated table #823@0: 1247 keys, 2120960 bytes
-2024/09/17-22:11:31.740 10ac Generated table #824@0: 1823 keys, 2127302 bytes
-2024/09/17-22:11:31.795 10ac Generated table #825@0: 579 keys, 633450 bytes
-2024/09/17-22:11:31.795 10ac Compacted 1@0 + 3@1 files => 4881712 bytes
-2024/09/17-22:11:31.796 10ac compacted to: files[ 0 3 0 0 0 0 0 ]
-2024/09/17-22:11:31.796 10ac Delete type=2 #818
-2024/09/17-22:11:31.797 10ac Delete type=2 #819
-2024/09/17-22:11:31.797 10ac Delete type=2 #820
-2024/09/17-22:11:31.797 10ac Delete type=2 #822
+2024/09/24-17:23:38.818 728c Recovering log #849
+2024/09/24-17:23:38.822 728c Delete type=0 #849
+2024/09/24-17:23:38.822 728c Delete type=3 #847
+2024/09/24-19:14:27.027 dc3c Level-0 table #856: started
+2024/09/24-19:14:27.046 dc3c Level-0 table #856: 1609918 bytes OK
+2024/09/24-19:14:27.047 dc3c Delete type=0 #854
+2024/09/24-19:15:03.275 dc3c Compacting 1@0 + 3@1 files
+2024/09/24-19:15:03.302 dc3c Generated table #857@0: 1256 keys, 2121071 bytes
+2024/09/24-19:15:03.364 dc3c Generated table #858@0: 1855 keys, 2127170 bytes
+2024/09/24-19:15:03.411 dc3c Generated table #859@0: 693 keys, 759773 bytes
+2024/09/24-19:15:03.411 dc3c Compacted 1@0 + 3@1 files => 5008014 bytes
+2024/09/24-19:15:03.411 dc3c compacted to: files[ 0 3 0 0 0 0 0 ]
+2024/09/24-19:15:03.412 dc3c Delete type=2 #850
+2024/09/24-19:15:03.412 dc3c Delete type=2 #851
+2024/09/24-19:15:03.412 dc3c Delete type=2 #852
+2024/09/24-19:15:03.412 dc3c Delete type=2 #856
+2024/09/24-19:23:41.286 dc3c Level-0 table #861: started
+2024/09/24-19:23:41.300 dc3c Level-0 table #861: 1755909 bytes OK
+2024/09/24-19:23:41.301 dc3c Delete type=0 #855
+2024/09/24-19:25:25.197 dc3c Compacting 1@0 + 3@1 files
+2024/09/24-19:25:25.227 dc3c Generated table #862@0: 1258 keys, 2121741 bytes
+2024/09/24-19:25:25.293 dc3c Generated table #863@0: 1845 keys, 2127303 bytes
+2024/09/24-19:25:25.335 dc3c Generated table #864@0: 657 keys, 726936 bytes
+2024/09/24-19:25:25.335 dc3c Compacted 1@0 + 3@1 files => 4975980 bytes
+2024/09/24-19:25:25.335 dc3c compacted to: files[ 0 3 0 0 0 0 0 ]
+2024/09/24-19:25:25.335 dc3c Delete type=2 #857
+2024/09/24-19:25:25.336 dc3c Delete type=2 #858
+2024/09/24-19:25:25.336 dc3c Delete type=2 #859
+2024/09/24-19:25:25.336 dc3c Delete type=2 #861
+2024/09/24-19:54:53.211 dc3c Level-0 table #866: started
+2024/09/24-19:54:53.224 dc3c Level-0 table #866: 1667332 bytes OK
+2024/09/24-19:54:53.225 dc3c Delete type=0 #860
+2024/09/24-19:58:18.378 dc3c Compacting 1@0 + 3@1 files
+2024/09/24-19:58:18.407 dc3c Generated table #867@0: 1260 keys, 2121665 bytes
+2024/09/24-19:58:18.473 dc3c Generated table #868@0: 1848 keys, 2129433 bytes
+2024/09/24-19:58:18.516 dc3c Generated table #869@0: 642 keys, 717490 bytes
+2024/09/24-19:58:18.516 dc3c Compacted 1@0 + 3@1 files => 4968588 bytes
+2024/09/24-19:58:18.517 dc3c compacted to: files[ 0 3 0 0 0 0 0 ]
+2024/09/24-19:58:18.517 dc3c Delete type=2 #862
+2024/09/24-19:58:18.517 dc3c Delete type=2 #863
+2024/09/24-19:58:18.518 dc3c Delete type=2 #864
+2024/09/24-19:58:18.518 dc3c Delete type=2 #866
+2024/09/24-21:01:21.480 dc3c Level-0 table #871: started
+2024/09/24-21:01:21.497 dc3c Level-0 table #871: 1671805 bytes OK
+2024/09/24-21:01:21.498 dc3c Delete type=0 #865
+2024/09/24-21:01:24.706 dc3c Compacting 1@0 + 3@1 files
+2024/09/24-21:01:24.737 dc3c Generated table #872@0: 1260 keys, 2121190 bytes
+2024/09/24-21:01:24.805 dc3c Generated table #873@0: 1823 keys, 2126721 bytes
+2024/09/24-21:01:24.848 dc3c Generated table #874@0: 678 keys, 752989 bytes
+2024/09/24-21:01:24.848 dc3c Compacted 1@0 + 3@1 files => 5000900 bytes
+2024/09/24-21:01:24.848 dc3c compacted to: files[ 0 3 0 0 0 0 0 ]
+2024/09/24-21:01:24.848 dc3c Delete type=2 #867
+2024/09/24-21:01:24.849 dc3c Delete type=2 #868
+2024/09/24-21:01:24.850 dc3c Delete type=2 #869
+2024/09/24-21:01:24.850 dc3c Delete type=2 #871
+2024/09/24-21:47:55.193 dc3c Level-0 table #876: started
+2024/09/24-21:47:55.217 dc3c Level-0 table #876: 1679875 bytes OK
+2024/09/24-21:47:55.221 dc3c Delete type=0 #870
+2024/09/24-21:48:20.669 dc3c Compacting 1@0 + 3@1 files
+2024/09/24-21:48:20.702 dc3c Generated table #877@0: 1275 keys, 2122195 bytes
+2024/09/24-21:48:20.771 dc3c Generated table #878@0: 1838 keys, 2128050 bytes
+2024/09/24-21:48:20.811 dc3c Generated table #879@0: 657 keys, 726674 bytes
+2024/09/24-21:48:20.811 dc3c Compacted 1@0 + 3@1 files => 4976919 bytes
+2024/09/24-21:48:20.812 dc3c compacted to: files[ 0 3 0 0 0 0 0 ]
+2024/09/24-21:48:20.812 dc3c Delete type=2 #872
+2024/09/24-21:48:20.812 dc3c Delete type=2 #873
+2024/09/24-21:48:20.813 dc3c Delete type=2 #874
+2024/09/24-21:48:20.813 dc3c Delete type=2 #876
+2024/09/24-22:41:23.103 dc3c Level-0 table #881: started
+2024/09/24-22:41:23.119 dc3c Level-0 table #881: 1684367 bytes OK
+2024/09/24-22:41:23.121 dc3c Delete type=0 #875
+2024/09/24-22:41:51.268 dc3c Compacting 1@0 + 3@1 files
+2024/09/24-22:41:51.296 dc3c Generated table #882@0: 1274 keys, 2122635 bytes
+2024/09/24-22:41:51.361 dc3c Generated table #883@0: 1837 keys, 2127406 bytes
+2024/09/24-22:41:51.405 dc3c Generated table #884@0: 657 keys, 726928 bytes
+2024/09/24-22:41:51.405 dc3c Compacted 1@0 + 3@1 files => 4976969 bytes
+2024/09/24-22:41:51.405 dc3c compacted to: files[ 0 3 0 0 0 0 0 ]
+2024/09/24-22:41:51.405 dc3c Delete type=2 #877
+2024/09/24-22:41:51.406 dc3c Delete type=2 #878
+2024/09/24-22:41:51.406 dc3c Delete type=2 #879
+2024/09/24-22:41:51.406 dc3c Delete type=2 #881

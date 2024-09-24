@@ -1,11 +1,3 @@
-2024/09/17-18:38:55.183 2aac Delete type=3 #1
-2024/09/17-18:45:10.988 10ac Level-0 table #146: started
-2024/09/17-18:45:10.988 10ac Level-0 table #146: 0 bytes OK
-2024/09/17-18:45:10.989 10ac Delete type=0 #144
-2024/09/17-18:45:10.994 10ac Manual compaction at level-0 from '!journal!0IjGUyPwhouAF3s9' @ 72057594037927935 : 1 .. '!journal.pages!xlU7Iuac7PV6nMi4.z3KXFNO6bH26fVIT' @ 0 : 0; will stop at '!journal.pages!xlU7Iuac7PV6nMi4.z3KXFNO6bH26fVIT' @ 411 : 1
-2024/09/17-18:45:10.994 10ac Compacting 1@0 + 0@1 files
-2024/09/17-18:45:11.002 10ac Generated table #147@0: 377 keys, 344921 bytes
-2024/09/17-18:45:11.002 10ac Compacted 1@0 + 0@1 files => 344921 bytes
-2024/09/17-18:45:11.003 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/09/17-18:45:11.003 10ac Delete type=2 #86
-2024/09/17-18:45:11.007 10ac Manual compaction at level-0 from '!journal.pages!xlU7Iuac7PV6nMi4.z3KXFNO6bH26fVIT' @ 411 : 1 .. '!journal.pages!xlU7Iuac7PV6nMi4.z3KXFNO6bH26fVIT' @ 0 : 0; will stop at (end)
+2024/09/23-18:23:44.031 421c Recovering log #152
+2024/09/23-18:23:44.035 421c Delete type=0 #152
+2024/09/23-18:23:44.035 421c Delete type=3 #151

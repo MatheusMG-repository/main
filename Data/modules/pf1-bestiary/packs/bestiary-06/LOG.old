@@ -1,25 +1,3 @@
-2024/09/17-18:38:52.722 2644 Delete type=3 #1
-2024/09/17-18:38:52.723 10ac Compacting 3@0 + 0@1 files
-2024/09/17-18:38:52.774 10ac Generated table #188@0: 926 keys, 2122170 bytes
-2024/09/17-18:38:52.774 10ac Compacted 3@0 + 0@1 files => 2122170 bytes
-2024/09/17-18:38:52.775 10ac compacted to: files[ 5 1 0 0 0 0 0 ]
-2024/09/17-18:38:52.775 10ac Moved #127 to level-1 2130307 bytes OK: files[ 4 2 0 0 0 0 0 ]
-2024/09/17-18:38:52.776 10ac Moved #128 to level-1 2129521 bytes OK: files[ 3 3 0 0 0 0 0 ]
-2024/09/17-18:45:08.307 10ac Level-0 table #190: started
-2024/09/17-18:45:08.307 10ac Level-0 table #190: 0 bytes OK
-2024/09/17-18:45:08.308 10ac Delete type=2 #88
-2024/09/17-18:45:08.308 10ac Delete type=2 #179
-2024/09/17-18:45:08.308 10ac Delete type=2 #184
-2024/09/17-18:45:08.309 10ac Delete type=0 #187
-2024/09/17-18:45:08.309 10ac Manual compaction at level-0 from '!actors!0AFkbYnORiN0cXCF' @ 72057594037927935 : 1 .. '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 0 : 0; will stop at '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 9208 : 1
-2024/09/17-18:45:08.309 10ac Compacting 3@0 + 0@1 files
-2024/09/17-18:45:08.424 10ac Generated table #191@0: 1750 keys, 2129733 bytes
-2024/09/17-18:45:08.464 10ac Generated table #192@0: 1784 keys, 2130488 bytes
-2024/09/17-18:45:08.489 10ac Generated table #193@0: 1117 keys, 1276317 bytes
-2024/09/17-18:45:08.489 10ac Compacted 3@0 + 0@1 files => 5536538 bytes
-2024/09/17-18:45:08.490 10ac compacted to: files[ 0 6 0 0 0 0 0 ]
-2024/09/17-18:45:08.490 10ac Delete type=2 #129
-2024/09/17-18:45:08.491 10ac Delete type=2 #130
-2024/09/17-18:45:08.491 10ac Delete type=2 #131
-2024/09/17-18:45:08.496 10ac Manual compaction at level-0 from '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 9208 : 1 .. '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 0 : 0; will stop at (end)
-2024/09/17-18:45:08.872 10ac Moved #188 to level-2 2122170 bytes OK: files[ 0 5 1 0 0 0 0 ]
+2024/09/23-18:23:43.302 421c Recovering log #198
+2024/09/23-18:23:43.305 421c Delete type=0 #198
+2024/09/23-18:23:43.305 421c Delete type=3 #197

@@ -1,11 +1,11 @@
-2024/09/17-18:38:48.967 2aac Delete type=3 #1
-2024/09/17-18:39:01.367 10ac Compacting 2@0 + 0@1 files
-2024/09/17-18:39:01.392 10ac Generated table #375@0: 5846 keys, 989834 bytes
-2024/09/17-18:39:01.392 10ac Compacted 2@0 + 0@1 files => 989834 bytes
-2024/09/17-18:39:01.393 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/09/17-18:39:01.393 10ac Delete type=2 #371
-2024/09/17-18:39:01.393 10ac Delete type=2 #372
-2024/09/17-18:45:06.012 10ac Level-0 table #377: started
-2024/09/17-18:45:06.012 10ac Level-0 table #377: 0 bytes OK
-2024/09/17-18:45:06.013 10ac Delete type=0 #374
-2024/09/17-18:45:06.013 10ac Manual compaction at level-0 from '!scenes!0OEZklkn24Bxj9Qr' @ 72057594037927935 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at (end)
+2024/09/23-18:23:42.398 4e10 Recovering log #382
+2024/09/23-18:23:42.398 4e10 Level-0 table #385: started
+2024/09/23-18:23:42.400 4e10 Level-0 table #385: 30246 bytes OK
+2024/09/23-18:23:42.404 4e10 Delete type=0 #382
+2024/09/23-18:23:42.404 4e10 Delete type=3 #381
+2024/09/23-18:23:51.022 3828 Compacting 1@0 + 1@1 files
+2024/09/23-18:23:51.039 3828 Generated table #387@0: 5894 keys, 997018 bytes
+2024/09/23-18:23:51.039 3828 Compacted 1@0 + 1@1 files => 997018 bytes
+2024/09/23-18:23:51.040 3828 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/23-18:23:51.040 3828 Delete type=2 #383
+2024/09/23-18:23:51.040 3828 Delete type=2 #385

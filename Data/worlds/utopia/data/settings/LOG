@@ -1,3 +1,13 @@
-2024/09/17-18:46:58.470 2684 Recovering log #318
-2024/09/17-18:46:58.475 2684 Delete type=0 #318
-2024/09/17-18:46:58.475 2684 Delete type=3 #316
+2024/09/24-17:23:39.112 aec8 Recovering log #328
+2024/09/24-17:23:39.113 aec8 Level-0 table #330: started
+2024/09/24-17:23:39.118 aec8 Level-0 table #330: 2964 bytes OK
+2024/09/24-17:23:39.121 aec8 Delete type=0 #328
+2024/09/24-17:23:39.122 aec8 Delete type=3 #326
+2024/09/24-17:23:39.122 dc3c Compacting 4@0 + 0@1 files
+2024/09/24-17:23:39.133 dc3c Generated table #332@0: 24 keys, 5576 bytes
+2024/09/24-17:23:39.134 dc3c Compacted 4@0 + 0@1 files => 5576 bytes
+2024/09/24-17:23:39.135 dc3c compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/09/24-17:23:39.135 dc3c Delete type=2 #320
+2024/09/24-17:23:39.135 dc3c Delete type=2 #323
+2024/09/24-17:23:39.135 dc3c Delete type=2 #327
+2024/09/24-17:23:39.135 dc3c Delete type=2 #330

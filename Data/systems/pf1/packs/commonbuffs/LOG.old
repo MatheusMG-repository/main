@@ -1,11 +1,3 @@
-2024/09/17-18:38:49.208 2684 Delete type=3 #1
-2024/09/17-18:45:06.057 10ac Level-0 table #65: started
-2024/09/17-18:45:06.057 10ac Level-0 table #65: 0 bytes OK
-2024/09/17-18:45:06.059 10ac Delete type=0 #63
-2024/09/17-18:45:06.062 10ac Manual compaction at level-0 from '!folders!H4f7Rs5PFd3IA3ey' @ 72057594037927935 : 1 .. '!items!v9JaHLaVkP9O36TS' @ 0 : 0; will stop at '!items!v9JaHLaVkP9O36TS' @ 13 : 1
-2024/09/17-18:45:06.062 10ac Compacting 1@0 + 0@1 files
-2024/09/17-18:45:06.065 10ac Generated table #66@0: 44 keys, 17730 bytes
-2024/09/17-18:45:06.065 10ac Compacted 1@0 + 0@1 files => 17730 bytes
-2024/09/17-18:45:06.066 10ac compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/09/17-18:45:06.066 10ac Delete type=2 #5
-2024/09/17-18:45:06.266 10ac Manual compaction at level-0 from '!items!v9JaHLaVkP9O36TS' @ 13 : 1 .. '!items!v9JaHLaVkP9O36TS' @ 0 : 0; will stop at (end)
+2024/09/23-18:23:42.486 9c04 Recovering log #71
+2024/09/23-18:23:42.489 9c04 Delete type=0 #71
+2024/09/23-18:23:42.489 9c04 Delete type=3 #70
