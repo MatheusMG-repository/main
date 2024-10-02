@@ -1,3 +1,83 @@
-2024/09/24-17:23:39.076 4120 Recovering log #386
-2024/09/24-17:23:39.080 4120 Delete type=0 #386
-2024/09/24-17:23:39.080 4120 Delete type=3 #384
+2024/10/01-19:16:52.501 4674 Recovering log #392
+2024/10/01-19:16:52.501 4674 Level-0 table #395: started
+2024/10/01-19:16:52.508 4674 Level-0 table #395: 75399 bytes OK
+2024/10/01-19:16:52.521 4674 Delete type=0 #392
+2024/10/01-19:16:52.522 4674 Delete type=3 #391
+2024/10/01-19:16:59.862 38bc Compacting 1@0 + 1@1 files
+2024/10/01-19:16:59.898 38bc Generated table #397@0: 5934 keys, 1008966 bytes
+2024/10/01-19:16:59.898 38bc Compacted 1@0 + 1@1 files => 1008966 bytes
+2024/10/01-19:16:59.903 38bc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/01-19:16:59.903 38bc Delete type=2 #393
+2024/10/01-19:16:59.903 38bc Delete type=2 #395
+2024/10/01-21:05:25.062 38bc Level-0 table #399: started
+2024/10/01-21:05:25.080 38bc Level-0 table #399: 1134213 bytes OK
+2024/10/01-21:05:25.085 38bc Delete type=0 #396
+2024/10/01-21:16:02.571 38bc Level-0 table #401: started
+2024/10/01-21:16:02.589 38bc Level-0 table #401: 1048244 bytes OK
+2024/10/01-21:16:02.593 38bc Delete type=0 #398
+2024/10/01-21:25:18.982 38bc Level-0 table #403: started
+2024/10/01-21:25:18.998 38bc Level-0 table #403: 1046463 bytes OK
+2024/10/01-21:25:19.002 38bc Delete type=0 #400
+2024/10/01-21:29:12.349 38bc Level-0 table #405: started
+2024/10/01-21:29:12.373 38bc Level-0 table #405: 1051133 bytes OK
+2024/10/01-21:29:12.375 38bc Delete type=0 #402
+2024/10/01-21:29:12.376 38bc Compacting 4@0 + 1@1 files
+2024/10/01-21:29:12.413 38bc Generated table #406@0: 6464 keys, 1163099 bytes
+2024/10/01-21:29:12.413 38bc Compacted 4@0 + 1@1 files => 1163099 bytes
+2024/10/01-21:29:12.416 38bc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/01-21:29:12.416 38bc Delete type=2 #397
+2024/10/01-21:29:12.417 38bc Delete type=2 #399
+2024/10/01-21:29:12.417 38bc Delete type=2 #401
+2024/10/01-21:29:12.417 38bc Delete type=2 #403
+2024/10/01-21:29:12.418 38bc Delete type=2 #405
+2024/10/01-21:34:54.182 38bc Level-0 table #408: started
+2024/10/01-21:34:54.198 38bc Level-0 table #408: 1046148 bytes OK
+2024/10/01-21:34:54.201 38bc Delete type=0 #404
+2024/10/01-21:50:47.465 38bc Level-0 table #410: started
+2024/10/01-21:50:47.482 38bc Level-0 table #410: 1076396 bytes OK
+2024/10/01-21:50:47.486 38bc Delete type=0 #407
+2024/10/01-21:52:48.894 38bc Level-0 table #412: started
+2024/10/01-21:52:48.911 38bc Level-0 table #412: 1046745 bytes OK
+2024/10/01-21:52:48.915 38bc Delete type=0 #409
+2024/10/01-21:57:06.902 38bc Level-0 table #414: started
+2024/10/01-21:57:06.997 38bc Level-0 table #414: 1047173 bytes OK
+2024/10/01-21:57:07.039 38bc Delete type=0 #411
+2024/10/01-21:57:07.040 38bc Compacting 4@0 + 1@1 files
+2024/10/01-21:57:07.158 38bc Generated table #415@0: 6465 keys, 1163941 bytes
+2024/10/01-21:57:07.158 38bc Compacted 4@0 + 1@1 files => 1163941 bytes
+2024/10/01-21:57:07.198 38bc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/01-21:57:07.198 38bc Delete type=2 #406
+2024/10/01-21:57:07.199 38bc Delete type=2 #408
+2024/10/01-21:57:07.199 38bc Delete type=2 #410
+2024/10/01-21:57:07.199 38bc Delete type=2 #412
+2024/10/01-21:57:07.200 38bc Delete type=2 #414
+2024/10/01-21:58:14.917 38bc Level-0 table #417: started
+2024/10/01-21:58:14.933 38bc Level-0 table #417: 1046561 bytes OK
+2024/10/01-21:58:14.935 38bc Delete type=0 #413
+2024/10/01-22:16:49.694 38bc Level-0 table #419: started
+2024/10/01-22:16:49.711 38bc Level-0 table #419: 1047509 bytes OK
+2024/10/01-22:16:49.713 38bc Delete type=0 #416
+2024/10/01-23:04:00.294 38bc Level-0 table #421: started
+2024/10/01-23:04:00.311 38bc Level-0 table #421: 1057766 bytes OK
+2024/10/01-23:04:00.314 38bc Delete type=0 #418
+2024/10/01-23:41:44.662 38bc Level-0 table #423: started
+2024/10/01-23:41:44.680 38bc Level-0 table #423: 1074759 bytes OK
+2024/10/01-23:41:44.682 38bc Delete type=0 #420
+2024/10/01-23:41:44.682 38bc Compacting 4@0 + 1@1 files
+2024/10/01-23:41:44.728 38bc Generated table #424@0: 6467 keys, 1172104 bytes
+2024/10/01-23:41:44.728 38bc Compacted 4@0 + 1@1 files => 1172104 bytes
+2024/10/01-23:41:44.729 38bc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/01-23:41:44.729 38bc Delete type=2 #415
+2024/10/01-23:41:44.730 38bc Delete type=2 #417
+2024/10/01-23:41:44.730 38bc Delete type=2 #419
+2024/10/01-23:41:44.731 38bc Delete type=2 #421
+2024/10/01-23:41:44.731 38bc Delete type=2 #423
+2024/10/01-23:46:12.334 38bc Level-0 table #426: started
+2024/10/01-23:46:12.351 38bc Level-0 table #426: 1057118 bytes OK
+2024/10/01-23:46:12.354 38bc Delete type=0 #422
+2024/10/01-23:48:27.168 38bc Compacting 1@0 + 1@1 files
+2024/10/01-23:48:27.203 38bc Generated table #427@0: 6467 keys, 1172104 bytes
+2024/10/01-23:48:27.203 38bc Compacted 1@0 + 1@1 files => 1172104 bytes
+2024/10/01-23:48:27.207 38bc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/01-23:48:27.207 38bc Delete type=2 #424
+2024/10/01-23:48:27.208 38bc Delete type=2 #426

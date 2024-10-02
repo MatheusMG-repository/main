@@ -1,3 +1,34 @@
-2024/09/24-17:23:38.954 aec8 Recovering log #390
-2024/09/24-17:23:38.957 aec8 Delete type=0 #390
-2024/09/24-17:23:38.957 aec8 Delete type=3 #388
+2024/10/01-19:16:52.351 4674 Recovering log #397
+2024/10/01-19:16:52.364 4674 Delete type=0 #397
+2024/10/01-19:16:52.364 4674 Delete type=3 #396
+2024/10/01-20:54:13.227 38bc Compacting 3@0 + 0@1 files
+2024/10/01-20:54:13.253 38bc Generated table #400@0: 115 keys, 2124442 bytes
+2024/10/01-20:54:13.267 38bc Generated table #401@0: 52 keys, 1126516 bytes
+2024/10/01-20:54:13.267 38bc Compacted 3@0 + 0@1 files => 3250958 bytes
+2024/10/01-20:54:13.271 38bc compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/10/01-20:54:13.272 38bc Delete type=2 #391
+2024/10/01-20:54:13.272 38bc Delete type=2 #392
+2024/10/01-20:54:13.272 38bc Delete type=2 #395
+2024/10/01-21:30:47.987 38bc Level-0 table #403: started
+2024/10/01-21:30:48.009 38bc Level-0 table #403: 2609690 bytes OK
+2024/10/01-21:30:48.015 38bc Delete type=0 #399
+2024/10/01-21:53:22.190 38bc Level-0 table #405: started
+2024/10/01-21:53:22.221 38bc Level-0 table #405: 3107455 bytes OK
+2024/10/01-21:53:22.223 38bc Delete type=0 #402
+2024/10/01-22:09:06.525 38bc Level-0 table #407: started
+2024/10/01-22:09:06.552 38bc Level-0 table #407: 3407460 bytes OK
+2024/10/01-22:09:06.556 38bc Delete type=0 #404
+2024/10/01-23:47:13.138 38bc Level-0 table #409: started
+2024/10/01-23:47:13.162 38bc Level-0 table #409: 3426154 bytes OK
+2024/10/01-23:47:13.165 38bc Delete type=0 #406
+2024/10/01-23:47:13.193 38bc Compacting 4@0 + 2@1 files
+2024/10/01-23:47:13.221 38bc Generated table #410@0: 108 keys, 2123961 bytes
+2024/10/01-23:47:13.240 38bc Generated table #411@0: 66 keys, 1556814 bytes
+2024/10/01-23:47:13.240 38bc Compacted 4@0 + 2@1 files => 3680775 bytes
+2024/10/01-23:47:13.243 38bc compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/10/01-23:47:13.244 38bc Delete type=2 #400
+2024/10/01-23:47:13.244 38bc Delete type=2 #401
+2024/10/01-23:47:13.245 38bc Delete type=2 #403
+2024/10/01-23:47:13.245 38bc Delete type=2 #405
+2024/10/01-23:47:13.246 38bc Delete type=2 #407
+2024/10/01-23:47:13.246 38bc Delete type=2 #409
