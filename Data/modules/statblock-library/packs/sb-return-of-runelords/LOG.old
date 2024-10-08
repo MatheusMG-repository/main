@@ -1,1 +1,5 @@
-2024/10/01-18:40:41.298 16ac Delete type=3 #1
+2024/10/08-17:00:17.251 37c0 Log #161: 0 ops saved to Table #162 OK
+2024/10/08-17:00:17.252 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-return-of-runelords/000161.log: OK
+2024/10/08-17:00:17.256 37c0 Table #147: 385 entries OK
+2024/10/08-17:00:17.259 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-return-of-runelords/MANIFEST-000160: OK
+2024/10/08-17:00:17.263 37c0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-return-of-runelords; recovered 1 files; 462886 bytes. Some data may have been lost. ****

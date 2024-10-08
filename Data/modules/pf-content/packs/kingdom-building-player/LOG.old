@@ -1,1 +1,5 @@
-2024/10/01-18:40:36.605 3cec Delete type=3 #1
+2024/10/08-17:00:13.590 45bc Log #19: 0 ops saved to Table #20 OK
+2024/10/08-17:00:13.592 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\kingdom-building-player/000019.log: OK
+2024/10/08-17:00:13.598 45bc Table #5: 20 entries OK
+2024/10/08-17:00:13.601 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\kingdom-building-player/MANIFEST-000018: OK
+2024/10/08-17:00:13.604 45bc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\kingdom-building-player; recovered 1 files; 51353 bytes. Some data may have been lost. ****

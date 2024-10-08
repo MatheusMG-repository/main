@@ -1,9 +1,10 @@
-2024/10/01-18:40:37.453 16ac Delete type=3 #1
-2024/10/01-18:40:37.544 4930 Compacting 2@0 + 0@1 files
-2024/10/01-18:40:37.598 4930 Generated table #207@0: 868 keys, 2120792 bytes
-2024/10/01-18:40:37.598 4930 Compacted 2@0 + 0@1 files => 2120792 bytes
-2024/10/01-18:40:37.602 4930 compacted to: files[ 5 1 0 0 0 0 0 ]
-2024/10/01-18:40:37.602 4930 Delete type=2 #168
-2024/10/01-18:40:37.603 4930 Delete type=2 #204
-2024/10/01-18:40:37.605 4930 Moved #128 to level-1 2130353 bytes OK: files[ 4 2 0 0 0 0 0 ]
-2024/10/01-18:40:37.608 4930 Moved #129 to level-1 2131549 bytes OK: files[ 3 3 0 0 0 0 0 ]
+2024/10/08-17:00:14.111 33c4 Log #209: 0 ops saved to Table #210 OK
+2024/10/08-17:00:14.112 33c4 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-04/000209.log: OK
+2024/10/08-17:00:14.123 33c4 Table #128: 1860 entries OK
+2024/10/08-17:00:14.199 33c4 Table #129: 1842 entries OK
+2024/10/08-17:00:14.210 33c4 Table #192: 1772 entries OK
+2024/10/08-17:00:14.219 33c4 Table #193: 1784 entries OK
+2024/10/08-17:00:14.224 33c4 Table #194: 610 entries OK
+2024/10/08-17:00:14.231 33c4 Table #207: 868 entries OK
+2024/10/08-17:00:14.234 33c4 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-04/MANIFEST-000208: OK
+2024/10/08-17:00:14.238 33c4 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-04; recovered 6 files; 11335059 bytes. Some data may have been lost. ****

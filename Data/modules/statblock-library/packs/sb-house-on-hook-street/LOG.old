@@ -1,1 +1,5 @@
-2024/10/01-18:40:40.099 3cec Delete type=3 #1
+2024/10/08-17:00:16.480 45bc Log #161: 0 ops saved to Table #162 OK
+2024/10/08-17:00:16.481 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street/000161.log: OK
+2024/10/08-17:00:16.484 45bc Table #147: 51 entries OK
+2024/10/08-17:00:16.489 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street/MANIFEST-000160: OK
+2024/10/08-17:00:16.494 45bc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street; recovered 1 files; 41425 bytes. Some data may have been lost. ****

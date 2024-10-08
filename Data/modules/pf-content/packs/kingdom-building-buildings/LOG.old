@@ -1,1 +1,5 @@
-2024/10/01-18:40:36.692 16ac Delete type=3 #1
+2024/10/08-17:00:13.645 33c4 Log #19: 0 ops saved to Table #20 OK
+2024/10/08-17:00:13.647 33c4 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\kingdom-building-buildings/000019.log: OK
+2024/10/08-17:00:13.649 33c4 Table #5: 95 entries OK
+2024/10/08-17:00:13.652 33c4 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\kingdom-building-buildings/MANIFEST-000018: OK
+2024/10/08-17:00:13.656 33c4 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\kingdom-building-buildings; recovered 1 files; 32208 bytes. Some data may have been lost. ****

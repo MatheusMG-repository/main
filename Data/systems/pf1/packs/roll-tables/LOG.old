@@ -1,1 +1,5 @@
-2024/10/01-18:40:34.149 3cec Delete type=3 #1
+2024/10/08-17:00:11.766 45bc Log #80: 0 ops saved to Table #81 OK
+2024/10/08-17:00:11.767 45bc Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\roll-tables/000080.log: OK
+2024/10/08-17:00:11.770 45bc Table #66: 350 entries OK
+2024/10/08-17:00:11.773 45bc Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\roll-tables/MANIFEST-000079: OK
+2024/10/08-17:00:11.776 45bc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\roll-tables; recovered 1 files; 55665 bytes. Some data may have been lost. ****

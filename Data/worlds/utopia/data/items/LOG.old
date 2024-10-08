@@ -1,2 +1,9 @@
-2024/10/01-18:40:32.551 16ac Delete type=3 #1
-2024/10/01-18:40:32.557 4930 Moved #183 to level-1 2360 bytes OK: files[ 3 1 0 0 0 0 0 ]
+2024/10/08-17:00:10.664 37c0 Log #253: 2 ops saved to Table #254 OK
+2024/10/08-17:00:10.665 37c0 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/items/000253.log: OK
+2024/10/08-17:00:10.670 37c0 Table #66: 1 entries OK
+2024/10/08-17:00:10.673 37c0 Table #79: 1 entries OK
+2024/10/08-17:00:10.677 37c0 Table #84: 2 entries OK
+2024/10/08-17:00:10.681 37c0 Table #183: 1 entries OK
+2024/10/08-17:00:10.682 37c0 Table #254: 2 entries OK
+2024/10/08-17:00:10.685 37c0 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/items/MANIFEST-000252: OK
+2024/10/08-17:00:10.688 37c0 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/items; recovered 5 files; 8922 bytes. Some data may have been lost. ****

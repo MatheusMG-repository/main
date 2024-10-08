@@ -1,1 +1,5 @@
-2024/10/01-18:40:39.478 4094 Delete type=3 #1
+2024/10/08-17:00:16.019 8dc Log #161: 0 ops saved to Table #162 OK
+2024/10/08-17:00:16.020 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings/000161.log: OK
+2024/10/08-17:00:16.027 8dc Table #147: 1248 entries OK
+2024/10/08-17:00:16.030 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings/MANIFEST-000160: OK
+2024/10/08-17:00:16.034 8dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings; recovered 1 files; 1226470 bytes. Some data may have been lost. ****

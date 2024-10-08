@@ -1,1 +1,5 @@
-2024/10/01-18:40:36.071 4094 Delete type=3 #1
+2024/10/08-17:00:13.198 8dc Log #19: 0 ops saved to Table #20 OK
+2024/10/08-17:00:13.199 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-racial-traits/000019.log: OK
+2024/10/08-17:00:13.205 8dc Table #5: 1576 entries OK
+2024/10/08-17:00:13.208 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-racial-traits/MANIFEST-000018: OK
+2024/10/08-17:00:13.211 8dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-racial-traits; recovered 1 files; 713709 bytes. Some data may have been lost. ****

@@ -1,1 +1,5 @@
-2024/10/01-18:40:34.249 3cec Delete type=3 #1
+2024/10/08-17:00:11.833 45bc Log #80: 0 ops saved to Table #81 OK
+2024/10/08-17:00:11.834 45bc Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\pf1e-rules/000080.log: OK
+2024/10/08-17:00:11.837 45bc Table #66: 83 entries OK
+2024/10/08-17:00:11.840 45bc Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\pf1e-rules/MANIFEST-000079: OK
+2024/10/08-17:00:11.844 45bc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\pf1e-rules; recovered 1 files; 191324 bytes. Some data may have been lost. ****

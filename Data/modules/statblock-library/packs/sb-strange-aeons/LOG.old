@@ -1,1 +1,5 @@
-2024/10/01-18:40:41.388 16ac Delete type=3 #1
+2024/10/08-17:00:17.310 37c0 Log #161: 0 ops saved to Table #162 OK
+2024/10/08-17:00:17.311 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons/000161.log: OK
+2024/10/08-17:00:17.315 37c0 Table #147: 408 entries OK
+2024/10/08-17:00:17.318 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons/MANIFEST-000160: OK
+2024/10/08-17:00:17.322 37c0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-strange-aeons; recovered 1 files; 467232 bytes. Some data may have been lost. ****

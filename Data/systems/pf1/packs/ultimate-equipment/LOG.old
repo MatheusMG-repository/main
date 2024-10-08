@@ -1,1 +1,5 @@
-2024/10/01-18:40:34.194 16ac Delete type=3 #1
+2024/10/08-17:00:11.791 37c0 Log #80: 0 ops saved to Table #81 OK
+2024/10/08-17:00:11.792 37c0 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\ultimate-equipment/000080.log: OK
+2024/10/08-17:00:11.796 37c0 Table #66: 3965 entries OK
+2024/10/08-17:00:11.800 37c0 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\ultimate-equipment/MANIFEST-000079: OK
+2024/10/08-17:00:11.804 37c0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\ultimate-equipment; recovered 1 files; 386418 bytes. Some data may have been lost. ****

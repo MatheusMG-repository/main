@@ -1,1 +1,7 @@
-2024/10/01-18:40:32.622 4374 Delete type=3 #1
+2024/10/08-17:00:10.717 8dc Log #287: 144 ops saved to Table #288 OK
+2024/10/08-17:00:10.718 8dc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/journal/000287.log: OK
+2024/10/08-17:00:10.719 8dc Table #282: 36 entries OK
+2024/10/08-17:00:10.720 8dc Table #283: 204 entries OK
+2024/10/08-17:00:10.721 8dc Table #288: 144 entries OK
+2024/10/08-17:00:10.724 8dc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/journal/MANIFEST-000286: OK
+2024/10/08-17:00:10.727 8dc **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/journal; recovered 3 files; 147697 bytes. Some data may have been lost. ****

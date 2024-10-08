@@ -1,1 +1,5 @@
-2024/10/01-18:40:35.303 4094 Delete type=3 #1
+2024/10/08-17:00:12.632 8dc Log #19: 0 ops saved to Table #20 OK
+2024/10/08-17:00:12.634 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\elephant-in-the-room/000019.log: OK
+2024/10/08-17:00:12.639 8dc Table #5: 36 entries OK
+2024/10/08-17:00:12.641 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\elephant-in-the-room/MANIFEST-000018: OK
+2024/10/08-17:00:12.645 8dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\elephant-in-the-room; recovered 1 files; 21384 bytes. Some data may have been lost. ****

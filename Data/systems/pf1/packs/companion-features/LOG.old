@@ -1,1 +1,5 @@
-2024/10/01-18:40:33.150 3cec Delete type=3 #1
+2024/10/08-17:00:11.052 45bc Log #80: 0 ops saved to Table #81 OK
+2024/10/08-17:00:11.053 45bc Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\companion-features/000080.log: OK
+2024/10/08-17:00:11.055 45bc Table #66: 11 entries OK
+2024/10/08-17:00:11.057 45bc Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\companion-features/MANIFEST-000079: OK
+2024/10/08-17:00:11.060 45bc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\companion-features; recovered 1 files; 6921 bytes. Some data may have been lost. ****

@@ -1,1 +1,5 @@
-2024/10/01-18:40:40.235 4094 Delete type=3 #1
+2024/10/08-17:00:16.576 8dc Log #161: 0 ops saved to Table #162 OK
+2024/10/08-17:00:16.577 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air/000161.log: OK
+2024/10/08-17:00:16.581 8dc Table #147: 664 entries OK
+2024/10/08-17:00:16.583 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air/MANIFEST-000160: OK
+2024/10/08-17:00:16.587 8dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air; recovered 1 files; 471414 bytes. Some data may have been lost. ****

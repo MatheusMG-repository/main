@@ -1,1 +1,5 @@
-2024/10/01-18:40:35.690 4094 Delete type=3 #1
+2024/10/08-17:00:12.948 37c0 Log #19: 0 ops saved to Table #20 OK
+2024/10/08-17:00:12.950 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\harrow-deck/000019.log: OK
+2024/10/08-17:00:12.952 37c0 Table #5: 133 entries OK
+2024/10/08-17:00:12.956 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\harrow-deck/MANIFEST-000018: OK
+2024/10/08-17:00:12.959 37c0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\harrow-deck; recovered 1 files; 39776 bytes. Some data may have been lost. ****

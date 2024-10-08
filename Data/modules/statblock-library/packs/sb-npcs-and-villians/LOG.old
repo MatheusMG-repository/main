@@ -1,1 +1,5 @@
-2024/10/01-18:40:39.833 4094 Delete type=3 #1
+2024/10/08-17:00:16.240 8dc Log #161: 0 ops saved to Table #162 OK
+2024/10/08-17:00:16.241 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians/000161.log: OK
+2024/10/08-17:00:16.249 8dc Table #147: 2478 entries OK
+2024/10/08-17:00:16.252 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians/MANIFEST-000160: OK
+2024/10/08-17:00:16.256 8dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians; recovered 1 files; 1781272 bytes. Some data may have been lost. ****

@@ -1,1 +1,5 @@
-2024/10/01-18:40:34.562 16ac Delete type=3 #1
+2024/10/08-17:00:12.143 45bc Log #175: 0 ops saved to Table #176 OK
+2024/10/08-17:00:12.144 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\ivan-duch-music-packs\packs\playlists/000175.log: OK
+2024/10/08-17:00:12.146 45bc Table #161: 449 entries OK
+2024/10/08-17:00:12.150 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\ivan-duch-music-packs\packs\playlists/MANIFEST-000174: OK
+2024/10/08-17:00:12.154 45bc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\ivan-duch-music-packs\packs\playlists; recovered 1 files; 59808 bytes. Some data may have been lost. ****

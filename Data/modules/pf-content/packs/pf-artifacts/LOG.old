@@ -1,1 +1,5 @@
-2024/10/01-18:40:34.705 16ac Delete type=3 #1
+2024/10/08-17:00:12.221 45bc Log #19: 0 ops saved to Table #20 OK
+2024/10/08-17:00:12.224 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-artifacts/000019.log: OK
+2024/10/08-17:00:12.236 45bc Table #5: 332 entries OK
+2024/10/08-17:00:12.239 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-artifacts/MANIFEST-000018: OK
+2024/10/08-17:00:12.243 45bc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-artifacts; recovered 1 files; 393970 bytes. Some data may have been lost. ****

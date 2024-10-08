@@ -1,1 +1,5 @@
-2024/10/01-18:40:40.419 4374 Delete type=3 #1
+2024/10/08-17:00:16.710 45bc Log #161: 0 ops saved to Table #162 OK
+2024/10/08-17:00:16.711 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-lost-city-barakus/000161.log: OK
+2024/10/08-17:00:16.721 45bc Table #147: 392 entries OK
+2024/10/08-17:00:16.724 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-lost-city-barakus/MANIFEST-000160: OK
+2024/10/08-17:00:16.727 45bc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-lost-city-barakus; recovered 1 files; 213521 bytes. Some data may have been lost. ****

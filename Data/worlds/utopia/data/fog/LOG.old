@@ -1,1 +1,7 @@
-2024/10/01-18:40:32.408 4374 Delete type=3 #1
+2024/10/08-17:00:10.573 45bc Log #408: 1 ops saved to Table #412 OK
+2024/10/08-17:00:10.574 45bc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/000408.log: OK
+2024/10/08-17:00:10.578 45bc Table #410: 108 entries OK
+2024/10/08-17:00:10.581 45bc Table #411: 66 entries OK
+2024/10/08-17:00:10.581 45bc Table #412: 1 entries OK
+2024/10/08-17:00:10.584 45bc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000398: OK
+2024/10/08-17:00:10.587 45bc **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog; recovered 3 files; 3748892 bytes. Some data may have been lost. ****

@@ -1,1 +1,8 @@
-2024/10/01-18:40:32.959 16ac Delete type=3 #1
+2024/10/08-17:00:10.926 45bc Log #338: 8 ops saved to Table #339 OK
+2024/10/08-17:00:10.927 45bc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings/000338.log: OK
+2024/10/08-17:00:10.928 45bc Table #332: 24 entries OK
+2024/10/08-17:00:10.933 45bc Table #333: 7 entries OK
+2024/10/08-17:00:10.938 45bc Table #337: 2 entries OK
+2024/10/08-17:00:10.938 45bc Table #339: 8 entries OK
+2024/10/08-17:00:10.940 45bc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings/MANIFEST-000336: OK
+2024/10/08-17:00:10.944 45bc **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings; recovered 4 files; 14621 bytes. Some data may have been lost. ****

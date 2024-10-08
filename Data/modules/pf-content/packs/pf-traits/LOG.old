@@ -1,1 +1,5 @@
-2024/10/01-18:40:36.268 16ac Delete type=3 #1
+2024/10/08-17:00:13.333 33c4 Log #19: 0 ops saved to Table #20 OK
+2024/10/08-17:00:13.335 33c4 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-traits/000019.log: OK
+2024/10/08-17:00:13.342 33c4 Table #5: 1998 entries OK
+2024/10/08-17:00:13.345 33c4 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-traits/MANIFEST-000018: OK
+2024/10/08-17:00:13.350 33c4 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-traits; recovered 1 files; 1302974 bytes. Some data may have been lost. ****

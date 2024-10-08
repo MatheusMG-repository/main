@@ -1,1 +1,5 @@
-2024/10/01-18:40:33.813 16ac Delete type=3 #1
+2024/10/08-17:00:11.486 45bc Log #80: 0 ops saved to Table #81 OK
+2024/10/08-17:00:11.487 45bc Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\races/000080.log: OK
+2024/10/08-17:00:11.494 45bc Table #66: 82 entries OK
+2024/10/08-17:00:11.497 45bc Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\races/MANIFEST-000079: OK
+2024/10/08-17:00:11.500 45bc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\races; recovered 1 files; 147668 bytes. Some data may have been lost. ****

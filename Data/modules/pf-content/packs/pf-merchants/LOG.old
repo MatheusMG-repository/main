@@ -1,1 +1,5 @@
-2024/10/01-18:40:35.923 3cec Delete type=3 #1
+2024/10/08-17:00:13.103 37c0 Log #19: 0 ops saved to Table #20 OK
+2024/10/08-17:00:13.105 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-merchants/000019.log: OK
+2024/10/08-17:00:13.109 37c0 Table #5: 878 entries OK
+2024/10/08-17:00:13.112 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-merchants/MANIFEST-000018: OK
+2024/10/08-17:00:13.115 37c0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-merchants; recovered 1 files; 513014 bytes. Some data may have been lost. ****

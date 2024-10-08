@@ -1,15 +1,9 @@
-2024/10/01-18:40:37.163 4094 Delete type=3 #1
-2024/10/01-18:40:37.163 4930 Compacting 6@0 + 0@1 files
-2024/10/01-18:40:37.216 4930 Generated table #206@0: 857 keys, 2123476 bytes
-2024/10/01-18:40:37.273 4930 Generated table #207@0: 1902 keys, 2129833 bytes
-2024/10/01-18:40:37.455 4930 Generated table #208@0: 1944 keys, 2130179 bytes
-2024/10/01-18:40:37.509 4930 Generated table #209@0: 1907 keys, 2130102 bytes
-2024/10/01-18:40:37.539 4930 Generated table #210@0: 1038 keys, 1192508 bytes
-2024/10/01-18:40:37.539 4930 Compacted 6@0 + 0@1 files => 9706098 bytes
-2024/10/01-18:40:37.541 4930 compacted to: files[ 0 5 0 0 0 0 0 ]
-2024/10/01-18:40:37.541 4930 Delete type=2 #23
-2024/10/01-18:40:37.542 4930 Delete type=2 #167
-2024/10/01-18:40:37.542 4930 Delete type=2 #191
-2024/10/01-18:40:37.543 4930 Delete type=2 #192
-2024/10/01-18:40:37.543 4930 Delete type=2 #193
-2024/10/01-18:40:37.544 4930 Delete type=2 #203
+2024/10/08-17:00:13.870 8dc Log #212: 0 ops saved to Table #213 OK
+2024/10/08-17:00:13.870 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-02/000212.log: OK
+2024/10/08-17:00:13.879 8dc Table #206: 857 entries OK
+2024/10/08-17:00:13.889 8dc Table #207: 1902 entries OK
+2024/10/08-17:00:13.992 8dc Table #208: 1944 entries OK
+2024/10/08-17:00:14.000 8dc Table #209: 1907 entries OK
+2024/10/08-17:00:14.005 8dc Table #210: 1038 entries OK
+2024/10/08-17:00:14.009 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-02/MANIFEST-000211: OK
+2024/10/08-17:00:14.012 8dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-02; recovered 5 files; 9706098 bytes. Some data may have been lost. ****
