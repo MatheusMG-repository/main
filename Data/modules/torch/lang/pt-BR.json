@@ -1,0 +1,27 @@
+{
+	"I18N.LANGUAGE": "Português (Brasil)",
+	"I18N.MAINTAINERS": ["Andersants"],
+
+	"torch.playerTorches.name": "Tochas dos Jogadores",
+	"torch.playerTorches.hint": "Permitir que os jogadores alternem suas próprias tochas.",
+	"torch.brightRadius.hint": "Quantas unidades de grade de luz brilhante emitir.",
+	"torch.dimRadius.hint": "Quantas unidades de grade de luz fraca emitir.",
+	"torch.gmUsesInventory.name": "GM Consome Inventário",
+	"torch.gmUsesInventory.hint": "Se definido, quando o GM alterna uma tocha, ela reduzirá o inventário do ator.",
+	"torch.gmInventoryItemName.name": "Nome do item do inventário a ser usado",
+	"torch.gmInventoryItemName.hint": "Nome do item do inventário a ser consumido se \"GM Consome Inventário\" estiver definido.",
+	"torch.turnOffAllLights": "Forçar brilho e fraca a valores \"desligados\" configurados.",
+	"torch.holdCtrlOnClick": "Segure <span class=\"key\">Ctrl</span> ao clicar",
+	"torch.dancingLightVision.name": "Dar Visão às Luzes Dançantes",
+	"torch.dancingLightVision.hint": "Quando habilitado, cada luz dançante terá visão e pode ser usada para revelar áreas do mapa que os jogadores não podem ver realmente.",
+	"torch.playerUsesInventory.name": "Jogador Consome Inventário",
+	"torch.playerUsesInventory.hint": "Se definido, quando o jogador alterna uma tocha, ela reduzirá o inventário do ator.",
+	"torch.gameLightSources.name": "Fontes de Luz Adicionais",
+	"torch.gameLightSources.hint": "Arquivo JSON contendo fontes de luz adicionais para usar além das fornecidas",
+	"torch.brightRadius.name": "Raio de Luz Brilhante",
+	"torch.dimRadius.name": "Raio de Luz Fraca",
+	"torch.help.supplyExhausted.title": "Suprimento Esgotado",
+	"torch.help.supplyExhausted.body": "<p>Seu fonte de luz é consumível e sua quantidade caiu para zero. Aumente a quantidade do item para acender um novo.</p>",
+	"torch.help.setupSources.title": "Configurar Fontes de Luz",
+	"torch.help.setupSources.body": "<p>Seu personagem atualmente não tem fontes de luz em seu inventário, seja como itens ou como feitiços.</p><p>Para sistemas reconhecidos, as fontes de luz oferecidas são baseadas em itens de inventário - por nome. Colocar fontes de luz conhecidas em seu inventário as tornará disponíveis para você. </p><p>Algumas fontes de luz são consumíveis, como velas e tochas. Para estas, usar uma fonte de luz diminui sua quantidade em um.</p><p>Para sistemas que não têm fontes de luz baseadas em inventário configuradas, você pode configurar fontes de luz através das configurações do módulo. Neste caso, todos os atores recebem a mesma fonte de luz.</p><p>Você pode tornar um sistema reconhecido fornecendo um arquivo JSON de fontes de luz, conforme descrito no README.md.</p><p>Se você tiver várias fontes de luz em seu inventário, pode escolher entre elas clicando com o botão direito no botão da Tocha no HUD quando você não tiver uma fonte de luz acesa.</p>"
+}

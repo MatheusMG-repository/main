@@ -1,5 +1,3 @@
-2024/10/08-17:00:12.357 33c4 Log #19: 0 ops saved to Table #20 OK
-2024/10/08-17:00:12.358 33c4 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-companions/000019.log: OK
-2024/10/08-17:00:12.394 33c4 Table #5: 1943 entries OK
-2024/10/08-17:00:12.397 33c4 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-companions/MANIFEST-000018: OK
-2024/10/08-17:00:12.401 33c4 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-companions; recovered 1 files; 1624934 bytes. Some data may have been lost. ****
+2024/10/15-18:30:42.409 9e8 Recovering log #40
+2024/10/15-18:30:42.412 9e8 Delete type=0 #40
+2024/10/15-18:30:42.412 9e8 Delete type=3 #39

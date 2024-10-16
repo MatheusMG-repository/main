@@ -1,0 +1,143 @@
+{
+	"POLYGLOT.CustomLanguages.title": "Langues personnalisées",
+	"POLYGLOT.CustomLanguages.hint": "Définissez une liste de langues personnalisées à ajouter au système. Elles doivent être séparées par des virgules ou des points-virgules.",
+	"POLYGLOT.ComprehendLanguages.title": "Langue omnisciente",
+	"POLYGLOT.ComprehendLanguages.hint": "Saisissez une langue dont le locuteur comprend toutes les autres langues, mais qui ne peut être parlée ni écrite. Un acteur sera capable de lire tous les messages de conversation et le texte des journaux.",
+	"POLYGLOT.Truespeech.title": "Parler les langues",
+	"POLYGLOT.Truespeech.hint": "Saisissez une langue dont le locuteur comprend toutes les langues parlées (ne peut lire les journaux) et qui est comprise par toutes les créatures. Un acteur sera capable de lire tous les messages de la conversation et d'écrire les messages dans une langue qui est comprise de tous.",
+	"POLYGLOT.DefaultLanguage.title": "Langue par défaut",
+	"POLYGLOT.DefaultLanguage.hint": "Nom de la langue par défaut. Laisser vide pour choisir la langue du système.",
+	"POLYGLOT.ScrambleGM.title": "Crypter pour le MJ",
+	"POLYGLOT.ScrambleGM.hint": "Désactivez cette option pour toujours montrer le texte au MJ (se référer à la couleur du globle pour la compréhension normale de la langue). Nécessite un rechargement.",
+	"POLYGLOT.toggleRuneText.title": "Activer/Désactiver les runes pour les Journaux",
+	"POLYGLOT.toggleRuneText.hint": "Active/Désactive la visibilité des runes dans les Journaux.",
+	"POLYGLOT.RandomizeRunes.title": "Runes aléatoires",
+	"POLYGLOT.RandomizeRunes.hint": "Activer cette option fera apparaître un texte crypté différent chaque fois, même si le texte initial est le même.",
+	"POLYGLOT.ExportFonts.title": "Ajouter les Polices de Polyglot au logiciel",
+	"POLYGLOT.ExportFonts.hint": "Rendre les polices de Polyglot disponibles dans le menu {settingMenuLabel} de Foundry. Désactiver ce réglage retire toutes les polices de Polyglot du menu.",
+	"POLYGLOT.DisplayTranslated.title": "Afficher les traductions",
+	"POLYGLOT.DisplayTranslated.hint": "Pour les langues traduites dans les messages de tchat, afficher le texte original et sa traduction.",
+	"POLYGLOT.AllowOOC.title": "Crypter les messages du chat HRP",
+	"POLYGLOT.AllowOOC.hint": "Choisissez les utilisateurs dont les messages doivent être cryptés. OOC = hors role play.",
+	"POLYGLOT.Translation": "Traduction",
+	"POLYGLOT.TranslatedFrom": "Traduit de ",
+	"POLYGLOT.LanguageLabel": "Langue",
+	"POLYGLOT.ToggleRunes": "Activer/Desactiver les Runes",
+	"POLYGLOT.Runes": "Runes",
+	"POLYGLOT.Generic": {
+		"Language": "Langue"
+	},
+	"POLYGLOT.WFRP4E.LanguageSkills": "Langue",
+	"POLYGLOT": {
+		"UESRPG.Language": "Langue",
+		"COC7": {
+			"LanguageOwn": "Langue",
+			"LanguageAny": "Langue",
+			"LanguageOther": "Langue",
+			"LanguageSpec": "Langue"
+		},
+		"DND5E": {
+			"SpecialLanguages.title": "Remplacer les Langues Spéciales",
+			"SpecialLanguages.hint": "Nom de la langue qui remplacera \"langues\" comme \"toutes les langues qu'il a connues dans la vie\".",
+			"TargetedParty": {
+				"title": "Groupe cible",
+				"hint": "Si votre partie possède de trop nombreux utilisateurs, l'indicateur pourrait devenir trop chargé. Vous pouvez filtrer la liste en la limitant aux utilisateurs qui possèdent des personnages qui sont membres des acteurs du groupe cible."
+			}
+		},
+		"SWADE": {
+			"LanguageSkills": "Langue",
+			"AdditionalLiterateStat": {
+				"title": "Clé Stat de l'alphabétisation",
+				"hint": "Il est possible de limiter les journaux de lecture en ajoutant un statut supplémentaire. Vous devez saisir la clé Stat (sensible à la casse). Ce paramètre est indépendant du paramètre {setting}."
+			},
+			"AdditionalLanguageStat": {
+				"title": "Clé Stat de la langue",
+				"hint": "Il est possible de cibler un statut supplémentaire (qui est défini dans le configurateur de paramètres de SWADE). Vous devez saisir la clé de l'état (sensible à la casse). Attention, ce paramètre remplace le paramètre {setting}."
+			}
+		},
+		"Languages.title": "Langues",
+		"Fonts": "Polices",
+		"FontSize": "Taille de Police (%)",
+		"logographicalFontToggle.title": "Polices Logographiques",
+		"ReplaceLanguages.title": "Remplacer les Langues du Système",
+		"DefaultAlphabet": "Alphabet Défault",
+		"Font": "Police",
+		"enableAllFonts": {
+			"choices": {
+				"3": "Les Deux",
+				"0": "Rien",
+				"1": "Polices Polyglottes",
+				"2": "Polices supplémentaires du Core"
+			},
+			"hint": "Ajoute les polices de Foundry aux {setting1} et {setting2}.",
+			"title": "Ajouter les polices aux {settingMenuLabel}"
+		},
+		"RandomizeRunesOptions": {
+			"a": "Défault",
+			"b": "Phrases uniques",
+			"c": "Rien ⚠️"
+		},
+		"AllowOOCOptions": {
+			"a": "Tous",
+			"b": "MJ Seulement",
+			"c": "Joueurs Seulement",
+			"d": "Aucun"
+		},
+		"LanguageProvider": {
+			"choices": {
+				"module": "[Module] {nom}",
+				"native": "Générique",
+				"system": "[Système] {nom}"
+			},
+			"name": "Fournisseur de paramètres de langue",
+			"hint": "Sélectionnez qui fournit des informations linguistiques pour les alphabets et les langues. D'autres fournisseurs de langues peuvent être mis à disposition via les systèmes de jeu et les modules installés. Les options ci-dessous dépendent du fournisseur de langue sélectionné ici. ⚠️ Si vous changez de fournisseur, vous devez enregistrer et rouvrir ces paramètres."
+		},
+		"LatinAlphabet": "Alphabet Latin",
+		"LanguageSettings": "Paramètres de Langue",
+		"FontSettings": "Paramètres de Police",
+		"AlphabetLabel": "Alphabet",
+		"ChatSettings": "Paramètres du chat",
+		"Languages.hint": "Modifie l'alphabet utilisé pour les langues.",
+		"HideTranslation.title": "Masquer les indicateurs aux joueurs",
+		"LanguageRegex": {
+			"title": "RegEx de langue",
+			"hint": "Vous pouvez l'utiliser pour changer le terme recherché sur les éléments de \"Langue\" à autre chose, comme \"Langage\"."
+		},
+		"ReplaceLanguages.hint": "Remplace les langues par défaut du système par vos langues personnalisées. La première langue de la liste devient la nouvelle langue par défaut.",
+		"JournalHighlight.hint": "Définit l'opacité du surlignage sur les polices du journal.",
+		"JournalHighlight.title": "Opacité du surlignage (%)",
+		"logographicalFontToggle.hint": "Réduire de moitié la taille des phrases à l'aide de polices logographiques (par exemple, caractères japonais, chinois).",
+		"HideTranslation.hint": "Masque le globe et le texte \"Traduit de\" des messages de chat aux joueurs. Utile lorsque vous ne voulez pas montrer aux joueurs quelle langue vous parlez. Déclenche un rechargement.",
+		"JournalHighlightColor": {
+			"hint": "Définit la couleur de surlignage sur les polices dans le journal.",
+			"title": "Couleur du surlignage"
+		},
+		"languageDataPath": {
+			"title": "Chemin des données de langue",
+			"hint": "Si les langues de votre système sont définies dans les données des acteurs et ne sont pas chargées correctement, il se peut qu'un autre chemin de données soit utilisé. Saisissez le chemin de données vers l'attribut correct (par exemple actor.system.languages ou actor.system.speak). Ce paramètre est prioritaire sur le paramètre {setting}. Nécessite un rechargement."
+		},
+		"literacyDataPath": {
+			"title": "Parcours de données sur l'alphabétisation",
+			"hint": "Identique au paramètre {setting}, mais pour la lecture des journaux. Ce paramètre nécessite le paramètre {setting}. Nécessite un rechargement."
+		},
+		"RuneRegex": {
+			"hint": "Faire en sorte que la génération aléatoire ignore les caractères qui ne sont pas alphanumériques (ex : !,.;:?#$\"'). Cela pourrait avoir un effet non désiré en montrant des caractères sous forme de carrés (□) sur certaines polices.",
+			"title": "Rendre aléatoire seulement les alphanumériques"
+		},
+		"IgnoreJournalFontSize": {
+			"title": "Utiliser une taille de police normale",
+			"hint": "Ignore la taille des police de Polyglot sur les journaux,les rendant de la même taille que celui d'un texte normal. Utile lorsque le format des journaux importe."
+		},
+		"GeneralSettings": "Paramètres généraux",
+		"Omniglot": {
+			"hint": "Définir une langue dont le locuteur comprend et parle toutes les autres langues. Un acteur sera capable de lire et écrire toutes les autres langues. À la fois dans la conversation et sur les journaux.",
+			"title": "Langue omniglotte"
+		},
+		"General": "Général",
+		"AlphabeticOnly": "Alphabétique seulement",
+		"Logographical": "Logographique",
+		"GameMasterHasAssignedCharacter": "Vous êtes un {GM} et un personnage vous a été assigné. Polyglot se comportera bizarrement à cause de cela. Envisagez de ne plus être l'Utilisateur de ce personnage.",
+		"KnownLanguages": "Langues connues",
+		"UnknownLanguages": "Langues inconnues"
+	}
+}

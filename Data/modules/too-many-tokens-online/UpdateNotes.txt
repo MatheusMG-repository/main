@@ -1,0 +1,20 @@
+2.0.1
+- Small fixes in spelling
+- Changed HalfElf to Aiuvarin for Pathfinder tokens
+- Packs folder to packs to hopefully fix missing macros for linux users
+
+2.0.0
+- Pathfinder tokens are now released!
+- Improved macros a bit and added a second macro to use Pathfinder tokens instead of dnd tokens.
+- Updated some links/tokens
+
+1.1.1
+- Fixed some bugs with spaces and case sensitivity
+- Added setting for notification frequency
+
+1.1.0
+- Added button to update the actor image, when applying wildcard
+- Fixed some wildcard bugs
+- Made Creature selection searchable (thanks for the suggestion brunocalado)
+- removed notifications, when placing tokens (thanks for the suggestion bsleys)
+- added update notes

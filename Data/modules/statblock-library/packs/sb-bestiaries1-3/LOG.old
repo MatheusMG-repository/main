@@ -1,6 +1,3 @@
-2024/10/08-17:00:15.822 33c4 Log #165: 0 ops saved to Table #166 OK
-2024/10/08-17:00:15.823 33c4 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-bestiaries1-3/000165.log: OK
-2024/10/08-17:00:15.832 33c4 Table #150: 2309 entries OK
-2024/10/08-17:00:15.885 33c4 Table #151: 565 entries OK
-2024/10/08-17:00:15.889 33c4 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-bestiaries1-3/MANIFEST-000164: OK
-2024/10/08-17:00:15.892 33c4 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-bestiaries1-3; recovered 2 files; 2989648 bytes. Some data may have been lost. ****
+2024/10/15-18:30:44.408 6520 Recovering log #187
+2024/10/15-18:30:44.411 6520 Delete type=0 #187
+2024/10/15-18:30:44.412 6520 Delete type=3 #186

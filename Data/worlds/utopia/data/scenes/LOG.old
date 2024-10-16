@@ -1,6 +1,19 @@
-2024/10/08-17:00:10.848 8dc Log #425: 4 ops saved to Table #428 OK
-2024/10/08-17:00:10.849 8dc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes/000425.log: OK
-2024/10/08-17:00:10.855 8dc Table #427: 6467 entries OK
-2024/10/08-17:00:10.855 8dc Table #428: 4 entries OK
-2024/10/08-17:00:10.858 8dc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes/MANIFEST-000394: OK
-2024/10/08-17:00:10.862 8dc **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes; recovered 2 files; 1213199 bytes. Some data may have been lost. ****
+2024/10/15-18:30:41.572 6928 Recovering log #464
+2024/10/15-18:30:41.576 6928 Delete type=0 #464
+2024/10/15-18:30:41.576 6928 Delete type=3 #462
+2024/10/15-20:37:07.279 4518 Level-0 table #469: started
+2024/10/15-20:37:07.293 4518 Level-0 table #469: 1816341 bytes OK
+2024/10/15-20:37:07.295 4518 Delete type=0 #467
+2024/10/15-21:31:41.761 4518 Level-0 table #471: started
+2024/10/15-21:31:41.777 4518 Level-0 table #471: 2040062 bytes OK
+2024/10/15-21:31:41.779 4518 Delete type=0 #468
+2024/10/15-21:59:13.043 4518 Compacting 2@0 + 1@1 files
+2024/10/15-21:59:13.063 4518 Generated table #472@0: 8129 keys, 1439910 bytes
+2024/10/15-21:59:13.063 4518 Compacted 2@0 + 1@1 files => 1439910 bytes
+2024/10/15-21:59:13.064 4518 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/15-21:59:13.064 4518 Delete type=2 #465
+2024/10/15-21:59:13.064 4518 Delete type=2 #469
+2024/10/15-21:59:13.065 4518 Delete type=2 #471
+2024/10/15-23:15:51.519 4518 Level-0 table #474: started
+2024/10/15-23:15:51.535 4518 Level-0 table #474: 2494995 bytes OK
+2024/10/15-23:15:51.535 4518 Delete type=0 #470

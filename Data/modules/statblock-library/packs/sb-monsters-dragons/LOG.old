@@ -1,5 +1,3 @@
-2024/10/08-17:00:16.177 8dc Log #161: 0 ops saved to Table #162 OK
-2024/10/08-17:00:16.178 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons/000161.log: OK
-2024/10/08-17:00:16.184 8dc Table #147: 1392 entries OK
-2024/10/08-17:00:16.187 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons/MANIFEST-000160: OK
-2024/10/08-17:00:16.190 8dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons; recovered 1 files; 1207648 bytes. Some data may have been lost. ****
+2024/10/15-18:30:44.609 6520 Recovering log #182
+2024/10/15-18:30:44.612 6520 Delete type=0 #182
+2024/10/15-18:30:44.612 6520 Delete type=3 #181

@@ -1,0 +1,71 @@
+<form id="arc-config">
+  <section class='archon-body'>
+    <div class="archon-drop" id="source-item" {{#if sourceImage}}style="background-image:url({{sourceImage}});background-color:lightgrey;opacity:1;"{{/if}}>
+
+      <input name="source" type="text" placeholder="{{localize 'archon.control.placeholder.sourceUuid'}}" value="{{options.source}}" />
+      <input class="name-display" type="text" value="{{sourceName}}" disabled>
+    </div>
+  </section>
+  <aside class='archon-controls'>
+    <span>{{localize 'archon.control.linkType'}}</span>
+    <button name='_symbolic' {{#if options.symbolic}}data-tooltip="{{localize 'archon.control.switch.copy'}}"{{else}}class="on" data-tooltip="{{localize 'archon.control.switch.symbolic'}}"{{/if}}>
+      {{#if options.symbolic}}
+      {{localize 'archon.control.symLink'}}
+      {{else}}
+      {{localize 'archon.control.copyLink'}}
+      {{/if}}
+    </button>
+    <span>{{localize 'archon.control.preserve'}}</span>
+    <div class='archon-options'>
+      {{#each options.keep}}
+      <button name={{@key}} {{#if this}}class="on"{{/if}}>{{@key}}</button>
+      {{/each}}
+    </div>
+  </aside>
+  <output class="archon-body">
+    <div class="archon-drop" id="template-item" {{#if targetImage}}style="background-image:url({{targetImage}});background-color:lightgrey;opacity:1;"{{/if}}>
+      <input name="target" type="text" placeholder="{{localize 'archon.control.placeholder.templateUuid'}}" value="{{options.target}}"/>
+      <input class="name-display" name="archon-name" type="text" value="{{targetName}}">
+    </div>
+    
+  </output>
+  <section class="footer">
+    <button name="submit" {{disabled noCreate}}>{{localize 'archon.control.create'}}</button>
+    <button name="_location"><div class="out-location" data-tooltip="{{locationLabel}}"><label>{{localize 'archon.control.addTo'}}</label>{{{location}}}</div></button>
+  </section>
+</form>
+{{#if hasArchons}}
+<section class="scene-archons" name="scene-archons">
+  <span>{{localize 'archon.control.present'}}</span>
+  {{#each sceneArchons}}
+  <button name="{{@key}}" data-action="toggle">
+    <img src="{{tokenImg}}">
+    <label for="{{@key}}">{{tokenName}}</label>
+    <div class="item-display">
+      {{#each archons}}
+      <img src="{{img}}">
+      {{/each}}
+    </div>
+  </button>
+  <div name="{{@key}}" class="archon-actions item-display collapsed">
+    {{#each archons}}
+    <div class="archon-entry" data-uuid="{{uuid}}">
+      <button data-action="view" data-tooltip="{{name}}<br>({{localize 'archon.control.viewSelf'}})" data-target="self">
+        <span class="image-label">{{name}}</span>
+        <img src="{{img}}">
+      </button>
+      <span class="center-self"><i class="fas fa-share-from-square"></i></span>
+      <button data-action="view" data-tooltip="{{aName}}<br>({{localize 'archon.control.viewSource'}})" data-target="source">
+        <span class="image-label">{{aName}}</span>
+        <img src="{{aImg}}">
+      </button>
+      <button data-action="unmask">
+        <i class="fas fa-eye-low-vision"></i>{{localize 'archon.control.reveal'}}
+      </button>
+    </div>
+    
+    {{/each}}
+  </div>
+  {{/each}}
+</section>
+{{/if}}

@@ -1,0 +1,27 @@
+{
+	"I18N.LANGUAGE": "Español",
+	"I18N.MAINTAINERS": ["Deuce", "@Viriato139ac#0342"],
+
+	"torch.playerTorches.name": "Antorchas de los jugadores",
+	"torch.playerTorches.hint": "Permite que los jugadores activen y desactiven sus propias antorchas",
+	"torch.brightRadius.hint": "Número de unidades en la rejilla en las que se emite luz brillante",
+	"torch.dimRadius.hint": "Número de unidades en la rejilla en las que se emite luz tenue",
+	"torch.gmUsesInventory.name": "El GM consume el inventario",
+	"torch.gmUsesInventory.hint": "Si se activa, cuando el GM activa una antorcha, reducirá el inventario del actor.",
+	"torch.gmInventoryItemName.name": "Nombre del objeto en el inventario",
+	"torch.gmInventoryItemName.hint": "Nombre del objeto en el inventario que se consume cuando se activa \"El GM consume el inventario\"",
+	"torch.turnOffAllLights": "Forzar a valores \"off\" tanto en la emisión brillante como en la tenue",
+	"torch.holdCtrlOnClick": "Mantener pulsado <span class=\"key\">CTRL</span> al hacer clic",
+	"torch.dancingLightVision.name": "Dar visión a las luces danzantes",
+	"torch.dancingLightVision.hint": "Cuando se activa, cada luz danzante tendrá visión, por lo que puede utilizarse para revelar zonas del mapa que los jugadores no pueden ver.",
+	"torch.playerUsesInventory.name": "El jugador consume el inventario",
+	"torch.playerUsesInventory.hint": "Si se activa, cuando el jugador activa una antorcha, reducirá el inventario del actor.",
+	"torch.gameLightSources.name": "Fuentes de luz adicionales",
+	"torch.gameLightSources.hint": "Archivo JSON que contiene fuentes de luz adicionales a las especificadas",
+	"torch.brightRadius.name": "Radio de luz brillante",
+	"torch.dimRadius.name": "Radio de luz tenue",
+	"torch.help.supplyExhausted.title": "Suministro agotado",
+	"torch.help.supplyExhausted.body": "<p>Tu fuente de luz es consumible y su cantidad ha bajado a cero. Aumenta la cantidad del objeto para encender una nueva.</p>",
+	"torch.help.setupSources.title": "Configuración de las fuentes de luz",
+	"torch.help.setupSources.body": "<p>Tu personaje actualmente no tiene fuentes de luz en su inventario, ni como objetos ni como conjuros.</p><p>Para los sistemas integrados, las fuentes de luz ofrecidas se basan en el nombre de los objetos del inventario. Colocar fuentes de luz conocidas en tu inventario hará que estén disponibles para ti. </p><p>Algunas fuentes de luz son consumibles, como las velas y las antorchas. Para estas, usar una fuente de luz disminuye su cantidad en uno.</p><p>Para los sistemas que no tienen configuradas fuentes de luz basadas en inventario, puedes configurar las fuentes de luz a través de los ajustes del módulo. En este caso, todos los actores obtienen la misma fuente de luz.</p><p>Puedes hacer que un sistema sea reconocido suministrando un archivo JSON de fuentes de luz, tal y como se describe en el README.md.</p><p>Si tienes varias fuentes de luz en tu inventario, puedes elegir entre ellas haciendo clic con el botón derecho del ratón en el botón Torch del HUD cuando no tengas una fuente de luz encendida.</p><p>Puedes hacer que un sistema sea reconocido suministrando un archivo JSON de fuentes de luz, tal y como se describe en el README.md.</p><p>Si tienes varias fuentes de luz en tu inventario, puedes elegir entre ellas haciendo clic con el botón derecho del ratón en el botón Torch del HUD cuando no tengas una fuente de luz encendida.</p>"
+}

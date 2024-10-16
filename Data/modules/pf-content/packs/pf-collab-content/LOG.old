@@ -1,5 +1,3 @@
-2024/10/08-17:00:12.286 37c0 Log #19: 0 ops saved to Table #20 OK
-2024/10/08-17:00:12.287 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-collab-content/000019.log: OK
-2024/10/08-17:00:12.289 37c0 Table #5: 40 entries OK
-2024/10/08-17:00:12.292 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-collab-content/MANIFEST-000018: OK
-2024/10/08-17:00:12.295 37c0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-collab-content; recovered 1 files; 32905 bytes. Some data may have been lost. ****
+2024/10/15-18:30:42.367 5f34 Recovering log #40
+2024/10/15-18:30:42.370 5f34 Delete type=0 #40
+2024/10/15-18:30:42.370 5f34 Delete type=3 #39

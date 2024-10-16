@@ -1,5 +1,3 @@
-2024/10/08-17:00:17.194 37c0 Log #161: 0 ops saved to Table #162 OK
-2024/10/08-17:00:17.195 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-shattered-star/000161.log: OK
-2024/10/08-17:00:17.198 37c0 Table #147: 301 entries OK
-2024/10/08-17:00:17.201 37c0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-shattered-star/MANIFEST-000160: OK
-2024/10/08-17:00:17.205 37c0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-shattered-star; recovered 1 files; 315281 bytes. Some data may have been lost. ****
+2024/10/15-18:30:45.146 9e8 Recovering log #182
+2024/10/15-18:30:45.149 9e8 Delete type=0 #182
+2024/10/15-18:30:45.149 9e8 Delete type=3 #181

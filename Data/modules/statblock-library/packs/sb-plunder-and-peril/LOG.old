@@ -1,5 +1,3 @@
-2024/10/08-17:00:16.516 8dc Log #161: 0 ops saved to Table #162 OK
-2024/10/08-17:00:16.518 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-plunder-and-peril/000161.log: OK
-2024/10/08-17:00:16.520 8dc Table #147: 36 entries OK
-2024/10/08-17:00:16.523 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-plunder-and-peril/MANIFEST-000160: OK
-2024/10/08-17:00:16.527 8dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-plunder-and-peril; recovered 1 files; 26568 bytes. Some data may have been lost. ****
+2024/10/15-18:30:44.775 5f34 Recovering log #182
+2024/10/15-18:30:44.780 5f34 Delete type=0 #182
+2024/10/15-18:30:44.780 5f34 Delete type=3 #181

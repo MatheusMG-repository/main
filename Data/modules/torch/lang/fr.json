@@ -1,0 +1,27 @@
+{
+	"I18N.LANGUAGE": "Français",
+	"I18N.MAINTAINERS": ["Aymeeeric"],
+
+	"torch.playerTorches.name": "Autorisation des joueurs",
+	"torch.playerTorches.hint": "Autoriser les joueurs à allumer leurs propres torches.",
+	"torch.brightRadius.hint": "Détermine l'étendue (en unité de grille) de la lumière vive émise.",
+	"torch.dimRadius.hint": "Détermine l'étendue (en unité de grille) de la lumière faible émise.",
+	"torch.gmUsesInventory.name": "Activation par le MJ consomme l'inventaire",
+	"torch.gmUsesInventory.hint": "Si actif, lorsque une torche est allumée, elle sera déduite de l'inventaire du joueur cible.",
+	"torch.gmInventoryItemName.name": "Nom de l'objet à déduire de l'inventaire",
+	"torch.gmInventoryItemName.hint": "Préciser le nom de l'objet à déduire (si l'option est cochée) de l'inventaire des joueurs.",
+	"torch.turnOffAllLights": "Éteindre l'ensemble des lumières (vives et faibles).",
+	"torch.holdCtrlOnClick": "Maintenir <span class=\"key\">Ctrl</span> lors du clic.",
+	"torch.dancingLightVision.name": "Lumières dansantes",
+	"torch.dancingLightVision.hint": "Si actif, chaque lumière dansante est dotée d'une vision et peut donc être utilisée pour révéler des zones de la carte que les joueurs ne peuvent pas voir.",
+	"torch.playerUsesInventory.name": "Activation par le PJ consomme l'inventaire",
+	"torch.playerUsesInventory.hint": "Si actif, lorsque une torche est allumée, elle sera déduite de l'inventaire du joueur ayant activé sa torche.",
+	"torch.gameLightSources.name": "Sources de lumière additionnelles",
+	"torch.gameLightSources.hint": "Fichier JSON contenant des sources de lumière supplémentaires à utiliser en plus de celles fournies",
+	"torch.brightRadius.name": "Étendue lumière vive",
+	"torch.dimRadius.name": "Étendue lumière faible",
+	"torch.help.supplyExhausted.title": "Supply Exhausted",
+	"torch.help.supplyExhausted.body": "<p>Your light source is consumable and your quantity has dropped to zero. Increase the quantity of the item to light a fresh one.</p>",
+	"torch.help.setupSources.title": "Setting Up Light Sources",
+	"torch.help.setupSources.body": "<p>Your character currently has no light sources in their inventory, either as items or as spells.</p><p>For recognized systems, the light sources offered are based on inventory items - by name. Placing known light sources in your inventory will make them available to you. </p><p>Some light sources are consumable, like candles and torches. For these, using a light source decreases its quantity by one.</p><p>For systems that have no inventory-based light sources configured, you can configure light sources through module settings. In this case, all actors get the same light source.</p><p>You can make a system recognized by supplying a JSON file of light sources, as described in the README.md.</p><p>If you have multiple light sources in your inventory, you can choose among them by right-clicking the Torch button on the HUD when you do not have a light source lit.</p>"
+}

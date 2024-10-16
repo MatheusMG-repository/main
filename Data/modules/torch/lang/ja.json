@@ -1,0 +1,27 @@
+{
+	"I18N.LANGUAGE": "日本語",
+	"I18N.MAINTAINERS": ["doumoku"],
+
+	"torch.playerTorches.name": "プレイヤーtorch",
+	"torch.playerTorches.hint": "プレイヤーに自身のtorchのON/OFFを許可します。",
+	"torch.brightRadius.hint": "「明るい」光が届くマス数",
+	"torch.dimRadius.hint": "「薄暗い」光が届くマス数",
+	"torch.gmUsesInventory.name": "GMは所持数を消費する",
+	"torch.gmUsesInventory.hint": "有効化で、GMがtorchを起動した時、アクターの所持数を減らします。",
+	"torch.gmInventoryItemName.name": "使用する所持品のアイテム名",
+	"torch.gmInventoryItemName.hint": " \"「GMは所持数を消費する」\"　が有効な時の所持品アイテム名を指定します。",
+	"torch.turnOffAllLights": " \"オフ\"　の時の明暗の値を強制",
+	"torch.holdCtrlOnClick": "<span class=\"key\">Ctrl</span>を押しながらクリック",
+	"torch.dancingLightVision.name": "ダンシング・ライツに視覚を与える",
+	"torch.dancingLightVision.hint": "有効化で、 各ダンシング・ライツに視覚を持たせ、実際にはプレイヤーが見えないマップの位置を公開させます。",
+	"torch.playerUsesInventory.name": "プレイヤーは所持数を消費する",
+	"torch.playerUsesInventory.hint": "有効化で、プレイヤーがtorchを起動した時、アクターの所持数を減らします。",
+	"torch.gameLightSources.name": "追加の光源",
+	"torch.gameLightSources.hint": "追加の光源が含まれたJSONファイルを指定します。",
+	"torch.brightRadius.name": "「明るい」光半径",
+	"torch.dimRadius.name": "「薄暗い」光半径",
+	"torch.help.supplyExhausted.title": "底が尽きた",
+	"torch.help.supplyExhausted.body": "<p>君の光源は消費可能で、所持数が０個になった。新たに灯す場合は所持数を増やすこと。</p>",
+	"torch.help.setupSources.title": "光源を設定",
+	"torch.help.setupSources.body": "<p>あなたのキャラクターは所持品（アイテムまたは呪文）、に光源を持っていません。</p><p>対応システムならば、所持品のアイテム名に基づいて光源が提供されます。認識されている光源が所持品にあれば使用できます。 </p><p>たいまつや蝋燭などの一部光源は消費されます。光源を使用すると個数を1減らします。</p><p>システムが所持品に基づいた光源を設定していなければ、モジュールの設定を通して光源を設定できます。その場合、すべてのアクターが同じ光源を持ちます。</p><p>README.mdに記載されている通りにJSONファイルを用意することでシステム別の光源を指定できます。</p><p>もし複数の光源を持っているなら、 光源を点けていない状態でHUD上のTorchボタンを右クリックし使用する光源を選べます。</p>"
+}

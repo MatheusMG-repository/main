@@ -1,0 +1,27 @@
+{
+	"I18N.LANGUAGE": "Italiano",
+	"I18N.MAINTAINERS": ["GregoryWarn"],
+
+	"torch.playerTorches.name": "Torce Giocatore",
+	"torch.playerTorches.hint": "Consenti ai giocatori di accendere/spegnere le proprie torce.",
+	"torch.brightRadius.hint": "Quante unità di griglia di luce intensa emettere.",
+	"torch.dimRadius.hint": "Quante unità di griglia di luce fioca emettere.",
+	"torch.gmUsesInventory.name": "DM Consuma Inventario",
+	"torch.gmUsesInventory.hint": "Se attiva, quando un GM accende una torcia, verrà scalata dall'inventario del personaggio.",
+	"torch.gmInventoryItemName.name": "Nome dell'oggetto dell'inventario da usare",
+	"torch.gmInventoryItemName.hint": "Nome dell'oggetto dell'inventario da consumare se \"DM Consuma Inventario\" è attiva.",
+	"torch.turnOffAllLights": "Forza luce intensa e fioca ai valori \"off\" configurati.",
+	"torch.holdCtrlOnClick": "Premi <span class=\"key\">Ctrl</span> al Click",
+	"torch.dancingLightVision.name": "Fornisci Visione delle Luci Danzanti",
+	"torch.dancingLightVision.hint": "Quando abilitato, ogni Luce Danzante avrà una visione, quindi potrà essere utilizzata per rivelare aree della mappa che i giocatori non possono effettivamente vedere.",
+	"torch.playerUsesInventory.name": "Giocatore Consuma Inventario",
+	"torch.playerUsesInventory.hint": "Se attiva, quando un giocatore accende una torcia, verrà scalata dall'invetario dell'attore.",
+	"torch.gameLightSources.name": "Fonti di Luce Addizionali",
+	"torch.gameLightSources.hint": "File JSON contenente fonti di luce addizionali da usare in aggiunta a quelle fornite",
+	"torch.brightRadius.name": "Raggio Luce Intensa",
+	"torch.dimRadius.name": "Raggio Luce Fioca",
+    "torch.help.supplyExhausted.title": "Scorta Esaurita",
+	"torch.help.supplyExhausted.body": "<p>La tua fonte di luce è consumabile e la tua quantità è scesa a zero. Aumenta la quantità dell'oggetto per accenderne uno nuovo.</p>",
+	"torch.help.setupSources.title": "Impostazione delle sorgenti luminose",
+	"torch.help.setupSources.body": "<p>Il tuo personaggio attualmente non ha fonti di luce nel suo inventario, né come oggetti né come incantesimi.</p><p>Per i sistemi riconosciuti, le sorgenti luminose offerte si basano sul nome degli oggetti in inventario. Posizionare fonti di luce conosciute nel tuo inventario le renderà disponibili per te. </p><p>Alcune fonti di luce sono consumabili, come candele e torce. Per questi, l'utilizzo di una fonte di luce ne diminuisce la quantità di uno.</p><p>Per i sistemi che non hanno sorgenti luminose basate sull'inventario configurate, è possibile configurare le sorgenti luminose tramite le impostazioni del modulo. In questo caso, tutti gli attori ricevono la stessa fonte di luce.</p><p>È possibile far riconoscere un sistema fornendo un file JSON di sorgenti luminose, come descritto nel file README.md.</p><p>Se hai più fonti di luce nel tuo inventario, puoi sceglierne una facendo clic con il pulsante destro del mouse sul pulsante Torcia sull'HUD quando non hai una fonte di luce accesa.</p>"
+}

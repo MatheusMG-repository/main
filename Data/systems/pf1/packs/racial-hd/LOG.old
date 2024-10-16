@@ -1,5 +1,3 @@
-2024/10/08-17:00:11.465 8dc Log #80: 0 ops saved to Table #81 OK
-2024/10/08-17:00:11.465 8dc Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\racial-hd/000080.log: OK
-2024/10/08-17:00:11.467 8dc Table #66: 13 entries OK
-2024/10/08-17:00:11.469 8dc Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\racial-hd/MANIFEST-000079: OK
-2024/10/08-17:00:11.473 8dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\racial-hd; recovered 1 files; 13911 bytes. Some data may have been lost. ****
+2024/10/15-18:30:41.940 9e8 Recovering log #101
+2024/10/15-18:30:41.943 9e8 Delete type=0 #101
+2024/10/15-18:30:41.943 9e8 Delete type=3 #100

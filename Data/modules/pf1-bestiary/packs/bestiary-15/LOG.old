@@ -1,13 +1,3 @@
-2024/10/08-17:00:15.357 45bc Log #227: 0 ops saved to Table #228 OK
-2024/10/08-17:00:15.358 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15/000227.log: OK
-2024/10/08-17:00:15.368 45bc Table #21: 852 entries OK
-2024/10/08-17:00:15.379 45bc Table #22: 1562 entries OK
-2024/10/08-17:00:15.389 45bc Table #207: 1520 entries OK
-2024/10/08-17:00:15.399 45bc Table #208: 1591 entries OK
-2024/10/08-17:00:15.408 45bc Table #209: 1593 entries OK
-2024/10/08-17:00:15.418 45bc Table #210: 1630 entries OK
-2024/10/08-17:00:15.427 45bc Table #211: 1587 entries OK
-2024/10/08-17:00:15.435 45bc Table #212: 1592 entries OK
-2024/10/08-17:00:15.443 45bc Table #213: 1419 entries OK
-2024/10/08-17:00:15.447 45bc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15/MANIFEST-000226: OK
-2024/10/08-17:00:15.451 45bc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15; recovered 9 files; 18896954 bytes. Some data may have been lost. ****
+2024/10/15-18:30:44.172 6928 Recovering log #257
+2024/10/15-18:30:44.174 6928 Delete type=0 #257
+2024/10/15-18:30:44.176 6928 Delete type=3 #256

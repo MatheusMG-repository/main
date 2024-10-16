@@ -1,0 +1,34 @@
+{
+  "id": "archon",
+  "title": "Archon (Masked Items)",
+  "description": "Unidentified or multi-form items. Any system. Any Foundry.",
+  "version": "1.2.1",
+  "authors": [
+    {
+      "name": "badgerwerks",
+      "discord": "@badgerwerks",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "scripts/module.mjs"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "styles": [
+    "styles/archon.css"
+  ],
+  "url": "https://github.com/trioderegion/archon",
+  "manifest": "https://github.com/trioderegion/archon/releases/latest/download/module.json",
+  "download": "https://github.com/trioderegion/archon/releases/download/1.2.1/module.zip",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11.309"
+  }
+}

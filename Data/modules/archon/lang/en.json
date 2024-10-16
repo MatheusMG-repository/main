@@ -1,0 +1,51 @@
+{
+  "archon": {
+    "setting": {
+      "useWhiteBadge": {
+        "name": "Use White Badge",
+        "hint": "Badge color used for archons in the item directory."
+      },
+      "disableBadge": {
+        "name": "Disable Badges",
+        "hint": "Remove archon 'A' badges from item directory."
+      },
+      "disableContextMenu": {
+        "name": "Disable Archon Context Options",
+        "hint": "Removes item directory context menu entries for viewing and revealing an archon's true form."
+      },
+      "disableSheetControl": {
+        "name": "Disable Item Sheet Control",
+        "hint": "Removes archon 'A' badge and controls from item sheets"
+      }
+    },
+    "error": {
+      "noSource": "**ERROR: Original Item Not Found**"
+    },
+    "show": "Open Archon",
+    "control": {
+      "title": "Archon Control Panel",
+      "preserve": "Preserve from source",
+      "placeholder": {
+        "sourceUuid": "Source Item UUID",
+        "templateUuid": "Template Item UUID"
+      },
+      "location": {
+        "world": "World Items"
+      },
+      "create": "Create Archon",
+      "present": "Archons on scene",
+      "viewSelf": "View Archon",
+      "viewSource": "Preview True Form",
+      "reveal": "Reveal True Form",
+      "linkType": "Data storage method",
+      "symLink": "UUID Link",
+      "copyLink": "Full Copy",
+      "switch": {
+        "copy": "Switch to storing hidden item as full copy",
+        "symbolic": "Switch to storing hidden item as a UUID reference"
+      },
+      "addTo": "Add To",
+      "itemTip": "Right-click to view Archon actions"
+    }
+  }
+}

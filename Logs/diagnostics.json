@@ -1,5 +1,5 @@
 {
-  "timestamp": 1728403199421,
+  "timestamp": 1729091105764,
   "os": {
     "platform": "win32",
     "version": "10.0.22631",
@@ -13,6 +13,9 @@
     "hosting": null
   },
   "modules": {
+    "archon": {
+      "version": "1.2.1"
+    },
     "dd-import": {
       "version": "3.0.1"
     },
@@ -49,6 +52,9 @@
     "pf1-statblock-converter": {
       "version": "4.6.5"
     },
+    "polyglot": {
+      "version": "2.4.10.2"
+    },
     "popout": {
       "version": "2.18"
     },
@@ -60,17 +66,23 @@
     },
     "tagger": {
       "version": "1.4.6"
+    },
+    "too-many-tokens-online": {
+      "version": "2.0.1"
+    },
+    "torch": {
+      "version": "2.15.1"
     }
   },
   "systems": {
     "pf1": {
       "version": "10.3",
-      "playtime": 131335
+      "playtime": 159356
     }
   },
   "worlds": {},
   "playtime": {
-    "total": 131335,
-    "max": 131335
+    "total": 159356,
+    "max": 159356
   }
 }

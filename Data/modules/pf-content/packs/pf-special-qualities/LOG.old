@@ -1,5 +1,3 @@
-2024/10/08-17:00:13.278 8dc Log #19: 0 ops saved to Table #20 OK
-2024/10/08-17:00:13.279 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-special-qualities/000019.log: OK
-2024/10/08-17:00:13.286 8dc Table #5: 334 entries OK
-2024/10/08-17:00:13.289 8dc Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-special-qualities/MANIFEST-000018: OK
-2024/10/08-17:00:13.292 8dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-special-qualities; recovered 1 files; 204019 bytes. Some data may have been lost. ****
+2024/10/15-18:30:42.946 9e8 Recovering log #40
+2024/10/15-18:30:42.949 9e8 Delete type=0 #40
+2024/10/15-18:30:42.949 9e8 Delete type=3 #39

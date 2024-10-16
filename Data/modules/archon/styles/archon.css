@@ -1,0 +1,276 @@
+/* Global archon styling */
+.archon {
+  --font-color: #8a8a8a;
+  --hover-color: #fafafa;
+  --active-color: #a0a0a0;
+  --background-color: white;
+  --token-size: 100px;
+  --item-size: 50px;
+  --font-primary: "Signika", sans-serif;
+}
+
+:root {
+  --archon-badge-url: url(../assets/a_ico.svg);
+}
+
+.archon-badge {
+  background-image: var(--archon-badge-url);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: auto 21px;
+}
+
+.archon .window-content {
+  color: var(--font-color);
+  background: unset;
+  background-color: var(--background-color);
+  flex-direction:row;
+  font-family: var(--font-primary);
+}
+
+.archon .window-content img {
+  border:none;
+}
+
+.archon.archon-control button {
+  transition: background-color 0.2s, box-shadow 0.4s, top 0.4s, left 0.4s;
+  background-color: transparent;
+  color: var(--font-color);
+ 
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--font-color);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  width:90%;
+  box-shadow:4px 4px var(--font-color);
+  position:relative;
+  top:0;
+  left:0;
+  margin-bottom:5px;
+  font-family: var(--font-primary);
+  height: fit-content;
+}
+
+.archon.archon-control button:hover,
+.archon.archon-control button:focus {
+  box-shadow: 1px 1px var(--font-color);
+  top:4px;
+  left:4px;
+}
+
+.archon.archon-control button:active,
+.archon.archon-control button.on {
+  color: var(--hover-color);
+  background-color: var(--active-color);
+}
+
+.archon .scene-archons .item-display {
+  display:flex;
+  flex-wrap:nowrap;
+}
+
+.archon .center-self {
+  align-self:center;
+}
+
+.archon .collapsed {
+  height:0 !important;
+  overflow:hidden !important;
+}
+
+/* Archon control app styling */
+.archon-control {
+  min-width:260px;
+  min-height:560px;
+}
+
+.archon-control .archon-options {
+  display:inline-flex;
+  flex-wrap:nowrap;
+  justify-content:center;
+  row-gap:5px;
+  column-gap:5px;
+}
+
+.archon-control form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.archon-control form > * {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5em auto;
+  /*min-width:80px;*/
+  /*flex-shrink:0;*/
+}
+
+.archon-control .archon-drop input {
+  font-size:smaller;
+  background:none;
+  width:80%;
+  border:none;
+}
+
+.archon-control input:hover {
+    box-shadow: 0 0 5px var(--color-shadow-primary);
+}
+
+.archon-control .archon-drop {
+  background: no-repeat center/75% 75% url(../assets/a_ico.svg);
+  aspect-ratio:1;
+  border-radius:20%;
+  border: 0.5rem outset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align:center;
+}
+
+.archon-control .archon-drop input.name-display {
+  font-size:medium;
+}
+
+.archon-control .archon-controls button {
+  padding:2px 4px;
+  width:fit-content;
+}
+
+.archon-control .footer {
+  display:grid;
+  gap:0.5em;
+  grid-template-columns: 2fr 1fr;
+  margin-left:0.5em;
+  margin-right:0.5em;
+  width:100%;
+}
+
+
+.archon-control .footer button {
+    height:100%;
+    width:100%;
+    padding:5px;
+  }
+
+.archon-control .footer .out-location {
+  display:flex;
+  flex-direction:column;
+  line-height:1em;
+  position:relative;
+  top:-5px;
+}
+
+.archon-control .footer .out-location img,
+.archon-control .footer .out-location svg {
+  height:30px;
+  width:30px;
+  align-self:center;
+}
+
+.archon-control .scene-archons {
+  min-width:fit-content;
+  min-height:fit-content;
+  text-align:center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.archon-control .scene-archons button {
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  width:fit-content;
+  min-width:100%
+}
+
+.archon-control .scene-archons img {
+  width:var(--token-size);
+  border-radius:5px;
+}
+
+.archon-control .scene-archons button:has(+ .archon-actions:not(.collapsed)) {
+  color: var(--hover-color);
+  background-color: var(--active-color);
+}
+
+.archon-control .scene-archons .archon-actions:not(.collapsed) {
+  margin:10px auto;
+}
+.archon-control .scene-archons .item-display img {
+  width:var(--item-size);
+}
+
+.archon-control .scene-archons button label {
+  position:absolute;
+  top:5px;
+  right:10px;
+}
+
+.archon-control .archon-actions {
+  flex-direction:column;
+  align-items:center;
+}
+
+.archon-control .archon-entry {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.archon-control .archon-entry button i {
+  font-size:larger;
+}
+.archon-control .archon-entry button {
+  min-width:fit-content;
+  flex-direction:column;
+  padding:5px;
+  justify-content:center;
+}
+
+.archon-control .archon-entry button:last-of-type {
+  flex-direction:row;
+  width:80%;
+}
+
+.archon-control .archon-entry .image-label {
+  margin-top:-10px;
+  margin-bottom:-5px;
+  max-width: var(--item-size);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.archon-control .archon-entry > span {
+  margin-left:10px;
+  margin-right:5px
+}
+
+.archon-control .archon-actions {
+  height:initial;
+  transition: height 0.5s;
+}
+
+.archon-item-actions {
+    width: 20px;
+    height: 20px;
+    position: absolute !important;
+    bottom: -1px;
+    left: 0;
+    background: #444;
+    text-align:center;
+    border: 1px solid var(--color-border-dark-1);
+    border-radius: 0 4px 0 0;
+}
+
+
