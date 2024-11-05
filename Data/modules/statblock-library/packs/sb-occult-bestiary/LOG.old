@@ -1,3 +1,5 @@
-2024/10/29-17:41:19.320 3e00 Recovering log #191
-2024/10/29-17:41:19.329 3e00 Delete type=0 #191
-2024/10/29-17:41:19.329 3e00 Delete type=3 #190
+2024/11/05-13:29:04.992 9630 Log #195: 0 ops saved to Table #196 OK
+2024/11/05-13:29:04.993 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-occult-bestiary/000195.log: OK
+2024/11/05-13:29:04.994 9630 Table #170: 120 entries OK
+2024/11/05-13:29:04.997 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-occult-bestiary/MANIFEST-000194: OK
+2024/11/05-13:29:05.001 9630 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-occult-bestiary; recovered 1 files; 189857 bytes. Some data may have been lost. ****

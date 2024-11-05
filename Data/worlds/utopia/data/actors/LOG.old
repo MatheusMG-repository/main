@@ -1,15 +1,8 @@
-2024/10/29-17:41:13.467 3e00 Recovering log #1169
-2024/10/29-17:41:13.482 3e00 Level-0 table #1175: started
-2024/10/29-17:41:13.502 3e00 Level-0 table #1175: 1171018 bytes OK
-2024/10/29-17:41:13.511 3e00 Delete type=0 #1169
-2024/10/29-17:41:13.512 3e00 Delete type=3 #1163
-2024/10/29-17:41:25.934 393c Compacting 1@0 + 3@1 files
-2024/10/29-17:41:25.982 393c Generated table #1177@0: 1128 keys, 2120216 bytes
-2024/10/29-17:41:26.130 393c Generated table #1178@0: 1829 keys, 2129757 bytes
-2024/10/29-17:41:26.250 393c Generated table #1179@0: 1435 keys, 1621134 bytes
-2024/10/29-17:41:26.250 393c Compacted 1@0 + 3@1 files => 5871107 bytes
-2024/10/29-17:41:26.254 393c compacted to: files[ 0 3 0 0 0 0 0 ]
-2024/10/29-17:41:26.254 393c Delete type=2 #1171
-2024/10/29-17:41:26.255 393c Delete type=2 #1172
-2024/10/29-17:41:26.256 393c Delete type=2 #1173
-2024/10/29-17:41:26.256 393c Delete type=2 #1175
+2024/11/05-13:28:58.813 aa20 Log #1196: 476 ops saved to Table #1201 OK
+2024/11/05-13:28:58.814 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors/001196.log: OK
+2024/11/05-13:28:58.823 aa20 Table #1198: 1129 entries OK
+2024/11/05-13:28:58.897 aa20 Table #1199: 1829 entries OK
+2024/11/05-13:28:58.903 aa20 Table #1200: 1495 entries OK
+2024/11/05-13:28:58.907 aa20 Table #1201: 476 entries OK
+2024/11/05-13:28:58.910 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors/MANIFEST-001180: OK
+2024/11/05-13:28:58.912 aa20 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors; recovered 4 files; 7436666 bytes. Some data may have been lost. ****

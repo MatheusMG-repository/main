@@ -1,3 +1,5 @@
-2024/10/29-17:41:19.891 3830 Recovering log #191
-2024/10/29-17:41:19.904 3830 Delete type=0 #191
-2024/10/29-17:41:19.905 3830 Delete type=3 #190
+2024/11/05-13:29:05.592 92fc Log #195: 0 ops saved to Table #196 OK
+2024/11/05-13:29:05.593 92fc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance/000195.log: OK
+2024/11/05-13:29:05.595 92fc Table #170: 431 entries OK
+2024/11/05-13:29:05.598 92fc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance/MANIFEST-000194: OK
+2024/11/05-13:29:05.601 92fc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance; recovered 1 files; 489110 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2024/10/29-17:41:14.740 3830 Recovering log #110
-2024/10/29-17:41:14.751 3830 Delete type=0 #110
-2024/10/29-17:41:14.752 3830 Delete type=3 #109
+2024/11/05-13:29:00.110 9630 Log #114: 0 ops saved to Table #115 OK
+2024/11/05-13:29:00.110 9630 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\technology/000114.log: OK
+2024/11/05-13:29:00.114 9630 Table #89: 284 entries OK
+2024/11/05-13:29:00.116 9630 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\technology/MANIFEST-000113: OK
+2024/11/05-13:29:00.119 9630 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\technology; recovered 1 files; 375989 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2024/10/29-17:41:19.522 1440 Recovering log #191
-2024/10/29-17:41:19.529 1440 Delete type=0 #191
-2024/10/29-17:41:19.529 1440 Delete type=3 #190
+2024/11/05-13:29:05.199 8fa0 Log #195: 0 ops saved to Table #196 OK
+2024/11/05-13:29:05.200 8fa0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-rappan-athuk/000195.log: OK
+2024/11/05-13:29:05.204 8fa0 Table #170: 1358 entries OK
+2024/11/05-13:29:05.206 8fa0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-rappan-athuk/MANIFEST-000194: OK
+2024/11/05-13:29:05.209 8fa0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-rappan-athuk; recovered 1 files; 935976 bytes. Some data may have been lost. ****

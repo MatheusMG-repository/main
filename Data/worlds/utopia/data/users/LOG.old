@@ -1,13 +1,6 @@
-2024/10/29-17:41:14.253 3e00 Recovering log #313
-2024/10/29-17:41:14.253 3e00 Level-0 table #315: started
-2024/10/29-17:41:14.265 3e00 Level-0 table #315: 3469 bytes OK
-2024/10/29-17:41:14.277 3e00 Delete type=0 #313
-2024/10/29-17:41:14.278 3e00 Delete type=3 #312
-2024/10/29-17:41:14.278 393c Compacting 4@0 + 0@1 files
-2024/10/29-17:41:14.290 393c Generated table #317@0: 10 keys, 5498 bytes
-2024/10/29-17:41:14.290 393c Compacted 4@0 + 0@1 files => 5498 bytes
-2024/10/29-17:41:14.295 393c compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/10/29-17:41:14.295 393c Delete type=2 #288
-2024/10/29-17:41:14.295 393c Delete type=2 #294
-2024/10/29-17:41:14.296 393c Delete type=2 #307
-2024/10/29-17:41:14.296 393c Delete type=2 #315
+2024/11/05-13:28:59.678 8fa0 Log #319: 1 ops saved to Table #320 OK
+2024/11/05-13:28:59.679 8fa0 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/users/000319.log: OK
+2024/11/05-13:28:59.679 8fa0 Table #317: 10 entries OK
+2024/11/05-13:28:59.680 8fa0 Table #320: 1 entries OK
+2024/11/05-13:28:59.682 8fa0 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/users/MANIFEST-000318: OK
+2024/11/05-13:28:59.686 8fa0 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/users; recovered 2 files; 6621 bytes. Some data may have been lost. ****

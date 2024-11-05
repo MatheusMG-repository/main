@@ -1,3 +1,5 @@
-2024/10/29-17:41:20.370 45dc Recovering log #191
-2024/10/29-17:41:20.383 45dc Delete type=0 #191
-2024/10/29-17:41:20.383 45dc Delete type=3 #190
+2024/11/05-13:29:06.030 8fa0 Log #195: 0 ops saved to Table #196 OK
+2024/11/05-13:29:06.031 8fa0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-tyrants-grasp/000195.log: OK
+2024/11/05-13:29:06.034 8fa0 Table #170: 412 entries OK
+2024/11/05-13:29:06.036 8fa0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-tyrants-grasp/MANIFEST-000194: OK
+2024/11/05-13:29:06.039 8fa0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-tyrants-grasp; recovered 1 files; 462860 bytes. Some data may have been lost. ****

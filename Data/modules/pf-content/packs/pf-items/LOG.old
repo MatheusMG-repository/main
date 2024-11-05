@@ -1,3 +1,5 @@
-2024/10/29-17:41:16.244 45dc Recovering log #49
-2024/10/29-17:41:16.256 45dc Delete type=0 #49
-2024/10/29-17:41:16.257 45dc Delete type=3 #48
+2024/11/05-13:29:01.674 aa20 Log #53: 0 ops saved to Table #54 OK
+2024/11/05-13:29:01.675 aa20 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-items/000053.log: OK
+2024/11/05-13:29:01.698 aa20 Table #28: 1013 entries OK
+2024/11/05-13:29:01.700 aa20 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-items/MANIFEST-000052: OK
+2024/11/05-13:29:01.705 aa20 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-items; recovered 1 files; 740624 bytes. Some data may have been lost. ****

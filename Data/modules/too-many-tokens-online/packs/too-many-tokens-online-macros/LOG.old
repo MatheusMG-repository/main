@@ -1,3 +1,6 @@
-2024/10/29-17:41:20.459 3e00 Recovering log #164
-2024/10/29-17:41:20.471 3e00 Delete type=0 #164
-2024/10/29-17:41:20.471 3e00 Delete type=3 #163
+2024/11/05-13:29:06.113 9630 Log #168: 0 ops saved to Table #169 OK
+2024/11/05-13:29:06.114 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\too-many-tokens-online\packs\too-many-tokens-online-macros/000168.log: OK
+2024/11/05-13:29:06.115 9630 Table #134: 2 entries OK
+2024/11/05-13:29:06.116 9630 Table #144: 7 entries OK
+2024/11/05-13:29:06.119 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\too-many-tokens-online\packs\too-many-tokens-online-macros/MANIFEST-000167: OK
+2024/11/05-13:29:06.122 9630 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\too-many-tokens-online\packs\too-many-tokens-online-macros; recovered 2 files; 57352 bytes. Some data may have been lost. ****

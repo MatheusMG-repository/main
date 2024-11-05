@@ -1,3 +1,5 @@
-2024/10/29-17:41:20.290 45dc Recovering log #191
-2024/10/29-17:41:20.303 45dc Delete type=0 #191
-2024/10/29-17:41:20.303 45dc Delete type=3 #190
+2024/11/05-13:29:05.957 9630 Log #195: 0 ops saved to Table #196 OK
+2024/11/05-13:29:05.958 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-ruins-of-azlant/000195.log: OK
+2024/11/05-13:29:05.960 9630 Table #170: 408 entries OK
+2024/11/05-13:29:05.963 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-ruins-of-azlant/MANIFEST-000194: OK
+2024/11/05-13:29:05.967 9630 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-ruins-of-azlant; recovered 1 files; 425108 bytes. Some data may have been lost. ****

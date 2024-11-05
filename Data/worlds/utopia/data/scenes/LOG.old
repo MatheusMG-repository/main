@@ -1,32 +1,8 @@
-2024/10/29-17:41:14.110 1440 Recovering log #485
-2024/10/29-17:41:14.114 1440 Level-0 table #488: started
-2024/10/29-17:41:14.122 1440 Level-0 table #488: 424000 bytes OK
-2024/10/29-17:41:14.135 1440 Delete type=0 #485
-2024/10/29-17:41:14.135 1440 Delete type=3 #483
-2024/10/29-17:41:25.855 393c Compacting 1@0 + 1@1 files
-2024/10/29-17:41:25.914 393c Generated table #490@0: 8523 keys, 1502770 bytes
-2024/10/29-17:41:25.914 393c Compacted 1@0 + 1@1 files => 1502770 bytes
-2024/10/29-17:41:25.918 393c compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/10/29-17:41:25.918 393c Delete type=2 #486
-2024/10/29-17:41:25.919 393c Delete type=2 #488
-2024/10/29-19:09:50.143 393c Level-0 table #492: started
-2024/10/29-19:09:50.170 393c Level-0 table #492: 1571222 bytes OK
-2024/10/29-19:09:50.173 393c Delete type=0 #489
-2024/10/29-19:10:34.214 393c Compacting 1@0 + 1@1 files
-2024/10/29-19:10:34.256 393c Generated table #493@0: 8524 keys, 1503360 bytes
-2024/10/29-19:10:34.256 393c Compacted 1@0 + 1@1 files => 1503360 bytes
-2024/10/29-19:10:34.258 393c compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/10/29-19:10:34.258 393c Delete type=2 #490
-2024/10/29-19:10:34.259 393c Delete type=2 #492
-2024/10/29-19:15:20.833 393c Level-0 table #495: started
-2024/10/29-19:15:20.862 393c Level-0 table #495: 1852207 bytes OK
-2024/10/29-19:15:20.864 393c Delete type=0 #491
-2024/10/29-19:18:31.455 393c Compacting 1@0 + 1@1 files
-2024/10/29-19:18:31.499 393c Generated table #496@0: 8523 keys, 1504985 bytes
-2024/10/29-19:18:31.499 393c Compacted 1@0 + 1@1 files => 1504985 bytes
-2024/10/29-19:18:31.502 393c compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/10/29-19:18:31.502 393c Delete type=2 #493
-2024/10/29-19:18:31.503 393c Delete type=2 #495
-2024/10/29-19:19:15.771 393c Level-0 table #498: started
-2024/10/29-19:19:15.791 393c Level-0 table #498: 1570633 bytes OK
-2024/10/29-19:19:15.795 393c Delete type=0 #494
+2024/11/05-13:28:59.510 8fa0 Log #511: 477 ops saved to Table #513 OK
+2024/11/05-13:28:59.511 8fa0 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes/000511.log: OK
+2024/11/05-13:28:59.518 8fa0 Table #508: 8578 entries OK
+2024/11/05-13:28:59.523 8fa0 Table #510: 690 entries OK
+2024/11/05-13:28:59.527 8fa0 Table #512: 746 entries OK
+2024/11/05-13:28:59.529 8fa0 Table #513: 477 entries OK
+2024/11/05-13:28:59.532 8fa0 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes/MANIFEST-000499: OK
+2024/11/05-13:28:59.535 8fa0 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes; recovered 4 files; 11649385 bytes. Some data may have been lost. ****

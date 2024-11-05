@@ -1,3 +1,5 @@
-2024/10/29-17:41:16.444 45dc Recovering log #49
-2024/10/29-17:41:16.456 45dc Delete type=0 #49
-2024/10/29-17:41:16.456 45dc Delete type=3 #48
+2024/11/05-13:29:01.868 aa20 Log #53: 0 ops saved to Table #54 OK
+2024/11/05-13:29:01.869 aa20 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-occult-rituals/000053.log: OK
+2024/11/05-13:29:01.883 aa20 Table #28: 77 entries OK
+2024/11/05-13:29:01.887 aa20 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-occult-rituals/MANIFEST-000052: OK
+2024/11/05-13:29:01.891 aa20 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-occult-rituals; recovered 1 files; 137547 bytes. Some data may have been lost. ****

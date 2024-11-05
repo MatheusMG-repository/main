@@ -1,12 +1,8 @@
-2024/10/29-17:41:13.822 3830 Recovering log #476
-2024/10/29-17:41:13.822 3830 Level-0 table #478: started
-2024/10/29-17:41:13.826 3830 Level-0 table #478: 18002 bytes OK
-2024/10/29-17:41:13.839 3830 Delete type=0 #476
-2024/10/29-17:41:13.840 3830 Delete type=3 #474
-2024/10/29-17:41:13.840 393c Compacting 3@0 + 0@1 files
-2024/10/29-17:41:13.875 393c Generated table #480@0: 92 keys, 2107850 bytes
-2024/10/29-17:41:13.875 393c Compacted 3@0 + 0@1 files => 2107850 bytes
-2024/10/29-17:41:13.881 393c compacted to: files[ 1 2 0 0 0 0 0 ]
-2024/10/29-17:41:13.881 393c Delete type=2 #468
-2024/10/29-17:41:13.881 393c Delete type=2 #475
-2024/10/29-17:41:13.882 393c Delete type=2 #478
+2024/11/05-13:28:59.230 aa20 Log #501: 38 ops saved to Table #506 OK
+2024/11/05-13:28:59.231 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/000501.log: OK
+2024/11/05-13:28:59.235 aa20 Table #503: 63 entries OK
+2024/11/05-13:28:59.239 aa20 Table #504: 84 entries OK
+2024/11/05-13:28:59.242 aa20 Table #505: 58 entries OK
+2024/11/05-13:28:59.244 aa20 Table #506: 38 entries OK
+2024/11/05-13:28:59.248 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000481: OK
+2024/11/05-13:28:59.251 aa20 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog; recovered 4 files; 8177329 bytes. Some data may have been lost. ****

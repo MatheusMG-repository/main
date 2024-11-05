@@ -1,3 +1,5 @@
-2024/10/29-17:41:19.279 1440 Recovering log #191
-2024/10/29-17:41:19.292 1440 Delete type=0 #191
-2024/10/29-17:41:19.292 1440 Delete type=3 #190
+2024/11/05-13:29:04.943 9630 Log #195: 0 ops saved to Table #196 OK
+2024/11/05-13:29:04.944 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians/000195.log: OK
+2024/11/05-13:29:04.950 9630 Table #170: 2478 entries OK
+2024/11/05-13:29:04.954 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians/MANIFEST-000194: OK
+2024/11/05-13:29:04.957 9630 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians; recovered 1 files; 1781272 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2024/10/29-17:41:19.501 45dc Recovering log #191
-2024/10/29-17:41:19.510 45dc Delete type=0 #191
-2024/10/29-17:41:19.510 45dc Delete type=3 #190
+2024/11/05-13:29:05.177 9630 Log #195: 0 ops saved to Table #196 OK
+2024/11/05-13:29:05.178 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-plunder-and-peril/000195.log: OK
+2024/11/05-13:29:05.179 9630 Table #170: 36 entries OK
+2024/11/05-13:29:05.181 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-plunder-and-peril/MANIFEST-000194: OK
+2024/11/05-13:29:05.185 9630 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-plunder-and-peril; recovered 1 files; 26568 bytes. Some data may have been lost. ****

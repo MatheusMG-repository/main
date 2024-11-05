@@ -1,3 +1,5 @@
-2024/10/29-17:41:14.705 1440 Recovering log #110
-2024/10/29-17:41:14.717 1440 Delete type=0 #110
-2024/10/29-17:41:14.717 1440 Delete type=3 #109
+2024/11/05-13:29:00.078 aa20 Log #114: 0 ops saved to Table #115 OK
+2024/11/05-13:29:00.079 aa20 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\weapons-and-ammo/000114.log: OK
+2024/11/05-13:29:00.087 aa20 Table #89: 484 entries OK
+2024/11/05-13:29:00.090 aa20 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\weapons-and-ammo/MANIFEST-000113: OK
+2024/11/05-13:29:00.093 aa20 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\weapons-and-ammo; recovered 1 files; 370784 bytes. Some data may have been lost. ****

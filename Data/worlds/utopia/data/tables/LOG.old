@@ -1,3 +1,4 @@
-2024/10/29-17:41:14.070 3830 Recovering log #278
-2024/10/29-17:41:14.083 3830 Delete type=0 #278
-2024/10/29-17:41:14.083 3830 Delete type=3 #277
+2024/11/05-13:28:59.452 9630 Log #282: 0 ops saved to Table #283 OK
+2024/11/05-13:28:59.453 9630 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/tables/000282.log: OK
+2024/11/05-13:28:59.456 9630 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/tables/MANIFEST-000281: OK
+2024/11/05-13:28:59.460 9630 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/tables; recovered 0 files; 0 bytes. Some data may have been lost. ****

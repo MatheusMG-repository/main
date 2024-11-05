@@ -1,3 +1,6 @@
-2024/10/29-17:41:18.960 45dc Recovering log #196
-2024/10/29-17:41:18.977 45dc Delete type=0 #196
-2024/10/29-17:41:18.978 45dc Delete type=3 #195
+2024/11/05-13:29:04.630 aa20 Log #200: 0 ops saved to Table #201 OK
+2024/11/05-13:29:04.630 aa20 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-bestiaries4-6/000200.log: OK
+2024/11/05-13:29:04.638 aa20 Table #174: 1924 entries OK
+2024/11/05-13:29:04.674 aa20 Table #175: 455 entries OK
+2024/11/05-13:29:04.677 aa20 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-bestiaries4-6/MANIFEST-000199: OK
+2024/11/05-13:29:04.682 aa20 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-bestiaries4-6; recovered 2 files; 2902108 bytes. Some data may have been lost. ****

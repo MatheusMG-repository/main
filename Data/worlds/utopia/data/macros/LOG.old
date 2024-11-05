@@ -1,5 +1,7 @@
-2024/10/29-17:41:14.001 3830 Recovering log #310
-2024/10/29-17:41:14.001 3830 Level-0 table #312: started
-2024/10/29-17:41:14.011 3830 Level-0 table #312: 1076 bytes OK
-2024/10/29-17:41:14.025 3830 Delete type=0 #310
-2024/10/29-17:41:14.025 3830 Delete type=3 #309
+2024/11/05-13:28:59.390 aa20 Log #315: 0 ops saved to Table #316 OK
+2024/11/05-13:28:59.391 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros/000315.log: OK
+2024/11/05-13:28:59.392 aa20 Table #288: 151 entries OK
+2024/11/05-13:28:59.397 aa20 Table #304: 20 entries OK
+2024/11/05-13:28:59.400 aa20 Table #312: 5 entries OK
+2024/11/05-13:28:59.405 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros/MANIFEST-000314: OK
+2024/11/05-13:28:59.410 aa20 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros; recovered 3 files; 33610 bytes. Some data may have been lost. ****

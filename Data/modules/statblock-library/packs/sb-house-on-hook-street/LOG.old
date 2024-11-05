@@ -1,3 +1,5 @@
-2024/10/29-17:41:19.479 1440 Recovering log #191
-2024/10/29-17:41:19.489 1440 Delete type=0 #191
-2024/10/29-17:41:19.489 1440 Delete type=3 #190
+2024/11/05-13:29:05.155 92fc Log #195: 0 ops saved to Table #196 OK
+2024/11/05-13:29:05.156 92fc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street/000195.log: OK
+2024/11/05-13:29:05.157 92fc Table #170: 51 entries OK
+2024/11/05-13:29:05.160 92fc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street/MANIFEST-000194: OK
+2024/11/05-13:29:05.163 92fc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street; recovered 1 files; 41425 bytes. Some data may have been lost. ****

@@ -1,3 +1,6 @@
-2024/10/29-17:41:14.847 3830 Recovering log #112
-2024/10/29-17:41:14.859 3830 Delete type=0 #112
-2024/10/29-17:41:14.859 3830 Delete type=3 #111
+2024/11/05-13:29:00.220 9630 Log #116: 0 ops saved to Table #117 OK
+2024/11/05-13:29:00.222 9630 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\class-abilities/000116.log: OK
+2024/11/05-13:29:00.287 9630 Table #90: 3536 entries OK
+2024/11/05-13:29:00.316 9630 Table #91: 971 entries OK
+2024/11/05-13:29:00.319 9630 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\class-abilities/MANIFEST-000115: OK
+2024/11/05-13:29:00.324 9630 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\class-abilities; recovered 2 files; 2724938 bytes. Some data may have been lost. ****

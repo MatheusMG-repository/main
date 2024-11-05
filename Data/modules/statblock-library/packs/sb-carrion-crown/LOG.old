@@ -1,3 +1,5 @@
-2024/10/29-17:41:19.739 3e00 Recovering log #191
-2024/10/29-17:41:19.751 3e00 Delete type=0 #191
-2024/10/29-17:41:19.752 3e00 Delete type=3 #190
+2024/11/05-13:29:05.424 8fa0 Log #195: 0 ops saved to Table #196 OK
+2024/11/05-13:29:05.425 8fa0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-carrion-crown/000195.log: OK
+2024/11/05-13:29:05.427 8fa0 Table #170: 377 entries OK
+2024/11/05-13:29:05.430 8fa0 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-carrion-crown/MANIFEST-000194: OK
+2024/11/05-13:29:05.434 8fa0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-carrion-crown; recovered 1 files; 344921 bytes. Some data may have been lost. ****

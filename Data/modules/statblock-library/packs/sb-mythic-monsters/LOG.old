@@ -1,3 +1,5 @@
-2024/10/29-17:41:19.254 45dc Recovering log #191
-2024/10/29-17:41:19.266 45dc Delete type=0 #191
-2024/10/29-17:41:19.266 45dc Delete type=3 #190
+2024/11/05-13:29:04.920 92fc Log #195: 0 ops saved to Table #196 OK
+2024/11/05-13:29:04.920 92fc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters/000195.log: OK
+2024/11/05-13:29:04.922 92fc Table #170: 171 entries OK
+2024/11/05-13:29:04.925 92fc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters/MANIFEST-000194: OK
+2024/11/05-13:29:04.929 92fc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters; recovered 1 files; 193133 bytes. Some data may have been lost. ****
