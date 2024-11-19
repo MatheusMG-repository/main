@@ -1,12 +1,12 @@
-2024/11/05-13:29:03.289 9630 Log #270: 0 ops saved to Table #271 OK
-2024/11/05-13:29:03.290 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-08/000270.log: OK
-2024/11/05-13:29:03.298 9630 Table #238: 732 entries OK
-2024/11/05-13:29:03.307 9630 Table #239: 1683 entries OK
-2024/11/05-13:29:03.316 9630 Table #240: 1685 entries OK
-2024/11/05-13:29:03.325 9630 Table #241: 1762 entries OK
-2024/11/05-13:29:03.332 9630 Table #242: 1675 entries OK
-2024/11/05-13:29:03.340 9630 Table #243: 1845 entries OK
-2024/11/05-13:29:03.350 9630 Table #244: 1838 entries OK
-2024/11/05-13:29:03.439 9630 Table #245: 1592 entries OK
-2024/11/05-13:29:03.443 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-08/MANIFEST-000269: OK
-2024/11/05-13:29:03.447 9630 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-08; recovered 8 files; 16858063 bytes. Some data may have been lost. ****
+2024/11/19-21:24:03.325 36ec Log #273: 0 ops saved to Table #274 OK
+2024/11/19-21:24:03.326 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-08/000273.log: OK
+2024/11/19-21:24:03.332 36ec Table #238: 732 entries OK
+2024/11/19-21:24:03.338 36ec Table #239: 1683 entries OK
+2024/11/19-21:24:03.344 36ec Table #240: 1685 entries OK
+2024/11/19-21:24:03.350 36ec Table #241: 1762 entries OK
+2024/11/19-21:24:03.355 36ec Table #242: 1675 entries OK
+2024/11/19-21:24:03.361 36ec Table #243: 1845 entries OK
+2024/11/19-21:24:03.367 36ec Table #244: 1838 entries OK
+2024/11/19-21:24:03.440 36ec Table #245: 1592 entries OK
+2024/11/19-21:24:03.442 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-08/MANIFEST-000272: OK
+2024/11/19-21:24:03.445 36ec **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-08; recovered 8 files; 16858063 bytes. Some data may have been lost. ****

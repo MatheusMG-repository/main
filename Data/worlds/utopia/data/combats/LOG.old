@@ -1,6 +1,6 @@
-2024/11/05-13:28:59.110 9630 Log #340: 126 ops saved to Table #341 OK
-2024/11/05-13:28:59.112 9630 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/combats/000340.log: OK
-2024/11/05-13:28:59.112 9630 Table #336: 86 entries OK
-2024/11/05-13:28:59.113 9630 Table #341: 126 entries OK
-2024/11/05-13:28:59.116 9630 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/combats/MANIFEST-000339: OK
-2024/11/05-13:28:59.122 9630 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/combats; recovered 2 files; 19063 bytes. Some data may have been lost. ****
+2024/11/19-21:24:00.215 36ec Log #343: 62 ops saved to Table #345 OK
+2024/11/19-21:24:00.215 36ec Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats/000343.log: OK
+2024/11/19-21:24:00.216 36ec Table #344: 102 entries OK
+2024/11/19-21:24:00.217 36ec Table #345: 62 entries OK
+2024/11/19-21:24:00.218 36ec Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats/MANIFEST-000342: OK
+2024/11/19-21:24:00.221 36ec **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats; recovered 2 files; 15587 bytes. Some data may have been lost. ****

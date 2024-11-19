@@ -1,8 +1,8 @@
-2024/11/05-13:28:58.813 aa20 Log #1196: 476 ops saved to Table #1201 OK
-2024/11/05-13:28:58.814 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors/001196.log: OK
-2024/11/05-13:28:58.823 aa20 Table #1198: 1129 entries OK
-2024/11/05-13:28:58.897 aa20 Table #1199: 1829 entries OK
-2024/11/05-13:28:58.903 aa20 Table #1200: 1495 entries OK
-2024/11/05-13:28:58.907 aa20 Table #1201: 476 entries OK
-2024/11/05-13:28:58.910 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors/MANIFEST-001180: OK
-2024/11/05-13:28:58.912 aa20 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors; recovered 4 files; 7436666 bytes. Some data may have been lost. ****
+2024/11/19-21:23:59.934 5d2c Log #1263: 133 ops saved to Table #1268 OK
+2024/11/19-21:23:59.935 5d2c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/actors/001263.log: OK
+2024/11/19-21:23:59.941 5d2c Table #1265: 1057 entries OK
+2024/11/19-21:24:00.002 5d2c Table #1266: 1834 entries OK
+2024/11/19-21:24:00.073 5d2c Table #1267: 1876 entries OK
+2024/11/19-21:24:00.076 5d2c Table #1268: 133 entries OK
+2024/11/19-21:24:00.077 5d2c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/actors/MANIFEST-001202: OK
+2024/11/19-21:24:00.080 5d2c **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/actors; recovered 4 files; 7558980 bytes. Some data may have been lost. ****

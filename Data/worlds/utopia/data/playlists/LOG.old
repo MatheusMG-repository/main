@@ -1,5 +1,6 @@
-2024/11/05-13:28:59.427 92fc Log #320: 0 ops saved to Table #321 OK
-2024/11/05-13:28:59.428 92fc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists/000320.log: OK
-2024/11/05-13:28:59.429 92fc Table #295: 120 entries OK
-2024/11/05-13:28:59.432 92fc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists/MANIFEST-000319: OK
-2024/11/05-13:28:59.435 92fc **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists; recovered 1 files; 13150 bytes. Some data may have been lost. ****
+2024/11/19-21:24:00.442 5d2c Log #323: 6 ops saved to Table #324 OK
+2024/11/19-21:24:00.443 5d2c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/playlists/000323.log: OK
+2024/11/19-21:24:00.444 5d2c Table #295: 120 entries OK
+2024/11/19-21:24:00.444 5d2c Table #324: 6 entries OK
+2024/11/19-21:24:00.446 5d2c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/playlists/MANIFEST-000322: OK
+2024/11/19-21:24:00.448 5d2c **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/playlists; recovered 2 files; 14033 bytes. Some data may have been lost. ****

@@ -1,9 +1,6 @@
-2024/11/05-13:28:59.627 9630 Log #385: 3 ops saved to Table #386 OK
-2024/11/05-13:28:59.628 9630 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings/000385.log: OK
-2024/11/05-13:28:59.628 9630 Table #376: 26 entries OK
-2024/11/05-13:28:59.633 9630 Table #378: 2 entries OK
-2024/11/05-13:28:59.637 9630 Table #381: 2 entries OK
-2024/11/05-13:28:59.642 9630 Table #384: 2 entries OK
-2024/11/05-13:28:59.642 9630 Table #386: 3 entries OK
-2024/11/05-13:28:59.645 9630 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings/MANIFEST-000383: OK
-2024/11/05-13:28:59.649 9630 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings; recovered 5 files; 21002 bytes. Some data may have been lost. ****
+2024/11/19-21:24:00.608 5d2c Log #388: 2 ops saved to Table #390 OK
+2024/11/19-21:24:00.609 5d2c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/settings/000388.log: OK
+2024/11/19-21:24:00.610 5d2c Table #389: 26 entries OK
+2024/11/19-21:24:00.610 5d2c Table #390: 2 entries OK
+2024/11/19-21:24:00.612 5d2c Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/settings/MANIFEST-000387: OK
+2024/11/19-21:24:00.615 5d2c **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/settings; recovered 2 files; 11843 bytes. Some data may have been lost. ****

@@ -1,13 +1,13 @@
-2024/11/05-13:29:04.070 aa20 Log #270: 0 ops saved to Table #271 OK
-2024/11/05-13:29:04.070 aa20 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15/000270.log: OK
-2024/11/05-13:29:04.079 aa20 Table #21: 852 entries OK
-2024/11/05-13:29:04.089 aa20 Table #22: 1562 entries OK
-2024/11/05-13:29:04.097 aa20 Table #239: 1520 entries OK
-2024/11/05-13:29:04.105 aa20 Table #240: 1591 entries OK
-2024/11/05-13:29:04.112 aa20 Table #241: 1593 entries OK
-2024/11/05-13:29:04.120 aa20 Table #242: 1630 entries OK
-2024/11/05-13:29:04.128 aa20 Table #243: 1587 entries OK
-2024/11/05-13:29:04.136 aa20 Table #244: 1592 entries OK
-2024/11/05-13:29:04.142 aa20 Table #245: 1419 entries OK
-2024/11/05-13:29:04.146 aa20 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15/MANIFEST-000269: OK
-2024/11/05-13:29:04.150 aa20 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-15; recovered 9 files; 18896954 bytes. Some data may have been lost. ****
+2024/11/19-21:24:03.861 5b64 Log #273: 0 ops saved to Table #274 OK
+2024/11/19-21:24:03.862 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-15/000273.log: OK
+2024/11/19-21:24:03.867 5b64 Table #21: 852 entries OK
+2024/11/19-21:24:03.873 5b64 Table #22: 1562 entries OK
+2024/11/19-21:24:03.879 5b64 Table #239: 1520 entries OK
+2024/11/19-21:24:03.884 5b64 Table #240: 1591 entries OK
+2024/11/19-21:24:03.889 5b64 Table #241: 1593 entries OK
+2024/11/19-21:24:03.895 5b64 Table #242: 1630 entries OK
+2024/11/19-21:24:03.901 5b64 Table #243: 1587 entries OK
+2024/11/19-21:24:03.906 5b64 Table #244: 1592 entries OK
+2024/11/19-21:24:03.911 5b64 Table #245: 1419 entries OK
+2024/11/19-21:24:03.913 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-15/MANIFEST-000272: OK
+2024/11/19-21:24:03.915 5b64 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-15; recovered 9 files; 18896954 bytes. Some data may have been lost. ****

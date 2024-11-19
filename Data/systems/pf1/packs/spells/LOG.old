@@ -1,6 +1,6 @@
-2024/11/05-13:28:59.830 8fa0 Log #116: 0 ops saved to Table #117 OK
-2024/11/05-13:28:59.830 8fa0 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\spells/000116.log: OK
-2024/11/05-13:28:59.924 8fa0 Table #90: 2245 entries OK
-2024/11/05-13:28:59.943 8fa0 Table #91: 784 entries OK
-2024/11/05-13:28:59.947 8fa0 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\spells/MANIFEST-000115: OK
-2024/11/05-13:28:59.950 8fa0 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\spells; recovered 2 files; 2839794 bytes. Some data may have been lost. ****
+2024/11/19-21:24:00.773 36ec Log #119: 0 ops saved to Table #120 OK
+2024/11/19-21:24:00.774 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\spells/000119.log: OK
+2024/11/19-21:24:00.853 36ec Table #90: 2245 entries OK
+2024/11/19-21:24:00.869 36ec Table #91: 784 entries OK
+2024/11/19-21:24:00.872 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\spells/MANIFEST-000118: OK
+2024/11/19-21:24:00.875 36ec **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\spells; recovered 2 files; 2839794 bytes. Some data may have been lost. ****

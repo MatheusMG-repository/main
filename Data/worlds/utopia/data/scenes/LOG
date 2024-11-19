@@ -1,5 +1,5 @@
-2024/11/05-13:28:59.545 8fa0 Delete type=3 #1
-2024/11/05-13:28:59.545 6e38 Compacting 4@0 + 0@1 files
-2024/11/05-13:28:59.588 6e38 Generated table #516@0: 8597 keys, 1535109 bytes
-2024/11/05-13:28:59.588 6e38 Compacted 4@0 + 0@1 files => 1535109 bytes
-2024/11/05-13:28:59.590 6e38 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/19-21:24:00.540 5b64 Delete type=3 #1
+2024/11/19-21:24:00.540 1824 Compacting 6@0 + 0@1 files
+2024/11/19-21:24:00.579 1824 Generated table #520@0: 8753 keys, 1552341 bytes
+2024/11/19-21:24:00.579 1824 Compacted 6@0 + 0@1 files => 1552341 bytes
+2024/11/19-21:24:00.579 1824 compacted to: files[ 0 1 0 0 0 0 0 ]

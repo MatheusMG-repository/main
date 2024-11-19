@@ -1,6 +1,7 @@
-2024/11/05-13:28:59.357 8fa0 Log #329: 50 ops saved to Table #330 OK
-2024/11/05-13:28:59.358 8fa0 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/journal/000329.log: OK
-2024/11/05-13:28:59.359 8fa0 Table #327: 40 entries OK
-2024/11/05-13:28:59.359 8fa0 Table #330: 50 entries OK
-2024/11/05-13:28:59.362 8fa0 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/journal/MANIFEST-000328: OK
-2024/11/05-13:28:59.366 8fa0 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/journal; recovered 2 files; 42760 bytes. Some data may have been lost. ****
+2024/11/19-21:24:00.371 5b64 Log #332: 123 ops saved to Table #333 OK
+2024/11/19-21:24:00.371 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/journal/000332.log: OK
+2024/11/19-21:24:00.372 5b64 Table #327: 40 entries OK
+2024/11/19-21:24:00.373 5b64 Table #330: 50 entries OK
+2024/11/19-21:24:00.374 5b64 Table #333: 123 entries OK
+2024/11/19-21:24:00.375 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/journal/MANIFEST-000331: OK
+2024/11/19-21:24:00.377 5b64 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/journal; recovered 3 files; 80434 bytes. Some data may have been lost. ****

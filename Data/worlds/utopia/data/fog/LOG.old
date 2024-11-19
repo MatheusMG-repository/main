@@ -1,8 +1,8 @@
-2024/11/05-13:28:59.230 aa20 Log #501: 38 ops saved to Table #506 OK
-2024/11/05-13:28:59.231 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/000501.log: OK
-2024/11/05-13:28:59.235 aa20 Table #503: 63 entries OK
-2024/11/05-13:28:59.239 aa20 Table #504: 84 entries OK
-2024/11/05-13:28:59.242 aa20 Table #505: 58 entries OK
-2024/11/05-13:28:59.244 aa20 Table #506: 38 entries OK
-2024/11/05-13:28:59.248 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000481: OK
-2024/11/05-13:28:59.251 aa20 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog; recovered 4 files; 8177329 bytes. Some data may have been lost. ****
+2024/11/19-21:24:00.270 5b64 Log #508: 18 ops saved to Table #512 OK
+2024/11/19-21:24:00.271 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog/000508.log: OK
+2024/11/19-21:24:00.274 5b64 Table #509: 63 entries OK
+2024/11/19-21:24:00.277 5b64 Table #510: 84 entries OK
+2024/11/19-21:24:00.279 5b64 Table #511: 58 entries OK
+2024/11/19-21:24:00.280 5b64 Table #512: 18 entries OK
+2024/11/19-21:24:00.281 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog/MANIFEST-000507: OK
+2024/11/19-21:24:00.285 5b64 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog; recovered 4 files; 5988499 bytes. Some data may have been lost. ****

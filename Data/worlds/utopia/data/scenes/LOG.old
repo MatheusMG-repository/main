@@ -1,8 +1,10 @@
-2024/11/05-13:28:59.510 8fa0 Log #511: 477 ops saved to Table #513 OK
-2024/11/05-13:28:59.511 8fa0 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes/000511.log: OK
-2024/11/05-13:28:59.518 8fa0 Table #508: 8578 entries OK
-2024/11/05-13:28:59.523 8fa0 Table #510: 690 entries OK
-2024/11/05-13:28:59.527 8fa0 Table #512: 746 entries OK
-2024/11/05-13:28:59.529 8fa0 Table #513: 477 entries OK
-2024/11/05-13:28:59.532 8fa0 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes/MANIFEST-000499: OK
-2024/11/05-13:28:59.535 8fa0 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes; recovered 4 files; 11649385 bytes. Some data may have been lost. ****
+2024/11/19-21:24:00.503 5b64 Log #515: 897 ops saved to Table #517 OK
+2024/11/19-21:24:00.504 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes/000515.log: OK
+2024/11/19-21:24:00.510 5b64 Table #508: 8578 entries OK
+2024/11/19-21:24:00.513 5b64 Table #510: 690 entries OK
+2024/11/19-21:24:00.516 5b64 Table #512: 746 entries OK
+2024/11/19-21:24:00.519 5b64 Table #513: 477 entries OK
+2024/11/19-21:24:00.525 5b64 Table #516: 8597 entries OK
+2024/11/19-21:24:00.526 5b64 Table #517: 897 entries OK
+2024/11/19-21:24:00.528 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes/MANIFEST-000514: OK
+2024/11/19-21:24:00.531 5b64 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes; recovered 6 files; 14327935 bytes. Some data may have been lost. ****

@@ -1,9 +1,9 @@
-2024/11/05-13:29:02.545 9630 Log #251: 0 ops saved to Table #252 OK
-2024/11/05-13:29:02.546 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-02/000251.log: OK
-2024/11/05-13:29:02.556 9630 Table #207: 1902 entries OK
-2024/11/05-13:29:02.669 9630 Table #221: 1944 entries OK
-2024/11/05-13:29:02.677 9630 Table #222: 1907 entries OK
-2024/11/05-13:29:02.682 9630 Table #223: 1038 entries OK
-2024/11/05-13:29:02.690 9630 Table #245: 857 entries OK
-2024/11/05-13:29:02.693 9630 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-02/MANIFEST-000250: OK
-2024/11/05-13:29:02.696 9630 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf1-bestiary\packs\bestiary-02; recovered 5 files; 9706348 bytes. Some data may have been lost. ****
+2024/11/19-21:24:02.789 36ec Log #254: 0 ops saved to Table #255 OK
+2024/11/19-21:24:02.789 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-02/000254.log: OK
+2024/11/19-21:24:02.795 36ec Table #207: 1902 entries OK
+2024/11/19-21:24:02.885 36ec Table #221: 1944 entries OK
+2024/11/19-21:24:02.892 36ec Table #222: 1907 entries OK
+2024/11/19-21:24:02.895 36ec Table #223: 1038 entries OK
+2024/11/19-21:24:02.899 36ec Table #245: 857 entries OK
+2024/11/19-21:24:02.901 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-02/MANIFEST-000253: OK
+2024/11/19-21:24:02.904 36ec **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-02; recovered 5 files; 9706348 bytes. Some data may have been lost. ****

@@ -1,7 +1,8 @@
-2024/11/05-13:28:59.390 aa20 Log #315: 0 ops saved to Table #316 OK
-2024/11/05-13:28:59.391 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros/000315.log: OK
-2024/11/05-13:28:59.392 aa20 Table #288: 151 entries OK
-2024/11/05-13:28:59.397 aa20 Table #304: 20 entries OK
-2024/11/05-13:28:59.400 aa20 Table #312: 5 entries OK
-2024/11/05-13:28:59.405 aa20 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros/MANIFEST-000314: OK
-2024/11/05-13:28:59.410 aa20 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros; recovered 3 files; 33610 bytes. Some data may have been lost. ****
+2024/11/19-21:24:00.402 36ec Log #318: 1 ops saved to Table #319 OK
+2024/11/19-21:24:00.403 36ec Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/macros/000318.log: OK
+2024/11/19-21:24:00.404 36ec Table #288: 151 entries OK
+2024/11/19-21:24:00.408 36ec Table #304: 20 entries OK
+2024/11/19-21:24:00.411 36ec Table #312: 5 entries OK
+2024/11/19-21:24:00.411 36ec Table #319: 1 entries OK
+2024/11/19-21:24:00.414 36ec Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/macros/MANIFEST-000317: OK
+2024/11/19-21:24:00.416 36ec **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/macros; recovered 4 files; 34201 bytes. Some data may have been lost. ****
