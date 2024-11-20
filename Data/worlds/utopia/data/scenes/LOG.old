@@ -1,10 +1,20 @@
-2024/11/19-21:24:00.503 5b64 Log #515: 897 ops saved to Table #517 OK
-2024/11/19-21:24:00.504 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes/000515.log: OK
-2024/11/19-21:24:00.510 5b64 Table #508: 8578 entries OK
-2024/11/19-21:24:00.513 5b64 Table #510: 690 entries OK
-2024/11/19-21:24:00.516 5b64 Table #512: 746 entries OK
-2024/11/19-21:24:00.519 5b64 Table #513: 477 entries OK
-2024/11/19-21:24:00.525 5b64 Table #516: 8597 entries OK
-2024/11/19-21:24:00.526 5b64 Table #517: 897 entries OK
-2024/11/19-21:24:00.528 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes/MANIFEST-000514: OK
-2024/11/19-21:24:00.531 5b64 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/scenes; recovered 6 files; 14327935 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.286 7314 Recovering log #519
+2024/11/20-16:20:46.289 7314 Delete type=2 #508
+2024/11/20-16:20:46.290 7314 Delete type=2 #510
+2024/11/20-16:20:46.290 7314 Delete type=2 #512
+2024/11/20-16:20:46.290 7314 Delete type=2 #513
+2024/11/20-16:20:46.291 7314 Delete type=2 #516
+2024/11/20-16:20:46.291 7314 Delete type=2 #517
+2024/11/20-16:20:46.291 7314 Delete type=0 #519
+2024/11/20-16:20:46.291 7314 Delete type=3 #518
+2024/11/20-17:20:16.971 7b14 Level-0 table #524: started
+2024/11/20-17:20:16.973 7b14 Level-0 table #524: 5833 bytes OK
+2024/11/20-17:20:16.974 7b14 Delete type=0 #522
+2024/11/20-17:20:16.980 7b14 Manual compaction at level-0 from '!scenes!0OEZklkn24Bxj9Qr' @ 72057594037927935 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at '!scenes.tokens.delta!imUS0Ux9v0lqY3Si.wk6xwlmBv0kiiChg.eokGEnIl9jXAIgNb' @ 88525 : 0
+2024/11/20-17:20:16.980 7b14 Compacting 1@0 + 1@1 files
+2024/11/20-17:20:16.999 7b14 Generated table #525@0: 8739 keys, 1549553 bytes
+2024/11/20-17:20:16.999 7b14 Compacted 1@0 + 1@1 files => 1549553 bytes
+2024/11/20-17:20:17.000 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:17.000 7b14 Delete type=2 #520
+2024/11/20-17:20:17.000 7b14 Delete type=2 #524
+2024/11/20-17:20:17.004 7b14 Manual compaction at level-0 from '!scenes.tokens.delta!imUS0Ux9v0lqY3Si.wk6xwlmBv0kiiChg.eokGEnIl9jXAIgNb' @ 88525 : 0 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at (end)

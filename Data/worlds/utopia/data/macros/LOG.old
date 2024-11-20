@@ -1,8 +1,7 @@
-2024/11/19-21:24:00.402 36ec Log #318: 1 ops saved to Table #319 OK
-2024/11/19-21:24:00.403 36ec Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/macros/000318.log: OK
-2024/11/19-21:24:00.404 36ec Table #288: 151 entries OK
-2024/11/19-21:24:00.408 36ec Table #304: 20 entries OK
-2024/11/19-21:24:00.411 36ec Table #312: 5 entries OK
-2024/11/19-21:24:00.411 36ec Table #319: 1 entries OK
-2024/11/19-21:24:00.414 36ec Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/macros/MANIFEST-000317: OK
-2024/11/19-21:24:00.416 36ec **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/macros; recovered 4 files; 34201 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.234 7260 Recovering log #321
+2024/11/20-16:20:46.238 7260 Delete type=0 #321
+2024/11/20-16:20:46.239 7260 Delete type=3 #320
+2024/11/20-17:20:16.961 7b14 Level-0 table #326: started
+2024/11/20-17:20:16.962 7b14 Level-0 table #326: 0 bytes OK
+2024/11/20-17:20:16.963 7b14 Delete type=0 #324
+2024/11/20-17:20:16.963 7b14 Manual compaction at level-0 from '!macros!05iuWamadxpoQ2HH' @ 72057594037927935 : 1 .. '!macros!zhFZV5lMYrcUWIgM' @ 0 : 0; will stop at (end)

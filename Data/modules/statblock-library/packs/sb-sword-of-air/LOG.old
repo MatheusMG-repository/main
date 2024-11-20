@@ -1,5 +1,13 @@
-2024/11/19-21:24:04.726 5d2c Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:04.727 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-sword-of-air/000198.log: OK
-2024/11/19-21:24:04.729 5d2c Table #170: 664 entries OK
-2024/11/19-21:24:04.731 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-sword-of-air/MANIFEST-000197: OK
-2024/11/19-21:24:04.734 5d2c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-sword-of-air; recovered 1 files; 471414 bytes. Some data may have been lost. ****
+2024/11/20-16:20:49.699 7260 Recovering log #201
+2024/11/20-16:20:49.702 7260 Delete type=0 #201
+2024/11/20-16:20:49.702 7260 Delete type=3 #200
+2024/11/20-17:20:20.291 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.291 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.292 7b14 Delete type=0 #203
+2024/11/20-17:20:20.375 7b14 Manual compaction at level-0 from '!journal!0J6DxfM7evrk1Z5k' @ 72057594037927935 : 1 .. '!journal.pages!ys2psqenZXrn7ZOc.R5RNaq7XIQAeooEb' @ 0 : 0; will stop at '!journal.pages!ys2psqenZXrn7ZOc.R5RNaq7XIQAeooEb' @ 334 : 1
+2024/11/20-17:20:20.376 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.382 7b14 Generated table #206@0: 664 keys, 471414 bytes
+2024/11/20-17:20:20.382 7b14 Compacted 1@0 + 0@1 files => 471414 bytes
+2024/11/20-17:20:20.383 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.383 7b14 Delete type=2 #170
+2024/11/20-17:20:20.386 7b14 Manual compaction at level-0 from '!journal.pages!ys2psqenZXrn7ZOc.R5RNaq7XIQAeooEb' @ 334 : 1 .. '!journal.pages!ys2psqenZXrn7ZOc.R5RNaq7XIQAeooEb' @ 0 : 0; will stop at (end)

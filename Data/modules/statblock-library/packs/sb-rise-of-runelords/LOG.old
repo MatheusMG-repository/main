@@ -1,5 +1,13 @@
-2024/11/19-21:24:05.128 2d8c Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:05.129 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-rise-of-runelords/000198.log: OK
-2024/11/19-21:24:05.130 2d8c Table #170: 292 entries OK
-2024/11/19-21:24:05.131 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-rise-of-runelords/MANIFEST-000197: OK
-2024/11/19-21:24:05.134 2d8c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-rise-of-runelords; recovered 1 files; 271905 bytes. Some data may have been lost. ****
+2024/11/20-16:20:50.004 7260 Recovering log #201
+2024/11/20-16:20:50.008 7260 Delete type=0 #201
+2024/11/20-16:20:50.008 7260 Delete type=3 #200
+2024/11/20-17:20:20.509 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.509 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.511 7b14 Delete type=0 #203
+2024/11/20-17:20:20.512 7b14 Manual compaction at level-0 from '!journal!0nHyOmKkl3xZraDe' @ 72057594037927935 : 1 .. '!journal.pages!zZJake8ywMR9iXXY.OuSWRdx7bq7TmjUS' @ 0 : 0; will stop at '!journal.pages!zZJake8ywMR9iXXY.OuSWRdx7bq7TmjUS' @ 388 : 1
+2024/11/20-17:20:20.512 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.517 7b14 Generated table #206@0: 292 keys, 271905 bytes
+2024/11/20-17:20:20.517 7b14 Compacted 1@0 + 0@1 files => 271905 bytes
+2024/11/20-17:20:20.518 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.518 7b14 Delete type=2 #170
+2024/11/20-17:20:20.550 7b14 Manual compaction at level-0 from '!journal.pages!zZJake8ywMR9iXXY.OuSWRdx7bq7TmjUS' @ 388 : 1 .. '!journal.pages!zZJake8ywMR9iXXY.OuSWRdx7bq7TmjUS' @ 0 : 0; will stop at (end)

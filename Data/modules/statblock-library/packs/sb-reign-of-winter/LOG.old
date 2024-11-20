@@ -1,5 +1,13 @@
-2024/11/19-21:24:05.228 5d2c Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:05.228 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-reign-of-winter/000198.log: OK
-2024/11/19-21:24:05.230 5d2c Table #170: 402 entries OK
-2024/11/19-21:24:05.231 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-reign-of-winter/MANIFEST-000197: OK
-2024/11/19-21:24:05.234 5d2c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-reign-of-winter; recovered 1 files; 397208 bytes. Some data may have been lost. ****
+2024/11/20-16:20:50.086 72f4 Recovering log #201
+2024/11/20-16:20:50.090 72f4 Delete type=0 #201
+2024/11/20-16:20:50.090 72f4 Delete type=3 #200
+2024/11/20-17:20:20.564 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.565 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.566 7b14 Delete type=0 #203
+2024/11/20-17:20:20.567 7b14 Manual compaction at level-0 from '!journal!054TECpqRwyCmrMe' @ 72057594037927935 : 1 .. '!journal.pages!zzDx3qjOzyReyI6x.oox4QI2wVdFCvyBJ' @ 0 : 0; will stop at '!journal.pages!zzDx3qjOzyReyI6x.oox4QI2wVdFCvyBJ' @ 149 : 1
+2024/11/20-17:20:20.567 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.573 7b14 Generated table #206@0: 402 keys, 397208 bytes
+2024/11/20-17:20:20.573 7b14 Compacted 1@0 + 0@1 files => 397208 bytes
+2024/11/20-17:20:20.574 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.574 7b14 Delete type=2 #170
+2024/11/20-17:20:20.585 7b14 Manual compaction at level-0 from '!journal.pages!zzDx3qjOzyReyI6x.oox4QI2wVdFCvyBJ' @ 149 : 1 .. '!journal.pages!zzDx3qjOzyReyI6x.oox4QI2wVdFCvyBJ' @ 0 : 0; will stop at (end)

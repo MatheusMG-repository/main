@@ -1,6 +1,14 @@
-2024/11/19-21:24:00.215 36ec Log #343: 62 ops saved to Table #345 OK
-2024/11/19-21:24:00.215 36ec Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats/000343.log: OK
-2024/11/19-21:24:00.216 36ec Table #344: 102 entries OK
-2024/11/19-21:24:00.217 36ec Table #345: 62 entries OK
-2024/11/19-21:24:00.218 36ec Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats/MANIFEST-000342: OK
-2024/11/19-21:24:00.221 36ec **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/combats; recovered 2 files; 15587 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.112 7260 Recovering log #347
+2024/11/20-16:20:46.116 7260 Delete type=0 #347
+2024/11/20-16:20:46.116 7260 Delete type=3 #346
+2024/11/20-17:20:16.759 7b14 Level-0 table #351: started
+2024/11/20-17:20:16.759 7b14 Level-0 table #351: 0 bytes OK
+2024/11/20-17:20:16.759 7b14 Delete type=0 #349
+2024/11/20-17:20:16.773 7b14 Manual compaction at level-0 from '!combats!2mOPqAFDakk86oP7' @ 72057594037927935 : 1 .. '!combats.combatants!sMqOL9zHKSw13oT7.g2gS8Ib1WsJpMAfw' @ 0 : 0; will stop at '!combats.combatants!kXM2ZC7RQA8omAbK.z3NMnZR6RPwVwc5u' @ 3735 : 0
+2024/11/20-17:20:16.773 7b14 Compacting 2@0 + 0@1 files
+2024/11/20-17:20:16.775 7b14 Generated table #352@0: 96 keys, 11148 bytes
+2024/11/20-17:20:16.775 7b14 Compacted 2@0 + 0@1 files => 11148 bytes
+2024/11/20-17:20:16.776 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:16.776 7b14 Delete type=2 #344
+2024/11/20-17:20:16.776 7b14 Delete type=2 #345
+2024/11/20-17:20:16.936 7b14 Manual compaction at level-0 from '!combats.combatants!kXM2ZC7RQA8omAbK.z3NMnZR6RPwVwc5u' @ 3735 : 0 .. '!combats.combatants!sMqOL9zHKSw13oT7.g2gS8Ib1WsJpMAfw' @ 0 : 0; will stop at (end)

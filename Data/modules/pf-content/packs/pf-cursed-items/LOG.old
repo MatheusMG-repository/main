@@ -1,5 +1,13 @@
-2024/11/19-21:24:01.729 5b64 Log #56: 0 ops saved to Table #57 OK
-2024/11/19-21:24:01.730 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-cursed-items/000056.log: OK
-2024/11/19-21:24:01.735 5b64 Table #28: 77 entries OK
-2024/11/19-21:24:01.737 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-cursed-items/MANIFEST-000055: OK
-2024/11/19-21:24:01.739 5b64 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-cursed-items; recovered 1 files; 47591 bytes. Some data may have been lost. ****
+2024/11/20-16:20:47.242 7314 Recovering log #59
+2024/11/20-16:20:47.246 7314 Delete type=0 #59
+2024/11/20-16:20:47.246 7314 Delete type=3 #58
+2024/11/20-17:20:17.571 7b14 Level-0 table #63: started
+2024/11/20-17:20:17.571 7b14 Level-0 table #63: 0 bytes OK
+2024/11/20-17:20:17.572 7b14 Delete type=0 #61
+2024/11/20-17:20:17.615 7b14 Manual compaction at level-0 from '!items!09GoHaNnREqKc5Bw' @ 72057594037927935 : 1 .. '!items!z9gekwAYWmw0UEa9' @ 0 : 0; will stop at '!items!z9gekwAYWmw0UEa9' @ 15 : 1
+2024/11/20-17:20:17.615 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:17.622 7b14 Generated table #64@0: 77 keys, 47591 bytes
+2024/11/20-17:20:17.622 7b14 Compacted 1@0 + 0@1 files => 47591 bytes
+2024/11/20-17:20:17.623 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:17.623 7b14 Delete type=2 #28
+2024/11/20-17:20:17.679 7b14 Manual compaction at level-0 from '!items!z9gekwAYWmw0UEa9' @ 15 : 1 .. '!items!z9gekwAYWmw0UEa9' @ 0 : 0; will stop at (end)

@@ -1,5 +1,13 @@
-2024/11/19-21:24:02.072 2d8c Log #56: 0 ops saved to Table #57 OK
-2024/11/19-21:24:02.073 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-goods-services/000056.log: OK
-2024/11/19-21:24:02.082 2d8c Table #28: 458 entries OK
-2024/11/19-21:24:02.083 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-goods-services/MANIFEST-000055: OK
-2024/11/19-21:24:02.086 2d8c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-goods-services; recovered 1 files; 289353 bytes. Some data may have been lost. ****
+2024/11/20-16:20:47.533 7314 Recovering log #59
+2024/11/20-16:20:47.537 7314 Delete type=0 #59
+2024/11/20-16:20:47.537 7314 Delete type=3 #58
+2024/11/20-17:20:17.713 7b14 Level-0 table #63: started
+2024/11/20-17:20:17.713 7b14 Level-0 table #63: 0 bytes OK
+2024/11/20-17:20:17.714 7b14 Delete type=0 #61
+2024/11/20-17:20:17.861 7b14 Manual compaction at level-0 from '!items!0FLe9gzWQTG1MyzR' @ 72057594037927935 : 1 .. '!items!zpwvMhD4fC6IG7RX' @ 0 : 0; will stop at '!items!zpwvMhD4fC6IG7RX' @ 404 : 1
+2024/11/20-17:20:17.861 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:17.872 7b14 Generated table #64@0: 458 keys, 289353 bytes
+2024/11/20-17:20:17.872 7b14 Compacted 1@0 + 0@1 files => 289353 bytes
+2024/11/20-17:20:17.873 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:17.874 7b14 Delete type=2 #28
+2024/11/20-17:20:17.877 7b14 Manual compaction at level-0 from '!items!zpwvMhD4fC6IG7RX' @ 404 : 1 .. '!items!zpwvMhD4fC6IG7RX' @ 0 : 0; will stop at (end)

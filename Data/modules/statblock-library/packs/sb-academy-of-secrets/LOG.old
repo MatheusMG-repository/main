@@ -1,5 +1,13 @@
-2024/11/19-21:24:04.362 5b64 Log #199: 0 ops saved to Table #200 OK
-2024/11/19-21:24:04.362 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-academy-of-secrets/000199.log: OK
-2024/11/19-21:24:04.363 5b64 Table #171: 18 entries OK
-2024/11/19-21:24:04.365 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-academy-of-secrets/MANIFEST-000198: OK
-2024/11/19-21:24:04.367 5b64 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-academy-of-secrets; recovered 1 files; 19440 bytes. Some data may have been lost. ****
+2024/11/20-16:20:49.418 7314 Recovering log #202
+2024/11/20-16:20:49.421 7314 Delete type=0 #202
+2024/11/20-16:20:49.422 7314 Delete type=3 #201
+2024/11/20-17:20:19.542 7b14 Level-0 table #206: started
+2024/11/20-17:20:19.542 7b14 Level-0 table #206: 0 bytes OK
+2024/11/20-17:20:19.543 7b14 Delete type=0 #204
+2024/11/20-17:20:19.680 7b14 Manual compaction at level-0 from '!journal!9rIbbpABhB4Njvst' @ 72057594037927935 : 1 .. '!journal.pages!oNwUrJ6x1eAcZF3J.bSIUYwRQlmFh1KfJ' @ 0 : 0; will stop at '!journal.pages!oNwUrJ6x1eAcZF3J.bSIUYwRQlmFh1KfJ' @ 34 : 1
+2024/11/20-17:20:19.680 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:19.682 7b14 Generated table #207@0: 18 keys, 19440 bytes
+2024/11/20-17:20:19.682 7b14 Compacted 1@0 + 0@1 files => 19440 bytes
+2024/11/20-17:20:19.684 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:19.684 7b14 Delete type=2 #171
+2024/11/20-17:20:19.881 7b14 Manual compaction at level-0 from '!journal.pages!oNwUrJ6x1eAcZF3J.bSIUYwRQlmFh1KfJ' @ 34 : 1 .. '!journal.pages!oNwUrJ6x1eAcZF3J.bSIUYwRQlmFh1KfJ' @ 0 : 0; will stop at (end)

@@ -1,5 +1,13 @@
-2024/11/19-21:24:00.955 36ec Log #117: 0 ops saved to Table #118 OK
-2024/11/19-21:24:00.956 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\armors-and-shields/000117.log: OK
-2024/11/19-21:24:00.957 36ec Table #89: 68 entries OK
-2024/11/19-21:24:00.959 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\armors-and-shields/MANIFEST-000116: OK
-2024/11/19-21:24:00.962 36ec **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\armors-and-shields; recovered 1 files; 32365 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.626 72d0 Recovering log #120
+2024/11/20-16:20:46.631 72d0 Delete type=0 #120
+2024/11/20-16:20:46.631 72d0 Delete type=3 #119
+2024/11/20-17:20:17.194 7b14 Level-0 table #124: started
+2024/11/20-17:20:17.194 7b14 Level-0 table #124: 0 bytes OK
+2024/11/20-17:20:17.196 7b14 Delete type=0 #122
+2024/11/20-17:20:17.198 7b14 Manual compaction at level-0 from '!folders!33jGfHlDL34jvwnX' @ 72057594037927935 : 1 .. '!items!ziXQ1DlDMGTAUOe9' @ 0 : 0; will stop at '!items!ziXQ1DlDMGTAUOe9' @ 48 : 1
+2024/11/20-17:20:17.198 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:17.201 7b14 Generated table #125@0: 68 keys, 32365 bytes
+2024/11/20-17:20:17.201 7b14 Compacted 1@0 + 0@1 files => 32365 bytes
+2024/11/20-17:20:17.201 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:17.201 7b14 Delete type=2 #89
+2024/11/20-17:20:17.221 7b14 Manual compaction at level-0 from '!items!ziXQ1DlDMGTAUOe9' @ 48 : 1 .. '!items!ziXQ1DlDMGTAUOe9' @ 0 : 0; will stop at (end)

@@ -1,5 +1,13 @@
-2024/11/19-21:24:00.750 2d8c Log #117: 0 ops saved to Table #118 OK
-2024/11/19-21:24:00.751 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\commonbuffs/000117.log: OK
-2024/11/19-21:24:00.752 2d8c Table #89: 44 entries OK
-2024/11/19-21:24:00.754 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\commonbuffs/MANIFEST-000116: OK
-2024/11/19-21:24:00.757 2d8c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\commonbuffs; recovered 1 files; 17730 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.447 72f4 Recovering log #120
+2024/11/20-16:20:46.451 72f4 Delete type=0 #120
+2024/11/20-16:20:46.451 72f4 Delete type=3 #119
+2024/11/20-17:20:17.028 7b14 Level-0 table #124: started
+2024/11/20-17:20:17.028 7b14 Level-0 table #124: 0 bytes OK
+2024/11/20-17:20:17.029 7b14 Delete type=0 #122
+2024/11/20-17:20:17.033 7b14 Manual compaction at level-0 from '!folders!H4f7Rs5PFd3IA3ey' @ 72057594037927935 : 1 .. '!items!v9JaHLaVkP9O36TS' @ 0 : 0; will stop at '!items!v9JaHLaVkP9O36TS' @ 13 : 1
+2024/11/20-17:20:17.033 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:17.035 7b14 Generated table #125@0: 44 keys, 17730 bytes
+2024/11/20-17:20:17.035 7b14 Compacted 1@0 + 0@1 files => 17730 bytes
+2024/11/20-17:20:17.036 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:17.037 7b14 Delete type=2 #89
+2024/11/20-17:20:17.183 7b14 Manual compaction at level-0 from '!items!v9JaHLaVkP9O36TS' @ 13 : 1 .. '!items!v9JaHLaVkP9O36TS' @ 0 : 0; will stop at (end)

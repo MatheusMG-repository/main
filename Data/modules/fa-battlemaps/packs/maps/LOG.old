@@ -1,8 +1,17 @@
-2024/11/19-21:24:01.325 5b64 Log #86: 0 ops saved to Table #87 OK
-2024/11/19-21:24:01.325 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\fa-battlemaps\packs\maps/000086.log: OK
-2024/11/19-21:24:01.330 5b64 Table #30: 4663 entries OK
-2024/11/19-21:24:01.338 5b64 Table #56: 4219 entries OK
-2024/11/19-21:24:01.346 5b64 Table #57: 27575 entries OK
-2024/11/19-21:24:01.350 5b64 Table #58: 13207 entries OK
-2024/11/19-21:24:01.352 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\fa-battlemaps\packs\maps/MANIFEST-000085: OK
-2024/11/19-21:24:01.354 5b64 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\fa-battlemaps\packs\maps; recovered 4 files; 7302668 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.922 72d0 Recovering log #89
+2024/11/20-16:20:46.926 72d0 Delete type=0 #89
+2024/11/20-16:20:46.926 72d0 Delete type=3 #88
+2024/11/20-17:20:17.416 7b14 Level-0 table #93: started
+2024/11/20-17:20:17.416 7b14 Level-0 table #93: 0 bytes OK
+2024/11/20-17:20:17.417 7b14 Delete type=0 #91
+2024/11/20-17:20:17.424 7b14 Manual compaction at level-0 from '!scenes!0M8gKipOIXQMqdEz' @ 72057594037927935 : 1 .. '!scenes.walls!zV7yvi0j5VaRIjtL.ztpKjvOmnvSIKlHJ' @ 0 : 0; will stop at '!scenes.walls!zV7yvi0j5VaRIjtL.ztpKjvOmnvSIKlHJ' @ 49631 : 1
+2024/11/20-17:20:17.424 7b14 Compacting 3@0 + 0@1 files
+2024/11/20-17:20:17.452 7b14 Generated table #94@0: 4219 keys, 2139115 bytes
+2024/11/20-17:20:17.488 7b14 Generated table #95@0: 27575 keys, 2174799 bytes
+2024/11/20-17:20:17.503 7b14 Generated table #96@0: 13207 keys, 860071 bytes
+2024/11/20-17:20:17.503 7b14 Compacted 3@0 + 0@1 files => 5173985 bytes
+2024/11/20-17:20:17.504 7b14 compacted to: files[ 0 4 0 0 0 0 0 ]
+2024/11/20-17:20:17.504 7b14 Delete type=2 #56
+2024/11/20-17:20:17.504 7b14 Delete type=2 #57
+2024/11/20-17:20:17.505 7b14 Delete type=2 #58
+2024/11/20-17:20:17.511 7b14 Manual compaction at level-0 from '!scenes.walls!zV7yvi0j5VaRIjtL.ztpKjvOmnvSIKlHJ' @ 49631 : 1 .. '!scenes.walls!zV7yvi0j5VaRIjtL.ztpKjvOmnvSIKlHJ' @ 0 : 0; will stop at (end)

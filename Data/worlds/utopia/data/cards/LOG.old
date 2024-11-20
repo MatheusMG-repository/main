@@ -1,4 +1,7 @@
-2024/11/19-21:24:00.143 5b64 Log #285: 0 ops saved to Table #286 OK
-2024/11/19-21:24:00.144 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/cards/000285.log: OK
-2024/11/19-21:24:00.146 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/cards/MANIFEST-000284: OK
-2024/11/19-21:24:00.148 5b64 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/cards; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.071 7260 Recovering log #288
+2024/11/20-16:20:46.075 7260 Delete type=0 #288
+2024/11/20-16:20:46.075 7260 Delete type=3 #287
+2024/11/20-17:20:16.755 7b14 Level-0 table #292: started
+2024/11/20-17:20:16.756 7b14 Level-0 table #292: 0 bytes OK
+2024/11/20-17:20:16.757 7b14 Delete type=0 #290
+2024/11/20-17:20:16.773 7b14 Manual compaction at level-0 from 'undefined' @ 72057594037927935 : 1 .. 'undefined' @ 0 : 0; will stop at (end)

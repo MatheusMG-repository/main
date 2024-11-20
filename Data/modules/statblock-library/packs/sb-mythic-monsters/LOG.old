@@ -1,5 +1,13 @@
-2024/11/19-21:24:04.482 5b64 Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:04.483 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-mythic-monsters/000198.log: OK
-2024/11/19-21:24:04.484 5b64 Table #170: 171 entries OK
-2024/11/19-21:24:04.486 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-mythic-monsters/MANIFEST-000197: OK
-2024/11/19-21:24:04.488 5b64 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-mythic-monsters; recovered 1 files; 193133 bytes. Some data may have been lost. ****
+2024/11/20-16:20:49.503 72f4 Recovering log #201
+2024/11/20-16:20:49.506 72f4 Delete type=0 #201
+2024/11/20-16:20:49.507 72f4 Delete type=3 #200
+2024/11/20-17:20:20.063 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.064 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.064 7b14 Delete type=0 #203
+2024/11/20-17:20:20.094 7b14 Manual compaction at level-0 from '!journal!0LWCZ3sN69p71vdT' @ 72057594037927935 : 1 .. '!journal.pages!zZT0f0CsZMyZSAzs.U95gE4v61El5RccR' @ 0 : 0; will stop at '!journal.pages!zZT0f0CsZMyZSAzs.U95gE4v61El5RccR' @ 316 : 1
+2024/11/20-17:20:20.094 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.097 7b14 Generated table #206@0: 171 keys, 193133 bytes
+2024/11/20-17:20:20.098 7b14 Compacted 1@0 + 0@1 files => 193133 bytes
+2024/11/20-17:20:20.099 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.099 7b14 Delete type=2 #170
+2024/11/20-17:20:20.128 7b14 Manual compaction at level-0 from '!journal.pages!zZT0f0CsZMyZSAzs.U95gE4v61El5RccR' @ 316 : 1 .. '!journal.pages!zZT0f0CsZMyZSAzs.U95gE4v61El5RccR' @ 0 : 0; will stop at (end)

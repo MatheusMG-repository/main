@@ -1,5 +1,13 @@
-2024/11/19-21:24:00.975 2d8c Log #117: 0 ops saved to Table #118 OK
-2024/11/19-21:24:00.975 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\weapons-and-ammo/000117.log: OK
-2024/11/19-21:24:00.981 2d8c Table #89: 484 entries OK
-2024/11/19-21:24:00.983 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\weapons-and-ammo/MANIFEST-000116: OK
-2024/11/19-21:24:00.986 2d8c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\weapons-and-ammo; recovered 1 files; 370784 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.641 72f4 Recovering log #120
+2024/11/20-16:20:46.644 72f4 Delete type=0 #120
+2024/11/20-16:20:46.645 72f4 Delete type=3 #119
+2024/11/20-17:20:17.196 7b14 Level-0 table #124: started
+2024/11/20-17:20:17.196 7b14 Level-0 table #124: 0 bytes OK
+2024/11/20-17:20:17.197 7b14 Delete type=0 #122
+2024/11/20-17:20:17.203 7b14 Manual compaction at level-0 from '!folders!6XZWJB1Fu5AQ6KhP' @ 72057594037927935 : 1 .. '!items!zWRlna42PMJVX6un' @ 0 : 0; will stop at '!items!zWRlna42PMJVX6un' @ 304 : 1
+2024/11/20-17:20:17.203 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:17.214 7b14 Generated table #125@0: 484 keys, 370784 bytes
+2024/11/20-17:20:17.214 7b14 Compacted 1@0 + 0@1 files => 370784 bytes
+2024/11/20-17:20:17.214 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:17.215 7b14 Delete type=2 #89
+2024/11/20-17:20:17.225 7b14 Manual compaction at level-0 from '!items!zWRlna42PMJVX6un' @ 304 : 1 .. '!items!zWRlna42PMJVX6un' @ 0 : 0; will stop at (end)

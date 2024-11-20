@@ -1,5 +1,13 @@
-2024/11/19-21:24:01.484 2d8c Log #212: 0 ops saved to Table #213 OK
-2024/11/19-21:24:01.485 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\ivan-duch-music-packs\packs\playlists/000212.log: OK
-2024/11/19-21:24:01.486 2d8c Table #184: 449 entries OK
-2024/11/19-21:24:01.487 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\ivan-duch-music-packs\packs\playlists/MANIFEST-000211: OK
-2024/11/19-21:24:01.490 2d8c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\ivan-duch-music-packs\packs\playlists; recovered 1 files; 59808 bytes. Some data may have been lost. ****
+2024/11/20-16:20:47.053 72f4 Recovering log #215
+2024/11/20-16:20:47.057 72f4 Delete type=0 #215
+2024/11/20-16:20:47.057 72f4 Delete type=3 #214
+2024/11/20-17:20:17.414 7b14 Level-0 table #219: started
+2024/11/20-17:20:17.415 7b14 Level-0 table #219: 0 bytes OK
+2024/11/20-17:20:17.416 7b14 Delete type=0 #217
+2024/11/20-17:20:17.419 7b14 Manual compaction at level-0 from '!playlists!1O5l5N99XlG8z1ZF' @ 72057594037927935 : 1 .. '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 0 : 0; will stop at '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 1801 : 1
+2024/11/20-17:20:17.419 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:17.422 7b14 Generated table #220@0: 449 keys, 59808 bytes
+2024/11/20-17:20:17.422 7b14 Compacted 1@0 + 0@1 files => 59808 bytes
+2024/11/20-17:20:17.422 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:17.423 7b14 Delete type=2 #184
+2024/11/20-17:20:17.508 7b14 Manual compaction at level-0 from '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 1801 : 1 .. '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 0 : 0; will stop at (end)

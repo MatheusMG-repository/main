@@ -1,5 +1,13 @@
-2024/11/19-21:24:00.731 5b64 Log #117: 0 ops saved to Table #118 OK
-2024/11/19-21:24:00.731 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\mythic-paths/000117.log: OK
-2024/11/19-21:24:00.732 5b64 Table #89: 6 entries OK
-2024/11/19-21:24:00.735 5b64 Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\mythic-paths/MANIFEST-000116: OK
-2024/11/19-21:24:00.738 5b64 **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\systems\pf1\packs\mythic-paths; recovered 1 files; 18031 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.433 72d0 Recovering log #120
+2024/11/20-16:20:46.437 72d0 Delete type=0 #120
+2024/11/20-16:20:46.437 72d0 Delete type=3 #119
+2024/11/20-17:20:17.012 7b14 Level-0 table #124: started
+2024/11/20-17:20:17.012 7b14 Level-0 table #124: 0 bytes OK
+2024/11/20-17:20:17.013 7b14 Delete type=0 #122
+2024/11/20-17:20:17.024 7b14 Manual compaction at level-0 from '!items!4ja8qHtoH10kLBMG' @ 72057594037927935 : 1 .. '!items!u7edWPktC4cruJQQ' @ 0 : 0; will stop at '!items!u7edWPktC4cruJQQ' @ 4 : 1
+2024/11/20-17:20:17.024 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:17.027 7b14 Generated table #125@0: 6 keys, 18031 bytes
+2024/11/20-17:20:17.027 7b14 Compacted 1@0 + 0@1 files => 18031 bytes
+2024/11/20-17:20:17.028 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:17.028 7b14 Delete type=2 #89
+2024/11/20-17:20:17.031 7b14 Manual compaction at level-0 from '!items!u7edWPktC4cruJQQ' @ 4 : 1 .. '!items!u7edWPktC4cruJQQ' @ 0 : 0; will stop at (end)

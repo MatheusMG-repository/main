@@ -1,5 +1,13 @@
-2024/11/19-21:24:04.855 5d2c Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:04.856 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-we-be-goblins/000198.log: OK
-2024/11/19-21:24:04.857 5d2c Table #170: 99 entries OK
-2024/11/19-21:24:04.859 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-we-be-goblins/MANIFEST-000197: OK
-2024/11/19-21:24:04.861 5d2c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-we-be-goblins; recovered 1 files; 65127 bytes. Some data may have been lost. ****
+2024/11/20-16:20:49.804 7260 Recovering log #201
+2024/11/20-16:20:49.808 7260 Delete type=0 #201
+2024/11/20-16:20:49.808 7260 Delete type=3 #200
+2024/11/20-17:20:20.383 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.384 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.385 7b14 Delete type=0 #203
+2024/11/20-17:20:20.386 7b14 Manual compaction at level-0 from '!journal!3rxe5KS9ntcHAxtG' @ 72057594037927935 : 1 .. '!journal.pages!zDj79YlTLqkSXRhc.tW6H8SvDMHtFjFkD' @ 0 : 0; will stop at '!journal.pages!zDj79YlTLqkSXRhc.tW6H8SvDMHtFjFkD' @ 196 : 1
+2024/11/20-17:20:20.386 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.389 7b14 Generated table #206@0: 99 keys, 65127 bytes
+2024/11/20-17:20:20.389 7b14 Compacted 1@0 + 0@1 files => 65127 bytes
+2024/11/20-17:20:20.391 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.391 7b14 Delete type=2 #170
+2024/11/20-17:20:20.406 7b14 Manual compaction at level-0 from '!journal.pages!zDj79YlTLqkSXRhc.tW6H8SvDMHtFjFkD' @ 196 : 1 .. '!journal.pages!zDj79YlTLqkSXRhc.tW6H8SvDMHtFjFkD' @ 0 : 0; will stop at (end)

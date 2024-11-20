@@ -1,5 +1,13 @@
-2024/11/19-21:24:01.505 5d2c Log #159: 0 ops saved to Table #160 OK
-2024/11/19-21:24:01.506 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\monks-active-tiles\packs\active-tile-macros/000159.log: OK
-2024/11/19-21:24:01.507 5d2c Table #131: 10 entries OK
-2024/11/19-21:24:01.508 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\monks-active-tiles\packs\active-tile-macros/MANIFEST-000158: OK
-2024/11/19-21:24:01.511 5d2c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\monks-active-tiles\packs\active-tile-macros; recovered 1 files; 6841 bytes. Some data may have been lost. ****
+2024/11/20-16:20:47.069 72f4 Recovering log #162
+2024/11/20-16:20:47.073 72f4 Delete type=0 #162
+2024/11/20-16:20:47.073 72f4 Delete type=3 #161
+2024/11/20-17:20:17.417 7b14 Level-0 table #166: started
+2024/11/20-17:20:17.417 7b14 Level-0 table #166: 0 bytes OK
+2024/11/20-17:20:17.418 7b14 Delete type=0 #164
+2024/11/20-17:20:17.505 7b14 Manual compaction at level-0 from '!macros!0zAQ2jjR58HIam9C' @ 72057594037927935 : 1 .. '!macros!ufubQZzNsZMkf3oo' @ 0 : 0; will stop at '!macros!ufubQZzNsZMkf3oo' @ 20 : 1
+2024/11/20-17:20:17.505 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:17.506 7b14 Generated table #167@0: 10 keys, 6841 bytes
+2024/11/20-17:20:17.506 7b14 Compacted 1@0 + 0@1 files => 6841 bytes
+2024/11/20-17:20:17.507 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:17.507 7b14 Delete type=2 #131
+2024/11/20-17:20:17.511 7b14 Manual compaction at level-0 from '!macros!ufubQZzNsZMkf3oo' @ 20 : 1 .. '!macros!ufubQZzNsZMkf3oo' @ 0 : 0; will stop at (end)

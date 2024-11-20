@@ -1,6 +1,15 @@
-2024/11/19-21:24:04.262 2d8c Log #203: 0 ops saved to Table #204 OK
-2024/11/19-21:24:04.263 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-bestiaries4-6/000203.log: OK
-2024/11/19-21:24:04.268 2d8c Table #174: 1924 entries OK
-2024/11/19-21:24:04.296 2d8c Table #175: 455 entries OK
-2024/11/19-21:24:04.298 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-bestiaries4-6/MANIFEST-000202: OK
-2024/11/19-21:24:04.301 2d8c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-bestiaries4-6; recovered 2 files; 2902108 bytes. Some data may have been lost. ****
+2024/11/20-16:20:49.337 72f4 Recovering log #206
+2024/11/20-16:20:49.341 72f4 Delete type=0 #206
+2024/11/20-16:20:49.341 72f4 Delete type=3 #205
+2024/11/20-17:20:19.225 7b14 Level-0 table #210: started
+2024/11/20-17:20:19.225 7b14 Level-0 table #210: 0 bytes OK
+2024/11/20-17:20:19.226 7b14 Delete type=0 #208
+2024/11/20-17:20:19.283 7b14 Manual compaction at level-0 from '!journal!02b0BCNESqOYqqc8' @ 72057594037927935 : 1 .. '!journal.pages!ztomY6NDAcPZljXb.yBWLJ3ajCwEpIRyE' @ 0 : 0; will stop at '!journal.pages!ztomY6NDAcPZljXb.yBWLJ3ajCwEpIRyE' @ 4026 : 1
+2024/11/20-17:20:19.283 7b14 Compacting 2@0 + 0@1 files
+2024/11/20-17:20:19.308 7b14 Generated table #211@0: 1924 keys, 2124143 bytes
+2024/11/20-17:20:19.346 7b14 Generated table #212@0: 455 keys, 777965 bytes
+2024/11/20-17:20:19.347 7b14 Compacted 2@0 + 0@1 files => 2902108 bytes
+2024/11/20-17:20:19.347 7b14 compacted to: files[ 0 2 0 0 0 0 0 ]
+2024/11/20-17:20:19.348 7b14 Delete type=2 #174
+2024/11/20-17:20:19.348 7b14 Delete type=2 #175
+2024/11/20-17:20:19.484 7b14 Manual compaction at level-0 from '!journal.pages!ztomY6NDAcPZljXb.yBWLJ3ajCwEpIRyE' @ 4026 : 1 .. '!journal.pages!ztomY6NDAcPZljXb.yBWLJ3ajCwEpIRyE' @ 0 : 0; will stop at (end)

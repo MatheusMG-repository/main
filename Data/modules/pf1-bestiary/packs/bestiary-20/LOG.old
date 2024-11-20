@@ -1,11 +1,19 @@
-2024/11/19-21:24:04.043 2d8c Log #241: 0 ops saved to Table #242 OK
-2024/11/19-21:24:04.044 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-20/000241.log: OK
-2024/11/19-21:24:04.048 2d8c Table #21: 1095 entries OK
-2024/11/19-21:24:04.054 2d8c Table #22: 1519 entries OK
-2024/11/19-21:24:04.060 2d8c Table #125: 1531 entries OK
-2024/11/19-21:24:04.066 2d8c Table #126: 1671 entries OK
-2024/11/19-21:24:04.071 2d8c Table #211: 1557 entries OK
-2024/11/19-21:24:04.077 2d8c Table #212: 1558 entries OK
-2024/11/19-21:24:04.079 2d8c Table #213: 534 entries OK
-2024/11/19-21:24:04.081 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-20/MANIFEST-000240: OK
-2024/11/19-21:24:04.083 2d8c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-20; recovered 7 files; 13554485 bytes. Some data may have been lost. ****
+2024/11/20-16:20:49.159 7314 Recovering log #244
+2024/11/20-16:20:49.163 7314 Delete type=0 #244
+2024/11/20-16:20:49.163 7314 Delete type=3 #243
+2024/11/20-17:20:18.858 7b14 Level-0 table #248: started
+2024/11/20-17:20:18.858 7b14 Level-0 table #248: 0 bytes OK
+2024/11/20-17:20:18.858 7b14 Delete type=0 #246
+2024/11/20-17:20:19.069 7b14 Manual compaction at level-0 from '!actors!02QbtblOMuyeZjVu' @ 72057594037927935 : 1 .. '!actors.items!zwVJ84rAGn56pUyy.zkws5ezhsu8352bx' @ 0 : 0; will stop at '!actors.items!zwVJ84rAGn56pUyy.zkws5ezhsu8352bx' @ 9444 : 1
+2024/11/20-17:20:19.069 7b14 Compacting 3@0 + 0@1 files
+2024/11/20-17:20:19.097 7b14 Generated table #249@0: 1557 keys, 2128503 bytes
+2024/11/20-17:20:19.125 7b14 Generated table #250@0: 1558 keys, 2129191 bytes
+2024/11/20-17:20:19.136 7b14 Generated table #251@0: 534 keys, 782753 bytes
+2024/11/20-17:20:19.136 7b14 Compacted 3@0 + 0@1 files => 5040447 bytes
+2024/11/20-17:20:19.136 7b14 compacted to: files[ 0 7 0 0 0 0 0 ]
+2024/11/20-17:20:19.136 7b14 Delete type=2 #211
+2024/11/20-17:20:19.137 7b14 Delete type=2 #212
+2024/11/20-17:20:19.137 7b14 Delete type=2 #213
+2024/11/20-17:20:19.164 7b14 Manual compaction at level-0 from '!actors.items!zwVJ84rAGn56pUyy.zkws5ezhsu8352bx' @ 9444 : 1 .. '!actors.items!zwVJ84rAGn56pUyy.zkws5ezhsu8352bx' @ 0 : 0; will stop at (end)
+2024/11/20-17:20:19.225 7b14 Moved #21 to level-2 2124780 bytes OK: files[ 0 6 1 0 0 0 0 ]
+2024/11/20-17:20:19.283 7b14 Moved #22 to level-2 2130115 bytes OK: files[ 0 5 2 0 0 0 0 ]

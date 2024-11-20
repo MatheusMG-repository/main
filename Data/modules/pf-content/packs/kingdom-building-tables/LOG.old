@@ -1,5 +1,13 @@
-2024/11/19-21:24:02.647 2d8c Log #56: 0 ops saved to Table #57 OK
-2024/11/19-21:24:02.647 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\kingdom-building-tables/000056.log: OK
-2024/11/19-21:24:02.648 2d8c Table #28: 62 entries OK
-2024/11/19-21:24:02.651 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\kingdom-building-tables/MANIFEST-000055: OK
-2024/11/19-21:24:02.653 2d8c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\kingdom-building-tables; recovered 1 files; 8113 bytes. Some data may have been lost. ****
+2024/11/20-16:20:47.994 72f4 Recovering log #59
+2024/11/20-16:20:47.997 72f4 Delete type=0 #59
+2024/11/20-16:20:47.998 72f4 Delete type=3 #58
+2024/11/20-17:20:18.202 7b14 Level-0 table #63: started
+2024/11/20-17:20:18.202 7b14 Level-0 table #63: 0 bytes OK
+2024/11/20-17:20:18.203 7b14 Delete type=0 #61
+2024/11/20-17:20:18.211 7b14 Manual compaction at level-0 from '!tables!9tX12naUdZshO3aa' @ 72057594037927935 : 1 .. '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 0 : 0; will stop at '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 32 : 1
+2024/11/20-17:20:18.211 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:18.213 7b14 Generated table #64@0: 62 keys, 8113 bytes
+2024/11/20-17:20:18.213 7b14 Compacted 1@0 + 0@1 files => 8113 bytes
+2024/11/20-17:20:18.214 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:18.214 7b14 Delete type=2 #28
+2024/11/20-17:20:18.216 7b14 Manual compaction at level-0 from '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 32 : 1 .. '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 0 : 0; will stop at (end)

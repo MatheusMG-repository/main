@@ -1,9 +1,17 @@
-2024/11/19-21:24:02.668 36ec Log #240: 0 ops saved to Table #241 OK
-2024/11/19-21:24:02.669 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-00/000240.log: OK
-2024/11/19-21:24:02.669 36ec Table #113: 2 entries OK
-2024/11/19-21:24:02.717 36ec Table #208: 1893 entries OK
-2024/11/19-21:24:02.724 36ec Table #209: 1893 entries OK
-2024/11/19-21:24:02.726 36ec Table #210: 405 entries OK
-2024/11/19-21:24:02.730 36ec Table #231: 1035 entries OK
-2024/11/19-21:24:02.732 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-00/MANIFEST-000239: OK
-2024/11/19-21:24:02.735 36ec **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf1-bestiary\packs\bestiary-00; recovered 5 files; 6819584 bytes. Some data may have been lost. ****
+2024/11/20-16:20:48.009 72d0 Recovering log #243
+2024/11/20-16:20:48.013 72d0 Delete type=0 #243
+2024/11/20-16:20:48.013 72d0 Delete type=3 #242
+2024/11/20-17:20:18.214 7b14 Level-0 table #247: started
+2024/11/20-17:20:18.214 7b14 Level-0 table #247: 0 bytes OK
+2024/11/20-17:20:18.216 7b14 Delete type=0 #245
+2024/11/20-17:20:18.219 7b14 Manual compaction at level-0 from '!actors!02iKHCVZAu7ldZ79' @ 72057594037927935 : 1 .. '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 0 : 0; will stop at '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 5224 : 1
+2024/11/20-17:20:18.219 7b14 Compacting 3@0 + 0@1 files
+2024/11/20-17:20:18.293 7b14 Generated table #248@0: 1893 keys, 2129157 bytes
+2024/11/20-17:20:18.320 7b14 Generated table #249@0: 1893 keys, 2130212 bytes
+2024/11/20-17:20:18.327 7b14 Generated table #250@0: 405 keys, 435381 bytes
+2024/11/20-17:20:18.327 7b14 Compacted 3@0 + 0@1 files => 4694750 bytes
+2024/11/20-17:20:18.328 7b14 compacted to: files[ 0 5 0 0 0 0 0 ]
+2024/11/20-17:20:18.328 7b14 Delete type=2 #208
+2024/11/20-17:20:18.328 7b14 Delete type=2 #209
+2024/11/20-17:20:18.329 7b14 Delete type=2 #210
+2024/11/20-17:20:18.562 7b14 Manual compaction at level-0 from '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 5224 : 1 .. '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 0 : 0; will stop at (end)

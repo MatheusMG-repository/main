@@ -1,5 +1,13 @@
-2024/11/19-21:24:05.187 2d8c Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:05.187 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-skull-shackles/000198.log: OK
-2024/11/19-21:24:05.189 2d8c Table #170: 547 entries OK
-2024/11/19-21:24:05.191 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-skull-shackles/MANIFEST-000197: OK
-2024/11/19-21:24:05.193 2d8c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-skull-shackles; recovered 1 files; 534590 bytes. Some data may have been lost. ****
+2024/11/20-16:20:50.055 72d0 Recovering log #201
+2024/11/20-16:20:50.059 72d0 Delete type=0 #201
+2024/11/20-16:20:50.059 72d0 Delete type=3 #200
+2024/11/20-17:20:20.548 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.548 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.549 7b14 Delete type=0 #203
+2024/11/20-17:20:20.556 7b14 Manual compaction at level-0 from '!journal!0OdX22W8zaGaQji6' @ 72057594037927935 : 1 .. '!journal.pages!zsrXSqmpHVROfbxF.23vzNc3hse2vGSRw' @ 0 : 0; will stop at '!journal.pages!zsrXSqmpHVROfbxF.23vzNc3hse2vGSRw' @ 796 : 1
+2024/11/20-17:20:20.556 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.563 7b14 Generated table #206@0: 547 keys, 534590 bytes
+2024/11/20-17:20:20.563 7b14 Compacted 1@0 + 0@1 files => 534590 bytes
+2024/11/20-17:20:20.564 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.564 7b14 Delete type=2 #170
+2024/11/20-17:20:20.567 7b14 Manual compaction at level-0 from '!journal.pages!zsrXSqmpHVROfbxF.23vzNc3hse2vGSRw' @ 796 : 1 .. '!journal.pages!zsrXSqmpHVROfbxF.23vzNc3hse2vGSRw' @ 0 : 0; will stop at (end)

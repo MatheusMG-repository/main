@@ -1,8 +1,7 @@
-2024/11/19-21:24:00.270 5b64 Log #508: 18 ops saved to Table #512 OK
-2024/11/19-21:24:00.271 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog/000508.log: OK
-2024/11/19-21:24:00.274 5b64 Table #509: 63 entries OK
-2024/11/19-21:24:00.277 5b64 Table #510: 84 entries OK
-2024/11/19-21:24:00.279 5b64 Table #511: 58 entries OK
-2024/11/19-21:24:00.280 5b64 Table #512: 18 entries OK
-2024/11/19-21:24:00.281 5b64 Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog/MANIFEST-000507: OK
-2024/11/19-21:24:00.285 5b64 **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/fog; recovered 4 files; 5988499 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.144 7260 Recovering log #514
+2024/11/20-16:20:46.148 7260 Delete type=0 #514
+2024/11/20-16:20:46.148 7260 Delete type=3 #513
+2024/11/20-17:20:16.961 7b14 Level-0 table #521: started
+2024/11/20-17:20:16.961 7b14 Level-0 table #521: 0 bytes OK
+2024/11/20-17:20:16.961 7b14 Delete type=0 #519
+2024/11/20-17:20:16.963 7b14 Manual compaction at level-0 from '!fog!0Qc0RwfJyLmFuAnK' @ 72057594037927935 : 1 .. '!fog!zuxtkhjyY7g9Tfug' @ 0 : 0; will stop at (end)

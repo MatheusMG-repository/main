@@ -1,5 +1,13 @@
-2024/11/19-21:24:05.088 36ec Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:05.088 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-mummys-mask/000198.log: OK
-2024/11/19-21:24:05.090 36ec Table #170: 398 entries OK
-2024/11/19-21:24:05.092 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-mummys-mask/MANIFEST-000197: OK
-2024/11/19-21:24:05.095 36ec **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-mummys-mask; recovered 1 files; 417923 bytes. Some data may have been lost. ****
+2024/11/20-16:20:49.975 7260 Recovering log #201
+2024/11/20-16:20:49.979 7260 Delete type=0 #201
+2024/11/20-16:20:49.979 7260 Delete type=3 #200
+2024/11/20-17:20:20.496 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.496 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.497 7b14 Delete type=0 #203
+2024/11/20-17:20:20.499 7b14 Manual compaction at level-0 from '!journal!05gCiJ045vEFEcOU' @ 72057594037927935 : 1 .. '!journal.pages!z8Nk7I9ZbPLefVO5.iy83xmOJhLh1GWAe' @ 0 : 0; will stop at '!journal.pages!z8Nk7I9ZbPLefVO5.iy83xmOJhLh1GWAe' @ 562 : 1
+2024/11/20-17:20:20.499 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.505 7b14 Generated table #206@0: 398 keys, 417923 bytes
+2024/11/20-17:20:20.505 7b14 Compacted 1@0 + 0@1 files => 417923 bytes
+2024/11/20-17:20:20.505 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.506 7b14 Delete type=2 #170
+2024/11/20-17:20:20.512 7b14 Manual compaction at level-0 from '!journal.pages!z8Nk7I9ZbPLefVO5.iy83xmOJhLh1GWAe' @ 562 : 1 .. '!journal.pages!z8Nk7I9ZbPLefVO5.iy83xmOJhLh1GWAe' @ 0 : 0; will stop at (end)

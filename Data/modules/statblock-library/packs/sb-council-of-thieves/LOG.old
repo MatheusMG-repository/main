@@ -1,5 +1,13 @@
-2024/11/19-21:24:04.893 5d2c Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:04.894 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-council-of-thieves/000198.log: OK
-2024/11/19-21:24:04.903 5d2c Table #170: 318 entries OK
-2024/11/19-21:24:04.905 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-council-of-thieves/MANIFEST-000197: OK
-2024/11/19-21:24:04.907 5d2c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-council-of-thieves; recovered 1 files; 347679 bytes. Some data may have been lost. ****
+2024/11/20-16:20:49.831 7260 Recovering log #201
+2024/11/20-16:20:49.835 7260 Delete type=0 #201
+2024/11/20-16:20:49.835 7260 Delete type=3 #200
+2024/11/20-17:20:20.403 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.404 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.405 7b14 Delete type=0 #203
+2024/11/20-17:20:20.406 7b14 Manual compaction at level-0 from '!journal!01Lq8r5BRyqrH76Y' @ 72057594037927935 : 1 .. '!journal.pages!zrXBliBBUThBluBu.AprSEwg1g0Qkou53' @ 0 : 0; will stop at '!journal.pages!zrXBliBBUThBluBu.AprSEwg1g0Qkou53' @ 194 : 1
+2024/11/20-17:20:20.406 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.419 7b14 Generated table #206@0: 318 keys, 347679 bytes
+2024/11/20-17:20:20.419 7b14 Compacted 1@0 + 0@1 files => 347679 bytes
+2024/11/20-17:20:20.419 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.419 7b14 Delete type=2 #170
+2024/11/20-17:20:20.430 7b14 Manual compaction at level-0 from '!journal.pages!zrXBliBBUThBluBu.AprSEwg1g0Qkou53' @ 194 : 1 .. '!journal.pages!zrXBliBBUThBluBu.AprSEwg1g0Qkou53' @ 0 : 0; will stop at (end)

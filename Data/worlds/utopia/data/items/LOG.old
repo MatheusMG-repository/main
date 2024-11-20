@@ -1,5 +1,13 @@
-2024/11/19-21:24:00.338 36ec Log #292: 0 ops saved to Table #293 OK
-2024/11/19-21:24:00.339 36ec Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/items/000292.log: OK
-2024/11/19-21:24:00.340 36ec Table #283: 9 entries OK
-2024/11/19-21:24:00.342 36ec Archiving C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/items/MANIFEST-000291: OK
-2024/11/19-21:24:00.344 36ec **** Repaired leveldb C:/Users/denni/Downloads/DM SHIT/Content Utopia/v2/main/Data/worlds/utopia/data/items; recovered 1 files; 13844 bytes. Some data may have been lost. ****
+2024/11/20-16:20:46.197 7260 Recovering log #295
+2024/11/20-16:20:46.201 7260 Delete type=0 #295
+2024/11/20-16:20:46.201 7260 Delete type=3 #294
+2024/11/20-17:20:16.949 7b14 Level-0 table #299: started
+2024/11/20-17:20:16.949 7b14 Level-0 table #299: 0 bytes OK
+2024/11/20-17:20:16.951 7b14 Delete type=0 #297
+2024/11/20-17:20:16.953 7b14 Manual compaction at level-0 from '!items!07GC1LKuWsApYJy1' @ 72057594037927935 : 1 .. '!items!wqJOEVUG5jaMgXcH' @ 0 : 0; will stop at '!items!wqJOEVUG5jaMgXcH' @ 12 : 1
+2024/11/20-17:20:16.953 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:16.955 7b14 Generated table #300@0: 9 keys, 13844 bytes
+2024/11/20-17:20:16.955 7b14 Compacted 1@0 + 0@1 files => 13844 bytes
+2024/11/20-17:20:16.956 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:16.956 7b14 Delete type=2 #283
+2024/11/20-17:20:16.963 7b14 Manual compaction at level-0 from '!items!wqJOEVUG5jaMgXcH' @ 12 : 1 .. '!items!wqJOEVUG5jaMgXcH' @ 0 : 0; will stop at (end)

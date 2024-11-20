@@ -1,5 +1,13 @@
-2024/11/19-21:24:01.812 2d8c Log #56: 0 ops saved to Table #57 OK
-2024/11/19-21:24:01.813 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-eidolon-forms/000056.log: OK
-2024/11/19-21:24:01.814 2d8c Table #28: 269 entries OK
-2024/11/19-21:24:01.816 2d8c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-eidolon-forms/MANIFEST-000055: OK
-2024/11/19-21:24:01.818 2d8c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\pf-content\packs\pf-eidolon-forms; recovered 1 files; 221585 bytes. Some data may have been lost. ****
+2024/11/20-16:20:47.315 7314 Recovering log #59
+2024/11/20-16:20:47.319 7314 Delete type=0 #59
+2024/11/20-16:20:47.320 7314 Delete type=3 #58
+2024/11/20-17:20:17.679 7b14 Level-0 table #63: started
+2024/11/20-17:20:17.679 7b14 Level-0 table #63: 0 bytes OK
+2024/11/20-17:20:17.681 7b14 Delete type=0 #61
+2024/11/20-17:20:17.683 7b14 Manual compaction at level-0 from '!actors!1MtxTKRS4WoOq2YK' @ 72057594037927935 : 1 .. '!actors.items!sZ0DpKCo4mzz46r6.xsKjH2TH0AZJzmdp' @ 0 : 0; will stop at '!actors.items!sZ0DpKCo4mzz46r6.xsKjH2TH0AZJzmdp' @ 76 : 1
+2024/11/20-17:20:17.683 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:17.687 7b14 Generated table #64@0: 269 keys, 221585 bytes
+2024/11/20-17:20:17.687 7b14 Compacted 1@0 + 0@1 files => 221585 bytes
+2024/11/20-17:20:17.688 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:17.688 7b14 Delete type=2 #28
+2024/11/20-17:20:17.703 7b14 Manual compaction at level-0 from '!actors.items!sZ0DpKCo4mzz46r6.xsKjH2TH0AZJzmdp' @ 76 : 1 .. '!actors.items!sZ0DpKCo4mzz46r6.xsKjH2TH0AZJzmdp' @ 0 : 0; will stop at (end)

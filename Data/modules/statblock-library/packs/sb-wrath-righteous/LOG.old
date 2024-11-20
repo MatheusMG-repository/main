@@ -1,5 +1,13 @@
-2024/11/19-21:24:05.381 36ec Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:05.382 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-wrath-righteous/000198.log: OK
-2024/11/19-21:24:05.383 36ec Table #170: 339 entries OK
-2024/11/19-21:24:05.386 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-wrath-righteous/MANIFEST-000197: OK
-2024/11/19-21:24:05.389 36ec **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-wrath-righteous; recovered 1 files; 439215 bytes. Some data may have been lost. ****
+2024/11/20-16:20:50.191 7314 Recovering log #201
+2024/11/20-16:20:50.195 7314 Delete type=0 #201
+2024/11/20-16:20:50.195 7314 Delete type=3 #200
+2024/11/20-17:20:20.617 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.617 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.618 7b14 Delete type=0 #203
+2024/11/20-17:20:20.629 7b14 Manual compaction at level-0 from '!journal!0RFOiMKxe0aeWrUG' @ 72057594037927935 : 1 .. '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 0 : 0; will stop at '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 171 : 1
+2024/11/20-17:20:20.629 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.641 7b14 Generated table #206@0: 339 keys, 439215 bytes
+2024/11/20-17:20:20.641 7b14 Compacted 1@0 + 0@1 files => 439215 bytes
+2024/11/20-17:20:20.643 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.643 7b14 Delete type=2 #170
+2024/11/20-17:20:20.645 7b14 Manual compaction at level-0 from '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 171 : 1 .. '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 0 : 0; will stop at (end)

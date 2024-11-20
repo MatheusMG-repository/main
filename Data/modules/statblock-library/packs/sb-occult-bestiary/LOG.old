@@ -1,5 +1,13 @@
-2024/11/19-21:24:04.533 5d2c Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:04.534 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-occult-bestiary/000198.log: OK
-2024/11/19-21:24:04.534 5d2c Table #170: 120 entries OK
-2024/11/19-21:24:04.537 5d2c Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-occult-bestiary/MANIFEST-000197: OK
-2024/11/19-21:24:04.540 5d2c **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-occult-bestiary; recovered 1 files; 189857 bytes. Some data may have been lost. ****
+2024/11/20-16:20:49.542 7314 Recovering log #201
+2024/11/20-16:20:49.546 7314 Delete type=0 #201
+2024/11/20-16:20:49.546 7314 Delete type=3 #200
+2024/11/20-17:20:20.125 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.125 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.126 7b14 Delete type=0 #203
+2024/11/20-17:20:20.128 7b14 Manual compaction at level-0 from '!journal!0Y0bd69CiNBA5alE' @ 72057594037927935 : 1 .. '!journal.pages!xW5cZvLyyKpIlJ5r.csU0O5ARgcTmyJvp' @ 0 : 0; will stop at '!journal.pages!xW5cZvLyyKpIlJ5r.csU0O5ARgcTmyJvp' @ 54 : 1
+2024/11/20-17:20:20.128 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.131 7b14 Generated table #206@0: 120 keys, 189857 bytes
+2024/11/20-17:20:20.131 7b14 Compacted 1@0 + 0@1 files => 189857 bytes
+2024/11/20-17:20:20.132 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.132 7b14 Delete type=2 #170
+2024/11/20-17:20:20.158 7b14 Manual compaction at level-0 from '!journal.pages!xW5cZvLyyKpIlJ5r.csU0O5ARgcTmyJvp' @ 54 : 1 .. '!journal.pages!xW5cZvLyyKpIlJ5r.csU0O5ARgcTmyJvp' @ 0 : 0; will stop at (end)

@@ -1,5 +1,13 @@
-2024/11/19-21:24:04.921 36ec Log #198: 0 ops saved to Table #199 OK
-2024/11/19-21:24:04.922 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne/000198.log: OK
-2024/11/19-21:24:04.923 36ec Table #170: 340 entries OK
-2024/11/19-21:24:04.926 36ec Archiving C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne/MANIFEST-000197: OK
-2024/11/19-21:24:04.928 36ec **** Repaired leveldb C:\Users\denni\Downloads\DM SHIT\Content Utopia\v2\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne; recovered 1 files; 315016 bytes. Some data may have been lost. ****
+2024/11/20-16:20:49.854 7314 Recovering log #201
+2024/11/20-16:20:49.858 7314 Delete type=0 #201
+2024/11/20-16:20:49.858 7314 Delete type=3 #200
+2024/11/20-17:20:20.427 7b14 Level-0 table #205: started
+2024/11/20-17:20:20.428 7b14 Level-0 table #205: 0 bytes OK
+2024/11/20-17:20:20.429 7b14 Delete type=0 #203
+2024/11/20-17:20:20.430 7b14 Manual compaction at level-0 from '!journal!0WbwF76NtzyAsg9m' @ 72057594037927935 : 1 .. '!journal.pages!zPFqAh6FlCpsRZxH.tbBGDnDh7RZRLpPZ' @ 0 : 0; will stop at '!journal.pages!zPFqAh6FlCpsRZxH.tbBGDnDh7RZRLpPZ' @ 640 : 1
+2024/11/20-17:20:20.430 7b14 Compacting 1@0 + 0@1 files
+2024/11/20-17:20:20.435 7b14 Generated table #206@0: 340 keys, 315016 bytes
+2024/11/20-17:20:20.435 7b14 Compacted 1@0 + 0@1 files => 315016 bytes
+2024/11/20-17:20:20.436 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/20-17:20:20.436 7b14 Delete type=2 #170
+2024/11/20-17:20:20.446 7b14 Manual compaction at level-0 from '!journal.pages!zPFqAh6FlCpsRZxH.tbBGDnDh7RZRLpPZ' @ 640 : 1 .. '!journal.pages!zPFqAh6FlCpsRZxH.tbBGDnDh7RZRLpPZ' @ 0 : 0; will stop at (end)
