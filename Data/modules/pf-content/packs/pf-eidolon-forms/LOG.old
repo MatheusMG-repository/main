@@ -1,13 +1,5 @@
-2024/11/20-16:20:47.315 7314 Recovering log #59
-2024/11/20-16:20:47.319 7314 Delete type=0 #59
-2024/11/20-16:20:47.320 7314 Delete type=3 #58
-2024/11/20-17:20:17.679 7b14 Level-0 table #63: started
-2024/11/20-17:20:17.679 7b14 Level-0 table #63: 0 bytes OK
-2024/11/20-17:20:17.681 7b14 Delete type=0 #61
-2024/11/20-17:20:17.683 7b14 Manual compaction at level-0 from '!actors!1MtxTKRS4WoOq2YK' @ 72057594037927935 : 1 .. '!actors.items!sZ0DpKCo4mzz46r6.xsKjH2TH0AZJzmdp' @ 0 : 0; will stop at '!actors.items!sZ0DpKCo4mzz46r6.xsKjH2TH0AZJzmdp' @ 76 : 1
-2024/11/20-17:20:17.683 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:17.687 7b14 Generated table #64@0: 269 keys, 221585 bytes
-2024/11/20-17:20:17.687 7b14 Compacted 1@0 + 0@1 files => 221585 bytes
-2024/11/20-17:20:17.688 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:17.688 7b14 Delete type=2 #28
-2024/11/20-17:20:17.703 7b14 Manual compaction at level-0 from '!actors.items!sZ0DpKCo4mzz46r6.xsKjH2TH0AZJzmdp' @ 76 : 1 .. '!actors.items!sZ0DpKCo4mzz46r6.xsKjH2TH0AZJzmdp' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:53.401 3104 Log #66: 0 ops saved to Table #67 OK
+2024/11/26-18:05:53.402 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms/000066.log: OK
+2024/11/26-18:05:53.403 3104 Table #64: 269 entries OK
+2024/11/26-18:05:53.410 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms/MANIFEST-000065: OK
+2024/11/26-18:05:53.418 3104 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-forms; recovered 1 files; 221585 bytes. Some data may have been lost. ****

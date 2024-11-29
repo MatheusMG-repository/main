@@ -1,13 +1,5 @@
-2024/11/20-16:20:49.960 7314 Recovering log #201
-2024/11/20-16:20:49.964 7314 Delete type=0 #201
-2024/11/20-16:20:49.964 7314 Delete type=3 #200
-2024/11/20-17:20:20.479 7b14 Level-0 table #205: started
-2024/11/20-17:20:20.479 7b14 Level-0 table #205: 0 bytes OK
-2024/11/20-17:20:20.481 7b14 Delete type=0 #203
-2024/11/20-17:20:20.482 7b14 Manual compaction at level-0 from '!journal!0cs3Bq9t3PQPw2ia' @ 72057594037927935 : 1 .. '!journal.pages!zm6lPBA7WtgeFQtQ.GcG1GQkqzVosYF8A' @ 0 : 0; will stop at '!journal.pages!zm6lPBA7WtgeFQtQ.GcG1GQkqzVosYF8A' @ 1177 : 1
-2024/11/20-17:20:20.482 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:20.488 7b14 Generated table #206@0: 383 keys, 369419 bytes
-2024/11/20-17:20:20.488 7b14 Compacted 1@0 + 0@1 files => 369419 bytes
-2024/11/20-17:20:20.489 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:20.489 7b14 Delete type=2 #170
-2024/11/20-17:20:20.499 7b14 Manual compaction at level-0 from '!journal.pages!zm6lPBA7WtgeFQtQ.GcG1GQkqzVosYF8A' @ 1177 : 1 .. '!journal.pages!zm6lPBA7WtgeFQtQ.GcG1GQkqzVosYF8A' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:57.634 20f8 Log #208: 0 ops saved to Table #209 OK
+2024/11/26-18:05:57.635 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker/000208.log: OK
+2024/11/26-18:05:57.637 20f8 Table #206: 383 entries OK
+2024/11/26-18:05:57.643 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker/MANIFEST-000207: OK
+2024/11/26-18:05:57.651 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker; recovered 1 files; 369419 bytes. Some data may have been lost. ****

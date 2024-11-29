@@ -1,13 +1,5 @@
-2024/11/20-16:20:49.783 7314 Recovering log #201
-2024/11/20-16:20:49.787 7314 Delete type=0 #201
-2024/11/20-16:20:49.787 7314 Delete type=3 #200
-2024/11/20-17:20:20.385 7b14 Level-0 table #205: started
-2024/11/20-17:20:20.385 7b14 Level-0 table #205: 0 bytes OK
-2024/11/20-17:20:20.386 7b14 Delete type=0 #203
-2024/11/20-17:20:20.391 7b14 Manual compaction at level-0 from '!journal!08mt83gaNyMe4VYb' @ 72057594037927935 : 1 .. '!journal.pages!yC9fCYwt83rYjZqr.7tTQgrgES87n91fF' @ 0 : 0; will stop at '!journal.pages!yC9fCYwt83rYjZqr.7tTQgrgES87n91fF' @ 211 : 1
-2024/11/20-17:20:20.391 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:20.402 7b14 Generated table #206@0: 392 keys, 213521 bytes
-2024/11/20-17:20:20.402 7b14 Compacted 1@0 + 0@1 files => 213521 bytes
-2024/11/20-17:20:20.403 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:20.403 7b14 Delete type=2 #170
-2024/11/20-17:20:20.406 7b14 Manual compaction at level-0 from '!journal.pages!yC9fCYwt83rYjZqr.7tTQgrgES87n91fF' @ 211 : 1 .. '!journal.pages!yC9fCYwt83rYjZqr.7tTQgrgES87n91fF' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:57.174 2c7c Log #208: 0 ops saved to Table #209 OK
+2024/11/26-18:05:57.175 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-lost-city-barakus/000208.log: OK
+2024/11/26-18:05:57.176 2c7c Table #206: 392 entries OK
+2024/11/26-18:05:57.183 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-lost-city-barakus/MANIFEST-000207: OK
+2024/11/26-18:05:57.190 2c7c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-lost-city-barakus; recovered 1 files; 213521 bytes. Some data may have been lost. ****

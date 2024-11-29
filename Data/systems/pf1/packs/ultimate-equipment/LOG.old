@@ -1,13 +1,5 @@
-2024/11/20-16:20:46.884 72f4 Recovering log #120
-2024/11/20-16:20:46.888 72f4 Delete type=0 #120
-2024/11/20-16:20:46.888 72f4 Delete type=3 #119
-2024/11/20-17:20:17.391 7b14 Level-0 table #124: started
-2024/11/20-17:20:17.392 7b14 Level-0 table #124: 0 bytes OK
-2024/11/20-17:20:17.392 7b14 Delete type=0 #122
-2024/11/20-17:20:17.402 7b14 Manual compaction at level-0 from '!tables!0PVubenbyMwawXb4' @ 72057594037927935 : 1 .. '!tables.results!zzxds6HBqb1rZHhI.f5tjtBOOxuWbeMXf' @ 0 : 0; will stop at '!tables.results!zzxds6HBqb1rZHhI.f5tjtBOOxuWbeMXf' @ 1999 : 1
-2024/11/20-17:20:17.402 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:17.409 7b14 Generated table #125@0: 3965 keys, 386418 bytes
-2024/11/20-17:20:17.409 7b14 Compacted 1@0 + 0@1 files => 386418 bytes
-2024/11/20-17:20:17.410 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:17.410 7b14 Delete type=2 #89
-2024/11/20-17:20:17.414 7b14 Manual compaction at level-0 from '!tables.results!zzxds6HBqb1rZHhI.f5tjtBOOxuWbeMXf' @ 1999 : 1 .. '!tables.results!zzxds6HBqb1rZHhI.f5tjtBOOxuWbeMXf' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:52.569 3104 Log #127: 0 ops saved to Table #128 OK
+2024/11/26-18:05:52.570 3104 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\ultimate-equipment/000127.log: OK
+2024/11/26-18:05:52.572 3104 Table #125: 3965 entries OK
+2024/11/26-18:05:52.579 3104 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\ultimate-equipment/MANIFEST-000126: OK
+2024/11/26-18:05:52.587 3104 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\ultimate-equipment; recovered 1 files; 386418 bytes. Some data may have been lost. ****

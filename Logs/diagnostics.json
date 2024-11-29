@@ -1,8 +1,8 @@
 {
-  "timestamp": 1732119643055,
+  "timestamp": 1732644348055,
   "os": {
     "platform": "win32",
-    "version": "10.0.22631",
+    "version": "10.0.19045",
     "node": "18.14.0",
     "electron": "24.8.5"
   },
@@ -27,6 +27,9 @@
     },
     "gm-screen": {
       "version": "4.0.4"
+    },
+    "item-piles": {
+      "version": "3.1.6"
     },
     "ivan-duch-music-packs": {
       "version": "2.4"
@@ -58,6 +61,9 @@
     "popout": {
       "version": "2.18"
     },
+    "socketlib": {
+      "version": "1.1.0"
+    },
     "soundfxlibrary": {
       "version": "1.0.3"
     },
@@ -77,12 +83,12 @@
   "systems": {
     "pf1": {
       "version": "10.3",
-      "playtime": 159356
+      "playtime": 164271
     }
   },
   "worlds": {},
   "playtime": {
-    "total": 159356,
-    "max": 159356
+    "total": 164271,
+    "max": 164271
   }
 }

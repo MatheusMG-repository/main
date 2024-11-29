@@ -1,18 +1,10 @@
-2024/11/20-16:20:48.420 7314 Recovering log #254
-2024/11/20-16:20:48.424 7314 Delete type=0 #254
-2024/11/20-16:20:48.424 7314 Delete type=3 #253
-2024/11/20-17:20:18.329 7b14 Level-0 table #258: started
-2024/11/20-17:20:18.329 7b14 Level-0 table #258: 0 bytes OK
-2024/11/20-17:20:18.329 7b14 Delete type=0 #256
-2024/11/20-17:20:18.562 7b14 Manual compaction at level-0 from '!actors!0AFkbYnORiN0cXCF' @ 72057594037927935 : 1 .. '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 0 : 0; will stop at '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 9208 : 1
-2024/11/20-17:20:18.562 7b14 Compacting 3@0 + 0@1 files
-2024/11/20-17:20:18.653 7b14 Generated table #259@0: 1750 keys, 2129733 bytes
-2024/11/20-17:20:18.680 7b14 Generated table #260@0: 1784 keys, 2130488 bytes
-2024/11/20-17:20:18.698 7b14 Generated table #261@0: 1117 keys, 1276317 bytes
-2024/11/20-17:20:18.698 7b14 Compacted 3@0 + 0@1 files => 5536538 bytes
-2024/11/20-17:20:18.698 7b14 compacted to: files[ 0 6 0 0 0 0 0 ]
-2024/11/20-17:20:18.698 7b14 Delete type=2 #219
-2024/11/20-17:20:18.699 7b14 Delete type=2 #220
-2024/11/20-17:20:18.699 7b14 Delete type=2 #221
-2024/11/20-17:20:18.700 7b14 Manual compaction at level-0 from '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 9208 : 1 .. '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 0 : 0; will stop at (end)
-2024/11/20-17:20:18.855 7b14 Moved #242 to level-2 2122329 bytes OK: files[ 0 5 1 0 0 0 0 ]
+2024/11/26-18:05:55.126 3104 Log #263: 0 ops saved to Table #264 OK
+2024/11/26-18:05:55.127 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-06/000263.log: OK
+2024/11/26-18:05:55.135 3104 Table #217: 1799 entries OK
+2024/11/26-18:05:55.144 3104 Table #218: 1833 entries OK
+2024/11/26-18:05:55.152 3104 Table #242: 926 entries OK
+2024/11/26-18:05:55.159 3104 Table #259: 1750 entries OK
+2024/11/26-18:05:55.167 3104 Table #260: 1784 entries OK
+2024/11/26-18:05:55.172 3104 Table #261: 1117 entries OK
+2024/11/26-18:05:55.176 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-06/MANIFEST-000262: OK
+2024/11/26-18:05:55.183 3104 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-06; recovered 6 files; 11918695 bytes. Some data may have been lost. ****

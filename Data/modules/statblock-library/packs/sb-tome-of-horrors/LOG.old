@@ -1,15 +1,6 @@
-2024/11/20-16:20:49.715 7260 Recovering log #206
-2024/11/20-16:20:49.718 7260 Delete type=0 #206
-2024/11/20-16:20:49.719 7260 Delete type=3 #205
-2024/11/20-17:20:20.290 7b14 Level-0 table #210: started
-2024/11/20-17:20:20.290 7b14 Level-0 table #210: 0 bytes OK
-2024/11/20-17:20:20.291 7b14 Delete type=0 #208
-2024/11/20-17:20:20.292 7b14 Manual compaction at level-0 from '!journal!012e2S4dFAMlOArZ' @ 72057594037927935 : 1 .. '!journal.pages!zdtwGw7FmlCvwDRJ.yBBw7WxfcLkWsXDG' @ 0 : 0; will stop at '!journal.pages!zdtwGw7FmlCvwDRJ.yBBw7WxfcLkWsXDG' @ 3890 : 1
-2024/11/20-17:20:20.292 7b14 Compacting 2@0 + 0@1 files
-2024/11/20-17:20:20.316 7b14 Generated table #211@0: 2030 keys, 2123068 bytes
-2024/11/20-17:20:20.373 7b14 Generated table #212@0: 713 keys, 1145182 bytes
-2024/11/20-17:20:20.374 7b14 Compacted 2@0 + 0@1 files => 3268250 bytes
-2024/11/20-17:20:20.375 7b14 compacted to: files[ 0 2 0 0 0 0 0 ]
-2024/11/20-17:20:20.375 7b14 Delete type=2 #174
-2024/11/20-17:20:20.375 7b14 Delete type=2 #175
-2024/11/20-17:20:20.386 7b14 Manual compaction at level-0 from '!journal.pages!zdtwGw7FmlCvwDRJ.yBBw7WxfcLkWsXDG' @ 3890 : 1 .. '!journal.pages!zdtwGw7FmlCvwDRJ.yBBw7WxfcLkWsXDG' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:57.104 20f8 Log #214: 0 ops saved to Table #215 OK
+2024/11/26-18:05:57.105 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors/000214.log: OK
+2024/11/26-18:05:57.112 20f8 Table #211: 2030 entries OK
+2024/11/26-18:05:57.116 20f8 Table #212: 713 entries OK
+2024/11/26-18:05:57.123 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors/MANIFEST-000213: OK
+2024/11/26-18:05:57.130 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-tome-of-horrors; recovered 2 files; 3268250 bytes. Some data may have been lost. ****

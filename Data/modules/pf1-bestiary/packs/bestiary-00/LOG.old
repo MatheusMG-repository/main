@@ -1,17 +1,9 @@
-2024/11/20-16:20:48.009 72d0 Recovering log #243
-2024/11/20-16:20:48.013 72d0 Delete type=0 #243
-2024/11/20-16:20:48.013 72d0 Delete type=3 #242
-2024/11/20-17:20:18.214 7b14 Level-0 table #247: started
-2024/11/20-17:20:18.214 7b14 Level-0 table #247: 0 bytes OK
-2024/11/20-17:20:18.216 7b14 Delete type=0 #245
-2024/11/20-17:20:18.219 7b14 Manual compaction at level-0 from '!actors!02iKHCVZAu7ldZ79' @ 72057594037927935 : 1 .. '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 0 : 0; will stop at '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 5224 : 1
-2024/11/20-17:20:18.219 7b14 Compacting 3@0 + 0@1 files
-2024/11/20-17:20:18.293 7b14 Generated table #248@0: 1893 keys, 2129157 bytes
-2024/11/20-17:20:18.320 7b14 Generated table #249@0: 1893 keys, 2130212 bytes
-2024/11/20-17:20:18.327 7b14 Generated table #250@0: 405 keys, 435381 bytes
-2024/11/20-17:20:18.327 7b14 Compacted 3@0 + 0@1 files => 4694750 bytes
-2024/11/20-17:20:18.328 7b14 compacted to: files[ 0 5 0 0 0 0 0 ]
-2024/11/20-17:20:18.328 7b14 Delete type=2 #208
-2024/11/20-17:20:18.328 7b14 Delete type=2 #209
-2024/11/20-17:20:18.329 7b14 Delete type=2 #210
-2024/11/20-17:20:18.562 7b14 Manual compaction at level-0 from '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 5224 : 1 .. '!actors.items!zc0zK7N4S0bYAYBN.vWiTqHC4Y3Xn1Pme' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:54.662 3f2c Log #252: 0 ops saved to Table #253 OK
+2024/11/26-18:05:54.663 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00/000252.log: OK
+2024/11/26-18:05:54.663 3f2c Table #113: 2 entries OK
+2024/11/26-18:05:54.672 3f2c Table #231: 1035 entries OK
+2024/11/26-18:05:54.680 3f2c Table #248: 1893 entries OK
+2024/11/26-18:05:54.688 3f2c Table #249: 1893 entries OK
+2024/11/26-18:05:54.690 3f2c Table #250: 405 entries OK
+2024/11/26-18:05:54.695 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00/MANIFEST-000251: OK
+2024/11/26-18:05:54.702 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf1-bestiary\packs\bestiary-00; recovered 5 files; 6819584 bytes. Some data may have been lost. ****

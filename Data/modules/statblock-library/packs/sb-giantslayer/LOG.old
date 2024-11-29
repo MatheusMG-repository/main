@@ -1,13 +1,5 @@
-2024/11/20-16:20:49.868 7260 Recovering log #201
-2024/11/20-16:20:49.872 7260 Delete type=0 #201
-2024/11/20-16:20:49.872 7260 Delete type=3 #200
-2024/11/20-17:20:20.429 7b14 Level-0 table #205: started
-2024/11/20-17:20:20.429 7b14 Level-0 table #205: 0 bytes OK
-2024/11/20-17:20:20.430 7b14 Delete type=0 #203
-2024/11/20-17:20:20.436 7b14 Manual compaction at level-0 from '!journal!0vkiObJpil6Uo3tl' @ 72057594037927935 : 1 .. '!journal.pages!zk3yG9mqwqvYHlmy.ZXR6UnBy7OvcCtmt' @ 0 : 0; will stop at '!journal.pages!zk3yG9mqwqvYHlmy.ZXR6UnBy7OvcCtmt' @ 391 : 1
-2024/11/20-17:20:20.436 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:20.442 7b14 Generated table #206@0: 392 keys, 390738 bytes
-2024/11/20-17:20:20.442 7b14 Compacted 1@0 + 0@1 files => 390738 bytes
-2024/11/20-17:20:20.443 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:20.443 7b14 Delete type=2 #170
-2024/11/20-17:20:20.446 7b14 Manual compaction at level-0 from '!journal.pages!zk3yG9mqwqvYHlmy.ZXR6UnBy7OvcCtmt' @ 391 : 1 .. '!journal.pages!zk3yG9mqwqvYHlmy.ZXR6UnBy7OvcCtmt' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:57.379 3104 Log #208: 0 ops saved to Table #209 OK
+2024/11/26-18:05:57.380 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-giantslayer/000208.log: OK
+2024/11/26-18:05:57.382 3104 Table #206: 392 entries OK
+2024/11/26-18:05:57.389 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-giantslayer/MANIFEST-000207: OK
+2024/11/26-18:05:57.396 3104 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-giantslayer; recovered 1 files; 390738 bytes. Some data may have been lost. ****

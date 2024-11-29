@@ -1,13 +1,5 @@
-2024/11/20-16:20:47.568 7314 Recovering log #59
-2024/11/20-16:20:47.572 7314 Delete type=0 #59
-2024/11/20-16:20:47.572 7314 Delete type=3 #58
-2024/11/20-17:20:17.879 7b14 Level-0 table #63: started
-2024/11/20-17:20:17.879 7b14 Level-0 table #63: 0 bytes OK
-2024/11/20-17:20:17.881 7b14 Delete type=0 #61
-2024/11/20-17:20:17.887 7b14 Manual compaction at level-0 from '!items!0COesnDlpeBtVluo' @ 72057594037927935 : 1 .. '!items!znWoXo0tSniLrASu' @ 0 : 0; will stop at '!items!znWoXo0tSniLrASu' @ 140 : 1
-2024/11/20-17:20:17.887 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:17.921 7b14 Generated table #64@0: 1013 keys, 740624 bytes
-2024/11/20-17:20:17.921 7b14 Compacted 1@0 + 0@1 files => 740624 bytes
-2024/11/20-17:20:17.922 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:17.922 7b14 Delete type=2 #28
-2024/11/20-17:20:17.961 7b14 Manual compaction at level-0 from '!items!znWoXo0tSniLrASu' @ 140 : 1 .. '!items!znWoXo0tSniLrASu' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:53.815 2c7c Log #66: 0 ops saved to Table #67 OK
+2024/11/26-18:05:53.816 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-items/000066.log: OK
+2024/11/26-18:05:53.819 2c7c Table #64: 1013 entries OK
+2024/11/26-18:05:53.826 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-items/MANIFEST-000065: OK
+2024/11/26-18:05:53.834 2c7c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-items; recovered 1 files; 740624 bytes. Some data may have been lost. ****

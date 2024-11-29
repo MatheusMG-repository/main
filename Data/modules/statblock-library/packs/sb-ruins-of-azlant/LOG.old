@@ -1,13 +1,5 @@
-2024/11/20-16:20:50.117 72d0 Recovering log #201
-2024/11/20-16:20:50.121 72d0 Delete type=0 #201
-2024/11/20-16:20:50.121 72d0 Delete type=3 #200
-2024/11/20-17:20:20.583 7b14 Level-0 table #205: started
-2024/11/20-17:20:20.583 7b14 Level-0 table #205: 0 bytes OK
-2024/11/20-17:20:20.584 7b14 Delete type=0 #203
-2024/11/20-17:20:20.585 7b14 Manual compaction at level-0 from '!journal!0IbDYGTmJ3Rv0GBH' @ 72057594037927935 : 1 .. '!journal.pages!zwTp5wqjWI8PTqgv.wNdk5BSVJffKJNOV' @ 0 : 0; will stop at '!journal.pages!zwTp5wqjWI8PTqgv.wNdk5BSVJffKJNOV' @ 619 : 1
-2024/11/20-17:20:20.585 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:20.591 7b14 Generated table #206@0: 408 keys, 425108 bytes
-2024/11/20-17:20:20.591 7b14 Compacted 1@0 + 0@1 files => 425108 bytes
-2024/11/20-17:20:20.592 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:20.592 7b14 Delete type=2 #170
-2024/11/20-17:20:20.604 7b14 Manual compaction at level-0 from '!journal.pages!zwTp5wqjWI8PTqgv.wNdk5BSVJffKJNOV' @ 619 : 1 .. '!journal.pages!zwTp5wqjWI8PTqgv.wNdk5BSVJffKJNOV' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:58.020 3f2c Log #208: 0 ops saved to Table #209 OK
+2024/11/26-18:05:58.022 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ruins-of-azlant/000208.log: OK
+2024/11/26-18:05:58.023 3f2c Table #206: 408 entries OK
+2024/11/26-18:05:58.030 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ruins-of-azlant/MANIFEST-000207: OK
+2024/11/26-18:05:58.037 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ruins-of-azlant; recovered 1 files; 425108 bytes. Some data may have been lost. ****

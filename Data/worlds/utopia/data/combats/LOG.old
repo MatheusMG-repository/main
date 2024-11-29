@@ -1,14 +1,5 @@
-2024/11/20-16:20:46.112 7260 Recovering log #347
-2024/11/20-16:20:46.116 7260 Delete type=0 #347
-2024/11/20-16:20:46.116 7260 Delete type=3 #346
-2024/11/20-17:20:16.759 7b14 Level-0 table #351: started
-2024/11/20-17:20:16.759 7b14 Level-0 table #351: 0 bytes OK
-2024/11/20-17:20:16.759 7b14 Delete type=0 #349
-2024/11/20-17:20:16.773 7b14 Manual compaction at level-0 from '!combats!2mOPqAFDakk86oP7' @ 72057594037927935 : 1 .. '!combats.combatants!sMqOL9zHKSw13oT7.g2gS8Ib1WsJpMAfw' @ 0 : 0; will stop at '!combats.combatants!kXM2ZC7RQA8omAbK.z3NMnZR6RPwVwc5u' @ 3735 : 0
-2024/11/20-17:20:16.773 7b14 Compacting 2@0 + 0@1 files
-2024/11/20-17:20:16.775 7b14 Generated table #352@0: 96 keys, 11148 bytes
-2024/11/20-17:20:16.775 7b14 Compacted 2@0 + 0@1 files => 11148 bytes
-2024/11/20-17:20:16.776 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:16.776 7b14 Delete type=2 #344
-2024/11/20-17:20:16.776 7b14 Delete type=2 #345
-2024/11/20-17:20:16.936 7b14 Manual compaction at level-0 from '!combats.combatants!kXM2ZC7RQA8omAbK.z3NMnZR6RPwVwc5u' @ 3735 : 0 .. '!combats.combatants!sMqOL9zHKSw13oT7.g2gS8Ib1WsJpMAfw' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:51.152 2c7c Log #354: 0 ops saved to Table #355 OK
+2024/11/26-18:05:51.153 2c7c Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/000354.log: OK
+2024/11/26-18:05:51.153 2c7c Table #352: 96 entries OK
+2024/11/26-18:05:51.160 2c7c Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/MANIFEST-000353: OK
+2024/11/26-18:05:51.167 2c7c **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats; recovered 1 files; 11148 bytes. Some data may have been lost. ****

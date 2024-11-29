@@ -1,79 +1,9 @@
-2024/11/20-16:20:45.890 72d0 Recovering log #1270
-2024/11/20-16:20:45.894 72d0 Delete type=0 #1270
-2024/11/20-16:20:45.895 72d0 Delete type=3 #1269
-2024/11/20-16:30:10.219 7b14 Level-0 table #1277: started
-2024/11/20-16:30:10.233 7b14 Level-0 table #1277: 1568067 bytes OK
-2024/11/20-16:30:10.234 7b14 Delete type=0 #1275
-2024/11/20-16:32:15.115 7b14 Compacting 1@0 + 3@1 files
-2024/11/20-16:32:15.141 7b14 Generated table #1278@0: 1041 keys, 2120072 bytes
-2024/11/20-16:32:15.224 7b14 Generated table #1279@0: 1851 keys, 2128427 bytes
-2024/11/20-16:32:15.323 7b14 Generated table #1280@0: 1827 keys, 2127092 bytes
-2024/11/20-16:32:15.337 7b14 Generated table #1281@0: 174 keys, 134741 bytes
-2024/11/20-16:32:15.337 7b14 Compacted 1@0 + 3@1 files => 6510332 bytes
-2024/11/20-16:32:15.338 7b14 compacted to: files[ 0 4 0 0 0 0 0 ]
-2024/11/20-16:32:15.338 7b14 Delete type=2 #1271
-2024/11/20-16:32:15.338 7b14 Delete type=2 #1272
-2024/11/20-16:32:15.339 7b14 Delete type=2 #1273
-2024/11/20-16:32:15.339 7b14 Delete type=2 #1277
-2024/11/20-16:37:01.124 7b14 Level-0 table #1283: started
-2024/11/20-16:37:01.138 7b14 Level-0 table #1283: 1598364 bytes OK
-2024/11/20-16:37:01.139 7b14 Delete type=0 #1276
-2024/11/20-16:37:24.274 7b14 Compacting 1@0 + 4@1 files
-2024/11/20-16:37:24.301 7b14 Generated table #1284@0: 1027 keys, 2119413 bytes
-2024/11/20-16:37:24.385 7b14 Generated table #1285@0: 1845 keys, 2127381 bytes
-2024/11/20-16:37:24.479 7b14 Generated table #1286@0: 1835 keys, 2127665 bytes
-2024/11/20-16:37:24.502 7b14 Generated table #1287@0: 268 keys, 255406 bytes
-2024/11/20-16:37:24.502 7b14 Compacted 1@0 + 4@1 files => 6629865 bytes
-2024/11/20-16:37:24.502 7b14 compacted to: files[ 0 4 0 0 0 0 0 ]
-2024/11/20-16:37:24.502 7b14 Delete type=2 #1278
-2024/11/20-16:37:24.503 7b14 Delete type=2 #1279
-2024/11/20-16:37:24.503 7b14 Delete type=2 #1280
-2024/11/20-16:37:24.504 7b14 Delete type=2 #1281
-2024/11/20-16:37:24.504 7b14 Delete type=2 #1283
-2024/11/20-16:49:24.184 7b14 Level-0 table #1289: started
-2024/11/20-16:49:24.197 7b14 Level-0 table #1289: 1503307 bytes OK
-2024/11/20-16:49:24.198 7b14 Delete type=0 #1282
-2024/11/20-16:59:08.771 7b14 Compacting 1@0 + 4@1 files
-2024/11/20-16:59:08.798 7b14 Generated table #1290@0: 1021 keys, 2118203 bytes
-2024/11/20-16:59:08.913 7b14 Generated table #1291@0: 1839 keys, 2127798 bytes
-2024/11/20-16:59:09.012 7b14 Generated table #1292@0: 1843 keys, 2128751 bytes
-2024/11/20-16:59:09.028 7b14 Generated table #1293@0: 310 keys, 303794 bytes
-2024/11/20-16:59:09.028 7b14 Compacted 1@0 + 4@1 files => 6678546 bytes
-2024/11/20-16:59:09.029 7b14 compacted to: files[ 0 4 0 0 0 0 0 ]
-2024/11/20-16:59:09.029 7b14 Delete type=2 #1284
-2024/11/20-16:59:09.029 7b14 Delete type=2 #1285
-2024/11/20-16:59:09.031 7b14 Delete type=2 #1286
-2024/11/20-16:59:09.031 7b14 Delete type=2 #1287
-2024/11/20-16:59:09.032 7b14 Delete type=2 #1289
-2024/11/20-17:03:22.303 7b14 Level-0 table #1295: started
-2024/11/20-17:03:22.322 7b14 Level-0 table #1295: 1513621 bytes OK
-2024/11/20-17:03:22.323 7b14 Delete type=0 #1288
-2024/11/20-17:12:30.954 7b14 Compacting 1@0 + 4@1 files
-2024/11/20-17:12:30.980 7b14 Generated table #1296@0: 1014 keys, 2118297 bytes
-2024/11/20-17:12:31.070 7b14 Generated table #1297@0: 1834 keys, 2128692 bytes
-2024/11/20-17:12:31.094 7b14 Generated table #1298@0: 1857 keys, 2127189 bytes
-2024/11/20-17:12:31.117 7b14 Generated table #1299@0: 394 keys, 408977 bytes
-2024/11/20-17:12:31.117 7b14 Compacted 1@0 + 4@1 files => 6783155 bytes
-2024/11/20-17:12:31.118 7b14 compacted to: files[ 0 4 0 0 0 0 0 ]
-2024/11/20-17:12:31.118 7b14 Delete type=2 #1290
-2024/11/20-17:12:31.119 7b14 Delete type=2 #1291
-2024/11/20-17:12:31.119 7b14 Delete type=2 #1292
-2024/11/20-17:12:31.119 7b14 Delete type=2 #1293
-2024/11/20-17:12:31.119 7b14 Delete type=2 #1295
-2024/11/20-17:20:16.759 7b14 Level-0 table #1301: started
-2024/11/20-17:20:16.771 7b14 Level-0 table #1301: 1421506 bytes OK
-2024/11/20-17:20:16.772 7b14 Delete type=0 #1294
-2024/11/20-17:20:16.776 7b14 Manual compaction at level-0 from '!actors!09o57OUHfGhlxHmh' @ 72057594037927935 : 1 .. '!actors.items.effects!za9nLZPCvFyLJq5g.aTfjucSzwZoHu1o4.x6IvCPuTqhYonAjw' @ 0 : 0; will stop at '!actors.items.effects!ws67lbGhRbOksioN.V0Dz27j6r4NK5gkr.EPbrSzLVHe4bmFXy' @ 124601 : 1
-2024/11/20-17:20:16.776 7b14 Compacting 1@0 + 4@1 files
-2024/11/20-17:20:16.802 7b14 Generated table #1302@0: 1000 keys, 2118010 bytes
-2024/11/20-17:20:16.827 7b14 Generated table #1303@0: 1819 keys, 2127981 bytes
-2024/11/20-17:20:16.916 7b14 Generated table #1304@0: 1873 keys, 2128532 bytes
-2024/11/20-17:20:16.923 7b14 Generated table #1305@0: 468 keys, 501256 bytes
-2024/11/20-17:20:16.923 7b14 Compacted 1@0 + 4@1 files => 6875779 bytes
-2024/11/20-17:20:16.924 7b14 compacted to: files[ 0 4 0 0 0 0 0 ]
-2024/11/20-17:20:16.924 7b14 Delete type=2 #1296
-2024/11/20-17:20:16.924 7b14 Delete type=2 #1297
-2024/11/20-17:20:16.925 7b14 Delete type=2 #1298
-2024/11/20-17:20:16.925 7b14 Delete type=2 #1299
-2024/11/20-17:20:16.925 7b14 Delete type=2 #1301
-2024/11/20-17:20:16.936 7b14 Manual compaction at level-0 from '!actors.items.effects!ws67lbGhRbOksioN.V0Dz27j6r4NK5gkr.EPbrSzLVHe4bmFXy' @ 124601 : 1 .. '!actors.items.effects!za9nLZPCvFyLJq5g.aTfjucSzwZoHu1o4.x6IvCPuTqhYonAjw' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:50.812 20f8 Log #1307: 12 ops saved to Table #1308 OK
+2024/11/26-18:05:50.813 20f8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/001307.log: OK
+2024/11/26-18:05:50.822 20f8 Table #1302: 1000 entries OK
+2024/11/26-18:05:50.831 20f8 Table #1303: 1819 entries OK
+2024/11/26-18:05:50.922 20f8 Table #1304: 1873 entries OK
+2024/11/26-18:05:50.924 20f8 Table #1305: 468 entries OK
+2024/11/26-18:05:50.925 20f8 Table #1308: 12 entries OK
+2024/11/26-18:05:50.929 20f8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/MANIFEST-001306: OK
+2024/11/26-18:05:50.936 20f8 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors; recovered 5 files; 6933835 bytes. Some data may have been lost. ****

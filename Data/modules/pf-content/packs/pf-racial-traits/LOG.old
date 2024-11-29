@@ -1,13 +1,5 @@
-2024/11/20-16:20:47.714 7260 Recovering log #59
-2024/11/20-16:20:47.718 7260 Delete type=0 #59
-2024/11/20-16:20:47.718 7260 Delete type=3 #58
-2024/11/20-17:20:17.974 7b14 Level-0 table #63: started
-2024/11/20-17:20:17.975 7b14 Level-0 table #63: 0 bytes OK
-2024/11/20-17:20:17.975 7b14 Delete type=0 #61
-2024/11/20-17:20:17.997 7b14 Manual compaction at level-0 from '!folders!0Z7LoIqKFrjU0YGN' @ 72057594037927935 : 1 .. '!items!zsHfAFzwio7xc52p' @ 0 : 0; will stop at '!items!zsHfAFzwio7xc52p' @ 1269 : 1
-2024/11/20-17:20:17.997 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:18.007 7b14 Generated table #64@0: 1576 keys, 713709 bytes
-2024/11/20-17:20:18.007 7b14 Compacted 1@0 + 0@1 files => 713709 bytes
-2024/11/20-17:20:18.008 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:18.008 7b14 Delete type=2 #28
-2024/11/20-17:20:18.011 7b14 Manual compaction at level-0 from '!items!zsHfAFzwio7xc52p' @ 1269 : 1 .. '!items!zsHfAFzwio7xc52p' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:54.071 3f2c Log #66: 0 ops saved to Table #67 OK
+2024/11/26-18:05:54.072 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-racial-traits/000066.log: OK
+2024/11/26-18:05:54.075 3f2c Table #64: 1576 entries OK
+2024/11/26-18:05:54.082 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-racial-traits/MANIFEST-000065: OK
+2024/11/26-18:05:54.089 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-racial-traits; recovered 1 files; 713709 bytes. Some data may have been lost. ****

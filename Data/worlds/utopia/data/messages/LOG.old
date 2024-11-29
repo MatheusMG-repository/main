@@ -1,16 +1,6 @@
-2024/11/20-16:20:46.086 7314 Recovering log #344
-2024/11/20-16:20:46.091 7314 Delete type=0 #344
-2024/11/20-16:20:46.091 7314 Delete type=3 #343
-2024/11/20-17:20:16.925 7b14 Level-0 table #348: started
-2024/11/20-17:20:16.927 7b14 Level-0 table #348: 17117 bytes OK
-2024/11/20-17:20:16.928 7b14 Delete type=0 #346
-2024/11/20-17:20:16.937 7b14 Manual compaction at level-0 from '!messages!05TyqxvhQ0ObjuBS' @ 72057594037927935 : 1 .. '!messages!zdjE72SxumBImcXb' @ 0 : 0; will stop at '!messages!qOl1CqJEtyKyJX4T' @ 9884 : 1
-2024/11/20-17:20:16.937 7b14 Compacting 4@0 + 0@1 files
-2024/11/20-17:20:16.944 7b14 Generated table #349@0: 323 keys, 521935 bytes
-2024/11/20-17:20:16.944 7b14 Compacted 4@0 + 0@1 files => 521935 bytes
-2024/11/20-17:20:16.945 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:16.945 7b14 Delete type=2 #338
-2024/11/20-17:20:16.945 7b14 Delete type=2 #339
-2024/11/20-17:20:16.946 7b14 Delete type=2 #342
-2024/11/20-17:20:16.946 7b14 Delete type=2 #348
-2024/11/20-17:20:16.953 7b14 Manual compaction at level-0 from '!messages!qOl1CqJEtyKyJX4T' @ 9884 : 1 .. '!messages!zdjE72SxumBImcXb' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:51.092 3104 Log #351: 325 ops saved to Table #352 OK
+2024/11/26-18:05:51.093 3104 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/messages/000351.log: OK
+2024/11/26-18:05:51.096 3104 Table #349: 323 entries OK
+2024/11/26-18:05:51.096 3104 Table #352: 325 entries OK
+2024/11/26-18:05:51.107 3104 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/messages/MANIFEST-000350: OK
+2024/11/26-18:05:51.120 3104 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/messages; recovered 2 files; 533546 bytes. Some data may have been lost. ****

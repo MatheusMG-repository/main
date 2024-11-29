@@ -1,13 +1,5 @@
-2024/11/20-16:20:49.396 72f4 Recovering log #201
-2024/11/20-16:20:49.400 72f4 Delete type=0 #201
-2024/11/20-16:20:49.400 72f4 Delete type=3 #200
-2024/11/20-17:20:19.226 7b14 Level-0 table #205: started
-2024/11/20-17:20:19.226 7b14 Level-0 table #205: 0 bytes OK
-2024/11/20-17:20:19.227 7b14 Delete type=0 #203
-2024/11/20-17:20:19.348 7b14 Manual compaction at level-0 from '!journal!0FHScfAgUbg4rqNw' @ 72057594037927935 : 1 .. '!journal.pages!zogflehQ0nEmbvyi.EILQSxYfXbA6MIzF' @ 0 : 0; will stop at '!journal.pages!zogflehQ0nEmbvyi.EILQSxYfXbA6MIzF' @ 529 : 1
-2024/11/20-17:20:19.348 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:19.362 7b14 Generated table #206@0: 1248 keys, 1226470 bytes
-2024/11/20-17:20:19.362 7b14 Compacted 1@0 + 0@1 files => 1226470 bytes
-2024/11/20-17:20:19.363 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:19.363 7b14 Delete type=2 #170
-2024/11/20-17:20:19.484 7b14 Manual compaction at level-0 from '!journal.pages!zogflehQ0nEmbvyi.EILQSxYfXbA6MIzF' @ 529 : 1 .. '!journal.pages!zogflehQ0nEmbvyi.EILQSxYfXbA6MIzF' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:56.412 20f8 Log #208: 0 ops saved to Table #209 OK
+2024/11/26-18:05:56.413 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings/000208.log: OK
+2024/11/26-18:05:56.417 20f8 Table #206: 1248 entries OK
+2024/11/26-18:05:56.423 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings/MANIFEST-000207: OK
+2024/11/26-18:05:56.430 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings; recovered 1 files; 1226470 bytes. Some data may have been lost. ****

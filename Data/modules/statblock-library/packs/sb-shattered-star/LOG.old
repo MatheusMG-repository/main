@@ -1,13 +1,5 @@
-2024/11/20-16:20:50.071 72d0 Recovering log #201
-2024/11/20-16:20:50.075 72d0 Delete type=0 #201
-2024/11/20-16:20:50.075 72d0 Delete type=3 #200
-2024/11/20-17:20:20.547 7b14 Level-0 table #205: started
-2024/11/20-17:20:20.547 7b14 Level-0 table #205: 0 bytes OK
-2024/11/20-17:20:20.548 7b14 Delete type=0 #203
-2024/11/20-17:20:20.550 7b14 Manual compaction at level-0 from '!journal!07kBNLFXP5kznDJN' @ 72057594037927935 : 1 .. '!journal.pages!zhqyrOSGYDrnjORn.OoBfVEd53pahXHUp' @ 0 : 0; will stop at '!journal.pages!zhqyrOSGYDrnjORn.OoBfVEd53pahXHUp' @ 289 : 1
-2024/11/20-17:20:20.550 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:20.554 7b14 Generated table #206@0: 301 keys, 315281 bytes
-2024/11/20-17:20:20.554 7b14 Compacted 1@0 + 0@1 files => 315281 bytes
-2024/11/20-17:20:20.555 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:20.555 7b14 Delete type=2 #170
-2024/11/20-17:20:20.567 7b14 Manual compaction at level-0 from '!journal.pages!zhqyrOSGYDrnjORn.OoBfVEd53pahXHUp' @ 289 : 1 .. '!journal.pages!zhqyrOSGYDrnjORn.OoBfVEd53pahXHUp' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:57.893 3104 Log #208: 0 ops saved to Table #209 OK
+2024/11/26-18:05:57.894 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-shattered-star/000208.log: OK
+2024/11/26-18:05:57.895 3104 Table #206: 301 entries OK
+2024/11/26-18:05:57.902 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-shattered-star/MANIFEST-000207: OK
+2024/11/26-18:05:57.910 3104 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-shattered-star; recovered 1 files; 315281 bytes. Some data may have been lost. ****

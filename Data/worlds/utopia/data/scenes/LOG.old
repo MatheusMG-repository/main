@@ -1,20 +1,6 @@
-2024/11/20-16:20:46.286 7314 Recovering log #519
-2024/11/20-16:20:46.289 7314 Delete type=2 #508
-2024/11/20-16:20:46.290 7314 Delete type=2 #510
-2024/11/20-16:20:46.290 7314 Delete type=2 #512
-2024/11/20-16:20:46.290 7314 Delete type=2 #513
-2024/11/20-16:20:46.291 7314 Delete type=2 #516
-2024/11/20-16:20:46.291 7314 Delete type=2 #517
-2024/11/20-16:20:46.291 7314 Delete type=0 #519
-2024/11/20-16:20:46.291 7314 Delete type=3 #518
-2024/11/20-17:20:16.971 7b14 Level-0 table #524: started
-2024/11/20-17:20:16.973 7b14 Level-0 table #524: 5833 bytes OK
-2024/11/20-17:20:16.974 7b14 Delete type=0 #522
-2024/11/20-17:20:16.980 7b14 Manual compaction at level-0 from '!scenes!0OEZklkn24Bxj9Qr' @ 72057594037927935 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at '!scenes.tokens.delta!imUS0Ux9v0lqY3Si.wk6xwlmBv0kiiChg.eokGEnIl9jXAIgNb' @ 88525 : 0
-2024/11/20-17:20:16.980 7b14 Compacting 1@0 + 1@1 files
-2024/11/20-17:20:16.999 7b14 Generated table #525@0: 8739 keys, 1549553 bytes
-2024/11/20-17:20:16.999 7b14 Compacted 1@0 + 1@1 files => 1549553 bytes
-2024/11/20-17:20:17.000 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:17.000 7b14 Delete type=2 #520
-2024/11/20-17:20:17.000 7b14 Delete type=2 #524
-2024/11/20-17:20:17.004 7b14 Manual compaction at level-0 from '!scenes.tokens.delta!imUS0Ux9v0lqY3Si.wk6xwlmBv0kiiChg.eokGEnIl9jXAIgNb' @ 88525 : 0 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:51.591 3104 Log #527: 185 ops saved to Table #528 OK
+2024/11/26-18:05:51.592 3104 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/000527.log: OK
+2024/11/26-18:05:51.600 3104 Table #525: 8739 entries OK
+2024/11/26-18:05:51.601 3104 Table #528: 185 entries OK
+2024/11/26-18:05:51.608 3104 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/MANIFEST-000526: OK
+2024/11/26-18:05:51.615 3104 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes; recovered 2 files; 1674315 bytes. Some data may have been lost. ****

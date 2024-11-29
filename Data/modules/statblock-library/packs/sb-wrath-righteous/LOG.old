@@ -1,13 +1,5 @@
-2024/11/20-16:20:50.191 7314 Recovering log #201
-2024/11/20-16:20:50.195 7314 Delete type=0 #201
-2024/11/20-16:20:50.195 7314 Delete type=3 #200
-2024/11/20-17:20:20.617 7b14 Level-0 table #205: started
-2024/11/20-17:20:20.617 7b14 Level-0 table #205: 0 bytes OK
-2024/11/20-17:20:20.618 7b14 Delete type=0 #203
-2024/11/20-17:20:20.629 7b14 Manual compaction at level-0 from '!journal!0RFOiMKxe0aeWrUG' @ 72057594037927935 : 1 .. '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 0 : 0; will stop at '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 171 : 1
-2024/11/20-17:20:20.629 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:20.641 7b14 Generated table #206@0: 339 keys, 439215 bytes
-2024/11/20-17:20:20.641 7b14 Compacted 1@0 + 0@1 files => 439215 bytes
-2024/11/20-17:20:20.643 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:20.643 7b14 Delete type=2 #170
-2024/11/20-17:20:20.645 7b14 Manual compaction at level-0 from '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 171 : 1 .. '!journal.pages!x3HV7ChsWjDoEivY.oqHK168BDZnqc257' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:58.247 2c7c Log #208: 0 ops saved to Table #209 OK
+2024/11/26-18:05:58.248 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-wrath-righteous/000208.log: OK
+2024/11/26-18:05:58.249 2c7c Table #206: 339 entries OK
+2024/11/26-18:05:58.258 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-wrath-righteous/MANIFEST-000207: OK
+2024/11/26-18:05:58.268 2c7c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-wrath-righteous; recovered 1 files; 439215 bytes. Some data may have been lost. ****

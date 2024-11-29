@@ -1,13 +1,5 @@
-2024/11/20-16:20:50.020 7314 Recovering log #201
-2024/11/20-16:20:50.023 7314 Delete type=0 #201
-2024/11/20-16:20:50.023 7314 Delete type=3 #200
-2024/11/20-17:20:20.511 7b14 Level-0 table #205: started
-2024/11/20-17:20:20.511 7b14 Level-0 table #205: 0 bytes OK
-2024/11/20-17:20:20.512 7b14 Delete type=0 #203
-2024/11/20-17:20:20.519 7b14 Manual compaction at level-0 from '!journal!0GL8rB5pu6VdC80U' @ 72057594037927935 : 1 .. '!journal.pages!zujHqcYdddNKLKu6.z89DnnPLSvXdiG5m' @ 0 : 0; will stop at '!journal.pages!zujHqcYdddNKLKu6.z89DnnPLSvXdiG5m' @ 776 : 1
-2024/11/20-17:20:20.519 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:20.545 7b14 Generated table #206@0: 517 keys, 504908 bytes
-2024/11/20-17:20:20.545 7b14 Compacted 1@0 + 0@1 files => 504908 bytes
-2024/11/20-17:20:20.546 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:20.547 7b14 Delete type=2 #170
-2024/11/20-17:20:20.550 7b14 Manual compaction at level-0 from '!journal.pages!zujHqcYdddNKLKu6.z89DnnPLSvXdiG5m' @ 776 : 1 .. '!journal.pages!zujHqcYdddNKLKu6.z89DnnPLSvXdiG5m' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:57.804 20f8 Log #208: 0 ops saved to Table #209 OK
+2024/11/26-18:05:57.805 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-serpents-skull/000208.log: OK
+2024/11/26-18:05:57.806 20f8 Table #206: 517 entries OK
+2024/11/26-18:05:57.814 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-serpents-skull/MANIFEST-000207: OK
+2024/11/26-18:05:57.821 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-serpents-skull; recovered 1 files; 504908 bytes. Some data may have been lost. ****

@@ -1,13 +1,5 @@
-2024/11/20-16:20:49.915 72f4 Recovering log #201
-2024/11/20-16:20:49.919 72f4 Delete type=0 #201
-2024/11/20-16:20:49.919 72f4 Delete type=3 #200
-2024/11/20-17:20:20.462 7b14 Level-0 table #205: started
-2024/11/20-17:20:20.462 7b14 Level-0 table #205: 0 bytes OK
-2024/11/20-17:20:20.463 7b14 Delete type=0 #203
-2024/11/20-17:20:20.465 7b14 Manual compaction at level-0 from '!journal!0AlYfwwitqAEITgb' @ 72057594037927935 : 1 .. '!journal.pages!z70LuUIuAaralTT3.X5rzwr6N8tczJlgE' @ 0 : 0; will stop at '!journal.pages!z70LuUIuAaralTT3.X5rzwr6N8tczJlgE' @ 628 : 1
-2024/11/20-17:20:20.465 7b14 Compacting 1@0 + 0@1 files
-2024/11/20-17:20:20.470 7b14 Generated table #206@0: 385 keys, 430838 bytes
-2024/11/20-17:20:20.470 7b14 Compacted 1@0 + 0@1 files => 430838 bytes
-2024/11/20-17:20:20.471 7b14 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/11/20-17:20:20.471 7b14 Delete type=2 #170
-2024/11/20-17:20:20.482 7b14 Manual compaction at level-0 from '!journal.pages!z70LuUIuAaralTT3.X5rzwr6N8tczJlgE' @ 628 : 1 .. '!journal.pages!z70LuUIuAaralTT3.X5rzwr6N8tczJlgE' @ 0 : 0; will stop at (end)
+2024/11/26-18:05:57.505 3f2c Log #208: 0 ops saved to Table #209 OK
+2024/11/26-18:05:57.506 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-iron-gods/000208.log: OK
+2024/11/26-18:05:57.507 3f2c Table #206: 385 entries OK
+2024/11/26-18:05:57.514 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-iron-gods/MANIFEST-000207: OK
+2024/11/26-18:05:57.521 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-iron-gods; recovered 1 files; 430838 bytes. Some data may have been lost. ****
