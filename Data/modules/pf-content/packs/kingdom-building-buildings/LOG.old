@@ -1,5 +1,7 @@
-2024/11/26-18:05:54.578 2c7c Log #66: 0 ops saved to Table #67 OK
-2024/11/26-18:05:54.579 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-buildings/000066.log: OK
-2024/11/26-18:05:54.579 2c7c Table #64: 95 entries OK
-2024/11/26-18:05:54.585 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-buildings/MANIFEST-000065: OK
-2024/11/26-18:05:54.593 2c7c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-buildings; recovered 1 files; 32208 bytes. Some data may have been lost. ****
+2024/12/02-08:56:19.349 1790 Recovering log #86
+2024/12/02-08:56:19.352 1790 Delete type=0 #86
+2024/12/02-08:56:19.352 1790 Delete type=3 #84
+2024/12/02-09:45:20.836 6ffc Level-0 table #91: started
+2024/12/02-09:45:20.836 6ffc Level-0 table #91: 0 bytes OK
+2024/12/02-09:45:20.838 6ffc Delete type=0 #89
+2024/12/02-09:45:20.840 6ffc Manual compaction at level-0 from '!actors!0bxzwAzVpF0c0AER' @ 72057594037927935 : 1 .. '!actors!zfkf5CqTcGVSeHtR' @ 0 : 0; will stop at (end)

@@ -1,5 +1,7 @@
-2024/11/26-18:05:57.061 3104 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:57.062 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air/000208.log: OK
-2024/11/26-18:05:57.063 3104 Table #206: 664 entries OK
-2024/11/26-18:05:57.070 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air/MANIFEST-000207: OK
-2024/11/26-18:05:57.077 3104 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-sword-of-air; recovered 1 files; 471414 bytes. Some data may have been lost. ****
+2024/12/02-08:56:21.035 a948 Recovering log #228
+2024/12/02-08:56:21.039 a948 Delete type=0 #228
+2024/12/02-08:56:21.039 a948 Delete type=3 #226
+2024/12/02-09:45:20.877 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.877 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.878 6ffc Delete type=0 #231
+2024/12/02-09:45:20.882 6ffc Manual compaction at level-0 from '!journal!0J6DxfM7evrk1Z5k' @ 72057594037927935 : 1 .. '!journal.pages!ys2psqenZXrn7ZOc.R5RNaq7XIQAeooEb' @ 0 : 0; will stop at (end)

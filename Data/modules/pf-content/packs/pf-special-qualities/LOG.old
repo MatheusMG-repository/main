@@ -1,5 +1,7 @@
-2024/11/26-18:05:54.169 3f2c Log #66: 0 ops saved to Table #67 OK
-2024/11/26-18:05:54.170 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-special-qualities/000066.log: OK
-2024/11/26-18:05:54.171 3f2c Table #64: 334 entries OK
-2024/11/26-18:05:54.177 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-special-qualities/MANIFEST-000065: OK
-2024/11/26-18:05:54.185 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-special-qualities; recovered 1 files; 204019 bytes. Some data may have been lost. ****
+2024/12/02-08:56:19.120 1790 Recovering log #86
+2024/12/02-08:56:19.125 1790 Delete type=0 #86
+2024/12/02-08:56:19.125 1790 Delete type=3 #84
+2024/12/02-09:45:20.827 6ffc Level-0 table #91: started
+2024/12/02-09:45:20.827 6ffc Level-0 table #91: 0 bytes OK
+2024/12/02-09:45:20.828 6ffc Delete type=0 #89
+2024/12/02-09:45:20.830 6ffc Manual compaction at level-0 from '!items!0RRzAISUevCLqcrZ' @ 72057594037927935 : 1 .. '!items!zuN4ZaSIVGMPGgxx' @ 0 : 0; will stop at (end)

@@ -1,5 +1,7 @@
-2024/11/26-18:05:56.937 20f8 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:56.938 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street/000208.log: OK
-2024/11/26-18:05:56.938 20f8 Table #206: 51 entries OK
-2024/11/26-18:05:56.945 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street/MANIFEST-000207: OK
-2024/11/26-18:05:56.952 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-house-on-hook-street; recovered 1 files; 41425 bytes. Some data may have been lost. ****
+2024/12/02-08:56:20.991 1790 Recovering log #228
+2024/12/02-08:56:20.994 1790 Delete type=0 #228
+2024/12/02-08:56:20.994 1790 Delete type=3 #226
+2024/12/02-09:45:20.867 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.867 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.868 6ffc Delete type=0 #231
+2024/12/02-09:45:20.870 6ffc Manual compaction at level-0 from '!journal!7llzrC99ubDApObd' @ 72057594037927935 : 1 .. '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 0 : 0; will stop at (end)

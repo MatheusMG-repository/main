@@ -1,5 +1,7 @@
-2024/11/26-18:05:56.621 3104 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:56.622 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-emerald-spire/000208.log: OK
-2024/11/26-18:05:56.622 3104 Table #206: 144 entries OK
-2024/11/26-18:05:56.629 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-emerald-spire/MANIFEST-000207: OK
-2024/11/26-18:05:56.636 3104 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-emerald-spire; recovered 1 files; 104157 bytes. Some data may have been lost. ****
+2024/12/02-08:56:20.812 9678 Recovering log #228
+2024/12/02-08:56:20.816 9678 Delete type=0 #228
+2024/12/02-08:56:20.816 9678 Delete type=3 #226
+2024/12/02-09:45:20.862 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.862 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.863 6ffc Delete type=0 #231
+2024/12/02-09:45:20.864 6ffc Manual compaction at level-0 from '!journal!2VIyJxZb0hJ6yMOj' @ 72057594037927935 : 1 .. '!journal.pages!z8UGoFR3GNv6J9Xe.x5NsunDzpytqtyiN' @ 0 : 0; will stop at (end)

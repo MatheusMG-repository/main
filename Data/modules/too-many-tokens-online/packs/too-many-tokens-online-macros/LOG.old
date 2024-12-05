@@ -1,5 +1,7 @@
-2024/11/26-18:05:58.304 3f2c Log #181: 0 ops saved to Table #182 OK
-2024/11/26-18:05:58.305 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\too-many-tokens-online\packs\too-many-tokens-online-macros/000181.log: OK
-2024/11/26-18:05:58.305 3f2c Table #179: 2 entries OK
-2024/11/26-18:05:58.310 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\too-many-tokens-online\packs\too-many-tokens-online-macros/MANIFEST-000180: OK
-2024/11/26-18:05:58.316 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\too-many-tokens-online\packs\too-many-tokens-online-macros; recovered 1 files; 12822 bytes. Some data may have been lost. ****
+2024/12/02-08:56:21.544 9678 Recovering log #201
+2024/12/02-08:56:21.548 9678 Delete type=0 #201
+2024/12/02-08:56:21.548 9678 Delete type=3 #199
+2024/12/02-09:45:20.917 6ffc Level-0 table #206: started
+2024/12/02-09:45:20.917 6ffc Level-0 table #206: 0 bytes OK
+2024/12/02-09:45:20.918 6ffc Delete type=0 #204
+2024/12/02-09:45:20.919 6ffc Manual compaction at level-0 from '!macros!m7CEo2b4dHUT7ccd' @ 72057594037927935 : 1 .. '!macros!u0tHJ2KIH1juVZtx' @ 0 : 0; will stop at (end)

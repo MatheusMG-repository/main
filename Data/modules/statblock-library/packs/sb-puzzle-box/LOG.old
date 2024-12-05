@@ -1,5 +1,7 @@
-2024/11/26-18:05:57.720 3104 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:57.721 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box/000208.log: OK
-2024/11/26-18:05:57.721 3104 Table #206: 45 entries OK
-2024/11/26-18:05:57.728 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box/MANIFEST-000207: OK
-2024/11/26-18:05:57.736 3104 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-puzzle-box; recovered 1 files; 31862 bytes. Some data may have been lost. ****
+2024/12/02-08:56:21.330 9678 Recovering log #228
+2024/12/02-08:56:21.333 9678 Delete type=0 #228
+2024/12/02-08:56:21.333 9678 Delete type=3 #226
+2024/12/02-09:45:20.896 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.896 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.897 6ffc Delete type=0 #231
+2024/12/02-09:45:20.900 6ffc Manual compaction at level-0 from '!journal!0x6lahYcbStMjnum' @ 72057594037927935 : 1 .. '!journal.pages!ktwzuTkbtnAw610A.xZ2jGQ3Gu8Eyh3ip' @ 0 : 0; will stop at (end)

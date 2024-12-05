@@ -1,6 +1,7 @@
-2024/11/26-18:05:51.970 3f2c Log #130: 0 ops saved to Table #131 OK
-2024/11/26-18:05:51.971 3f2c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\spells/000130.log: OK
-2024/11/26-18:05:51.979 3f2c Table #127: 2245 entries OK
-2024/11/26-18:05:51.982 3f2c Table #128: 784 entries OK
-2024/11/26-18:05:51.989 3f2c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\spells/MANIFEST-000129: OK
-2024/11/26-18:05:51.996 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\spells; recovered 2 files; 2839794 bytes. Some data may have been lost. ****
+2024/12/02-08:56:17.807 9678 Recovering log #151
+2024/12/02-08:56:17.811 9678 Delete type=0 #151
+2024/12/02-08:56:17.811 9678 Delete type=3 #149
+2024/12/02-09:45:20.756 6ffc Level-0 table #156: started
+2024/12/02-09:45:20.756 6ffc Level-0 table #156: 0 bytes OK
+2024/12/02-09:45:20.757 6ffc Delete type=0 #154
+2024/12/02-09:45:20.758 6ffc Manual compaction at level-0 from '!items!001poiyujbqv24z0' @ 72057594037927935 : 1 .. '!items!zyzlq7sbjvozd6mb' @ 0 : 0; will stop at (end)

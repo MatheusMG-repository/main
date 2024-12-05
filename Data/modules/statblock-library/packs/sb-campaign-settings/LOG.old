@@ -1,5 +1,7 @@
-2024/11/26-18:05:56.412 20f8 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:56.413 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings/000208.log: OK
-2024/11/26-18:05:56.417 20f8 Table #206: 1248 entries OK
-2024/11/26-18:05:56.423 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings/MANIFEST-000207: OK
-2024/11/26-18:05:56.430 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings; recovered 1 files; 1226470 bytes. Some data may have been lost. ****
+2024/12/02-08:56:20.738 9504 Recovering log #228
+2024/12/02-08:56:20.741 9504 Delete type=0 #228
+2024/12/02-08:56:20.741 9504 Delete type=3 #226
+2024/12/02-09:45:20.850 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.850 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.851 6ffc Delete type=0 #231
+2024/12/02-09:45:20.852 6ffc Manual compaction at level-0 from '!journal!0FHScfAgUbg4rqNw' @ 72057594037927935 : 1 .. '!journal.pages!zogflehQ0nEmbvyi.EILQSxYfXbA6MIzF' @ 0 : 0; will stop at (end)

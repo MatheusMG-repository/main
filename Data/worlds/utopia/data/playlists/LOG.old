@@ -1,5 +1,7 @@
-2024/11/26-18:05:51.477 3104 Log #333: 0 ops saved to Table #334 OK
-2024/11/26-18:05:51.479 3104 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/000333.log: OK
-2024/11/26-18:05:51.479 3104 Table #331: 120 entries OK
-2024/11/26-18:05:51.486 3104 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists/MANIFEST-000332: OK
-2024/11/26-18:05:51.493 3104 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/playlists; recovered 1 files; 13151 bytes. Some data may have been lost. ****
+2024/12/02-08:56:17.583 9504 Recovering log #353
+2024/12/02-08:56:17.586 9504 Delete type=0 #353
+2024/12/02-08:56:17.586 9504 Delete type=3 #351
+2024/12/02-09:45:20.701 6ffc Level-0 table #358: started
+2024/12/02-09:45:20.702 6ffc Level-0 table #358: 0 bytes OK
+2024/12/02-09:45:20.703 6ffc Delete type=0 #356
+2024/12/02-09:45:20.710 6ffc Manual compaction at level-0 from '!playlists!1H0pE2stVOT0O3AP' @ 72057594037927935 : 1 .. '!playlists.sounds!oVHW6HOfKP485AJR.JljPAMAAlT9Yljbh' @ 0 : 0; will stop at (end)

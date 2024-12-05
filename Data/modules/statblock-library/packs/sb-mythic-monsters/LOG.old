@@ -1,5 +1,7 @@
-2024/11/26-18:05:56.711 3104 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:56.712 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters/000208.log: OK
-2024/11/26-18:05:56.712 3104 Table #206: 171 entries OK
-2024/11/26-18:05:56.719 3104 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters/MANIFEST-000207: OK
-2024/11/26-18:05:56.727 3104 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mythic-monsters; recovered 1 files; 193133 bytes. Some data may have been lost. ****
+2024/12/02-08:56:20.844 9504 Recovering log #228
+2024/12/02-08:56:20.848 9504 Delete type=0 #228
+2024/12/02-08:56:20.849 9504 Delete type=3 #226
+2024/12/02-09:45:20.868 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.869 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.870 6ffc Delete type=0 #231
+2024/12/02-09:45:20.870 6ffc Manual compaction at level-0 from '!journal!0LWCZ3sN69p71vdT' @ 72057594037927935 : 1 .. '!journal.pages!zZT0f0CsZMyZSAzs.U95gE4v61El5RccR' @ 0 : 0; will stop at (end)

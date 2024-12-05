@@ -1,5 +1,7 @@
-2024/11/26-18:05:52.134 3f2c Log #127: 0 ops saved to Table #128 OK
-2024/11/26-18:05:52.135 3f2c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\armors-and-shields/000127.log: OK
-2024/11/26-18:05:52.135 3f2c Table #125: 68 entries OK
-2024/11/26-18:05:52.142 3f2c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\armors-and-shields/MANIFEST-000126: OK
-2024/11/26-18:05:52.149 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\armors-and-shields; recovered 1 files; 32365 bytes. Some data may have been lost. ****
+2024/12/02-08:56:17.975 9678 Recovering log #147
+2024/12/02-08:56:17.979 9678 Delete type=0 #147
+2024/12/02-08:56:17.979 9678 Delete type=3 #145
+2024/12/02-09:45:20.761 6ffc Level-0 table #152: started
+2024/12/02-09:45:20.762 6ffc Level-0 table #152: 0 bytes OK
+2024/12/02-09:45:20.762 6ffc Delete type=0 #150
+2024/12/02-09:45:20.764 6ffc Manual compaction at level-0 from '!folders!33jGfHlDL34jvwnX' @ 72057594037927935 : 1 .. '!items!ziXQ1DlDMGTAUOe9' @ 0 : 0; will stop at (end)

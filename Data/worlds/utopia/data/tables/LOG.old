@@ -1,4 +1,8 @@
-2024/11/26-18:05:51.525 20f8 Log #294: 0 ops saved to Table #295 OK
-2024/11/26-18:05:51.527 20f8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/tables/000294.log: OK
-2024/11/26-18:05:51.534 20f8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/tables/MANIFEST-000293: OK
-2024/11/26-18:05:51.542 20f8 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/tables; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2024/12/02-08:56:17.598 9678 Recovering log #313
+2024/12/02-08:56:17.602 9678 Delete type=0 #313
+2024/12/02-08:56:17.602 9678 Delete type=3 #311
+2024/12/02-09:45:20.703 6ffc Level-0 table #319: started
+2024/12/02-09:45:20.703 6ffc Level-0 table #319: 0 bytes OK
+2024/12/02-09:45:20.704 6ffc Delete type=0 #317
+2024/12/02-09:45:20.710 6ffc Manual compaction at level-0 from '!tables!680nlr1P259e0aVm' @ 72057594037927935 : 1 .. '!tables.results!ug2DDsQsI8OVhONW.zV8wODrNyADYFw6H' @ 0 : 0; will stop at (end)
+2024/12/02-09:45:20.733 6ffc Manual compaction at level-1 from '!tables!680nlr1P259e0aVm' @ 72057594037927935 : 1 .. '!tables.results!ug2DDsQsI8OVhONW.zV8wODrNyADYFw6H' @ 0 : 0; will stop at (end)

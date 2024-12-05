@@ -1,5 +1,7 @@
-2024/11/26-18:05:53.444 20f8 Log #66: 0 ops saved to Table #67 OK
-2024/11/26-18:05:53.445 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-evolutions/000066.log: OK
-2024/11/26-18:05:53.445 20f8 Table #64: 109 entries OK
-2024/11/26-18:05:53.453 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-evolutions/MANIFEST-000065: OK
-2024/11/26-18:05:53.460 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-eidolon-evolutions; recovered 1 files; 58548 bytes. Some data may have been lost. ****
+2024/12/02-08:56:18.706 1790 Recovering log #86
+2024/12/02-08:56:18.710 1790 Delete type=0 #86
+2024/12/02-08:56:18.710 1790 Delete type=3 #84
+2024/12/02-09:45:20.799 6ffc Level-0 table #91: started
+2024/12/02-09:45:20.799 6ffc Level-0 table #91: 0 bytes OK
+2024/12/02-09:45:20.800 6ffc Delete type=0 #89
+2024/12/02-09:45:20.802 6ffc Manual compaction at level-0 from '!items!0D2y2ZD2wRqy7S1m' @ 72057594037927935 : 1 .. '!items!zfeKCQsoGM530tTV' @ 0 : 0; will stop at (end)

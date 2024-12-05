@@ -1,5 +1,7 @@
-2024/11/26-18:05:56.755 20f8 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:56.757 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians/000208.log: OK
-2024/11/26-18:05:56.763 20f8 Table #206: 2478 entries OK
-2024/11/26-18:05:56.770 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians/MANIFEST-000207: OK
-2024/11/26-18:05:56.777 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-npcs-and-villians; recovered 1 files; 1781272 bytes. Some data may have been lost. ****
+2024/12/02-08:56:20.858 1790 Recovering log #228
+2024/12/02-08:56:20.863 1790 Delete type=0 #228
+2024/12/02-08:56:20.863 1790 Delete type=3 #226
+2024/12/02-09:45:20.858 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.859 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.860 6ffc Delete type=0 #231
+2024/12/02-09:45:20.863 6ffc Manual compaction at level-0 from '!journal!046QF95KqmwhKtMn' @ 72057594037927935 : 1 .. '!journal.pages!zwqRlKDRwKecVQqW.rNv3FvisO4BptTDy' @ 0 : 0; will stop at (end)

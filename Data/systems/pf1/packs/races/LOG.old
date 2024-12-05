@@ -1,5 +1,7 @@
-2024/11/26-18:05:52.332 20f8 Log #127: 0 ops saved to Table #128 OK
-2024/11/26-18:05:52.333 20f8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\races/000127.log: OK
-2024/11/26-18:05:52.333 20f8 Table #125: 82 entries OK
-2024/11/26-18:05:52.341 20f8 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\races/MANIFEST-000126: OK
-2024/11/26-18:05:52.349 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\races; recovered 1 files; 147668 bytes. Some data may have been lost. ****
+2024/12/02-08:56:18.054 9504 Recovering log #147
+2024/12/02-08:56:18.058 9504 Delete type=0 #147
+2024/12/02-08:56:18.058 9504 Delete type=3 #145
+2024/12/02-09:45:20.767 6ffc Level-0 table #152: started
+2024/12/02-09:45:20.768 6ffc Level-0 table #152: 0 bytes OK
+2024/12/02-09:45:20.768 6ffc Delete type=0 #150
+2024/12/02-09:45:20.770 6ffc Manual compaction at level-0 from '!folders!CWHsfTdEmZohUkw1' @ 72057594037927935 : 1 .. '!items!zlWiqUqxCajrZRe3' @ 0 : 0; will stop at (end)

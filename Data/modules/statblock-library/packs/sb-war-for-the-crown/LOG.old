@@ -1,5 +1,7 @@
-2024/11/26-18:05:58.199 20f8 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:58.200 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown/000208.log: OK
-2024/11/26-18:05:58.201 20f8 Table #206: 363 entries OK
-2024/11/26-18:05:58.209 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown/MANIFEST-000207: OK
-2024/11/26-18:05:58.217 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-war-for-the-crown; recovered 1 files; 427629 bytes. Some data may have been lost. ****
+2024/12/02-08:56:21.510 9678 Recovering log #228
+2024/12/02-08:56:21.513 9678 Delete type=0 #228
+2024/12/02-08:56:21.514 9678 Delete type=3 #226
+2024/12/02-09:45:20.913 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.913 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.914 6ffc Delete type=0 #231
+2024/12/02-09:45:20.918 6ffc Manual compaction at level-0 from '!journal!0JYvLn5nk5IEpjUZ' @ 72057594037927935 : 1 .. '!journal.pages!zDdPbunuTeSVFcG0.ToToSVVFm91W3dxQ' @ 0 : 0; will stop at (end)

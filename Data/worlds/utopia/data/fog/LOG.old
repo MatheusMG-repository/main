@@ -1,7 +1,7 @@
-2024/11/26-18:05:51.242 20f8 Log #523: 0 ops saved to Table #524 OK
-2024/11/26-18:05:51.244 20f8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog/000523.log: OK
-2024/11/26-18:05:51.246 20f8 Table #515: 63 entries OK
-2024/11/26-18:05:51.249 20f8 Table #516: 84 entries OK
-2024/11/26-18:05:51.251 20f8 Table #517: 59 entries OK
-2024/11/26-18:05:51.258 20f8 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000522: OK
-2024/11/26-18:05:51.267 20f8 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/fog; recovered 3 files; 5655917 bytes. Some data may have been lost. ****
+2024/12/02-08:56:17.461 9678 Recovering log #553
+2024/12/02-08:56:17.464 9678 Delete type=0 #553
+2024/12/02-08:56:17.465 9678 Delete type=3 #551
+2024/12/02-09:45:20.697 6ffc Level-0 table #559: started
+2024/12/02-09:45:20.697 6ffc Level-0 table #559: 0 bytes OK
+2024/12/02-09:45:20.698 6ffc Delete type=0 #557
+2024/12/02-09:45:20.701 6ffc Manual compaction at level-0 from '!fog!0Qc0RwfJyLmFuAnK' @ 72057594037927935 : 1 .. '!fog!zuxtkhjyY7g9Tfug' @ 0 : 0; will stop at (end)

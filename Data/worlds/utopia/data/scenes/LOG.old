@@ -1,6 +1,14 @@
-2024/11/26-18:05:51.591 3104 Log #527: 185 ops saved to Table #528 OK
-2024/11/26-18:05:51.592 3104 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/000527.log: OK
-2024/11/26-18:05:51.600 3104 Table #525: 8739 entries OK
-2024/11/26-18:05:51.601 3104 Table #528: 185 entries OK
-2024/11/26-18:05:51.608 3104 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/MANIFEST-000526: OK
-2024/11/26-18:05:51.615 3104 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes; recovered 2 files; 1674315 bytes. Some data may have been lost. ****
+2024/12/02-08:56:17.618 9678 Recovering log #553
+2024/12/02-08:56:17.622 9678 Delete type=0 #553
+2024/12/02-08:56:17.622 9678 Delete type=3 #551
+2024/12/02-09:45:20.706 6ffc Level-0 table #559: started
+2024/12/02-09:45:20.708 6ffc Level-0 table #559: 53694 bytes OK
+2024/12/02-09:45:20.709 6ffc Delete type=0 #557
+2024/12/02-09:45:20.710 6ffc Manual compaction at level-0 from '!scenes!0OEZklkn24Bxj9Qr' @ 72057594037927935 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at '!scenes.walls!h9i856VIEI5zh6YV.zJ4mCG1h4WKwg9xn' @ 92659 : 1
+2024/12/02-09:45:20.710 6ffc Compacting 1@0 + 1@1 files
+2024/12/02-09:45:20.731 6ffc Generated table #560@0: 9743 keys, 1765695 bytes
+2024/12/02-09:45:20.731 6ffc Compacted 1@0 + 1@1 files => 1765695 bytes
+2024/12/02-09:45:20.732 6ffc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/02-09:45:20.733 6ffc Delete type=2 #555
+2024/12/02-09:45:20.733 6ffc Delete type=2 #559
+2024/12/02-09:45:20.744 6ffc Manual compaction at level-0 from '!scenes.walls!h9i856VIEI5zh6YV.zJ4mCG1h4WKwg9xn' @ 92659 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at (end)

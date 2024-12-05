@@ -1,5 +1,7 @@
-2024/11/26-18:05:57.339 2c7c Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:57.340 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne/000208.log: OK
-2024/11/26-18:05:57.341 2c7c Table #206: 340 entries OK
-2024/11/26-18:05:57.348 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne/MANIFEST-000207: OK
-2024/11/26-18:05:57.355 2c7c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-curse-crimson-throne; recovered 1 files; 315016 bytes. Some data may have been lost. ****
+2024/12/02-08:56:21.192 9678 Recovering log #228
+2024/12/02-08:56:21.195 9678 Delete type=0 #228
+2024/12/02-08:56:21.196 9678 Delete type=3 #226
+2024/12/02-09:45:20.886 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.887 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.888 6ffc Delete type=0 #231
+2024/12/02-09:45:20.888 6ffc Manual compaction at level-0 from '!journal!0WbwF76NtzyAsg9m' @ 72057594037927935 : 1 .. '!journal.pages!zPFqAh6FlCpsRZxH.tbBGDnDh7RZRLpPZ' @ 0 : 0; will stop at (end)

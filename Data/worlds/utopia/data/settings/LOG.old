@@ -1,6 +1,14 @@
-2024/11/26-18:05:51.693 3f2c Log #400: 22 ops saved to Table #401 OK
-2024/11/26-18:05:51.695 3f2c Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/000400.log: OK
-2024/11/26-18:05:51.695 3f2c Table #398: 26 entries OK
-2024/11/26-18:05:51.695 3f2c Table #401: 22 entries OK
-2024/11/26-18:05:51.702 3f2c Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings/MANIFEST-000399: OK
-2024/11/26-18:05:51.710 3f2c **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/settings; recovered 2 files; 15994 bytes. Some data may have been lost. ****
+2024/12/02-08:56:17.661 1790 Recovering log #422
+2024/12/02-08:56:17.666 1790 Delete type=0 #422
+2024/12/02-08:56:17.666 1790 Delete type=3 #420
+2024/12/02-09:45:20.733 6ffc Level-0 table #428: started
+2024/12/02-09:45:20.741 6ffc Level-0 table #428: 3146 bytes OK
+2024/12/02-09:45:20.742 6ffc Delete type=0 #426
+2024/12/02-09:45:20.745 6ffc Manual compaction at level-0 from '!settings!16sCqprH4MFy47UA' @ 72057594037927935 : 1 .. '!settings!yTnQXQl2gqw3CdqJ' @ 0 : 0; will stop at '!settings!xPVPfow8JAu6aJb5' @ 463 : 1
+2024/12/02-09:45:20.745 6ffc Compacting 1@0 + 1@1 files
+2024/12/02-09:45:20.747 6ffc Generated table #429@0: 45 keys, 11489 bytes
+2024/12/02-09:45:20.747 6ffc Compacted 1@0 + 1@1 files => 11489 bytes
+2024/12/02-09:45:20.748 6ffc compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/02-09:45:20.748 6ffc Delete type=2 #424
+2024/12/02-09:45:20.749 6ffc Delete type=2 #428
+2024/12/02-09:45:20.751 6ffc Manual compaction at level-0 from '!settings!xPVPfow8JAu6aJb5' @ 463 : 1 .. '!settings!yTnQXQl2gqw3CdqJ' @ 0 : 0; will stop at (end)

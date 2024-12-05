@@ -1,6 +1,7 @@
-2024/11/26-18:05:56.273 3f2c Log #214: 0 ops saved to Table #215 OK
-2024/11/26-18:05:56.274 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-bestiaries1-3/000214.log: OK
-2024/11/26-18:05:56.281 3f2c Table #211: 2309 entries OK
-2024/11/26-18:05:56.284 3f2c Table #212: 565 entries OK
-2024/11/26-18:05:56.293 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-bestiaries1-3/MANIFEST-000213: OK
-2024/11/26-18:05:56.301 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-bestiaries1-3; recovered 2 files; 2989648 bytes. Some data may have been lost. ****
+2024/12/02-08:56:20.606 a948 Recovering log #235
+2024/12/02-08:56:20.610 a948 Delete type=0 #235
+2024/12/02-08:56:20.610 a948 Delete type=3 #233
+2024/12/02-09:45:20.849 6ffc Level-0 table #240: started
+2024/12/02-09:45:20.849 6ffc Level-0 table #240: 0 bytes OK
+2024/12/02-09:45:20.850 6ffc Delete type=0 #238
+2024/12/02-09:45:20.852 6ffc Manual compaction at level-0 from '!journal!06b0geDZQUcGrRKB' @ 72057594037927935 : 1 .. '!journal.pages!zzuZcrJIArkiAmDB.q6nT5mzJxMaK4S2I' @ 0 : 0; will stop at (end)

@@ -1,5 +1,7 @@
-2024/11/26-18:05:52.957 20f8 Log #169: 0 ops saved to Table #170 OK
-2024/11/26-18:05:52.958 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\monks-active-tiles\packs\active-tile-macros/000169.log: OK
-2024/11/26-18:05:52.958 20f8 Table #167: 10 entries OK
-2024/11/26-18:05:52.965 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\monks-active-tiles\packs\active-tile-macros/MANIFEST-000168: OK
-2024/11/26-18:05:52.972 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\monks-active-tiles\packs\active-tile-macros; recovered 1 files; 6841 bytes. Some data may have been lost. ****
+2024/12/02-08:56:18.442 9504 Recovering log #189
+2024/12/02-08:56:18.446 9504 Delete type=0 #189
+2024/12/02-08:56:18.446 9504 Delete type=3 #187
+2024/12/02-09:45:20.780 6ffc Level-0 table #194: started
+2024/12/02-09:45:20.780 6ffc Level-0 table #194: 0 bytes OK
+2024/12/02-09:45:20.781 6ffc Delete type=0 #192
+2024/12/02-09:45:20.783 6ffc Manual compaction at level-0 from '!macros!0zAQ2jjR58HIam9C' @ 72057594037927935 : 1 .. '!macros!ufubQZzNsZMkf3oo' @ 0 : 0; will stop at (end)

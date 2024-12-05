@@ -1,5 +1,7 @@
-2024/11/26-18:05:56.659 20f8 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:56.660 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons/000208.log: OK
-2024/11/26-18:05:56.664 20f8 Table #206: 1392 entries OK
-2024/11/26-18:05:56.670 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons/MANIFEST-000207: OK
-2024/11/26-18:05:56.678 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-monsters-dragons; recovered 1 files; 1207648 bytes. Some data may have been lost. ****
+2024/12/02-08:56:20.826 a948 Recovering log #228
+2024/12/02-08:56:20.829 a948 Delete type=0 #228
+2024/12/02-08:56:20.829 a948 Delete type=3 #226
+2024/12/02-09:45:20.861 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.861 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.862 6ffc Delete type=0 #231
+2024/12/02-09:45:20.864 6ffc Manual compaction at level-0 from '!journal!0070gIsSCGsunvah' @ 72057594037927935 : 1 .. '!journal.pages!zkHVWKCUzuShLjCb.xIWWGVr26A77rFuX' @ 0 : 0; will stop at (end)

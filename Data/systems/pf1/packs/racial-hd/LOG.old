@@ -1,5 +1,7 @@
-2024/11/26-18:05:52.294 3f2c Log #127: 0 ops saved to Table #128 OK
-2024/11/26-18:05:52.295 3f2c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd/000127.log: OK
-2024/11/26-18:05:52.296 3f2c Table #125: 13 entries OK
-2024/11/26-18:05:52.302 3f2c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd/MANIFEST-000126: OK
-2024/11/26-18:05:52.310 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\racial-hd; recovered 1 files; 13911 bytes. Some data may have been lost. ****
+2024/12/02-08:56:18.040 9678 Recovering log #147
+2024/12/02-08:56:18.044 9678 Delete type=0 #147
+2024/12/02-08:56:18.044 9678 Delete type=3 #145
+2024/12/02-09:45:20.763 6ffc Level-0 table #152: started
+2024/12/02-09:45:20.763 6ffc Level-0 table #152: 0 bytes OK
+2024/12/02-09:45:20.764 6ffc Delete type=0 #150
+2024/12/02-09:45:20.766 6ffc Manual compaction at level-0 from '!items!0jjH2XJVd6dzlaSm' @ 72057594037927935 : 1 .. '!items!mp1Zmbx0OAzSW4oW' @ 0 : 0; will stop at (end)

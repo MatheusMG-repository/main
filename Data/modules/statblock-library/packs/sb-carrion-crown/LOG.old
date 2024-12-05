@@ -1,5 +1,7 @@
-2024/11/26-18:05:57.252 3f2c Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:57.253 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-carrion-crown/000208.log: OK
-2024/11/26-18:05:57.254 3f2c Table #206: 377 entries OK
-2024/11/26-18:05:57.261 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-carrion-crown/MANIFEST-000207: OK
-2024/11/26-18:05:57.269 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-carrion-crown; recovered 1 files; 344921 bytes. Some data may have been lost. ****
+2024/12/02-08:56:21.154 9678 Recovering log #228
+2024/12/02-08:56:21.158 9678 Delete type=0 #228
+2024/12/02-08:56:21.158 9678 Delete type=3 #226
+2024/12/02-09:45:20.879 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.879 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.880 6ffc Delete type=0 #231
+2024/12/02-09:45:20.882 6ffc Manual compaction at level-0 from '!journal!0IjGUyPwhouAF3s9' @ 72057594037927935 : 1 .. '!journal.pages!xlU7Iuac7PV6nMi4.z3KXFNO6bH26fVIT' @ 0 : 0; will stop at (end)

@@ -1,5 +1,7 @@
-2024/11/26-18:05:57.462 20f8 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:57.463 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance/000208.log: OK
-2024/11/26-18:05:57.465 20f8 Table #206: 431 entries OK
-2024/11/26-18:05:57.472 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance/MANIFEST-000207: OK
-2024/11/26-18:05:57.480 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-hells-vengeance; recovered 1 files; 489110 bytes. Some data may have been lost. ****
+2024/12/02-08:56:21.237 a948 Recovering log #228
+2024/12/02-08:56:21.241 a948 Delete type=0 #228
+2024/12/02-08:56:21.241 a948 Delete type=3 #226
+2024/12/02-09:45:20.882 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.883 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.884 6ffc Delete type=0 #231
+2024/12/02-09:45:20.888 6ffc Manual compaction at level-0 from '!journal!01BZncJaYlTIUw1p' @ 72057594037927935 : 1 .. '!journal.pages!zmvIEiiZwrzjaofy.uylExuSS00zvscQ7' @ 0 : 0; will stop at (end)

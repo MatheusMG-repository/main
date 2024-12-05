@@ -1,5 +1,7 @@
-2024/11/26-18:05:52.446 3104 Log #127: 0 ops saved to Table #128 OK
-2024/11/26-18:05:52.447 3104 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates/000127.log: OK
-2024/11/26-18:05:52.449 3104 Table #125: 189 entries OK
-2024/11/26-18:05:52.456 3104 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates/MANIFEST-000126: OK
-2024/11/26-18:05:52.463 3104 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\monster-templates; recovered 1 files; 485606 bytes. Some data may have been lost. ****
+2024/12/02-08:56:18.169 9504 Recovering log #147
+2024/12/02-08:56:18.173 9504 Delete type=0 #147
+2024/12/02-08:56:18.173 9504 Delete type=3 #145
+2024/12/02-09:45:20.769 6ffc Level-0 table #152: started
+2024/12/02-09:45:20.769 6ffc Level-0 table #152: 0 bytes OK
+2024/12/02-09:45:20.770 6ffc Delete type=0 #150
+2024/12/02-09:45:20.772 6ffc Manual compaction at level-0 from '!items!055IbpMbY3yfbwPb' @ 72057594037927935 : 1 .. '!items!zfZ7M3PGgvWeolOz' @ 0 : 0; will stop at (end)

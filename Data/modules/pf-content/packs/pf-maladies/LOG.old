@@ -1,5 +1,7 @@
-2024/11/26-18:05:53.906 2c7c Log #66: 0 ops saved to Table #67 OK
-2024/11/26-18:05:53.908 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies/000066.log: OK
-2024/11/26-18:05:53.908 2c7c Table #64: 101 entries OK
-2024/11/26-18:05:53.914 2c7c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies/MANIFEST-000065: OK
-2024/11/26-18:05:53.922 2c7c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-maladies; recovered 1 files; 61890 bytes. Some data may have been lost. ****
+2024/12/02-08:56:19.011 9678 Recovering log #86
+2024/12/02-08:56:19.015 9678 Delete type=0 #86
+2024/12/02-08:56:19.015 9678 Delete type=3 #84
+2024/12/02-09:45:20.814 6ffc Level-0 table #91: started
+2024/12/02-09:45:20.814 6ffc Level-0 table #91: 0 bytes OK
+2024/12/02-09:45:20.815 6ffc Delete type=0 #89
+2024/12/02-09:45:20.818 6ffc Manual compaction at level-0 from '!items!0EnpDBgxJ4wBHWCi' @ 72057594037927935 : 1 .. '!items!zw1id0psmxL1zBpK' @ 0 : 0; will stop at (end)

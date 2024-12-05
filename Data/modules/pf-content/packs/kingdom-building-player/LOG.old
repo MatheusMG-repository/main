@@ -1,5 +1,7 @@
-2024/11/26-18:05:54.496 20f8 Log #66: 0 ops saved to Table #67 OK
-2024/11/26-18:05:54.497 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-player/000066.log: OK
-2024/11/26-18:05:54.497 20f8 Table #64: 20 entries OK
-2024/11/26-18:05:54.504 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-player/MANIFEST-000065: OK
-2024/11/26-18:05:54.511 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-player; recovered 1 files; 51353 bytes. Some data may have been lost. ****
+2024/12/02-08:56:19.314 9504 Recovering log #86
+2024/12/02-08:56:19.318 9504 Delete type=0 #86
+2024/12/02-08:56:19.318 9504 Delete type=3 #84
+2024/12/02-09:45:20.833 6ffc Level-0 table #91: started
+2024/12/02-09:45:20.833 6ffc Level-0 table #91: 0 bytes OK
+2024/12/02-09:45:20.834 6ffc Delete type=0 #89
+2024/12/02-09:45:20.836 6ffc Manual compaction at level-0 from '!journal!4D6NWhqSsxKefHT5' @ 72057594037927935 : 1 .. '!journal!x9p7bQ8EhDnMuTX5' @ 0 : 0; will stop at (end)

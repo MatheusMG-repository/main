@@ -1,5 +1,7 @@
-2024/11/26-18:05:56.582 3f2c Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:56.583 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand/000208.log: OK
-2024/11/26-18:05:56.584 3f2c Table #206: 45 entries OK
-2024/11/26-18:05:56.591 3f2c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand/MANIFEST-000207: OK
-2024/11/26-18:05:56.598 3f2c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-dragons-demand; recovered 1 files; 34737 bytes. Some data may have been lost. ****
+2024/12/02-08:56:20.799 a948 Recovering log #228
+2024/12/02-08:56:20.803 a948 Delete type=0 #228
+2024/12/02-08:56:20.803 a948 Delete type=3 #226
+2024/12/02-09:45:20.860 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.860 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.861 6ffc Delete type=0 #231
+2024/12/02-09:45:20.864 6ffc Manual compaction at level-0 from '!journal!0oi7f13IW6WzNKTS' @ 72057594037927935 : 1 .. '!journal.pages!v9jdNUNquj3rrJwW.jJoKxsC2UeexNEDC' @ 0 : 0; will stop at (end)

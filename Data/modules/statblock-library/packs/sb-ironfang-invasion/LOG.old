@@ -1,5 +1,7 @@
-2024/11/26-18:05:57.550 20f8 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:57.551 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion/000208.log: OK
-2024/11/26-18:05:57.552 20f8 Table #206: 481 entries OK
-2024/11/26-18:05:57.559 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion/MANIFEST-000207: OK
-2024/11/26-18:05:57.566 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion; recovered 1 files; 508492 bytes. Some data may have been lost. ****
+2024/12/02-08:56:21.268 1790 Recovering log #228
+2024/12/02-08:56:21.272 1790 Delete type=0 #228
+2024/12/02-08:56:21.272 1790 Delete type=3 #226
+2024/12/02-09:45:20.885 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.885 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.886 6ffc Delete type=0 #231
+2024/12/02-09:45:20.888 6ffc Manual compaction at level-0 from '!journal!0HdTX8K96Q6Cp87D' @ 72057594037927935 : 1 .. '!journal.pages!zuENFL0Mnnm5Pi86.XiriPyx0FrrW3DuE' @ 0 : 0; will stop at (end)

@@ -1,5 +1,7 @@
-2024/11/26-18:05:57.298 20f8 Log #208: 0 ops saved to Table #209 OK
-2024/11/26-18:05:57.299 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-council-of-thieves/000208.log: OK
-2024/11/26-18:05:57.300 20f8 Table #206: 318 entries OK
-2024/11/26-18:05:57.307 20f8 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-council-of-thieves/MANIFEST-000207: OK
-2024/11/26-18:05:57.314 20f8 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-council-of-thieves; recovered 1 files; 347679 bytes. Some data may have been lost. ****
+2024/12/02-08:56:21.170 a948 Recovering log #228
+2024/12/02-08:56:21.173 a948 Delete type=0 #228
+2024/12/02-08:56:21.173 a948 Delete type=3 #226
+2024/12/02-09:45:20.878 6ffc Level-0 table #233: started
+2024/12/02-09:45:20.878 6ffc Level-0 table #233: 0 bytes OK
+2024/12/02-09:45:20.879 6ffc Delete type=0 #231
+2024/12/02-09:45:20.882 6ffc Manual compaction at level-0 from '!journal!01Lq8r5BRyqrH76Y' @ 72057594037927935 : 1 .. '!journal.pages!zrXBliBBUThBluBu.AprSEwg1g0Qkou53' @ 0 : 0; will stop at (end)

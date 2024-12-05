@@ -10,6 +10,20 @@
     "verified": "11.315"
   },
   "systemVersion": "10.3",
-  "lastPlayed": "Tue Nov 26 2024 18:05:51 GMT+0000 (Greenwich Mean Time)",
-  "playtime": 164271
+  "lastPlayed": "Tue Dec 03 2024 06:36:16 GMT+0000 (Western European Standard Time)",
+  "playtime": 171475,
+  "packs": [
+    {
+      "label": "test",
+      "type": "RollTable",
+      "name": "test",
+      "path": "packs/test",
+      "system": "pf1",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ]
 }
