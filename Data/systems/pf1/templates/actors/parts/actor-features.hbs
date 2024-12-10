@@ -12,7 +12,7 @@
   <ol class="item-groups-list">
   {{#each sections as |section sid|}}
   {{#unless section._hidden}}
-    <ol class="item-list sub-scroll scroll-feats feats-{{sid}}" data-type="feat" data-subtype="{{sid}}">
+    <ol class="item-list sub-scroll scroll-feats feats-{{id}}" data-list="{{id}}" data-type="{{create.type}}" data-subtype="{{create.system.subType}}">
       <li class="item-list-header flexrow">
         <div class="item-name">
           <h3>{{section.label}}</h3>
@@ -45,7 +45,7 @@
       </li>
 
       {{#each section.items as |item iid|}}
-      <li class="item flexrow{{#unless isCharged}} uncharged{{/unless}}{{#if item.disabled}} disabled{{/if}}" data-item-id="{{item.id}}">
+      <li class="item flexrow{{#unless isCharged}} uncharged{{/unless}}{{#if item.disabled}} disabled{{/if}}" data-item-id="{{item.id}}" data-ability-type="{{abilityType}}">
         <div class="item-name rollable">
           <div class="item-image" style='background-image: url("{{item.img}}")' data-tooltip="PF1.DisplayInChat"></div>
           <h4>{{item.name}}</h4>

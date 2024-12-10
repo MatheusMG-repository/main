@@ -2,7 +2,7 @@
   "id": "pf1",
   "title": "Pathfinder 1e",
   "description": "A comprehensive implementation of the Pathfinder 1e tabletop RPG.",
-  "version": "10.3",
+  "version": "10.8",
   "authors": [
     {
       "name": "Furyspark",
@@ -32,6 +32,13 @@
     "pf1.css"
   ],
   "packFolders": [
+    {
+      "name": "Actors",
+      "packs": [
+        "basic-monsters"
+      ],
+      "color": "#CE5C00"
+    },
     {
       "name": "Equipment",
       "packs": [
@@ -81,6 +88,14 @@
     }
   ],
   "packs": [
+    {
+      "name": "basic-monsters",
+      "label": "Basic Monsters",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
     {
       "name": "classes",
       "label": "Classes",
@@ -306,8 +321,9 @@
       "thumbnail": "systems/pf1/pf1-logo.webp"
     }
   ],
+  "changelog": "https://gitlab.com/foundryvtt_pathfinder1e/foundryvtt-pathfinder1/-/blob/master/CHANGELOG.md",
   "bugs": "https://gitlab.com/foundryvtt_pathfinder1e/foundryvtt-pathfinder1/-/issues",
   "url": "https://gitlab.com/foundryvtt_pathfinder1e/foundryvtt-pathfinder1",
   "manifest": "https://gitlab.com/foundryvtt_pathfinder1e/foundryvtt-pathfinder1/-/releases/permalink/latest/downloads/system.json",
-  "download": "https://gitlab.com/foundryvtt_pathfinder1e/foundryvtt-pathfinder1/-/releases/v10.3/downloads/pf1.zip"
+  "download": "https://gitlab.com/foundryvtt_pathfinder1e/foundryvtt-pathfinder1/-/releases/v10.8/downloads/pf1.zip"
 }

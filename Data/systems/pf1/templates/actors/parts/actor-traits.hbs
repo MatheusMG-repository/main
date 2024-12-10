@@ -13,7 +13,7 @@
     </select>
   </div>
 
-  <div class="form-group">
+  <div class="form-group senses">
     <label>{{localize "PF1.Senses"}}</label>
     <ul class="traits-list tag-list">
       {{#each labels.senses as |v k|}}
@@ -66,6 +66,11 @@
     {{/each}}
     </ul>
     <a class="trait-selector" data-for="system.traits.di" data-options="damageTypes"><i class="fas fa-edit"></i></a>
+  </div>
+
+  <div class="form-group hardness {{#unless system.traits.hardness}}inactive{{/unless}}" data-tooltip-extended="hardness">
+    <label>{{localize "PF1.Hardness"}}</label>
+    <input type="number" name="system.traits.hardness" value="{{system.traits.hardness}}" placeholder="{{localize "PF1.None"}}">
   </div>
 
   <div class="form-group damage-vulnerability {{system.traits.dv.cssClass}}" data-tooltip-extended="damageVulnerability">

@@ -706,6 +706,7 @@ A full list of the enumeration values provided by libWrapper follows:
 static get WRAPPER()  { /* ... */ };
 static get MIXED()    { /* ... */ };
 static get OVERRIDE() { /* ... */ };
+static get LISTENER() { /* ... */ };
 
 static get PERF_NORMAL() { /* ... */ };
 static get PERF_AUTO()   { /* ... */ };

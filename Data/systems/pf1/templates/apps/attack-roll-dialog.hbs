@@ -11,7 +11,7 @@
     <label>{{localize "PF1.Rolls.Bonus"}}</label>
     <div class="form-fields">
       <i class="fa-solid fa-plus-minus fa-fw"></i>
-      <input class="attribute" type="text" name="attack-bonus" value="{{attributes.attack-bonus}}" placeholder="{{localize "PF1.Rolls.BonusHint"}}">
+      <input class="attribute" type="text" name="attack-bonus" value="{{attributes.attack-bonus}}" placeholder="{{localize "PF1.Rolls.BonusHint"}}" autofocus>
     </div>
   </div>
   {{/if}}
@@ -147,7 +147,7 @@
         <div class="ammo ammo-select">
           <div class="flexrow">
             {{#if atk.ammo}}
-              <img src="{{atk.ammo.data.img}}"></img>
+              <img src="{{atk.ammo.data.img}}">
               <span>{{atk.ammo.data.name}}</span>
             {{else}}
               <span class="no-ammo-selected"><i class="fa-solid fa-triangle-exclamation"></i> {{localize "PF1.NotSelected"}}</span>
@@ -167,7 +167,7 @@
             {{!-- Ammo items --}}
             {{#each @root.ammo as |ammo|}}
               <li class="ammo-item{{#if ammo.isDefault}} default{{/if}}" data-id="{{ammo.data._id}}">
-                <img src="{{ammo.data.img}}"></img>
+                <img src="{{ammo.data.img}}">
                 <span>{{ammo.data.name}} ({{ammo.data.system.quantity}})</span>
 
                 <div class="controls">

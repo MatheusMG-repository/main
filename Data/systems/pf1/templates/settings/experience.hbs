@@ -14,12 +14,7 @@
     <label for="xp-track">{{localize "PF1.SETTINGS.Experience.Track.Label"}}</label>
     <div class="form-fields">
       <select name="track" id="xp-track">
-        {{#select track}}
-        <option value="slow">{{localize "PF1.SETTINGS.Experience.Track.Options.Slow"}}</option>
-        <option value="medium">{{localize "PF1.SETTINGS.Experience.Track.Options.Medium"}}</option>
-        <option value="fast">{{localize "PF1.SETTINGS.Experience.Track.Options.Fast"}}</option>
-        <option value="custom">{{localize "PF1.SETTINGS.Experience.Track.Options.Custom"}}</option>
-        {{/select}}
+        {{selectOptions progressionOptions selected=track localize=true}}
       </select>
     </div>
     <p class="notes">{{localize "PF1.SETTINGS.Experience.Track.Hint"}}</p>
@@ -32,6 +27,10 @@
       <input type="text" class="formula" placeholder="{{localize "PF1.SETTINGS.Experience.Track.CustomPlaceholder"}}" name="custom.formula" value="{{custom.formula}}">
     </div>
   </div>
+  <p class="info">
+    <i class="fa-solid fa-circle-info"></i>
+    {{{localize "PF1.SETTINGS.Experience.Track.CustomUsage"}}}
+  </p>
   {{/if}}
 
   <div class="form-group">

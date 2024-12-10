@@ -78,24 +78,26 @@
   <input class="formula" type="text" name="system.uses.maxFormula" value="{{system.uses.maxFormula}}" placeholder="{{localize "PF1.MaximumUsesFormula"}}">
 </div>
 {{/if}}
-<div class="form-group charges-per-use">
+<div class="form-group charges-per-use" data-tooltip="PF1.ChargeCostItemFormulaHint">
   <label>{{localize "PF1.ChargeCostFormula"}}</label>
   <div class="form-fields">
     <input class="formula" type="text" name="system.uses.autoDeductChargesCost" value="{{system.uses.autoDeductChargesCost}}" placeholder="{{defaultChargeFormula}}">
   </div>
 </div>
 {{#if isRechargeable}}
-<div class="form-group charges-per-rest">
+<div class="form-group charges-per-recharge" data-tooltip="PF1.RechargeFormulaHint">
   <label>{{localize "PF1.RechargeFormula"}}</label>
   <div class="form-fields">
     <input class="formula" type="text" name="system.uses.rechargeFormula" value="{{system.uses.rechargeFormula}}" placeholder="@item.uses.max" {{disabled inheritCharges}}>
   </div>
 </div>
 {{/if}}
-{{#if (and isPhysical document.hasFiniteCharges)}}
+{{#if (and isPhysical item.hasFiniteCharges)}}
   <div class="form-group">
     <label>{{localize "PF1.PricePerCharge"}}</label>
-    <input type="text" name="system.uses.pricePerUse" value="{{system.uses.pricePerUse}}" placeholder="0" type="Number">
+    <div class="form-fields">
+      <input type="text" name="system.uses.pricePerUse" value="{{system.uses.pricePerUse}}" placeholder="0" type="Number">
+    </div>
   </div>
 {{/if}}
 {{/if}}

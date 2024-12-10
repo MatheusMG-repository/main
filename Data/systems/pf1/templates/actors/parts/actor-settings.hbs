@@ -29,6 +29,7 @@
 {{> "systems/pf1/templates/actors/parts/actor-settings-ability-scores.hbs"}}
 
 {{!-- Optional Rules --}}
+{{#if useWoundThresholds}}
 <div class="optional-rules">
   <h2>{{localize "PF1.OptionalAndVariantRules"}}</h2>
 
@@ -37,16 +38,12 @@
     <label>{{localize "PF1.WoundThresholdOverride"}}</label>
     <div class="form-fields">
       <select data-dtype="Number" name="system.attributes.woundThresholds.override" {{#unless woundThresholds.allowWoundThresholdOverride}}disabled{{/unless}}>
-      {{#select system.attributes.woundThresholds.override}}
-        <option value="-1">{{localize 'PF1.Default'}}</option>
-        <option value="0">{{localize 'PF1.SETTINGS.Health.WoundThresholds.Disabled'}}</option>
-        <option value="1">{{localize 'PF1.SETTINGS.Health.WoundThresholds.Normal'}}</option>
-        <option value="2">{{localize 'PF1.SETTINGS.Health.WoundThresholds.Gritty'}}</option>
-      {{/select}}
+        {{selectOptions woundThresholdOptions selected=system.attributes.woundThresholds.override localize=true}}
       </select>
     </div>
   </div>
 </div>
+{{/if}}
 
 {{!-- Tooltip Settings --}}
 {{#if isGM}}

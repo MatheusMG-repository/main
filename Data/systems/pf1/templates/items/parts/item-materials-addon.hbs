@@ -1,3 +1,4 @@
+{{#if materialCategories.addons.length}}
 <div class="form-group stacked">
   <h4 class="form-header">
     {{#if label}}
@@ -9,9 +10,10 @@
   <div class="form-group stacked material-addons">
     {{#each materialCategories.addons}}
     <label class="checkbox">
-      <input type="checkbox" value="{{key}}" name="{{../reference}}.{{key}}" {{checked (lookup @root.materialAddons key)}}/>
+      <input type="checkbox" value="{{key}}" name="{{../reference}}.{{key}}" {{checked (lookup @root.materialAddons key)}}>
       {{localize name}}
     </label>
     {{/each}}
   </div>
 </div>
+{{/if}}

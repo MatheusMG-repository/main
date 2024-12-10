@@ -307,7 +307,7 @@
           </div>
 
           <div class="item-detail item-button">
-            {{#if @root.levelUp}}
+            {{#if (or @root.levelUp item.xpUnbound)}}
             <button type="button" class="level-up" data-item-id="{{item.id}}">{{localize "PF1.LevelUp.Action"}}</button>
             {{/if}}
           </div>

@@ -2,7 +2,7 @@
   <div class="form-group">
     <label>{{localize "PF1.Name"}}</label>
     <div class="form-fields">
-      <input type="text" name="skill.name" value="{{skill.name}}" data-dtype="String"{{#if skill.static}} disabled{{/if}} required>
+      <input type="text" name="skill.name" value="{{skill.name}}" {{disabled skill.static}} required>
     </div>
   </div>
 
@@ -10,29 +10,31 @@
   <div class="form-group">
     <label>{{localize "PF1.Tag"}}</label>
     <div class="form-fields">
-      <input type="text" name="tag" value="{{skill.tag}}" data-dtype="String" required>
+      <input type="text" name="tag" value="{{skill.tag}}" required>
     </div>
   </div>
+  {{else}}
+  <input type="hidden" name="tag" value="{{skill.tag}}">
   {{/unless}}
 
   <div class="form-group">
     <label>{{localize "PF1.Rank"}}</label>
     <div class="form-fields">
-      <input type="text" name="skill.rank" value="{{skill.rank}}" data-dtype="Number" min="0" step="1">
+      <input type="number" name="skill.rank" value="{{skill.rank}}" min="0" step="1">
     </div>
   </div>
 
   <div class="form-group">
     <label>{{localize "PF1.ACPLong"}}</label>
     <div class="form-fields">
-      <input type="checkbox" name="skill.acp" {{checked skill.acp}} data-dtype="Boolean">
+      <input type="checkbox" name="skill.acp" {{checked skill.acp}}>
     </div>
   </div>
 
   <div class="form-group">
     <label>{{localize "PF1.RTTooltip"}}</label>
     <div class="form-fields">
-      <input type="checkbox" name="skill.rt" {{checked skill.rt}} data-dtype="Boolean">
+      <input type="checkbox" name="skill.rt" {{checked skill.rt}}>
     </div>
   </div>
 

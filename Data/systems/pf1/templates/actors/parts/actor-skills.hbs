@@ -20,7 +20,7 @@
   </a>
 
   {{#unless arbitrary}}
-  <span class="text-box skill-mod" data-tooltip="PF1.SkillModTooltip">{{numberFormat mod decimals=0 sign=true}}</span>
+  <span class="text-box skill-mod readonly" data-tooltip="PF1.SkillModTooltip">{{numberFormat mod decimals=0 sign=true}}</span>
   <span class="text-box skill-rank allow-relative" name="system.skills.{{path}}.rank" data-min="0" data-step="1" data-dtype="Number" data-tooltip="PF1.SkillRankPlural" data-placeholder="{{localize "PF1.Rank"}}">{{#if rank}}{{rank}}{{/if}}</span>
   <label class="checkbox skill-cs" data-tooltip="PF1.CSTooltip">
     <abbr>{{localize "PF1.CS"}}</abbr>

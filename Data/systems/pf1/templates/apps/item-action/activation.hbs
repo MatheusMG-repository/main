@@ -2,8 +2,13 @@
 <div class="form-group input-select activation-cost">
   <label>{{localize "PF1.ActivationCost"}}</label>
   <div class="form-fields">
-    <input type="number" name="activation{{#if unchainedActionEconomy}}.unchained{{/if}}.cost"
-      value="{{@root.activation.cost}}" data-dtype="Number" placeholder="1" min="0">
+    <input name="activation{{#if unchainedActionEconomy}}.unchained{{/if}}.cost"
+      {{#if (eq action.activation.type "special")}}
+      type="text"
+      {{else}}
+      type="number" placeholder="1" min="0"
+      {{/if}}
+      value="{{@root.activation.cost}}">
     <select name="activation{{#if unchainedActionEconomy}}.unchained{{/if}}.type">
       {{selectOptions @root.abilityActivationTypes selected=@root.activation.type}}
     </select>
@@ -106,15 +111,7 @@
   <label>{{localize "PF1.AmmunitionType"}}</label>
   <div class="form-fields">
     <select name="ammo.type">
-    {{#select data.ammo.type}}
-      <option value="none">{{localize "PF1.None"}}</option>
-      {{#if inheritedAmmoType}}
-      <option value="">{{localize "PF1.InheritAs" inherited=(lookup @root.config.ammoTypes inheritedAmmoType)}}</option>
-      {{/if}}
-      {{#each @root.config.ammoTypes as |name type|}}
-      <option value="{{type}}">{{name}}</option>
-      {{/each}}
-    {{/select}}
+      {{selectOptions ammoTypes selected=data.ammo.type}}
     </select>
   </div>
 </div>
@@ -155,7 +152,7 @@
     {{localize "PF1.ChargeCost"}}
     {{/if}}
   </label>
-  <div class="form-fields">
+  <div class="form-fields" data-tooltip="PF1.ChargeCostActionFormulaHint">
     {{#if usesSpellPoints}}
     <input class="formula" type="text" name="uses.spellPointCost" placeholder="{{defaultChargeFormula}}" value="{{data.uses.spellPointCost}}">
     {{else}}

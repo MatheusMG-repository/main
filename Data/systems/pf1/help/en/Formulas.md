@@ -114,6 +114,12 @@ Alters a damage roll to that of another size category.
 | `7`     | Gargantuan |
 | `8`     | Colossal   |
 
+Normally you should not need the fourth parameter. It's mainly useful if you have damage for non-medium character and use that info to fill the first two parameters, then the fourth parameter should include the size for which the first two were for.
+
+The function does not really do anything useful with less than 3 parameters provided.
+
+You can also use `@item.size` to use the item's own size instead of `@size` which refers to actor's size.
+
 ### `sizeReach`
 
 Generates a number equal to the reach of a creature of a certain size and stature.

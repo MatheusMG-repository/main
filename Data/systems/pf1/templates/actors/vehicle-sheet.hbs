@@ -54,7 +54,7 @@
         <h3>{{localize "PF1.Defenses"}}</h3>
 
         {{! AC }}
-        <div class="info-box ac">
+        <div class="info-box ac" data-tooltip-extended="ac.vehicle">
           <h5>{{localize "PF1.ACNormal"}}</h5>
           <span class="value">
             <input name="system.attributes.ac.normal.base" type="number" value="{{system.attributes.ac.normal.base}}" data-dtype="Number" step="1" placeholder="{{localize "PF1.NonApplicable"}}">
@@ -77,7 +77,7 @@
       </div>
 
       {{!-- Hit Points --}}
-      <div class="health info-box-header">
+      <div class="health info-box-header" data-tooltip-extended="hp">
         <h3>{{localize "PF1.HitPoints"}}</h3>
 
         <div class="info-box-joined">
@@ -112,22 +112,22 @@
           </span>
         </div>
         {{! CMB }}
-        <div class="info-box attribute attack cmb">
+        <div class="info-box attribute attack cmb" data-tooltip-extended="cmb">
           <h5><a class="rollable" data-type="cmb" data-ranged="false"><i class="fas fa-dice"></i> <span>{{localize "PF1.CMBAbbr"}}</span></a></h5>
           <span class="value">
-            <input name="system.abilities.str.value" value="{{system.abilities.str.value}}" type="number" data-dtype="Number" placeholder="{{localize "PF1.NonApplicable"}}">
+            <span class="text-box direct wheel-change allow-relative cmb-current-input" name="system.abilities.str.value" data-dtype="Number">{{system.attributes.cmb.total}}</span>
           </span>
         </div>
         {{! CMD }}
-        <div class="info-box">
+        <div class="info-box" data-tooltip-extended="cmd.total">
           <h5>{{localize "PF1.CMDAbbr"}}</h5>
           <span class="value">
-            <input name="system.attributes.cmd.value" value="{{system.attributes.cmd.value}}" type="number" data-dtype="Number" placeholder="{{localize "PF1.NonApplicable"}}">
+            <span class="text-box direct wheel-change allow-relative cmd-current-input" name="system.attributes.cmd.value" data-dtype="Number">{{system.attributes.cmd.total}}</span>
           </span>
         </div>
 
         {{!-- Initiative --}}
-        <div class="info-box attribute initiative">
+        <div class="info-box attribute initiative" data-tooltip-extended="init">
           <h5><a class="rollable"><i class="fas fa-dice"></i> <span>{{localize "PF1.Initiative"}}</span></a></h5>
           <span class="value">
             <span class="text-box direct allow-relative" name="system.attributes.init.value" data-dtype="Number">
@@ -197,8 +197,8 @@
           <ol class="item-groups-list">
           {{#each attacks as |section sid|}}
           {{#unless section._hidden}}
-            <ol class="item-list" data-type="attack" data-subtype="{{sid}}">
-              <li class="item-list-header flexrow attacks-{{sid}}">
+            <ol class="item-list" data-list="{{id}}" data-type="{{create.type}}" data-subtype="{{create.system.subType}}">
+              <li class="item-list-header flexrow attacks-{{id}}">
                 <div class="item-name">
                   <h3>{{section.label}}</h3>
                 </div>
@@ -222,7 +222,7 @@
 
               {{#each section.items as |item iid|}}
               <li class="item flexrow" data-item-id="{{item.id}}">
-                <div class="item-name flexrow rollable">
+                <div class="item-name rollable">
                   <div class="item-image" style='background-image: url("{{item.img}}")'></div>
                   <h4>
                     {{item.name~}}

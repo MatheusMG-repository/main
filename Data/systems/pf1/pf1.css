@@ -18,8 +18,11 @@
   --pf1-damage-icon-size: 4rem;
 }
 @keyframes dice-spin {
-  100% {
-    transform: rotate(1turn);
+  from {
+    transform: rotate(0) scale(1.2);
+  }
+  to {
+    transform: rotate(1turn) scale(1.2);
   }
 }
 :root {
@@ -142,23 +145,28 @@
   flex: 1;
   display: flex;
   flex-flow: column;
-  padding: 1px 3px;
   align-items: center;
   justify-content: center;
-  line-height: 1.5em;
+  padding: 1px 3px;
+  line-height: 1.5;
 }
 .pf1 .info-box .value > select {
   width: 100%;
 }
 .pf1 .info-box .value > input {
   text-align: center;
-  line-height: inherit;
-  height: unset;
-  border: 1px solid transparent;
-  background-color: unset;
+  padding: unset;
+  background-color: var(--pf1-bg-dark-0);
 }
 .pf1 .info-box .value > input:hover {
   border: unset;
+}
+.pf1 .info-box input {
+  line-height: 1.5;
+  height: unset;
+}
+.pf1 .info-box input:is([type="text"], [type="number"]) {
+  border: 1px solid transparent;
 }
 .pf1 .info-box-joined {
   display: flex;
@@ -314,63 +322,23 @@
   color: var(--color-text-dark-primary);
   overflow: hidden;
 }
-.pf1 input[type="text"],
-.pf1 input[type="number"],
-.pf1 select {
+.pf1 :is(input[type="text"], input[type="number"], select) {
   border: 1px solid var(--pf1-tan);
   background: var(--pf1-bg-dark-0);
   color: var(--color-text-dark-primary);
 }
-.pf1 input[type="text"]:hover:not(:disabled),
-.pf1 input[type="number"]:hover:not(:disabled),
-.pf1 input[type="text"]:focus:not(:disabled),
-.pf1 input[type="number"]:focus:not(:disabled),
-.pf1 input[type="text"]:hover:not([disabled]),
-.pf1 input[type="number"]:hover:not([disabled]),
-.pf1 input[type="text"]:focus:not([disabled]),
-.pf1 input[type="number"]:focus:not([disabled]) {
+.pf1 form.editable input:is([type="text"], [type="number"]):is(:hover, :focus):not(:disabled, [disabled], :read-only) {
   border: 1px solid #111;
   box-shadow: 0 0 8px red;
 }
-.pf1 input:disabled,
-.pf1 select:disabled,
-.pf1 textarea:disabled,
-.pf1 input:disabled,
-.pf1 input[disabled],
-.pf1 select[disabled],
-.pf1 textarea[disabled],
-.pf1 input[disabled],
-.pf1 input:readonly,
-.pf1 select:readonly,
-.pf1 textarea:readonly,
-.pf1 input:readonly {
-  color: var(--pf1-olive);
+.pf1 form.editable :is(select, input[type="checkbox"]):is(:hover, :focus):not(:disabled, [disabled]) {
+  border: 1px solid #111;
+  box-shadow: 0 0 8px red;
 }
-.pf1 input:disabled:hover,
-.pf1 select:disabled:hover,
-.pf1 textarea:disabled:hover,
-.pf1 input:disabled:hover,
-.pf1 input[disabled]:hover,
-.pf1 select[disabled]:hover,
-.pf1 textarea[disabled]:hover,
-.pf1 input[disabled]:hover,
-.pf1 input:readonly:hover,
-.pf1 select:readonly:hover,
-.pf1 textarea:readonly:hover,
-.pf1 input:readonly:hover,
-.pf1 input:disabled:focus,
-.pf1 select:disabled:focus,
-.pf1 textarea:disabled:focus,
-.pf1 input:disabled:focus,
-.pf1 input[disabled]:focus,
-.pf1 select[disabled]:focus,
-.pf1 textarea[disabled]:focus,
-.pf1 input[disabled]:focus,
-.pf1 input:readonly:focus,
-.pf1 select:readonly:focus,
-.pf1 textarea:readonly:focus,
-.pf1 input:readonly:focus {
-  box-shadow: none !important;
+.pf1 :is(input, textarea, select):is(:disabled, [disabled]),
+.pf1 input:is([type="text"], [type="number"]):read-only {
+  color: var(--pf1-olive);
+  opacity: 0.7;
 }
 .pf1 label.checkbox {
   white-space: nowrap;
@@ -738,10 +706,6 @@
 .pf1.sheet a > .icon-pf:hover {
   opacity: 0.5;
 }
-.pf1.sheet .icon-pf {
-  width: 24px;
-  height: 24px;
-}
 .pf1.sheet div.info {
   text-align: center;
   justify-content: center;
@@ -864,18 +828,6 @@
   flex: 1;
 }
 /* ----------------------------------------- */
-/* Changelog
-/* ----------------------------------------- */
-.pf1.changelog .content {
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--pf1-scrollbar-handle) var(--pf1-scrollbar-background);
-  max-height: 640px;
-}
-.pf1.changelog .content li > ul {
-  margin: 0;
-}
-/* ----------------------------------------- */
 /* Script Editor
 /* ----------------------------------------- */
 .pf1.script-editor .form-group.command {
@@ -925,6 +877,8 @@
   font-size: var(--pf1-damage-icon-size);
   text-shadow: 0 0 4px black;
   background: none;
+  width: 64px;
+  height: 64px;
 }
 .pf1.damage-type-selector .damage-type-container .damage-modifiers {
   overflow-y: auto;
@@ -1112,6 +1066,9 @@
 .app.pf1.troubleshooter form .hint {
   padding: 0 10%;
 }
+.app.pf1.troubleshooter form .options label.checkbox {
+  white-space: unset;
+}
 .app.pf1.troubleshooter form.migrating button .progress.spinner {
   visibility: visible;
 }
@@ -1274,6 +1231,7 @@
   width: 48px;
   height: 48px;
   margin: 2px;
+  border: none;
 }
 .app.pf1.compendium-browser .window-content > div .directory-container .directory-list .directory-item .entry-name {
   margin-left: 4px;
@@ -1326,17 +1284,20 @@
 }
 .app.pf1.trait-selector form {
   height: 100%;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: fit-content 2em 2em;
+  display: flex;
+  flex-flow: column nowrap;
 }
 .app.pf1.trait-selector form .trait-list {
+  flex: 1;
   list-style: none;
   margin: 0;
   padding: 0;
   overflow: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--pf1-scrollbar-handle) var(--pf1-scrollbar-background);
+}
+.app.pf1.trait-selector form .trait-list li.search-mismatch {
+  display: none;
 }
 .app.pf1.trait-selector form .custom-tags {
   display: flex;
@@ -2193,7 +2154,7 @@
 }
 .pf1.help-browser {
   min-height: 420px;
-  min-width: 720px;
+  min-width: 540px;
 }
 .pf1.help-browser section.window-content {
   padding: 0;
@@ -2202,13 +2163,15 @@
   color: var(--color-text-hyperlink);
   text-decoration: underline;
 }
-.pf1.help-browser section.window-content .articles ul {
+.pf1.help-browser section.window-content [data-url="helphome"] ul {
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   line-height: 1.5rem;
   column-gap: 1rem;
+  padding: 0;
 }
-.pf1.help-browser section.window-content .articles ul > li {
+.pf1.help-browser section.window-content [data-url="helphome"] ul > li {
   margin: 0;
 }
 .pf1.help-browser section.window-content .top-bar {
@@ -2282,12 +2245,20 @@
 .pf1.sheet.change-editor form input[type="text"]:invalid {
   border: var(--pf1-invalid-input-border);
   background: url(apps/icons/misc/hazard-sign.svg) no-repeat 95% 50% var(--pf1-bg-dark-0);
+  background-size: contain;
 }
 .pf1.sheet.change-editor form select:invalid {
   border: var(--pf1-invalid-input-border);
   background: url(apps/icons/misc/hazard-sign.svg) no-repeat 75% 50% var(--pf1-bg-dark-0);
+  background-size: contain;
+}
+.pf1.sheet.change-editor form .formula-type {
+  display: flex;
+  flex-flow: row nowrap;
 }
 .pf1.sheet.change-editor form .radio {
+  flex: 0;
+  gap: 0.5em;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -2296,10 +2267,15 @@
   flex-flow: row nowrap;
   gap: 0 0.3em;
   line-height: 1.5;
-  align-items: center;
+  font-weight: normal;
+}
+.pf1.sheet.change-editor form .radio > label.disabled {
+  color: var(--pf1-olive);
+  opacity: 0.8;
 }
 .pf1.sheet.change-editor form .radio > label > input {
-  height: unset;
+  flex: 0 16px;
+  height: 16px;
   flex: unset;
   top: unset;
   margin: unset;
@@ -2364,6 +2340,67 @@
   flex: 4 12em;
   align-self: end;
 }
+.app.pf1.changelog form {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  gap: 0.5em;
+}
+.app.pf1.changelog form header {
+  text-align: center;
+}
+.app.pf1.changelog form nav {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0 3px;
+  border-bottom: var(--pf1-border-groove);
+  background: rgba(155, 155, 155, 0.3);
+  border-radius: 12px 12px 0 0;
+  font-size: var(--font-size-18);
+}
+.app.pf1.changelog form nav > .item {
+  line-height: var(--pf1-nav-height);
+  height: var(--pf1-nav-height);
+  margin: 0;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 12px 12px 0 0;
+  flex: 1;
+}
+.app.pf1.changelog form nav > .item:hover {
+  background: rgba(155, 155, 155, 0.2);
+}
+.app.pf1.changelog form nav > .item.active {
+  background: rgba(155, 155, 155, 0.5);
+}
+.app.pf1.changelog form footer {
+  border-top: var(--pf1-border-groove);
+}
+.app.pf1.changelog form .content {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  flex: 1;
+}
+.app.pf1.changelog form .content > .tab {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--pf1-scrollbar-handle) var(--pf1-scrollbar-background);
+}
+.app.pf1.changelog form .content > .tab li {
+  user-select: text;
+}
+.app.pf1.changelog form .content > .tab code {
+  background-color: var(--pf1-bg-dark-0);
+  padding: 0 3px;
+  border-radius: 7px;
+}
+.app.pf1.changelog form .content > .tab li > ul {
+  margin: 0;
+}
+.app.pf1.changelog form .content > .tab.error {
+  text-align: center;
+}
 /**
  * Styles common to all sheets.
  */
@@ -2384,9 +2421,9 @@
 .pf1.sheet .action.roll > i {
   font-size: var(--font-size-16);
 }
-.pf1.sheet .action.roll > i:hover {
-  animation: dice-spin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 1 forwards;
-  color: var(--pf1-color-text-hover);
+.pf1.sheet .action.roll:hover > i {
+  animation: dice-spin 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
+  transform: scale(1.2);
 }
 .pf1.sheet .item-groups-list {
   overflow: hidden scroll;
@@ -2417,6 +2454,7 @@
   padding-left: 5px;
   font-size: var(--font-size-12);
   font-weight: bold;
+  border: unset;
 }
 .pf1.sheet .item-list-header .item-controls {
   justify-content: space-evenly;
@@ -2425,8 +2463,16 @@
 .pf1.sheet .item > *:not(:last-child) {
   border-right: 1px solid var(--color-border-light-secondary);
 }
-.pf1.sheet .item-list-header > *:not(.item-name),
-.pf1.sheet .item > *:not(.item-name) {
+.pf1.sheet .item-list-header > .item-detail,
+.pf1.sheet .item > .item-detail {
+  justify-content: center;
+}
+.pf1.sheet .item-list-header > .item-detail.item-uses,
+.pf1.sheet .item > .item-detail.item-uses {
+  justify-content: space-evenly;
+}
+.pf1.sheet .item-list-header > .item-controls,
+.pf1.sheet .item > .item-controls {
   justify-content: space-evenly;
 }
 .pf1.sheet .item-list-header .fas,
@@ -2462,6 +2508,7 @@
 .pf1.sheet .item-list-header .item-enabled,
 .pf1.sheet .item .item-enabled {
   flex: 0 0 48px;
+  justify-content: center;
 }
 .pf1.sheet .item-list-header .item-operator,
 .pf1.sheet .item .item-operator {
@@ -2528,6 +2575,7 @@
 .pf1.sheet .item-list-header .item-name .item-image:hover:not(.no-hover),
 .pf1.sheet .item .item-name .item-image:hover:not(.no-hover) {
   background-image: url(icons/misc/info.svg) !important;
+  background-size: contain;
 }
 .pf1.sheet .item-list-header .item-name h4,
 .pf1.sheet .item .item-name h4 {
@@ -3399,6 +3447,7 @@
 }
 .pf1.actor.sheet form .tab.summary .summary-header .race .item-image.rollable:hover {
   background-image: url(sheets/actors/parts/icons/misc/info.svg) !important;
+  background-size: contain;
 }
 .pf1.actor.sheet form .tab.summary .summary-header .race .info {
   text-align: left;
@@ -3421,6 +3470,9 @@
 }
 .pf1.actor.sheet form .tab.summary .quick-info > div {
   gap: 2px;
+}
+.pf1.actor.sheet form .classes-body .item-controls {
+  flex: 0 0 68px;
 }
 .pf1.sheet.actor form .tab.attributes .armor-attributes {
   flex: 0;
@@ -3469,8 +3521,8 @@
   flex-flow: column nowrap;
   gap: 1px;
 }
-.pf1.sheet.actor .tab.spellbook .spellbook-configuration .spellbook-info .spell-settings .autoslots {
-  justify-content: space-between;
+.pf1.sheet.actor .tab.spellbook .spellbook-configuration .spellbook-info .spell-settings .stacked > label {
+  flex: 1;
 }
 .pf1.sheet.actor .tab.spellbook .spellbook-configuration .spellbook-info .spell-level-mod-container {
   gap: 1px 0.3em;
@@ -3586,32 +3638,21 @@
 .pf1.sheet.actor .tab.spellbook .spellbook-group .spell-uses input {
   flex: 0 0 24px;
 }
-.pf1.sheet.actor .tab.spellbook .spellbook-group .spell-school {
+.pf1.sheet.actor .tab.spellbook .spellbook-group :is(.spell-school, .spell-activation, .spell-components) {
   white-space: nowrap;
   overflow: hidden;
-  flex: 0 0 96px;
   font-size: var(--font-size-12);
   color: var(--pf1-tan);
   text-align: center;
-  border-right: 1px solid var(--pf1-faint);
+}
+.pf1.sheet.actor .tab.spellbook .spellbook-group .spell-school {
+  flex: 0 0 96px;
 }
 .pf1.sheet.actor .tab.spellbook .spellbook-group .spell-activation {
-  white-space: nowrap;
-  overflow: hidden;
   flex: 0 0 120px;
-  font-size: var(--font-size-12);
-  color: var(--pf1-tan);
-  text-align: center;
-  border-right: 1px solid var(--pf1-faint);
 }
 .pf1.sheet.actor .tab.spellbook .spellbook-group .spell-components {
-  white-space: nowrap;
-  overflow: hidden;
   flex: 0 0 80px;
-  font-size: var(--font-size-12);
-  color: var(--pf1-tan);
-  text-align: center;
-  border-right: 1px solid var(--pf1-faint);
 }
 .pf1.sheet.actor .tab.spellbook .spellbook-group .spellbook-empty .item-controls {
   flex: 1;
@@ -3679,6 +3720,9 @@
 .pf1.sheet.actor .tab.combat .combat-defenses table {
   margin-bottom: 4px;
 }
+.pf1.sheet.actor .combat-attacks .item-controls {
+  flex: 0 0 68px;
+}
 .pf1.sheet form .tab.inventory footer .carry-bonus {
   display: flex;
   flex-flow: row nowrap;
@@ -3691,6 +3735,9 @@
 .pf1.sheet form .tab.inventory footer .carry-bonus label input {
   text-align: center;
   width: 3em;
+}
+.pf1.sheet form .tab.buffs .item-controls {
+  flex: 0 0 68px;
 }
 .pf1.actor.sheet .magic-items {
   display: flex;
@@ -3800,9 +3847,6 @@
   font-size: var(--font-size-24);
   margin: 0;
 }
-.pf1.sheet.actor header .currencies .currency:not(.has-currency):not(:hover) {
-  opacity: 0.25;
-}
 .pf1.sheet.actor header .currencies .currency > .denomination::before {
   content: "\f58e";
   font-weight: 900;
@@ -3846,6 +3890,9 @@
   gap: 3px;
   flex: 0;
   margin: 2px;
+}
+.pf1.actor.sheet .tab.features .item-controls {
+  flex: 0 0 68px;
 }
 .pf1.actor.sheet .tab.features footer .feat-counts {
   display: flex;
@@ -4016,6 +4063,7 @@
 .pf1.item.sheet form .tab.changes .changes-list .change input.invalid {
   border: var(--pf1-invalid-input-border);
   background: url(sheets/items/parts/icons/misc/hazard-sign.svg) no-repeat 99% 50% var(--pf1-bg-dark-0);
+  background-size: contain;
 }
 .active.locked-tooltip.pf1.change-menu {
   border-radius: 0.5rem;
@@ -4031,6 +4079,7 @@
 .pf1.item.sheet form input[type="text"].formula:invalid {
   border: var(--pf1-invalid-input-border);
   background: url(sheets/items/parts/icons/misc/hazard-sign.svg) no-repeat 99% 50% var(--pf1-bg-dark-0);
+  background-size: contain;
 }
 .pf1.sheet .tab.links table .extra-field {
   width: 128px;
@@ -4068,6 +4117,29 @@
 .pf1.sheet .tab.links table td:not(:last-child),
 .pf1.sheet .tab.links table th:not(:last-child) {
   border-right: 1px solid #888888;
+}
+.pf1.sheet.item .class-skills .skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 3px;
+}
+.pf1.sheet.item .class-skills .skill-list > .skill.custom {
+  font-style: italic;
+}
+.pf1.sheet.item .class-skills .skill-list > .skill > label {
+  display: flex;
+  gap: 3px;
+  height: unset;
+}
+.pf1.sheet.item .class-skills .skill-list > .skill > label input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+  flex: 0 16px;
+  top: unset;
+  margin: 0;
 }
 .pf1.sheet.item form {
   display: grid;
@@ -4189,6 +4261,7 @@
 .pf1.sheet.item form > .sidebar input {
   flex: 3;
   height: 1.5em;
+  border: 1px solid transparent;
 }
 .pf1.sheet.item form > .sidebar input[type="text"],
 .pf1.sheet.item form > .sidebar input[type="number"] {
@@ -4198,25 +4271,18 @@
 .pf1.sheet.item form > .sidebar input[data-dtype="Number"] {
   text-align: right;
 }
-.pf1.sheet.item form > .sidebar > label,
-.pf1.sheet.item form > .sidebar > div {
+.pf1.sheet.item form > .sidebar :is(label, h5) {
   padding: 0 3px;
 }
 .pf1.sheet.item form > .sidebar h5 {
   font-size: inherit;
   background-color: var(--pf1-bg-dark-05);
-  border-radius: 5px 5px 0 0;
+  border-radius: 0 0.7em 0 0;
   padding: 1px 3px;
-  margin: 1px 0 0 0;
+  margin: 3px 0 0 0;
 }
-.pf1.sheet.item form > .sidebar .details .property,
-.pf1.sheet.item form > .sidebar .property-list .property,
-.pf1.sheet.item form > .sidebar .property-box .property {
+.pf1.sheet.item form > .sidebar :is(.details, .property-list, .property-box) .property {
   border-radius: 5px 0 5px 0;
-}
-.pf1.sheet.item form > .sidebar .details .property,
-.pf1.sheet.item form > .sidebar .property-list .property,
-.pf1.sheet.item form > .sidebar .property-box .property {
   padding: 1px 3px;
 }
 .pf1.sheet.item form > .sidebar .property-list .property {
@@ -4273,6 +4339,14 @@
   text-align: right;
   padding: 0 4px;
   line-height: 1.5;
+}
+.pf1.sheet.item form.editable > .sidebar input:is([type="number"], [type="text"]) {
+  color: var(--color-text-dark-primary);
+  opacity: 1;
+}
+.pf1.sheet.item form.editable > .sidebar input:hover {
+  box-shadow: 0 0 8px red;
+  border-color: black;
 }
 .pf1.sheet:is(.item, .action) form .card-notes {
   flex: 0;
@@ -4362,6 +4436,7 @@
 .pf1.sheet.action form .conditionals .context-note input[type="text"]:invalid {
   border: var(--pf1-invalid-input-border);
   background: url(sheets/actions/icons/misc/hazard-sign.svg) no-repeat 95% 50% var(--pf1-bg-dark-0);
+  background-size: contain;
 }
 .pf1.sheet.action form .conditionals .change select,
 .pf1.sheet.action form .conditionals .context-note select {
@@ -4371,6 +4446,7 @@
 .pf1.sheet.action form .conditionals .context-note select:invalid {
   border: var(--pf1-invalid-input-border);
   background: url(sheets/actions/icons/misc/hazard-sign.svg) no-repeat 75% 50% var(--pf1-bg-dark-0);
+  background-size: contain;
 }
 .pf1.sheet.action form .conditionals .change input[type="text"]:not(:first-child),
 .pf1.sheet.action form .conditionals .context-note input[type="text"]:not(:first-child),
@@ -4556,6 +4632,12 @@
 .pf1.sheet.action form hr {
   margin: 0 0.5em;
 }
+.pf1.sheet.action form select[name="ability.damageMult"] {
+  flex: 0 6em;
+}
+.pf1.sheet.action form select[name="save.type"] {
+  flex: 0 8em;
+}
 .pf1.sheet.actor {
   min-width: 672px;
   min-height: 736px;
@@ -4622,6 +4704,8 @@
 }
 .pf1.sheet.actor .tab.summary .summary-header .basic-info {
   flex: 4;
+  border-left: var(--pf1-border-groove);
+  padding: 0 0 0 0.3em;
 }
 .pf1.sheet.actor .tab.summary .summary-header .name-xp {
   flex: 0;
@@ -4704,7 +4788,6 @@
   padding: 0 3px;
   object-fit: contain;
   border: none;
-  border-right: var(--pf1-border-groove);
 }
 .pf1.sheet.actor .tab.summary .misc-header-items {
   flex: 0.5;
@@ -4997,7 +5080,12 @@
 }
 .pf1.sheet.actor .tab.buffs .condition a.checkbox > img {
   border: none;
+}
+.pf1.sheet.actor .tab.buffs .condition a.checkbox > img[src*=".png"] {
   filter: invert(88%) sepia(11%) saturate(158%) hue-rotate(13deg) brightness(98%) contrast(93%);
+}
+.pf1.sheet.actor .tab.buffs .condition a.checkbox > img[src*=".svg"] {
+  filter: invert(1);
 }
 .pf1.sheet.actor .tab.buffs .condition a.checkbox > .details {
   display: flex;
@@ -5017,6 +5105,12 @@
 .pf1.sheet.actor .tab.buffs .condition a.checkbox .name {
   flex: 1 100%;
 }
+.pf1.sheet.actor .tab.buffs .condition.immune a.checkbox > img {
+  opacity: 0.3;
+}
+.pf1.sheet.actor .tab.buffs .condition.immune a.checkbox .details {
+  opacity: 0.6;
+}
 .pf1.sheet.actor .tab.buffs .condition:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -5030,6 +5124,9 @@
 }
 .pf1.sheet.actor .tab.buffs .condition.active a.checkbox > img {
   filter: unset;
+}
+.pf1.sheet.actor .tab.buffs .condition.active a.checkbox > img[src*=".svg"] {
+  background: black;
 }
 .pf1.sheet.actor .tab .buffs-conditions {
   flex: 0;
@@ -5171,7 +5268,7 @@
     /* ----------------------------------------- */
 }
 .pf1.sheet.item form .sheet-header img.profile {
-  border: 1px solid #000;
+  border: none;
 }
 .pf1.sheet.item form .sheet-header .item-subtitle {
   flex: 0 0 auto;
@@ -5415,6 +5512,7 @@
 .pf1.sheet.item form .tab.changes .context-notes .context-note .context-note-target.invalid {
   border: var(--pf1-invalid-input-border);
   background: url(icons/misc/hazard-sign.svg) no-repeat 95% 50% var(--pf1-bg-dark-0);
+  background-size: contain;
 }
 .pf1.sheet.item form .conditionals .conditional,
 .pf1.sheet.item form .conditionals .conditional-modifier {
@@ -5436,6 +5534,7 @@
 .pf1.sheet.item form .conditionals .conditional-modifier select:invalid {
   border: var(--pf1-invalid-input-border);
   background: url(icons/misc/hazard-sign.svg) no-repeat 80% 50% var(--pf1-bg-dark-0);
+  background-size: contain;
 }
 .pf1.sheet.item form .conditionals .conditional input[type="text"],
 .pf1.sheet.item form .conditionals .conditional-modifier input[type="text"] {
@@ -5447,6 +5546,7 @@
 .pf1.sheet.item form .conditionals .conditional-modifier input[type="text"]:invalid {
   border: var(--pf1-invalid-input-border);
   background: url(icons/misc/hazard-sign.svg) no-repeat 100% 50% var(--pf1-bg-dark-0);
+  background-size: contain;
 }
 .pf1.sheet.item form .conditionals .conditional input[type="text"]:not(:first-child),
 .pf1.sheet.item form .conditionals .conditional-modifier input[type="text"]:not(:first-child) {
@@ -5544,13 +5644,14 @@
   font-size: var(--font-size-12);
 }
 .pf1.chat-card .card-header {
-  padding: 3px 0;
+  padding: 3px;
   border-top: 2px groove #fff;
   border-bottom: 2px groove #fff;
+  gap: 0 3px;
 }
 .pf1.chat-card .card-header img {
   flex: 0 0 36px;
-  margin-right: 5px;
+  border: unset;
 }
 .pf1.chat-card .card-header .item-name {
   display: flex;
@@ -5728,19 +5829,19 @@
   margin-bottom: 4px;
   display: flex;
   flex-flow: row wrap;
+  gap: 3px;
   justify-content: center;
 }
 .message .attack-targets h2 {
   flex: 1 100%;
+  margin: 0.2rem 0;
 }
 .message .attack-targets .target {
   display: flex;
   flex-flow: row nowrap;
   flex: 0 0 content;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  border: 1px solid black;
-  padding: 2px;
+  outline: 1px solid black;
+  padding: 2px 0;
   align-items: center;
 }
 .message .attack-targets .target .icon-pf {
@@ -5778,8 +5879,8 @@
   height: 48px;
   object-fit: cover;
   object-position: 50% 0;
+  border: none;
   margin: 0;
-  border-radius: 0;
 }
 .message .attack-targets .target .ac {
   display: flex;
@@ -6023,6 +6124,10 @@
 .chat-message #context-menu .context-item .pf1.context-icon.caster-level {
   color: darkorange;
 }
+a.pf1-link {
+  white-space: nowrap;
+  word-break: break-all;
+}
 a.pf1-link.content,
 a.pf1-link.button {
   border: 1px solid var(--color-border-light-tertiary);
@@ -6032,8 +6137,17 @@ a.pf1-link.button {
 }
 a.pf1-link.broken {
   background: #ecc;
-  border-color: var(--color-border-light-secondary);
+  border: unset;
   color: var(--color-level-error);
+  cursor: initial;
+}
+a.pf1-info {
+  white-space: nowrap;
+  word-break: break-all;
+  background-color: var(--pf1-bg-dark-0);
+  padding: 0 3px;
+  border-radius: 0.5em;
+  outline: 0 0 3px black;
   cursor: initial;
 }
 .chat-message .pf1 table td {
@@ -6064,6 +6178,10 @@ a.pf1-link.broken {
   -webkit-mask-repeat: no-repeat;
   mask-position: center;
   -webkit-mask-position: center;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  width: 24px;
+  height: 24px;
 }
 .icon-pf.gladius {
   background-image: url(icons/actions/gladius.svg), none;
@@ -6186,6 +6304,10 @@ a.pf1-link.broken {
   box-shadow: 0 0 8px red;
   border-color: black;
 }
+.pf1 span.text-box.readonly {
+  box-shadow: none;
+  border-color: transparent;
+}
 .pf1 span.text-box:empty:before {
   content: "\a0";
 }
@@ -6237,20 +6359,6 @@ a.pf1-link.broken {
   border: 1px solid var(--pf1-tan);
   background-color: rgba(255, 255, 255, 0.6);
   height: unset;
-}
-.pf1 .item-list-search .search-input ~ .clear-search,
-.pf1 .actor-list-search .search-input ~ .clear-search {
-  margin-left: -1.45em;
-  margin-right: 0.1em;
-  margin-top: 1px;
-  color: var(--pf1-tan);
-  align-self: center;
-  padding: 2px;
-}
-.pf1 .item-list-search .search-input ~ .clear-search:hover,
-.pf1 .actor-list-search .search-input ~ .clear-search:hover {
-  text-shadow: 0 0 5px rgba(255, 70, 70, 0.8);
-  color: black;
 }
 .pf1 .item-list-search {
   flex: 0 12em;
@@ -6415,6 +6523,12 @@ a.pf1-link.broken {
   flex-flow: row nowrap;
   gap: 3px;
 }
+.app.pf1.experience-config form code {
+  background-color: var(--pf1-bg-dark-0);
+  border-radius: 0.3em;
+  padding: 1px 3px;
+  user-select: text;
+}
 .widget {
   z-index: 100;
 }
@@ -6457,19 +6571,37 @@ a.pf1-link.broken {
 }
 .widget.categorized-item-picker .item-picker-categories {
   display: flex;
+  flex-flow: column nowrap;
+  gap: 3px;
+  overflow: hidden auto;
   flex: 1;
-  flex-direction: column;
   max-width: 45%;
   border-right: 3px groove rgba(155, 155, 155, 0.5);
   background: rgba(155, 155, 155, 0.2);
 }
 .widget.categorized-item-picker .item-picker-categories .category {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  padding: 0 3px 0 0.5em;
+  line-height: 2;
+  align-items: center;
   border-radius: 10px 0 0 10px;
   border: 1px transparent;
   transition: background-color 100ms ease;
 }
+.widget.categorized-item-picker .item-picker-categories .category > i {
+  flex: 0;
+}
+.widget.categorized-item-picker .item-picker-categories .category.invalid {
+  opacity: 0.6;
+  background-color: rgba(255, 0, 0, 0.2);
+}
 .widget.categorized-item-picker .item-picker-categories .category.active {
   background: rgba(155, 155, 155, 0.5);
+  opacity: 1;
+}
+.widget.categorized-item-picker .item-picker-categories .category.active.invalid {
+  background-color: rgba(255, 155, 155, 0.5);
 }
 .widget.categorized-item-picker .item-picker-categories .category.active a > h2 {
   text-shadow: 0 0 8px red;
@@ -6480,15 +6612,14 @@ a.pf1-link.broken {
 .widget.categorized-item-picker .item-picker-categories .category:hover a > h2 {
   text-shadow: 0 0 8px red;
 }
+.widget.categorized-item-picker .item-picker-categories .category a {
+  flex: 1;
+}
 .widget.categorized-item-picker .item-picker-categories .category a h2 {
   font-weight: bold;
   font-size: var(--font-size-14);
-  margin-right: -1px;
-  margin-bottom: 1px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  border-bottom: unset;
+  margin: 0;
+  border: unset;
 }
 .widget.categorized-item-picker .item-picker-items {
   display: flex;
@@ -6516,6 +6647,28 @@ a.pf1-link.broken {
   cursor: pointer;
   max-width: calc(100% - 8px);
   word-break: break-word;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 3px;
+  align-items: center;
+}
+.widget.categorized-item-picker .item-picker-items .item.hidden {
+  display: none;
+}
+.widget.categorized-item-picker .item-picker-items .item.invalid {
+  opacity: 0.6;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.widget.categorized-item-picker .item-picker-items .item.pre-select {
+  opacity: 1;
+}
+.widget.categorized-item-picker .item-picker-items .item.pre-select.invalid {
+  background-color: rgba(255, 155, 155, 0.3);
+}
+.widget.categorized-item-picker .item-picker-items .item h4 {
+  flex: 1;
+  margin: 0;
+  border: none;
 }
 .widget.categorized-item-picker .item-picker-items .item:hover {
   box-shadow: 0 0 6px var(--pf1-red);
@@ -6655,6 +6808,10 @@ a.pf1-link.broken {
 }
 .inline-roll .dice-tooltip .tooltip-part .part-header .part-total .part-prefix {
   color: var(--color-text-dark-inactive);
+}
+#chat-log {
+  scrollbar-width: thin;
+  scrollbar-color: #782e22 #111;
 }
 #tooltip.pf1 {
   font-size: var(--font-size-12);

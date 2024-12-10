@@ -29,11 +29,6 @@
 
     {{> "systems/pf1/templates/items/parts/item-sidebar-inputs.hbs"}}
 
-    <label class="descriptor checkbox quickbar" data-tooltip="PF1.QuickbarHint">
-      <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}>
-      {{localize "PF1.Quickbar"}}
-    </label>
-
     <label>
       <span>{{localize "PF1.Cybertech.Implantation"}}</span>
       <input type="number" name="system.implant" value="{{system.implant}}" placeholder="0" min="0" step="1">

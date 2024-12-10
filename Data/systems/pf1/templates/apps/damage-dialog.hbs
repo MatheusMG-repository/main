@@ -5,7 +5,7 @@
   </div>
   <div class="form-group">
     <label>{{localize "PF1.ReduceBy"}}</label>
-    <input type="text" name="damage-reduction" data-dtype="Number" value="{{damageReduction}}">
+    <input type="text" name="damage-reduction" data-dtype="Number" value="{{damageReduction}}" autofocus>
   </div>
 
   {{!-- Selected tokens --}}
@@ -24,12 +24,18 @@
         <input type="checkbox" class="tokenAffected" name="affect.{{_id}}" {{checked this.checked}}> {{name}}
       </label>
     </div>
-    {{#if (or dr eres)}}
+    {{#if (or dr hardness eres)}}
     <p class="notes" style="display: flex; justify-content: space-around;">
         {{#if dr}}
         <span>
           <u>{{localize "PF1.DamRed"}}</u><br>
           {{#each dr}}<a style="padding: 0 0.5em;">{{this}}</a>{{/each}}
+        </span>
+        {{/if}}
+        {{#if hardness}}
+        <span>
+          <u>{{localize "PF1.Hardness"}}</u><br>
+          <a style="padding: 0 0.5em;">{{hardness}}</a>
         </span>
         {{/if}}
         {{#if eres}}

@@ -45,11 +45,7 @@
       <div class="form-group">
         <label>{{localize 'PF1.SETTINGS.Health.Rounding'}}</label>
         <select name="rounding">
-          {{#select rounding}}
-            <option value="up">{{localize "PF1.SETTINGS.Health.RoundingUp"}}</option>
-            <option value="nearest">{{localize "PF1.SETTINGS.Health.RoundingNearest"}}</option>
-            <option value="down">{{localize "PF1.SETTINGS.Health.RoundingDown"}}</option>
-          {{/select}}
+          {{selectOptions healthRounding selected=rounding localize=true}}
         </select>
         <p class="notes">{{localize 'PF1.SETTINGS.Health.RoundingHint'}}</p>
       </div>
@@ -57,10 +53,7 @@
       <div class="form-group">
         <label>{{localize 'PF1.SETTINGS.Health.Continuity'}}</label>
         <select name="continuous" data-dtype="Boolean">
-          {{#select continuous}}
-            <option value="true">{{localize 'PF1.SETTINGS.Health.Continuous'}}</option>
-            <option value="false">{{localize 'PF1.SETTINGS.Health.Discrete'}}</option>
-          {{/select}}
+          {{selectOptions healthContinuity selected=continuous localize=true}}
         </select>
         <p class="notes">{{localize 'PF1.SETTINGS.Health.ContinuityHint'}}</p>
       </div>

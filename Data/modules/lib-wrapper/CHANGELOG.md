@@ -1,3 +1,17 @@
+# 1.13.2.0 (2024-09-27)
+
+- Add Polish translation, thanks to Lionheart for the contribution!
+- Ensure that non-english translations are correctly loaded at first use even if i18n hasn't initialised yet. This is something that broke during the 1.13.0.0 update.
+
+# 1.13.1.0 (2024-09-25)
+
+- Ensure calling behaviour when a method has only listeners is consistent with libWrapper v1.12.15.0 and older.
+- Miscellaneous clean-up.
+
+# 1.13.0.1 (2024-09-17)
+
+- No code changes, re-released to clear issue caused by accidentally pushing a broken commit for a few seconds, which was cached in Forge as v1.13.0.0.
+
 # 1.13.0.0 (2024-09-17)
 
 - Implement support for listeners, i.e. functions that are called immediately before the target method is called, but aren't part of the usual call chain.

@@ -216,30 +216,30 @@
       <div class="combat-attacks">
         <section class="attacks-body">
           {{#each attacks as |section sid|}}
-          <ol class="item-groups-list sub-scroll scroll-attacks">
-            <li class="item-list-header flexrow">
-              <div class="item-name">
-                <h3>{{section.label}}</h3>
-              </div>
+          <ol class="item-groups-list sub-scroll scroll-attacks" data-list="{{id}}"  data-type="{{create.type}}" data-subtype="{{create.system.subType}}">
+            <ol class="item-list">
+              <li class="item-list-header flexrow">
+                <div class="item-name">
+                  <h3>{{section.label}}</h3>
+                </div>
 
-              {{#if section.showTypes}}<div class="item-detail item-type"><i class="icon-pf icon-magic-palm" data-tooltip="PF1.Type"></i></div>{{/if}}
+                {{#if section.showTypes}}<div class="item-detail item-type"><i class="icon-pf icon-magic-palm" data-tooltip="PF1.Type"></i></div>{{/if}}
 
-              <div class="item-detail item-actions"><i class="icon-pf icon-gears" data-tooltip="PF1.ActionPlural"></i></div>
+                <div class="item-detail item-actions"><i class="icon-pf icon-gears" data-tooltip="PF1.ActionPlural"></i></div>
 
-              <div class="item-detail item-uses"><i class="icon-pf icon-battery-pack" data-tooltip="PF1.ChargePlural"></i></div>
+                <div class="item-detail item-uses"><i class="icon-pf icon-battery-pack" data-tooltip="PF1.ChargePlural"></i></div>
 
-              {{#if @root.owner}}
-              <div class="item-controls">
-                {{#if interface.create}}
-                <a class="item-control item-create" data-tooltip="PF1.CreateItem" data-create="{{path}}">
-                  <i class="fas fa-plus"></i> {{localize "PF1.Add"}}
-                </a>
+                {{#if @root.owner}}
+                <div class="item-controls">
+                  {{#if interface.create}}
+                  <a class="item-control item-create" data-tooltip="PF1.CreateItem" data-create="{{path}}">
+                    <i class="fas fa-plus"></i> {{localize "PF1.Add"}}
+                  </a>
+                  {{/if}}
+                </div>
                 {{/if}}
-              </div>
-              {{/if}}
-            </li>
+              </li>
 
-            <ol class="item-list" data-type="attack" data-subtype="{{sid}}">
               {{#each section.items as |item iid|}}
               <li class="item flexrow" data-item-id="{{item.id}}">
                 <div class="item-name rollable">

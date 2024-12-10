@@ -74,7 +74,7 @@
       {{! Max Dex }}
       <div class="info-box maxdex" data-tooltip-extended="max-dex">
         <h5>{{localize "PF1.MaxDexShort"}}</h5>
-        <span class="value">{{system.attributes.maxDexBonus}}</span>
+        <span class="value">{{#if (isNumber system.attributes.maxDexBonus)}}{{system.attributes.maxDexBonus}}{{else}}{{localize "PF1.Unlimited"}}{{/if}}</span>
       </div>
 
       {{#if implants}}

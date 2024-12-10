@@ -39,11 +39,6 @@
 
     {{> "systems/pf1/templates/items/parts/item-sidebar-inputs.hbs"}}
 
-    <label class="descriptor checkbox quickbar" data-tooltip="PF1.QuickbarHint">
-      <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}>
-      {{localize "PF1.Quickbar"}}
-    </label>
-
     {{> "systems/pf1/templates/items/parts/item-sidebar-aura.hbs"}}
 
     {{#if (or labels.armor labels.mdex labels.acp)}}

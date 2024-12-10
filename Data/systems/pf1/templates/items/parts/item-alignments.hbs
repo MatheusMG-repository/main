@@ -18,7 +18,8 @@
             "PF1.DamageAlignment.Inherit"
           {{/if}}
         {{/if}}>
-        <input type="checkbox" class="alignmentCheckbox{{#if ../../isAction}} actionCheckbox{{/if}}" data-type="{{choice}}" name="{{../../reference}}.{{choice}}" {{checked (eq (lookup ../values choice) true)}}/>
+        <input type="checkbox" class="alignmentCheckbox{{#if ../../isAction}} actionCheckbox{{/if}}"
+          data-type="{{choice}}" name="{{../../reference}}.{{choice}}" {{checked (eq (lookup ../values choice) true)}}>
         {{label}}
       </label>
       {{/each}}

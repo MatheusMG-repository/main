@@ -15,16 +15,18 @@
       {{> "systems/pf1/templates/apps/level-up/fcb.hbs"}}
     </div>
 
-    {{#unless isMythic}}
     <div class="segment ability-score">
       <h2>{{localize "PF1.LevelUp.AbilityScore.Label"}}</h2>
       {{#if abilityScore.new}}
       {{> "systems/pf1/templates/apps/level-up/ability-score.hbs"}}
       {{else if abilityScore.next}}
-      <p class="info">{{localize "PF1.LevelUp.AbilityScore.Next" level=abilityScore.next}}</p>
+        {{#if isMythic}}
+          <p class="info">{{localize "PF1.LevelUp.AbilityScore.NextTier" tier=abilityScore.next}}</p>
+        {{else}}
+          <p class="info">{{localize "PF1.LevelUp.AbilityScore.NextLevel" level=abilityScore.next}}</p>
+        {{/if}}
       {{/if}}
     </div>
-    {{/unless}}
   </section>
 
   <footer class="buttons">

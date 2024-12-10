@@ -1,8 +1,18 @@
-2024/12/02-08:56:19.782 9678 Recovering log #290
-2024/12/02-08:56:19.785 9678 Delete type=0 #290
-2024/12/02-08:56:19.785 9678 Delete type=3 #288
-2024/12/02-09:45:20.844 6ffc Level-0 table #295: started
-2024/12/02-09:45:20.844 6ffc Level-0 table #295: 0 bytes OK
-2024/12/02-09:45:20.845 6ffc Delete type=0 #293
-2024/12/02-09:45:20.847 6ffc Manual compaction at level-0 from '!actors!0AFkbYnORiN0cXCF' @ 72057594037927935 : 1 .. '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 0 : 0; will stop at (end)
-2024/12/02-09:45:20.847 6ffc Manual compaction at level-1 from '!actors!0AFkbYnORiN0cXCF' @ 72057594037927935 : 1 .. '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 0 : 0; will stop at (end)
+2024/12/10-15:21:20.496 3b18 Recovering log #302
+2024/12/10-15:21:20.503 3b18 Delete type=0 #302
+2024/12/10-15:21:20.503 3b18 Delete type=3 #301
+2024/12/10-17:19:36.245 2d50 Level-0 table #306: started
+2024/12/10-17:19:36.245 2d50 Level-0 table #306: 0 bytes OK
+2024/12/10-17:19:36.246 2d50 Delete type=0 #304
+2024/12/10-17:19:36.250 2d50 Manual compaction at level-0 from '!actors!0AFkbYnORiN0cXCF' @ 72057594037927935 : 1 .. '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 0 : 0; will stop at '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 9208 : 1
+2024/12/10-17:19:36.250 2d50 Compacting 3@0 + 0@1 files
+2024/12/10-17:19:36.380 2d50 Generated table #307@0: 1750 keys, 2129733 bytes
+2024/12/10-17:19:36.429 2d50 Generated table #308@0: 1784 keys, 2130488 bytes
+2024/12/10-17:19:36.460 2d50 Generated table #309@0: 1117 keys, 1276317 bytes
+2024/12/10-17:19:36.460 2d50 Compacted 3@0 + 0@1 files => 5536538 bytes
+2024/12/10-17:19:36.460 2d50 compacted to: files[ 0 6 0 0 0 0 0 ]
+2024/12/10-17:19:36.460 2d50 Delete type=2 #281
+2024/12/10-17:19:36.461 2d50 Delete type=2 #282
+2024/12/10-17:19:36.461 2d50 Delete type=2 #283
+2024/12/10-17:19:36.793 2d50 Manual compaction at level-0 from '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 9208 : 1 .. '!actors.items!zoDjm0M25tIeUire.yFUCrleS7BmYSHdK' @ 0 : 0; will stop at (end)
+2024/12/10-17:19:37.025 2d50 Moved #242 to level-2 2122329 bytes OK: files[ 0 5 1 0 0 0 0 ]

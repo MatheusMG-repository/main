@@ -2,10 +2,10 @@
 
   {{!-- Item Sheet Header --}}
   <header class="sheet-header flexrow">
-    <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img">
+    <img class="profile" src="{{item.img}}" data-edit="img">
 
     <div class="header-details flexrow">
-      <h1 class="item-name" data-tooltip="">
+      <h1 class="item-name">
         <input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PF1.ItemName"}}">
       </h1>
 
@@ -97,13 +97,13 @@
       </div>
 
       {{!-- HD --}}
-      <div class="form-group">
+      <div class="form-group" data-tooltip="@classes.{{system.tag}}.hd : {{system.hd}}">
         <label>{{#if isMythicPath}}{{localize "PF1.HealthPerTier"}}{{else}}{{localize "PF1.HitDie"}}{{/if}}</label>
         <div class="form-fields">
           {{#if isMythicPath}}
-          <input type="number" name="system.hd" value="{{system.hd}}" data-dtype="Number" data-tooltip="@classes.{{system.tag}}.hd">
+          <input type="number" name="system.hd" value="{{system.hd}}" data-dtype="Number">
           {{else}}
-          <select name="system.hd" data-dtype="Number" data-tooltip="@classes.{{system.tag}}.hd">
+          <select name="system.hd" data-dtype="Number">
             {{selectOptions @root.hitDieSizes selected=system.hd}}
           </select>
           {{/if}}
@@ -131,7 +131,7 @@
       {{/unless}}
 
       {{!-- BAB --}}
-      <div class="form-group">
+      <div class="form-group" data-tooltip="@classes.{{system.tag}}.babBase : {{numberFormatAlt system.babBase fraction=true}}">
         <label>{{localize "PF1.BABAbbr"}}</label>
         <div class="form-fields">
           <select name="system.bab">
@@ -178,9 +178,9 @@
 
       {{!-- Saving Throws --}}
       {{#each system.savingThrows as |savingThrow id|}}
-      <div class="form-group">
+      <div class="form-group"  data-tooltip="@classes.{{@root.system.tag}}.savingThrows.{{id}} : {{numberFormatAlt savingThrow.base fraction=true}}">
         <label>{{savingThrow.label}}</label>
-        <select name="system.savingThrows.{{id}}.value" data-tooltip="@classes.{{@root.system.tag}}.savingThrows.{{id}} : {{savingThrow.base}}">
+        <select name="system.savingThrows.{{id}}.value">
           {{selectOptions @root.config.classSavingThrows selected=savingThrow.value blank="PF1.None" localize=true}}
         </select>
         {{#if (eq savingThrow.value "custom")}}
@@ -269,9 +269,9 @@
 
       {{!-- Favoured Class Bonuses --}}
       {{#each system.fc as |fc id|}}
-      <div class="form-group">
+      <div class="form-group" data-tooltip="@classes.{{@root.system.tag}}.fc.{{id}}.value : {{fc.value}}">
         <label>{{fc.label}}</label>
-        <input type="number" name="system.fc.{{id}}.value" value="{{fc.value}}" data-dtype="Number" data-tooltip="@classes.{{@root.system.tag}}.fc.{{id}}" min="0" step="1" placeholder="0">
+        <input type="number" name="system.fc.{{id}}.value" value="{{fc.value}}" data-dtype="Number" min="0" step="1" placeholder="0">
       </div>
       {{/each}}
       <div class="form-group">
@@ -283,19 +283,8 @@
       {{!-- Proficiencies --}}
       {{~> "systems/pf1/templates/items/parts/item-proficiencies.hbs"}}
 
-      <h3 class="form-header">{{localize "PF1.ClassSkills"}}</h3>
-
-      <div class="form-group">
-        <ol class="item-list">
-        {{#each skills as |skill key|}}
-        <li class="item flexrow" data-skill="{{key}}">
-          <label class="checkbox skill-cs">
-            <input type="checkbox" name="system.classSkills.{{key}}" {{checked skill.classSkill}}> {{skill.name}}
-          </label>
-        </li>
-        {{/each}}
-        </ol>
-      </div>
+      {{!-- Class Skills --}}
+      {{~> "systems/pf1/templates/items/parts/item-class-skills.hbs"}}
 
       {{!-- Advanced --}}
       <h3 class="form-header">{{localize "PF1.Advanced"}}</h3>

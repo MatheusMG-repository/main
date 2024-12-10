@@ -6,33 +6,68 @@ People and credits are listed in no particular order.
 
 ## Lorc's icons ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/))
 
-- [Heart Inside](https://game-icons.net/1x1/lorc/heart-inside.html)
-- [Punch Blast](https://game-icons.net/1x1/lorc/punch-blast.html)
-- [Brain](https://game-icons.net/1x1/lorc/brain.html)
-- [Divert](https://game-icons.net/1x1/lorc/divert.html)
-- [Magic Swirl](https://game-icons.net/1x1/lorc/magic-swirl.html)
-- [Magic Palm](https://game-icons.net/1x1/lorc/magic-palm.html)
-- [Hand](https://game-icons.net/1x1/lorc/hand.html)
 - [Battle Gear](https://game-icons.net/1x1/lorc/battle-gear.html)
-- [Quill and Ink](https://game-icons.net/1x1/lorc/quill-ink.html)
+- [Bleed](https://game-icons.net/1x1/lorc/bleeding-wound.html)
+- [Brain](https://game-icons.net/1x1/lorc/brain.html)
+- [Cowering](https://game-icons.net/1x1/lorc/screaming.html)
+- [Dazzled](https://game-icons.net/1x1/lorc/laser-sparks.html)
+- [Divert](https://game-icons.net/1x1/lorc/divert.html)
+- [Dying](https://game-icons.net/1x1/lorc/pummeled.html)
+- [Exhausted](https://game-icons.net/1x1/lorc/oppression.html)
+- [Flat-Footed](https://game-icons.net/1x1/lorc/footprint.html)
 - [Gears](https://game-icons.net/1x1/lorc/gears.html)
+- [Grappled](https://game-icons.net/1x1/lorc/grapple.html)
+- [Hand](https://game-icons.net/1x1/lorc/hand.html)
 - [Hazard Sign](https://game-icons.net/1x1/lorc/hazard-sign.html)
+- [Heart Inside](https://game-icons.net/1x1/lorc/heart-inside.html)
+- [Helpless](https://game-icons.net/1x1/lorc/imprisoned.html)
+- [Incorporeal](https://game-icons.net/1x1/lorc/ghost-ally.html)
+- [Magic Palm](https://game-icons.net/1x1/lorc/magic-palm.html)
+- [Magic Swirl](https://game-icons.net/1x1/lorc/magic-swirl.html)
+- [Nauseated](https://game-icons.net/1x1/lorc/vomiting.html)
+- [Paralyzed](https://game-icons.net/1x1/lorc/deadly-strike.html)
+- [Punch Blast](https://game-icons.net/1x1/lorc/punch-blast.html)
+- [Quill and Ink](https://game-icons.net/1x1/lorc/quill-ink.html)
+- [Shaken](https://game-icons.net/1x1/lorc/suspicious.html)
+- [Staggered](https://game-icons.net/1x1/lorc/two-shadows.html)
+
+## Cathelineau's icons ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/))
+
+- [Frightened](https://game-icons.net/1x1/cathelineau/dread.html)
+
+## Caro Asercion's icons ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/))
+
+- [Squeezing](https://game-icons.net/1x1/caro-asercion/mole.html)
 
 ## Delapouite's icons ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/))
 
-- [Expense](https://game-icons.net/1x1/delapouite/expense.html)
-- [Spellbook](https://game-icons.net/1x1/delapouite/spell-book.html)
-- [Upgrade](https://game-icons.net/1x1/delapouite/upgrade.html)
-- [Plug](https://game-icons.net/1x1/delapouite/plug.html)
-- [Wheelbarrow](https://game-icons.net/1x1/delapouite/wheelbarrow.html)
-- [Weight](https://game-icons.net/1x1/delapouite/weight.html)
 - [Coins](https://game-icons.net/1x1/delapouite/coins.html)
-- [Skills](https://game-icons.net/1x1/delapouite/skills.html)
+- [Confused](https://game-icons.net/1x1/delapouite/misdirection.html)
+- [Expense](https://game-icons.net/1x1/delapouite/expense.html)
 - [Info](https://game-icons.net/1x1/delapouite/info.html)
+- [Pinned](https://game-icons.net/1x1/delapouite/pin.html)
+- [Plug](https://game-icons.net/1x1/delapouite/plug.html)
+- [Sickened](https://game-icons.net/1x1/delapouite/medical-thermometer.html)
+- [Skills](https://game-icons.net/1x1/delapouite/skills.html)
+- [Spellbook](https://game-icons.net/1x1/delapouite/spell-book.html)
+- [Stable](https://game-icons.net/1x1/delapouite/heart-beats.html)
+- [Upgrade](https://game-icons.net/1x1/delapouite/upgrade.html)
+- [Weight](https://game-icons.net/1x1/delapouite/weight.html)
+- [Wheelbarrow](https://game-icons.net/1x1/delapouite/wheelbarrow.html)
 
 ## sbed's icons ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/))
 
 - [Battery Pack](https://game-icons.net/1x1/sbed/battery-pack.html)
+
+## Skoll's icons ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/))
+
+- [Dazed](https://game-icons.net/1x1/skoll/knockout.html)
+
+## tw-dnd's icons ([GPL3](https://www.gnu.org/licenses/gpl-3.0.en.html))
+
+- [Disabled](https://github.com/intrinsical/tw-dnd/blob/main/icons/condition/stunned.svg)
+- [Petrified](https://github.com/intrinsical/tw-dnd/blob/main/icons/condition/petrified.svg)
+- [Unconscious](https://github.com/intrinsical/tw-dnd/blob/main/icons/condition/unconscious.svg)
 
 ## Simone Ricciardi
 

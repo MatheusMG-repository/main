@@ -94,13 +94,17 @@
 
       <h3 class="form-header">{{localize "PF1.Properties"}}</h3>
 
-      {{#if @root.showIdentifiedData}}
       <div class="form-group stacked">
+        {{#if @root.showIdentifiedData}}
         <label class="checkbox artifact">
           <input type="checkbox" name="system.artifact" {{checked system.artifact}}> {{localize "PF1.Artifact"}}
         </label>
+        {{/if}}
+
+        <label class="checkbox timeworn">
+          <input type="checkbox" name="system.timeworn" {{checked system.timeworn}}> {{localize "PF1.Timeworn"}}
+        </label>
       </div>
-      {{/if}}
 
       {{> "systems/pf1/templates/items/parts/item-aura.hbs"}}
 

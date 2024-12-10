@@ -4,7 +4,7 @@
       {{#if hasHD}}
       <div class="info-box level">
         <h5>{{#if isCharacter}}{{localize "PF1.Level"}}{{else}}{{localize "PF1.HitDieShort"}}{{/if}}</h5>
-        <span class="value">{{system.details.level.value}}</span>
+        <span class="value">{{system.attributes.hd.total}}</span>
       </div>
       {{/if}}
 
@@ -18,9 +18,7 @@
       {{#unless isCharacter}}
       <div class="info-box challenge-rating">
         <h5>{{localize "PF1.ChallengeRatingShort"}}</h5>
-        <span class="value">
-          <span name="system.details.cr.base" data-dtype="Number" readonly class="text-box cr-input">{{labels.cr}}</span>
-        </span>
+        <span name="system.details.cr.base" data-dtype="Number" readonly class="value text-box cr-input">{{labels.cr}}</span>
       </div>
       {{/unless}}
     </div>

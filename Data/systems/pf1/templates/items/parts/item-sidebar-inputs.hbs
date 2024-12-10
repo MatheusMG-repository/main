@@ -44,3 +44,11 @@
   </label>
   {{/if}}
 {{/each}}
+
+{{! Quick Action }}
+{{#if isActivatable}}
+<label class="descriptor checkbox quickbar" data-tooltip="PF1.QuickbarHint">
+  <input type="checkbox" name="system.showInQuickbar" {{checked system.showInQuickbar}}>
+  {{localize "PF1.Quickbar"}}
+</label>
+{{/if}}

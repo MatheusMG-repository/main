@@ -36,18 +36,24 @@
   </div>
 
   {{! Formula }}
-  <div class="formula {{#if change.isDeferred}}check{{else}}deterministic{{/if}}">
+  <div class="formula {{#if change.isDeferred}}roll{{else}}deterministic{{/if}}">
     <h3>{{localize "PF1.Formula"}}</h3>
-    <input type="text" class="formula {{#if change.isDeferred}}check{{else}}deterministic{{/if}}"
+    <input type="text" class="formula {{#if change.isDeferred}}roll{{else}}deterministic{{/if}}"
       name="change.formula" value="{{change.formula}}" placeholder="{{localize "PF1.Formula"}}" required>
   </div>
 
   {{! Details }}
-  <div class="form-group stacked">
-    <label class="checkbox" data-tooltip="PF1.Application.ChangeEditor.Help.DeterministicHint">
-      <input class="is-deterministic" type="checkbox" {{checked (not change.isDeferred)}} disabled>
-      {{localize "PF1.Application.ChangeEditor.Help.Deterministic"}}
-    </label>
+  <div class="formula-type">
+    <div class="radio">
+      <label data-tooltip="PF1.Application.ChangeEditor.Help.ValueHint" class="disabled">
+        <input class="is-deterministic" type="radio" {{checked (not change.isDeferred)}} disabled>
+        {{localize "PF1.Application.ChangeEditor.Help.Value"}}
+      </label>
+      <label data-tooltip="PF1.Application.ChangeEditor.Help.RollHint" class="disabled">
+        <input class="is-roll" type="radio" {{checked change.isDeferred}} disabled>
+        {{localize "PF1.Application.ChangeEditor.Help.Roll"}}
+      </label>
+    </div>
   </div>
 
   {{! Type }}

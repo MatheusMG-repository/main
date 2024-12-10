@@ -114,20 +114,8 @@
       {{!-- Proficiencies --}}
       {{~> "systems/pf1/templates/items/parts/item-proficiencies.hbs"}}
 
-      <!-- Class Skills -->
-      <h3 class="form-header">{{localize "PF1.ClassSkills"}}</h3>
-
-      <div class="form-group">
-        <ol class="item-list">
-        {{#each skills as |skill key|}}
-        <li class="item flexrow" data-skill="{{key}}">
-          <label class="checkbox skill-cs">
-            <input type="checkbox" name="system.classSkills.{{key}}" {{checked skill.classSkill}}> {{skill.name}}
-          </label>
-        </li>
-        {{/each}}
-        </ol>
-      </div>
+      {{!-- Class Skills --}}
+      {{~> "systems/pf1/templates/items/parts/item-class-skills.hbs"}}
 
       {{!-- Advanced --}}
       <h3 class="form-header">{{localize "PF1.Advanced"}}</h3>

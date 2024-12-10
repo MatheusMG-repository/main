@@ -10,7 +10,7 @@ NPCs also by default do not care about proficiencies (as per RAW), though there 
 
 ### NPC Sheet
 
-Same as PC sheet except displays CR and experience reward.
+Same as PC sheet except displays CR and experience reward on the summary tab.
 
 ### NPC Lite Sheet
 

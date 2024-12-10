@@ -31,8 +31,8 @@
 <div class="inventory-filters flexrow">
   {{~> "systems/pf1/templates/internal/item-search.hbs" category="inventory"}}
   <ul class="filter-list flexrow" data-category="inventory">
-    {{#each sections as |section sid|}}
-    <li class="filter-item" data-category="inventory" data-filter="{{section.id}}">{{section.label}}</li>
+    {{#each sections}}
+    <li class="filter-item" data-category="inventory" data-filter="{{id}}">{{label}}</li>
     {{/each}}
   </ul>
 </div>
@@ -41,8 +41,8 @@
   <ol class="item-groups-list">
   {{#each sections as |section sid|}}
   {{#unless section._hidden}}
-    <ol class="item-list" data-type="{{section.dataset.type}}" data-subtype="{{section.dataset.sub-type}}">
-      <li class="item-list-header flexrow items-{{sid}}">
+    <ol class="item-list" data-list="{{id}}" data-type="{{create.type}}" data-subtype="{{create.system.subType}}">
+      <li class="item-list-header flexrow items-{{id}}">
         <div class="item-name">
           <h3>{{section.label}}</h3>
         </div>

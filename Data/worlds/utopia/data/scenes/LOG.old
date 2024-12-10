@@ -1,14 +1,14 @@
-2024/12/02-08:56:17.618 9678 Recovering log #553
-2024/12/02-08:56:17.622 9678 Delete type=0 #553
-2024/12/02-08:56:17.622 9678 Delete type=3 #551
-2024/12/02-09:45:20.706 6ffc Level-0 table #559: started
-2024/12/02-09:45:20.708 6ffc Level-0 table #559: 53694 bytes OK
-2024/12/02-09:45:20.709 6ffc Delete type=0 #557
-2024/12/02-09:45:20.710 6ffc Manual compaction at level-0 from '!scenes!0OEZklkn24Bxj9Qr' @ 72057594037927935 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at '!scenes.walls!h9i856VIEI5zh6YV.zJ4mCG1h4WKwg9xn' @ 92659 : 1
-2024/12/02-09:45:20.710 6ffc Compacting 1@0 + 1@1 files
-2024/12/02-09:45:20.731 6ffc Generated table #560@0: 9743 keys, 1765695 bytes
-2024/12/02-09:45:20.731 6ffc Compacted 1@0 + 1@1 files => 1765695 bytes
-2024/12/02-09:45:20.732 6ffc compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/02-09:45:20.733 6ffc Delete type=2 #555
-2024/12/02-09:45:20.733 6ffc Delete type=2 #559
-2024/12/02-09:45:20.744 6ffc Manual compaction at level-0 from '!scenes.walls!h9i856VIEI5zh6YV.zJ4mCG1h4WKwg9xn' @ 92659 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at (end)
+2024/12/10-15:21:19.178 20d8 Recovering log #567
+2024/12/10-15:21:19.182 20d8 Delete type=0 #567
+2024/12/10-15:21:19.183 20d8 Delete type=3 #566
+2024/12/10-17:19:33.881 2d50 Level-0 table #571: started
+2024/12/10-17:19:33.885 2d50 Level-0 table #571: 82414 bytes OK
+2024/12/10-17:19:33.886 2d50 Delete type=0 #569
+2024/12/10-17:19:33.904 2d50 Manual compaction at level-0 from '!scenes!0OEZklkn24Bxj9Qr' @ 72057594037927935 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at '!scenes.tokens.delta.items.effects!8KMixmFtHm8hUv0L.uLhwcUQIWZ3LLAp2.LVmL2NhdpnplgrNq.Nr9PDNNx714sQXVz.NN7Qj3x3rpIEimYg' @ 92734 : 0
+2024/12/10-17:19:33.904 2d50 Compacting 2@0 + 0@1 files
+2024/12/10-17:19:33.943 2d50 Generated table #572@0: 9496 keys, 1644033 bytes
+2024/12/10-17:19:33.944 2d50 Compacted 2@0 + 0@1 files => 1644033 bytes
+2024/12/10-17:19:33.945 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/10-17:19:33.945 2d50 Delete type=2 #560
+2024/12/10-17:19:33.946 2d50 Delete type=2 #571
+2024/12/10-17:19:34.029 2d50 Manual compaction at level-0 from '!scenes.tokens.delta.items.effects!8KMixmFtHm8hUv0L.uLhwcUQIWZ3LLAp2.LVmL2NhdpnplgrNq.Nr9PDNNx714sQXVz.NN7Qj3x3rpIEimYg' @ 92734 : 0 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at (end)

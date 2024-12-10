@@ -65,12 +65,7 @@
     <label for="hideActorNameByDisposition">{{localize "PF1.SETTINGS.TokenTooltip.Hide.ActorName.ByDisposition"}}</label>
     <div class="form-fields">
       <select data-dtype="Number" name="hideActorNameByDisposition" id="hideActorNameByDisposition">
-        {{#select data.hideActorNameByDisposition}}
-          <option value="-2">{{localize "PF1.Disposition.None"}}</option>
-          <option value="-1">{{localize "PF1.Disposition.Hostile"}}</option>
-          <option value="0">{{localize "PF1.Disposition.Non-Friendly"}}</option>
-          <option value="1">{{localize "PF1.Disposition.All"}}</option>
-        {{/select}}
+        {{selectOptions tokenNameDisposition selected=data.hideActorNameByDisposition localize=true}}
       </select>
     </div>
   </div>
@@ -78,7 +73,7 @@
   <div class="form-group">
     <label>{{localize "PF1.SETTINGS.TokenTooltip.Hide.ActorName.Replacement"}}</label>
     <div class="form-fields">
-      <input type="text" name="hideActorNameReplacement" value="{{data.hideActorNameReplacement}}">
+      <input type="text" name="hideActorNameReplacement" value="{{data.hideActorNameReplacement}}" required>
     </div>
   </div>
 

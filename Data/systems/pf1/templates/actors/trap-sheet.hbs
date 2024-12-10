@@ -32,14 +32,14 @@
           </span>
         </div>
 
-        <div class="info-box perception">
+        <div class="info-box perception" data-tooltip-extended="detect">
           <h5>{{localize "PF1.Trap.PerceptionDC"}}</h5>
           <span class="value">
             <input name="system.details.perception" value="{{system.details.perception}}" type="number" data-dtype="Number" step="1" placeholder="{{localize "PF1.NonApplicable"}}">
           </span>
         </div>
 
-        <div class="info-box disarm">
+        <div class="info-box disarm" data-tooltip-extended="disarm">
           <h5>{{localize "PF1.Trap.DisableDeviceDC"}}</h5>
           <span class="value">
             <input name="system.details.disarm" value="{{system.details.disarm}}" type="number" data-dtype="Number" step="1" placeholder="{{localize "PF1.NonApplicable"}}">
@@ -83,11 +83,11 @@
       {{!-- Actions --}}
       <div class="combat-attacks">
         <section class="attacks-body">
-          <ol class="item-groups-list">
+          <ol class="item-groups-list" data-list="{{id}}" data-type="{{create.type}}" data-subtype="{{create.system.subType}}">
           {{#each attacks as |section sid|}}
           {{#unless section._hidden}}
-            <ol class="item-list" data-type="attack" data-subtype="{{sid}}">
-              <li class="item-list-header flexrow attacks-{{sid}}">
+            <ol class="item-list">
+              <li class="item-list-header flexrow attacks-{{id}}">
                 <div class="item-name">
                   <h3>{{section.label}}</h3>
                 </div>
@@ -111,7 +111,7 @@
 
               {{#each section.items as |item iid|}}
               <li class="item flexrow" data-item-id="{{item.id}}">
-                <div class="item-name flexrow rollable">
+                <div class="item-name rollable">
                   <div class="item-image" style='background-image: url("{{item.img}}")'></div>
                   <h4>
                     {{item.name~}}

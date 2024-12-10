@@ -1,16 +1,20 @@
 <div class="widget categorized-item-picker">
   <div class="item-picker-categories">
-    {{#each categories as |cat|}}
-      <div class="category">
-        <a data-category="{{cat.key}}"><h2>{{cat.label}}</h2></a>
+    {{#each categories}}
+      <div class="category {{#if validity.valid}}valid{{else}}invalid{{/if}}"
+        {{#unless validity.valid}}data-tooltip="PF1.Application.ChangeTargetSelector.InvalidChoice"{{/unless}}>
+        <a data-category="{{key}}"><h2>{{label}}</h2></a>
+        {{#unless validity.valid}}<i class="warning fa-solid fa-triangle-exclamation"></i>{{/unless}}
       </div>
     {{/each}}
   </div>
 
   <div class="item-picker-items">
-    {{#each items as |item|}}
-      <span class="item hidden" style="display: none;" data-category="{{item.category}}" data-value="{{item.key}}">
-          {{item.label}}
+    {{#each items}}
+      <span class="item hidden {{#if validity.valid}}valid{{else}}invalid{{/if}}" data-category="{{category}}" data-value="{{key}}"
+        {{#unless validity.valid}}data-tooltip="PF1.Application.ChangeTargetSelector.InvalidChoice"{{/unless}}>
+        <h4>{{label}}</h4>
+        {{#unless validity.valid}}<i class="warning fa-solid fa-triangle-exclamation"></i>{{/unless}}
       </span>
     {{/each}}
   </div>

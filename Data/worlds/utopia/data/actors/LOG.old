@@ -1,7 +1,24 @@
-2024/12/02-08:56:17.179 1790 Recovering log #1357
-2024/12/02-08:56:17.183 1790 Delete type=0 #1357
-2024/12/02-08:56:17.184 1790 Delete type=3 #1355
-2024/12/02-09:45:20.692 6ffc Level-0 table #1366: started
-2024/12/02-09:45:20.692 6ffc Level-0 table #1366: 0 bytes OK
-2024/12/02-09:45:20.693 6ffc Delete type=0 #1364
-2024/12/02-09:45:20.694 6ffc Manual compaction at level-0 from '!actors!09o57OUHfGhlxHmh' @ 72057594037927935 : 1 .. '!actors.items.effects!za9nLZPCvFyLJq5g.aTfjucSzwZoHu1o4.x6IvCPuTqhYonAjw' @ 0 : 0; will stop at (end)
+2024/12/10-15:21:18.973 b80 Recovering log #1386
+2024/12/10-15:21:18.973 b80 Level-0 table #1388: started
+2024/12/10-15:21:18.977 b80 Level-0 table #1388: 7779 bytes OK
+2024/12/10-15:21:18.984 b80 Delete type=0 #1386
+2024/12/10-15:21:18.985 b80 Delete type=3 #1385
+2024/12/10-15:21:18.986 2d50 Moved #1378 to level-1 2126673 bytes OK: files[ 3 2 0 0 0 0 0 ]
+2024/12/10-17:19:33.533 2d50 Level-0 table #1391: started
+2024/12/10-17:19:33.560 2d50 Level-0 table #1391: 1497999 bytes OK
+2024/12/10-17:19:33.561 2d50 Delete type=0 #1389
+2024/12/10-17:19:33.575 2d50 Manual compaction at level-0 from '!actors!09o57OUHfGhlxHmh' @ 72057594037927935 : 1 .. '!actors.items.effects!za9nLZPCvFyLJq5g.aTfjucSzwZoHu1o4.x6IvCPuTqhYonAjw' @ 0 : 0; will stop at '!actors.items.effects!za9nLZPCvFyLJq5g.aTfjucSzwZoHu1o4.x6IvCPuTqhYonAjw' @ 123555 : 1
+2024/12/10-17:19:33.575 2d50 Compacting 4@0 + 2@1 files
+2024/12/10-17:19:33.616 2d50 Generated table #1392@0: 957 keys, 2118127 bytes
+2024/12/10-17:19:33.727 2d50 Generated table #1393@0: 1807 keys, 2127698 bytes
+2024/12/10-17:19:33.769 2d50 Generated table #1394@0: 1881 keys, 2127291 bytes
+2024/12/10-17:19:33.834 2d50 Generated table #1395@0: 744 keys, 813154 bytes
+2024/12/10-17:19:33.834 2d50 Compacted 4@0 + 2@1 files => 7186270 bytes
+2024/12/10-17:19:33.834 2d50 compacted to: files[ 0 4 0 0 0 0 0 ]
+2024/12/10-17:19:33.835 2d50 Delete type=2 #1378
+2024/12/10-17:19:33.835 2d50 Delete type=2 #1379
+2024/12/10-17:19:33.836 2d50 Delete type=2 #1380
+2024/12/10-17:19:33.836 2d50 Delete type=2 #1384
+2024/12/10-17:19:33.837 2d50 Delete type=2 #1388
+2024/12/10-17:19:33.837 2d50 Delete type=2 #1391
+2024/12/10-17:19:33.842 2d50 Manual compaction at level-0 from '!actors.items.effects!za9nLZPCvFyLJq5g.aTfjucSzwZoHu1o4.x6IvCPuTqhYonAjw' @ 123555 : 1 .. '!actors.items.effects!za9nLZPCvFyLJq5g.aTfjucSzwZoHu1o4.x6IvCPuTqhYonAjw' @ 0 : 0; will stop at (end)

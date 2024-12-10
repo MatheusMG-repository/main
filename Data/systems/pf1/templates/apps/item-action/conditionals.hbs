@@ -17,38 +17,25 @@
         placeholder="{{localize "PF1.Formula"}}" required>
 
         <select class="conditional-target" name="conditionals.{{a}}.modifiers.{{m}}.target" required>
-          {{#select (lookup this "target") }}
-          <option value=""></option>
-          {{#each targets as |target type|}}
-          <option value="{{type}}">{{target}}</option>
-          {{/each}}
-          {{/select}}
+          {{selectOptions targets selected=target blank=""}}
         </select>
 
         {{#unless (or (eq modifier.target "size") (eq modifier.target "critMult"))}}
           <select class="conditional-sub-target" name="conditionals.{{a}}.modifiers.{{m}}.subTarget">
-            {{#select (lookup this "subTarget") }}
-            {{#if (lookup this "target") }}
-            {{#each subTargets as |target type|}}
-            <option value="{{type}}">{{target}}</option>
-            {{/each}}
+            {{#if target}}
+            {{selectOptions subTargets selected=subTarget}}
             {{else}}
             <option value=""></option>
             {{/if}}
-            {{/select}}
           </select>
 
           {{#if (eq modifier.target "attack")}}
           <select class="conditional-type" name="conditionals.{{a}}.modifiers.{{m}}.type">
-            {{#select (lookup this "type") }}
-            {{#if (lookup this "target") }}
-            {{#each conditionalModifierTypes as |modifierType mt|}}
-            <option value="{{mt}}">{{modifierType}}</option>
-            {{/each}}
+            {{#if target}}
+            {{selectOptions conditionalModifierTypes selected=type}}
             {{else}}
             <option value=""></option>
             {{/if}}
-            {{/select}}
           </select>
           {{/if}}
 
@@ -60,15 +47,11 @@
 
           {{#if (or (eq modifier.target "attack") (eq modifier.target "damage"))}}
           <select class="conditional-critical" name="conditionals.{{a}}.modifiers.{{m}}.critical">
-            {{#select (lookup this "critical") }}
-            {{#if (lookup this "target")}}
-            {{#each conditionalCritical as |critical c|}}
-            <option value="{{c}}">{{localize critical}}</option>
-            {{/each}}
+            {{#if target}}
+            {{selectOptions conditionalCritical selected=critical localize=true}}
             {{else}}
             <option value=""></option>
             {{/if}}
-            {{/select}}
           </select>
           {{/if}}
         {{/unless}}

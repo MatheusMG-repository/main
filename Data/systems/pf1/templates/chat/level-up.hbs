@@ -9,7 +9,11 @@
 
   {{!-- New level --}}
   <div class="level-change">
+    {{#if isMythic}}
+    {{localize "PF1.Tier"}}
+    {{else}}
     {{localize "PF1.Level"}}
+    {{/if}}
     <span class="level-previous">{{level.previous}}</span>
     <i class="fas fa-arrow-right"></i>
     <span class="level-new">{{level.new}}</span>

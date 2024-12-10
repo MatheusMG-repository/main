@@ -694,11 +694,12 @@
               }
             },
             "sid": false,
-            "tr": false,
+            "tr": 0,
             "si": false,
-            "sc": false,
+            "sc": 0,
             "custom": ""
           },
+          "hardness": 0,
           "dr": {
             "value": [],
             "custom": ""
@@ -1017,7 +1018,16 @@
       }
     },
     "class": {
-      "templates": ["description", "changes", "links", "tagged", "proficiencies", "flags", "scriptCalls"],
+      "templates": [
+        "description",
+        "changes",
+        "contextNotes",
+        "links",
+        "tagged",
+        "proficiencies",
+        "flags",
+        "scriptCalls"
+      ],
       "subType": "base",
       "level": 1,
       "hd": 8,
@@ -1045,9 +1055,9 @@
       "templates": [
         "description",
         "changes",
+        "contextNotes",
         "action",
         "resource",
-        "contextNotes",
         "links",
         "tagged",
         "flags",
@@ -1145,6 +1155,9 @@
         "scriptCalls"
       ],
       "subType": "feat",
+      "traitType": "",
+      "traitCategory": "",
+      "racePoints": null,
       "abilityType": "na",
       "associations": {
         "classes": []
@@ -1228,9 +1241,9 @@
         "physical",
         "fragile",
         "changes",
+        "contextNotes",
         "action",
         "resource",
-        "contextNotes",
         "links",
         "tagged",
         "flags",
@@ -1335,7 +1348,7 @@
       }
     },
     "container": {
-      "templates": ["description", "changes", "physical", "fragile", "inventory", "tagged", "flags"],
+      "templates": ["description", "changes", "contextNotes", "physical", "fragile", "inventory", "tagged", "flags"],
       "items": {}
     }
   }

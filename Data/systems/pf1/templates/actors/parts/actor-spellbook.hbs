@@ -191,10 +191,16 @@
             {{disabled spellbook.autoSpellLevelCalculation}}
             {{checked spellbook.spellPoints.useSystem}}> {{localize "PF1.UseSpellPoints"}}
         </label>
-        <label class="checkbox">
-          <input type="checkbox" name="system.attributes.spells.spellbooks.{{bookId}}.hasCantrips"
-            {{checked spellbook.hasCantrips}}> {{localize "PF1.HasCantrips"}}
-        </label>
+        <div class="flexrow stacked special">
+          <label class="checkbox">
+            <input type="checkbox" name="system.attributes.spells.spellbooks.{{bookId}}.hasCantrips"
+              {{checked spellbook.hasCantrips}}> {{localize "PF1.HasCantrips"}}
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="system.attributes.spells.spellbooks.{{bookId}}.noAbilityLimit"
+              {{checked spellbook.noAbilityLimit}}> {{localize "PF1.NoCastingAbilityLimit"}}
+          </label>
+        </div>
         <div class="radios">
           <label class="checkbox">
             <input type="radio" name="system.attributes.spells.spellbooks.{{bookId}}.spellPreparationMode" value="prepared" {{checked (eq spellbook.spellPreparationMode "prepared")}}>

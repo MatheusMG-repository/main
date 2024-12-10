@@ -48,7 +48,7 @@
         </div>
 
         {{! Caster Level }}
-        <div class="info-box caster-level">
+        <div class="info-box caster-level" data-tooltip-extended="cl">
           <h5>{{localize "PF1.CasterLevel"}}</h5>
           <span class="value">
             <input name="system.details.cl"  value="{{system.details.cl}}"  data-dtype="Number" type="number" step="1" placeholder="{{localize "PF1.NonApplicable"}}">
@@ -56,7 +56,7 @@
         </div>
 
         {{! Initiative }}
-        <div class="info-box attribute initiative">
+        <div class="info-box attribute initiative" data-tooltip-extended="init">
           <h5><a class="rollable"><i class="fas fa-dice"></i> <span>{{localize "PF1.Initiative"}}</span></a></h5>
           <span class="value">
             <span class="text-box direct allow-relative" name="system.attributes.init.value" data-dtype="Number">
@@ -73,7 +73,7 @@
 
       <div class="details">
         {{! Health }}
-        <div class="info-box-joined info-box-header health">
+        <div class="info-box-joined info-box-header health" data-tooltip-extended="health">
           <h3>{{localize "PF1.HitPoints"}}</h3>
           <div class="info-box current">
             <h5>{{localize "PF1.Current"}}</h5>
@@ -128,11 +128,11 @@
       {{!-- Actions --}}
       <div class="combat-attacks">
         <section class="attacks-body">
-          <ol class="item-groups-list">
-          {{#each attacks as |section sid|}}
+        {{#each attacks as |section sid|}}
+          <ol class="item-groups-list" data-list="{{id}}" data-type="{{create.type}}" data-subtype="{{create.system.subType}}">
           {{#unless section._hidden}}
-            <ol class="item-list" data-type="attack" data-subtype="{{sid}}">
-              <li class="item-list-header flexrow attacks-{{sid}}">
+            <ol class="item-list">
+              <li class="item-list-header flexrow attacks-{{id}}">
                 <div class="item-name">
                   <h3>{{section.label}}</h3>
                 </div>
@@ -156,7 +156,7 @@
 
               {{#each section.items as |item iid|}}
               <li class="item flexrow" data-item-id="{{item.id}}">
-                <div class="item-name flexrow rollable">
+                <div class="item-name rollable">
                   <div class="item-image" style='background-image: url("{{item.img}}")'></div>
                   <h4>
                     {{item.name~}}
@@ -198,8 +198,8 @@
               {{/each}}
             </ol>
           {{/unless}}
-          {{/each}}
           </ol>
+          {{/each}}
         </section>
       </div>
     </div>

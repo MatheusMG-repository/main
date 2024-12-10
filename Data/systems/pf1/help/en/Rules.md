@@ -26,6 +26,7 @@ The following rules are not directly supported. They require manual work to make
 - Shapeshifting / Polymorphing / Wild Shaping
 - Siege Weapons
 - Spontaneous casting (cleric, druid, etc. variant where prepared slots are substituted)
+- Inappropriately Sized Weapons
 
 ### Quality of Life deficiencies
 

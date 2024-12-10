@@ -13,7 +13,9 @@
 <div class="form-group" data-tooltip="@item.auraStrength : {{aura.strength}}">
   <label class="header">{{localize "PF1.School"}}</label>
   <div class="form-fields">
+    {{#if aura.strengthLabel}}
     <label class="aura-strength">{{aura.strengthLabel}}</label>
+    {{/if}}
     {{#if system.aura.custom}}
     <input type="text" name="system.aura.school" value="{{system.aura.school}}" placeholder="{{localize "PF1.Aura.Single"}}">
     {{else}}

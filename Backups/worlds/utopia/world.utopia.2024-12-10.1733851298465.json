@@ -1,0 +1,25 @@
+{
+  "title": "Utopia",
+  "id": "world.utopia.2024-12-10.1733851298465",
+  "system": "pf1",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.315"
+  },
+  "relationships": {
+    "requires": [],
+    "systems": [],
+    "recommends": [],
+    "conflicts": [],
+    "flags": {}
+  },
+  "description": "",
+  "version": "0",
+  "size": 72343309,
+  "note": "update 12-10",
+  "snapshotId": null,
+  "originalSize": 232677781,
+  "createdAt": 1733851298465,
+  "packageId": "utopia",
+  "type": "world"
+}

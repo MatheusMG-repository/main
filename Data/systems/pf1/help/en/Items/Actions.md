@@ -36,6 +36,8 @@ Note: Chained flurry will display the two-weapon fighting penalty (`-2`) in atta
 
 Chained flurry is easiest to handle for single class monk, ensuring the ability is linked to monk class at bottom of details tab, and adding BAB override in the attack simply as `@class.level` (or `@classes.monk.level` without linking).
 
+Both chained and unchained flurry require you set class association for the attack item to the monk class at bottom of the item's details tab.
+
 #### Formula-based extra attacks
 
 **Variables**

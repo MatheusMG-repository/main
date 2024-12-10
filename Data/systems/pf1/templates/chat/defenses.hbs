@@ -86,6 +86,15 @@
     </div>
   </div>
   {{/if}}
+  
+  {{#if misc.hardness}}
+  <div class="flexcol property-group">
+    <label>{{localize "PF1.Hardness"}}</label>
+    <div class="flexrow tag-list">
+      <span class="tag">{{{misc.hardness}}}</span>
+    </div>
+  </div>
+  {{/if}}
 
   {{#if misc.energyResistance}}
   <div class="flexcol property-group">
