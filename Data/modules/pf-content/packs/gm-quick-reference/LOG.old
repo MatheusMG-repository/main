@@ -1,13 +1,13 @@
-2024/12/10-15:21:19.963 20d8 Recovering log #98
-2024/12/10-15:21:19.967 20d8 Delete type=0 #98
-2024/12/10-15:21:19.967 20d8 Delete type=3 #97
-2024/12/10-17:19:35.155 2d50 Level-0 table #102: started
-2024/12/10-17:19:35.155 2d50 Level-0 table #102: 0 bytes OK
-2024/12/10-17:19:35.156 2d50 Delete type=0 #100
-2024/12/10-17:19:35.269 2d50 Manual compaction at level-0 from '!journal!0mCHxfTWOdJfUOfy' @ 72057594037927935 : 1 .. '!journal.pages!tLgNhWuK06KIcarw.EGQY2u0lX55DtyLq' @ 0 : 0; will stop at '!journal.pages!tLgNhWuK06KIcarw.EGQY2u0lX55DtyLq' @ 14 : 1
-2024/12/10-17:19:35.269 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:35.272 2d50 Generated table #103@0: 50 keys, 52579 bytes
-2024/12/10-17:19:35.272 2d50 Compacted 1@0 + 0@1 files => 52579 bytes
-2024/12/10-17:19:35.274 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:35.274 2d50 Delete type=2 #75
-2024/12/10-17:19:35.278 2d50 Manual compaction at level-0 from '!journal.pages!tLgNhWuK06KIcarw.EGQY2u0lX55DtyLq' @ 14 : 1 .. '!journal.pages!tLgNhWuK06KIcarw.EGQY2u0lX55DtyLq' @ 0 : 0; will stop at (end)
+2024/12/17-15:14:59.935 3bfc Recovering log #110
+2024/12/17-15:14:59.938 3bfc Delete type=0 #110
+2024/12/17-15:14:59.939 3bfc Delete type=3 #109
+2024/12/17-19:12:46.707 3e98 Level-0 table #114: started
+2024/12/17-19:12:46.707 3e98 Level-0 table #114: 0 bytes OK
+2024/12/17-19:12:46.708 3e98 Delete type=0 #112
+2024/12/17-19:12:46.806 3e98 Manual compaction at level-0 from '!journal!0mCHxfTWOdJfUOfy' @ 72057594037927935 : 1 .. '!journal.pages!tLgNhWuK06KIcarw.EGQY2u0lX55DtyLq' @ 0 : 0; will stop at '!journal.pages!tLgNhWuK06KIcarw.EGQY2u0lX55DtyLq' @ 14 : 1
+2024/12/17-19:12:46.806 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:46.809 3e98 Generated table #115@0: 50 keys, 52579 bytes
+2024/12/17-19:12:46.809 3e98 Compacted 1@0 + 0@1 files => 52579 bytes
+2024/12/17-19:12:46.809 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:46.809 3e98 Delete type=2 #103
+2024/12/17-19:12:46.811 3e98 Manual compaction at level-0 from '!journal.pages!tLgNhWuK06KIcarw.EGQY2u0lX55DtyLq' @ 14 : 1 .. '!journal.pages!tLgNhWuK06KIcarw.EGQY2u0lX55DtyLq' @ 0 : 0; will stop at (end)

@@ -1,13 +1,14 @@
-2024/12/10-15:21:19.249 20d8 Recovering log #365
-2024/12/10-15:21:19.254 20d8 Delete type=0 #365
-2024/12/10-15:21:19.254 20d8 Delete type=3 #364
-2024/12/10-17:19:34.039 2d50 Level-0 table #369: started
-2024/12/10-17:19:34.039 2d50 Level-0 table #369: 0 bytes OK
-2024/12/10-17:19:34.040 2d50 Delete type=0 #367
-2024/12/10-17:19:34.046 2d50 Manual compaction at level-0 from '!users!3emTmZrhpm6KRub5' @ 72057594037927935 : 1 .. '!users!xdfb8k4dcuOuBPuh' @ 0 : 0; will stop at '!users!xdfb8k4dcuOuBPuh' @ 294 : 1
-2024/12/10-17:19:34.046 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:34.048 2d50 Generated table #370@0: 10 keys, 5533 bytes
-2024/12/10-17:19:34.048 2d50 Compacted 1@0 + 0@1 files => 5533 bytes
-2024/12/10-17:19:34.049 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:34.050 2d50 Delete type=2 #354
-2024/12/10-17:19:34.061 2d50 Manual compaction at level-0 from '!users!xdfb8k4dcuOuBPuh' @ 294 : 1 .. '!users!xdfb8k4dcuOuBPuh' @ 0 : 0; will stop at (end)
+2024/12/17-15:14:58.676 3bfc Recovering log #377
+2024/12/17-15:14:58.681 3bfc Delete type=0 #377
+2024/12/17-15:14:58.681 3bfc Delete type=3 #376
+2024/12/17-19:12:45.857 3e98 Level-0 table #381: started
+2024/12/17-19:12:45.862 3e98 Level-0 table #381: 1117 bytes OK
+2024/12/17-19:12:45.863 3e98 Delete type=0 #379
+2024/12/17-19:12:45.869 3e98 Manual compaction at level-0 from '!users!3emTmZrhpm6KRub5' @ 72057594037927935 : 1 .. '!users!xdfb8k4dcuOuBPuh' @ 0 : 0; will stop at '!users!RAn6D2MULMce0we4' @ 507 : 1
+2024/12/17-19:12:45.869 3e98 Compacting 2@0 + 0@1 files
+2024/12/17-19:12:45.870 3e98 Generated table #382@0: 10 keys, 5591 bytes
+2024/12/17-19:12:45.870 3e98 Compacted 2@0 + 0@1 files => 5591 bytes
+2024/12/17-19:12:45.871 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:45.871 3e98 Delete type=2 #370
+2024/12/17-19:12:45.871 3e98 Delete type=2 #381
+2024/12/17-19:12:45.880 3e98 Manual compaction at level-0 from '!users!RAn6D2MULMce0we4' @ 507 : 1 .. '!users!xdfb8k4dcuOuBPuh' @ 0 : 0; will stop at (end)

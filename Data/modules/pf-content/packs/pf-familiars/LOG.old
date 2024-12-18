@@ -1,13 +1,13 @@
-2024/12/10-15:21:19.914 3b18 Recovering log #98
-2024/12/10-15:21:19.918 3b18 Delete type=0 #98
-2024/12/10-15:21:19.919 3b18 Delete type=3 #97
-2024/12/10-17:19:35.276 2d50 Level-0 table #102: started
-2024/12/10-17:19:35.276 2d50 Level-0 table #102: 0 bytes OK
-2024/12/10-17:19:35.278 2d50 Delete type=0 #100
-2024/12/10-17:19:35.299 2d50 Manual compaction at level-0 from '!actors!0nEtajjqYSldQTfQ' @ 72057594037927935 : 1 .. '!actors.items!zxyUH9ivH1dszRBE.zsp0o0tIEQqf232U' @ 0 : 0; will stop at '!actors.items!zxyUH9ivH1dszRBE.zsp0o0tIEQqf232U' @ 1665 : 1
-2024/12/10-17:19:35.299 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:35.385 2d50 Generated table #103@0: 2005 keys, 1327837 bytes
-2024/12/10-17:19:35.385 2d50 Compacted 1@0 + 0@1 files => 1327837 bytes
-2024/12/10-17:19:35.387 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:35.387 2d50 Delete type=2 #75
-2024/12/10-17:19:35.394 2d50 Manual compaction at level-0 from '!actors.items!zxyUH9ivH1dszRBE.zsp0o0tIEQqf232U' @ 1665 : 1 .. '!actors.items!zxyUH9ivH1dszRBE.zsp0o0tIEQqf232U' @ 0 : 0; will stop at (end)
+2024/12/17-15:14:59.798 2b7c Recovering log #110
+2024/12/17-15:14:59.801 2b7c Delete type=0 #110
+2024/12/17-15:14:59.802 2b7c Delete type=3 #109
+2024/12/17-19:12:46.639 3e98 Level-0 table #114: started
+2024/12/17-19:12:46.639 3e98 Level-0 table #114: 0 bytes OK
+2024/12/17-19:12:46.640 3e98 Delete type=0 #112
+2024/12/17-19:12:46.640 3e98 Manual compaction at level-0 from '!actors!0nEtajjqYSldQTfQ' @ 72057594037927935 : 1 .. '!actors.items!zxyUH9ivH1dszRBE.zsp0o0tIEQqf232U' @ 0 : 0; will stop at '!actors.items!zxyUH9ivH1dszRBE.zsp0o0tIEQqf232U' @ 1665 : 1
+2024/12/17-19:12:46.640 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:46.702 3e98 Generated table #115@0: 2005 keys, 1327837 bytes
+2024/12/17-19:12:46.702 3e98 Compacted 1@0 + 0@1 files => 1327837 bytes
+2024/12/17-19:12:46.703 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:46.704 3e98 Delete type=2 #103
+2024/12/17-19:12:46.709 3e98 Manual compaction at level-0 from '!actors.items!zxyUH9ivH1dszRBE.zsp0o0tIEQqf232U' @ 1665 : 1 .. '!actors.items!zxyUH9ivH1dszRBE.zsp0o0tIEQqf232U' @ 0 : 0; will stop at (end)

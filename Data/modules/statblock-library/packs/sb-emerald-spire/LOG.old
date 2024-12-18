@@ -1,13 +1,13 @@
-2024/12/10-15:21:21.357 3b18 Recovering log #240
-2024/12/10-15:21:21.361 3b18 Delete type=0 #240
-2024/12/10-15:21:21.361 3b18 Delete type=3 #239
-2024/12/10-17:19:38.736 2d50 Level-0 table #244: started
-2024/12/10-17:19:38.736 2d50 Level-0 table #244: 0 bytes OK
-2024/12/10-17:19:38.738 2d50 Delete type=0 #242
-2024/12/10-17:19:38.745 2d50 Manual compaction at level-0 from '!journal!2VIyJxZb0hJ6yMOj' @ 72057594037927935 : 1 .. '!journal.pages!z8UGoFR3GNv6J9Xe.x5NsunDzpytqtyiN' @ 0 : 0; will stop at '!journal.pages!z8UGoFR3GNv6J9Xe.x5NsunDzpytqtyiN' @ 87 : 1
-2024/12/10-17:19:38.745 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:38.749 2d50 Generated table #245@0: 144 keys, 104157 bytes
-2024/12/10-17:19:38.749 2d50 Compacted 1@0 + 0@1 files => 104157 bytes
-2024/12/10-17:19:38.750 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:38.750 2d50 Delete type=2 #217
-2024/12/10-17:19:38.781 2d50 Manual compaction at level-0 from '!journal.pages!z8UGoFR3GNv6J9Xe.x5NsunDzpytqtyiN' @ 87 : 1 .. '!journal.pages!z8UGoFR3GNv6J9Xe.x5NsunDzpytqtyiN' @ 0 : 0; will stop at (end)
+2024/12/17-15:15:01.893 2b7c Recovering log #252
+2024/12/17-15:15:01.896 2b7c Delete type=0 #252
+2024/12/17-15:15:01.897 2b7c Delete type=3 #251
+2024/12/17-19:12:48.756 3e98 Level-0 table #256: started
+2024/12/17-19:12:48.756 3e98 Level-0 table #256: 0 bytes OK
+2024/12/17-19:12:48.757 3e98 Delete type=0 #254
+2024/12/17-19:12:48.760 3e98 Manual compaction at level-0 from '!journal!2VIyJxZb0hJ6yMOj' @ 72057594037927935 : 1 .. '!journal.pages!z8UGoFR3GNv6J9Xe.x5NsunDzpytqtyiN' @ 0 : 0; will stop at '!journal.pages!z8UGoFR3GNv6J9Xe.x5NsunDzpytqtyiN' @ 87 : 1
+2024/12/17-19:12:48.760 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:48.763 3e98 Generated table #257@0: 144 keys, 104157 bytes
+2024/12/17-19:12:48.763 3e98 Compacted 1@0 + 0@1 files => 104157 bytes
+2024/12/17-19:12:48.764 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:48.764 3e98 Delete type=2 #245
+2024/12/17-19:12:48.772 3e98 Manual compaction at level-0 from '!journal.pages!z8UGoFR3GNv6J9Xe.x5NsunDzpytqtyiN' @ 87 : 1 .. '!journal.pages!z8UGoFR3GNv6J9Xe.x5NsunDzpytqtyiN' @ 0 : 0; will stop at (end)

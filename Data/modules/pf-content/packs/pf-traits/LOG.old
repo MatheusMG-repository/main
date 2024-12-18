@@ -1,13 +1,13 @@
-2024/12/10-15:21:20.116 b80 Recovering log #98
-2024/12/10-15:21:20.121 b80 Delete type=0 #98
-2024/12/10-15:21:20.121 b80 Delete type=3 #97
-2024/12/10-17:19:35.602 2d50 Level-0 table #102: started
-2024/12/10-17:19:35.602 2d50 Level-0 table #102: 0 bytes OK
-2024/12/10-17:19:35.604 2d50 Delete type=0 #100
-2024/12/10-17:19:35.614 2d50 Manual compaction at level-0 from '!folders!13dReUJWCsEjXV2p' @ 72057594037927935 : 1 .. '!items!zvimna0Hb2kltmqo' @ 0 : 0; will stop at '!items!zvimna0Hb2kltmqo' @ 1178 : 1
-2024/12/10-17:19:35.614 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:35.641 2d50 Generated table #103@0: 1998 keys, 1302974 bytes
-2024/12/10-17:19:35.641 2d50 Compacted 1@0 + 0@1 files => 1302974 bytes
-2024/12/10-17:19:35.643 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:35.643 2d50 Delete type=2 #75
-2024/12/10-17:19:35.652 2d50 Manual compaction at level-0 from '!items!zvimna0Hb2kltmqo' @ 1178 : 1 .. '!items!zvimna0Hb2kltmqo' @ 0 : 0; will stop at (end)
+2024/12/17-15:15:00.213 519c Recovering log #110
+2024/12/17-15:15:00.217 519c Delete type=0 #110
+2024/12/17-15:15:00.217 519c Delete type=3 #109
+2024/12/17-19:12:46.952 3e98 Level-0 table #114: started
+2024/12/17-19:12:46.953 3e98 Level-0 table #114: 0 bytes OK
+2024/12/17-19:12:46.954 3e98 Delete type=0 #112
+2024/12/17-19:12:46.956 3e98 Manual compaction at level-0 from '!folders!13dReUJWCsEjXV2p' @ 72057594037927935 : 1 .. '!items!zvimna0Hb2kltmqo' @ 0 : 0; will stop at '!items!zvimna0Hb2kltmqo' @ 1178 : 1
+2024/12/17-19:12:46.956 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:46.972 3e98 Generated table #115@0: 1998 keys, 1302974 bytes
+2024/12/17-19:12:46.972 3e98 Compacted 1@0 + 0@1 files => 1302974 bytes
+2024/12/17-19:12:46.973 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:46.973 3e98 Delete type=2 #103
+2024/12/17-19:12:46.988 3e98 Manual compaction at level-0 from '!items!zvimna0Hb2kltmqo' @ 1178 : 1 .. '!items!zvimna0Hb2kltmqo' @ 0 : 0; will stop at (end)

@@ -1,13 +1,13 @@
-2024/12/10-15:21:20.183 b80 Recovering log #98
-2024/12/10-15:21:20.188 b80 Delete type=0 #98
-2024/12/10-15:21:20.189 b80 Delete type=3 #97
-2024/12/10-17:19:35.674 2d50 Level-0 table #102: started
-2024/12/10-17:19:35.674 2d50 Level-0 table #102: 0 bytes OK
-2024/12/10-17:19:35.676 2d50 Delete type=0 #100
-2024/12/10-17:19:35.797 2d50 Manual compaction at level-0 from '!journal!0OsipKCp3TWhmvoD' @ 72057594037927935 : 1 .. '!journal!yCW3X969nm8xIUot' @ 0 : 0; will stop at '!journal!yCW3X969nm8xIUot' @ 75 : 1
-2024/12/10-17:19:35.797 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:35.804 2d50 Generated table #103@0: 77 keys, 97481 bytes
-2024/12/10-17:19:35.804 2d50 Compacted 1@0 + 0@1 files => 97481 bytes
-2024/12/10-17:19:35.805 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:35.805 2d50 Delete type=2 #75
-2024/12/10-17:19:35.820 2d50 Manual compaction at level-0 from '!journal!yCW3X969nm8xIUot' @ 75 : 1 .. '!journal!yCW3X969nm8xIUot' @ 0 : 0; will stop at (end)
+2024/12/17-15:15:00.361 519c Recovering log #110
+2024/12/17-15:15:00.364 519c Delete type=0 #110
+2024/12/17-15:15:00.364 519c Delete type=3 #109
+2024/12/17-19:12:46.991 3e98 Level-0 table #114: started
+2024/12/17-19:12:46.991 3e98 Level-0 table #114: 0 bytes OK
+2024/12/17-19:12:46.992 3e98 Delete type=0 #112
+2024/12/17-19:12:46.995 3e98 Manual compaction at level-0 from '!journal!0OsipKCp3TWhmvoD' @ 72057594037927935 : 1 .. '!journal!yCW3X969nm8xIUot' @ 0 : 0; will stop at '!journal!yCW3X969nm8xIUot' @ 75 : 1
+2024/12/17-19:12:46.995 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:46.999 3e98 Generated table #115@0: 77 keys, 97481 bytes
+2024/12/17-19:12:46.999 3e98 Compacted 1@0 + 0@1 files => 97481 bytes
+2024/12/17-19:12:46.999 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:47.000 3e98 Delete type=2 #103
+2024/12/17-19:12:47.111 3e98 Manual compaction at level-0 from '!journal!yCW3X969nm8xIUot' @ 75 : 1 .. '!journal!yCW3X969nm8xIUot' @ 0 : 0; will stop at (end)

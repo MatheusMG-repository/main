@@ -1,13 +1,13 @@
-2024/12/10-15:21:20.223 40e8 Recovering log #98
-2024/12/10-15:21:20.228 40e8 Delete type=0 #98
-2024/12/10-15:21:20.229 40e8 Delete type=3 #97
-2024/12/10-17:19:35.830 2d50 Level-0 table #102: started
-2024/12/10-17:19:35.830 2d50 Level-0 table #102: 0 bytes OK
-2024/12/10-17:19:35.831 2d50 Delete type=0 #100
-2024/12/10-17:19:35.838 2d50 Manual compaction at level-0 from '!tables!9tX12naUdZshO3aa' @ 72057594037927935 : 1 .. '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 0 : 0; will stop at '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 32 : 1
-2024/12/10-17:19:35.838 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:35.840 2d50 Generated table #103@0: 62 keys, 8113 bytes
-2024/12/10-17:19:35.840 2d50 Compacted 1@0 + 0@1 files => 8113 bytes
-2024/12/10-17:19:35.842 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:35.842 2d50 Delete type=2 #75
-2024/12/10-17:19:36.001 2d50 Manual compaction at level-0 from '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 32 : 1 .. '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 0 : 0; will stop at (end)
+2024/12/17-15:15:00.421 3844 Recovering log #110
+2024/12/17-15:15:00.426 3844 Delete type=0 #110
+2024/12/17-15:15:00.426 3844 Delete type=3 #109
+2024/12/17-19:12:47.122 3e98 Level-0 table #114: started
+2024/12/17-19:12:47.122 3e98 Level-0 table #114: 0 bytes OK
+2024/12/17-19:12:47.123 3e98 Delete type=0 #112
+2024/12/17-19:12:47.131 3e98 Manual compaction at level-0 from '!tables!9tX12naUdZshO3aa' @ 72057594037927935 : 1 .. '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 0 : 0; will stop at '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 32 : 1
+2024/12/17-19:12:47.131 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:47.133 3e98 Generated table #115@0: 62 keys, 8113 bytes
+2024/12/17-19:12:47.133 3e98 Compacted 1@0 + 0@1 files => 8113 bytes
+2024/12/17-19:12:47.134 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:47.134 3e98 Delete type=2 #103
+2024/12/17-19:12:47.136 3e98 Manual compaction at level-0 from '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 32 : 1 .. '!tables.results!bfkzFNAydISvXwFt.zcYSgdy9o7OnBZtZ' @ 0 : 0; will stop at (end)

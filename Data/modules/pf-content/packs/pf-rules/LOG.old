@@ -1,13 +1,13 @@
-2024/12/10-15:21:20.076 3b18 Recovering log #98
-2024/12/10-15:21:20.081 3b18 Delete type=0 #98
-2024/12/10-15:21:20.081 3b18 Delete type=3 #97
-2024/12/10-17:19:35.517 2d50 Level-0 table #102: started
-2024/12/10-17:19:35.517 2d50 Level-0 table #102: 0 bytes OK
-2024/12/10-17:19:35.519 2d50 Delete type=0 #100
-2024/12/10-17:19:35.561 2d50 Manual compaction at level-0 from '!folders!0UdRoYuHCXwycS6f' @ 72057594037927935 : 1 .. '!journal.pages!zsULaA3W562EQNNZ.zjBvZC3puysAdhk3' @ 0 : 0; will stop at '!journal.pages!zsULaA3W562EQNNZ.zjBvZC3puysAdhk3' @ 971 : 1
-2024/12/10-17:19:35.561 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:35.587 2d50 Generated table #103@0: 1470 keys, 1288758 bytes
-2024/12/10-17:19:35.587 2d50 Compacted 1@0 + 0@1 files => 1288758 bytes
-2024/12/10-17:19:35.588 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:35.588 2d50 Delete type=2 #75
-2024/12/10-17:19:35.600 2d50 Manual compaction at level-0 from '!journal.pages!zsULaA3W562EQNNZ.zjBvZC3puysAdhk3' @ 971 : 1 .. '!journal.pages!zsULaA3W562EQNNZ.zjBvZC3puysAdhk3' @ 0 : 0; will stop at (end)
+2024/12/17-15:15:00.160 2b7c Recovering log #110
+2024/12/17-15:15:00.165 2b7c Delete type=0 #110
+2024/12/17-15:15:00.166 2b7c Delete type=3 #109
+2024/12/17-19:12:46.934 3e98 Level-0 table #114: started
+2024/12/17-19:12:46.935 3e98 Level-0 table #114: 0 bytes OK
+2024/12/17-19:12:46.936 3e98 Delete type=0 #112
+2024/12/17-19:12:46.936 3e98 Manual compaction at level-0 from '!folders!0UdRoYuHCXwycS6f' @ 72057594037927935 : 1 .. '!journal.pages!zsULaA3W562EQNNZ.zjBvZC3puysAdhk3' @ 0 : 0; will stop at '!journal.pages!zsULaA3W562EQNNZ.zjBvZC3puysAdhk3' @ 971 : 1
+2024/12/17-19:12:46.936 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:46.951 3e98 Generated table #115@0: 1470 keys, 1288758 bytes
+2024/12/17-19:12:46.951 3e98 Compacted 1@0 + 0@1 files => 1288758 bytes
+2024/12/17-19:12:46.952 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:46.952 3e98 Delete type=2 #103
+2024/12/17-19:12:46.956 3e98 Manual compaction at level-0 from '!journal.pages!zsULaA3W562EQNNZ.zjBvZC3puysAdhk3' @ 971 : 1 .. '!journal.pages!zsULaA3W562EQNNZ.zjBvZC3puysAdhk3' @ 0 : 0; will stop at (end)

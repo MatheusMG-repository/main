@@ -1,13 +1,13 @@
-2024/12/10-15:21:19.736 b80 Recovering log #254
-2024/12/10-15:21:19.741 b80 Delete type=0 #254
-2024/12/10-15:21:19.741 b80 Delete type=3 #253
-2024/12/10-17:19:34.686 2d50 Level-0 table #258: started
-2024/12/10-17:19:34.687 2d50 Level-0 table #258: 0 bytes OK
-2024/12/10-17:19:34.688 2d50 Delete type=0 #256
-2024/12/10-17:19:34.705 2d50 Manual compaction at level-0 from '!playlists!1O5l5N99XlG8z1ZF' @ 72057594037927935 : 1 .. '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 0 : 0; will stop at '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 1801 : 1
-2024/12/10-17:19:34.705 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:34.709 2d50 Generated table #259@0: 449 keys, 59808 bytes
-2024/12/10-17:19:34.709 2d50 Compacted 1@0 + 0@1 files => 59808 bytes
-2024/12/10-17:19:34.711 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:34.711 2d50 Delete type=2 #231
-2024/12/10-17:19:34.717 2d50 Manual compaction at level-0 from '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 1801 : 1 .. '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 0 : 0; will stop at (end)
+2024/12/17-15:14:59.460 3844 Recovering log #266
+2024/12/17-15:14:59.464 3844 Delete type=0 #266
+2024/12/17-15:14:59.464 3844 Delete type=3 #265
+2024/12/17-19:12:46.337 3e98 Level-0 table #270: started
+2024/12/17-19:12:46.337 3e98 Level-0 table #270: 0 bytes OK
+2024/12/17-19:12:46.338 3e98 Delete type=0 #268
+2024/12/17-19:12:46.338 3e98 Manual compaction at level-0 from '!playlists!1O5l5N99XlG8z1ZF' @ 72057594037927935 : 1 .. '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 0 : 0; will stop at '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 1801 : 1
+2024/12/17-19:12:46.338 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:46.340 3e98 Generated table #271@0: 449 keys, 59808 bytes
+2024/12/17-19:12:46.340 3e98 Compacted 1@0 + 0@1 files => 59808 bytes
+2024/12/17-19:12:46.341 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:46.341 3e98 Delete type=2 #259
+2024/12/17-19:12:46.345 3e98 Manual compaction at level-0 from '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 1801 : 1 .. '!playlists.sounds!zzngI0qvjVOm7kQO.yJRYJIj7HLfnOvh7' @ 0 : 0; will stop at (end)

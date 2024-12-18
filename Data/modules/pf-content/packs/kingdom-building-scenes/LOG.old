@@ -1,13 +1,13 @@
-2024/12/10-15:21:20.202 b80 Recovering log #98
-2024/12/10-15:21:20.207 b80 Delete type=0 #98
-2024/12/10-15:21:20.207 b80 Delete type=3 #97
-2024/12/10-17:19:35.805 2d50 Level-0 table #102: started
-2024/12/10-17:19:35.806 2d50 Level-0 table #102: 0 bytes OK
-2024/12/10-17:19:35.807 2d50 Delete type=0 #100
-2024/12/10-17:19:35.820 2d50 Manual compaction at level-0 from '!scenes!VfllkIzpnvc0RLpY' @ 72057594037927935 : 1 .. '!scenes.tokens.delta!VfllkIzpnvc0RLpY.ziOt9nGN3Or6R9vh.ziOt9nGN3Or6R9vh' @ 0 : 0; will stop at '!scenes.tokens.delta!VfllkIzpnvc0RLpY.ziOt9nGN3Or6R9vh.ziOt9nGN3Or6R9vh' @ 10 : 1
-2024/12/10-17:19:35.820 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:35.826 2d50 Generated table #103@0: 106 keys, 100464 bytes
-2024/12/10-17:19:35.826 2d50 Compacted 1@0 + 0@1 files => 100464 bytes
-2024/12/10-17:19:35.827 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:35.827 2d50 Delete type=2 #75
-2024/12/10-17:19:35.831 2d50 Manual compaction at level-0 from '!scenes.tokens.delta!VfllkIzpnvc0RLpY.ziOt9nGN3Or6R9vh.ziOt9nGN3Or6R9vh' @ 10 : 1 .. '!scenes.tokens.delta!VfllkIzpnvc0RLpY.ziOt9nGN3Or6R9vh.ziOt9nGN3Or6R9vh' @ 0 : 0; will stop at (end)
+2024/12/17-15:15:00.391 519c Recovering log #110
+2024/12/17-15:15:00.395 519c Delete type=0 #110
+2024/12/17-15:15:00.395 519c Delete type=3 #109
+2024/12/17-19:12:47.120 3e98 Level-0 table #114: started
+2024/12/17-19:12:47.120 3e98 Level-0 table #114: 0 bytes OK
+2024/12/17-19:12:47.121 3e98 Delete type=0 #112
+2024/12/17-19:12:47.123 3e98 Manual compaction at level-0 from '!scenes!VfllkIzpnvc0RLpY' @ 72057594037927935 : 1 .. '!scenes.tokens.delta!VfllkIzpnvc0RLpY.ziOt9nGN3Or6R9vh.ziOt9nGN3Or6R9vh' @ 0 : 0; will stop at '!scenes.tokens.delta!VfllkIzpnvc0RLpY.ziOt9nGN3Or6R9vh.ziOt9nGN3Or6R9vh' @ 10 : 1
+2024/12/17-19:12:47.123 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:47.127 3e98 Generated table #115@0: 106 keys, 100464 bytes
+2024/12/17-19:12:47.127 3e98 Compacted 1@0 + 0@1 files => 100464 bytes
+2024/12/17-19:12:47.128 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:47.128 3e98 Delete type=2 #103
+2024/12/17-19:12:47.136 3e98 Manual compaction at level-0 from '!scenes.tokens.delta!VfllkIzpnvc0RLpY.ziOt9nGN3Or6R9vh.ziOt9nGN3Or6R9vh' @ 10 : 1 .. '!scenes.tokens.delta!VfllkIzpnvc0RLpY.ziOt9nGN3Or6R9vh.ziOt9nGN3Or6R9vh' @ 0 : 0; will stop at (end)

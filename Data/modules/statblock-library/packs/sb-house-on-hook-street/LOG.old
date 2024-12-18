@@ -1,13 +1,13 @@
-2024/12/10-15:21:21.476 b80 Recovering log #240
-2024/12/10-15:21:21.481 b80 Delete type=0 #240
-2024/12/10-15:21:21.481 b80 Delete type=3 #239
-2024/12/10-17:19:38.795 2d50 Level-0 table #244: started
-2024/12/10-17:19:38.795 2d50 Level-0 table #244: 0 bytes OK
-2024/12/10-17:19:38.797 2d50 Delete type=0 #242
-2024/12/10-17:19:38.845 2d50 Manual compaction at level-0 from '!journal!7llzrC99ubDApObd' @ 72057594037927935 : 1 .. '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 0 : 0; will stop at '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 80 : 1
-2024/12/10-17:19:38.845 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:38.848 2d50 Generated table #245@0: 51 keys, 41425 bytes
-2024/12/10-17:19:38.848 2d50 Compacted 1@0 + 0@1 files => 41425 bytes
-2024/12/10-17:19:38.849 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:38.850 2d50 Delete type=2 #217
-2024/12/10-17:19:38.853 2d50 Manual compaction at level-0 from '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 80 : 1 .. '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 0 : 0; will stop at (end)
+2024/12/17-15:15:02.075 519c Recovering log #252
+2024/12/17-15:15:02.079 519c Delete type=0 #252
+2024/12/17-15:15:02.079 519c Delete type=3 #251
+2024/12/17-19:12:48.832 3e98 Level-0 table #256: started
+2024/12/17-19:12:48.832 3e98 Level-0 table #256: 0 bytes OK
+2024/12/17-19:12:48.833 3e98 Delete type=0 #254
+2024/12/17-19:12:48.954 3e98 Manual compaction at level-0 from '!journal!7llzrC99ubDApObd' @ 72057594037927935 : 1 .. '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 0 : 0; will stop at '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 80 : 1
+2024/12/17-19:12:48.954 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:48.957 3e98 Generated table #257@0: 51 keys, 41425 bytes
+2024/12/17-19:12:48.957 3e98 Compacted 1@0 + 0@1 files => 41425 bytes
+2024/12/17-19:12:48.957 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:48.958 3e98 Delete type=2 #245
+2024/12/17-19:12:49.040 3e98 Manual compaction at level-0 from '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 80 : 1 .. '!journal.pages!yiZ8JDvt5iWmTOAa.wtbfeJm0wwISVzxf' @ 0 : 0; will stop at (end)

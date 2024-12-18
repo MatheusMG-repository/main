@@ -1,5 +1,5 @@
 {
-  "timestamp": 1733844076192,
+  "timestamp": 1734462827471,
   "os": {
     "platform": "win32",
     "version": "10.0.22631",
@@ -35,7 +35,7 @@
       "version": "2.4"
     },
     "lib-wrapper": {
-      "version": "1.13.0.0"
+      "version": "1.13.2.0"
     },
     "lmrtfy": {
       "version": "3.1.9"
@@ -77,18 +77,18 @@
       "version": "2.0.1"
     },
     "torch": {
-      "version": "2.15.1"
+      "version": "2.16.0"
     }
   },
   "systems": {
     "pf1": {
-      "version": "10.3",
-      "playtime": 171475
+      "version": "10.8",
+      "playtime": 192817
     }
   },
   "worlds": {},
   "playtime": {
-    "total": 171475,
-    "max": 171475
+    "total": 192817,
+    "max": 192817
   }
 }

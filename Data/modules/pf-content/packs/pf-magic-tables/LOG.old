@@ -1,13 +1,13 @@
-2024/12/10-15:21:20.041 3b18 Recovering log #98
-2024/12/10-15:21:20.047 3b18 Delete type=0 #98
-2024/12/10-15:21:20.047 3b18 Delete type=3 #97
-2024/12/10-17:19:35.491 2d50 Level-0 table #102: started
-2024/12/10-17:19:35.491 2d50 Level-0 table #102: 0 bytes OK
-2024/12/10-17:19:35.492 2d50 Delete type=0 #100
-2024/12/10-17:19:35.506 2d50 Manual compaction at level-0 from '!folders!BZDvby6q7j80D7m7' @ 72057594037927935 : 1 .. '!tables.results!zWX8N9XFqLJY6ZZY.zXnEIUoooNpWjD3S' @ 0 : 0; will stop at '!tables.results!zWX8N9XFqLJY6ZZY.zXnEIUoooNpWjD3S' @ 144 : 1
-2024/12/10-17:19:35.506 2d50 Compacting 1@0 + 0@1 files
-2024/12/10-17:19:35.511 2d50 Generated table #103@0: 478 keys, 65471 bytes
-2024/12/10-17:19:35.511 2d50 Compacted 1@0 + 0@1 files => 65471 bytes
-2024/12/10-17:19:35.512 2d50 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/10-17:19:35.513 2d50 Delete type=2 #75
-2024/12/10-17:19:35.517 2d50 Manual compaction at level-0 from '!tables.results!zWX8N9XFqLJY6ZZY.zXnEIUoooNpWjD3S' @ 144 : 1 .. '!tables.results!zWX8N9XFqLJY6ZZY.zXnEIUoooNpWjD3S' @ 0 : 0; will stop at (end)
+2024/12/17-15:15:00.103 2b7c Recovering log #110
+2024/12/17-15:15:00.107 2b7c Delete type=0 #110
+2024/12/17-15:15:00.107 2b7c Delete type=3 #109
+2024/12/17-19:12:46.898 3e98 Level-0 table #114: started
+2024/12/17-19:12:46.898 3e98 Level-0 table #114: 0 bytes OK
+2024/12/17-19:12:46.898 3e98 Delete type=0 #112
+2024/12/17-19:12:46.901 3e98 Manual compaction at level-0 from '!folders!BZDvby6q7j80D7m7' @ 72057594037927935 : 1 .. '!tables.results!zWX8N9XFqLJY6ZZY.zXnEIUoooNpWjD3S' @ 0 : 0; will stop at '!tables.results!zWX8N9XFqLJY6ZZY.zXnEIUoooNpWjD3S' @ 144 : 1
+2024/12/17-19:12:46.901 3e98 Compacting 1@0 + 0@1 files
+2024/12/17-19:12:46.904 3e98 Generated table #115@0: 478 keys, 65471 bytes
+2024/12/17-19:12:46.904 3e98 Compacted 1@0 + 0@1 files => 65471 bytes
+2024/12/17-19:12:46.905 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/17-19:12:46.905 3e98 Delete type=2 #103
+2024/12/17-19:12:46.936 3e98 Manual compaction at level-0 from '!tables.results!zWX8N9XFqLJY6ZZY.zXnEIUoooNpWjD3S' @ 144 : 1 .. '!tables.results!zWX8N9XFqLJY6ZZY.zXnEIUoooNpWjD3S' @ 0 : 0; will stop at (end)
