@@ -1,9 +1,9 @@
-2024/12/17-15:14:58.369 3bfc Recovering log #396
-2024/12/17-15:14:58.369 3bfc Level-0 table #399: started
-2024/12/17-15:14:58.371 3bfc Level-0 table #399: 15225 bytes OK
-2024/12/17-15:14:58.374 3bfc Delete type=0 #396
-2024/12/17-15:14:58.375 3bfc Delete type=3 #394
-2024/12/17-19:12:48.790 3e98 Level-0 table #402: started
-2024/12/17-19:12:48.791 3e98 Level-0 table #402: 10496 bytes OK
-2024/12/17-19:12:48.792 3e98 Delete type=0 #400
-2024/12/17-19:12:48.800 3e98 Manual compaction at level-0 from 'undefined' @ 72057594037927935 : 1 .. 'undefined' @ 0 : 0; will stop at (end)
+2025/01/21-16:35:42.673 16c0 Delete type=3 #1
+2025/01/21-16:35:42.674 3b5c Compacting 4@0 + 0@1 files
+2025/01/21-16:35:42.683 3b5c Generated table #408@0: 123 keys, 231051 bytes
+2025/01/21-16:35:42.683 3b5c Compacted 4@0 + 0@1 files => 231051 bytes
+2025/01/21-16:35:42.689 3b5c compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/01/21-16:35:42.689 3b5c Delete type=2 #397
+2025/01/21-16:35:42.689 3b5c Delete type=2 #399
+2025/01/21-16:35:42.689 3b5c Delete type=2 #402
+2025/01/21-16:35:42.690 3b5c Delete type=2 #405

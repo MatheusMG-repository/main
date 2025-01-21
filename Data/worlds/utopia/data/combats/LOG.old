@@ -1,16 +1,1 @@
-2024/12/17-15:14:58.391 2b7c Recovering log #398
-2024/12/17-15:14:58.391 2b7c Level-0 table #400: started
-2024/12/17-15:14:58.398 2b7c Level-0 table #400: 721 bytes OK
-2024/12/17-15:14:58.402 2b7c Delete type=0 #398
-2024/12/17-15:14:58.402 2b7c Delete type=3 #397
-2024/12/17-19:04:01.401 3e98 Compacting 3@0 + 0@1 files
-2024/12/17-19:04:01.404 3e98 Generated table #402@0: 88 keys, 10396 bytes
-2024/12/17-19:04:01.404 3e98 Compacted 3@0 + 0@1 files => 10396 bytes
-2024/12/17-19:04:01.405 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/17-19:04:01.405 3e98 Delete type=2 #391
-2024/12/17-19:04:01.405 3e98 Delete type=2 #394
-2024/12/17-19:04:01.406 3e98 Delete type=2 #400
-2024/12/17-19:12:45.580 3e98 Level-0 table #404: started
-2024/12/17-19:12:45.581 3e98 Level-0 table #404: 0 bytes OK
-2024/12/17-19:12:45.581 3e98 Delete type=0 #401
-2024/12/17-19:12:45.598 3e98 Manual compaction at level-0 from '!combats!2mOPqAFDakk86oP7' @ 72057594037927935 : 1 .. '!combats.combatants!rhUxNw7zVTUjzafq.wG1ycKt0Pk2abNAo' @ 0 : 0; will stop at (end)
+2025/01/21-16:35:42.734 2288 Delete type=3 #1

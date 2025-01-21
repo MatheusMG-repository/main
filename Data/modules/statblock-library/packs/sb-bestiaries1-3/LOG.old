@@ -1,15 +1,1 @@
-2024/12/17-15:15:01.688 3bfc Recovering log #260
-2024/12/17-15:15:01.691 3bfc Delete type=0 #260
-2024/12/17-15:15:01.692 3bfc Delete type=3 #259
-2024/12/17-19:12:47.878 3e98 Level-0 table #264: started
-2024/12/17-19:12:47.878 3e98 Level-0 table #264: 0 bytes OK
-2024/12/17-19:12:47.879 3e98 Delete type=0 #262
-2024/12/17-19:12:47.908 3e98 Manual compaction at level-0 from '!journal!06b0geDZQUcGrRKB' @ 72057594037927935 : 1 .. '!journal.pages!zzuZcrJIArkiAmDB.q6nT5mzJxMaK4S2I' @ 0 : 0; will stop at '!journal.pages!zzuZcrJIArkiAmDB.q6nT5mzJxMaK4S2I' @ 1128 : 1
-2024/12/17-19:12:47.908 3e98 Compacting 2@0 + 0@1 files
-2024/12/17-19:12:47.931 3e98 Generated table #265@0: 2309 keys, 2126059 bytes
-2024/12/17-19:12:47.991 3e98 Generated table #266@0: 565 keys, 863589 bytes
-2024/12/17-19:12:47.991 3e98 Compacted 2@0 + 0@1 files => 2989648 bytes
-2024/12/17-19:12:47.992 3e98 compacted to: files[ 0 2 0 0 0 0 0 ]
-2024/12/17-19:12:47.992 3e98 Delete type=2 #252
-2024/12/17-19:12:47.993 3e98 Delete type=2 #253
-2024/12/17-19:12:48.134 3e98 Manual compaction at level-0 from '!journal.pages!zzuZcrJIArkiAmDB.q6nT5mzJxMaK4S2I' @ 1128 : 1 .. '!journal.pages!zzuZcrJIArkiAmDB.q6nT5mzJxMaK4S2I' @ 0 : 0; will stop at (end)
+2025/01/21-16:35:49.744 183c Delete type=3 #1

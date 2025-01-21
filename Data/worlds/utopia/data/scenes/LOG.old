@@ -1,22 +1,7 @@
-2024/12/17-15:14:58.594 2b7c Recovering log #584
-2024/12/17-15:14:58.595 2b7c Level-0 table #587: started
-2024/12/17-15:14:58.597 2b7c Level-0 table #587: 37956 bytes OK
-2024/12/17-15:14:58.601 2b7c Delete type=0 #584
-2024/12/17-15:14:58.601 2b7c Delete type=3 #582
-2024/12/17-15:15:10.378 3e98 Compacting 1@0 + 1@1 files
-2024/12/17-15:15:10.407 3e98 Generated table #589@0: 10050 keys, 1784016 bytes
-2024/12/17-15:15:10.407 3e98 Compacted 1@0 + 1@1 files => 1784016 bytes
-2024/12/17-15:15:10.408 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/17-15:15:10.408 3e98 Delete type=2 #585
-2024/12/17-15:15:10.408 3e98 Delete type=2 #587
-2024/12/17-19:12:45.817 3e98 Level-0 table #591: started
-2024/12/17-19:12:45.823 3e98 Level-0 table #591: 566688 bytes OK
-2024/12/17-19:12:45.824 3e98 Delete type=0 #588
-2024/12/17-19:12:45.824 3e98 Manual compaction at level-0 from '!scenes!0OEZklkn24Bxj9Qr' @ 72057594037927935 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at '!scenes.walls!WcZCEmos9KpcsPYa.zcbhNPsbH7T1JMwJ' @ 98002 : 1
-2024/12/17-19:12:45.824 3e98 Compacting 1@0 + 1@1 files
-2024/12/17-19:12:45.847 3e98 Generated table #592@0: 10211 keys, 1809974 bytes
-2024/12/17-19:12:45.847 3e98 Compacted 1@0 + 1@1 files => 1809974 bytes
-2024/12/17-19:12:45.847 3e98 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/17-19:12:45.847 3e98 Delete type=2 #589
-2024/12/17-19:12:45.848 3e98 Delete type=2 #591
-2024/12/17-19:12:45.865 3e98 Manual compaction at level-0 from '!scenes.walls!WcZCEmos9KpcsPYa.zcbhNPsbH7T1JMwJ' @ 98002 : 1 .. '!scenes.walls!x7R7Z0AZlaCvwCk4.zfRTK6MwBqiCzpxV' @ 0 : 0; will stop at (end)
+2025/01/21-16:35:43.377 2288 Delete type=3 #1
+2025/01/21-16:35:58.014 3b5c Compacting 2@0 + 0@1 files
+2025/01/21-16:35:58.077 3b5c Generated table #601@0: 10221 keys, 1811452 bytes
+2025/01/21-16:35:58.077 3b5c Compacted 2@0 + 0@1 files => 1811452 bytes
+2025/01/21-16:35:58.082 3b5c compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/01/21-16:35:58.082 3b5c Delete type=2 #597
+2025/01/21-16:35:58.083 3b5c Delete type=2 #598
