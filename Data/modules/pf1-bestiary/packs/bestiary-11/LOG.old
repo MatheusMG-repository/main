@@ -1,11 +1,3 @@
-2025/01/21-16:35:48.997 183c Delete type=3 #1
-2025/01/21-16:35:48.999 3b5c Moved #21 to level-1 2121008 bytes OK: files[ 9 1 0 0 0 0 0 ]
-2025/01/21-16:35:49.003 3b5c Moved #22 to level-1 2129563 bytes OK: files[ 8 2 0 0 0 0 0 ]
-2025/01/21-16:35:49.004 3b5c Moved #23 to level-1 2128941 bytes OK: files[ 7 3 0 0 0 0 0 ]
-2025/01/21-16:35:49.008 3b5c Moved #363 to level-1 2130000 bytes OK: files[ 6 4 0 0 0 0 0 ]
-2025/01/21-16:35:49.010 3b5c Moved #364 to level-1 2128948 bytes OK: files[ 5 5 0 0 0 0 0 ]
-2025/01/21-16:35:49.013 3b5c Moved #365 to level-1 2128439 bytes OK: files[ 4 6 0 0 0 0 0 ]
-2025/01/21-16:35:49.015 3b5c Moved #21 to level-2 2121008 bytes OK: files[ 4 5 1 0 0 0 0 ]
-2025/01/21-16:35:49.019 3b5c Moved #22 to level-2 2129563 bytes OK: files[ 4 4 2 0 0 0 0 ]
-2025/01/21-16:35:49.020 3b5c Moved #366 to level-1 2128440 bytes OK: files[ 3 5 2 0 0 0 0 ]
-2025/01/21-16:35:49.024 3b5c Moved #23 to level-2 2128941 bytes OK: files[ 3 4 3 0 0 0 0 ]
+2025/01/29-08:41:07.609 73c Recovering log #385
+2025/01/29-08:41:07.612 73c Delete type=0 #385
+2025/01/29-08:41:07.613 73c Delete type=3 #384
