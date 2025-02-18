@@ -1,6 +1,12 @@
 {
   "news": [
     {
+      "title": "The Official Marketplace is Live!",
+      "caption": "The official Foundry VTT Marketplace is now live and we're celebrating with a great sale on most Marketplace content and some huge content releases! This brand new store brings together your favorite TTRPG content creators and publishers into a centralized shopping experience that links seamlessly to your existing Foundry Virtual Tabletop user account.",
+      "url": "https://foundryvtt.store/",
+      "image": "https://r2.foundryvtt.com/website-uploads-public/screen/user_70/marketplace-announcement-2025-02-12.png"
+    },
+    {
       "title": "Version 12 Stable Release",
       "caption": "Version 12 Stable has now been released! Check out our release notes for everything you need to know.",
       "url": "https://foundryvtt.com/releases/12.324",
