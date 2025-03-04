@@ -1,3 +1,13 @@
-2025/02/18-18:37:39.745 189c Recovering log #648
-2025/02/18-18:37:39.762 189c Delete type=0 #648
-2025/02/18-18:37:39.762 189c Delete type=3 #646
+2025/03/04-19:07:52.648 57a0 Recovering log #660
+2025/03/04-19:07:52.649 57a0 Level-0 table #666: started
+2025/03/04-19:07:52.651 57a0 Level-0 table #666: 92917 bytes OK
+2025/03/04-19:07:52.656 57a0 Delete type=0 #660
+2025/03/04-19:07:52.657 57a0 Delete type=3 #658
+2025/03/04-22:19:33.960 f6c Compacting 1@0 + 2@1 files
+2025/03/04-22:19:33.979 f6c Generated table #668@0: 59 keys, 2114073 bytes
+2025/03/04-22:19:34.047 f6c Generated table #669@0: 82 keys, 2145531 bytes
+2025/03/04-22:19:34.047 f6c Compacted 1@0 + 2@1 files => 4259604 bytes
+2025/03/04-22:19:34.048 f6c compacted to: files[ 1 4 0 0 0 0 0 ]
+2025/03/04-22:19:34.048 f6c Delete type=2 #661
+2025/03/04-22:19:34.049 f6c Delete type=2 #662
+2025/03/04-22:19:34.049 f6c Delete type=2 #666
