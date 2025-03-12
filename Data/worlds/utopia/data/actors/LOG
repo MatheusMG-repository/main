@@ -1,53 +1,19 @@
-2025/03/04-19:07:52.480 4df0 Recovering log #1669
-2025/03/04-19:07:52.483 4df0 Level-0 table #1676: started
-2025/03/04-19:07:52.501 4df0 Level-0 table #1676: 722845 bytes OK
-2025/03/04-19:07:52.507 4df0 Delete type=0 #1669
-2025/03/04-19:07:52.507 4df0 Delete type=3 #1667
-2025/03/04-19:07:59.032 f6c Compacting 1@0 + 5@1 files
-2025/03/04-19:07:59.073 f6c Generated table #1678@0: 820 keys, 2116443 bytes
-2025/03/04-19:07:59.114 f6c Generated table #1679@0: 1702 keys, 2127769 bytes
-2025/03/04-19:07:59.156 f6c Generated table #1680@0: 1728 keys, 2128653 bytes
-2025/03/04-19:07:59.291 f6c Generated table #1681@0: 1716 keys, 2129996 bytes
-2025/03/04-19:07:59.296 f6c Generated table #1682@0: 158 keys, 75898 bytes
-2025/03/04-19:07:59.296 f6c Compacted 1@0 + 5@1 files => 8578759 bytes
-2025/03/04-19:07:59.297 f6c compacted to: files[ 0 5 0 0 0 0 0 ]
-2025/03/04-19:07:59.298 f6c Delete type=2 #1670
-2025/03/04-19:07:59.298 f6c Delete type=2 #1671
-2025/03/04-19:07:59.298 f6c Delete type=2 #1672
-2025/03/04-19:07:59.298 f6c Delete type=2 #1673
-2025/03/04-19:07:59.299 f6c Delete type=2 #1674
-2025/03/04-19:07:59.299 f6c Delete type=2 #1676
-2025/03/04-21:00:24.783 f6c Level-0 table #1684: started
-2025/03/04-21:00:24.813 f6c Level-0 table #1684: 1574727 bytes OK
-2025/03/04-21:00:24.815 f6c Delete type=0 #1677
-2025/03/04-21:01:19.869 f6c Compacting 1@0 + 5@1 files
-2025/03/04-21:01:19.914 f6c Generated table #1685@0: 810 keys, 2115804 bytes
-2025/03/04-21:01:19.954 f6c Generated table #1686@0: 1706 keys, 2128055 bytes
-2025/03/04-21:01:20.069 f6c Generated table #1687@0: 1744 keys, 2129400 bytes
-2025/03/04-21:01:20.195 f6c Generated table #1688@0: 1715 keys, 2129369 bytes
-2025/03/04-21:01:20.202 f6c Generated table #1689@0: 193 keys, 132037 bytes
-2025/03/04-21:01:20.202 f6c Compacted 1@0 + 5@1 files => 8634665 bytes
-2025/03/04-21:01:20.203 f6c compacted to: files[ 0 5 0 0 0 0 0 ]
-2025/03/04-21:01:20.203 f6c Delete type=2 #1678
-2025/03/04-21:01:20.204 f6c Delete type=2 #1679
-2025/03/04-21:01:20.204 f6c Delete type=2 #1680
-2025/03/04-21:01:20.205 f6c Delete type=2 #1681
-2025/03/04-21:01:20.205 f6c Delete type=2 #1682
-2025/03/04-21:01:20.205 f6c Delete type=2 #1684
-2025/03/04-22:04:09.105 f6c Level-0 table #1691: started
-2025/03/04-22:04:09.131 f6c Level-0 table #1691: 1655216 bytes OK
-2025/03/04-22:04:09.132 f6c Delete type=0 #1683
-2025/03/04-22:04:40.141 f6c Compacting 1@0 + 5@1 files
-2025/03/04-22:04:40.187 f6c Generated table #1692@0: 812 keys, 2116240 bytes
-2025/03/04-22:04:40.237 f6c Generated table #1693@0: 1706 keys, 2128290 bytes
-2025/03/04-22:04:40.355 f6c Generated table #1694@0: 1744 keys, 2129415 bytes
-2025/03/04-22:04:40.482 f6c Generated table #1695@0: 1715 keys, 2129383 bytes
-2025/03/04-22:04:40.489 f6c Generated table #1696@0: 198 keys, 133359 bytes
-2025/03/04-22:04:40.489 f6c Compacted 1@0 + 5@1 files => 8636687 bytes
-2025/03/04-22:04:40.490 f6c compacted to: files[ 0 5 0 0 0 0 0 ]
-2025/03/04-22:04:40.490 f6c Delete type=2 #1685
-2025/03/04-22:04:40.490 f6c Delete type=2 #1686
-2025/03/04-22:04:40.491 f6c Delete type=2 #1687
-2025/03/04-22:04:40.492 f6c Delete type=2 #1688
-2025/03/04-22:04:40.493 f6c Delete type=2 #1689
-2025/03/04-22:04:40.493 f6c Delete type=2 #1691
+2025/03/12-09:43:34.730 34a8 Recovering log #1785
+2025/03/12-09:43:34.733 34a8 Level-0 table #1793: started
+2025/03/12-09:43:34.742 34a8 Level-0 table #1793: 966863 bytes OK
+2025/03/12-09:43:34.746 34a8 Delete type=0 #1785
+2025/03/12-09:43:34.746 34a8 Delete type=3 #1749
+2025/03/12-09:45:00.347 1f10 Compacting 1@0 + 5@1 files
+2025/03/12-09:45:00.372 1f10 Generated table #1795@0: 768 keys, 2115341 bytes
+2025/03/12-09:45:00.467 1f10 Generated table #1796@0: 1719 keys, 2129101 bytes
+2025/03/12-09:45:00.491 1f10 Generated table #1797@0: 1711 keys, 2127429 bytes
+2025/03/12-09:45:00.595 1f10 Generated table #1798@0: 1734 keys, 2129872 bytes
+2025/03/12-09:45:00.624 1f10 Generated table #1799@0: 616 keys, 662044 bytes
+2025/03/12-09:45:00.624 1f10 Compacted 1@0 + 5@1 files => 9163787 bytes
+2025/03/12-09:45:00.625 1f10 compacted to: files[ 0 5 0 0 0 0 0 ]
+2025/03/12-09:45:00.625 1f10 Delete type=2 #1787
+2025/03/12-09:45:00.625 1f10 Delete type=2 #1788
+2025/03/12-09:45:00.626 1f10 Delete type=2 #1789
+2025/03/12-09:45:00.627 1f10 Delete type=2 #1790
+2025/03/12-09:45:00.627 1f10 Delete type=2 #1791
+2025/03/12-09:45:00.628 1f10 Delete type=2 #1793
