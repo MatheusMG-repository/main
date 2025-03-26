@@ -1,3 +1,5 @@
-2025/03/11-15:58:12.617 4380 Recovering log #62
-2025/03/11-15:58:12.620 4380 Delete type=0 #62
-2025/03/11-15:58:12.620 4380 Delete type=3 #61
+2025/03/26-22:36:19.841 4304 Log #66: 0 ops saved to Table #67 OK
+2025/03/26-22:36:19.842 4304 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\basic-monsters/000066.log: OK
+2025/03/26-22:36:19.844 4304 Table #17: 256 entries OK
+2025/03/26-22:36:19.854 4304 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\basic-monsters/MANIFEST-000065: OK
+2025/03/26-22:36:19.864 4304 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\basic-monsters; recovered 1 files; 253041 bytes. Some data may have been lost. ****

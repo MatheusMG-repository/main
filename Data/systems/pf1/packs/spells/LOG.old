@@ -1,3 +1,6 @@
-2025/03/11-15:58:12.699 438c Recovering log #63
-2025/03/11-15:58:12.701 438c Delete type=0 #63
-2025/03/11-15:58:12.702 438c Delete type=3 #62
+2025/03/26-22:36:20.088 17a0 Log #67: 0 ops saved to Table #68 OK
+2025/03/26-22:36:20.089 17a0 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\spells/000067.log: OK
+2025/03/26-22:36:20.096 17a0 Table #17: 2170 entries OK
+2025/03/26-22:36:20.100 17a0 Table #18: 868 entries OK
+2025/03/26-22:36:20.113 17a0 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\spells/MANIFEST-000066: OK
+2025/03/26-22:36:20.124 17a0 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\spells; recovered 2 files; 2947300 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2025/03/11-15:58:12.276 438c Recovering log #459
-2025/03/11-15:58:12.279 438c Delete type=0 #459
-2025/03/11-15:58:12.279 438c Delete type=3 #457
+2025/03/26-22:36:18.843 17a0 Log #464: 0 ops saved to Table #466 OK
+2025/03/26-22:36:18.844 17a0 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/000464.log: OK
+2025/03/26-22:36:18.845 17a0 Table #465: 80 entries OK
+2025/03/26-22:36:18.856 17a0 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/MANIFEST-000462: OK
+2025/03/26-22:36:18.866 17a0 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats; recovered 1 files; 9132 bytes. Some data may have been lost. ****

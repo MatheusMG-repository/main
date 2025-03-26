@@ -1,3 +1,5 @@
-2025/03/11-15:58:16.011 4384 Recovering log #302
-2025/03/11-15:58:16.014 4384 Delete type=0 #302
-2025/03/11-15:58:16.014 4384 Delete type=3 #301
+2025/03/26-22:36:30.764 17a0 Log #306: 0 ops saved to Table #307 OK
+2025/03/26-22:36:30.765 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mummys-mask/000306.log: OK
+2025/03/26-22:36:30.767 17a0 Table #257: 398 entries OK
+2025/03/26-22:36:30.778 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mummys-mask/MANIFEST-000305: OK
+2025/03/26-22:36:30.786 17a0 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-mummys-mask; recovered 1 files; 417923 bytes. Some data may have been lost. ****

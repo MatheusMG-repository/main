@@ -1,3 +1,4 @@
-2025/03/11-15:58:12.249 438c Recovering log #385
-2025/03/11-15:58:12.251 438c Delete type=0 #385
-2025/03/11-15:58:12.252 438c Delete type=3 #384
+2025/03/26-22:36:18.691 4304 Log #389: 0 ops saved to Table #390 OK
+2025/03/26-22:36:18.693 4304 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/cards/000389.log: OK
+2025/03/26-22:36:18.721 4304 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/cards/MANIFEST-000388: OK
+2025/03/26-22:36:18.733 4304 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/cards; recovered 0 files; 0 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2025/03/11-15:58:15.548 4384 Recovering log #302
-2025/03/11-15:58:15.550 4384 Delete type=0 #302
-2025/03/11-15:58:15.550 4384 Delete type=3 #301
+2025/03/26-22:36:29.287 4304 Log #306: 0 ops saved to Table #307 OK
+2025/03/26-22:36:29.288 4304 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-crucible-of-chaos/000306.log: OK
+2025/03/26-22:36:29.288 4304 Table #257: 24 entries OK
+2025/03/26-22:36:29.297 4304 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-crucible-of-chaos/MANIFEST-000305: OK
+2025/03/26-22:36:29.308 4304 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-crucible-of-chaos; recovered 1 files; 20194 bytes. Some data may have been lost. ****

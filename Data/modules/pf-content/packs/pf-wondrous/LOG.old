@@ -1,3 +1,6 @@
-2025/03/11-15:58:13.995 4380 Recovering log #165
-2025/03/11-15:58:13.998 4380 Delete type=0 #165
-2025/03/11-15:58:13.998 4380 Delete type=3 #164
+2025/03/26-22:36:22.957 b30 Log #169: 0 ops saved to Table #170 OK
+2025/03/26-22:36:22.958 b30 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous/000169.log: OK
+2025/03/26-22:36:22.965 b30 Table #119: 2728 entries OK
+2025/03/26-22:36:22.966 b30 Table #120: 183 entries OK
+2025/03/26-22:36:22.978 b30 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous/MANIFEST-000168: OK
+2025/03/26-22:36:22.987 b30 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-wondrous; recovered 2 files; 2265810 bytes. Some data may have been lost. ****

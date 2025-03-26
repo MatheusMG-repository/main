@@ -1,3 +1,5 @@
-2025/03/11-15:58:16.091 4380 Recovering log #302
-2025/03/11-15:58:16.094 4380 Delete type=0 #302
-2025/03/11-15:58:16.094 4380 Delete type=3 #301
+2025/03/26-22:36:31.048 445c Log #306: 0 ops saved to Table #307 OK
+2025/03/26-22:36:31.049 445c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-shattered-star/000306.log: OK
+2025/03/26-22:36:31.051 445c Table #257: 301 entries OK
+2025/03/26-22:36:31.068 445c Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-shattered-star/MANIFEST-000305: OK
+2025/03/26-22:36:31.081 445c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-shattered-star; recovered 1 files; 315281 bytes. Some data may have been lost. ****

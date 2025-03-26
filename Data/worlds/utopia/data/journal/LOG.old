@@ -1,9 +1,6 @@
-2025/03/11-15:58:12.403 4380 Recovering log #449
-2025/03/11-15:58:12.407 4380 Delete type=0 #449
-2025/03/11-15:58:12.407 4380 Delete type=3 #448
-2025/03/11-19:05:01.285 3b98 Compacting 2@0 + 0@1 files
-2025/03/11-19:05:01.288 3b98 Generated table #452@0: 40 keys, 26697 bytes
-2025/03/11-19:05:01.288 3b98 Compacted 2@0 + 0@1 files => 26697 bytes
-2025/03/11-19:05:01.289 3b98 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/03/11-19:05:01.289 3b98 Delete type=2 #438
-2025/03/11-19:05:01.290 3b98 Delete type=2 #439
+2025/03/26-22:36:19.307 b30 Log #455: 0 ops saved to Table #456 OK
+2025/03/26-22:36:19.308 b30 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal/000455.log: OK
+2025/03/26-22:36:19.308 b30 Table #452: 40 entries OK
+2025/03/26-22:36:19.309 b30 Table #454: 6 entries OK
+2025/03/26-22:36:19.322 b30 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal/MANIFEST-000453: OK
+2025/03/26-22:36:19.354 b30 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/journal; recovered 2 files; 28252 bytes. Some data may have been lost. ****

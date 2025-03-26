@@ -1,3 +1,5 @@
-2025/03/11-15:58:15.537 4388 Recovering log #302
-2025/03/11-15:58:15.540 4388 Delete type=0 #302
-2025/03/11-15:58:15.540 4388 Delete type=3 #301
+2025/03/26-22:36:29.237 17a0 Log #306: 0 ops saved to Table #307 OK
+2025/03/26-22:36:29.239 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-clash-of-the-kingslayers/000306.log: OK
+2025/03/26-22:36:29.239 17a0 Table #257: 15 entries OK
+2025/03/26-22:36:29.249 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-clash-of-the-kingslayers/MANIFEST-000305: OK
+2025/03/26-22:36:29.261 17a0 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-clash-of-the-kingslayers; recovered 1 files; 17891 bytes. Some data may have been lost. ****

@@ -1,3 +1,9 @@
-2025/03/12-09:43:38.142 3f90 Recovering log #415
-2025/03/12-09:43:38.146 3f90 Delete type=0 #415
-2025/03/12-09:43:38.146 3f90 Delete type=3 #414
+2025/03/26-22:36:24.601 17a0 Delete type=3 #1
+2025/03/26-22:36:24.606 4794 Moved #21 to level-1 2122794 bytes OK: files[ 8 1 0 0 0 0 0 ]
+2025/03/26-22:36:24.611 4794 Moved #22 to level-1 2129098 bytes OK: files[ 7 2 0 0 0 0 0 ]
+2025/03/26-22:36:24.616 4794 Moved #362 to level-1 2128734 bytes OK: files[ 6 3 0 0 0 0 0 ]
+2025/03/26-22:36:24.620 4794 Moved #363 to level-1 2128296 bytes OK: files[ 5 4 0 0 0 0 0 ]
+2025/03/26-22:36:24.625 4794 Moved #364 to level-1 2128986 bytes OK: files[ 4 5 0 0 0 0 0 ]
+2025/03/26-22:36:24.630 4794 Moved #21 to level-2 2122794 bytes OK: files[ 4 4 1 0 0 0 0 ]
+2025/03/26-22:36:24.635 4794 Moved #365 to level-1 2129598 bytes OK: files[ 3 5 1 0 0 0 0 ]
+2025/03/26-22:36:24.639 4794 Moved #22 to level-2 2129098 bytes OK: files[ 3 4 2 0 0 0 0 ]

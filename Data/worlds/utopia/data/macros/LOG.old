@@ -1,3 +1,7 @@
-2025/03/11-15:58:12.418 438c Recovering log #424
-2025/03/11-15:58:12.421 438c Delete type=0 #424
-2025/03/11-15:58:12.422 438c Delete type=3 #423
+2025/03/26-22:36:19.390 4304 Log #428: 0 ops saved to Table #429 OK
+2025/03/26-22:36:19.392 4304 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros/000428.log: OK
+2025/03/26-22:36:19.392 4304 Table #378: 170 entries OK
+2025/03/26-22:36:19.393 4304 Table #381: 4 entries OK
+2025/03/26-22:36:19.393 4304 Table #403: 12 entries OK
+2025/03/26-22:36:19.403 4304 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros/MANIFEST-000427: OK
+2025/03/26-22:36:19.411 4304 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/macros; recovered 3 files; 37311 bytes. Some data may have been lost. ****

@@ -1,3 +1,6 @@
-2025/03/11-15:58:15.638 4388 Recovering log #311
-2025/03/11-15:58:15.641 4388 Delete type=0 #311
-2025/03/11-15:58:15.641 4388 Delete type=3 #310
+2025/03/26-22:36:29.738 b30 Log #315: 0 ops saved to Table #316 OK
+2025/03/26-22:36:29.740 b30 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-pfs/000315.log: OK
+2025/03/26-22:36:29.747 b30 Table #265: 3429 entries OK
+2025/03/26-22:36:29.753 b30 Table #266: 1647 entries OK
+2025/03/26-22:36:29.765 b30 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-pfs/MANIFEST-000314: OK
+2025/03/26-22:36:29.776 b30 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-pfs; recovered 2 files; 3881068 bytes. Some data may have been lost. ****

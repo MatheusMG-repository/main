@@ -1,3 +1,5 @@
-2025/03/11-15:58:14.079 438c Recovering log #160
-2025/03/11-15:58:14.082 438c Delete type=0 #160
-2025/03/11-15:58:14.082 438c Delete type=3 #159
+2025/03/26-22:36:23.030 17a0 Log #164: 0 ops saved to Table #165 OK
+2025/03/26-22:36:23.031 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-gm/000164.log: OK
+2025/03/26-22:36:23.031 17a0 Table #115: 77 entries OK
+2025/03/26-22:36:23.045 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-gm/MANIFEST-000163: OK
+2025/03/26-22:36:23.054 17a0 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\kingdom-building-gm; recovered 1 files; 97481 bytes. Some data may have been lost. ****

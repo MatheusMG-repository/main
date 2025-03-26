@@ -1,3 +1,5 @@
-2025/03/11-15:58:12.601 438c Recovering log #78
-2025/03/11-15:58:12.604 438c Delete type=0 #78
-2025/03/11-15:58:12.604 438c Delete type=3 #77
+2025/03/26-22:36:19.794 b30 Log #82: 0 ops saved to Table #83 OK
+2025/03/26-22:36:19.795 b30 Archiving C:\Users\mathe\utopia\main\Data\worlds\utopia\packs\test/000082.log: OK
+2025/03/26-22:36:19.796 b30 Table #33: 1 entries OK
+2025/03/26-22:36:19.807 b30 Archiving C:\Users\mathe\utopia\main\Data\worlds\utopia\packs\test/MANIFEST-000081: OK
+2025/03/26-22:36:19.815 b30 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\worlds\utopia\packs\test; recovered 1 files; 615 bytes. Some data may have been lost. ****

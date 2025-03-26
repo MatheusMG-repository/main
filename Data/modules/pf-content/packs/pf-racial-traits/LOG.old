@@ -1,3 +1,5 @@
-2025/03/11-15:58:13.880 4388 Recovering log #160
-2025/03/11-15:58:13.883 4388 Delete type=0 #160
-2025/03/11-15:58:13.883 4388 Delete type=3 #159
+2025/03/26-22:36:22.580 17a0 Log #164: 0 ops saved to Table #165 OK
+2025/03/26-22:36:22.581 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-racial-traits/000164.log: OK
+2025/03/26-22:36:22.584 17a0 Table #115: 1576 entries OK
+2025/03/26-22:36:22.595 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-racial-traits/MANIFEST-000163: OK
+2025/03/26-22:36:22.605 17a0 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-racial-traits; recovered 1 files; 713709 bytes. Some data may have been lost. ****

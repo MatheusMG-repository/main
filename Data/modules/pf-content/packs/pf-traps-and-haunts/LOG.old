@@ -1,3 +1,5 @@
-2025/03/11-15:58:13.959 4380 Recovering log #160
-2025/03/11-15:58:13.962 4380 Delete type=0 #160
-2025/03/11-15:58:13.962 4380 Delete type=3 #159
+2025/03/26-22:36:22.859 445c Log #164: 0 ops saved to Table #165 OK
+2025/03/26-22:36:22.860 445c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-traps-and-haunts/000164.log: OK
+2025/03/26-22:36:22.861 445c Table #115: 145 entries OK
+2025/03/26-22:36:22.874 445c Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-traps-and-haunts/MANIFEST-000163: OK
+2025/03/26-22:36:22.883 445c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-traps-and-haunts; recovered 1 files; 103090 bytes. Some data may have been lost. ****

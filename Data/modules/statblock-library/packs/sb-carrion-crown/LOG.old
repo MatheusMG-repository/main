@@ -1,3 +1,5 @@
-2025/03/11-15:58:15.876 4388 Recovering log #302
-2025/03/11-15:58:15.879 4388 Delete type=0 #302
-2025/03/11-15:58:15.879 4388 Delete type=3 #301
+2025/03/26-22:36:30.235 4304 Log #306: 0 ops saved to Table #307 OK
+2025/03/26-22:36:30.236 4304 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-carrion-crown/000306.log: OK
+2025/03/26-22:36:30.238 4304 Table #257: 377 entries OK
+2025/03/26-22:36:30.246 4304 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-carrion-crown/MANIFEST-000305: OK
+2025/03/26-22:36:30.258 4304 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-carrion-crown; recovered 1 files; 344921 bytes. Some data may have been lost. ****

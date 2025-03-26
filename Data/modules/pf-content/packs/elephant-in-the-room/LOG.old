@@ -1,3 +1,5 @@
-2025/03/11-15:58:13.562 4388 Recovering log #160
-2025/03/11-15:58:13.564 4388 Delete type=0 #160
-2025/03/11-15:58:13.565 4388 Delete type=3 #159
+2025/03/26-22:36:21.944 17a0 Log #164: 0 ops saved to Table #165 OK
+2025/03/26-22:36:21.945 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\elephant-in-the-room/000164.log: OK
+2025/03/26-22:36:21.946 17a0 Table #115: 36 entries OK
+2025/03/26-22:36:21.958 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\elephant-in-the-room/MANIFEST-000163: OK
+2025/03/26-22:36:21.971 17a0 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\elephant-in-the-room; recovered 1 files; 21384 bytes. Some data may have been lost. ****

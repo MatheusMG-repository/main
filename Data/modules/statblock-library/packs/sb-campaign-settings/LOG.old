@@ -1,3 +1,5 @@
-2025/03/11-15:58:15.506 4380 Recovering log #302
-2025/03/11-15:58:15.508 4380 Delete type=0 #302
-2025/03/11-15:58:15.508 4380 Delete type=3 #301
+2025/03/26-22:36:25.123 17a0 Log #306: 0 ops saved to Table #307 OK
+2025/03/26-22:36:25.124 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings/000306.log: OK
+2025/03/26-22:36:25.128 17a0 Table #257: 1248 entries OK
+2025/03/26-22:36:29.045 17a0 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings/MANIFEST-000305: OK
+2025/03/26-22:36:29.146 17a0 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-campaign-settings; recovered 1 files; 1226470 bytes. Some data may have been lost. ****

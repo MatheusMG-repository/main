@@ -1,3 +1,5 @@
-2025/03/11-15:58:12.642 438c Recovering log #62
-2025/03/11-15:58:12.645 438c Delete type=0 #62
-2025/03/11-15:58:12.645 438c Delete type=3 #61
+2025/03/26-22:36:19.893 17a0 Log #66: 0 ops saved to Table #67 OK
+2025/03/26-22:36:19.896 17a0 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\classes/000066.log: OK
+2025/03/26-22:36:19.896 17a0 Table #17: 49 entries OK
+2025/03/26-22:36:19.907 17a0 Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\classes/MANIFEST-000065: OK
+2025/03/26-22:36:19.915 17a0 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\classes; recovered 1 files; 83077 bytes. Some data may have been lost. ****

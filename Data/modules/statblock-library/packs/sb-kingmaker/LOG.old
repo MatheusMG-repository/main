@@ -1,3 +1,5 @@
-2025/03/11-15:58:15.999 4388 Recovering log #302
-2025/03/11-15:58:16.002 4388 Delete type=0 #302
-2025/03/11-15:58:16.002 4388 Delete type=3 #301
+2025/03/26-22:36:30.709 b30 Log #306: 0 ops saved to Table #307 OK
+2025/03/26-22:36:30.711 b30 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker/000306.log: OK
+2025/03/26-22:36:30.712 b30 Table #257: 383 entries OK
+2025/03/26-22:36:30.724 b30 Archiving C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker/MANIFEST-000305: OK
+2025/03/26-22:36:30.735 b30 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\statblock-library\packs\sb-kingmaker; recovered 1 files; 369419 bytes. Some data may have been lost. ****

@@ -1,3 +1,5 @@
-2025/03/11-15:58:13.330 4380 Recovering log #160
-2025/03/11-15:58:13.333 4380 Delete type=0 #160
-2025/03/11-15:58:13.333 4380 Delete type=3 #159
+2025/03/26-22:36:21.307 4304 Log #164: 0 ops saved to Table #165 OK
+2025/03/26-22:36:21.308 4304 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-artifacts/000164.log: OK
+2025/03/26-22:36:21.310 4304 Table #115: 332 entries OK
+2025/03/26-22:36:21.320 4304 Archiving C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-artifacts/MANIFEST-000163: OK
+2025/03/26-22:36:21.331 4304 **** Repaired leveldb C:\Users\mathe\utopia\main\Data\modules\pf-content\packs\pf-artifacts; recovered 1 files; 393970 bytes. Some data may have been lost. ****
