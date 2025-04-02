@@ -1,5 +1,5 @@
-2025/03/26-22:36:20.766 445c Log #66: 0 ops saved to Table #67 OK
-2025/03/26-22:36:20.767 445c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\roll-tables/000066.log: OK
-2025/03/26-22:36:20.768 445c Table #17: 357 entries OK
-2025/03/26-22:36:20.777 445c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\roll-tables/MANIFEST-000065: OK
-2025/03/26-22:36:20.785 445c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\roll-tables; recovered 1 files; 56344 bytes. Some data may have been lost. ****
+2025/04/02-13:59:12.710 2748 Log #69: 0 ops saved to Table #70 OK
+2025/04/02-13:59:12.711 2748 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\roll-tables/000069.log: OK
+2025/04/02-13:59:12.714 2748 Table #17: 357 entries OK
+2025/04/02-13:59:12.717 2748 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\roll-tables/MANIFEST-000068: OK
+2025/04/02-13:59:12.720 2748 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\roll-tables; recovered 1 files; 56344 bytes. Some data may have been lost. ****

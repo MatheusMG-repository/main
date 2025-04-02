@@ -1,5 +1,6 @@
-2025/03/26-22:36:19.552 4304 Log #680: 0 ops saved to Table #682 OK
-2025/03/26-22:36:19.554 4304 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/000680.log: OK
-2025/03/26-22:36:19.563 4304 Table #681: 11483 entries OK
-2025/03/26-22:36:19.572 4304 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes/MANIFEST-000678: OK
-2025/03/26-22:36:19.583 4304 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/scenes; recovered 1 files; 1987798 bytes. Some data may have been lost. ****
+2025/04/02-13:59:11.639 2894 Log #684: 11 ops saved to Table #685 OK
+2025/04/02-13:59:11.640 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes/000684.log: OK
+2025/04/02-13:59:11.650 2894 Table #681: 11483 entries OK
+2025/04/02-13:59:11.650 2894 Table #685: 11 entries OK
+2025/04/02-13:59:11.653 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes/MANIFEST-000683: OK
+2025/04/02-13:59:11.657 2894 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/scenes; recovered 2 files; 1999082 bytes. Some data may have been lost. ****

@@ -1,10 +1,10 @@
-2025/03/26-22:36:18.518 4304 Log #1794: 1 ops saved to Table #1800 OK
-2025/03/26-22:36:18.519 4304 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/001794.log: OK
-2025/03/26-22:36:18.528 4304 Table #1795: 768 entries OK
-2025/03/26-22:36:18.536 4304 Table #1796: 1719 entries OK
-2025/03/26-22:36:18.543 4304 Table #1797: 1711 entries OK
-2025/03/26-22:36:18.550 4304 Table #1798: 1734 entries OK
-2025/03/26-22:36:18.552 4304 Table #1799: 616 entries OK
-2025/03/26-22:36:18.552 4304 Table #1800: 1 entries OK
-2025/03/26-22:36:18.564 4304 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors/MANIFEST-001792: OK
-2025/03/26-22:36:18.575 4304 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/actors; recovered 6 files; 9171641 bytes. Some data may have been lost. ****
+2025/04/02-13:59:10.850 2894 Log #1802: 3 ops saved to Table #1804 OK
+2025/04/02-13:59:10.852 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors/001802.log: OK
+2025/04/02-13:59:10.937 2894 Table #1796: 1719 entries OK
+2025/04/02-13:59:10.946 2894 Table #1797: 1711 entries OK
+2025/04/02-13:59:11.053 2894 Table #1798: 1734 entries OK
+2025/04/02-13:59:11.077 2894 Table #1799: 616 entries OK
+2025/04/02-13:59:11.084 2894 Table #1803: 768 entries OK
+2025/04/02-13:59:11.085 2894 Table #1804: 3 entries OK
+2025/04/02-13:59:11.088 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors/MANIFEST-001801: OK
+2025/04/02-13:59:11.092 2894 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors; recovered 6 files; 9185626 bytes. Some data may have been lost. ****

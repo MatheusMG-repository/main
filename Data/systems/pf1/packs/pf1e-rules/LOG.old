@@ -1,5 +1,5 @@
-2025/03/26-22:36:20.873 445c Log #66: 0 ops saved to Table #67 OK
-2025/03/26-22:36:20.874 445c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\pf1e-rules/000066.log: OK
-2025/03/26-22:36:20.875 445c Table #17: 83 entries OK
-2025/03/26-22:36:20.885 445c Archiving C:\Users\mathe\utopia\main\Data\systems\pf1\packs\pf1e-rules/MANIFEST-000065: OK
-2025/03/26-22:36:20.893 445c **** Repaired leveldb C:\Users\mathe\utopia\main\Data\systems\pf1\packs\pf1e-rules; recovered 1 files; 191272 bytes. Some data may have been lost. ****
+2025/04/02-13:59:12.779 2748 Log #69: 0 ops saved to Table #70 OK
+2025/04/02-13:59:12.780 2748 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\pf1e-rules/000069.log: OK
+2025/04/02-13:59:12.783 2748 Table #17: 83 entries OK
+2025/04/02-13:59:12.788 2748 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\pf1e-rules/MANIFEST-000068: OK
+2025/04/02-13:59:12.792 2748 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\pf1e-rules; recovered 1 files; 191272 bytes. Some data may have been lost. ****

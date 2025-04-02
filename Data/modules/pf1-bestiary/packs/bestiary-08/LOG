@@ -1,7 +1,7 @@
-2025/03/26-22:36:24.068 4304 Delete type=3 #1
-2025/03/26-22:36:24.073 4794 Moved #238 to level-1 2118772 bytes OK: files[ 7 1 0 0 0 0 0 ]
-2025/03/26-22:36:24.078 4794 Moved #362 to level-1 2127696 bytes OK: files[ 6 2 0 0 0 0 0 ]
-2025/03/26-22:36:24.083 4794 Moved #363 to level-1 2128676 bytes OK: files[ 5 3 0 0 0 0 0 ]
-2025/03/26-22:36:24.088 4794 Moved #364 to level-1 2129997 bytes OK: files[ 4 4 0 0 0 0 0 ]
-2025/03/26-22:36:24.093 4794 Moved #365 to level-1 2129873 bytes OK: files[ 3 5 0 0 0 0 0 ]
-2025/03/26-22:36:24.098 4794 Moved #238 to level-2 2118772 bytes OK: files[ 3 4 1 0 0 0 0 ]
+2025/04/02-13:59:15.930 568 Delete type=3 #1
+2025/04/02-13:59:15.932 30e8 Moved #238 to level-1 2118772 bytes OK: files[ 7 1 0 0 0 0 0 ]
+2025/04/02-13:59:15.933 30e8 Moved #362 to level-1 2127696 bytes OK: files[ 6 2 0 0 0 0 0 ]
+2025/04/02-13:59:15.933 30e8 Moved #363 to level-1 2128676 bytes OK: files[ 5 3 0 0 0 0 0 ]
+2025/04/02-13:59:15.934 30e8 Moved #364 to level-1 2129997 bytes OK: files[ 4 4 0 0 0 0 0 ]
+2025/04/02-13:59:15.934 30e8 Moved #365 to level-1 2129873 bytes OK: files[ 3 5 0 0 0 0 0 ]
+2025/04/02-13:59:15.935 30e8 Moved #238 to level-2 2118772 bytes OK: files[ 3 4 1 0 0 0 0 ]

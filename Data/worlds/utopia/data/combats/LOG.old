@@ -1,5 +1,5 @@
-2025/03/26-22:36:18.843 17a0 Log #464: 0 ops saved to Table #466 OK
-2025/03/26-22:36:18.844 17a0 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/000464.log: OK
-2025/03/26-22:36:18.845 17a0 Table #465: 80 entries OK
-2025/03/26-22:36:18.856 17a0 Archiving C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats/MANIFEST-000462: OK
-2025/03/26-22:36:18.866 17a0 **** Repaired leveldb C:/Users/mathe/utopia/main/Data/worlds/utopia/data/combats; recovered 1 files; 9132 bytes. Some data may have been lost. ****
+2025/04/02-13:59:11.268 2748 Log #468: 0 ops saved to Table #469 OK
+2025/04/02-13:59:11.269 2748 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/combats/000468.log: OK
+2025/04/02-13:59:11.270 2748 Table #465: 80 entries OK
+2025/04/02-13:59:11.273 2748 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/combats/MANIFEST-000467: OK
+2025/04/02-13:59:11.277 2748 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/combats; recovered 1 files; 9132 bytes. Some data may have been lost. ****
