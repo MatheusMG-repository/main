@@ -1,5 +1,3 @@
-2025/04/02-13:59:14.068 568 Log #167: 0 ops saved to Table #168 OK
-2025/04/02-13:59:14.069 568 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-maladies/000167.log: OK
-2025/04/02-13:59:14.075 568 Table #115: 101 entries OK
-2025/04/02-13:59:14.078 568 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-maladies/MANIFEST-000166: OK
-2025/04/02-13:59:14.081 568 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-maladies; recovered 1 files; 61890 bytes. Some data may have been lost. ****
+2025/04/09-12:16:13.983 1f318 Recovering log #185
+2025/04/09-12:16:13.986 1f318 Delete type=0 #185
+2025/04/09-12:16:13.987 1f318 Delete type=3 #184

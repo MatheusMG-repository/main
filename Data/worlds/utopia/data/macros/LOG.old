@@ -1,7 +1,3 @@
-2025/04/02-13:59:11.524 2894 Log #431: 0 ops saved to Table #432 OK
-2025/04/02-13:59:11.526 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros/000431.log: OK
-2025/04/02-13:59:11.527 2894 Table #378: 170 entries OK
-2025/04/02-13:59:11.532 2894 Table #381: 4 entries OK
-2025/04/02-13:59:11.537 2894 Table #403: 12 entries OK
-2025/04/02-13:59:11.540 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros/MANIFEST-000430: OK
-2025/04/02-13:59:11.543 2894 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/macros; recovered 3 files; 37311 bytes. Some data may have been lost. ****
+2025/04/09-12:16:12.468 1f318 Recovering log #449
+2025/04/09-12:16:12.471 1f318 Delete type=0 #449
+2025/04/09-12:16:12.471 1f318 Delete type=3 #448

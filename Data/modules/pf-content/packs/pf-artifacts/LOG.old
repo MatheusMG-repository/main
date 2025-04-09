@@ -1,5 +1,3 @@
-2025/04/02-13:59:13.160 2894 Log #167: 0 ops saved to Table #168 OK
-2025/04/02-13:59:13.161 2894 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-artifacts/000167.log: OK
-2025/04/02-13:59:13.175 2894 Table #115: 332 entries OK
-2025/04/02-13:59:13.178 2894 Archiving C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-artifacts/MANIFEST-000166: OK
-2025/04/02-13:59:13.181 2894 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\pf-content\packs\pf-artifacts; recovered 1 files; 393970 bytes. Some data may have been lost. ****
+2025/04/09-12:16:13.447 8bf0 Recovering log #185
+2025/04/09-12:16:13.451 8bf0 Delete type=0 #185
+2025/04/09-12:16:13.451 8bf0 Delete type=3 #184

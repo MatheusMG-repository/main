@@ -1,5 +1,3 @@
-2025/04/02-13:59:18.226 2894 Log #309: 0 ops saved to Table #310 OK
-2025/04/02-13:59:18.227 2894 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion/000309.log: OK
-2025/04/02-13:59:18.232 2894 Table #257: 481 entries OK
-2025/04/02-13:59:18.236 2894 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion/MANIFEST-000308: OK
-2025/04/02-13:59:18.239 2894 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-ironfang-invasion; recovered 1 files; 508492 bytes. Some data may have been lost. ****
+2025/04/09-12:16:16.249 1f318 Recovering log #327
+2025/04/09-12:16:16.252 1f318 Delete type=0 #327
+2025/04/09-12:16:16.252 1f318 Delete type=3 #326

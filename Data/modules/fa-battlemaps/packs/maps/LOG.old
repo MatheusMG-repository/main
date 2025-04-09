@@ -1,8 +1,3 @@
-2025/04/02-13:59:12.813 31dc Log #205: 0 ops saved to Table #206 OK
-2025/04/02-13:59:12.814 31dc Archiving C:\Users\janjo\Utopia\main\Data\modules\fa-battlemaps\packs\maps/000205.log: OK
-2025/04/02-13:59:12.826 31dc Table #30: 4663 entries OK
-2025/04/02-13:59:12.838 31dc Table #151: 4219 entries OK
-2025/04/02-13:59:12.853 31dc Table #152: 27575 entries OK
-2025/04/02-13:59:12.860 31dc Table #153: 13207 entries OK
-2025/04/02-13:59:12.864 31dc Archiving C:\Users\janjo\Utopia\main\Data\modules\fa-battlemaps\packs\maps/MANIFEST-000204: OK
-2025/04/02-13:59:12.868 31dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\fa-battlemaps\packs\maps; recovered 4 files; 7302668 bytes. Some data may have been lost. ****
+2025/04/09-12:16:13.258 1196c Recovering log #223
+2025/04/09-12:16:13.262 1196c Delete type=0 #223
+2025/04/09-12:16:13.262 1196c Delete type=3 #222

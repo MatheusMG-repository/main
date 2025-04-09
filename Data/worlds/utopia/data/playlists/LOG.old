@@ -1,6 +1,3 @@
-2025/04/02-13:59:11.563 568 Log #435: 0 ops saved to Table #436 OK
-2025/04/02-13:59:11.564 568 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists/000435.log: OK
-2025/04/02-13:59:11.566 568 Table #382: 120 entries OK
-2025/04/02-13:59:11.567 568 Table #421: 2540 entries OK
-2025/04/02-13:59:11.570 568 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists/MANIFEST-000434: OK
-2025/04/02-13:59:11.574 568 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/playlists; recovered 2 files; 140672 bytes. Some data may have been lost. ****
+2025/04/09-12:16:12.493 13530 Recovering log #453
+2025/04/09-12:16:12.497 13530 Delete type=0 #453
+2025/04/09-12:16:12.497 13530 Delete type=3 #452

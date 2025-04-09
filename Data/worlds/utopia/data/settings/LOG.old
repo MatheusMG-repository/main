@@ -1,8 +1,5 @@
-2025/04/02-13:59:11.744 2894 Log #533: 2 ops saved to Table #534 OK
-2025/04/02-13:59:11.746 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings/000533.log: OK
-2025/04/02-13:59:11.747 2894 Table #527: 45 entries OK
-2025/04/02-13:59:11.753 2894 Table #529: 13 entries OK
-2025/04/02-13:59:11.758 2894 Table #531: 2 entries OK
-2025/04/02-13:59:11.758 2894 Table #534: 2 entries OK
-2025/04/02-13:59:11.762 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings/MANIFEST-000532: OK
-2025/04/02-13:59:11.765 2894 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/settings; recovered 4 files; 21077 bytes. Some data may have been lost. ****
+2025/04/09-12:16:12.602 1f318 Recovering log #559
+2025/04/09-12:16:12.603 1f318 Level-0 table #562: started
+2025/04/09-12:16:12.609 1f318 Level-0 table #562: 3160 bytes OK
+2025/04/09-12:16:12.612 1f318 Delete type=0 #559
+2025/04/09-12:16:12.613 1f318 Delete type=3 #557

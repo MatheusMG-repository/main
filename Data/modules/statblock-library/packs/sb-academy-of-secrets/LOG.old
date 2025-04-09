@@ -1,5 +1,3 @@
-2025/04/02-13:59:17.284 31dc Log #310: 0 ops saved to Table #311 OK
-2025/04/02-13:59:17.285 31dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets/000310.log: OK
-2025/04/02-13:59:17.286 31dc Table #258: 18 entries OK
-2025/04/02-13:59:17.289 31dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets/MANIFEST-000309: OK
-2025/04/02-13:59:17.292 31dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-academy-of-secrets; recovered 1 files; 19440 bytes. Some data may have been lost. ****
+2025/04/09-12:16:15.750 1f318 Recovering log #328
+2025/04/09-12:16:15.754 1f318 Delete type=0 #328
+2025/04/09-12:16:15.754 1f318 Delete type=3 #327

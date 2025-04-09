@@ -1,5 +1,3 @@
-2025/04/02-13:59:11.927 568 Log #69: 0 ops saved to Table #70 OK
-2025/04/02-13:59:11.929 568 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\classes/000069.log: OK
-2025/04/02-13:59:11.935 568 Table #17: 49 entries OK
-2025/04/02-13:59:11.939 568 Archiving C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\classes/MANIFEST-000068: OK
-2025/04/02-13:59:11.942 568 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\systems\pf1\packs\classes; recovered 1 files; 83077 bytes. Some data may have been lost. ****
+2025/04/09-12:16:12.713 1196c Recovering log #87
+2025/04/09-12:16:12.717 1196c Delete type=0 #87
+2025/04/09-12:16:12.717 1196c Delete type=3 #86

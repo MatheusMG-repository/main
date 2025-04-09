@@ -1,4 +1,3 @@
-2025/04/02-13:59:11.295 31dc Log #392: 0 ops saved to Table #393 OK
-2025/04/02-13:59:11.296 31dc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/drawings/000392.log: OK
-2025/04/02-13:59:11.298 31dc Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/drawings/MANIFEST-000391: OK
-2025/04/02-13:59:11.302 31dc **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/drawings; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2025/04/09-12:16:12.357 13530 Recovering log #410
+2025/04/09-12:16:12.361 13530 Delete type=0 #410
+2025/04/09-12:16:12.361 13530 Delete type=3 #409

@@ -1,10 +1,19 @@
-2025/04/02-13:59:10.850 2894 Log #1802: 3 ops saved to Table #1804 OK
-2025/04/02-13:59:10.852 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors/001802.log: OK
-2025/04/02-13:59:10.937 2894 Table #1796: 1719 entries OK
-2025/04/02-13:59:10.946 2894 Table #1797: 1711 entries OK
-2025/04/02-13:59:11.053 2894 Table #1798: 1734 entries OK
-2025/04/02-13:59:11.077 2894 Table #1799: 616 entries OK
-2025/04/02-13:59:11.084 2894 Table #1803: 768 entries OK
-2025/04/02-13:59:11.085 2894 Table #1804: 3 entries OK
-2025/04/02-13:59:11.088 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors/MANIFEST-001801: OK
-2025/04/02-13:59:11.092 2894 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/actors; recovered 6 files; 9185626 bytes. Some data may have been lost. ****
+2025/04/09-12:16:12.037 1f318 Recovering log #1964
+2025/04/09-12:16:12.038 1f318 Level-0 table #1972: started
+2025/04/09-12:16:12.042 1f318 Level-0 table #1972: 294889 bytes OK
+2025/04/09-12:16:12.046 1f318 Delete type=0 #1964
+2025/04/09-12:16:12.046 1f318 Delete type=3 #1956
+2025/04/09-12:16:25.251 26070 Compacting 1@0 + 5@1 files
+2025/04/09-12:16:25.277 26070 Generated table #1974@0: 698 keys, 2114506 bytes
+2025/04/09-12:16:25.405 26070 Generated table #1975@0: 1726 keys, 2127019 bytes
+2025/04/09-12:16:25.492 26070 Generated table #1976@0: 1705 keys, 2128811 bytes
+2025/04/09-12:16:25.513 26070 Generated table #1977@0: 1670 keys, 2128394 bytes
+2025/04/09-12:16:25.584 26070 Generated table #1978@0: 1232 keys, 1389608 bytes
+2025/04/09-12:16:25.584 26070 Compacted 1@0 + 5@1 files => 9888338 bytes
+2025/04/09-12:16:25.585 26070 compacted to: files[ 0 5 0 0 0 0 0 ]
+2025/04/09-12:16:25.585 26070 Delete type=2 #1966
+2025/04/09-12:16:25.585 26070 Delete type=2 #1967
+2025/04/09-12:16:25.586 26070 Delete type=2 #1968
+2025/04/09-12:16:25.586 26070 Delete type=2 #1969
+2025/04/09-12:16:25.586 26070 Delete type=2 #1970
+2025/04/09-12:16:25.587 26070 Delete type=2 #1972

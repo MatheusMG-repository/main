@@ -1,6 +1,3 @@
-2025/04/02-13:59:17.545 2894 Log #318: 0 ops saved to Table #319 OK
-2025/04/02-13:59:17.547 2894 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-pfs/000318.log: OK
-2025/04/02-13:59:17.557 2894 Table #265: 3429 entries OK
-2025/04/02-13:59:17.648 2894 Table #266: 1647 entries OK
-2025/04/02-13:59:17.652 2894 Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-pfs/MANIFEST-000317: OK
-2025/04/02-13:59:17.656 2894 **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-pfs; recovered 2 files; 3881068 bytes. Some data may have been lost. ****
+2025/04/09-12:16:15.882 13530 Recovering log #336
+2025/04/09-12:16:15.886 13530 Delete type=0 #336
+2025/04/09-12:16:15.886 13530 Delete type=3 #335

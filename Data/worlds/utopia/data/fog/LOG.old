@@ -1,9 +1,5 @@
-2025/04/02-13:59:11.330 2894 Log #702: 1 ops saved to Table #707 OK
-2025/04/02-13:59:11.331 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/000702.log: OK
-2025/04/02-13:59:11.335 2894 Table #703: 59 entries OK
-2025/04/02-13:59:11.381 2894 Table #704: 81 entries OK
-2025/04/02-13:59:11.384 2894 Table #705: 76 entries OK
-2025/04/02-13:59:11.385 2894 Table #706: 21 entries OK
-2025/04/02-13:59:11.385 2894 Table #707: 1 entries OK
-2025/04/02-13:59:11.388 2894 Archiving C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog/MANIFEST-000701: OK
-2025/04/02-13:59:11.392 2894 **** Repaired leveldb C:/Users/janjo/Utopia/main/Data/worlds/utopia/data/fog; recovered 5 files; 7030987 bytes. Some data may have been lost. ****
+2025/04/09-12:16:12.378 1f318 Recovering log #761
+2025/04/09-12:16:12.378 1f318 Level-0 table #766: started
+2025/04/09-12:16:12.380 1f318 Level-0 table #766: 43727 bytes OK
+2025/04/09-12:16:12.385 1f318 Delete type=0 #761
+2025/04/09-12:16:12.385 1f318 Delete type=3 #759

@@ -1,5 +1,3 @@
-2025/04/02-13:59:18.402 31dc Log #309: 0 ops saved to Table #310 OK
-2025/04/02-13:59:18.404 31dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-serpents-skull/000309.log: OK
-2025/04/02-13:59:18.430 31dc Table #257: 517 entries OK
-2025/04/02-13:59:18.432 31dc Archiving C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-serpents-skull/MANIFEST-000308: OK
-2025/04/02-13:59:18.436 31dc **** Repaired leveldb C:\Users\janjo\Utopia\main\Data\modules\statblock-library\packs\sb-serpents-skull; recovered 1 files; 504908 bytes. Some data may have been lost. ****
+2025/04/09-12:16:16.334 13530 Recovering log #327
+2025/04/09-12:16:16.338 13530 Delete type=0 #327
+2025/04/09-12:16:16.338 13530 Delete type=3 #326
